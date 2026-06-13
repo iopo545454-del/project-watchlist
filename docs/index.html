@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Watchlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Hermes Research</p>
+      <h1>Project Watchlist</h1>
+      <p class="sub">Markdown is the source of truth. This dashboard is the readable review layer.</p>
+    </div>
+    <a class="repo" id="repoLink" href="#">GitHub repo</a>
+  </header>
+  <section class="controls">
+    <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, resources…" />
+    <select id="category"><option value="">All categories</option></select>
+  </section>
+  <main>
+    <table id="watchlist">
+      <thead>
+        <tr>
+          <th data-sort="project">Project</th>
+          <th data-sort="ticker">Ticker</th>
+          <th data-sort="category">Category</th>
+          <th data-sort="conviction">Conviction</th>
+          <th>Key X Accounts</th>
+          <th>Resources</th>
+          <th data-sort="last_updated">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
