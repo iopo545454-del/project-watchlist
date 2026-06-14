@@ -10,7 +10,8 @@ This repository is a source-of-truth research dashboard for monitored crypto/pro
 - `docs/data/index.json` powers the dashboard project list.
 - `docs/data/project-changelog.json` powers the dashboard changelog and scan history.
 - Generated HTML in `docs/projects/*.html` should reflect the Markdown dossiers, not replace them as the source of truth.
-- Project pages should keep the hero/top pane compact: move `Overview` content into the hero area, keep the right metadata card to `Ticker` and relative `Last updated` only, and avoid showing low-value metadata such as category/source-link counts in the hero.
+- Project detail pages should use a large, scrollable **Latest** panel in the hero area instead of compact ticker/last-updated metadata cards. Do **not** show the old compact `Ticker` / `Last updated` card in generated HTML.
+- The **Latest** panel is the rawest/highest-signal analysis feed for the project. Add entries whenever a scan surfaces relevant information: a useful tweet/thread, DefiLlama/onchain/dashboard change, official blog/docs update, governance item, token/buyback/unlock change, product release, partner/investor signal, or credible weak signal. This is the bread-and-butter scan record; it can be rougher and more source-proximate than polished dossier sections, but every item should include source/context and why it matters.
 
 ## Source priority
 
@@ -102,11 +103,12 @@ Every autonomous monitoring run should:
 6. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
 7. Apply the materiality threshold before editing files or alerting Discord.
 8. Add confirmed durable findings in the relevant `projects/*.md` dossier.
-9. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
-10. Update `docs/data/project-changelog.json` with scan timestamps, material changes, and rare high-signal unverified watch items when useful.
-11. Update indexes and generated project pages when metadata, links, or displayed content change.
-12. Validate JSON and inspect the diff before committing.
-13. Commit and push real changes to `main`.
+9. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
+10. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
+11. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
+12. Update indexes and generated project pages when metadata, links, or displayed content change.
+13. Validate JSON and inspect the diff before committing.
+14. Commit and push real changes to `main`.
 
 If no material change exists, the run should update scan state only when useful and otherwise stay quiet.
 
@@ -201,6 +203,20 @@ Each dossier should include a source table in this shape:
 | https://example.com/blog | Official blog; long-form announcements |
 | 0x123...abcd | Token contract address; use for holder/distribution checks |
 ```
+
+## Project page Latest panel standard
+
+Generated `docs/projects/*.html` pages should show a right-side hero panel titled **Latest** instead of compact metadata like `Ticker`, `Links parsed`, or `Last updated`.
+
+The Latest panel should be scrollable and contain the newest high-signal project observations from `docs/data/project-changelog.json`, especially:
+
+- Relevant X/Twitter posts or threads and why they matter.
+- DefiLlama, Dune, onchain, unlock, holder, revenue, buyback, or usage changes noticed during a scan.
+- Official blog/docs/changelog/governance updates.
+- Product, roadmap, partnership, listing, investor, funding, or team changes.
+- Credible weak signals or rumors clearly labeled as unverified.
+
+Prefer short source-proximate entries over polished prose here. This panel is the working analyst notebook: if an agent read something and thought it mattered, it should usually become a Latest entry with a source/context link. Keep polished synthesis in the dossier sections below.
 
 ## Changelog standard
 
