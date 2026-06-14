@@ -1,6 +1,6 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-project-intake';
+const dataVersion = '20260614-discrete-intake';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -142,6 +142,22 @@ document.querySelector('#search').addEventListener('input', renderBoard);
 document.querySelector('#category').addEventListener('change', renderBoard);
 
 const intakeForm = document.querySelector('#projectIntakeForm');
+const intakeModal = document.querySelector('#intakeModal');
+const openIntake = document.querySelector('#openIntake');
+const closeIntake = document.querySelector('#closeIntake');
+const setIntakeOpen = open => {
+  if (!intakeModal) return;
+  intakeModal.classList.toggle('is-open', open);
+  intakeModal.setAttribute('aria-hidden', open ? 'false' : 'true');
+  document.body.classList.toggle('modal-open', open);
+  if (open) document.querySelector('#intakeProject')?.focus();
+};
+openIntake?.addEventListener('click', () => setIntakeOpen(true));
+closeIntake?.addEventListener('click', () => setIntakeOpen(false));
+document.querySelectorAll('[data-close-intake]').forEach(el => el.addEventListener('click', () => setIntakeOpen(false)));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') setIntakeOpen(false);
+});
 if (intakeForm) {
   intakeForm.addEventListener('submit', event => {
     event.preventDefault();
