@@ -118,9 +118,42 @@ For a new project or any project marked `initial_review_done: false`:
 3. Discover official website, docs, blog, GitHub, governance/forum, primary X, founder/team/core-contributor X accounts, token/contract pages, and useful dashboards.
 4. Add sources using the standard two-column source table.
 5. Fill concise sections for overview, thesis/narrative, catalysts, token/contract notes, open questions, and monitoring notes.
-6. Update `docs/data/index.json` and root indexes with source counts, X accounts, token address, page path, and `initial_review_done: true` when complete.
-7. Add a changelog entry of type `initial review`.
-8. Regenerate the corresponding `docs/projects/<slug>.html` page.
+6. For `## Thesis`, collect linked investor/market theses from articles, memos, high-signal threads, podcasts/transcripts, or fund/operator posts; summarize each with a tight TLDR and source link, then add a separate `### Hermes take` that is short, direct, and not over-hedged.
+7. Update `docs/data/index.json` and root indexes with source counts, X accounts, token address, page path, and `initial_review_done: true` when complete.
+8. Add a changelog entry of type `initial review`.
+9. Regenerate the corresponding `docs/projects/<slug>.html` page.
+
+## Thesis section standard
+
+The `## Thesis` section should separate sourced outside investment cases from Hermes' own view.
+
+Use this structure when enough information is available:
+
+```md
+## Thesis
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://example.com/thread | Example Fund / angel / operator | One-to-two sentence summary of their investment case. | Why this matters for the token/project |
+
+### Hermes take
+
+> Short, direct, opinionated take. No mealy-mouthed hedging. Say what matters, what has to go right, and what would make the project worth caring about.
+```
+
+Guidelines:
+
+- Prefer articles, investor memos, long-form posts, podcasts/transcripts, and high-signal X threads by investors, angels, operators, funds, or respected ecosystem participants making an actual investment case.
+- Link the original source. Do not summarize a thesis without a source URL unless it came from the user; label user-provided thesis as manual/user context.
+- Keep each TLDR tight: what they believe, why the asset/project should matter, and what catalyst/mechanism drives upside.
+- Separate sourced thesis from Hermes opinion. Never make Hermes' take look like an external investor quote.
+- Hermes take should be quick, blunt, and useful: avoid generic caution paragraphs, avoid self-hedging, and do not end with a forced bull/bear call unless the user asks.
+- These are speculative crypto assets; the take can assume high risk is obvious and focus on whether the setup is interesting, reflexive, crowded, under-owned, or dead.
+- If there are no good investor theses yet, write `No strong sourced investor thesis found yet` and add what sources should be searched next.
+
+For generated project HTML, render Hermes' take in a visually distinctive callout/card. Use a warm accent such as `.hermes-take` so it stands apart from sourced thesis material.
 
 ## Source table standard
 
@@ -144,7 +177,7 @@ Each dossier should include a source table in this shape:
 {
   "date": "ISO-8601 UTC timestamp",
   "project": "Project display name",
-  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | thesis update | unverified watch item | verification update | rumor disproven",
+  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | thesis update | investor thesis added | hermes take update | unverified watch item | verification update | rumor disproven",
   "summary": "Concise summary of what changed or what was checked",
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
   "url": "projects/<slug>.html or direct source URL when useful",

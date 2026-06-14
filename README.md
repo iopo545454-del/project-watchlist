@@ -38,3 +38,5 @@ See [`AGENTS.md`](AGENTS.md) for the explicit monitoring framework: source prior
 ## Dossier section standard
 
 Each project file should include: Overview, Thesis, Team, Investors, Twitter/X accounts, KOLs, Official links, Onchain/data resources, Docs/blogs, Risks, Open questions, and Watch triggers.
+
+The Thesis section should include linked investor/market theses with short TLDRs plus a separate, visually distinct Hermes take. See [`AGENTS.md`](AGENTS.md#thesis-section-standard).
