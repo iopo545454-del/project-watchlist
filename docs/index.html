@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260614-importance" />
+  <link rel="stylesheet" href="style.css?v=20260614-layout" />
 </head>
 <body>
   <header>
@@ -23,7 +23,6 @@
   <section class="controls">
     <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, latest changes…" />
     <select id="category"><option value="">All categories</option></select>
-    <select id="importance"><option value="">All importance</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
   </section>
 
   <section class="intake-modal" id="intakeModal" aria-labelledby="intake-title" aria-hidden="true">
@@ -66,7 +65,10 @@
           <h2 id="changelog-title">Change log</h2>
           <p class="sub mini">Latest project-info changes and scan timestamps.</p>
         </div>
-        <span class="muted small" id="changelog-count">Loading…</span>
+        <div class="changelog-tools">
+          <select id="importance" aria-label="Filter changelog by trading importance"><option value="">All importance</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
+          <span class="muted small" id="changelog-count">Loading…</span>
+        </div>
       </div>
       <div id="changelog" class="changelog-list"></div>
     </aside>
@@ -84,6 +86,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=20260614-importance"></script>
+  <script src="app.js?v=20260614-layout"></script>
 </body>
 </html>

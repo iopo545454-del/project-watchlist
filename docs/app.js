@@ -1,6 +1,6 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-importance';
+const dataVersion = '20260614-layout';
 
 const repoBase = () => {
   const h = location.hostname;
