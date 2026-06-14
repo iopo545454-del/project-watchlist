@@ -107,7 +107,7 @@ Every autonomous monitoring run should:
 9. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
 10. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
 11. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
-12. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
+12. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked/logged_projects, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. Distinguish full scan coverage from projects that produced logged/material entries; if a project was checked and had no material change, record that explicitly only when useful. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
 13. Update indexes and generated project pages when metadata, links, or displayed content change.
 14. Validate JSON and inspect the diff before committing.
 15. Commit and push real changes to `main`.

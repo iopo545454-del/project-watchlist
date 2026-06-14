@@ -1,6 +1,6 @@
 let runs = [];
 let projects = [];
-const dataVersion = '20260614-scan-debug-2';
+const dataVersion = '20260614-scan-debug-3';
 
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
 const repoBase = () => {
@@ -71,13 +71,13 @@ function renderRuns() {
           <p>${esc(run.scope || 'Tracked project scan')}</p>
         </div>
         <div class="run-metrics">
-          <span>${esc(counts.projects || 0)} projects</span>
+          <span>${esc(counts.projects || 0)} projects logged</span>
           <span>${esc(counts.changelog_entries || entries.length || 0)} entries</span>
           <span>${esc(counts.material_entries || 0)} material</span>
         </div>
       </summary>
       <div class="run-body">
-        <div class="project-pills">${projectsChecked || '<span class="muted small">No project list recorded</span>'}</div>
+        <p class="muted small">Projects below are projects with logged changelog/debug entries, not proof of the full silent scan coverage.</p><div class="project-pills">${projectsChecked || '<span class="muted small">No logged project entries</span>'}</div>
         <div class="debug-columns">
           <section>
             <h4>Decision trail</h4>
