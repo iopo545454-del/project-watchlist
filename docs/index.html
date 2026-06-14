@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260614-board-layout" />
+  <link rel="stylesheet" href="style.css?v=20260614-project-intake" />
 </head>
 <body>
   <header>
@@ -19,6 +19,34 @@
   <section class="controls">
     <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, latest changes…" />
     <select id="category"><option value="">All categories</option></select>
+  </section>
+
+  <section class="intake-panel" aria-labelledby="intake-title">
+    <div>
+      <p class="eyebrow">Project intake</p>
+      <h2 id="intake-title">Add a project for Hermes to research</h2>
+      <p class="sub mini">Submit a project name, token address, and main X account. The 4h Hermes scan will pick up the intake issue, create the project page, find more sources, and run the initial review.</p>
+    </div>
+    <form id="projectIntakeForm" class="intake-form">
+      <label>
+        <span>Project name</span>
+        <input id="intakeProject" name="project" type="text" placeholder="e.g. Dolphin POD" required />
+      </label>
+      <label>
+        <span>Token address</span>
+        <input id="intakeToken" name="token" type="text" placeholder="0x… / Solana address / ticker if no address" required />
+      </label>
+      <label>
+        <span>Main X / Twitter</span>
+        <input id="intakeX" name="x" type="url" placeholder="https://x.com/project" required />
+      </label>
+      <label class="wide">
+        <span>Notes / context</span>
+        <textarea id="intakeNotes" name="notes" rows="3" placeholder="Optional: chain, site, why it matters, people to check"></textarea>
+      </label>
+      <button type="submit">Open GitHub intake issue</button>
+      <p id="intakeHelp" class="muted small">No token is stored in the browser; this opens a prefilled GitHub issue for Hermes to process.</p>
+    </form>
   </section>
 
   <main class="dashboard-layout">
@@ -47,6 +75,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=20260614-board-layout"></script>
+  <script src="app.js?v=20260614-project-intake"></script>
 </body>
 </html>

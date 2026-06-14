@@ -1,0 +1,36 @@
+name: Project intake
+about: Add a project for Hermes to research and track
+labels: project-intake, hermes-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add the minimal project info. Hermes will use this issue during the 4h scan to create the project page, find more official sources, and run the initial review.
+  - type: input
+    id: project
+    attributes:
+      label: Project name
+      placeholder: Dolphin POD
+    validations:
+      required: true
+  - type: input
+    id: token
+    attributes:
+      label: Token address
+      placeholder: 0x… / Solana address / ticker if no address
+    validations:
+      required: true
+  - type: input
+    id: main_x
+    attributes:
+      label: Main X / Twitter
+      placeholder: https://x.com/project
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / context
+      placeholder: Chain, website, why it matters, people/sources to check
+    validations:
+      required: false

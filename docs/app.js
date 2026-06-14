@@ -1,6 +1,6 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-board-layout';
+const dataVersion = '20260614-project-intake';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -14,6 +14,28 @@ const repoBase = () => {
 };
 
 const linkFor = r => r.html_page || `${repoBase()}/blob/main/${r.file}`;
+const intakeIssueUrl = ({ project, token, x, notes }) => {
+  const title = `Project intake: ${project}`;
+  const body = [
+    '## Project intake',
+    '',
+    `Project name: ${project}`,
+    `Token address: ${token}`,
+    `Main X / Twitter: ${x}`,
+    `Notes / context: ${notes || 'n/a'}`,
+    '',
+    'Hermes instructions:',
+    '- Create a new project page if this project is not already tracked.',
+    '- Track down official/project sources and relevant founder/core-contributor accounts.',
+    '- Run the initial overall review and mark initial_review_done=true when complete.'
+  ].join('\n');
+  const params = new URLSearchParams({
+    title,
+    body,
+    labels: 'project-intake,hermes-review'
+  });
+  return `${repoBase()}/issues/new?${params.toString()}`;
+};
 const fmtDate = value => {
   if (!value) return '';
   const d = new Date(value);
@@ -73,15 +95,18 @@ function renderBoard() {
   board.innerHTML = data.map(r => {
     const latest = latestChangeFor(r.project);
     const latestDate = latest?.last_scanned || latest?.date || r.last_updated || '';
-    const latestType = latest?.type || 'scan';
-    const summary = latest?.summary || 'No project-info change logged yet.';
+    const initialPending = r.initial_review_done === false;
+    const latestType = initialPending ? 'initial review pending' : (latest?.type || 'scan');
+    const summary = initialPending ? 'Hermes will find official sources and run the first overview on the next scan.' : (latest?.summary || 'No project-info change logged yet.');
     const accounts = (r.x_accounts || []).slice(0, 3).map(x => `<span class="pill">@${esc(x.split('/').pop())}</span>`).join('');
+    const status = initialPending ? '<span class="status-pending">Initial review pending</span>' : '';
     return `<a class="project-card" href="${esc(linkFor(r))}">
       <div class="card-topline">
         <span class="ticker">${esc(r.ticker || r.slug || '')}</span>
         <span class="card-date">${esc(fmtDate(latestDate))}</span>
       </div>
       <h3>${esc(r.project)}</h3>
+      ${status}
       <p class="latest-label">Latest change · ${esc(latestType)}</p>
       <p class="latest-summary">${esc(summary)}</p>
       <div class="card-footer">
@@ -115,3 +140,16 @@ Promise.all([
 
 document.querySelector('#search').addEventListener('input', renderBoard);
 document.querySelector('#category').addEventListener('change', renderBoard);
+
+const intakeForm = document.querySelector('#projectIntakeForm');
+if (intakeForm) {
+  intakeForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const project = document.querySelector('#intakeProject').value.trim();
+    const token = document.querySelector('#intakeToken').value.trim();
+    const x = document.querySelector('#intakeX').value.trim();
+    const notes = document.querySelector('#intakeNotes').value.trim();
+    if (!project || !token || !x) return;
+    window.open(intakeIssueUrl({ project, token, x, notes }), '_blank', 'noopener');
+  });
+}
