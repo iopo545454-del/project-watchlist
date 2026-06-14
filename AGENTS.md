@@ -119,9 +119,41 @@ For a new project or any project marked `initial_review_done: false`:
 4. Add sources using the standard two-column source table.
 5. Fill concise sections for overview, thesis/narrative, catalysts, token/contract notes, open questions, and monitoring notes.
 6. For `## Thesis`, collect linked investor/market theses from articles, memos, high-signal threads, podcasts/transcripts, or fund/operator posts; summarize each with a tight TLDR and source link, then add a separate `### Hermes take` that is short, direct, and not over-hedged.
-7. Update `docs/data/index.json` and root indexes with source counts, X accounts, token address, page path, and `initial_review_done: true` when complete.
-8. Add a changelog entry of type `initial review`.
-9. Regenerate the corresponding `docs/projects/<slug>.html` page.
+7. For `## Catalysts`, track future catalysts with status (`confirmed`, `tentative`, `speculative`, `disproven/stale`), evidence/source, timing, direct impact, second-order consequences, and what to watch next.
+8. Update `docs/data/index.json` and root indexes with source counts, X accounts, token address, page path, and `initial_review_done: true` when complete.
+9. Add a changelog entry of type `initial review`.
+10. Regenerate the corresponding `docs/projects/<slug>.html` page.
+
+## Catalyst section standard
+
+The `## Catalysts` section is one of the most important parts of each project dossier. It should answer: what could make this project matter in the future, when might it happen, how firm is the evidence, and what second-order consequences could follow?
+
+Use this structure when enough information is available:
+
+```md
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Mainnet launch | Confirmed | https://example.com/roadmap | Q3 2026 / tentative | Enables product usage | Could trigger exchange integrations, incentive programs, new TVL/liquidity loops | Watch docs, GitHub releases, official launch posts |
+```
+
+Catalyst status should be one of:
+
+- `confirmed` — official source, announced date/window, governance result, committed roadmap, or observable onchain/GitHub evidence.
+- `tentative` — credible but not fully committed: soft roadmap, team hint, partner teaser, repeated founder comments, job posts, testnet activity.
+- `speculative` — plausible inference from market structure, ecosystem incentives, related-account chatter, terminal/news item, or second-order read-through, but not directly confirmed.
+- `disproven/stale` — previously tracked catalyst that missed, was denied, or no longer matters.
+
+Every catalyst should capture:
+
+- **Evidence quality:** official / partner / investor / terminal / onchain / GitHub / community / inference.
+- **Timing:** firm date, tentative date/window, relative sequence, or `unknown`.
+- **Direct impact:** what changes for product, token, users, supply/demand, liquidity, revenue, emissions, governance, or attention.
+- **Second-order consequences:** what else could happen if it plays out — listings, integrations, incentives, unlock pressure, buybacks, subnet/emission rotation, ecosystem winners/losers, narrative spillovers, or competitor impacts.
+- **Watch next:** what would confirm, accelerate, delay, or kill the catalyst.
+
+Keep confirmed and speculative catalysts in the same table but clearly label status. Do not bury speculative catalysts if they are useful; mark them as speculative and define what evidence would upgrade/downgrade them.
 
 ## Thesis section standard
 
@@ -177,7 +209,7 @@ Each dossier should include a source table in this shape:
 {
   "date": "ISO-8601 UTC timestamp",
   "project": "Project display name",
-  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | thesis update | investor thesis added | hermes take update | unverified watch item | verification update | rumor disproven",
+  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | catalyst added | catalyst update | thesis update | investor thesis added | hermes take update | unverified watch item | verification update | rumor disproven",
   "summary": "Concise summary of what changed or what was checked",
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
   "url": "projects/<slug>.html or direct source URL when useful",

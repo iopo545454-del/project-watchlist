@@ -40,3 +40,5 @@ See [`AGENTS.md`](AGENTS.md) for the explicit monitoring framework: source prior
 Each project file should include: Overview, Thesis, Team, Investors, Twitter/X accounts, KOLs, Official links, Onchain/data resources, Docs/blogs, Risks, Open questions, and Watch triggers.
 
 The Thesis section should include linked investor/market theses with short TLDRs plus a separate, visually distinct Hermes take. See [`AGENTS.md`](AGENTS.md#thesis-section-standard).
+
+The Catalysts section should track future confirmed/tentative/speculative catalysts with evidence, timing, direct impact, second-order consequences, and what to watch next. See [`AGENTS.md`](AGENTS.md#catalyst-section-standard).
