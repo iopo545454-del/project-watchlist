@@ -16,21 +16,20 @@
       <p class="eyebrow">Project dossier</p>
       <h1>AKT / Akash</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/akashnet" target="_blank" rel="noopener">@akashnet</a><a class="pill" href="https://x.com/gregosuri" target="_blank" rel="noopener">@gregosuri</a><a class="pill" href="https://x.com/ovrclk_" target="_blank" rel="noopener">@ovrclk_</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>AKT</strong>
-      <span class="label">Links parsed</span><strong>7</strong>
-      <span class="label">Last updated</span><strong>2026-06-13</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><ul>
+      <div class="hero-overview"><span class="label">Overview</span><ul>
 <li>Decentralized cloud compute marketplace.</li>
 <li>Native token: <code>AKT</code>.</li>
 <li>Built on Cosmos SDK; uses Kubernetes-oriented provider/deployment architecture.</li>
 <li>Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/akashnet" target="_blank" rel="noopener">@akashnet</a><a class="pill" href="https://x.com/gregosuri" target="_blank" rel="noopener">@gregosuri</a><a class="pill" href="https://x.com/ovrclk_" target="_blank" rel="noopener">@ovrclk_</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>AKT</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-13T21:15:15Z">2026-06-13</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>TBD / needs follow-up.</li>
 </ul></section><section class="section-card" id="team"><h2>Team</h2><ul>
 <li>Overclock Labs — original/core builder of Akash.</li>
@@ -93,5 +92,21 @@
 </ul>
 </section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>

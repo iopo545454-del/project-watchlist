@@ -16,16 +16,7 @@
       <p class="eyebrow">Project dossier</p>
       <h1>VIRTUAL / Virtuals Protocol</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/0xTP91" target="_blank" rel="noopener">@0xTP91</a><a class="pill" href="https://x.com/ethermage" target="_blank" rel="noopener">@ethermage</a><a class="pill" href="https://x.com/everythingempty" target="_blank" rel="noopener">@everythingempty</a><a class="pill" href="https://x.com/umeirzz" target="_blank" rel="noopener">@umeirzz</a><a class="pill" href="https://x.com/virtuals_io" target="_blank" rel="noopener">@virtuals_io</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>VIRTUAL</strong>
-      <span class="label">Links parsed</span><strong>10</strong>
-      <span class="label">Last updated</span><strong>2026-06-13</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><p><strong>Identity</strong></p>
+      <div class="hero-overview"><span class="label">Overview</span><p><strong>Identity</strong></p>
 <ul>
 <li>Base-centered onchain AI-agent / agent-commerce protocol; $VIRTUAL is the ecosystem token for agent launches, co-ownership and protocol activity.</li>
 </ul>
@@ -72,7 +63,15 @@
 <ul>
 <li>Public team is partly pseudonymous/low-profile; verify claimed contributors through official reposts/bios.</li>
 <li>Token contract address should be rechecked before monitoring/transactions due frequent scam clones.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/0xTP91" target="_blank" rel="noopener">@0xTP91</a><a class="pill" href="https://x.com/ethermage" target="_blank" rel="noopener">@ethermage</a><a class="pill" href="https://x.com/everythingempty" target="_blank" rel="noopener">@everythingempty</a><a class="pill" href="https://x.com/umeirzz" target="_blank" rel="noopener">@umeirzz</a><a class="pill" href="https://x.com/virtuals_io" target="_blank" rel="noopener">@virtuals_io</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>VIRTUAL</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-13T21:15:15Z">2026-06-13</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>TBD / needs follow-up.</li>
 </ul></section><section class="section-card" id="team"><h2>Team</h2><ul>
 <li>TBD / needs follow-up.</li>
@@ -97,5 +96,21 @@
 </ul>
 </section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>

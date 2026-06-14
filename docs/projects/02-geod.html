@@ -16,21 +16,19 @@
       <p class="eyebrow">Project dossier</p>
       <h1>GEOD / GEODNET</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/GEODNET" target="_blank" rel="noopener">@GEODNET</a><a class="pill" href="https://x.com/KyleSamani" target="_blank" rel="noopener">@KyleSamani</a><a class="pill" href="https://x.com/mikeahorton" target="_blank" rel="noopener">@mikeahorton</a><a class="pill" href="https://x.com/multicoincap" target="_blank" rel="noopener">@multicoincap</a><a class="pill" href="https://x.com/mvrender" target="_blank" rel="noopener">@mvrender</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>GEOD</strong>
-      <span class="label">Category</span><strong>DePIN</strong>
-      <span class="label">Links parsed</span><strong>14</strong>
-      <span class="label">Last updated</span><strong>2026-06-14</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><ul>
+      <div class="hero-overview"><span class="label">Overview</span><ul>
 <li>GEODNET is a DePIN network for centimeter-level RTK/GNSS positioning, targeting robotics, drones, agriculture, construction, autonomous systems, and “physical AI.”</li>
 <li>Token: <code>$GEOD</code>.</li>
 <li>Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/GEODNET" target="_blank" rel="noopener">@GEODNET</a><a class="pill" href="https://x.com/KyleSamani" target="_blank" rel="noopener">@KyleSamani</a><a class="pill" href="https://x.com/mikeahorton" target="_blank" rel="noopener">@mikeahorton</a><a class="pill" href="https://x.com/multicoincap" target="_blank" rel="noopener">@multicoincap</a><a class="pill" href="https://x.com/mvrender" target="_blank" rel="noopener">@mvrender</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>GEOD</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-14T02:30:23Z">2026-06-14</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>GEODNET is positioned as location infrastructure for physical AI: robots, drones, mapping tools, and autonomous systems need reliable centimeter-level positioning; see the official site/docs for the RTK/GNSS positioning claim: <a href="https://geodnet.com/" target="_blank" rel="noopener">https://geodnet.com/</a> and <a href="https://docs.geodnet.com/" target="_blank" rel="noopener">https://docs.geodnet.com/</a>.</li>
 <li>The project is unusually tangible for crypto/DePIN because it has hardware, a global station map, RTK correction services, and token-burn/revenue surfaces to monitor; useful live/data surfaces include <a href="https://console.geodnet.com/map" target="_blank" rel="noopener">https://console.geodnet.com/map</a>, <a href="https://geodnet.com/geod" target="_blank" rel="noopener">https://geodnet.com/geod</a>, and <a href="https://defillama.com/protocol/geodnet" target="_blank" rel="noopener">https://defillama.com/protocol/geodnet</a>.</li>
 <li>Recent official messaging is leaning into hardware commercialization through GEO-PULSE and GEO-SWARM, which makes product adoption and enterprise usage more important than generic token chatter: <a href="https://x.com/GEODNET/status/2065909299776209110" target="_blank" rel="noopener">https://x.com/GEODNET/status/2065909299776209110</a> and <a href="https://x.com/GEODNET/status/2065600132851097808" target="_blank" rel="noopener">https://x.com/GEODNET/status/2065600132851097808</a>.</li>
@@ -100,5 +98,21 @@
 <tr><td><a href="https://discord.com/invite/geodnet" target="_blank" rel="noopener">https://discord.com/invite/geodnet</a></td><td>Official/community Discord entry point</td></tr>
 </tbody></table></section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>

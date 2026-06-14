@@ -16,16 +16,7 @@
       <p class="eyebrow">Project dossier</p>
       <h1>BIO / Bio Protocol</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/BioProtocol" target="_blank" rel="noopener">@BioProtocol</a><a class="pill" href="https://x.com/BioProtocolEco" target="_blank" rel="noopener">@BioProtocolEco</a><a class="pill" href="https://x.com/paulkhls" target="_blank" rel="noopener">@paulkhls</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>BIO</strong>
-      <span class="label">Links parsed</span><strong>8</strong>
-      <span class="label">Last updated</span><strong>2026-06-13</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><p><strong>Identity</strong></p>
+      <div class="hero-overview"><span class="label">Overview</span><p><strong>Identity</strong></p>
 <ul>
 <li>DeSci / biotech financial layer: BioDAOs, IP tokens/assets, Ignition Sales/launchpad, staking (<code>veBIO</code>), BioXP and AI/BioAgents.</li>
 </ul>
@@ -74,7 +65,15 @@
 <ul>
 <li>BIO ecosystem includes many project/IP tokens; keep each contract and BioDAO separate from core BIO.</li>
 <li>Use only <code>bio.xyz</code>, <code>app.bio.xyz</code>, <code>docs.bio.xyz</code> and verified X accounts for claim/staking links due high phishing risk.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/BioProtocol" target="_blank" rel="noopener">@BioProtocol</a><a class="pill" href="https://x.com/BioProtocolEco" target="_blank" rel="noopener">@BioProtocolEco</a><a class="pill" href="https://x.com/paulkhls" target="_blank" rel="noopener">@paulkhls</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>BIO</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-13T21:15:15Z">2026-06-13</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>TBD / needs follow-up.</li>
 </ul></section><section class="section-card" id="team"><h2>Team</h2><ul>
 <li>TBD / needs follow-up.</li>
@@ -99,5 +98,21 @@
 </ul>
 </section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>

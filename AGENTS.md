@@ -10,6 +10,7 @@ This repository is a source-of-truth research dashboard for monitored crypto/pro
 - `docs/data/index.json` powers the dashboard project list.
 - `docs/data/project-changelog.json` powers the dashboard changelog and scan history.
 - Generated HTML in `docs/projects/*.html` should reflect the Markdown dossiers, not replace them as the source of truth.
+- Project pages should keep the hero/top pane compact: move `Overview` content into the hero area, keep the right metadata card to `Ticker` and relative `Last updated` only, and avoid showing low-value metadata such as category/source-link counts in the hero.
 
 ## Source priority
 

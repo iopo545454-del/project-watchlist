@@ -16,21 +16,20 @@
       <p class="eyebrow">Project dossier</p>
       <h1>TAO / Bittensor</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/opentensor" target="_blank" rel="noopener">@opentensor</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>TAO</strong>
-      <span class="label">Links parsed</span><strong>7</strong>
-      <span class="label">Last updated</span><strong>2026-06-13</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><ul>
+      <div class="hero-overview"><span class="label">Overview</span><ul>
 <li>Decentralized AI incentive network.</li>
 <li>Native token: <code>TAO</code>.</li>
 <li>Core design: subnets compete for emissions by providing machine intelligence services such as inference, training, data, agents, search, compute, and specialized ML tasks.</li>
 <li>Major upgrade: dTAO introduced subnet alpha tokens and market-driven subnet allocation dynamics.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/opentensor" target="_blank" rel="noopener">@opentensor</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>TAO</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-13T21:15:15Z">2026-06-13</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>TBD / needs follow-up.</li>
 </ul></section><section class="section-card" id="team"><h2>Team</h2><ul>
 <li>Opentensor Foundation — core ecosystem/foundation entity.</li>
@@ -108,5 +107,21 @@
 </ul>
 </section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>

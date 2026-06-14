@@ -16,21 +16,20 @@
       <p class="eyebrow">Project dossier</p>
       <h1>GRASS</h1>
       <p class="sub">Source of truth remains Markdown. This page is the readable GitHub Pages presentation layer.</p>
-      <div class="pills"><a class="pill" href="https://x.com/0xdrej" target="_blank" rel="noopener">@0xdrej</a><a class="pill" href="https://x.com/grass" target="_blank" rel="noopener">@grass</a><a class="pill" href="https://x.com/grassfdn" target="_blank" rel="noopener">@grassfdn</a></div>
-    </div>
-    <aside class="hero-card">
-      <span class="label">Ticker</span><strong>GRASS</strong>
-      <span class="label">Links parsed</span><strong>6</strong>
-      <span class="label">Last updated</span><strong>2026-06-13</strong>
-    </aside>
-  </header>
-  <main class="project-grid">
-    <section class="section-card" id="overview"><h2>Overview</h2><ul>
+      <div class="hero-overview"><span class="label">Overview</span><ul>
 <li>Decentralized web-data / bandwidth network for AI data collection.</li>
 <li>Users run nodes/extensions to contribute unused bandwidth; network routes public web data collection toward AI/data customers.</li>
 <li>Token: <code>GRASS</code> on Solana.</li>
 <li>Builder: Wynd Labs / Wynd Network; ecosystem/governance via Grass Foundation.</li>
-</ul></section><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
+</ul></div>
+      <div class="pills"><a class="pill" href="https://x.com/0xdrej" target="_blank" rel="noopener">@0xdrej</a><a class="pill" href="https://x.com/grass" target="_blank" rel="noopener">@grass</a><a class="pill" href="https://x.com/grassfdn" target="_blank" rel="noopener">@grassfdn</a></div>
+    </div>
+    <aside class="hero-card compact-meta">
+      <span class="label">Ticker</span><strong>GRASS</strong>
+      <span class="label">Last updated</span><strong class="relative-time" data-updated="2026-06-13T21:15:15Z">2026-06-13</strong>
+    </aside>
+  </header>
+  <main class="project-grid"><section class="section-card" id="thesis"><h2>Thesis</h2><ul>
 <li>TBD / needs follow-up.</li>
 </ul></section><section class="section-card" id="team"><h2>Team</h2><ul>
 <li>Andrej Radonjic / <code>@0xdrej</code> — co-founder, Wynd Labs / Grass.</li>
@@ -85,5 +84,21 @@
 </ul>
 </section>
   </main>
+  <script>
+    function formatRelativeTime(iso) {
+      const then = new Date(iso);
+      if (Number.isNaN(then.getTime())) return iso || '';
+      const diffMs = Date.now() - then.getTime();
+      const absHours = Math.max(0, Math.round(diffMs / 36e5));
+      if (absHours < 1) return 'just now';
+      if (absHours < 24) return `${absHours}h ago`;
+      const days = Math.round(absHours / 24);
+      return days === 1 ? '1d ago' : `${days}d ago`;
+    }
+    document.querySelectorAll('[data-updated]').forEach((el) => {
+      el.textContent = formatRelativeTime(el.dataset.updated);
+      el.title = el.dataset.updated;
+    });
+  </script>
 </body>
 </html>
