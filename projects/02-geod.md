@@ -12,9 +12,9 @@ last_updated: 2026-06-14T02:30:23Z
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
 
 ## Thesis
-- GEODNET is positioned as location infrastructure for physical AI: robots, drones, mapping tools, and autonomous systems need reliable centimeter-level positioning.
-- The project is unusually tangible for crypto/DePIN because it has hardware, a global station map, RTK correction services, and token-burn/revenue surfaces to monitor.
-- Recent official messaging is leaning into hardware commercialization through GEO-PULSE and GEO-SWARM, which makes product adoption and enterprise usage more important than generic token chatter.
+- GEODNET is positioned as location infrastructure for physical AI: robots, drones, mapping tools, and autonomous systems need reliable centimeter-level positioning; see the official site/docs for the RTK/GNSS positioning claim: https://geodnet.com/ and https://docs.geodnet.com/.
+- The project is unusually tangible for crypto/DePIN because it has hardware, a global station map, RTK correction services, and token-burn/revenue surfaces to monitor; useful live/data surfaces include https://console.geodnet.com/map, https://geodnet.com/geod, and https://defillama.com/protocol/geodnet.
+- Recent official messaging is leaning into hardware commercialization through GEO-PULSE and GEO-SWARM, which makes product adoption and enterprise usage more important than generic token chatter: https://x.com/GEODNET/status/2065909299776209110 and https://x.com/GEODNET/status/2065600132851097808.
 
 ## Team
 - Mike Horton — founder/co-founder/CEO; posts project and technical commentary at https://x.com/mikeahorton.
