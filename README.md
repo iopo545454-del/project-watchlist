@@ -10,6 +10,8 @@ Source of truth for crypto/project monitoring dossiers.
 
 Hermes researches and updates the Markdown dossiers, `index.json`, and `index.csv`, then commits changes. GitHub Pages renders the review dashboard from `/docs`. Discord updates should send GitHub links, not filesystem paths or ZIP files.
 
+See [`AGENTS.md`](AGENTS.md) for the explicit monitoring framework: source priority, materiality threshold, recurring scan workflow, changelog rules, Discord alert policy, and validation steps.
+
 ## Projects
 
 - [POD / Dolphin POD](projects/01-pod.md)
