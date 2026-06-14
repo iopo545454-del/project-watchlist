@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-14T02:57:07Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -54,37 +54,104 @@ last_updated: 2026-06-13T21:15:15Z
 
 ---
 
+## Latest scan notes
+
+- 2026-06-14: Official/team X scan found GitLawb shipping a Playground UI refresh and ad-feed monetization for non-premium OpenClaude users; ad bid engine is still in progress and advertiser intake is via ads@gitlawb.com. Source: https://x.com/gitlawb/status/2065789938889883810
+- 2026-06-14: Founder Kevin said GitLawb had paused its own open-source coding-model training work but will resume research/training after the Anthropic/Fable 5 access restrictions; this is a useful catalyst to verify via repos, model releases, benchmarks, or docs. Source: https://x.com/kevincodex/status/2065776569998787055
+
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| No strong sourced investor thesis found yet | N/A | No clear fund memo, investor article, or deep operator thesis was found in the tracked sources during this scan. | Search next: Base AI-agent builders, open-model infra researchers, and any long-form GitLawb/AI-git-stack threads. |
+
+### Hermes take
+
+> GitLawb is interesting only if it turns the “decentralized AI dev stack” meme into repeat usage: OpenClaude, Playground, signed commits, nodes, and credits need to feel like a product loop rather than a token wrapper around GitLab-ish branding. The ad-feed update is small but real because it tests monetization and user-credit reflexivity. The big unlock would be verified usage plus an open coding model or agent workflow that developers actually prefer when centralized AI access gets constrained.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Playground ad feeds / bid engine | Confirmed product update, bid engine still tentative | Official X says ads are launching, OpenClaude users can earn credits, fresh Playground UI shipped, and bid engine is still in progress: https://x.com/gitlawb/status/2065789938889883810 | Live/near-term | Adds a revenue layer and user-credit loop around OpenClaude wait time | Could make usage/credits measurable, attract advertisers, and create token or treasury demand if economics are later connected | Watch for ad dashboard, bidding docs, advertiser list, revenue stats, and whether credits connect to token sinks |
+| Resume open-source coding-model research/training | Tentative | Founder Kevin says paused open-source coding model work will resume after Anthropic restrictions: https://x.com/kevincodex/status/2065776569998787055 | Unknown | Would move GitLawb beyond wrapper/UI toward model-side infrastructure | If credible, could improve narrative versus centralized coding agents and create repo/model benchmark catalysts | Watch GitHub/model repo, Hugging Face release, training updates, benchmarks, and compute/funding disclosures |
+| Voting mechanism / merch shop | Tentative | Founder post says he is working on voting mechanism and merch shop: https://x.com/kevincodex/status/2065593231958802857 | Near-term / unknown | Adds community governance/engagement surfaces | Voting could become relevant if tied to nodes, token utility, grants, or product priorities | Watch official docs, token page, onchain proposals, and whether voting is offchain/social or tokenized |
 
 ## Team
-- TBD / needs follow-up.
+
+- Kevin / https://x.com/kevincodex — founder/core builder signal from tracked X sources.
+- https://x.com/gitlawb — official project account.
+- https://x.com/gitlawb_intern — related/intern/community account; treat as lower-authority than the main project account unless cross-posted.
 
 ## Investors
-- TBD / needs follow-up.
+
+- No clear institutional investors confirmed from current tracked sources.
+- Treat community/KOL posts as distribution, not proof of backing.
 
 ## Twitter/X accounts
-- TBD / needs follow-up.
+
+- https://x.com/gitlawb — official project account.
+- https://x.com/kevincodex — founder/core builder.
+- https://x.com/gitlawb_intern — related/intern/community account.
+- https://x.com/Outpost_HGTP and https://x.com/GemsHunting_8 — secondary/community explainers surfaced in earlier source collection; verify before treating as authoritative.
 
 ## KOLs
-- TBD / needs follow-up.
+
+- No durable investor/KOL thesis added yet. Monitor Base AI, open-source AI, and developer-tooling accounts for serious GitLawb analysis rather than repost farming.
 
 ## Official links
-- TBD / needs follow-up.
+
+- Website: https://gitlawb.com
+- Token page: https://gitlawb.com/token
+- X: https://x.com/gitlawb
+- Telegram reported from prior source collection: https://t.me/gitlawbofficial — verify via official website/X before using.
 
 ## Onchain/data resources
-- TBD / needs follow-up.
+
+- Token page and Base contract data once verified from an official page.
+- Usage metrics: OpenClaude requests, Playground users, node counts, credits earned/spent, ad impressions/bids, revenue.
+- Git/repo/model artifacts: signed commits, DID usage, public repos, model checkpoints, benchmarks.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+
+- Official website and token page are the current primary docs-like sources.
+- Need canonical docs/changelog/GitHub links if the project publishes them.
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/gitlawb | Official X; product announcements, OpenClaude/Playground/ad updates, scam warnings |
+| https://x.com/kevincodex | Founder/core builder X; roadmap hints such as voting, merch, node backend, coding-model research |
+| https://x.com/gitlawb_intern | Related/intern/community account; lower-authority signal |
+| https://gitlawb.com | Official website; project positioning and app entry point |
+| https://gitlawb.com/token | Official token page to verify contract/tokenomics before recording durable token facts |
+| https://t.me/gitlawbofficial | Reported official Telegram; verify from official site/X because the project has warned about fake groups |
+| https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
+| https://x.com/kevincodex/status/2065776569998787055 | Founder note on resuming open-source coding-model research/training |
 
 ## Risks
-- TBD / needs follow-up.
+
+- Name is intentionally close to GitLab/GitHub concepts; do not confuse GitLawb links with GitLab.
+- Token/contract details remain under-verified until confirmed directly from the official token page and onchain explorer.
+- Product claims need usage metrics: credits, ads, nodes, and dev workflows can be announced before they are economically meaningful.
+- Security risk is real if users connect GitHub credentials/PATs, DIDs, agents, or signed-commit tooling.
 
 ## Open questions
-- TBD / needs follow-up.
+
+- What is the canonical token contract, supply, ownership/LP status, and any fee/credit sink?
+- Are OpenClaude/Playground usage metrics public?
+- Is there a public GitHub/model repository for the planned open-source coding model?
+- How will ads, credits, voting, and any node incentives connect to token economics?
 
 ## Watch triggers
-- TBD / needs follow-up.
+
+- Official contract/tokenomics/staking update from the token page or X.
+- Public ad-bid engine launch, advertiser onboarding, or revenue/credit metrics.
+- Open-source coding-model repo/checkpoint/benchmark release.
+- Voting mechanism launch, especially if token-weighted or tied to grants/nodes.
+- Any security disclosure around GitHub credentials, agent signing, DIDs, mirrors, or fake Telegram groups.
 
 ---
