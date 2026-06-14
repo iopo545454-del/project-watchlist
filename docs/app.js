@@ -1,6 +1,7 @@
 let rows = [];
 let sortKey = 'project';
 let sortDir = 1;
+const dataVersion = '20260613-research-log';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -61,7 +62,7 @@ function renderChangelog(items) {
   }).join('');
 }
 
-fetch('data/index.json')
+fetch(`data/index.json?v=${dataVersion}`)
   .then(r => r.json())
   .then(d => {
     rows = d;
@@ -71,7 +72,7 @@ fetch('data/index.json')
     render();
   });
 
-fetch('data/project-changelog.json')
+fetch(`data/project-changelog.json?v=${dataVersion}`)
   .then(r => r.ok ? r.json() : [])
   .then(renderChangelog)
   .catch(() => renderChangelog([]));
