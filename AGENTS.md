@@ -232,11 +232,12 @@ Prefer short source-proximate entries over polished prose here. This panel is th
   "summary": "Concise summary of what changed or what was checked",
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
   "url": "projects/<slug>.html or direct source URL when useful",
-  "last_scanned": "ISO-8601 UTC timestamp"
+  "last_scanned": "ISO-8601 UTC timestamp",
+  "importance": "high | medium | low"
 }
 ```
 
-Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard.
+Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance` from a trading perspective: `high` for potentially tradeable catalysts/market-structure/token/liquidity/security/listing/funding changes, `medium` for meaningful product/roadmap/ecosystem signals, and `low` for routine scans, housekeeping, or context with little near-term trading relevance.
 
 ## Discord update policy
 

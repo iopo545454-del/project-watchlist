@@ -1,6 +1,6 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-scan-debug';
+const dataVersion = '20260614-importance';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -55,17 +55,20 @@ function latestChangeFor(projectName) {
 function renderChangelog() {
   const list = document.querySelector('#changelog');
   const count = document.querySelector('#changelog-count');
-  const latest = sortedChanges().slice(0, 20);
+  const importance = document.querySelector('#importance')?.value || '';
+  const latest = sortedChanges().filter(item => !importance || (item.importance || 'low') === importance).slice(0, 40);
   const scans = changes.map(x => x.last_scanned || x.date).filter(Boolean).sort();
   const mostRecentScan = scans.length ? fmtDate(scans[scans.length - 1]) : '';
   count.textContent = latest.length ? `${latest.length} latest · scan ${mostRecentScan || '—'}` : 'No scans yet';
   list.innerHTML = latest.map(item => {
     const href = item.url ? esc(item.url) : '#';
     const scan = item.last_scanned ? `<span>scanned ${esc(fmtDate(item.last_scanned))}</span>` : '';
-    return `<a class="change-item" href="${href}">
+    const importance = item.importance || 'low';
+    return `<a class="change-item importance-${esc(importance)}" href="${href}">
       <div class="change-meta">
         <span>${esc(fmtDate(item.date))}</span>
         <span>${esc(item.type || 'update')}</span>
+        <span class="importance-pill importance-${esc(importance)}">${esc(importance)}</span>
         ${scan}
       </div>
       <div class="change-project">${esc(item.project || 'Watchlist')}</div>
@@ -140,6 +143,7 @@ Promise.all([
 
 document.querySelector('#search').addEventListener('input', renderBoard);
 document.querySelector('#category').addEventListener('change', renderBoard);
+document.querySelector('#importance')?.addEventListener('change', renderChangelog);
 
 const intakeForm = document.querySelector('#projectIntakeForm');
 const intakeModal = document.querySelector('#intakeModal');

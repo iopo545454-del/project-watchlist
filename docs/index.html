@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260614-scan-debug" />
+  <link rel="stylesheet" href="style.css?v=20260614-importance" />
 </head>
 <body>
   <header>
@@ -23,6 +23,7 @@
   <section class="controls">
     <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, latest changes…" />
     <select id="category"><option value="">All categories</option></select>
+    <select id="importance"><option value="">All importance</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
   </section>
 
   <section class="intake-modal" id="intakeModal" aria-labelledby="intake-title" aria-hidden="true">
@@ -83,6 +84,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=20260614-scan-debug"></script>
+  <script src="app.js?v=20260614-importance"></script>
 </body>
 </html>
