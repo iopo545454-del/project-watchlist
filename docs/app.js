@@ -1,7 +1,6 @@
 let rows = [];
-let sortKey = 'project';
-let sortDir = 1;
-const dataVersion = '20260613-research-log';
+let changes = [];
+const dataVersion = '20260614-board-layout';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -25,66 +24,94 @@ const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
 }[c]));
 
-function render() {
-  const q = document.querySelector('#search').value.toLowerCase();
-  const cat = document.querySelector('#category').value;
-  let data = rows.filter(r => {
-    const blob = JSON.stringify(r).toLowerCase();
-    return (!q || blob.includes(q)) && (!cat || r.category === cat);
-  });
-  data.sort((a, b) => String(a[sortKey] || '').localeCompare(String(b[sortKey] || '')) * sortDir);
-  const tb = document.querySelector('tbody');
-  tb.innerHTML = data.map(r => `<tr><td><a class="project" href="${linkFor(r)}">${esc(r.project)}</a><div class="muted small">${esc(r.slug)}</div></td><td>${esc(r.ticker || '')}</td><td>${r.category ? esc(r.category) : '<span class="muted">TBD</span>'}</td><td>${r.conviction ? esc(r.conviction) : '<span class="muted">TBD</span>'}</td><td>${(r.x_accounts || []).slice(0, 4).map(x => `<a class="pill" href="${esc(x)}">@${esc(x.split('/').pop())}</a>`).join('') || '<span class="muted">—</span>'}</td><td><span class="pill">${esc(r.links_count || 0)} links</span></td><td class="small">${esc((r.last_updated || '').slice(0, 10))}</td></tr>`).join('');
+const sortedChanges = () => [...changes].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+
+function latestChangeFor(projectName) {
+  return sortedChanges().find(c => c.project === projectName) || null;
 }
 
-function renderChangelog(items) {
+function renderChangelog() {
   const list = document.querySelector('#changelog');
   const count = document.querySelector('#changelog-count');
-  const latest = [...items]
-    .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
-    .slice(0, 12);
-  const scans = items.map(x => x.last_scanned || x.date).filter(Boolean).sort();
+  const latest = sortedChanges().slice(0, 20);
+  const scans = changes.map(x => x.last_scanned || x.date).filter(Boolean).sort();
   const mostRecentScan = scans.length ? fmtDate(scans[scans.length - 1]) : '';
-  count.textContent = latest.length ? `${latest.length} recent project updates${mostRecentScan ? ` · last scan ${mostRecentScan}` : ''}` : 'No project scans yet';
+  count.textContent = latest.length ? `${latest.length} latest · scan ${mostRecentScan || '—'}` : 'No scans yet';
   list.innerHTML = latest.map(item => {
-    const url = item.url ? `<a class="change-link" href="${esc(item.url)}">open project</a>` : '';
+    const href = item.url ? esc(item.url) : '#';
     const scan = item.last_scanned ? `<span>scanned ${esc(fmtDate(item.last_scanned))}</span>` : '';
-    return `<article class="change-item">
+    return `<a class="change-item" href="${href}">
       <div class="change-meta">
         <span>${esc(fmtDate(item.date))}</span>
-        <span>${esc(item.project || 'Watchlist')}</span>
         <span>${esc(item.type || 'update')}</span>
         ${scan}
       </div>
+      <div class="change-project">${esc(item.project || 'Watchlist')}</div>
       <div class="change-summary">${esc(item.summary || '')}</div>
-      <div class="change-source">${esc(item.source || '')} ${url}</div>
-    </article>`;
-  }).join('');
+      <div class="change-source">${esc(item.source || '')}</div>
+    </a>`;
+  }).join('') || '<p class="change-empty">No project scans yet.</p>';
 }
 
-fetch(`data/index.json?v=${dataVersion}`)
-  .then(r => r.json())
-  .then(d => {
-    rows = d;
-    document.querySelector('#repoLink').href = repoBase();
-    const cats = [...new Set(rows.map(r => r.category).filter(Boolean))].sort();
-    document.querySelector('#category').innerHTML += [...cats].map(c => `<option>${esc(c)}</option>`).join('');
-    render();
+function renderBoard() {
+  const q = document.querySelector('#search').value.toLowerCase();
+  const cat = document.querySelector('#category').value;
+  const board = document.querySelector('#projectBoard');
+  const count = document.querySelector('#project-count');
+
+  const data = rows.filter(r => {
+    const latest = latestChangeFor(r.project);
+    const blob = JSON.stringify({ ...r, latest }).toLowerCase();
+    return (!q || blob.includes(q)) && (!cat || r.category === cat);
+  }).sort((a, b) => {
+    const ca = latestChangeFor(a.project)?.date || a.last_updated || '';
+    const cb = latestChangeFor(b.project)?.date || b.last_updated || '';
+    return String(cb).localeCompare(String(ca)) || String(a.project || '').localeCompare(String(b.project || ''));
   });
 
-fetch(`data/project-changelog.json?v=${dataVersion}`)
-  .then(r => r.ok ? r.json() : [])
-  .then(renderChangelog)
-  .catch(() => renderChangelog([]));
+  count.textContent = `${data.length}/${rows.length} projects`;
+  board.innerHTML = data.map(r => {
+    const latest = latestChangeFor(r.project);
+    const latestDate = latest?.last_scanned || latest?.date || r.last_updated || '';
+    const latestType = latest?.type || 'scan';
+    const summary = latest?.summary || 'No project-info change logged yet.';
+    const accounts = (r.x_accounts || []).slice(0, 3).map(x => `<span class="pill">@${esc(x.split('/').pop())}</span>`).join('');
+    return `<a class="project-card" href="${esc(linkFor(r))}">
+      <div class="card-topline">
+        <span class="ticker">${esc(r.ticker || r.slug || '')}</span>
+        <span class="card-date">${esc(fmtDate(latestDate))}</span>
+      </div>
+      <h3>${esc(r.project)}</h3>
+      <p class="latest-label">Latest change · ${esc(latestType)}</p>
+      <p class="latest-summary">${esc(summary)}</p>
+      <div class="card-footer">
+        <span>${esc(r.links_count || 0)} sources</span>
+        <span>${esc((r.x_accounts || []).length)} X accts</span>
+      </div>
+      <div class="card-pills">${accounts || '<span class="muted small">No X accounts</span>'}</div>
+    </a>`;
+  }).join('') || '<p class="change-empty">No matching projects.</p>';
+}
 
-document.querySelector('#search').addEventListener('input', render);
-document.querySelector('#category').addEventListener('change', render);
-document.querySelectorAll('th[data-sort]').forEach(th => th.addEventListener('click', () => {
-  const k = th.dataset.sort;
-  if (sortKey === k) sortDir *= -1;
-  else {
-    sortKey = k;
-    sortDir = 1;
-  }
-  render();
-}));
+function renderAll() {
+  renderChangelog();
+  renderBoard();
+}
+
+Promise.all([
+  fetch(`data/index.json?v=${dataVersion}`).then(r => r.json()),
+  fetch(`data/project-changelog.json?v=${dataVersion}`).then(r => r.ok ? r.json() : [])
+]).then(([projectRows, changeRows]) => {
+  rows = projectRows;
+  changes = changeRows;
+  document.querySelector('#repoLink').href = repoBase();
+  const cats = [...new Set(rows.map(r => r.category).filter(Boolean))].sort();
+  document.querySelector('#category').innerHTML += cats.map(c => `<option>${esc(c)}</option>`).join('');
+  renderAll();
+}).catch(err => {
+  document.querySelector('#projectBoard').innerHTML = `<p class="change-empty">Failed to load dashboard data.</p>`;
+  console.error(err);
+});
+
+document.querySelector('#search').addEventListener('input', renderBoard);
+document.querySelector('#category').addEventListener('change', renderBoard);

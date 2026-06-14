@@ -4,49 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260613-research-log" />
+  <link rel="stylesheet" href="style.css?v=20260614-board-layout" />
 </head>
 <body>
   <header>
     <div>
       <p class="eyebrow">Hermes Research</p>
       <h1>Project Watchlist</h1>
-      <p class="sub">Markdown is the source of truth. This dashboard is the readable review layer.</p>
+      <p class="sub">Project-info scans, source changes, and clickable research cards.</p>
     </div>
     <a class="repo" id="repoLink" href="#">GitHub repo</a>
   </header>
+
   <section class="controls">
-    <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, resources…" />
+    <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, latest changes…" />
     <select id="category"><option value="">All categories</option></select>
   </section>
-  <main>
-    <section class="changelog-panel" aria-labelledby="changelog-title">
-      <div class="changelog-head">
+
+  <main class="dashboard-layout">
+    <aside class="changelog-panel" aria-labelledby="changelog-title">
+      <div class="panel-head compact">
         <div>
           <p class="eyebrow">Project research</p>
-          <h2 id="changelog-title">Info change log</h2>
-          <p class="sub mini">Latest project-info changes and the most recent scan timestamp per project.</p>
+          <h2 id="changelog-title">Change log</h2>
+          <p class="sub mini">Latest project-info changes and scan timestamps.</p>
         </div>
         <span class="muted small" id="changelog-count">Loading…</span>
       </div>
       <div id="changelog" class="changelog-list"></div>
-    </section>
+    </aside>
 
-    <table id="watchlist">
-      <thead>
-        <tr>
-          <th data-sort="project">Project</th>
-          <th data-sort="ticker">Ticker</th>
-          <th data-sort="category">Category</th>
-          <th data-sort="conviction">Conviction</th>
-          <th>Key X Accounts</th>
-          <th>Resources</th>
-          <th data-sort="last_updated">Last Scanned</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <section class="board-panel" aria-labelledby="board-title">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Project board</p>
+          <h2 id="board-title">Tracked projects</h2>
+          <p class="sub mini">Click a card to open the project page. Cards show the latest known project-info update.</p>
+        </div>
+        <span class="muted small" id="project-count">Loading…</span>
+      </div>
+      <div id="projectBoard" class="project-board"></div>
+    </section>
   </main>
-  <script src="app.js?v=20260613-research-log"></script>
+
+  <script src="app.js?v=20260614-board-layout"></script>
 </body>
 </html>
