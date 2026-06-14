@@ -1,0 +1,464 @@
+[
+  {
+    "run_id": "20260614-152157",
+    "started_at": "2026-06-14T15:21:57Z",
+    "completed_at": "2026-06-14T15:21:57Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "projects": 1,
+      "changelog_entries": 3,
+      "material_entries": 3,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "initial review",
+        "source": "X/Twitter official/contributor scan + X/Twitter research scan",
+        "url": "projects/15-virtuals.html",
+        "summary": "Initial review upgraded: added sourced investor/market theses, blunt Hermes take, catalyst table, source table, token notes, open questions, and monitoring notes.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2066171168986644821",
+        "summary": "Official weekly update: EconomyOS now lets LLMs trade Virtuals agents, Hyperliquid perps, and HIP-3 markets; ERC-8126 verification standard released; ERC-8183/Agent Payments Protocol highlighted with OKX Wallet/Ethereum Foundation co-authorship.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan + X/Twitter research scan",
+        "url": "projects/15-virtuals.html",
+        "summary": "Added/updated catalysts for EconomyOS trading lanes, ERC-8126, ERC-8183/APP adoption, robotics expansion, and the Genesis/agent-launch flywheel.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260614-111045",
+    "started_at": "2026-06-14T11:10:45Z",
+    "completed_at": "2026-06-14T11:10:45Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "OCT / Octra"
+    ],
+    "counts": {
+      "projects": 1,
+      "changelog_entries": 2,
+      "material_entries": 2,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "OCT / Octra",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/i/status/2066055111952990487",
+        "summary": "Official X: external researcher bug reports/improvement suggestions were implemented; security checks are being finished before node release, HypEVM integration, multi-ecosystem stealth bridge, and HFHE-LLM interface.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "OCT / Octra",
+        "type": "catalyst update",
+        "source": "X/Twitter official reply",
+        "url": "https://x.com/octra/status/2066062632801427841",
+        "summary": "Official reply said listings require the node to be published, making node release a concrete dependency to watch; not a listing announcement.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260614-070220",
+    "started_at": "2026-06-14T07:02:20Z",
+    "completed_at": "2026-06-14T07:02:20Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "META / MetaDAO",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "projects": 2,
+      "changelog_entries": 3,
+      "material_entries": 3,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "type": "initial review",
+        "source": "X/Twitter official/founder scan + docs/app source profile",
+        "url": "projects/03-meta.html",
+        "summary": "Initial review upgraded: added sourced ownership-coin thesis, Hermes take, catalyst table, source table, token/open questions, and monitoring notes.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "catalyst added",
+        "source": "X/Twitter official/founder scan",
+        "url": "https://x.com/MetaDAOProject/status/2065553991639941405",
+        "summary": "Added catalyst tracking for ownership-coin launches, META-039/Ownership Capital, July 2026 Owners Meeting, decision-market positioning, and possible Solana partner distribution.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter core contributor scan",
+        "url": "https://x.com/everythingempty/status/2066002861084028938",
+        "summary": "Core contributor highlighted Virtuals robotics ecosystem and invited humanoid/robotics builders; adds useful AI\u00d7robotics ecosystem signal but no token/economic change found.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260614-025707",
+    "started_at": "2026-06-14T02:57:07Z",
+    "completed_at": "2026-06-14T02:57:07Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "GitlWab / GitLawb / Gitwab",
+      "AKT / Akash",
+      "TAO / Bittensor",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects": 4,
+      "changelog_entries": 5,
+      "material_entries": 5,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "initial review",
+        "source": "X/Twitter official/team scan",
+        "url": "projects/06-gitlawb.html",
+        "summary": "Initial review upgraded: added sourced thesis/Hermes take, catalyst table, source table, token/product open questions, and watch triggers.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "official update",
+        "source": "X/Twitter official/team scan",
+        "url": "https://x.com/gitlawb/status/2065789938889883810",
+        "summary": "Official/team X: GitLawb shipped a fresh Playground UI with ad feeds for non-premium OpenClaude users; ad bid engine is still in progress, and founder says open-source coding-model research/training will resume.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2065945214326628838",
+        "summary": "Official X framed the Anthropic/Fable access restriction as a DeAI catalyst and highlighted Pluralis/Agora decentralized 8B training on consumer GPUs, reinforcing Akash's open compute narrative.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/opentensor/status/2065794557032165849",
+        "summary": "Official X used the Anthropic/Fable restriction to restate Bittensor's open, decentralized, permissionless AI thesis; useful narrative catalyst but no protocol parameter change found.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2065836751558443154",
+        "summary": "Official X tied AI-access restrictions to NEAR's sovereignty/agent narrative and separately promoted Chain Signatures as single-account cross-chain execution infrastructure.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260614-023023",
+    "started_at": "2026-06-14T02:30:23Z",
+    "completed_at": "2026-06-14T02:30:23Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "GEOD / GEODNET"
+    ],
+    "counts": {
+      "projects": 1,
+      "changelog_entries": 1,
+      "material_entries": 1,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GEOD / GEODNET",
+        "type": "official update",
+        "source": "X/Twitter official/team scan + official site/docs check",
+        "url": "projects/02-geod.html",
+        "summary": "Practice scan: official X highlighted GEO-PULSE product/order messaging and GEO-SWARM drone-in-a-box Kickstarter preparation; dossier categories normalized from Overview into separate sections.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260614-021357",
+    "started_at": "2026-06-14T02:13:57Z",
+    "completed_at": "2026-06-14T02:13:57Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "AEON Framework"
+    ],
+    "counts": {
+      "projects": 1,
+      "changelog_entries": 1,
+      "material_entries": 1,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "AEON Framework",
+        "type": "correction",
+        "source": "user correction + official X/website/DexScreener verification",
+        "url": "projects/05-aeon.html",
+        "summary": "Corrected AEON tracking target to AEON Framework / @aeonframework and Base token 0xBf8E\u2026aba3; removed AEON.XYZ/AeonCoin assumptions.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
+    "run_id": "20260613-211515",
+    "started_at": "2026-06-13T21:15:15Z",
+    "completed_at": "2026-06-13T21:15:15Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "POD / Dolphin POD",
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA \u2014 Macrocosmos Bittensor Subnet 9",
+      "Targon \u2014 Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol"
+    ],
+    "counts": {
+      "projects": 19,
+      "changelog_entries": 19,
+      "material_entries": 0,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "POD / Dolphin POD",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/01-pod.html",
+        "summary": "Project profile scanned/updated: 6 tracked sources, 4 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/02-geod.html",
+        "summary": "Project profile scanned/updated: 14 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/03-meta.html",
+        "summary": "Project profile scanned/updated: 7 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/04-bankr.html",
+        "summary": "Project profile scanned/updated: 8 tracked sources, 4 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/06-gitlawb.html",
+        "summary": "Project profile scanned/updated: 10 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "Kinetiq",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/07-kinetiq.html",
+        "summary": "Project profile scanned/updated: 7 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "GRASS",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/08-grass.html",
+        "summary": "Project profile scanned/updated: 6 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "IOTA \u2014 Macrocosmos Bittensor Subnet 9",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/09-iota-sn9.html",
+        "summary": "Project profile scanned/updated: 5 tracked sources, 2 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "Targon \u2014 Bittensor Subnet 4",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/10-targon.html",
+        "summary": "Project profile scanned/updated: 8 tracked sources, 2 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/11-tao-bittensor.html",
+        "summary": "Project profile scanned/updated: 7 tracked sources, 1 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/12-akt-akash.html",
+        "summary": "Project profile scanned/updated: 7 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/13-chip-usdai.html",
+        "summary": "Project profile scanned/updated: 4 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/14-vvv-venice.html",
+        "summary": "Project profile scanned/updated: 7 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/15-virtuals.html",
+        "summary": "Project profile scanned/updated: 10 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/16-worldcoin-wld.html",
+        "summary": "Project profile scanned/updated: 13 tracked sources, 7 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/17-near.html",
+        "summary": "Project profile scanned/updated: 13 tracked sources, 5 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/18-drv-derive.html",
+        "summary": "Project profile scanned/updated: 6 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "OCT / Octra",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/19-octra.html",
+        "summary": "Project profile scanned/updated: 10 tracked sources, 4 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "type": "scan",
+        "source": "watchlist source profile",
+        "url": "projects/20-bio.html",
+        "summary": "Project profile scanned/updated: 8 tracked sources, 3 X accounts.",
+        "decision": "Routine profile scan; kept as scan-state evidence, not Discord-alert material"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  }
+]

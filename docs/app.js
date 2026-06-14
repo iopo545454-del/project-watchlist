@@ -1,6 +1,6 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-social-cleanup';
+const dataVersion = '20260614-scan-debug';
 
 const repoBase = () => {
   const h = location.hostname;
