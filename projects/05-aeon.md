@@ -1,126 +1,119 @@
 ---
 status: reviewed
 watchlist: crypto-projects
-last_updated: 2026-06-14T02:08:32Z
+token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
+chain: Base
+last_updated: 2026-06-14T02:13:57Z
 ---
 
-# AEON.XYZ
+# AEON Framework / aeon
 
 ## Overview
 **Identity**
-- Current target is **AEON.XYZ**: AI/agent payment infrastructure and real-world crypto payments, positioning itself as a settlement layer for verifiable AI transactions and the agentic economy.
-- Official X: https://x.com/AEON_Community. The profile name is **AEON.XYZ** and the bio references `#agenticeconomy`, `#x402`, and backing by https://x.com/yzilabs.
-- Do **not** track legacy AeonCoin sources for this project. That was the bad source contaminating the old page.
-- No official native `$AEON` token / TGE / contract address has been confirmed by @AEON_Community. Treat any tradable `$AEON` contract as unofficial unless the official account or website links it.
+- Correct target is **AEON Framework** / **aeon** at https://x.com/aeonframework, not AEON.XYZ and not legacy AeonCoin.
+- X bio: “The most autonomous agent framework. No approval loops. No babysitting. Configure once, forget forever.”
+- Website: https://www.aeon.fun/ describes AEON as an open-source, MIT-licensed autonomous agent framework with “197 skills” and “zero babysitting.”
+- Token to track: **`$aeon` on Base** at `0xBf8E8f0e8866a7052F948C16508644347c57aba3`.
 
 **Official links**
-- Website: https://aeon.xyz
-- X: https://x.com/AEON_Community
-- Telegram: https://t.me/aeon_xyz
-- Medium: https://medium.com/@www_aeon_xyz
-- Link hub from X profile: https://linktr.ee/aeon.xyz
-- Product pages: https://products.aeon.xyz/AIPayment, https://products.aeon.xyz/aeonPay, https://products.aeon.xyz/aeonCheckout
-- Docs: https://aeon-xyz.readme.io/docs/quick-start-1
-- Whitepaper/docs: https://web3-revolution.gitbook.io/aeon-whitepaper
-- GitHub: https://github.com/AEON-Project/bnb-x402/
+- X: https://x.com/aeonframework
+- Website: https://www.aeon.fun/
+- GitHub/source: https://github.com/aaronjmars/aeon
+- Telegram: https://t.me/aeon_agent
+- DexScreener: https://dexscreener.com/base/0xBf8E8f0e8866a7052F948C16508644347c57aba3
+- BaseScan token: https://basescan.org/token/0xBf8E8f0e8866a7052F948C16508644347c57aba3
+
+**Token / market context**
+- Chain: **Base**.
+- Contract: `0xBf8E8f0e8866a7052F948C16508644347c57aba3`.
+- DexScreener identifies the token as `aeon` / `aeon` and links the official website, GitHub, X, and Telegram above.
+- Latest sampled DexScreener snapshot showed roughly **$2.6M market cap**, **$2.9M FDV**, **$1.24M main-pair liquidity**, and **~$89k 24h volume**. Treat these as volatile scan-time values, not durable fundamentals.
 
 **Product / recent positioning**
-- **AEON AI Gateway**: lets AI agents access 1000+ integrations from tools like Cursor/Claude with USDT pay-per-call / micropayment flow; promoted as part of the BNB Chain agent stack.
-- **x402 / agent payments**: AEON is framing itself as an early x402 ecosystem partner for high-frequency micropayments, cross-border settlement, and merchant connectivity.
-- **AEON Pay / real-world payments**: public posts claim AEON Pay had processed 5.7M transactions / $263M volume / 1.81M users by end-2025; latest push includes Argentina Transferencias 3.0 QR payments.
-- **BNB Chain campaign**: AEON extended its BNB Chain Agent Survival Pack rewards through July 8, offering BNB rewards and AI Gateway access.
+- Autonomous agent framework focused on long-running recurring tasks with minimal human approval loops.
+- Website highlights categories such as research, monitoring, PR review/merge, repo scanning, token reports, narrative tracking, digesting, and social-writing workflows.
+- GitHub repo `aaronjmars/aeon` description matches the X bio; repo is MIT licensed and recently active.
+- Recent community narrative from X search points to **STRATEGY.MD** / markdown-configured long-term goals as a key feature to monitor.
 
 **Team/key people**
-- Core team remains relatively non-public from official sources. Main comms should be @AEON_Community plus website/docs/Medium.
-- `alohaleonardox` was previously included as a possible team/builder source, but keep as **unverified / secondary** until official site or official X clearly ties the handle to AEON.XYZ.
-
-**Investors/backers**
-- Official pinned X post says AEON raised **$8M led by YZi Labs**.
-- Other investor names should be treated as secondary until matched to an official AEON post, blog, or press release.
+- GitHub owner/source repo: https://github.com/aaronjmars/aeon.
+- Need follow-up on the full team/contributor map and whether `aaronjmars` is the main founder/builder account to track.
 
 **Data/resources to monitor**
-- @AEON_Community posts and pinned updates.
-- Docs / product pages for AI Gateway, AEON Pay, Checkout, and x402 facilitator changes.
-- GitHub repo activity for `AEON-Project/bnb-x402`.
-- BNB Chain / YZi Labs ecosystem mentions.
-- Any official token/TGE/contract announcement.
+- @aeonframework posts and profile changes.
+- GitHub repo commits/releases/issues: https://github.com/aaronjmars/aeon.
+- Website/blog/docs changes at https://www.aeon.fun/.
+- Token contract / pair data on Base and DexScreener.
+- Telegram announcements at https://t.me/aeon_agent.
 
 **Alert triggers**
-- Official native token, TGE, airdrop, or contract publication.
-- x402 facilitator / AI Gateway partner growth.
-- Merchant/payment expansion such as new countries, rails, or supported tokens.
-- BNB Chain / YZi Labs support, funding, or ecosystem campaign updates.
-- Security/audit reports for payment/facilitator contracts.
+- New releases, docs, skills, or framework architecture changes.
+- STRATEGY.MD / autonomous-goal feature updates.
+- Token contract migration, liquidity changes, CEX/DEX listings, or official tokenomics/unlock details.
+- New high-signal integrations, agents built on AEON, or ecosystem entrants using the framework.
+- Security issues, exploit reports, repo archival, or maintainer changes.
 
 **Sources / Research Inputs**
 
 | Information source | Context about the source |
 |---|---|
-| https://x.com/AEON_Community | Official AEON.XYZ X account; primary source for project updates. |
-| https://aeon.xyz | Official website; exposes X, Telegram, Medium, product/docs links in frontend bundle. |
-| https://t.me/aeon_xyz | Official Telegram linked from the website. |
-| https://medium.com/@www_aeon_xyz | Official Medium linked from the website. |
-| https://linktr.ee/aeon.xyz | Link hub shown on official X profile. |
-| https://aeon-xyz.readme.io/docs/quick-start-1 | Developer docs / quick start. |
-| https://web3-revolution.gitbook.io/aeon-whitepaper | Whitepaper/docs linked from website bundle. |
-| https://github.com/AEON-Project/bnb-x402/ | AEON x402 / BNB GitHub repo. |
-| https://products.aeon.xyz/AIPayment | Product page for AI Payment / Gateway. |
-| https://products.aeon.xyz/aeonPay | Product page for AEON Pay. |
-| https://products.aeon.xyz/aeonCheckout | Product page for AEON Checkout. |
-| https://x.com/yzilabs | Backer referenced by official AEON pinned post. |
-| https://x.com/BNBCHAIN | Ecosystem partner/campaign source. |
+| https://x.com/aeonframework | Official X account; primary project announcements and narrative source. |
+| https://www.aeon.fun/ | Official website; product positioning, skills/categories, docs/source links. |
+| https://github.com/aaronjmars/aeon | Official source repo linked from website/DexScreener; MIT-licensed autonomous agent framework. |
+| https://t.me/aeon_agent | Telegram linked by DexScreener/project socials. |
+| `0xBf8E8f0e8866a7052F948C16508644347c57aba3` | Official `$aeon` token contract on Base to track. |
+| https://dexscreener.com/base/0xBf8E8f0e8866a7052F948C16508644347c57aba3 | Token/pair/liquidity/market-data view. |
+| https://basescan.org/token/0xBf8E8f0e8866a7052F948C16508644347c57aba3 | Base token explorer page; holders/transfers/contract verification checks. |
 
 ---
 
 ## Thesis
-- AEON.XYZ is a payments-infra bet on AI agents needing cheap, verifiable, high-frequency settlement and merchant/payment rails.
-- Most relevant near-term narrative is **x402 + agentic payments + real-world crypto spend**, not a confirmed token trade.
+- AEON is a Base AI-agent/infrastructure token tied to an open-source autonomous agent framework.
+- The core narrative is **autonomous agents that run configured recurring workflows without approval loops**, plus a low-cap Base AI token attached to that framework.
 
 ## Team
-- Public team attribution is still thin; prioritize official AEON.XYZ channels over secondary individual accounts.
+- Main source repo owner: https://github.com/aaronjmars.
+- Need more mapping of public builder/core-contributor X accounts.
 
 ## Investors
-- YZi Labs-led $8M round per official pinned X post.
+- None confirmed from the sources checked; do not inherit AEON.XYZ / YZi Labs investor claims.
 
 ## Twitter/X accounts
-- https://x.com/AEON_Community
-- https://x.com/yzilabs
-- https://x.com/BNBCHAIN
+- https://x.com/aeonframework
 
 ## KOLs
-- None confirmed as core KOL sources yet; do not use @AeonCoin.
+- Needs follow-up; X search showed third-party Base/AI-agent community mentions, but keep them secondary unless they surface material project info.
 
 ## Official links
-- https://aeon.xyz
-- https://x.com/AEON_Community
-- https://t.me/aeon_xyz
-- https://medium.com/@www_aeon_xyz
-- https://linktr.ee/aeon.xyz
+- https://www.aeon.fun/
+- https://x.com/aeonframework
+- https://github.com/aaronjmars/aeon
+- https://t.me/aeon_agent
 
 ## Onchain/data resources
-- https://github.com/AEON-Project/bnb-x402/
-- Monitor for official contract/TGE only from official AEON.XYZ sources.
+- Base token contract: `0xBf8E8f0e8866a7052F948C16508644347c57aba3`
+- DexScreener: https://dexscreener.com/base/0xBf8E8f0e8866a7052F948C16508644347c57aba3
+- BaseScan: https://basescan.org/token/0xBf8E8f0e8866a7052F948C16508644347c57aba3
 
 ## Docs/blogs
-- https://aeon-xyz.readme.io/docs/quick-start-1
-- https://web3-revolution.gitbook.io/aeon-whitepaper
-- https://products.aeon.xyz/AIPayment
-- https://products.aeon.xyz/aeonPay
-- https://products.aeon.xyz/aeonCheckout
+- https://www.aeon.fun/
+- https://github.com/aaronjmars/aeon
 
 ## Risks
-- Ticker/name collision: old AeonCoin and unofficial `$AEON` tokens are not official AEON.XYZ unless linked by @AEON_Community / aeon.xyz.
-- Token status unclear; project may remain infrastructure/product-first without a near-term liquid token.
+- Name collision: AEON Framework / `$aeon` is separate from AEON.XYZ and legacy AeonCoin.
+- Low-cap Base token; market-data metrics are volatile and should be rechecked per scan.
+- Need deeper tokenomics / ownership / deployer review before relying on supply, unlock, or insider-allocation assumptions.
 
 ## Open questions
-- Is there an official token plan, airdrop, or TGE timeline?
-- Which AI Gateway integrations are live versus roadmap?
-- What merchant/payment rails are live by country and token?
+- What are exact tokenomics, supply schedule, deployer/owner privileges, and holder concentration?
+- Which features are live in repo versus marketing site claims?
+- Who are the core builders and official secondary accounts?
+- Are there real external users/agents built on AEON beyond community claims?
 
 ## Watch triggers
-- Official token/TGE/contract details.
-- x402 facilitator launch details, audited contracts, or usage metrics.
-- New BNB Chain/YZi Labs ecosystem campaigns.
-- Expansion in real-world payment rails or merchant coverage.
+- Official launch/release notes and STRATEGY.MD updates.
+- GitHub commits/releases and new skills/categories.
+- Contract ownership/liquidity/holder concentration changes.
+- Major third-party integrations or serious public security issues.
 
 ---
