@@ -10,7 +10,7 @@ last_updated: 2026-06-14T02:08:32Z
 **Identity**
 - Current target is **AEON.XYZ**: AI/agent payment infrastructure and real-world crypto payments, positioning itself as a settlement layer for verifiable AI transactions and the agentic economy.
 - Official X: https://x.com/AEON_Community. The profile name is **AEON.XYZ** and the bio references `#agenticeconomy`, `#x402`, and backing by https://x.com/yzilabs.
-- Do **not** track https://x.com/AeonCoin for this project. That account is unrelated legacy/personal AeonCoin activity and was the bad source contaminating the old page.
+- Do **not** track legacy AeonCoin sources for this project. That was the bad source contaminating the old page.
 - No official native `$AEON` token / TGE / contract address has been confirmed by @AEON_Community. Treat any tradable `$AEON` contract as unofficial unless the official account or website links it.
 
 **Official links**
