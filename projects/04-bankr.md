@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-14T19:25:19Z
 ---
 
 # BANKR / BankrCoin
@@ -52,8 +52,18 @@ last_updated: 2026-06-13T21:15:15Z
 
 ---
 
+## Latest scan notes
+
+- 2026-06-14 — Official `@bankrbot` announced that Bankr x402 Cloud endpoints can now accept payment in any coin, positioning arbitrary tokens as payment rails for agents. Core builder `@0xDeployer` quote-posted it as “new utility unlocked,” and DevRel/team account `@saltorious1` amplified “Put your ecosystem tokens to work.” Source: https://x.com/bankrbot/status/2066182283380589020
+
 ## Thesis
 - TBD / needs follow-up.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| x402 Cloud multi-token payments | Confirmed | Official X says users can accept payment in any coin when creating a Bankr x402 endpoint: https://x.com/bankrbot/status/2066182283380589020 | Live as of 2026-06-14 | Expands Bankr from natural-language execution/launch tooling into agent payment endpoints that can settle in arbitrary tokens | Could make ecosystem tokens more useful as agent/service payment rails and improve Bankr’s relevance to x402/agent-commerce narratives | Watch docs.bankr.bot and bankr.bot/x402 for fee routing, supported chains/tokens, endpoint volume, and whether BNKR captures value |
 
 ## Team
 - TBD / needs follow-up.

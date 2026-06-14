@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-14T11:10:45Z
+last_updated: 2026-06-14T19:25:19Z
 ---
 
 # OCT / Octra
@@ -53,6 +53,7 @@ last_updated: 2026-06-14T11:10:45Z
 
 - 2026-06-14 — Official X said external researchers submitted credible bug reports/improvement suggestions; fixes have been implemented and will be published separately. Octra says it is finishing essential security checks before returning to a product release schedule that includes node release, HypEVM integration, multi-ecosystem stealth bridge, and HFHE-LLM interface. Source: https://x.com/i/status/2066055111952990487
 - 2026-06-14 — In a follow-up on listings, official X replied that “all listings require the node to be published, so it’s related.” Treat this as a useful dependency signal, not a listing announcement. Source: https://x.com/octra/status/2066062632801427841
+- 2026-06-14 — Co-founder `@lambda0xE` posted a mini-roadmap after the security-work pause: migration to a new TAPE verifier next week, expanded Circle/app-launchpad functionality, faster open LLM Circle/on-chain inference, Sepolia/Octra devnet private transaction example, stealth bridge update, lite node/container expected within two weeks, and a mini-paper. Source: https://x.com/lambda0xE/status/2066228923357139270
 
 ## Thesis
 - TBD / needs follow-up.
@@ -65,6 +66,8 @@ last_updated: 2026-06-14T11:10:45Z
 | Node release | Confirmed | Official X lists “node release” as first item when regular product release schedule resumes: https://x.com/i/status/2066055111952990487 | After essential security updates/checks; exact date unknown | Lets external operators participate and is positioned as prerequisite infrastructure | Official reply says listings require the node to be published, so node release could unlock exchange/listing conversations | Watch node binaries/repos/docs, Octrascan network metrics, and official listing language |
 | HypEVM integration + multi-ecosystem stealth bridge | Confirmed | Official X roadmap list includes HypEVM integration and multi-ecosystem stealth bridge: https://x.com/i/status/2066055111952990487 | Unknown / after security-check phase | Expands Octra privacy/encrypted-compute reach beyond its own ecosystem | Could create cross-chain privacy narrative and liquidity/bridge monitoring needs | Watch docs, bridge UI, contracts, supported chains, and wallet warnings |
 | HFHE-LLM interface | Confirmed | Official X roadmap list includes HFHE-LLM interface: https://x.com/i/status/2066055111952990487 | Unknown / after security-check phase | Connects Octra’s FHE/privacy stack to AI/LLM interfaces | Could pull Octra into private-AI/encrypted-inference narratives if a usable demo ships | Watch demos, docs, GitHub, and external developer usage |
+| TAPE verifier / CT-format migration | Confirmed | Co-founder mini-roadmap says Octra is moving to a new TAPE verifier natively supported by HFHE, with client-side CT-format migration via one transaction: https://x.com/lambda0xE/status/2066228923357139270 | Next week / near-term | Faster heavy transactions and higher security for encrypted compute flows | Migration friction or bugs could affect user confidence; successful upgrade strengthens technical credibility ahead of node/listing milestones | Watch official migration instructions, wallet prompts, docs/GitHub release notes, and any warnings about manual re-encryption |
+| Circle app launchpad + encrypted inference | Confirmed | Co-founder says expanded Circle functionality, in-network app launchpad, faster open LLM Circle, EVM Sepolia/Octra devnet private tx example, stealth bridge update, lite node/container within two weeks, and mini-paper are coming: https://x.com/lambda0xE/status/2066228923357139270 | Staged over next ~2 weeks / exact sequence unknown | Gives developers a clearer path to deploy private apps, encrypted inference, bridge flows, and nodes | Could turn Octra from infra narrative into usable developer platform if docs and demos are reproducible | Watch launchpad access, lite-node container, mini-paper, devnet examples, and third-party apps/circles |
 
 ## Team
 - TBD / needs follow-up.

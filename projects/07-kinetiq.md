@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-14T19:25:19Z
 ---
 
 # Kinetiq
@@ -59,8 +59,18 @@ last_updated: 2026-06-13T21:15:15Z
 
 Target delivery channel for future alerts/recaps: `discord:1508537087992004778` with `@here`.
 
+## Latest scan notes
+
+- 2026-06-14 — Related Markets.xyz growth/community account `@VikingoDigital_` posted an airdrop-farming thread saying Kinetiq Season 2 `$KNTQ` is confirmed, with final snapshot September 29 and distribution October 1, and that trading on Markets.xyz earns kPoints while also potentially positioning for Hyperliquid/trade.xyz rewards. No matching official `@Kinetiq_xyz` / `@KinetiqFND` confirmation appeared in this scan window, so keep as a related-account weak signal until verified from Kinetiq sources. Source: https://x.com/VikingoDigital_/status/2066215140152815998
+
 ## Thesis
 - TBD / needs follow-up.
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|
+| 2026-06-14 | Kinetiq Season 2 `$KNTQ` airdrop has final snapshot on 2026-09-29 and distribution on 2026-10-01; Markets.xyz trading earns kPoints tied to the airdrop. | https://x.com/VikingoDigital_/status/2066215140152815998 (`related account` / Markets.xyz growth-community account) | Medium | Unverified | If confirmed, gives a concrete token-distribution catalyst and explains why Markets.xyz activity may matter to Kinetiq flows. | Re-check `@Kinetiq_xyz`, `@KinetiqFND`, Kinetiq blog/docs/app, and Markets.xyz official posts for the same dates and rules. |
 
 ## Team
 - TBD / needs follow-up.
