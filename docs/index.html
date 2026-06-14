@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260614-discrete-intake" />
+  <link rel="stylesheet" href="style.css?v=20260614-external-participants" />
 </head>
 <body>
   <header>
@@ -79,9 +79,21 @@
         <span class="muted small" id="project-count">Loading…</span>
       </div>
       <div id="projectBoard" class="project-board"></div>
+
+      <div class="external-panel" aria-labelledby="external-title">
+        <div class="panel-head compact">
+          <div>
+            <p class="eyebrow">Non-official accounts</p>
+            <h2 id="external-title">External participants</h2>
+            <p class="sub mini">Curated outside investors/commentators to scan against tracked projects.</p>
+          </div>
+          <span class="muted small" id="external-count">Loading…</span>
+        </div>
+        <div id="externalAccounts" class="external-list"></div>
+      </div>
     </section>
   </main>
 
-  <script src="app.js?v=20260614-discrete-intake"></script>
+  <script src="app.js?v=20260614-external-participants"></script>
 </body>
 </html>

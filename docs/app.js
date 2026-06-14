@@ -1,6 +1,8 @@
 let rows = [];
 let changes = [];
-const dataVersion = '20260614-discrete-intake';
+let externalAccounts = [];
+let externalMentions = [];
+const dataVersion = '20260614-external-participants';
 
 const repoBase = () => {
   const h = location.hostname;
@@ -118,17 +120,52 @@ function renderBoard() {
   }).join('') || '<p class="change-empty">No matching projects.</p>';
 }
 
+function renderExternalAccounts() {
+  const list = document.querySelector('#externalAccounts');
+  const count = document.querySelector('#external-count');
+  if (!list || !count) return;
+  const q = document.querySelector('#search').value.toLowerCase();
+  const mentionCounts = externalMentions.reduce((acc, item) => {
+    const handle = String(item.handle || '').replace(/^@/, '');
+    if (!handle) return acc;
+    acc[handle.toLowerCase()] = (acc[handle.toLowerCase()] || 0) + 1;
+    return acc;
+  }, {});
+  const data = externalAccounts.filter(a => {
+    const blob = JSON.stringify(a).toLowerCase();
+    return !q || blob.includes(q);
+  }).sort((a, b) => String(a.handle || '').localeCompare(String(b.handle || '')));
+  count.textContent = `${data.length}/${externalAccounts.length} accounts`;
+  list.innerHTML = data.map(a => {
+    const handle = String(a.handle || '').replace(/^@/, '');
+    const mentions = mentionCounts[handle.toLowerCase()] || 0;
+    return `<a class="external-account" href="https://x.com/${esc(handle)}" target="_blank" rel="noopener">
+      <div>
+        <strong>@${esc(handle)}</strong>
+        <span>${esc(a.label || 'external account')}</span>
+      </div>
+      <p>${esc(a.notes || '')}</p>
+      <small>${esc(mentions)} saved project mention${mentions === 1 ? '' : 's'}</small>
+    </a>`;
+  }).join('') || '<p class="change-empty">No matching external accounts.</p>';
+}
+
 function renderAll() {
   renderChangelog();
   renderBoard();
+  renderExternalAccounts();
 }
 
 Promise.all([
   fetch(`data/index.json?v=${dataVersion}`).then(r => r.json()),
-  fetch(`data/project-changelog.json?v=${dataVersion}`).then(r => r.ok ? r.json() : [])
-]).then(([projectRows, changeRows]) => {
+  fetch(`data/project-changelog.json?v=${dataVersion}`).then(r => r.ok ? r.json() : []),
+  fetch(`data/external-accounts.json?v=${dataVersion}`).then(r => r.ok ? r.json() : []),
+  fetch(`data/external-mentions.json?v=${dataVersion}`).then(r => r.ok ? r.json() : [])
+]).then(([projectRows, changeRows, accountRows, mentionRows]) => {
   rows = projectRows;
   changes = changeRows;
+  externalAccounts = accountRows;
+  externalMentions = mentionRows;
   document.querySelector('#repoLink').href = repoBase();
   const cats = [...new Set(rows.map(r => r.category).filter(Boolean))].sort();
   document.querySelector('#category').innerHTML += cats.map(c => `<option>${esc(c)}</option>`).join('');
@@ -138,8 +175,8 @@ Promise.all([
   console.error(err);
 });
 
-document.querySelector('#search').addEventListener('input', renderBoard);
-document.querySelector('#category').addEventListener('change', renderBoard);
+document.querySelector('#search').addEventListener('input', renderAll);
+document.querySelector('#category').addEventListener('change', renderAll);
 
 const intakeForm = document.querySelector('#projectIntakeForm');
 const intakeModal = document.querySelector('#intakeModal');
