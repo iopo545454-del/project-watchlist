@@ -43,7 +43,51 @@ Ignore or keep out of the changelog unless explicitly requested:
 - Generic bullish/bearish CT takes.
 - Duplicate reposts or quote-tweet chains.
 - Community engagement farming.
-- Unverified rumors, unless clearly marked as unverified and important enough to track as an open question.
+- Unverified rumors that are not tied to a plausible source, project-relevant account, terminal/news item, or concrete evidence.
+
+## Rumor, speculation, and weak-signal tracking
+
+The watchlist should not discard every unconfirmed item. It should track credible weak signals separately from confirmed project facts so they can be verified over time.
+
+Use an **Unverified Watch Items** section in the relevant `projects/*.md` dossier when a claim is project-relevant but not confirmed enough to become durable context.
+
+Track a weak signal if it meets at least one condition:
+
+- Mentioned by an account plausibly related to the project, ecosystem, team, investors, market structure, listing venue, or integration partner.
+- Comes from a credible news terminal, research feed, exchange/listing monitor, governance/forum post, GitHub issue/PR, or onchain/data anomaly.
+- Is repeatedly mentioned by independent high-signal accounts with specific details.
+- Contains verifiable handles, dates, contracts, transaction hashes, proposal IDs, screenshots, docs links, job posts, repository activity, or other evidence.
+- Could become material if confirmed: listing, partnership, token unlock/buyback, acquisition, funding, security issue, migration, roadmap shift, legal/regulatory issue, or team change.
+
+Do **not** track weak signals that are only vague price calls, engagement bait, copy-pasted CT rumors, anonymous claims with no project-specific details, or claims already disproven.
+
+Each unverified watch item should include:
+
+- `date_seen`
+- `claim`
+- `source_url`
+- `source_type` such as `related account`, `random X account`, `news terminal`, `governance`, `onchain`, `GitHub`, or `community`
+- `credibility` as `low`, `medium`, or `high`
+- `verification_status` as `unverified`, `partially supported`, `confirmed`, `stale`, or `disproven`
+- `why_it_matters`
+- `next_check` or what evidence would confirm/disprove it
+
+Example:
+
+```md
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|
+| 2026-06-14 | Rumor that PROJECT may announce an exchange listing | https://x.com/example/status/123 | Medium | Unverified | Would be material if confirmed by official account or exchange | Re-check official X/blog and exchange announcements next scan |
+```
+
+Escalation rules:
+
+- If confirmed, move the information into the main dossier section and add a changelog entry as an `official update`, `listing`, `partnership`, etc.
+- If partially supported, keep it in Unverified Watch Items and update the status/evidence.
+- If stale or disproven, mark it as such; do not keep re-alerting on it.
+- Discord alerts for weak signals should be rare and clearly labeled `UNVERIFIED`; use them only when the source/evidence is high-signal enough that the user would want to know before confirmation.
 
 ## Recurring scan workflow
 
@@ -54,12 +98,14 @@ Every autonomous monitoring run should:
 3. Use each project's `primary_x`, `x_accounts`, source list, token address, and dossier links to define the scan scope.
 4. Prioritize official sources, team/core-contributor X accounts, docs/blogs, GitHub/governance/forum, and relevant data dashboards.
 5. Look back roughly to the prior scan timestamp; if missing, use the latest relevant changelog/index timestamp as the baseline.
-6. Apply the materiality threshold before editing files or alerting Discord.
-7. Add or update durable findings in the relevant `projects/*.md` dossier.
-8. Update `docs/data/project-changelog.json` with scan timestamps and material changes.
-9. Update indexes and generated project pages when metadata, links, or displayed content change.
-10. Validate JSON and inspect the diff before committing.
-11. Commit and push real changes to `main`.
+6. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
+7. Apply the materiality threshold before editing files or alerting Discord.
+8. Add confirmed durable findings in the relevant `projects/*.md` dossier.
+9. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
+10. Update `docs/data/project-changelog.json` with scan timestamps, material changes, and rare high-signal unverified watch items when useful.
+11. Update indexes and generated project pages when metadata, links, or displayed content change.
+12. Validate JSON and inspect the diff before committing.
+13. Commit and push real changes to `main`.
 
 If no material change exists, the run should update scan state only when useful and otherwise stay quiet.
 
@@ -98,7 +144,7 @@ Each dossier should include a source table in this shape:
 {
   "date": "ISO-8601 UTC timestamp",
   "project": "Project display name",
-  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | thesis update",
+  "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | thesis update | unverified watch item | verification update | rumor disproven",
   "summary": "Concise summary of what changed or what was checked",
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
   "url": "projects/<slug>.html or direct source URL when useful",
