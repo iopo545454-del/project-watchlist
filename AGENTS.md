@@ -9,8 +9,6 @@ This repository is a source-of-truth research dashboard for monitored crypto/pro
 - `docs/` is the GitHub Pages presentation layer.
 - `docs/data/index.json` powers the dashboard project list.
 - `docs/data/project-changelog.json` powers the dashboard changelog and scan history.
-- `docs/data/external-accounts.json` is the simple curated registry of non-official X/Twitter participants to watch across projects. Keep it flat: `handle`, `label`, `notes`.
-- `docs/data/external-mentions.json` is the simple evidence log for project-relevant posts by those non-official accounts. Keep it flat: `project`, `handle`, `date`, `url`, `summary`.
 - Generated HTML in `docs/projects/*.html` should reflect the Markdown dossiers, not replace them as the source of truth.
 - Project detail pages should use a large, scrollable **Latest** panel in the hero area instead of compact ticker/last-updated metadata cards. Do **not** show the old compact `Ticker` / `Last updated` card in generated HTML.
 - The **Latest** panel is the rawest/highest-signal analysis feed for the project. Add entries whenever a scan surfaces relevant information: a useful tweet/thread, DefiLlama/onchain/dashboard change, official blog/docs update, governance item, token/buyback/unlock change, product release, partner/investor signal, or credible weak signal. This is the bread-and-butter scan record; it can be rougher and more source-proximate than polished dossier sections, but every item should include source/context and why it matters.
@@ -26,18 +24,6 @@ Use this order when researching or monitoring a project:
 5. Third-party research only when the source is clear and useful; label it as third-party context.
 
 Do not treat price chatter, generic community replies, unsourced claims, reposts, or engagement bait as durable project information.
-
-## External participant tracking
-
-The user is especially interested in non-official accounts because they are harder to compile than official/team sources. Keep this layer lightweight:
-
-- Treat `docs/data/external-accounts.json` as the curated account registry. Do not over-model it; use only `handle`, `label`, and `notes` unless the user explicitly asks for more fields.
-- Treat `docs/data/external-mentions.json` as the evidence log. Add one flat object per useful project mention: `project`, `handle`, `date`, `url`, and `summary`.
-- During scans, search seeded external accounts against tracked project names, tickers, token names, and important aliases when time/tool budget allows.
-- Log mentions only when the account adds useful outside signal: thesis, original research, market-structure context, catalyst hints, tokenomics/unlock/buyback commentary, technical/category framing, or early cross-project attention.
-- Do not log generic price calls, engagement bait, obvious shills, copy-paste CA posts, or casual mentions with no insight.
-- Do not automatically promote external commentary into official facts. Use it as outside context, thesis material, or an unverified watch item if it meets the weak-signal standard.
-- Keep Discord quiet unless the external mention is materially high-signal by itself.
 
 ## Materiality threshold
 
@@ -115,15 +101,14 @@ Every autonomous monitoring run should:
 4. Prioritize official sources, team/core-contributor X accounts, docs/blogs, GitHub/governance/forum, and relevant data dashboards.
 5. Look back roughly to the prior scan timestamp; if missing, use the latest relevant changelog/index timestamp as the baseline.
 6. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
-7. Check `docs/data/external-accounts.json` seeded non-official accounts against relevant project terms; append useful evidence-backed hits to `docs/data/external-mentions.json` without adding extra schema complexity.
-8. Apply the materiality threshold before editing files or alerting Discord.
-9. Add confirmed durable findings in the relevant `projects/*.md` dossier.
-10. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
-11. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
-12. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
-13. Update indexes, external participant JSON, and generated project pages when metadata, links, or displayed content change.
-14. Validate JSON and inspect the diff before committing.
-15. Commit and push real changes to `main`.
+7. Apply the materiality threshold before editing files or alerting Discord.
+8. Add confirmed durable findings in the relevant `projects/*.md` dossier.
+9. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
+10. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
+11. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
+12. Update indexes and generated project pages when metadata, links, or displayed content change.
+13. Validate JSON and inspect the diff before committing.
+14. Commit and push real changes to `main`.
 
 If no material change exists, the run should update scan state only when useful and otherwise stay quiet.
 
