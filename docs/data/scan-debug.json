@@ -1,5 +1,71 @@
 [
   {
+    "run_id": "20260614-192519",
+    "started_at": "2026-06-14T19:25:19Z",
+    "completed_at": "2026-06-14T19:25:19Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline",
+    "scope": "Tracked projects from docs/data/index.json; official/project/team X accounts, source tables, docs/blogs/GitHub/governance/data dashboards where relevant.",
+    "projects_checked": [
+      "BANKR / BankrCoin",
+      "OCT / Octra",
+      "Kinetiq"
+    ],
+    "counts": {
+      "projects": 3,
+      "changelog_entries": 5,
+      "material_entries": 5,
+      "unverified_items": 1
+    },
+    "decision_trail": [
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2066182283380589020",
+        "summary": "Official X: Bankr x402 Cloud endpoints can now accept payment in any coin, turning tokens into payment rails for agents.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "catalyst added",
+        "source": "X/Twitter official scan",
+        "url": "projects/04-bankr.html",
+        "summary": "Added catalyst for x402 Cloud multi-token payments and watch items for fee routing, endpoint usage, supported tokens/chains, and BNKR value capture.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "OCT / Octra",
+        "type": "official update",
+        "source": "X/Twitter co-founder scan",
+        "url": "https://x.com/lambda0xE/status/2066228923357139270",
+        "summary": "Co-founder mini-roadmap: TAPE verifier next week, Circle/app launchpad expansion, faster open LLM Circle, stealth bridge update, lite node/container within two weeks, and mini-paper.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "OCT / Octra",
+        "type": "catalyst update",
+        "source": "X/Twitter co-founder scan",
+        "url": "projects/19-octra.html",
+        "summary": "Added catalyst tracking for TAPE/CT-format migration and Circle launchpad/encrypted-inference rollout, including watch-next criteria for migration docs, lite node, and third-party apps.",
+        "decision": "Logged as material/source-proximate update"
+      },
+      {
+        "project": "Kinetiq",
+        "type": "unverified watch item",
+        "source": "X/Twitter related-account scan",
+        "url": "https://x.com/VikingoDigital_/status/2066215140152815998",
+        "summary": "Related Markets.xyz account claimed KNTQ Season 2 final snapshot is Sep. 29 and distribution Oct. 1; no official Kinetiq confirmation found in-window, so tracked as unverified.",
+        "decision": "Logged as material/source-proximate update"
+      }
+    ],
+    "next_checks": [
+      "Re-check official/team X accounts and source tables on next 4h run.",
+      "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
+      "Keep non-material noise out of Discord; use this debug page for scan visibility."
+    ]
+  },
+  {
     "run_id": "20260614-152157",
     "started_at": "2026-06-14T15:21:57Z",
     "completed_at": "2026-06-14T15:21:57Z",
