@@ -1,6 +1,6 @@
 let runs = [];
 let projects = [];
-const dataVersion = '20260614-scan-debug';
+const dataVersion = '20260614-scan-debug-2';
 
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
 const repoBase = () => {
