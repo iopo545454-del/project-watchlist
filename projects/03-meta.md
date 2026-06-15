@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-14T07:02:20Z
+last_updated: 2026-06-15T03:46:40Z
 ---
 
 # META / MetaDAO
@@ -101,6 +101,7 @@ last_updated: 2026-06-14T07:02:20Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-15 | Related MetaDAO account `@0xSrMessi` flagged percolator-meta GitHub issues around permissionless `init`, target-coin squatting with bad parameters, and residual fee defaulting/allowing 0 bps; needs maintainer confirmation. | https://x.com/i/status/2066338574706852142 | Medium | Unverified | If accurate, initialization/fee-parameter issues could affect MetaDAO-adjacent market infrastructure and trusted launch/ownership-coin mechanics. | Check the referenced GitHub issues/maintainer replies from `@toly`/repo maintainers and whether patches or docs clarify intended 0% fee behavior. |
 | 2026-06-14 | Paradigm/Colosseum ownership/backing is referenced in official positioning, but exact ownership terms and active support level are not fully documented in this dossier. | https://x.com/MetaDAOProject | Medium | Partially supported | Backer quality is a core legitimacy input for the thesis. | Look for official fund announcement, cap table/raise post, podcast, or founder explanation of owner/backer roles. |
 
 ## Watch Triggers
