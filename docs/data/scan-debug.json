@@ -1,5 +1,155 @@
 [
   {
+    "run_id": "20260615-202558",
+    "started_at": "2026-06-15T20:25:58Z",
+    "completed_at": "2026-06-15T20:25:58Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-15T16:22:32Z to 2026-06-15T20:25:58Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/integration/items, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "AEON Framework",
+      "AKT / Akash",
+      "Ambient",
+      "CHIP / USD.AI",
+      "GEOD / GEODNET",
+      "Kinetiq",
+      "META / MetaDAO",
+      "NEAR Protocol",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 10,
+      "material_entries": 9,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Ambient",
+        "type": "official update",
+        "source": "X/Twitter official + CEO scan",
+        "url": "https://x.com/i/status/2066565401593659724",
+        "summary": "Official/CEO thread launched Ambient Desktop for Mac/Windows/Linux with local model orchestration/miner, subscription plans, x402 support, and claimed 13.2B inference tokens served in a day via OpenRouter.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "AEON Framework",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2066616325611405483",
+        "summary": "Official X launched Skill Packs for one-click community skill downloads and announced a Robinhood MCP integration so aeon agents can trade, research, and rebalance through Robinhood.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "catalyst update",
+        "source": "X/Twitter related-account governance recap",
+        "url": "https://x.com/ownershipfm/status/2066591644430836075",
+        "summary": "Ownership FM recapped passed MetaDAO proposal incubating Ownership Capital: $2M USDC treasury seed, activist mandate for MetaDAO raises/tokens, and 3-of-4 multisig governance.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "catalyst update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/0xOmnia/status/2066564897454825638",
+        "summary": "Team account highlighted Markets.xyz/perps subdeployer mechanics where kmHYPE and sKNTQ earn 10% of deployer revenue, programmatically used to buy HYPE/KNTQ for stakers; also noted Pendle yield opportunity for kHYPE/vkHYPE.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2066593476322500908",
+        "summary": "Official X said Kimi 2.7 is available on AkashML/OpenRouter for connected Claude Code users, positioning Akash as open compute for agentic coding models.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2066611721234772415",
+        "summary": "USDAI said it is working with Hydra Host after Hydra's $100M Series A to connect GPU sourcing with asset-backed financing for AI factory deployment; also posted broad hiring tied to a $1B compute-financing goal.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/worldnetwork/status/2066572868071342207",
+        "summary": "World Network announced/boosted Thirty Seconds to Mars tour ticketing with World ID verification for humans-only tickets and verified-human perks, a real-world proof-of-humanity integration.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2066563545287065678",
+        "summary": "Official X showcased an Eastworlds/Unitree G1 robot autonomously picking up a bottle with a model trained for about $200 of compute, reinforcing Virtuals' physical-agent/robotics track.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2066586545788756313",
+        "summary": "Official X highlighted verifiable/private inference coming to Venice, Abound, Bermuda, Brave and others, plus rising confidential TVL on NEAR Intents; useful AI/privacy adoption signal.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/GEODNET/status/2066598058540793900",
+        "summary": "Official X reiterated GEODNET's miner-built RTK network and cm-level positioning rails for autonomous robots/drones; no new token, product-release, or partnership detail found.",
+        "decision": "Logged to changelog and project Latest notes because it met the source-priority/materiality threshold for project information; X/Twitter source summary, not independent verification unless stated."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included here only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "Verify Ambient Desktop/API usage claims with dashboards, GitHub releases, OpenRouter/API evidence, and miner docs.",
+      "Watch MetaDAO Ownership Capital operational setup and any treasury/multisig execution evidence.",
+      "Track Kinetiq/Markets revenue-sharing mechanics, sKNTQ/kmHYPE buyback evidence, and official KNTQ Season 2 confirmation.",
+      "Track AEON Robinhood MCP and Skill Packs adoption/repo evidence; watch for tokenomics/value-capture details."
+    ],
+    "notes": "Changelog importance labeling delegated to an independent tagger after scanner edits. X/Twitter observations are source summaries; no high-signal unverified rumor was added this run."
+  },
+  {
     "run_id": "20260615-162232",
     "started_at": "2026-06-15T16:22:32Z",
     "completed_at": "2026-06-15T16:22:32Z",

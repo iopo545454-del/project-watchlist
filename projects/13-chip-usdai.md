@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # CHIP / USD.AI
@@ -12,6 +12,10 @@ last_updated: 2026-06-13T21:15:15Z
 - Governance/token: `CHIP`.
 - Thesis: on-chain credit market for AI compute/GPU financing; “interest rate of AI.”
 - Builder: Permian Labs.
+
+## Latest scan notes
+
+- 2026-06-15 — USDAI said it is working with Hydra Host after Hydra’s $100M Series A to connect GPU sourcing with asset-backed financing for AI factory deployment; also posted broad hiring tied to a $1B compute-financing goal. Source: https://x.com/USDai_Official/status/2066611721234772415
 
 ## Thesis
 - TBD / needs follow-up.

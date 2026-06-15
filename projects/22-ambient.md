@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-14T23:31:17Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-06-15 — Official/CEO thread launched Ambient Desktop for Mac/Windows/Linux, subscription plans and x402 support, while claiming a 13.2B-token daily inference record via OpenRouter; usage numbers still need independent verification. Source: https://x.com/i/status/2066565401593659724
 - 2026-06-14 — Intake issue #2 added Ambient to the dashboard and initial review found official website/docs/litepaper, testnet/app, verified-inference pages, funding announcement, and CEO thesis/status posts. Source: https://github.com/iopo545454-del/project-watchlist/issues/2
 - 2026-06-14 — CEO `@IridiumEagle` claimed Ambient testnet is serving billions of tokens per day and is available through the app/OpenRouter; logged as a project/CEO claim to verify externally, not a durable usage fact. Source: https://x.com/IridiumEagle/status/2065922292975288754
 

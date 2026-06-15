@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-14T02:30:23Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # GEOD / GEODNET
@@ -10,6 +10,10 @@ last_updated: 2026-06-14T02:30:23Z
 - GEODNET is a DePIN network for centimeter-level RTK/GNSS positioning, targeting robotics, drones, agriculture, construction, autonomous systems, and “physical AI.”
 - Token: `$GEOD`.
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
+
+## Latest scan notes
+
+- 2026-06-15 — Official X reiterated GEODNET as miner-built RTK rails for cm-level autonomous robots/drones; useful positioning but no new token/product/partnership detail. Source: https://x.com/GEODNET/status/2066598058540793900
 
 ## Thesis
 - GEODNET is positioned as location infrastructure for physical AI: robots, drones, mapping tools, and autonomous systems need reliable centimeter-level positioning; see the official site/docs for the RTK/GNSS positioning claim: https://geodnet.com/ and https://docs.geodnet.com/.

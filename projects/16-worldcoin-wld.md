@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -52,6 +52,10 @@ last_updated: 2026-06-13T21:15:15Z
 **Notes/ambiguities**
 - Brand naming can be confusing: Worldcoin, World Network, World Foundation, Tools for Humanity and World Chain are distinct but linked.
 - Always distinguish equity funding in TFH from WLD token sales/purchases.
+
+## Latest scan notes
+
+- 2026-06-15 — World Network announced/boosted Thirty Seconds to Mars tour ticketing with World ID verification for humans-only tickets and verified-human perks. Source: https://x.com/worldnetwork/status/2066572868071342207
 
 ## Thesis
 - TBD / needs follow-up.

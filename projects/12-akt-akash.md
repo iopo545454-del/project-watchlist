@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # AKT / Akash
@@ -11,6 +11,10 @@ last_updated: 2026-06-13T21:15:15Z
 - Native token: `AKT`.
 - Built on Cosmos SDK; uses Kubernetes-oriented provider/deployment architecture.
 - Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.
+
+## Latest scan notes
+
+- 2026-06-15 — Official X said Kimi 2.7 is available on AkashML/OpenRouter for connected Claude Code users, extending the open compute / agentic coding model surface. Source: https://x.com/akashnet/status/2066593476322500908
 
 ## Thesis
 - TBD / needs follow-up.

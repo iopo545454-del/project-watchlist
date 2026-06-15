@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T03:46:40Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # META / MetaDAO
@@ -26,6 +26,10 @@ last_updated: 2026-06-15T03:46:40Z
 **Investors/backers**
 - Paradigm and Colosseum are repeatedly referenced in official project positioning as owners/backers.
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
+
+## Latest scan notes
+
+- 2026-06-15 — Ownership FM recapped the passed Ownership Capital proposal: $2M USDC treasury seed, activist fund mandate for MetaDAO raises/tokens, and multisig governance. Source: https://x.com/ownershipfm/status/2066591644430836075
 
 ## Thesis
 

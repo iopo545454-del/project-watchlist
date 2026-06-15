@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-15T20:25:58Z
 ---
 
 # NEAR Protocol
@@ -50,6 +50,10 @@ last_updated: 2026-06-13T21:15:15Z
 **Notes/ambiguities**
 - NEAR has many adjacent entities (`near.org`, `near.com`, Foundation, DevHub); use official X/docs to identify current canonical products.
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
+
+## Latest scan notes
+
+- 2026-06-15 — Official X highlighted verifiable/private inference coming to Venice, Abound, Bermuda, Brave and others, plus rising confidential TVL on NEAR Intents. Source: https://x.com/NEARProtocol/status/2066586545788756313
 
 ## Thesis
 - TBD / needs follow-up.
