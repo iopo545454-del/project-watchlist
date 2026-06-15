@@ -1,5 +1,102 @@
 [
   {
+    "run_id": "20260615-120614",
+    "started_at": "2026-06-15T12:06:14Z",
+    "completed_at": "2026-06-15T12:06:14Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-15T07:54:08Z to 2026-06-15T12:06:14Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search; filtered for official/project-info updates, catalysts, token/governance/security/integration items, and credible weak signals.",
+    "projects_checked": [
+      "POD / Dolphin POD",
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "POD / Dolphin POD",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "projects": 22,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 4,
+      "material_entries": 4,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "POD / Dolphin POD",
+        "type": "official update",
+        "source": "X/Twitter official ecosystem scan",
+        "url": "https://x.com/pacifica_fi/status/2066475636571742611",
+        "summary": "Pacifica launched a 50% fee discount on TAO perps through June 22 and shipped trading UI fixes.",
+        "decision": "Logged as ecosystem/product incentive signal because POD/Pacific Pods is tied to Pacifica activity; not treated as direct POD tokenomics."
+      },
+      {
+        "project": "AEON Framework",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2066486735630970954",
+        "summary": "Community Call #4 covered multi-provider support, 20 new skills, X402, MCP, Aeon Inc, next-week plans, and agent-project spotlights.",
+        "decision": "Logged as product/developer-progress signal; no tokenomics/security/funding change found."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "official update",
+        "source": "X/Twitter founder scan",
+        "url": "https://x.com/kevincodex/status/2066451502496113086",
+        "summary": "Founder said OpenGateway inference-token earning is integrated with OpenClaude, in-house ads are under testing, and OpenClaw/Hermes plugins are coming soon.",
+        "decision": "Logged because it affects the product/credit loop and upcoming plugin distribution surfaces."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "catalyst update",
+        "source": "X/Twitter core-contributor scan",
+        "url": "https://x.com/ethermage/status/2066467394130997558",
+        "summary": "Core contributor outlined a five-pillar framework for agent wallets/identity, ownership, commerce, physical embodiment, reputation, and agentic governance and teased another experiment.",
+        "decision": "Logged as catalyst/roadmap framing from a core contributor; watch for concrete experiment details."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "X/Twitter DevHub scan",
+        "url": "https://x.com/NEARDevHub/status/2066490284549279793",
+        "summary": "NEARDevHub amplified infrastructure-feedback submissions for the Infrastructure Committee.",
+        "decision": "Not logged to changelog: useful governance context but no specific proposal/result, funding allocation, product change, or token impact in-window."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check Virtuals for the teased agentic-governance/economic-agent experiment details.",
+      "Watch GitLawb for OpenClaw/Hermes plugin release evidence, ad-bid engine launch, and measurable OpenGateway/OpenClaude credit usage.",
+      "Track AEON follow-through on multi-provider support, X402/MCP, and new skills in repo/releases.",
+      "Re-check Pacifica fee-discount campaign and whether any Pacific Pods/POD-specific utility, staking, or tokenomics update follows.",
+      "Open GitHub intake issues #1 and #2 remain open but were already processed; check for genuinely new intake issues next run."
+    ],
+    "notes": "Changelog importance labeling delegated to an independent tagger after scanner edits. X/Twitter observations are source summaries; no credible unverified weak-signal item met the threshold this run."
+  },
+  {
     "run_id": "20260615-075408",
     "started_at": "2026-06-15T07:54:08Z",
     "completed_at": "2026-06-15T07:54:08Z",

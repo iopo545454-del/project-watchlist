@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T07:54:08Z
+last_updated: 2026-06-15T12:06:14Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-15 — Core contributor `@ethermage` outlined a five-pillar agent-economy framework for Virtuals: wallets/identity, ownership, commerce/coordination, physical embodiment, reputation, and agentic governance; also teased another experiment. Source: https://x.com/ethermage/status/2066467394130997558
 - 2026-06-15 — Core contributor `@0xTP91` pushed ACF as an active Virtuals funding mechanism: token FDV growth can route non-dilutive USDC tranches to project teams, creating a second revenue/funding engine beyond trading fees; also noted launch-page quick-deploy template optimizations. Source: https://x.com/0xTP91/status/2066393481262817418
 - 2026-06-15 — Official Virtuals X said OpenGradient is live on Virtuals, positioning it as open infrastructure for frontier-model access and referencing OpenGradient's uncensored Hermes 4 405B chat deployment. Source: https://x.com/virtuals_io/status/2066328387334074443
 - 2026-06-14 — Official weekly ecosystem update said any LLM can now trade Virtuals agents, Hyperliquid perps, and HIP-3 markets via Virtuals EconomyOS, two new `$100K` weekly Arena lanes are live, ERC-8126 was released for AI-agent verification, and ERC-8183 / Agent Payments Protocol was highlighted with OKX Wallet / Ethereum Foundation co-authorship. Source: https://x.com/virtuals_io/status/2066171168986644821

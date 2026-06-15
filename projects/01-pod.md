@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-15T12:06:14Z
 ---
 
 # POD / Dolphin POD
@@ -44,6 +44,10 @@ last_updated: 2026-06-13T21:15:15Z
 - Treat this as probable identification, not fully certain.
 
 ---
+
+## Latest scan notes
+
+- 2026-06-15 — Pacifica official X launched a 50% fee discount on `$TAO` perpetuals through 2026-06-22 and shipped feedback-driven trading UI fixes (scale orders, combo icon, PWA visibility). This is ecosystem-level signal for Pacific Pods/POD rather than direct POD tokenomics. Sources: https://x.com/pacifica_fi/status/2066475636571742611 and https://x.com/pacifica_fi/status/2066492506909618228
 
 ## Thesis
 - TBD / needs follow-up.

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T07:54:08Z
+last_updated: 2026-06-15T12:06:14Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,7 @@ last_updated: 2026-06-15T07:54:08Z
 
 ## Latest scan notes
 
+- 2026-06-15 — Founder Kevin said OpenGateway inference-token earning is integrated with OpenClaude, in-house ads are under testing, and OpenClaw/Hermes plugins are coming soon. This tightens the product/credit loop to monitor for usage and token/credit economics. Source: https://x.com/kevincodex/status/2066451502496113086
 - 2026-06-15 — Founder Kevin highlighted GitLawb as a decentralized git platform for AI agents and shared the open-source node repository; claims agents can complete the git lifecycle without emails/passwords in about a minute. Source: https://x.com/kevincodex/status/2066427518681506162
 - 2026-06-14: Official/team X scan found GitLawb shipping a Playground UI refresh and ad-feed monetization for non-premium OpenClaude users; ad bid engine is still in progress and advertiser intake is via ads@gitlawb.com. Source: https://x.com/gitlawb/status/2065789938889883810
 - 2026-06-14: Founder Kevin said GitLawb had paused its own open-source coding-model training work but will resume research/training after the Anthropic/Fable 5 access restrictions; this is a useful catalyst to verify via repos, model releases, benchmarks, or docs. Source: https://x.com/kevincodex/status/2065776569998787055
@@ -132,6 +133,7 @@ last_updated: 2026-06-15T07:54:08Z
 | https://t.me/gitlawbofficial | Reported official Telegram; verify from official site/X because the project has warned about fake groups |
 | https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
 | https://x.com/kevincodex/status/2065776569998787055 | Founder note on resuming open-source coding-model research/training |
+| https://x.com/kevincodex/status/2066451502496113086 | Founder update on OpenGateway inference-token earning integrated with OpenClaude and OpenClaw/Hermes plugins coming soon |
 
 ## Risks
 

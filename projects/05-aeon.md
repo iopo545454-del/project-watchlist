@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-06-14T02:13:57Z
+last_updated: 2026-06-15T12:06:14Z
 ---
 
 # AEON Framework / aeon
@@ -66,6 +66,10 @@ last_updated: 2026-06-14T02:13:57Z
 | https://basescan.org/token/0xBf8E8f0e8866a7052F948C16508644347c57aba3 | Base token explorer page; holders/transfers/contract verification checks. |
 
 ---
+
+## Latest scan notes
+
+- 2026-06-15 — Official AEON X shared Community Call #4: multi-provider support, 20 new skills, X402, MCP, Aeon Inc, next-week plans, and agent-project spotlights. Useful product/developer-progress signal, but no tokenomics, funding, or security change was announced. Source: https://x.com/aeonframework/status/2066486735630970954
 
 ## Thesis
 - AEON is a Base AI-agent/infrastructure token tied to an open-source autonomous agent framework.
