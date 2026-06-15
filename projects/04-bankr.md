@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-14T19:25:19Z
+last_updated: 2026-06-15T07:54:08Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-14T19:25:19Z
 
 ## Latest scan notes
 
+- 2026-06-15 — Official `@bankrbot` posted operating metrics: 1,240 24h active users, 42.8k+ registered wallets, ~$14.2M BNKR market cap, and ongoing agent-to-agent / automated treasury-management activity; also floated native agent-impression integration with Latent as a logical scaling path. Source: https://x.com/bankrbot/status/2066427203487928479
 - 2026-06-14 — Official `@bankrbot` announced that Bankr x402 Cloud endpoints can now accept payment in any coin, positioning arbitrary tokens as payment rails for agents. Core builder `@0xDeployer` quote-posted it as “new utility unlocked,” and DevRel/team account `@saltorious1` amplified “Put your ecosystem tokens to work.” Source: https://x.com/bankrbot/status/2066182283380589020
 
 ## Thesis

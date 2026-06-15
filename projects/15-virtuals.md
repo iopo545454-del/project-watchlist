@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T03:46:40Z
+last_updated: 2026-06-15T07:54:08Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-15 — Core contributor `@0xTP91` pushed ACF as an active Virtuals funding mechanism: token FDV growth can route non-dilutive USDC tranches to project teams, creating a second revenue/funding engine beyond trading fees; also noted launch-page quick-deploy template optimizations. Source: https://x.com/0xTP91/status/2066393481262817418
 - 2026-06-15 — Official Virtuals X said OpenGradient is live on Virtuals, positioning it as open infrastructure for frontier-model access and referencing OpenGradient's uncensored Hermes 4 405B chat deployment. Source: https://x.com/virtuals_io/status/2066328387334074443
 - 2026-06-14 — Official weekly ecosystem update said any LLM can now trade Virtuals agents, Hyperliquid perps, and HIP-3 markets via Virtuals EconomyOS, two new `$100K` weekly Arena lanes are live, ERC-8126 was released for AI-agent verification, and ERC-8183 / Agent Payments Protocol was highlighted with OKX Wallet / Ethereum Foundation co-authorship. Source: https://x.com/virtuals_io/status/2066171168986644821
 - 2026-06-14 — Core contributor `@everythingempty` highlighted Virtuals' robotics ecosystem and invited humanoid/robotics builders to collaborate. Source: https://x.com/everythingempty/status/2066002861084028938
@@ -44,6 +45,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 | ERC-8126 AI-agent verification standard | Confirmed | Official weekly update says Virtuals released ERC-8126 with collaborators: https://x.com/virtuals_io/status/2066171168986644821 | Released / June 2026 | Adds a standards layer for proving agent audits, wallet control, and identity without exposing private keys. | Standards adoption could make Virtuals more defensible as infrastructure if wallets/apps integrate it beyond Virtuals-native agents. | Watch EIP/ERC repository progress, wallet/app integrations, and security/audit tooling adoption. |
 | ERC-8183 / Agent Payments Protocol adoption | Confirmed | Official update highlights OKX Wallet co-authorship with Ethereum Foundation and Virtuals: https://x.com/virtuals_io/status/2066171168986644821 | Active / ongoing | Pushes agent commerce/payments from a Virtuals-only feature toward a broader open standard. | If wallets adopt APP/ERC-8183, Virtuals could become a default payments/commerce rail for agents. | Confirm production implementations, transaction counts, partner announcements, and docs/spec changes. |
 | Robotics / physical-AI ecosystem expansion | Tentative | Virtuals weekly robotics roundup and contributor builder call: https://x.com/virtuals_io/status/2066171168986644821 and https://x.com/everythingempty/status/2066002861084028938 | 2026+ / rolling | Expands the Virtuals narrative from digital agents into humanoids, robot data, teleoperation, and physical task markets. | Could attract a different capital/user base and make agent-commerce standards feel less toy-like if real robot workflows settle through agents. | Watch for paid pilots, recurring robot-task data, enterprise partners, and whether robotics projects actually settle/pay via Virtuals rails. |
+| ACF funding mechanism for agent projects | Confirmed / active push | Core contributor says ACF routes capital from token FDV growth to teams in USDC through tranche releases, creating a second revenue/funding engine independent of trading fees: https://x.com/0xTP91/status/2066393481262817418 | Active / June 2026 | Gives launched projects non-dilutive working capital and can improve builder retention on Virtuals. | Stronger funding rails could make Virtuals launches more durable than pure pump/farm mechanics if teams actually receive/use USDC tranches productively. | Watch official docs, launch-page templates, tranche/payment evidence, team case studies, and whether ACF drives better post-launch retention. |
 | Genesis / agent launch flywheel remains active after incentives | Speculative | Market theses from Delphi/Messari/community threads plus official ecosystem updates. | Ongoing | Sustained launches and agent activity would support liquidity, attention, and fee/value-capture narratives. | Failure would expose Virtuals as another incentive-led launchpad; success could make it the Base AI-agent venue. | Track agent graduation quality, retention, protocol revenue, veVIRTUAL/staking data, and post-launch liquidity durability. |
 
 ## Token / contract notes
