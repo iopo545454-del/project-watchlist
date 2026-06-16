@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-16T08:59:04Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-16T08:59:04Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Related MetaDAO accounts discussed the Zinc dispute/pivot and floated requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO; tracked as unverified governance-design watch item until confirmed by official maintainer/proposal text. Source: https://x.com/i/status/2066930615895671047
 - 2026-06-16 — Ownership FM shared Alpha FC ownership-token governance mechanics: token holders can vote on club decisions, elect the chairman, and hold leadership accountable. This is not a MetaDAO protocol change, but it is useful evidence for the ownership-coin utility thesis MetaDAO is aligned with. Source: https://x.com/ownershipfm/status/2066751719598383212
 - 2026-06-15 — Ownership FM recapped the passed Ownership Capital proposal: $2M USDC treasury seed, activist fund mandate for MetaDAO raises/tokens, and multisig governance. Source: https://x.com/ownershipfm/status/2066591644430836075
 
@@ -53,6 +54,7 @@ last_updated: 2026-06-16T08:59:04Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| 2026-06-16 | Related-account discussion of the Zinc dispute/pivot and a possible rule requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO | https://x.com/i/status/2066930615895671047 | Medium | Unverified | Would affect launch-market governance, founder alignment, and whether MetaDAO can prevent project pivots/rugs after raises | Re-check official MetaDAO/Futardio accounts, proposal text, Zinc founder response, and any program-authority policy before treating as confirmed |
 | More ownership-coin launches on MetaDAO | Confirmed / ongoing | Official app and project posts around ownership coins; https://x.com/MetaDAOProject | Ongoing | More raises/proposals increase product usage and make META more visible as the platform asset. | Successful launches could create a Solana ICM flywheel with founders, tokenholders, and Colosseum-style distribution. | Watch app activity, launch quality, proposal volume, fee/revenue disclosure, and follow-on financing. |
 | META-039 / Ownership Capital activist-fund experiment | Tentative | https://x.com/MetaDAOProject/status/2065553991639941405 | Unknown / proposal-dependent | Adds a capital allocator/fund layer native to MetaDAO instead of only launch/governance tooling. | If it works, MetaDAO can influence external projects and recycle ecosystem upside; if not, it may create governance complexity. | Track proposal status, committed capital, investment mandate, and whether outcomes are reported transparently. |
 | July 2026 MetaDAO Owners Meeting | Confirmed | https://x.com/MetaDAOProject/status/2054911529783382433 | July 2026 | Concentrates owners/builders in one event and can create announcements, partnerships, or new launches. | Could raise legitimacy with Solana founders and investors; weak event follow-through would dampen narrative momentum. | Watch agenda, speakers, announced launches/funds, and post-event proposal flow. |

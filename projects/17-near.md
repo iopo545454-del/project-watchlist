@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-15T20:25:58Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Official X published an AI Money / agent-economy stack tying together NEAR Blockchain, House of Stake, Confidential Cloud, Intents, Agent Market, IronClaw, and near.com; Illia also amplified $30M+ confidentiality-progress context. Source: https://x.com/NEARProtocol/status/2066912426897842541
 - 2026-06-15 — Official X highlighted verifiable/private inference coming to Venice, Abound, Bermuda, Brave and others, plus rising confidential TVL on NEAR Intents. Source: https://x.com/NEARProtocol/status/2066586545788756313
 
 ## Thesis

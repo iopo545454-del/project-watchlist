@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -55,6 +55,7 @@ last_updated: 2026-06-15T20:25:58Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Official X highlighted Agent Kit as humans-only ticketing infrastructure with Thirty Seconds to Mars and other partners, extending the World ID anti-bot integration story. Source: https://x.com/worldnetwork/status/2066919640589275644
 - 2026-06-15 — World Network announced/boosted Thirty Seconds to Mars tour ticketing with World ID verification for humans-only tickets and verified-human perks. Source: https://x.com/worldnetwork/status/2066572868071342207
 
 ## Thesis

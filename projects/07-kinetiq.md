@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # Kinetiq
@@ -61,6 +61,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Latest scan notes
 
+- 2026-06-16 — Official X said several USDH markets were settled/delisted as the USDH-to-USDC collateral migration nears completion, with final markets due June 17 and USDC transition next week; thread warned users about phishing replies. Source: https://x.com/Kinetiq_xyz/status/2066935343253774355
 - 2026-06-15 — Team account highlighted Markets.xyz/perps subdeployer mechanics: kmHYPE and sKNTQ earn 10% of deployer revenue, used to buy HYPE/KNTQ for stakers; also noted Pendle yield on kHYPE/vkHYPE. Source: https://x.com/0xOmnia/status/2066564897454825638
 - 2026-06-14 — Related Markets.xyz growth/community account `@VikingoDigital_` posted an airdrop-farming thread saying Kinetiq Season 2 `$KNTQ` is confirmed, with final snapshot September 29 and distribution October 1, and that trading on Markets.xyz earns kPoints while also potentially positioning for Hyperliquid/trade.xyz rewards. No matching official `@Kinetiq_xyz` / `@KinetiqFND` confirmation appeared in this scan window, so keep as a related-account weak signal until verified from Kinetiq sources. Source: https://x.com/VikingoDigital_/status/2066215140152815998
 

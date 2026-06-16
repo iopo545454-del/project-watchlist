@@ -1,5 +1,129 @@
 [
   {
+    "run_id": "20260616-172749",
+    "started_at": "2026-06-16T17:27:49Z",
+    "completed_at": "2026-06-16T17:27:49Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-16T13:15:15Z to 2026-06-16T17:27:49Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/integration items, usage metrics, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "META / MetaDAO",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "VVV / Venice AI",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 7,
+      "material_entries": 7,
+      "unverified_items": 1
+    },
+    "decision_trail": [
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official + founder scan",
+        "url": "https://x.com/NEARProtocol/status/2066912426897842541",
+        "summary": "NEAR published an AI Money / agent-economy stack diagram and Illia amplified $30M+ confidentiality-progress context.",
+        "decision": "Logged because official roadmap/economic/security architecture is material to NEAR agent/AI thesis."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/Kinetiq_xyz/status/2066935343253774355",
+        "summary": "USDH markets are being settled/delisted ahead of USDC collateral transition next week; final batch due June 17; phishing warning included.",
+        "decision": "Logged as collateral/market-structure migration and user-security notice."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "official update",
+        "source": "X/Twitter founder scan",
+        "url": "https://x.com/ErikVoorhees/status/2066891476764598538",
+        "summary": "Founder claimed Venice web + API LLM throughput exceeds 85B tokens/day.",
+        "decision": "Logged as source-proximate usage metric relevant to VVV capacity/burn thesis; needs independent dashboard/API verification."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/gitlawb/status/2066909581008347333",
+        "summary": "Official account showed OpenRouter cloud-agents rank #5 with 1.67B tokens processed.",
+        "decision": "Logged as product usage/traction metric."
+      },
+      {
+        "project": "AEON Framework",
+        "type": "docs/blog update",
+        "source": "X/Twitter official scan + official blog",
+        "url": "https://x.com/aeonframework/status/2066911131231293733",
+        "summary": "Official blog Entry №003 explained x402/USDC/Circle-agent-wallet payments for Aeon agents; account also pushed security-scanner positioning.",
+        "decision": "Logged as docs/product update in agentic payments and security positioning."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/worldnetwork/status/2066919640589275644",
+        "summary": "World highlighted Agent Kit for humans-only ticketing with Thirty Seconds to Mars and other partners.",
+        "decision": "Logged as real-world World ID/Agent Kit integration signal."
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "unverified watch item",
+        "source": "X/Twitter related-account scan",
+        "url": "https://x.com/i/status/2066930615895671047",
+        "summary": "Related accounts discussed Zinc dispute/pivot and possible program-upgrade-authority handover requirement for raises.",
+        "decision": "Tracked as unverified because it could matter for Futardio/MetaDAO governance design but lacks official proposal/maintainer confirmation."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included here only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For NEAR, watch for House of Stake/fee-switch/sovereign-fund implementation details and live Confidential Cloud/Intents metrics.",
+      "For Kinetiq, verify final June 17 USDH market winddown, next-week USDC transition, and any user impact or phishing/security follow-up.",
+      "For Venice, verify the 85B daily token throughput against official dashboards/API metrics and whether it maps to VVV burns/capacity demand.",
+      "For MetaDAO, re-check Zinc dispute resolution and whether a program-upgrade-authority requirement becomes official policy/proposal.",
+      "Continue checking previously logged weak items for MetaDAO percolator issues, Ambient throughput claims, and Kinetiq Season 2 dates."
+    ],
+    "notes": "Changelog importance labeling delegated to an independent tagger after scanner edits. X/Twitter observations are source summaries; one new unverified watch item was added."
+  },
+  {
     "run_id": "20260616-131515",
     "started_at": "2026-06-16T13:15:15Z",
     "completed_at": "2026-06-16T13:15:15Z",

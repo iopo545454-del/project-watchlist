@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-16T00:40:36Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # VVV / Venice AI

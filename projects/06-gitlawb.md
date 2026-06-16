@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T12:06:14Z
+last_updated: 2026-06-16T17:27:49Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,7 @@ last_updated: 2026-06-15T12:06:14Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Official X shared an OpenRouter cloud-agents leaderboard showing GitLawb ranked #5 with 1.67B tokens processed, a source-proximate OpenClaude/agent-platform traction signal. Source: https://x.com/gitlawb/status/2066909581008347333
 - 2026-06-15 — Founder Kevin said OpenGateway inference-token earning is integrated with OpenClaude, in-house ads are under testing, and OpenClaw/Hermes plugins are coming soon. This tightens the product/credit loop to monitor for usage and token/credit economics. Source: https://x.com/kevincodex/status/2066451502496113086
 - 2026-06-15 — Founder Kevin highlighted GitLawb as a decentralized git platform for AI agents and shared the open-source node repository; claims agents can complete the git lifecycle without emails/passwords in about a minute. Source: https://x.com/kevincodex/status/2066427518681506162
 - 2026-06-14: Official/team X scan found GitLawb shipping a Playground UI refresh and ad-feed monetization for non-premium OpenClaude users; ad bid engine is still in progress and advertiser intake is via ads@gitlawb.com. Source: https://x.com/gitlawb/status/2065789938889883810
