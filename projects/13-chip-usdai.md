@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T13:15:15Z
 ---
 
 # CHIP / USD.AI
@@ -15,6 +15,7 @@ last_updated: 2026-06-15T20:25:58Z
 
 ## Latest scan notes
 
+- 2026-06-16 — USDAI released a Lighthouse/YTD report thread saying DAO ARR grew from $1.1M in 2025 to $30M annualized in Q2 2026, with revenue driven by origination fees and net interest margin on GPU-backed loans as sUSDAI liquidity deploys into RWA lending. Source: https://x.com/USDai_Official/status/2066853397442236479; report pointer: https://usd.ai/lighthouse
 - 2026-06-15 — USDAI said it is working with Hydra Host after Hydra’s $100M Series A to connect GPU sourcing with asset-backed financing for AI factory deployment; also posted broad hiring tied to a $1B compute-financing goal. Source: https://x.com/USDai_Official/status/2066611721234772415
 
 ## Thesis
@@ -68,7 +69,7 @@ last_updated: 2026-06-15T20:25:58Z
 - Liquidity venues and peg stability.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- Lighthouse/YTD report hub: https://usd.ai/lighthouse — official analytics/report pointer for revenue, loan deployment, and structured-lending updates.
 
 ## Risks
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.
@@ -81,6 +82,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Open questions
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.
+- Verify Lighthouse/YTD report numbers against live protocol data: ARR calculation, deployed-vs-idle sUSDAI liquidity, loan book concentration, origination-fee/NIM durability, and default/delinquency status.
 - GPU-backed private credit has real-world collateral, duration, and liquidation risk; headline APY is not risk-free.
 - Team is partly pseudonymous; prioritize official reports, attestations, and verifiable loan performance.
 
