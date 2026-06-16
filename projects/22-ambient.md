@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T04:51:42Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-06-16 — CEO `@IridiumEagle` clarified Ambient testnet economics/security: staking is disabled, miners earn inflation and transaction rewards by performing verified inference, and contribution-weighted work drives transaction ordering/voting; this upgrades the useful-PoW/tokenomics watch item, but mainnet/token details remain unannounced. Source: https://x.com/IridiumEagle/status/2066709825183232207
 - 2026-06-15 — Official/CEO thread launched Ambient Desktop for Mac/Windows/Linux, subscription plans and x402 support, while claiming a 13.2B-token daily inference record via OpenRouter; usage numbers still need independent verification. Source: https://x.com/i/status/2066565401593659724
 - 2026-06-14 — Intake issue #2 added Ambient to the dashboard and initial review found official website/docs/litepaper, testnet/app, verified-inference pages, funding announcement, and CEO thesis/status posts. Source: https://github.com/iopo545454-del/project-watchlist/issues/2
 - 2026-06-14 — CEO `@IridiumEagle` claimed Ambient testnet is serving billions of tokens per day and is available through the app/OpenRouter; logged as a project/CEO claim to verify externally, not a durable usage fact. Source: https://x.com/IridiumEagle/status/2065922292975288754
@@ -40,7 +41,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | Ambient testnet live | Confirmed | Official site/app and testnet thread: https://ambient.xyz and https://x.com/ambient_xyz/status/1999168669641789680 | Live | Gives users/builders a working app/API surface and receipts before mainnet. | Sustained testnet usage could build miner/user demand ahead of a token launch. | Watch app availability, API usage, receipt verification, OpenRouter availability, and public testnet stats. |
-| Permissionless inference mining | Tentative | Testnet thread indicates mining is phased/permissioned before broader consumer-GPU participation: https://x.com/ambient_xyz/status/1999168669641789680 | Unknown / phased rollout | Opens supply side beyond controlled operators and tests useful-PoW economics. | A credible miner program could attract GPU owners and DePIN/PoW capital; delays would weaken the decentralization claim. | Watch official miner docs, hardware requirements, onboarding, rewards, and whether consumer GPUs actually participate. |
+| Permissionless inference mining / useful-PoW consensus | Tentative | Testnet thread plus CEO technical replies: https://x.com/ambient_xyz/status/1999168669641789680 and https://x.com/IridiumEagle/status/2066709825183232207 | Live testnet / phased rollout | Opens supply side beyond controlled operators and tests useful-PoW economics; CEO says staking is disabled and miners earn rewards/ordering influence by verified inference work. | A credible miner program could attract GPU owners and DePIN/PoW capital; delays or weak verification would weaken the decentralization claim. | Watch official miner docs, hardware requirements, onboarding, rewards, public miner counts, and whether consumer GPUs actually participate. |
 | Mainnet / tokenomics / TGE | Speculative | No official mainnet tokenomics or contract found; intake says token not out. | Unknown | Would convert the research/product story into a tradable asset and define value capture. | Token design will determine whether inference revenue, miner rewards, burns, or staking create demand/supply pressure. | Watch official X/docs for token ticker, contract, allocation, launch date, and fake-contract warnings. |
 | Proof of Logits technical validation | Tentative | Official verified-inference explainer and litepaper: https://ambient.xyz/verified-inference and https://ambient.xyz/Ambient_Litepaper_V1.pdf | Ongoing | Determines whether Ambient can verify large-model inference with the claimed low overhead and useful security assumptions. | Independent audits/benchmarks would materially upgrade credibility; weak assumptions could make the system a narrative wrapper. | Watch for code, audits, third-party reviews, challenge-model docs, and adversarial analysis. |
 | Enterprise/agent API adoption | Speculative | Website model/pricing pages and CEO claims: https://ambient.xyz/models and https://x.com/IridiumEagle/status/2065922292975288754 | Ongoing | Converts verified inference from demo into demand-side usage. | Real paid usage could make Ambient more than an emissions-led compute network. | Verify customer/integration announcements, usage dashboards, revenue, and paid API traction. |
@@ -74,7 +75,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 ## Open questions
 
 - When is mainnet, and will there be a token launch/TGE? No official date found.
-- What is the final token ticker, contract, emission schedule, allocation, and fee/value-capture design?
+- What is the final token ticker, contract, emission schedule, allocation, and fee/value-capture design? CEO replies indicate testnet rewards are inflation/transaction based and staking is disabled, but final mainnet tokenomics are still unknown.
 - How open is mining today, and when does it become permissionless for consumer GPUs?
 - What exact security assumptions make Proof of Logits safe enough for enterprise/agent settlement use?
 - Is the production strategy one canonical 600B+ model, multiple OpenAI-compatible models, or both?

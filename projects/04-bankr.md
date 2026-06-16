@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-15T07:54:08Z
+last_updated: 2026-06-16T04:51:42Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-15T07:54:08Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Team/DevRel `@saltorious1` said new Bankr skills merged for Hunch, Signa, 1claw, and bankr-shopify; useful product-surface expansion for prediction-market/integration/commerce agent workflows, but fee capture to BNKR still needs verification. Source: https://x.com/saltorious1/status/2066742373804122297
 - 2026-06-15 — Official `@bankrbot` posted operating metrics: 1,240 24h active users, 42.8k+ registered wallets, ~$14.2M BNKR market cap, and ongoing agent-to-agent / automated treasury-management activity; also floated native agent-impression integration with Latent as a logical scaling path. Source: https://x.com/bankrbot/status/2066427203487928479
 - 2026-06-14 — Official `@bankrbot` announced that Bankr x402 Cloud endpoints can now accept payment in any coin, positioning arbitrary tokens as payment rails for agents. Core builder `@0xDeployer` quote-posted it as “new utility unlocked,” and DevRel/team account `@saltorious1` amplified “Put your ecosystem tokens to work.” Source: https://x.com/bankrbot/status/2066182283380589020
 
@@ -65,6 +66,7 @@ last_updated: 2026-06-15T07:54:08Z
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | x402 Cloud multi-token payments | Confirmed | Official X says users can accept payment in any coin when creating a Bankr x402 endpoint: https://x.com/bankrbot/status/2066182283380589020 | Live as of 2026-06-14 | Expands Bankr from natural-language execution/launch tooling into agent payment endpoints that can settle in arbitrary tokens | Could make ecosystem tokens more useful as agent/service payment rails and improve Bankr’s relevance to x402/agent-commerce narratives | Watch docs.bankr.bot and bankr.bot/x402 for fee routing, supported chains/tokens, endpoint volume, and whether BNKR captures value |
+| Bankr skills/integration surface | Confirmed | Team/DevRel post listed newly merged skills for Hunch, Signa, 1claw, and bankr-shopify: https://x.com/saltorious1/status/2066742373804122297 | Live / recently merged | Adds more agent actions/integrations, including prediction-market and commerce-related surfaces. | More skills can increase Bankr terminal/agent utility and transaction flow; token relevance depends on fees, Club/Max conversion, or BNKR utility linkage. | Watch skills.bankr.bot, docs, usage metrics, and whether these skills route fees or demand to BNKR. |
 
 ## Team
 - TBD / needs follow-up.
