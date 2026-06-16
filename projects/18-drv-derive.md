@@ -1,84 +1,71 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-16T00:40:36Z
 ---
 
 # DRV / Derive Protocol
 
 ## Overview
-**Identity**
-- Onchain options/perps derivatives platform formerly Lyra; $DRV is the governance/utility token under a “single-token alignment” narrative.
+Derive is an onchain options and perps venue formerly known as Lyra. The current thesis is that crypto options demand can move onchain, Derive can own a meaningful share of that flow, and DRV is the single token meant to absorb the protocol economics through governance, staking/alignment, and open-market buybacks funded from protocol fees.
 
-**Official links**
-- X: https://x.com/DeriveXYZ
-- Website/app: https://derive.xyz/
-- Docs: https://docs.derive.xyz/
-- Founder X: https://x.com/nickforster
-- DefiLlama: https://defillama.com/protocol/derive (or search Derive)
-- DRV Base contract: `0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083`
-- Other official DRV addresses reported: Ethereum `0xB1D1eae60EEA9525032a6DCb4c1CE336a1dE71BE`, Optimism `0x33800De7E817A70A694F31476313A7c572BBa100`, Arbitrum `0x77b7787a09818502305C95d68A2571F090abb135`, Derive Chain `0x2EE0fd70756EDC663AcC9676658A1497C247693A`.
-
-**Team/key people**
-- Nick Forster — co-founder/CEO, https://x.com/nickforster
-- Quant/trading contributor signal: https://x.com/DeriveQuant
-- Other contributors include `@0xfluflu` in growth/marketing context; verify roles via bios/official reposts.
-
-**Investors/backers**
-- Strategic investment from Maelstrom Fund / Arthur Hayes in Jan 2025.
-- Earlier Lyra-era investors/funding exist, but current Derive messaging emphasizes DRV alignment, no separate equity layer and protocol-fee buybacks.
-
-**KOL/community accounts**
-- `@DeriveXYZ`, `@nickforster`, `@DeriveQuant`.
-- `@CryptoHayes` / `@MaelstromFund` for strategic-backer commentary if they discuss Derive.
-
-**Data/resources to monitor**
-- DefiLlama options open interest/volume/TVL for Derive.
-- Weekly buyback posts, protocol fee split, insurance fund balance.
-- App markets for BTC/ETH/HYPE and new listed underlyings; liquidity/market maker depth.
-- DRV contract holders, staking/governance votes, exchange listings.
-
-**Alert triggers**
-- Buyback percentage or revenue allocation changes; governance votes.
-- Material OI/volume jumps, new collateral/underlying listings, large liquidations/market incidents.
-- Contract/chain migrations, new custody/onboarding integrations.
-- Security/audit disclosures or risk-engine parameter changes.
-
-**Notes/ambiguities**
-- Public GitHub is not prominently advertised post-rebrand; use docs and verified contracts/audits first.
-- Because Lyra history overlaps, separate legacy LYRA info from current DRV/Derive token model.
+Derive is most worth monitoring when new listed underlyings, collateral types, buyback parameters, liquidity incentives, institutional/RFQ rails, or risk-engine changes alter the revenue/buyback loop. The platform is especially tied to ETH/BTC options and, recently, HYPE options.
 
 ## Thesis
-- TBD / needs follow-up.
 
-## Team
-- TBD / needs follow-up.
+### Investor / market theses
 
-## Investors
-- TBD / needs follow-up.
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/MaelstromFund/status/1877486159678321137 | Maelstrom Fund / Arthur Hayes strategic investment | Maelstrom announced a strategic investment in Derive and highlighted Hayes' derivatives background as advisory/distribution leverage for building onchain options. | Gives Derive credible crypto-derivatives sponsorship and a market-structure backer whose network can matter for liquidity and product design. |
+| https://x.com/DeriveXYZ/status/1879704571729396006 | Derive official DRV launch/buyback framing | Derive framed DRV around a single-token alignment model and recurring protocol-fee buybacks, initially using 25% of fees. | This is the core token-value mechanism: trading fees can translate into structural DRV demand if volume grows. |
+| https://x.com/DeriveXYZ/status/2064477916092858845 | Derive official weekly buyback update | Official buyback thread said the protocol was allocating 35% of fees to DRV buybacks and reported cumulative repurchases above 25M DRV. | Evidence that the fee-to-buyback flywheel is live and being repeatedly reported, not just promised. |
+| https://x.com/dcfgod/status/2063992214846673364 | Third-party crypto market commentator | Bull case compares Derive to the onchain options analogue of major derivatives venues: real fee revenue, growing HYPE/options demand, and token buybacks instead of pure governance. | Useful market framing, but third-party; validate with Derive fee/OI/buyback data rather than treating it as fact. |
 
-## Twitter/X accounts
-- TBD / needs follow-up.
+### Hermes take
 
-## KOLs
-- TBD / needs follow-up.
+> DRV is interesting because it has a clean thing to underwrite: options volume turns into fees, and a disclosed slice of fees buys the token. That is much cleaner than most governance-token stories. The setup only matters if Derive keeps winning live option flow — especially HYPE/ETH/BTC — and if governance does not dilute the “single-token alignment” narrative with messy supply changes. Watch OI, organic fees, and buyback cadence; ignore generic “onchain options are big” takes without usage data.
 
-## Official links
-- TBD / needs follow-up.
+## Catalysts
 
-## Onchain/data resources
-- TBD / needs follow-up.
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| HYPE options market share / Derive as primary HYPE options venue | Confirmed | CEO replies during the 2026-06-15 scan said Derive is the primary on/offchain HYPE options venue and supports stable/HYPE/kHYPE margin plus portfolio margining: https://x.com/nickforster/status/2066662428814049501 and https://x.com/nickforster/status/2066623266534605136 | Live | More listed-underlying demand and HYPE-native collateral can drive OI, fees, and DRV buyback capacity. | If Hyperliquid ecosystem volumes persist, Derive can become a key structured-products venue instead of just an ETH/BTC options app. | Track HYPE options OI/volume, spreads, liquidation incidents, collateral uptake, and whether Derive/Hyperliquid ecosystem partners integrate the product. |
+| Protocol-fee buyback program | Confirmed | Official buyback posts; June 2026 update reported 35% of protocol fees allocated to DRV buybacks and cumulative DRV repurchased above 25M: https://x.com/DeriveXYZ/status/2064477916092858845 | Weekly / ongoing | Converts protocol revenue into open-market DRV demand. | Sustained organic fees can make DRV one of the cleaner revenue-linked DeFi tokens; weak volume makes the buyback narrative cosmetic. | Monitor weekly buyback amount, average buy price, cumulative DRV bought, revenue source quality, and whether percentage allocation changes. |
+| 0DTE / short-dated options expansion | Tentative | Hayes/Maelstrom commentary around Derive emphasized demand for degen-friendly options such as 0DTE; official product detail needs continued confirmation. | Unknown / roadmap-dependent | Could widen retail/speculative options demand and increase fee velocity. | More retail flow may increase liquidity-maker demand, risk controls, and potential venue attention. | Watch official Derive product releases/docs and risk-engine notes; verify actual listed expiries and volumes. |
+| Institutional/RFQ / custody-friendly options rails | Tentative | Derive website/docs position the platform around sophisticated options/perps UX; prior Maelstrom investment suggests derivatives-market structure focus. | Unknown | Could bring larger flow than retail-only options markets. | May require custody, onboarding, API, and liquidity integrations that change revenue mix. | Track official docs, venue integrations, API/RFQ releases, and institutional custody partner announcements. |
+| Governance or supply changes affecting DRV alignment | Speculative / watch item | Market discussion has flagged possible supply/dilution proposals; official governance should be verified before treating claims as facts. | Unknown | Could improve treasury/business development or weaken buyback/alignment narrative if dilutive. | A controversial mint/foundation proposal would be tradeable because it directly changes the token story. | Monitor governance/forum, official X, docs, and token contract events for proposals, votes, or supply changes. |
 
-## Docs/blogs
-- TBD / needs follow-up.
+## Token / contract notes
+- Ticker: DRV.
+- Base contract tracked in the dossier: `0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083`.
+- Other official DRV addresses reported in prior research: Ethereum `0xB1D1eae60EEA9525032a6DCb4c1CE336a1dE71BE`, Optimism `0x33800De7E817A70A694F31476313A7c572BBa100`, Arbitrum `0x77b7787a09818502305C95d68A2571F090abb135`, Derive Chain `0x2EE0fd70756EDC663AcC9676658A1497C247693A`.
+- Core mechanism to verify every scan: percentage of protocol fees routed to buybacks, cumulative DRV bought, emissions/incentives, and any governance proposal that changes supply or fee allocation.
 
-## Risks
-- TBD / needs follow-up.
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/DeriveXYZ | Official X; product updates, weekly buybacks, market launches, governance/source-proximate announcements. |
+| https://x.com/nickforster | Co-founder/CEO; useful for product mechanics, HYPE options, collateral/margining, and market-structure commentary. |
+| https://x.com/DeriveQuant | Quant/trading account; useful for options-flow, IV/OI, structured-products context. |
+| https://derive.xyz/ | Official site/app; product positioning and app entry point. |
+| https://docs.derive.xyz/ | Official docs; API, trading, margin, custody, market and risk-mechanic reference. |
+| https://defillama.com/protocol/derive | Third-party dashboard for TVL/protocol metrics; use only as context and cross-check with official/app data. |
+| https://x.com/MaelstromFund/status/1877486159678321137 | Maelstrom strategic-investment announcement; investor/backer context. |
+| https://x.com/DeriveXYZ/status/2064477916092858845 | Official weekly buyback update; concrete token-economic signal to compare against future weeks. |
+| `0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083` | DRV Base contract address to verify holders/supply/liquidity. |
 
 ## Open questions
-- TBD / needs follow-up.
+- What is the current canonical governance/forum location for DRV proposals and supply/fee-allocation votes?
+- Are all listed DRV contracts still canonical and bridged exactly as expected across Base/Ethereum/Optimism/Arbitrum/Derive Chain?
+- How much of Derive's volume/fees is organic versus incentive-driven, market-maker-driven, or concentrated in a small set of underlyings?
+- What exact safeguards exist around risk engine, portfolio margining, HYPE/kHYPE collateral, and extreme-market liquidation events?
+- Are there active or planned DRV mint/supply/foundation proposals, and how would they affect the buyback narrative?
 
-## Watch triggers
-- TBD / needs follow-up.
+## Monitoring notes
+- High-priority recurring checks: official buyback posts, HYPE options OI/volume, new underlyings/collateral, governance proposals, fee allocation changes, and risk/security incidents.
+- Treat CEO replies as useful product-mechanic evidence, but confirm durable settings in docs/app when possible.
+- Separate market chatter about HYPE price from Derive-specific information about options volume, collateral, fees, buybacks, or product/risk changes.
 
 ---

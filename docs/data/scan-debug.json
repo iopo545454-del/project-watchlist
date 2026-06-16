@@ -1,5 +1,122 @@
 [
   {
+    "run_id": "20260616-004036",
+    "started_at": "2026-06-16T00:40:36Z",
+    "completed_at": "2026-06-16T00:40:36Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-15T20:25:58Z to 2026-06-16T00:40:36Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/integration items, and credible weak signals. Upgraded missing initial reviews for Derive and Venice because they had current source-proximate updates in-window.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol",
+      "VVV / Venice AI"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 4,
+      "material_entries": 4,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "DRV / Derive Protocol",
+        "type": "initial review",
+        "source": "X/Twitter official/CEO/investor scan + official site/docs",
+        "url": "projects/18-drv-derive.html",
+        "summary": "Upgraded Derive dossier with sourced thesis, Hermes take, HYPE-options/buyback catalysts, token notes, sources, open questions, and monitoring plan.",
+        "decision": "Logged because the project lacked a completed initial review and had new CEO product/market-structure evidence in-window."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "type": "official update",
+        "source": "X/Twitter CEO scan",
+        "url": "https://x.com/nickforster/status/2066662428814049501",
+        "summary": "CEO replies said Derive is the primary HYPE options venue and clarified collateral/margining and covered-call/cash-covered-put support.",
+        "decision": "Logged as source-proximate market-structure/product information relevant to DRV fees and buyback flywheel."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "initial review",
+        "source": "X/Twitter official/founder/user scan + official docs/site",
+        "url": "projects/14-vvv-venice.html",
+        "summary": "Upgraded Venice dossier with sourced VVV staking/burn/emissions thesis, Hermes take, catalysts, token notes, sources, open questions, and monitoring plan.",
+        "decision": "Logged because the project lacked a completed initial review and had a major developer-model product release in-window."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/AskVenice/status/2066634900652879949",
+        "summary": "Official X launched Kimi K2.7 Code on Venice with large-context coding/reasoning/tool-use features.",
+        "decision": "Logged as product/API catalyst relevant to Venice usage and VVV capacity/burn thesis."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "scan",
+        "source": "X/Twitter founder/team scan",
+        "url": "https://x.com/kevincodex/status/2066656964143419465",
+        "summary": "Founder posted OpenClaude reached about 28.94K GitHub stars and said he is back to building OpenFable; other posts were casual replies.",
+        "decision": "Not logged to changelog: useful traction color but no new product release, token change, partnership, governance item, or concrete catalyst."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2066618678066712706",
+        "summary": "Official X posted more confidential TVL/privacy framing for NEAR Intents shortly after a prior logged NEAR confidential-TVL update.",
+        "decision": "Not separately logged to avoid duplicate changelog entry for the same theme already captured in the previous run."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "X/Twitter official/bot scan",
+        "url": "https://x.com/bankrbot/status/2066679537426104416",
+        "summary": "Bankrbot produced automated trade notifications, game-agent session messages, and token lookup replies.",
+        "decision": "Not logged: conversational/bot activity, not durable protocol update."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included here only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For Derive, verify HYPE options OI/volume, official buyback cadence, governance/forum location, and any supply/foundation proposals.",
+      "For Venice, verify current VVV staking/capacity terms, emissions versus burns, token admin controls, and whether Kimi/model launches affect usage/revenue.",
+      "Continue checking previously logged weak items for MetaDAO percolator issues, Ambient throughput claims, and Kinetiq Season 2 dates."
+    ],
+    "notes": "Changelog importance labeling delegated to an independent tagger after scanner edits. X/Twitter observations are source summaries; no high-signal unverified rumor was added this run."
+  },
+  {
     "run_id": "20260615-202558",
     "started_at": "2026-06-15T20:25:58Z",
     "completed_at": "2026-06-15T20:25:58Z",

@@ -1,84 +1,72 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-16T00:40:36Z
 ---
 
 # VVV / Venice AI
 
 ## Overview
-**Identity**
-- Private / unrestricted AI product and API; $VVV is Venice's Base token tied to staking/API/inference-credit economics, burns and emissions.
-- Official X appears to be `@AskVenice`; `@tryvenice` appears secondary/product-company handle.
+Venice is a private/unrestricted AI product and API associated with Erik Voorhees. The token setup is not just a governance wrapper: VVV is positioned around staking for access to Venice inference capacity, emissions/yield, and a revenue-linked buyback/burn path. The project matters if Venice can turn real AI usage into recurring token demand and burns while preserving the privacy/unrestricted-AI brand.
 
-**Official links**
-- X: https://x.com/AskVenice; secondary: https://x.com/tryvenice
-- Website/app: https://venice.ai/
-- VVV page: https://venice.ai/lp/vvv
-- Docs/API: https://docs.venice.ai/
-- GitHub: https://github.com/veniceai/skills
-- Token: Base $VVV `0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf`
-
-**Team/key people**
-- Erik Voorhees — founder, https://x.com/ErikVoorhees
-- Other public contributors are less consistently surfaced; track official docs/posts for API/dev-rel names.
-
-**Investors/backers**
-- No clear external lead-investor list surfaced in official X search; monitor for funding/backer disclosures.
-- Erik/ShapeShift network is reputationally relevant but not the same as disclosed Venice investors.
-
-**KOL/community accounts**
-- `@ErikVoorhees` for product philosophy, tokenomics replies, privacy/regulation commentary.
-- `@AskVenice` for burns, listings, integrations, model/API launches.
-- `@sabrinaesaquino` has appeared around Venice technical workshops/integration content; useful but not necessarily core team.
-
-**Data/resources to monitor**
-- Basescan/token holders for VVV contract; DEXScreener/GeckoTerminal Base VVV pools.
-- DefiLlama token search for VVV/contract if tracked.
-- Venice docs/API changelog, model list and pricing/credits.
-- Official burn/emission posts; CEX listing announcements.
-
-**Alert triggers**
-- Material VVV burn/emission schedule changes; new DIEM/inference-credit mechanics.
-- Major CEX listings, liquidity migrations, bridge changes, contract upgrades.
-- New model/API releases that change usage demand or pricing.
-- Privacy/regulatory incidents or policy changes affecting unrestricted AI positioning.
-
-**Notes/ambiguities**
-- `@AskVenice` is the main official handle; `@tryvenice` looks related but lower priority.
-- Treat community-shared repos/contracts as unverified unless linked by `@AskVenice` or `docs.venice.ai`.
+The watchlist focus is model/API releases, staking/capacity mechanics, emissions cuts, burns, contract/security concerns, major distribution integrations, and any change to how VVV captures product revenue or compute demand.
 
 ## Thesis
-- TBD / needs follow-up.
 
-## Team
-- TBD / needs follow-up.
+### Investor / market theses
 
-## Investors
-- TBD / needs follow-up.
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/AskVenice/status/1978927853149237600 | Venice official tokenomics / VVV framing | Official materials frame VVV around staking for AI capacity, emissions, and a roadmap toward buyback/burn-driven scarcity. | Core token utility and value-capture source; should be checked against current docs and onchain burn data. |
+| https://x.com/AskVenice/status/2037231269449523276 | Venice official emissions/burn update | Official account described emission cuts and burn mechanics as a path toward lower inflation and eventually net deflation if revenue/burns scale. | The most important token catalyst is whether real usage makes burns outrun emissions. |
+| https://x.com/AskVenice/status/2064158076303790131 | Venice official burn update | Official burn posts give discrete, source-proximate evidence of revenue-linked VVV repurchases/burns. | Useful measurable signal; repeat cadence and size matter more than one-off posts. |
+| https://x.com/i/status/2065637276588159328 | Erik Voorhees / founder-level narrative via official clip | Voorhees frames unrestricted AI as a civilization-level institution that should not be controlled by a handful of government-compliant companies. | Explains why Venice has crypto-native mindshare; narrative strength can matter for adoption and token demand. |
+| https://x.com/adamshurwitz/status/2066626292309430744 | Third-party user/operator commentary | User case: staking VVV as a way to get API/inference access can be economically attractive for heavy users versus paying per use. | Useful outside-the-team thesis, but should be validated with actual pricing/capacity/staking rules. |
 
-## Twitter/X accounts
-- TBD / needs follow-up.
+### Hermes take
 
-## KOLs
-- TBD / needs follow-up.
+> VVV has one of the cleaner crypto-AI token stories if the numbers hold: stake for capacity, product revenue buys/burns supply, and a real consumer/API app gives the token something to attach to. The danger is that “private AI” mindshare outruns hard usage economics, or contract/security doubts poison the scarcity story. Watch burns, emissions, staked share, API/model adoption, and any changes to mint/admin controls.
 
-## Official links
-- TBD / needs follow-up.
+## Catalysts
 
-## Onchain/data resources
-- TBD / needs follow-up.
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| New frontier/coding model launches in Venice | Confirmed | Official X said Kimi K2.7 Code is live on Venice with 1T total parameters, 32B active, 256K context, vision/function calling/structured output/web search: https://x.com/AskVenice/status/2066634900652879949 | Live as of 2026-06-15 | Improves product utility for developers and AI-agent workflows. | Better models can increase API demand, staking-for-capacity demand, and revenue/burn capacity if usage monetizes. | Track docs/model list, API pricing, user uptake, and whether new model launches correlate with burn/revenue growth. |
+| Emissions reduction path | Confirmed | Official Venice posts described reductions from prior annual emissions toward lower future emissions: https://x.com/AskVenice/status/2037231269449523276 and https://x.com/AskVenice/status/2061503966702162407 | Ongoing through scheduled cuts | Lowers inflation and makes burns easier to compare against issuance. | If burns exceed emissions, VVV gets a simple deflationary-capital-asset narrative. | Verify current annual emissions, staking yield, and whether cuts executed onchain as announced. |
+| Revenue-linked buyback/burn program | Confirmed | Official burn update/dashboard references: https://x.com/AskVenice/status/2064158076303790131 | Monthly / recurring if revenue continues | Directly links Venice revenue to VVV supply reduction. | Larger repeated burns can shift VVV from “AI app token” to revenue-linked asset; failed/irregular burns weaken thesis. | Track burn size, txs, revenue source, burn/emission ratio, and whether dashboard data is machine-readable. |
+| Staking for API/inference capacity | Confirmed / needs exact current terms | Official and user commentary describe staking VVV for proportional access to Venice API/compute capacity. | Live, terms may evolve | Creates non-speculative demand from heavy users/devs/agents that need inference. | If AI agents require persistent private inference, capacity staking could become a real working-capital use case. | Verify current staking rules, capacity quotas, unstaking constraints, and whether staked demand grows with API usage. |
+| Contract/admin/security clarity | Speculative watch item | Third-party posts have raised concerns about token/admin controls; not treated as confirmed here without official/onchain verification. | Unknown | Security clarity can affect institutional comfort and holder trust. | A verified timelock/multisig/admin-control change or exploit disclosure would be material. | Check token contract, audits, official responses, and any admin-role changes. |
 
-## Docs/blogs
-- TBD / needs follow-up.
+## Token / contract notes
+- Ticker: VVV.
+- Base contract tracked in the dossier: `0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf`.
+- Core utility to verify: VVV staking for Venice inference/API capacity; remaining emissions/yield; buyback/burn mechanics tied to Venice revenue.
+- Contract/admin concerns should be handled as verifiable onchain/audit checks, not accepted from random X posts without evidence.
 
-## Risks
-- TBD / needs follow-up.
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/AskVenice | Main official Venice account; product, model, burn, token and app announcements. |
+| https://x.com/tryvenice | Related Venice/product-company account; lower priority than @AskVenice unless source-specific. |
+| https://x.com/ErikVoorhees | Founder/philosophical/product narrative; may contain material comments on privacy, AI access, VVV and regulation. |
+| https://venice.ai/ | Official app/site. |
+| https://venice.ai/lp/vvv | Official VVV/token landing page and burn/token information source. |
+| https://docs.venice.ai/ | Official API/docs; model list, API usage, developer integration and pricing/capacity details. |
+| https://github.com/veniceai/skills | Official/public GitHub source previously surfaced; monitor for integrations/tooling. |
+| `0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf` | Base VVV token contract; use for supply/holder/admin checks. |
+| https://x.com/AskVenice/status/2066634900652879949 | Official Kimi K2.7 Code model launch; current product/update evidence from this scan. |
 
 ## Open questions
-- TBD / needs follow-up.
+- What are the exact current VVV staking rules: capacity allocation, unstaking delay, quota calculation, and whether API usage can saturate capacity?
+- What is current annual emissions after the latest scheduled cut, and how does it compare with monthly burns?
+- Is the buyback/burn dashboard machine-readable or only UI/social updates?
+- What admin/mint controls exist on the VVV contract, and are they timelocked/multisig/audited?
+- Which model/API launches actually drive revenue rather than engagement-only usage?
 
-## Watch triggers
-- TBD / needs follow-up.
+## Monitoring notes
+- High-priority recurring checks: official burn/emissions posts, model/API launches, docs/model-list changes, staking/capacity rules, contract/admin changes, and Erik Voorhees comments that clarify VVV economics.
+- Treat model releases as product catalysts only if they plausibly change usage/revenue; log routine “model available” posts when the model is major or developer-relevant.
+- Separate philosophical uncensored-AI narrative from hard token economics; the tradeable signals are burns, emissions, staking demand, revenue, listings/liquidity, and security clarity.
 
 ---
