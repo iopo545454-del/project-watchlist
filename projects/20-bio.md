@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-16T08:59:04Z
 ---
 
 # BIO / Bio Protocol
@@ -48,6 +48,10 @@ last_updated: 2026-06-13T21:15:15Z
 **Notes/ambiguities**
 - BIO ecosystem includes many project/IP tokens; keep each contract and BioDAO separate from core BIO.
 - Use only `bio.xyz`, `app.bio.xyz`, `docs.bio.xyz` and verified X accounts for claim/staking links due high phishing risk.
+
+## Latest scan notes
+
+- 2026-06-16 — Official X promoted a PeptAI science update covering pipeline status, candidates advancing to wet-lab testing, and peptide commercial potential with Molecule and PeptideList participants. Source: https://x.com/BioProtocol/status/2066784848459497479
 
 ## Thesis
 - TBD / needs follow-up.

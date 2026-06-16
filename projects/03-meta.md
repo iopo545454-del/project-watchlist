@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T08:59:04Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-15T20:25:58Z
 
 ## Latest scan notes
 
+- 2026-06-16 — Ownership FM shared Alpha FC ownership-token governance mechanics: token holders can vote on club decisions, elect the chairman, and hold leadership accountable. This is not a MetaDAO protocol change, but it is useful evidence for the ownership-coin utility thesis MetaDAO is aligned with. Source: https://x.com/ownershipfm/status/2066751719598383212
 - 2026-06-15 — Ownership FM recapped the passed Ownership Capital proposal: $2M USDC treasury seed, activist fund mandate for MetaDAO raises/tokens, and multisig governance. Source: https://x.com/ownershipfm/status/2066591644430836075
 
 ## Thesis

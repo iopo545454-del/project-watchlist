@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-16T08:59:04Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-16 — Core contributor `@0xTP91` said Virtuals is “physically moving closer” to builders through a new initiative with `@ns` / Balaji, focused on AI agents that do useful work, tokenized robotics/hardware projects, and agents that earn/transact autonomously. Source: https://x.com/0xTP91/status/2066799913200160992
 - 2026-06-15 — Official X showcased an Eastworlds/Unitree G1 robot autonomously picking up a bottle with a model trained for about $200 of compute, reinforcing the physical-agent/robotics track. Source: https://x.com/virtuals_io/status/2066563545287065678
 - 2026-06-15 — Core contributor `@ethermage` outlined a five-pillar agent-economy framework for Virtuals: wallets/identity, ownership, commerce/coordination, physical embodiment, reputation, and agentic governance; also teased another experiment. Source: https://x.com/ethermage/status/2066467394130997558
 - 2026-06-15 — Core contributor `@0xTP91` pushed ACF as an active Virtuals funding mechanism: token FDV growth can route non-dilutive USDC tranches to project teams, creating a second revenue/funding engine beyond trading fees; also noted launch-page quick-deploy template optimizations. Source: https://x.com/0xTP91/status/2066393481262817418
