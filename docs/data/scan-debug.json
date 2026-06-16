@@ -1,5 +1,137 @@
 [
   {
+    "run_id": "20260616-214108",
+    "started_at": "2026-06-16T21:41:08Z",
+    "completed_at": "2026-06-16T21:41:08Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-16T17:27:49Z to 2026-06-16T21:41:08Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/integration items, usage metrics, docs/blog, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "CHIP / USD.AI",
+      "GEOD / GEODNET",
+      "Kinetiq",
+      "TAO / Bittensor",
+      "Targon — Bittensor Subnet 4",
+      "VVV / Venice AI",
+      "Worldcoin / WLD / World Network"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 7,
+      "material_entries": 7,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "TAO / Bittensor",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/opentensor/status/2066966839830159463",
+        "summary": "OpenTensor announced Root Reborn, a proposed root-economy change replacing auto-sold dividends with validator-set reinvestment across subnets.",
+        "decision": "Logged because root-economy/governance mechanics can affect TAO/subnet incentives and is scheduled for official discussion."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2066988242482941976",
+        "summary": "USD.AI announced USDai/sUSDai Pendle markets with Feb. 2027 YTs and Allo point multipliers.",
+        "decision": "Logged as yield/points market-structure catalyst for USD.AI demand and user positioning."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/AskVenice/status/2066990725439361251",
+        "summary": "Venice launched GLM 5.2 for Pro users and privacy-verifiable TEE/E2EE mode.",
+        "decision": "Logged as product/model coverage and privacy-feature update relevant to usage/capacity thesis."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "type": "official update",
+        "source": "X/Twitter official ecosystem scan",
+        "url": "https://x.com/world_chain_/status/2066985158704603423",
+        "summary": "World Chain said Vox Pop real-human predictions are live in World App and web.",
+        "decision": "Logged as app integration for proof-of-humanity rails."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/GEODNET/status/2066966882838602100",
+        "summary": "GEODNET posted VineView customer spotlight for vineyard RTK mapping through PinPoint.",
+        "decision": "Logged as production/customer usage evidence."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "official update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/0xOmnia/status/2066998286372786538",
+        "summary": "Team account highlighted kHYPE/Morpho borrow integration, liquidity/LTV, and Coinbase distribution pitch.",
+        "decision": "Logged as source-proximate collateral/liquidity and integration signal; Coinbase element is a pitch, not confirmed distribution."
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "type": "official update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/manifoldlabs/status/2066960771926438030",
+        "summary": "Manifold Labs unveiled Targon Tower Pro hardware at Proof of Talk.",
+        "decision": "Logged as product/hardware roadmap signal, details pending."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2066997360455188985",
+        "summary": "Bankrbot deployed a third-party Lemma multicurve token and posted onchain verification output.",
+        "decision": "Not logged: routine third-party platform token deployment/operational output, not durable BANKR protocol update."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For TAO/Bittensor, watch the Root Reborn Discord discussion and any formal governance/protocol implementation details.",
+      "For USD.AI, verify Pendle market traction, Allo point terms, and whether YT demand translates to protocol liquidity/revenue.",
+      "For Venice, watch GLM 5.2 usage and whether verifiable privacy mode shows dashboard/API adoption or VVV burn/capacity impact.",
+      "For Kinetiq, distinguish confirmed Morpho/kHYPE usage from the unconfirmed Coinbase distribution pitch.",
+      "Continue checking previously logged weak items for MetaDAO percolator issues, Ambient throughput claims, and Kinetiq Season 2 dates."
+    ],
+    "notes": "Changelog importance labeling was delegated to an independent tagger after scanner edits. X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260616-172749",
     "started_at": "2026-06-16T17:27:49Z",
     "completed_at": "2026-06-16T17:27:49Z",
