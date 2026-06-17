@@ -1,5 +1,115 @@
 [
   {
+    "run_id": "20260617-223549",
+    "started_at": "2026-06-17T22:35:49Z",
+    "completed_at": "2026-06-17T22:35:49Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-17T18:34:29Z to 2026-06-17T22:35:49Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/listing/integration items, docs/blog/data updates, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "AKT / Akash",
+      "Kinetiq",
+      "Pluralis"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 3,
+      "material_entries": 3,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Pluralis",
+        "type": "thesis update",
+        "source": "X/Twitter investor scan",
+        "url": "https://x.com/jbrukh/status/2067358047899427276",
+        "summary": "Jake Brukhman argued decentralized AI training is now ready for crypto capital-formation events to push models into commercially viable territory, with commodity-device capital as the key bottleneck.",
+        "decision": "Logged as investor thesis update because it is a direct high-signal CoinFund investor thesis for Pluralis/Agora-style decentralized training networks."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "official update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/0xOmnia/status/2067371313128178119",
+        "summary": "0xOmnia posted Markets.xyz USDH-phase metrics: $3.9B volume, 9,450 traders on listings, and 3rd-largest DEX by listings, while pointing to USDC migration as the next setup.",
+        "decision": "Logged as market-structure/usage evidence relevant to Kinetiq/Markets flywheel and prior collateral-migration catalyst."
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2067334557607592382",
+        "summary": "Akash promoted Console Air as permissionless wallet-only deployments without signups or email.",
+        "decision": "Logged as product/UX update relevant to AKT wallet-based sovereign deployment demand."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2067364181330841653",
+        "summary": "Official posts reiterated NEAR Intents as agentic-finance money rails through a video/interview clip.",
+        "decision": "Not logged separately because it repeated earlier NEAR Intents/AI-money themes without a new integration, metric, or protocol change."
+      },
+      {
+        "project": "MetaDAO / BANKR / GitLawb / other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were investor/community commentary, broad market color, generic build updates, or no posts.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issues #1 Pluralis and #2 Ambient remain visible but are already present in docs/data/index.json with initial_review_done=true; labeled project-intake query returned no labeled issues.",
+        "decision": "No new intake entry or project duplication required."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For Pluralis, verify whether investor enthusiasm maps to official funding/capital-formation/product-token economics rather than narrative only.",
+      "For Kinetiq, verify Markets.xyz USDC migration timing, volume/trader retention after USDH winddown, and any direct KNTQ value capture.",
+      "For Akash, watch whether Console Air changes deployment usage/network spend and whether GPU profitability chatter translates into provider expansion."
+    ],
+    "notes": "Changelog entries were added and independently tagged for importance before commit (1 high, 2 medium, 0 low in the new batch). X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260617-183429",
     "started_at": "2026-06-17T18:31:07Z",
     "completed_at": "2026-06-17T18:34:29Z",
