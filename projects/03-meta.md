@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-16T17:27:49Z
+last_updated: 2026-06-17T05:53:47Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-16T17:27:49Z
 
 ## Latest scan notes
 
+- 2026-06-17 — MetaDAO-affiliated `@0xSrMessi` continued governance-design discussion after the Zinc/percolator debate, arguing that DAO ownership of program upgrade authority and programmatic revenue flow to DAO treasuries are key mitigants; a separate random account mentioned a possible “first MetaDAO exploit,” but details remain too vague for confirmed treatment. Sources: https://x.com/0xSrMessi/status/2067066814236876843, https://x.com/RaspKimi/status/2067121169480745221
 - 2026-06-16 — Related MetaDAO accounts discussed the Zinc dispute/pivot and floated requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO; tracked as unverified governance-design watch item until confirmed by official maintainer/proposal text. Source: https://x.com/i/status/2066930615895671047
 - 2026-06-16 — Ownership FM shared Alpha FC ownership-token governance mechanics: token holders can vote on club decisions, elect the chairman, and hold leadership accountable. This is not a MetaDAO protocol change, but it is useful evidence for the ownership-coin utility thesis MetaDAO is aligned with. Source: https://x.com/ownershipfm/status/2066751719598383212
 - 2026-06-15 — Ownership FM recapped the passed Ownership Capital proposal: $2M USDC treasury seed, activist fund mandate for MetaDAO raises/tokens, and multisig governance. Source: https://x.com/ownershipfm/status/2066591644430836075
@@ -108,6 +109,7 @@ last_updated: 2026-06-16T17:27:49Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-17 | A random X account referenced what it called the “first MetaDAO exploit,” while MetaDAO-affiliated discussion focused on program-authority and DAO-treasury controls after Zinc/percolator concerns. | https://x.com/RaspKimi/status/2067121169480745221 | Low | Unverified | A real exploit/security issue would be material for trust in MetaDAO launches and proposal-market infrastructure, but the current source lacks details. | Look for official MetaDAO/founder acknowledgement, GitHub issue/patch, postmortem, affected contract/program, tx/signature, or credible researcher writeup; mark stale if none appears. |
 | 2026-06-15 | Related MetaDAO account `@0xSrMessi` flagged percolator-meta GitHub issues around permissionless `init`, target-coin squatting with bad parameters, and residual fee defaulting/allowing 0 bps; needs maintainer confirmation. | https://x.com/i/status/2066338574706852142 | Medium | Unverified | If accurate, initialization/fee-parameter issues could affect MetaDAO-adjacent market infrastructure and trusted launch/ownership-coin mechanics. | Check the referenced GitHub issues/maintainer replies from `@toly`/repo maintainers and whether patches or docs clarify intended 0% fee behavior. |
 | 2026-06-14 | Paradigm/Colosseum ownership/backing is referenced in official positioning, but exact ownership terms and active support level are not fully documented in this dossier. | https://x.com/MetaDAOProject | Medium | Partially supported | Backer quality is a core legitimacy input for the thesis. | Look for official fund announcement, cap table/raise post, podcast, or founder explanation of owner/backer roles. |
 

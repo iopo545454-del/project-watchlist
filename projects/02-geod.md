@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-15T20:25:58Z
+last_updated: 2026-06-17T05:53:47Z
 ---
 
 # GEOD / GEODNET
@@ -13,6 +13,7 @@ last_updated: 2026-06-15T20:25:58Z
 
 ## Latest scan notes
 
+- 2026-06-17 — A third-party researcher/investor post raised diligence concerns that GEODNET’s partner list and HNT-like DePIN model need verification; tracked as an unverified watch item, not confirmed project fact. Source: https://x.com/JungianInvestor/status/2067092701531852835
 - 2026-06-15 — Official X reiterated GEODNET as miner-built RTK rails for cm-level autonomous robots/drones; useful positioning but no new token/product/partnership detail. Source: https://x.com/GEODNET/status/2066598058540793900
 
 ## Thesis
@@ -71,6 +72,12 @@ last_updated: 2026-06-15T20:25:58Z
 - Which official contracts/bridges should be treated as canonical across Polygon/Solana or other chains?
 - What is the current unlock/emissions schedule and how does it interact with token burns?
 - What exact role/title should be recorded for mvrender, Melissa Nguyen, and Yudan Yi?
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|
+| 2026-06-17 | Third-party researcher/investor argued GEODNET has not decoupled from HNT-like DePIN weaknesses and questioned whether some listed industry partners are substantive/legitimate. | https://x.com/JungianInvestor/status/2067092701531852835 | Medium | Unverified | If partner/revenue quality is overstated, it directly weakens the physical-AI/enterprise-demand thesis and token-burn/revenue story. | Re-check official GEODNET customer/partner pages, named partner websites, revenue/burn dashboards, and any founder response before upgrading/downgrading. |
 
 ## Watch triggers
 - Large token burns or changes in burn/revenue cadence.
