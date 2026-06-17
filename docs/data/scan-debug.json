@@ -1,5 +1,96 @@
 [
   {
+    "run_id": "20260617-015221",
+    "started_at": "2026-06-17T01:52:21Z",
+    "completed_at": "2026-06-17T01:52:21Z",
+    "status": "completed",
+    "scan_window": "since prior scan / latest relevant changelog baseline (2026-06-16T21:41:08Z to 2026-06-17T01:52:21Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/integration items, docs/blog updates, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 0,
+      "material_entries": 0,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "scan",
+        "source": "X/Twitter official/founder scan",
+        "url": "https://x.com/kevincodex/status/2067040797581848668",
+        "summary": "GitLawb/founder posts framed Cursor/GitLab agentic-git moves and Grok commentary as validation of GitLawb's thesis.",
+        "decision": "Not logged: relevant market color but no new GitLawb release, partnership, token/economics change, governance item, or independently confirmed adoption metric."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "scan",
+        "source": "X/Twitter team/related scan",
+        "url": "https://x.com/0xOmnia/status/2067014293376180705",
+        "summary": "Team/related accounts posted a Singapore networking call for protocols/companies/traders and quote-tweeted it.",
+        "decision": "Not logged: too vague to treat as a confirmed partnership, integration, listing, funding, or protocol update."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2067026977190470132",
+        "summary": "Official account promoted a live discussion on user-owned AI after Mythos 5 with privacy/verifiable-AI themes.",
+        "decision": "Not logged: event promotion aligns with existing thesis but did not add durable project facts, roadmap changes, token/governance updates, or a concrete catalyst beyond previously logged NEAR AI/privacy context."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "No original in-window posts from the remaining checked official/team accounts produced material project information; several queried accounts had no matching posts.",
+        "decision": "No changelog or dossier update: no confirmed material update or credible weak signal met the threshold."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For GitLawb, watch whether agentic-git market validation turns into concrete product releases, partnerships, usage metrics, or token/credit-loop changes.",
+      "For Kinetiq, watch for a concrete Singapore-related announcement, partner integration, trader program, or Markets/Kinetiq distribution update.",
+      "For NEAR, watch whether the user-owned/verifiable-AI discussion yields new product, roadmap, funding, or integration details.",
+      "Continue checking previously logged weak items for MetaDAO percolator issues/Zinc governance-design chatter, Ambient throughput claims, and Kinetiq Season 2 dates."
+    ],
+    "notes": "No changelog entries were added; independent importance tagger was still run to verify changelog schema/labels. X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260616-214108",
     "started_at": "2026-06-16T21:41:08Z",
     "completed_at": "2026-06-16T21:41:08Z",
