@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-16T17:27:49Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # VVV / Venice AI
@@ -70,3 +70,8 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 - Separate philosophical uncensored-AI narrative from hard token economics; the tradeable signals are burns, emissions, staking demand, revenue, listings/liquidity, and security clarity.
 
 ---
+
+
+## Latest scan notes
+
+- 2026-06-17 — Venice launched Kling V3 Turbo for anonymous text-to-video and image-to-video use in Standard/Pro tiers, adding another video-generation model to the Venice product surface. Source: https://x.com/AskVenice/status/2067236016629432370

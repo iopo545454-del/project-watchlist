@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-16T13:15:15Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-06-16T13:15:15Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-06-17 — USD.AI said the new USDai and sUSDai Pendle markets are live for Feb. 2027 maturities, adding live DeFi yield-market access to GPU-backed RWA exposure; team also posted dashboard/loan-activity quote improvements. Source: https://x.com/USDai_Official/status/2067243985643737295
 
 - 2026-06-16 — USDAI released a Lighthouse/YTD report thread saying DAO ARR grew from $1.1M in 2025 to $30M annualized in Q2 2026, with revenue driven by origination fees and net interest margin on GPU-backed loans as sUSDAI liquidity deploys into RWA lending. Source: https://x.com/USDai_Official/status/2066853397442236479; report pointer: https://usd.ai/lighthouse
 - 2026-06-15 — USDAI said it is working with Hydra Host after Hydra’s $100M Series A to connect GPU sourcing with asset-backed financing for AI factory deployment; also posted broad hiring tied to a $1B compute-financing goal. Source: https://x.com/USDai_Official/status/2066611721234772415

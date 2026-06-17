@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T05:53:47Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-06-17 — Virtuals highlighted Base MCP/Litebeam enabling every Base MCP agent to buy services and settle onchain through one connection, and separately pushed Pemba/Starlink edge-backpack cloud robotics as a physical-agent signal. Source: https://x.com/virtuals_io/status/2067147738555535508
 
 - 2026-06-17 — Official/core accounts described launch-discovery/UI changes (new launches surfaced in a `New` tab), a return of “THE HUNT” discovery mechanic, and contributor discussion of the builder funding loop: projects can fund tools/infra/growth through trading-tax revenue and ACF-style capital while experiments like degen arena/liquidity injection are being tested. Sources: https://x.com/virtuals_io/status/2067069405595578779, https://x.com/0xTP91/status/2067108883500527748, https://x.com/everythingempty/status/2067073973133979896
 - 2026-06-16 — Core contributor `@0xTP91` said Virtuals is “physically moving closer” to builders through a new initiative with `@ns` / Balaji, focused on AI agents that do useful work, tokenized robotics/hardware projects, and agents that earn/transact autonomously. Source: https://x.com/0xTP91/status/2066799913200160992

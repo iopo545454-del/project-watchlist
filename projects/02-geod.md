@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T05:53:47Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # GEOD / GEODNET
@@ -12,6 +12,8 @@ last_updated: 2026-06-17T05:53:47Z
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
 
 ## Latest scan notes
+
+- 2026-06-17 — GEODNET official X amplified tokenomics diligence around real operators, enterprise revenue, and drone/tractor/robot use cases after Coinbase Markets added GEOD to its listing roadmap; roadmap status is not a guaranteed listing. Source: https://x.com/GEODNET/status/2067245884526514313
 
 - 2026-06-17 — A third-party researcher/investor post raised diligence concerns that GEODNET’s partner list and HNT-like DePIN model need verification; tracked as an unverified watch item, not confirmed project fact. Source: https://x.com/JungianInvestor/status/2067092701531852835
 - 2026-06-15 — Official X reiterated GEODNET as miner-built RTK rails for cm-level autonomous robots/drones; useful positioning but no new token/product/partnership detail. Source: https://x.com/GEODNET/status/2066598058540793900

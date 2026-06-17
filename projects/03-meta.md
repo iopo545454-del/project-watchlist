@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T05:53:47Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # META / MetaDAO
@@ -28,6 +28,8 @@ last_updated: 2026-06-17T05:53:47Z
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
 
 ## Latest scan notes
+
+- 2026-06-17 — MetaDAO announced ZKFG-008 is live: a reviewed proposal to take ZKFG private at $0.15 per token with early-holder ZINC airdrop mechanics, escrowed redemption funds, and IP/control transfer terms if passed. Source: https://x.com/MetaDAOProject/status/2067209288792125496
 
 - 2026-06-17 — MetaDAO-affiliated `@0xSrMessi` continued governance-design discussion after the Zinc/percolator debate, arguing that DAO ownership of program upgrade authority and programmatic revenue flow to DAO treasuries are key mitigants; a separate random account mentioned a possible “first MetaDAO exploit,” but details remain too vague for confirmed treatment. Sources: https://x.com/0xSrMessi/status/2067066814236876843, https://x.com/RaspKimi/status/2067121169480745221
 - 2026-06-16 — Related MetaDAO accounts discussed the Zinc dispute/pivot and floated requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO; tracked as unverified governance-design watch item until confirmed by official maintainer/proposal text. Source: https://x.com/i/status/2066930615895671047

@@ -1,5 +1,162 @@
 [
   {
+    "run_id": "20260617-141552",
+    "started_at": "2026-06-17T14:15:52Z",
+    "completed_at": "2026-06-17T14:15:52Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-17T10:09:10Z to 2026-06-17T14:15:52Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/listing/integration items, docs/blog/data updates, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "CHIP / USD.AI",
+      "GEOD / GEODNET",
+      "GitlWab / GitLawb / Gitwab",
+      "META / MetaDAO",
+      "NEAR Protocol",
+      "Pluralis",
+      "VIRTUAL / Virtuals Protocol",
+      "VVV / Venice AI"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 9,
+      "material_entries": 9,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GEOD / GEODNET",
+        "type": "official update",
+        "source": "X/Twitter official scan + Coinbase Markets roadmap context",
+        "url": "https://x.com/GEODNET/status/2067245884526514313",
+        "summary": "GEODNET official X amplified tokenomics diligence around real operators, enterprise revenue, and drone/tractor/robot use cases after Coinbase Markets added GEOD to its listing roadmap; roadmap status is not a guaranteed listing.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "official update",
+        "source": "X/Twitter official governance scan",
+        "url": "https://x.com/MetaDAOProject/status/2067209288792125496",
+        "summary": "MetaDAO announced ZKFG-008 is live: a reviewed proposal to take ZKFG private at $0.15 per token with early-holder ZINC airdrop mechanics, escrowed redemption funds, and IP/control transfer terms if passed.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "catalyst update",
+        "source": "X/Twitter team/founder scan",
+        "url": "https://x.com/0xDeployer/status/2067101777804313054",
+        "summary": "Bankr launched Glidepath, an AI-managed builder profit-taking path where fee tokens are vested and sold in tiny liquidity-aware slices with visible exit plans, replacing direct fee-token dumps on Bankr.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/gitlawb/status/2067229885563883730",
+        "summary": "GitLawb shipped OpenClaude v0.19.0 with NEAR AI, Fireworks, and Gemini Vertex providers plus context visualization, auto-compact, refreshed UI, and a demo video.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2067243985643737295",
+        "summary": "USD.AI said the new USDai and sUSDai Pendle markets are live for Feb. 2027 maturities, adding live DeFi yield-market access to GPU-backed RWA exposure; team also posted dashboard/loan-activity quote improvements.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/AskVenice/status/2067236016629432370",
+        "summary": "Venice launched Kling V3 Turbo for anonymous text-to-video and image-to-video use in Standard/Pro tiers, adding another video-generation model to the Venice product surface.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2067240484490068270",
+        "summary": "NEAR highlighted Hinkal integrating NEAR Intents for private cross-chain swaps from Solana and Tron, extending the privacy/intents stack with another routing integration.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2067147738555535508",
+        "summary": "Virtuals highlighted Base MCP/Litebeam enabling every Base MCP agent to buy services and settle onchain through one connection, and separately pushed Pemba/Starlink edge-backpack cloud robotics as a physical-agent signal.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "Pluralis",
+        "type": "thesis update",
+        "source": "X/Twitter investor/team scan",
+        "url": "https://x.com/jbrukh/status/2067216487719342307",
+        "summary": "Jake Brukhman framed Chamin Hewa’s ICML 2026 Factored Gossip DiLoCo work as progress toward resilient decentralized training swarms and commercially viable models trained on decentralized networks.",
+        "decision": "Logged to changelog and project Latest because it met the watchlist materiality/source-proximate threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis and #2 Ambient are already present in docs/data/index.json with initial_review_done=true; labeled project-intake query returned no labeled issues.",
+        "decision": "No new project intake or duplicate created."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      },
+      {
+        "project": "Other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Remaining official/team account scans surfaced routine event promotion, marketing posts, market color, or no in-window posts.",
+        "decision": "No changelog/dossier update because no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For GEODNET, monitor Coinbase Markets/Assets for actual listing support, not just roadmap status, and verify partner/customer revenue quality after the Grid_Econ analysis.",
+      "For MetaDAO, watch ZKFG-008 vote/trading result, redemption implementation, and any downstream Zinc/ZKFG governance precedent.",
+      "For Bankr, watch Glidepath live usage, whether it reduces builder-dump risk, and whether fees/BNKR capture value.",
+      "For Virtuals/NEAR/USD.AI/Venice/GitLawb/Pluralis, verify whether today’s integrations/releases translate into sustained usage metrics rather than announcement-only attention."
+    ],
+    "notes": "Changelog entries were added and independently tagged for importance before commit (6 high, 3 medium, 0 low in the new batch). X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260617-100910",
     "started_at": "2026-06-17T10:09:10Z",
     "completed_at": "2026-06-17T10:09:10Z",

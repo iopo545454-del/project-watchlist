@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-16T04:51:42Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-16T04:51:42Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-17 — Bankr launched Glidepath, an AI-managed builder profit-taking path where fee tokens are vested and sold in tiny liquidity-aware slices with visible exit plans, replacing direct fee-token dumps on Bankr. Source: https://x.com/0xDeployer/status/2067101777804313054
 
 - 2026-06-16 — Team/DevRel `@saltorious1` said new Bankr skills merged for Hunch, Signa, 1claw, and bankr-shopify; useful product-surface expansion for prediction-market/integration/commerce agent workflows, but fee capture to BNKR still needs verification. Source: https://x.com/saltorious1/status/2066742373804122297
 - 2026-06-15 — Official `@bankrbot` posted operating metrics: 1,240 24h active users, 42.8k+ registered wallets, ~$14.2M BNKR market cap, and ongoing agent-to-agent / automated treasury-management activity; also floated native agent-impression integration with Latent as a logical scaling path. Source: https://x.com/bankrbot/status/2066427203487928479

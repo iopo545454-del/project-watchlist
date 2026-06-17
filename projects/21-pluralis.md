@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-14T23:31:17Z
+last_updated: 2026-06-17T14:15:52Z
 ---
 
 # Pluralis
@@ -16,6 +16,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 - **Positioning:** a credible DeAI research bet: if contributor-owned training can converge near centralized baselines and preserve model economics, it becomes a serious alternative to closed AI and simple open-weight releases.
 
 ## Latest scan notes
+
+- 2026-06-17 — Jake Brukhman framed Chamin Hewa’s ICML 2026 Factored Gossip DiLoCo work as progress toward resilient decentralized training swarms and commercially viable models trained on decentralized networks. Source: https://x.com/jbrukh/status/2067216487719342307
 
 - 2026-06-14 — Intake issue #1 added Pluralis to the dashboard and initial review found the official site, Agora docs/dashboard, GitHub org, USV/CoinFund seed thesis, and official X run updates. Source: https://github.com/iopo545454-del/project-watchlist/issues/1
 - 2026-06-14 — Official X said the Pluralis-8B / Agora run was around 350B tokens in, tracking centralized-run convergence, with 133 external contributors, 104 nodes filled quickly, roughly 170k tokens/s, and no H100/B200s. Source: https://x.com/Pluralis/status/2065899910080115117
