@@ -1,5 +1,114 @@
 [
   {
+    "run_id": "20260618-105139",
+    "started_at": "2026-06-18T10:51:39Z",
+    "completed_at": "2026-06-18T10:51:39Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-18T06:49:58Z to 2026-06-18T10:51:39Z)",
+    "scope": "Checked open GitHub project-intake issues and tracked-project official/team X accounts in chunks via x_search, excluding POD/Dolphin/Pacific Pods per user suppression; filtered for official/project-info updates, catalysts, token/governance/security/listing/integration items, docs/blog/data updates, and credible weak signals.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "VIRTUAL / Virtuals Protocol",
+      "BIO / Bio Protocol"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 2,
+      "material_entries": 2,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter official + core-contributor scan",
+        "url": "https://x.com/virtuals_io/status/2067545442490147169",
+        "summary": "Virtuals highlighted long-running builder Shekel moving from hosted trading agents to self-hosted backtesting/live-deployment tooling; Umeir also amplified robotics-stack collaboration around Exylos, StrikeRobot and Reppo.",
+        "decision": "Logged to changelog/project Latest because it is source-proximate Virtuals ecosystem/product evidence and the independent tagger marked it high trading importance."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "type": "official update",
+        "source": "X/Twitter official + founder scan",
+        "url": "https://x.com/BioProtocol/status/2067521860967727283",
+        "summary": "Bio Protocol went live from DeSci Berlin 2026 with talks on DeSci, AI-driven biotech, agentic science, autonomous drug discovery and RWA tokenisation; Paul Kohlhaas framed the stream as a current DeSci/AI update source.",
+        "decision": "Logged to changelog/project Latest as meaningful ecosystem/event signal; independent tagger marked it medium trading importance."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "scan",
+        "source": "X/Twitter DevHub scan",
+        "url": "https://x.com/NEARDevHub/status/2067557245517463946",
+        "summary": "NEAR DevHub quote-posted IronClawAI LLMs in secure encrypted enclaves on NEAR AI Cloud.",
+        "decision": "Not logged separately because prior NEAR entries already captured IronClaw/AI Money/confidential-cloud context and this did not add a new integration, metric, or protocol change."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "X/Twitter official bot scan",
+        "url": "https://x.com/bankrbot/status/2067545791867330870",
+        "summary": "Bankr posted live Hunch prediction markets and a Hermes Face token contract/launch action.",
+        "decision": "Not logged because this looked like routine agent/bot launch-market activity rather than a durable Bankr protocol, token, governance, listing, security, or major integration update."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were light replies, event chatter, broad Hyperliquid/market commentary, repetitive community listing/airdrop chatter, or no posts; broad searches did not surface credible new official/listing/governance/security/funding items meeting threshold.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issues #1 Pluralis and #2 Ambient remain visible but are already present in docs/data/index.json with initial_review_done=true; labeled project-intake query returned no labeled issues.",
+        "decision": "No new intake entry or project duplication required."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For Virtuals, watch whether Shekel/backtesting/live-deployment tooling and robotics-stack collaborations translate into usage metrics, protocol revenue, launch activity, or integrations.",
+      "For BIO, follow DeSci Berlin outputs only if talks produce protocol launches, funding/RWA-tokenisation details, token mechanics, or BioDAO-specific catalysts.",
+      "Continue checking previously logged weak items for GEODNET partner/customer-quality diligence, MetaDAO program-authority/security chatter, Ambient throughput claims, and Kinetiq Season 2 dates."
+    ],
+    "notes": "Two changelog entries were added and independently tagged for importance before commit (1 high, 1 medium, 0 low). X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260618-064958",
     "started_at": "2026-06-18T06:47:52Z",
     "completed_at": "2026-06-18T06:49:58Z",
