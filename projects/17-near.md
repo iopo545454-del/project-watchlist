@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-17T14:15:52Z
+last_updated: 2026-06-18T14:57:07Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-17T14:15:52Z
 
 ## Latest scan notes
 
+- 2026-06-18 — NEAR published a user-owned AI stack map with current proof points: Intents $20B+ volume, Confidential Intents $30M+ TVL, NEAR AI Cloud/private inference, Agent Market, House of Stake, and live revenue/buybacks. Source: https://x.com/NEARProtocol/status/2067593396168876452
 - 2026-06-17 — NEAR highlighted Hinkal integrating NEAR Intents for private cross-chain swaps from Solana and Tron, extending the privacy/intents stack with another routing integration. Source: https://x.com/NEARProtocol/status/2067240484490068270
 
 - 2026-06-16 — Official X published an AI Money / agent-economy stack tying together NEAR Blockchain, House of Stake, Confidential Cloud, Intents, Agent Market, IronClaw, and near.com; Illia also amplified $30M+ confidentiality-progress context. Source: https://x.com/NEARProtocol/status/2066912426897842541

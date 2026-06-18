@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-17T14:15:52Z
+last_updated: 2026-06-18T14:57:07Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-17T14:15:52Z
 
 ## Latest scan notes
 
+- 2026-06-18 — Official Bankr account announced the first Bankr Fund investment into LienFi, an onchain tax-lien / real-estate-linked Base project, with liquid tokens locked for one year. Source: https://x.com/bankrbot/status/2067608272568463804
 - 2026-06-17 — Bankr launched Glidepath, an AI-managed builder profit-taking path where fee tokens are vested and sold in tiny liquidity-aware slices with visible exit plans, replacing direct fee-token dumps on Bankr. Source: https://x.com/0xDeployer/status/2067101777804313054
 
 - 2026-06-16 — Team/DevRel `@saltorious1` said new Bankr skills merged for Hunch, Signa, 1claw, and bankr-shopify; useful product-surface expansion for prediction-market/integration/commerce agent workflows, but fee capture to BNKR still needs verification. Source: https://x.com/saltorious1/status/2066742373804122297

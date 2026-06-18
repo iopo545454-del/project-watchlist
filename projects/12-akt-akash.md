@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-17T22:35:49Z
+last_updated: 2026-06-18T14:57:07Z
 ---
 
 # AKT / Akash
@@ -14,6 +14,7 @@ last_updated: 2026-06-17T22:35:49Z
 
 ## Latest scan notes
 
+- 2026-06-18 — Akash proposal 329 is live: PIP Spot and Reservation Revenue Share would set 10% OCL / 90% community-pool spot revenue and 30% / 70% reservation revenue splits; voting ends June 25. Source: https://moon-runners.net/akash/mainnet/governance/329
 - 2026-06-17 — Official X promoted Console Air as a permissionless wallet-only deployment path with no signups or email, using an AKT wallet as the deployment identity/payment surface. Source: https://x.com/akashnet/status/2067334557607592382
 - 2026-06-15 — Official X said Kimi 2.7 is available on AkashML/OpenRouter for connected Claude Code users, extending the open compute / agentic coding model surface. Source: https://x.com/akashnet/status/2066593476322500908
 

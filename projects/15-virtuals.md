@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-18T10:51:39Z
+last_updated: 2026-06-18T14:57:07Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-18 — Virtuals highlighted Litebeam migration traction after relaunching on Virtuals: 3,400+ microservice vendors, 100+ agents, 500 holders, and early distribution/funding traction. Source: https://x.com/virtuals_io/status/2067618599381135514
 - 2026-06-18 — Virtuals highlighted long-running builder Shekel moving from hosted trading agents to self-hosted backtesting/live-deployment tooling, while core contributors amplified robotics-stack collaboration around Exylos, StrikeRobot and Reppo. Source: https://x.com/virtuals_io/status/2067545442490147169
 
 - 2026-06-17 — Virtuals highlighted Base MCP/Litebeam enabling every Base MCP agent to buy services and settle onchain through one connection, and separately pushed Pemba/Starlink edge-backpack cloud robotics as a physical-agent signal. Source: https://x.com/virtuals_io/status/2067147738555535508

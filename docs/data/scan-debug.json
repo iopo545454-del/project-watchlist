@@ -1,5 +1,117 @@
 [
   {
+    "run_id": "20260618-145707",
+    "started_at": "2026-06-18T14:57:07Z",
+    "completed_at": "2026-06-18T14:57:07Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-18T10:51:39Z to 2026-06-18T14:57:07Z)",
+    "scope": "Checked open GitHub project-intake issues, tracked-project official/team X accounts in chunks via x_search, a broad weak-signal/materiality query, and the live Akash proposal page; excluded POD/Dolphin/Pacific Pods per user suppression.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "AKT / Akash",
+      "VIRTUAL / Virtuals Protocol",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 4,
+      "material_entries": 4,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2067608272568463804",
+        "summary": "Bankr announced first Bankr Fund investment into LienFi with liquid tokens locked for one year.",
+        "decision": "Logged because it is a new protocol/ecosystem capital-allocation/funding signal from the official Bankr account."
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "catalyst update",
+        "source": "Akash governance page + X/Twitter governance monitor",
+        "url": "https://moon-runners.net/akash/mainnet/governance/329",
+        "summary": "Proposal 329 is live for voting and would set spot/reservation revenue-share fees between OCL and the community pool.",
+        "decision": "Logged because it directly affects Akash revenue distribution, provider-incentive-program economics, and community-pool flows."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2067618599381135514",
+        "summary": "Virtuals highlighted Litebeam migration traction: 3,400+ microservice vendors, 100+ agents, 500 holders and early distribution/funding results.",
+        "decision": "Logged because migration traction and agent/vendor counts are source-proximate evidence for Virtuals launch/funding/distribution rails."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2067593396168876452",
+        "summary": "NEAR official user-owned AI stack map included Intents, confidential TVL, AI Cloud, Agent Market, House of Stake, and live revenue/buybacks.",
+        "decision": "Logged because the official stack update bundled current metrics and token/economic infrastructure signals."
+      },
+      {
+        "project": "MetaDAO / GitLawb / Kinetiq / BIO / Ambient / other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were governance explainers without new proposals, event livestream reminders, HYPE market/TWAP color, low-context community chatter, or no posts.",
+        "decision": "No additional dossier/changelog update because no confirmed material update or credible weak signal met threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issues #1 Pluralis and #2 Ambient remain visible but are already present in docs/data/index.json with initial_review_done=true; labeled project-intake query returned no labeled issues.",
+        "decision": "No new intake entry or project duplication required."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "type": "suppression",
+        "source": "user suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin/Pacific Pods present in index but excluded from scan scope by explicit user suppression.",
+        "decision": "Skipped silently for project updates/changelog; included only as operator audit of suppression."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For Akash, watch Proposal 329 voting result by June 25 and any official Overclock/Akash explanation of revenue-share implications.",
+      "For Bankr, watch whether Bankr Fund discloses additional investments, fund sizing, governance, revenue/fee routing, or BNKR value capture.",
+      "For Virtuals, verify whether Litebeam migration metrics convert into sustained agent usage, fees, vendor retention, and more migrations.",
+      "For NEAR, verify live fee-switch/buyback details and whether User-Owned AI stack metrics keep compounding beyond infographic-level claims."
+    ],
+    "notes": "Four changelog entries were added and independently tagged for importance before commit (4 high, 0 medium, 0 low). X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260618-105139",
     "started_at": "2026-06-18T10:51:39Z",
     "completed_at": "2026-06-18T10:51:39Z",
