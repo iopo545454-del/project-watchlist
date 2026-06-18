@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-18T14:57:07Z
+last_updated: 2026-06-18T23:11:30Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-18T14:57:07Z
 
 ## Latest scan notes
 
+- 2026-06-18 — Bankr showed its agent/CLI flow interacting with Coinbase’s new agents stack, a useful distribution/integration signal for Bankr as agent financial infrastructure. Source: https://x.com/bankrbot/status/2067731259871351113
 - 2026-06-18 — Official Bankr account announced the first Bankr Fund investment into LienFi, an onchain tax-lien / real-estate-linked Base project, with liquid tokens locked for one year. Source: https://x.com/bankrbot/status/2067608272568463804
 - 2026-06-17 — Bankr launched Glidepath, an AI-managed builder profit-taking path where fee tokens are vested and sold in tiny liquidity-aware slices with visible exit plans, replacing direct fee-token dumps on Bankr. Source: https://x.com/0xDeployer/status/2067101777804313054
 
@@ -70,6 +71,7 @@ last_updated: 2026-06-18T14:57:07Z
 |---|---|---|---|---|---|---|
 | x402 Cloud multi-token payments | Confirmed | Official X says users can accept payment in any coin when creating a Bankr x402 endpoint: https://x.com/bankrbot/status/2066182283380589020 | Live as of 2026-06-14 | Expands Bankr from natural-language execution/launch tooling into agent payment endpoints that can settle in arbitrary tokens | Could make ecosystem tokens more useful as agent/service payment rails and improve Bankr’s relevance to x402/agent-commerce narratives | Watch docs.bankr.bot and bankr.bot/x402 for fee routing, supported chains/tokens, endpoint volume, and whether BNKR captures value |
 | Bankr skills/integration surface | Confirmed | Team/DevRel post listed newly merged skills for Hunch, Signa, 1claw, and bankr-shopify: https://x.com/saltorious1/status/2066742373804122297 | Live / recently merged | Adds more agent actions/integrations, including prediction-market and commerce-related surfaces. | More skills can increase Bankr terminal/agent utility and transaction flow; token relevance depends on fees, Club/Max conversion, or BNKR utility linkage. | Watch skills.bankr.bot, docs, usage metrics, and whether these skills route fees or demand to BNKR. |
+| Coinbase agent-stack interaction | Confirmed | Official Bankr X showed Bankr agent/CLI interacting with Coinbase’s agents tooling: https://x.com/bankrbot/status/2067731259871351113 | Live demo / early | Puts Bankr in the Coinbase-for-agents distribution conversation, beyond internal Bankr launches. | If Coinbase agent workflows become common, Bankr can be one of the natural-language financial-action layers plugged into that stack. | Watch for docs, repeat usage, Coinbase/Base amplification, and whether this drives Bankr endpoint/agent transaction volume. |
 
 ## Team
 - TBD / needs follow-up.

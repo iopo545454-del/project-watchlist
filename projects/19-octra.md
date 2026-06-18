@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-16T08:59:04Z
+last_updated: 2026-06-18T23:11:30Z
 ---
 
 # OCT / Octra
@@ -51,6 +51,7 @@ last_updated: 2026-06-16T08:59:04Z
 
 ## Latest scan notes
 
+- 2026-06-18 — Octra team/community accounts teased that the node release “will be glorious” and leave “no excuses,” reinforcing node launch as the next near-term dependency after security checks and before broader ecosystem/listing progress. Source: https://x.com/octralex/status/2067706655232360455
 - 2026-06-16 — Community lead `@octrabunch` clarified the early-validator snapshot: 69 early validators still held/encrypted their claimed OCT stake at epoch 1118156 while 91 sold; this is not a general airdrop, but holders were told to expect news before validator-program launch. Source: https://x.com/octrabunch/status/2066788953689039271
 - 2026-06-14 — Official X said external researchers submitted credible bug reports/improvement suggestions; fixes have been implemented and will be published separately. Octra says it is finishing essential security checks before returning to a product release schedule that includes node release, HypEVM integration, multi-ecosystem stealth bridge, and HFHE-LLM interface. Source: https://x.com/i/status/2066055111952990487
 - 2026-06-14 — In a follow-up on listings, official X replied that “all listings require the node to be published, so it’s related.” Treat this as a useful dependency signal, not a listing announcement. Source: https://x.com/octra/status/2066062632801427841

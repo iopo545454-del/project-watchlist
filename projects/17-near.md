@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-18T14:57:07Z
+last_updated: 2026-06-18T23:11:30Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-18T14:57:07Z
 
 ## Latest scan notes
 
+- 2026-06-18 — NEAR announced NEAR@3.33 for Confidential Intents users: eligible users receive NEAR@3.33 that converts 1:1 to NEAR after a $3.33 VWAP for three consecutive days once Confidential Intents TVL reaches $70M. This is a direct incentive/liquidity milestone for Confidential Intents. Source: https://x.com/NEARProtocol/status/2067735355835449509
 - 2026-06-18 — NEAR published a user-owned AI stack map with current proof points: Intents $20B+ volume, Confidential Intents $30M+ TVL, NEAR AI Cloud/private inference, Agent Market, House of Stake, and live revenue/buybacks. Source: https://x.com/NEARProtocol/status/2067593396168876452
 - 2026-06-17 — NEAR highlighted Hinkal integrating NEAR Intents for private cross-chain swaps from Solana and Tron, extending the privacy/intents stack with another routing integration. Source: https://x.com/NEARProtocol/status/2067240484490068270
 
