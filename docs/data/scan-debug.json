@@ -3543,5 +3543,97 @@
       "Escalate only official, source-proximate, or high-signal weak items into project Latest/changelog.",
       "Keep non-material noise out of Discord; use this debug page for scan visibility."
     ]
+  },
+  {
+    "run_id": "20260619-234629",
+    "started_at": "2026-06-19T23:46:29Z",
+    "completed_at": "2026-06-19T23:46:29Z",
+    "status": "completed",
+    "scan_window": "2026-06-19T19:30:00Z to 2026-06-19T23:50:00Z",
+    "scope": "Tracked projects from docs/data/index.json excluding user-suppressed POD/Dolphin; checked open project-intake issues and X/Twitter official/project accounts plus broad weak-signal query.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "projects_checked": 21,
+      "intake_issues_checked": 2,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Pluralis",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/1",
+        "summary": "Open intake issue is already represented by tracked slug 21-pluralis with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Ambient",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/2",
+        "summary": "Open intake issue is already represented by tracked slug 22-ambient with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2068092353077010516",
+        "summary": "Bankr official bot deployed Crypto Rider Track 1 ($CRTrack1) on Base as the first official track.",
+        "decision": "Logged as catalyst update / Latest item because it is a first-party product-launch/launchpad signal."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2068060765148356991",
+        "summary": "NEAR posted thought-leadership on privacy/confidential execution for financial markets.",
+        "decision": "Observed but not logged; lower incremental signal than existing NEAR Confidential Intents update already added at prior scan."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/DeriveXYZ/status/2068055600936702162",
+        "summary": "Derive re-shared The DeFi Report on onchain options; same source already captured in prior changelog.",
+        "decision": "Duplicate/context only; no new changelog entry."
+      },
+      {
+        "project": "All tracked projects",
+        "source": "X/Twitter broad weak-signal scan",
+        "url": "n/a",
+        "summary": "Broad search found no credible new listings, funding, governance, exploits, unlocks, buybacks, or high-signal unverified rumors; ignored Moonshot voting spam and low-signal chatter.",
+        "decision": "No unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check Bankr launch page/docs for launch volume and fee/BNKR value-capture linkage.",
+      "Continue suppressing POD/Dolphin until user re-enables it.",
+      "Re-check official/team X accounts and source tables next 4h run."
+    ],
+    "importance_tagging": "completed by independent delegate tagger; new Bankr changelog entry labeled high"
   }
 ]
