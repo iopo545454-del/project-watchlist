@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-16T08:59:04Z
+last_updated: 2026-06-19T15:29:12Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-06-19 — Ambient official X explained its verified-inference economics: avoid rented-inference vendor lock-in with open/auditable onchain model weights, network competition to lower prices, and Proof-of-Logits receipts for verifiable work. Source: https://x.com/ambient_xyz/status/2067978526003974527
 - 2026-06-16 — CEO promoted app.ambient.xyz signups as an alternative inference service and offered a free full-year, month-to-month plan, a go-to-market adoption push after the Desktop/testnet reveal. Source: https://x.com/IridiumEagle/status/2066768723516797340
 - 2026-06-16 — CEO `@IridiumEagle` clarified Ambient testnet economics/security: staking is disabled, miners earn inflation and transaction rewards by performing verified inference, and contribution-weighted work drives transaction ordering/voting; this upgrades the useful-PoW/tokenomics watch item, but mainnet/token details remain unannounced. Source: https://x.com/IridiumEagle/status/2066709825183232207
 - 2026-06-15 — Official/CEO thread launched Ambient Desktop for Mac/Windows/Linux, subscription plans and x402 support, while claiming a 13.2B-token daily inference record via OpenRouter; usage numbers still need independent verification. Source: https://x.com/i/status/2066565401593659724

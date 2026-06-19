@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T14:15:52Z
+last_updated: 2026-06-19T15:29:12Z
 ---
 
 # GEOD / GEODNET
@@ -13,6 +13,7 @@ last_updated: 2026-06-17T14:15:52Z
 
 ## Latest scan notes
 
+- 2026-06-19 — GEODNET said GIP-13 StableHex is live with targeted station reward multipliers: 6x in remote/zero-coverage zones (200 spots), 4x weak-coverage zones (1,000 spots), and 2x reinforcement zones (2,000 spots), with uptime requirements for bonus retention. Source: https://x.com/GEODNET/status/2067956173689454667
 - 2026-06-17 — GEODNET official X amplified tokenomics diligence around real operators, enterprise revenue, and drone/tractor/robot use cases after Coinbase Markets added GEOD to its listing roadmap; roadmap status is not a guaranteed listing. Source: https://x.com/GEODNET/status/2067245884526514313
 
 - 2026-06-17 — A third-party researcher/investor post raised diligence concerns that GEODNET’s partner list and HNT-like DePIN model need verification; tracked as an unverified watch item, not confirmed project fact. Source: https://x.com/JungianInvestor/status/2067092701531852835

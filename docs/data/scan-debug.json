@@ -1,5 +1,128 @@
 [
   {
+    "run_id": "20260619-152912",
+    "started_at": "2026-06-19T15:29:12Z",
+    "completed_at": "2026-06-19T15:29:12Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-19T11:27:58Z to 2026-06-19T15:29:12Z)",
+    "scope": "Checked open GitHub project-intake issues, tracked-project official/team X accounts in chunks via x_search, and a broad weak-signal/materiality X query; excluded user-suppressed POD/Dolphin/Pacific Pods from scanning and changelog consideration.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "GEOD / GEODNET",
+      "CHIP / USD.AI",
+      "BIO / Bio Protocol",
+      "Kinetiq",
+      "VIRTUAL / Virtuals Protocol",
+      "Ambient"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 6,
+      "material_entries": 6,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GEOD / GEODNET",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/GEODNET/status/2067956173689454667",
+        "summary": "Official GEODNET post said GIP-13 StableHex is live with coverage-targeted reward multipliers and uptime rules.",
+        "decision": "Logged because it is an official governance/incentive rollout affecting station rewards and network expansion economics."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "docs/blog update",
+        "source": "X/Twitter official scan + Lighthouse report pointer",
+        "url": "https://x.com/USDai_Official/status/2067980036293144891",
+        "summary": "Official thread reported $100M+ redemptions around Allo Game S1, peg recovery, and pointed to the Lighthouse/YTD report.",
+        "decision": "Logged because redemption/peg resilience, liquidity behavior, revenue and GPU-backed lending report context are material for USD.AI risk and growth monitoring."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/BioProtocol/status/2067960165891244134",
+        "summary": "Official Bio Protocol post announced OpenLabs as a humans-plus-agents layer to turn scientific ideas into funded execution.",
+        "decision": "Logged because this is a new official product/coordination initiative tied to BioAgents and funded scientific project creation."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "official update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/0xOmnia/status/2067983258487308736",
+        "summary": "Core contributor showed Markets.xyz BTC app latency around 50ms and compared it with Hyperliquid update speeds.",
+        "decision": "Logged as source-proximate product/performance evidence for the Markets/Kinetiq trading infrastructure stack."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "official update",
+        "source": "X/Twitter core-contributor scan",
+        "url": "https://x.com/0xTP91/status/2067939110330003533",
+        "summary": "Core contributor described simplifying builder launches with templates and reduced naming/model complexity.",
+        "decision": "Logged as a meaningful launch-infrastructure/UX update, but not a direct token-economic change."
+      },
+      {
+        "project": "Ambient",
+        "type": "docs/blog update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/ambient_xyz/status/2067978526003974527",
+        "summary": "Official Ambient post explained verified-inference economics around open/auditable weights, Proof-of-Logits receipts, and lower switching costs.",
+        "decision": "Logged as a technical/product thesis update for the verified-inference watch item; token remains not out."
+      },
+      {
+        "project": "MetaDAO / AEON / NEAR / other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were strategic framing, event/community announcements, media clips, or developer-resource updates without new tokenomics, listing, security, governance, or material integration detail; broad weak-signal search found no credible additional items.",
+        "decision": "No further dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned no labeled issues. Open issues #1 Pluralis and #2 Ambient remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake entry, duplicate project, or dossier update required."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check open GitHub intake issues next run; issues #1 and #2 remain open but are already processed.",
+      "For GEODNET, watch station uptake in StableHex zones, uptime retention, and whether targeted incentives improve coverage without excessive emissions.",
+      "For USD.AI, verify Lighthouse/YTD report data against live dashboards and monitor sUSDAI peg/redemption behavior after incentive periods.",
+      "For Bio Protocol, watch OpenLabs usage, funded-project conversion, BioAgent execution, and whether scientific projects connect to BIO/veBIO mechanics.",
+      "For Kinetiq/Markets, watch whether latency/performance claims translate into volume, users, fees, or KNTQ value capture.",
+      "For Virtuals and Ambient, watch for usage metrics, external integrations, or token/economic disclosures beyond product-positioning posts."
+    ],
+    "notes": "Six changelog/project Latest entries were added; changelog importance was independently tagged after scanner edits. X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260619-112758",
     "started_at": "2026-06-19T11:25:05Z",
     "completed_at": "2026-06-19T11:27:58Z",

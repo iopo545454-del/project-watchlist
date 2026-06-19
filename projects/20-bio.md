@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-18T10:51:39Z
+last_updated: 2026-06-19T15:29:12Z
 ---
 
 # BIO / Bio Protocol
@@ -51,6 +51,7 @@ last_updated: 2026-06-18T10:51:39Z
 
 ## Latest scan notes
 
+- 2026-06-19 — Bio Protocol announced OpenLabs at DeSci Berlin as a collaboration/coordination layer where humans and agents turn scientific ideas into funded execution, with community voting, BioAgents, RheumaAI, and PeptAI as examples. Source: https://x.com/BioProtocol/status/2067960165891244134
 - 2026-06-18 — Bio Protocol went live from DeSci Berlin 2026 with talks on DeSci, AI-driven biotech, agentic science, autonomous drug discovery, and RWA tokenisation; Paul Kohlhaas framed it as an up-to-date DeSci/AI efforts stream. Source: https://x.com/BioProtocol/status/2067521860967727283
 
 - 2026-06-16 — Official X promoted a PeptAI science update covering pipeline status, candidates advancing to wet-lab testing, and peptide commercial potential with Molecule and PeptideList participants. Source: https://x.com/BioProtocol/status/2066784848459497479
