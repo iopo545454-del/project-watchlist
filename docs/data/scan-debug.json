@@ -1,5 +1,120 @@
 [
   {
+    "run_id": "20260619-193732",
+    "started_at": "2026-06-19T19:37:32Z",
+    "completed_at": "2026-06-19T19:37:32Z",
+    "status": "completed_with_warnings",
+    "scan_window": "since prior scan baseline (2026-06-19T15:29:12Z to 2026-06-19T19:37:32Z)",
+    "scope": "Checked labeled GitHub project-intake issues, retried open-issue discovery, scanned tracked-project official/team X accounts in chunks via x_search, and ran broad weak-signal/materiality X searches; excluded user-suppressed POD/Dolphin/Pacific Pods from scanning and changelog consideration.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "AEON Framework",
+      "CHIP / USD.AI",
+      "NEAR Protocol",
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": "partial: labeled query returned 0; open/search issue queries returned GitHub 504",
+      "new_projects": 0,
+      "changelog_entries": 4,
+      "material_entries": 4,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "AEON Framework",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2068034567995289667",
+        "summary": "Official AEON X amplified Litebeam integration/building-on-Aeon content and said project count/quality is rising.",
+        "decision": "Logged because it is an official source-proximate ecosystem integration/builder-adoption signal for the AEON framework."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2068053716624953385",
+        "summary": "Official USD.AI post changed YT Allo points tracking for unlocked vs locked YTs and updated OCT/FEB USDai/sUSDai rates; a separate official post highlighted Fluid loops with high APYs and 16x Allo Points.",
+        "decision": "Logged because reward/points mechanics and yield loops are direct incentive/liquidity catalysts for USD.AI participation and market structure."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official + founder scan",
+        "url": "https://x.com/NEARProtocol/status/2068012791819014471",
+        "summary": "NEAR said Confidential Intents TVL is up 43x in 90 days and framed private settlement as fee/revenue funnel growth; Illia highlighted confidential deposits for near.com RWA/equity-style perps.",
+        "decision": "Logged because official TVL growth plus near.com confidential perps expansion are material usage, revenue, and product-surface signals."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "type": "investor thesis added",
+        "source": "X/Twitter official scan + third-party research",
+        "url": "https://x.com/DeriveXYZ/status/2068055600936702162",
+        "summary": "Derive official X amplified The DeFi Report watch-list coverage arguing onchain options mature crypto markets from directional betting into risk pricing/transfer.",
+        "decision": "Added to thesis rather than product facts because it is useful market thesis/research, but should be verified against Derive OI, fees, collateral growth and buybacks."
+      },
+      {
+        "project": "Kinetiq",
+        "type": "weak-signal scan",
+        "source": "X/Twitter broad weak-signal scan",
+        "url": "https://x.com/LunarWolfNFT/status/2068050204251632048",
+        "summary": "Broad search surfaced coordinated Moonshot Top 100 community-vote/listing-campaign posts for KNTQ.",
+        "decision": "Not logged: low-signal community listing-vote promotion without official Kinetiq or credible venue listing confirmation; re-check only if official/venue source confirms."
+      },
+      {
+        "project": "GitLawb / Bankr / other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were memes, event/broadcast reminders, general Solana/market commentary, health updates, low-context community posts, or repeated weak-signal noise.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Follow-up open-issue and search API requests returned GitHub HTTP 504 despite retries; no new intake was visible from the labeled query.",
+        "decision": "No new project was added this run; retry full open-issue sweep next scan."
+      }
+    ],
+    "errors": [
+      "GitHub open issues API and search issues API returned HTTP 504 on retry; labeled project-intake API returned zero items."
+    ],
+    "next_checks": [
+      "Retry full open GitHub issue intake sweep next run because open/search issue API returned 504 this run.",
+      "For USD.AI, monitor whether revised YT Allo rates change Pendle/Fluid liquidity, redemption behavior, and peg stability after incentives.",
+      "For NEAR, verify Confidential Intents TVL/revenue funnel on live dashboards and watch near.com perps adoption beyond founder posts.",
+      "For AEON, watch for Litebeam/Aeon integration docs, live users, and whether project-builder claims translate into public repos/products.",
+      "For Derive, read/verify The DeFi Report thesis against Derive OI, fees, weekly buybacks, and HYPE/options market share.",
+      "Ignore KNTQ Moonshot/listing-vote spam unless official Kinetiq/Moonshot or a credible venue confirms a listing/integration."
+    ],
+    "notes": "Four changelog/project Latest entries were added; changelog importance was independently tagged by delegate_task after scanner edits (3 high, 1 medium, 0 low). X/Twitter observations are source summaries; no new unverified watch item was added this run."
+  },
+  {
     "run_id": "20260619-152912",
     "started_at": "2026-06-19T15:29:12Z",
     "completed_at": "2026-06-19T15:29:12Z",

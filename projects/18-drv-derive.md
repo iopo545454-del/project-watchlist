@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T05:53:47Z
+last_updated: 2026-06-19T19:37:32Z
 ---
 
 # DRV / Derive Protocol
@@ -13,6 +13,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 
 ## Latest scan notes
 
+- 2026-06-19 — Derive official X amplified The DeFi Report / Michael Nadeau watch-list coverage arguing onchain options evolve crypto from directional betting into pricing/transferring risk; useful market-thesis input to verify against Derive OI, fees and buybacks. Source: https://x.com/DeriveXYZ/status/2068055600936702162
 - 2026-06-17 — Official Derive X highlighted a large RFQ-filled HYPE options trade: 150,000 contracts per leg on a long call condor, about $43.9M notional, framed as evidence Derive can handle permissionless onchain options size for BTC/ETH/HYPE. Source: https://x.com/DeriveXYZ/status/2067075153708925097
 ## Thesis
 
@@ -24,6 +25,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 | https://x.com/DeriveXYZ/status/1879704571729396006 | Derive official DRV launch/buyback framing | Derive framed DRV around a single-token alignment model and recurring protocol-fee buybacks, initially using 25% of fees. | This is the core token-value mechanism: trading fees can translate into structural DRV demand if volume grows. |
 | https://x.com/DeriveXYZ/status/2064477916092858845 | Derive official weekly buyback update | Official buyback thread said the protocol was allocating 35% of fees to DRV buybacks and reported cumulative repurchases above 25M DRV. | Evidence that the fee-to-buyback flywheel is live and being repeatedly reported, not just promised. |
 | https://x.com/dcfgod/status/2063992214846673364 | Third-party crypto market commentator | Bull case compares Derive to the onchain options analogue of major derivatives venues: real fee revenue, growing HYPE/options demand, and token buybacks instead of pure governance. | Useful market framing, but third-party; validate with Derive fee/OI/buyback data rather than treating it as fact. |
+| https://x.com/DeriveXYZ/status/2068055600936702162 | Derive official amplification of The DeFi Report / Michael Nadeau coverage | Watch-list case says options are how onchain markets mature from directional betting into pricing and transferring risk, with Derive as a venue to monitor. | Adds a tradable market-structure thesis to validate against Derive OI, fees, collateral growth and weekly DRV buybacks. |
 
 ### Hermes take
 

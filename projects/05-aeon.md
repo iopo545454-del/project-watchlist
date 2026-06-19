@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-06-16T17:27:49Z
+last_updated: 2026-06-19T19:37:32Z
 ---
 
 # AEON Framework / aeon
@@ -69,6 +69,7 @@ last_updated: 2026-06-16T17:27:49Z
 
 ## Latest scan notes
 
+- 2026-06-19 — AEON official X amplified a Litebeam video about integrating with aeonframework on Base and said the number/quality of projects building with Aeon is rising. Source: https://x.com/aeonframework/status/2068034567995289667
 - 2026-06-16 — Official X published blog Entry №003 on agentic commerce: Aeon agents can pay APIs using x402, USDC, and Circle agent wallets; the account also highlighted vulnerability-scanner/security positioning. Source: https://x.com/aeonframework/status/2066911131231293733
 - 2026-06-15 — Official X announced Robinhood MCP integration for agent trading/research/rebalancing and Skill Packs for one-click community skills / white-label agent packs. Sources: https://x.com/aeonframework/status/2066616325611405483 and https://x.com/aeonframework/status/2066618089236574670
 - 2026-06-15 — Official AEON X shared Community Call #4: multi-provider support, 20 new skills, X402, MCP, Aeon Inc, next-week plans, and agent-project spotlights. Useful product/developer-progress signal, but no tokenomics, funding, or security change was announced. Source: https://x.com/aeonframework/status/2066486735630970954

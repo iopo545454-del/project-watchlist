@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-19T15:29:12Z
+last_updated: 2026-06-19T19:37:32Z
 ---
 
 # CHIP / USD.AI
@@ -15,6 +15,7 @@ last_updated: 2026-06-19T15:29:12Z
 
 ## Latest scan notes
 
+- 2026-06-19 — USD.AI changed YT Allo points tracking: unlocked YTs now earn Allo per $1 while locked YTs earn fixed rates; OCT/FEB USDai and sUSDai rates were updated immediately, and official posts also highlighted Fluid USDai-USDC loops with high APYs plus 16x Allo Points. Sources: https://x.com/USDai_Official/status/2068053716624953385 and https://x.com/USDai_Official/status/2068035200928604373
 - 2026-06-19 — USD.AI reported over $100M in redemptions around Allo Game S1 ending, a quick recovery from a slight under-1% sUSDAI depeg toward overpeg, and pointed to the Lighthouse/YTD report for liquidity, redemption behavior, revenue, GPU-backed lending, and legal-structure detail. Sources: https://x.com/USDai_Official/status/2067980036293144891 and https://usd.ai/lighthouse
 - 2026-06-17 — USD.AI said the new USDai and sUSDai Pendle markets are live for Feb. 2027 maturities, adding live DeFi yield-market access to GPU-backed RWA exposure; team also posted dashboard/loan-activity quote improvements. Source: https://x.com/USDai_Official/status/2067243985643737295
 
