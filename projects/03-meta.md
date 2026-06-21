@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T14:15:52Z
+last_updated: 2026-06-21T00:20:00Z
 ---
 
 # META / MetaDAO
@@ -28,6 +28,8 @@ last_updated: 2026-06-17T14:15:52Z
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
 
 ## Latest scan notes
+
+- 2026-06-21 — MetaDAO-affiliated `@0xSrMessi` flagged another percolator-meta issue: POLICY_PRINCIPAL partial insurance withdraws may reduce principal while burning zero shares, leaving a stale-high COIN claim weight in residual-distributor caps. Treat as unverified until a maintainer/GitHub issue or patch confirms severity and affected code. Source: https://x.com/0xSrMessi/status/2068477644086100156
 
 - 2026-06-17 — MetaDAO announced ZKFG-008 is live: a reviewed proposal to take ZKFG private at $0.15 per token with early-holder ZINC airdrop mechanics, escrowed redemption funds, and IP/control transfer terms if passed. Source: https://x.com/MetaDAOProject/status/2067209288792125496
 
@@ -111,6 +113,7 @@ last_updated: 2026-06-17T14:15:52Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-21 | MetaDAO-affiliated `@0xSrMessi` flagged another percolator-meta issue: POLICY_PRINCIPAL partial insurance withdraws may reduce principal while burning zero shares, so a depositor could de-risk before claiming while keeping a stale-high COIN claim weight. | https://x.com/0xSrMessi/status/2068477644086100156 | Medium | Unverified | If accurate, claim-weight/accounting bugs in percolator-meta would matter for MetaDAO-adjacent market infrastructure and post-raise trust, but this is not yet an official MetaDAO security disclosure. | Check for a GitHub issue/PR, maintainer acknowledgement from `@toly`/PercolatorTrade, affected program version, patch, or official MetaDAO/founder comment; downgrade if no corroboration appears. |
 | 2026-06-17 | A random X account referenced what it called the “first MetaDAO exploit,” while MetaDAO-affiliated discussion focused on program-authority and DAO-treasury controls after Zinc/percolator concerns. | https://x.com/RaspKimi/status/2067121169480745221 | Low | Unverified | A real exploit/security issue would be material for trust in MetaDAO launches and proposal-market infrastructure, but the current source lacks details. | Look for official MetaDAO/founder acknowledgement, GitHub issue/patch, postmortem, affected contract/program, tx/signature, or credible researcher writeup; mark stale if none appears. |
 | 2026-06-15 | Related MetaDAO account `@0xSrMessi` flagged percolator-meta GitHub issues around permissionless `init`, target-coin squatting with bad parameters, and residual fee defaulting/allowing 0 bps; needs maintainer confirmation. | https://x.com/i/status/2066338574706852142 | Medium | Unverified | If accurate, initialization/fee-parameter issues could affect MetaDAO-adjacent market infrastructure and trusted launch/ownership-coin mechanics. | Check the referenced GitHub issues/maintainer replies from `@toly`/repo maintainers and whether patches or docs clarify intended 0% fee behavior. |
 | 2026-06-14 | Paradigm/Colosseum ownership/backing is referenced in official positioning, but exact ownership terms and active support level are not fully documented in this dossier. | https://x.com/MetaDAOProject | Medium | Partially supported | Backer quality is a core legitimacy input for the thesis. | Look for official fund announcement, cap table/raise post, podcast, or founder explanation of owner/backer roles. |
