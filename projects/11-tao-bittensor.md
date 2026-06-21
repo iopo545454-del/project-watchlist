@@ -1,10 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-21T16:53:51Z
 ---
 
 # TAO / Bittensor
+
+## Latest scan notes
+
+- 2026-06-21 — OpenTensor weekly ecosystem recap highlighted new subnet launches (Ralph Labs SN40 and CookingTAO SN122), Chutes moving fully to TEE with Blackwell B200/openGPU support, Score factory vision deployment, Minos genomics acceleration, TAO bridge to Solana, Taoswap redesign, NameTensor migration, and subnet product/buyback milestones. Source: https://x.com/opentensor/status/2068691849271779444
 
 ## Overview
 - Decentralized AI incentive network.

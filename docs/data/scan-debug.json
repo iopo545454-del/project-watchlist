@@ -1,5 +1,105 @@
 [
   {
+    "run_id": "20260621-165351",
+    "started_at": "2026-06-21T16:53:51Z",
+    "completed_at": "2026-06-21T16:53:51Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-21T12:48:39Z to 2026-06-21T16:53:51Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X accounts in chunks via x_search, and ran a broad materiality/weak-signal X query; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud"
+    ],
+    "logged_projects": [
+      "TAO / Bittensor"
+    ],
+    "counts": {
+      "projects": 22,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 1,
+      "material_entries": 1,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "TAO / Bittensor",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/opentensor/status/2068691849271779444",
+        "summary": "OpenTensor posted the June 15–21 ecosystem recap: multiple subnet milestones, new subnets Ralph Labs SN40 and CookingTAO SN122, Chutes TEE/B200/openGPU progress, Score factory vision deployment, Minos genomics acceleration, TAO bridge to Solana, Taoswap redesign, NameTensor migration, and buyback/product milestones.",
+        "decision": "Logged as a source-proximate official update because it bundles subnet launches, infrastructure progress, bridges/trading tooling and product/revenue/buyback milestones relevant to TAO ecosystem quality and attention."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2068677179811217707",
+        "summary": "Official weekly robotics/ecosystem recap remained the main Virtuals item but was already logged in the prior scan.",
+        "decision": "No duplicate changelog entry."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "type": "scan",
+        "source": "X/Twitter Eigen Labs scan",
+        "url": "https://x.com/eigenlabs/status/2068729913130340700",
+        "summary": "Eigen Labs posted an interview clip about decentralized/equalized AI access; useful narrative reinforcement but no new EigenCloud launch, fee, AVS, token, governance, or customer data.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/GEODNET/status/2068725638723473452",
+        "summary": "Official GEODNET post listed RTK use cases across drones, agriculture, construction, robotics, GIS and smart mobility.",
+        "decision": "Ignored as routine category education without new product, partner, token, incentive or revenue detail."
+      },
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Open issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake project or duplicate update required."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window hits were low-context quotes, routine narrative posts, community/listing-vote noise, duplicate prior items, or unrelated false positives. No confirmed listing, governance, security, funding, tokenomics, unlock, buyback, revenue, incentive, docs/blog, or onchain item met threshold.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch Bittensor Root Reborn/protocol-governance follow-through and whether weekly subnet milestones translate into measurable subnet revenues, alpha-token strength, buybacks, bridge liquidity or validator allocation changes.",
+      "Re-check open GitHub intake issues next run; issues #1, #2 and #3 remain open but are already processed.",
+      "Continue watching previously logged catalysts/weak items: Bankr reward season #2 criteria and trust follow-through, MetaDAO percolator issues, Ambient tokenomics/usage proof, Kinetiq Season 2 dates, NEAR Confidential Intents TVL, Akash proposal 329, Octra node release, Derive RFQ/OI, USD.AI incentive/peg behavior and EigenCloud value-accrual implementation."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and changed the new TAO / Bittensor weekly ecosystem recap importance from medium to high because it includes potentially tradeable bridge, trading-tooling, subnet/product, buyback and ecosystem/integration catalysts."
+  },
+  {
     "run_id": "20260621-124839",
     "started_at": "2026-06-21T12:48:39Z",
     "completed_at": "2026-06-21T12:48:39Z",
