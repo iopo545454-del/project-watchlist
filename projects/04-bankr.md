@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-21T04:25:00Z
+last_updated: 2026-06-21T08:27:41Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-21T04:25:00Z
 
 ## Latest scan notes
 
+- 2026-06-21 — Core builder `@0xDeployer` addressed a Bankr console redesign/test-token incident after users complained about exposed test coins and losses; he said it was not fee farming, the test should not have surfaced that way, and internal/team policy changes were made. This is a trust/ops item to watch for follow-through, not a protocol exploit confirmation. Source: https://x.com/0xDeployer/status/2068496200937189424
 - 2026-06-21 — Core builder `@0xDeployer` teased `$BNKR` reward season #2 with new scoring metrics; Bankr bot replies said full criteria/timing are not public yet and may involve Bankr Club/wallet activity. This is a direct incentive catalyst to verify when official criteria drop. Source: https://x.com/0xDeployer/status/2068423554929143874
 - 2026-06-19 — Official Bankr bot deployed Crypto Rider Track 1 (`$CRTrack1`) on Base as the “first official track,” with contract `0x0c0CBAd610907570184E24B662e3d72859350BA3` and launch page. This is source-proximate evidence that Bankr launches are being used for app/game-linked tokenized assets, though BNKR value capture remains to verify. Source: https://x.com/bankrbot/status/2068092353077010516
 - 2026-06-18 — Bankr showed its agent/CLI flow interacting with Coinbase’s new agents stack, a useful distribution/integration signal for Bankr as agent financial infrastructure. Source: https://x.com/bankrbot/status/2067731259871351113
@@ -75,6 +76,13 @@ last_updated: 2026-06-21T04:25:00Z
 | Bankr skills/integration surface | Confirmed | Team/DevRel post listed newly merged skills for Hunch, Signa, 1claw, and bankr-shopify: https://x.com/saltorious1/status/2066742373804122297 | Live / recently merged | Adds more agent actions/integrations, including prediction-market and commerce-related surfaces. | More skills can increase Bankr terminal/agent utility and transaction flow; token relevance depends on fees, Club/Max conversion, or BNKR utility linkage. | Watch skills.bankr.bot, docs, usage metrics, and whether these skills route fees or demand to BNKR. |
 | Coinbase agent-stack interaction | Confirmed | Official Bankr X showed Bankr agent/CLI interacting with Coinbase’s agents tooling: https://x.com/bankrbot/status/2067731259871351113 | Live demo / early | Puts Bankr in the Coinbase-for-agents distribution conversation, beyond internal Bankr launches. | If Coinbase agent workflows become common, Bankr can be one of the natural-language financial-action layers plugged into that stack. | Watch for docs, repeat usage, Coinbase/Base amplification, and whether this drives Bankr endpoint/agent transaction volume. |
 | Bankr app/game-linked launch flow | Confirmed | Official Bankr bot deployed Crypto Rider Track 1 (`$CRTrack1`) on Base as the “first official track”: https://x.com/bankrbot/status/2068092353077010516 | Live as of 2026-06-19 | Shows Bankr launch tooling being used for app/game-linked token assets, not just generic memecoin launches. | If repeated, Bankr can become a lightweight launch + agent surface for interactive apps; BNKR relevance depends on fees, Club/Max conversion, or token-utility linkage. | Watch Bankr launch page volume, docs, and whether first-party launches route fees/demand to BNKR. |
+| Console redesign/test-token trust incident | Tentative | Core builder response: https://x.com/0xDeployer/status/2068496200937189424 | 2026-06-21 | Surfaces operational risk around Bankr launch/console testing and user expectations. | If handled poorly it can hurt trust in Bankr launch tooling; clear postmortems/policy changes would reduce concern. | Watch for official postmortem, reimbursements/mitigation if applicable, console controls, and repeat complaints. |
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|
+| 2026-06-21 | Bankr console redesign/testing exposed test-token deployments that drew user-loss complaints; core builder says it was not fee farming and that internal/team policy changes were made. | https://x.com/0xDeployer/status/2068496200937189424 | Medium | Unverified | Trust in Bankr launch/console tooling matters because users rely on agent execution and token-launch flows. | Re-check for official postmortem, mitigation/reimbursements if applicable, console controls, and repeat complaints next scan. |
 
 ## Team
 - TBD / needs follow-up.
