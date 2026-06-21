@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-19T23:46:29Z
+last_updated: 2026-06-21T04:25:00Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-19T23:46:29Z
 
 ## Latest scan notes
 
+- 2026-06-21 — Core builder `@0xDeployer` teased `$BNKR` reward season #2 with new scoring metrics; Bankr bot replies said full criteria/timing are not public yet and may involve Bankr Club/wallet activity. This is a direct incentive catalyst to verify when official criteria drop. Source: https://x.com/0xDeployer/status/2068423554929143874
 - 2026-06-19 — Official Bankr bot deployed Crypto Rider Track 1 (`$CRTrack1`) on Base as the “first official track,” with contract `0x0c0CBAd610907570184E24B662e3d72859350BA3` and launch page. This is source-proximate evidence that Bankr launches are being used for app/game-linked tokenized assets, though BNKR value capture remains to verify. Source: https://x.com/bankrbot/status/2068092353077010516
 - 2026-06-18 — Bankr showed its agent/CLI flow interacting with Coinbase’s new agents stack, a useful distribution/integration signal for Bankr as agent financial infrastructure. Source: https://x.com/bankrbot/status/2067731259871351113
 - 2026-06-18 — Official Bankr account announced the first Bankr Fund investment into LienFi, an onchain tax-lien / real-estate-linked Base project, with liquid tokens locked for one year. Source: https://x.com/bankrbot/status/2067608272568463804

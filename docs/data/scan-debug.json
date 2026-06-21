@@ -1,5 +1,86 @@
 [
   {
+    "run_id": "20260621-042500",
+    "started_at": "2026-06-21T04:20:51Z",
+    "completed_at": "2026-06-21T04:25:00Z",
+    "status": "completed",
+    "scan_window": "since prior scan baseline (2026-06-21T00:20:00Z to 2026-06-21T04:25:00Z), with one Bankr incentive teaser from 2026-06-20T19:59Z captured because it was not previously logged.",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X accounts in chunks via x_search, and ran a broad materiality/weak-signal X query; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "Ambient"
+    ],
+    "counts": {
+      "projects": 21,
+      "intake_issues_checked": 2,
+      "new_projects": 0,
+      "changelog_entries": 2,
+      "material_entries": 2,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "catalyst update",
+        "source": "X/Twitter core-builder scan",
+        "url": "https://x.com/0xDeployer/status/2068423554929143874",
+        "summary": "Core builder teased $BNKR reward season #2 with new scoring metrics; Bankr bot context says exact criteria/timing are not public yet.",
+        "decision": "Logged as a catalyst update because reward seasons can drive incentives/activity and eligibility behavior; watch for official criteria/timing."
+      },
+      {
+        "project": "Ambient",
+        "type": "official update",
+        "source": "X/Twitter CEO scan",
+        "url": "https://x.com/IridiumEagle/status/2068543690164023415",
+        "summary": "CEO showed Ambient Desktop using GLM 5.2 to train a small ML model from a paper; nearby reply discussed modest funding and long-term funder allocations.",
+        "decision": "Logged as product-depth/token-distribution context; not treated as final tokenomics or usage proof."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter related-account scan",
+        "url": "https://x.com/0xSrMessi/status/2068523725029351675",
+        "summary": "Only short replies/light Futardio or Ownership comments in-window; no new concrete MetaDAO protocol/security claim beyond prior logged item.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "Virtuals Protocol",
+        "source": "X/Twitter contributor scan",
+        "url": "https://x.com/everythingempty/status/2068519581728342027",
+        "summary": "Core contributor replied \"gud coin gud team\" to a third-party token post.",
+        "decision": "Ignored as low-context opinion, not durable Virtuals project information."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Bankr reward season #2 official criteria/timing and whether scoring creates BNKR/Club demand.",
+      "Watch Ambient docs/official X for mainnet/tokenomics, miner onboarding, public usage dashboards, and independent Proof-of-Logits validation."
+    ],
+    "importance_tagging": "Independent delegate_task tagger applied trading-importance labels before commit."
+  },
+  {
     "run_id": "20260621-002000",
     "started_at": "2026-06-21T00:15:02Z",
     "completed_at": "2026-06-21T00:20:00Z",
