@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-19T15:29:12Z
+last_updated: 2026-06-21T12:48:39Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-21 — Official Virtuals weekly roundup highlighted a broader robotics/agent-commerce push: Liquid Machine Labor thesis, Eastworlds open robotics data, Leyten/c0mputeAI distributed GLM-5.2 inference, 14 Peaks humanoid Everest partnership, Caspius iOS robot-data beta, Reppo Orquestra private beta, BunnyOS 3B+ daily tokens with early OS-holder governance, and multiple agent launches/upgrades. Source: https://x.com/virtuals_io/status/2068677179811217707
 - 2026-06-19 — Core contributor `@0xTP91` said Virtuals is simplifying builder launches by reducing naming/model complexity, adding ready-made templates, and supporting different builder objectives; useful UX/launch-infra signal, not a token-economic change. Source: https://x.com/0xTP91/status/2067939110330003533
 - 2026-06-18 — Virtuals highlighted Litebeam migration traction after relaunching on Virtuals: 3,400+ microservice vendors, 100+ agents, 500 holders, and early distribution/funding traction. Source: https://x.com/virtuals_io/status/2067618599381135514
 - 2026-06-18 — Virtuals highlighted long-running builder Shekel moving from hosted trading agents to self-hosted backtesting/live-deployment tooling, while core contributors amplified robotics-stack collaboration around Exylos, StrikeRobot and Reppo. Source: https://x.com/virtuals_io/status/2067545442490147169
