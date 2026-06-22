@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-21T08:27:41Z
+last_updated: 2026-06-22T09:19:06Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-06-22 — Official `@ambient_xyz` said Ambient Desktop updates are shipping non-stop and pointed users to the installation/getting-started guide; useful docs/product-distribution signal for the Desktop surface, but no mainnet/tokenomics update. Source: https://x.com/ambient_xyz/status/2068927797960245677
 - 2026-06-21 — CEO `@IridiumEagle` highlighted Ambient Desktop at `desktop.ambient.xyz`, emphasizing Docker/Podman process isolation and secret management; useful product-security positioning for a local agent/inference surface, but not a formal mainnet/token update. Source: https://x.com/IridiumEagle/status/2068599053559165199
 - 2026-06-21 — CEO `@IridiumEagle` showed Ambient Desktop running GLM 5.2 to train a small ML model end-to-end from a paper, plus replied that Ambient raised modest funds with long-term funder allocations; useful product-depth and token-distribution context, but still not a mainnet/tokenomics announcement. Source: https://x.com/IridiumEagle/status/2068543690164023415
 - 2026-06-19 — Ambient official X explained its verified-inference economics: avoid rented-inference vendor lock-in with open/auditable onchain model weights, network competition to lower prices, and Proof-of-Logits receipts for verifiable work. Source: https://x.com/ambient_xyz/status/2067978526003974527
