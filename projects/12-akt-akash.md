@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-06-18T14:57:07Z
+last_updated: 2026-06-22T02:41:54Z
 ---
 
 # AKT / Akash
@@ -13,13 +13,30 @@ last_updated: 2026-06-18T14:57:07Z
 - Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.
 
 ## Latest scan notes
-
+- 2026-06-22 — Added neo-cloud investment numbers from the official Akash Console API and CoinGecko: AKT market cap around `$210M`; official dashboard snapshot showed `699` active leases, `135` active GPUs, total marketplace spend about `$5.44M`, and 24h gross spend about `$7.37k` / `$2.69M annualized`. Source: https://console-api.akash.network/v1/dashboard-data
+- 2026-06-22 — Relative valuation note: at ~$210M market cap versus ~$2.69M annualized gross spend, AKT screens around `78x` gross marketplace spend; to look like 10x-20x gross spend, daily spend needs to rise toward roughly `$29k-$58k/day`.
 - 2026-06-18 — Akash proposal 329 is live: PIP Spot and Reservation Revenue Share would set 10% OCL / 90% community-pool spot revenue and 30% / 70% reservation revenue splits; voting ends June 25. Source: https://moon-runners.net/akash/mainnet/governance/329
 - 2026-06-17 — Official X promoted Console Air as a permissionless wallet-only deployment path with no signups or email, using an AKT wallet as the deployment identity/payment surface. Source: https://x.com/akashnet/status/2067334557607592382
 - 2026-06-15 — Official X said Kimi 2.7 is available on AkashML/OpenRouter for connected Claude Code users, extending the open compute / agentic coding model surface. Source: https://x.com/akashnet/status/2066593476322500908
 
 ## Thesis
-- TBD / needs follow-up.
+- Akash is the broad, liquid, established decentralized cloud comp in the basket. It has real marketplace spend and clean official usage data, but it is less direct to managed inference than Chutes and less obviously high-end/confidential GPU focused than Targon.
+- The investment case is strongest if active GPU leases and gross spend accelerate materially after Console Air, OpenRouter/AkashML integrations, and revenue-share governance clarifies token/economic routing.
+- Current valuation already prices a meaningful usage ramp: AKT needs roughly 4x-8x higher daily spend to screen normally at 10x-20x gross marketplace spend.
+
+## Investment numbers / neo-cloud comps
+| Metric | Current read | Source / caveat |
+|---|---:|---|
+| Token market cap | ~$210M | CoinGecko simple price API |
+| Price | ~$0.72 | CoinGecko simple price API |
+| Active leases | 699 | Official Akash Console API snapshot |
+| Active GPUs | 135 | Official Akash Console API snapshot |
+| Total gross marketplace spend | ~$5.44M | Official Akash Console API |
+| 24h gross spend | ~$7.37k | Gross spend, not protocol revenue |
+| Annualized gross spend | ~$2.69M | 24h run-rate |
+| Market cap / annualized gross spend | ~78x | Rich versus current usage |
+| Daily spend needed at 20x | ~$28.8k/day | Implied hurdle |
+| Daily spend needed at 10x | ~$57.5k/day | Implied hurdle |
 
 ## Team
 - Overclock Labs — original/core builder of Akash.
@@ -38,19 +55,14 @@ last_updated: 2026-06-18T14:57:07Z
 - `@gregosuri`
 - `@abozanich`
 - `@multicoin`
-- Cosmos/DePIN/GPU compute community validators and providers.
 
 ## KOLs
-- `@akashnet`
-- `@ovrclk_`
-- `@gregosuri`
-- `@abozanich`
-- `@multicoin`
 - Cosmos/DePIN/GPU compute community validators and providers.
 
 ## Official links
 - Website: https://akash.network/
 - Console: https://console.akash.network/
+- Console API dashboard data: https://console-api.akash.network/v1/dashboard-data
 - Docs: https://akash.network/docs/
 - GitHub: https://github.com/akash-network
 - X: https://x.com/akashnet
@@ -67,28 +79,24 @@ last_updated: 2026-06-18T14:57:07Z
 - Cosmos ecosystem liquidity and IBC flows.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- Akash docs: https://akash.network/docs/
+- Console/dashboard: https://console.akash.network/
 
 ## Risks
-- Official X handle is `@akashnet`; older/community references may use variants.
-- Akash has existed longer than many newer DePIN/GPU projects; watch real usage and network spend, not just AI narrative.
+- Current valuation is high relative to marketplace spend.
+- Gross spend is not the same as protocol revenue or AKT value capture.
 - Provider-side quality and UX remain key adoption constraints.
-
----
+- Watch real usage and network spend, not just AI narrative.
 
 ## Open questions
-- Official X handle is `@akashnet`; older/community references may use variants.
-- Akash has existed longer than many newer DePIN/GPU projects; watch real usage and network spend, not just AI narrative.
-- Provider-side quality and UX remain key adoption constraints.
-
----
+- How much of gross spend maps to durable AKT value capture after proposal 329 / revenue-share changes?
+- What are current high-end GPU availability, utilization, and customer retention by provider?
+- How much inference demand comes through AkashML/OpenRouter versus one-off deployments?
 
 ## Watch triggers
 - Sustained increase in network spend or GPU utilization.
+- Daily gross spend moving above ~$30k/day, then ~$60k/day.
 - New major GPU provider or enterprise/user partnership.
 - Governance proposal affecting inflation, take rate, provider incentives, or community pool.
 - Chain halt, validator issue, or provider reliability incident.
 - AKT unlock/staking/liquidity shock.
-- Competitive pressure from other decentralized GPU networks or centralized cloud price cuts.
-
----

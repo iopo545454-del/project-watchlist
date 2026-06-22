@@ -42,3 +42,6 @@ Each project file should include: Overview, Thesis, Team, Investors, Twitter/X a
 The Thesis section should include linked investor/market theses with short TLDRs plus a separate, visually distinct Hermes take. See [`AGENTS.md`](AGENTS.md#thesis-section-standard).
 
 The Catalysts section should track future confirmed/tentative/speculative catalysts with evidence, timing, direct impact, second-order consequences, and what to watch next. See [`AGENTS.md`](AGENTS.md#catalyst-section-standard).
+- [Chutes — Bittensor Subnet 64](projects/24-chutes.md)
+- [Lium — Bittensor Subnet 51](projects/25-lium.md)
+- [Compute Horde — Bittensor Subnet 12](projects/26-compute-horde.md)
