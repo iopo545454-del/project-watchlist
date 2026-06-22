@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-16T17:27:49Z
+last_updated: 2026-06-22T13:26:24Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -55,6 +55,7 @@ last_updated: 2026-06-16T17:27:49Z
 
 ## Latest scan notes
 
+- 2026-06-22 — TokenomicsCOM flagged a June 24 WLD unlock of roughly 149.9M WLD / $90.7M, about 1.5% of circulating supply and ~3.0% of market cap, with community/private-investor/insider/foundation buckets. Treat as third-party unlock-calendar context until cross-checked against official Foundation/TFH disclosures or an unlock dashboard. Source: https://x.com/TokenomicsCOM/status/2069044731200385426
 - 2026-06-16 — Official X highlighted Agent Kit as humans-only ticketing infrastructure with Thirty Seconds to Mars and other partners, extending the World ID anti-bot integration story. Source: https://x.com/worldnetwork/status/2066919640589275644
 - 2026-06-15 — World Network announced/boosted Thirty Seconds to Mars tour ticketing with World ID verification for humans-only tickets and verified-human perks. Source: https://x.com/worldnetwork/status/2066572868071342207
 

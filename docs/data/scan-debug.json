@@ -1,5 +1,101 @@
 [
   {
+    "run_id": "20260622-132624",
+    "started_at": "2026-06-22T13:26:24Z",
+    "completed_at": "2026-06-22T13:26:24Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-22T09:19:06Z to 2026-06-22T13:26:24Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X account chunks with x_search, and ran broad materiality/weak-signal X queries; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "Worldcoin / WLD / World Network"
+    ],
+    "counts": {
+      "projects": 25,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 2,
+      "material_entries": 1,
+      "unverified_items": 1
+    },
+    "decision_trail": [
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Open issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake project or duplicate update required."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2069018928505074037",
+        "summary": "Official Bankr bot activity showed Reward Season 2 score/balance checks live in the bot/Club flow, including a user ranked #2 overall and bot-reported total rewards distributed above 23M.",
+        "decision": "Logged as source-proximate incentive-catalyst progress because BNKR Reward Season 2 is already on the catalyst watchlist; still waiting for official criteria/timing."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "type": "unverified watch item",
+        "source": "X/Twitter third-party unlock scan",
+        "url": "https://x.com/TokenomicsCOM/status/2069044731200385426",
+        "summary": "TokenomicsCOM flagged a June 24 WLD unlock of roughly 149.9M WLD / $90.7M, about 1.5% of circulating supply and ~3.0% of market cap, with recipient bucket percentages.",
+        "decision": "Tracked as a high-signal unverified unlock-calendar item because WLD unlocks are a defined alert trigger; cross-check with official Foundation/TFH disclosures or a canonical unlock dashboard next scan."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "weak-signal scan",
+        "source": "X/Twitter broad query",
+        "url": "https://x.com/haenko21/status/2069026299016806635",
+        "summary": "Broad query surfaced third-party NEAR Intents revenue-capture claims ($21B+ volume, $35M+ fees, ~30% revenue capture) and community discussion of confidential intents TVL.",
+        "decision": "No changelog entry this run because the source was third-party narrative and not yet cross-checked against an official/live data source."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in the scan window.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Cross-check the WLD June 24 unlock against official World Foundation/TFH disclosures or a canonical unlock dashboard; if confirmed, upgrade from unverified to token/unlock update.",
+      "Watch Bankr Reward Season 2 for official rules, timing, scoring criteria, reward pool/source, and whether BNKR holdings/staking/Club activity receive durable token demand.",
+      "Continue watching Kinetiq Season 2 dates, NEAR Confidential Intents/revenue source data, Akash proposal 329, Octra node release, Derive RFQ/OI, USD.AI incentives, TAO Root Reborn, EigenCloud value accrual, and neo-cloud comps Chutes/Lium/Compute Horde."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled both new 2026-06-22T13:26:24Z entries as high importance; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260622-091906",
     "started_at": "2026-06-22T09:19:06Z",
     "completed_at": "2026-06-22T09:19:06Z",
