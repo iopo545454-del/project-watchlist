@@ -1,7 +1,7 @@
 let rows = [];
 let changes = [];
 let sortMode = 'recent';
-const dataVersion = '20260621-terminal-2';
+const dataVersion = '20260622-clean-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -82,7 +82,7 @@ function renderChangelog() {
   const list = document.querySelector('#changelog');
   const count = document.querySelector('#changelog-count');
   const importance = document.querySelector('#importance')?.value || '';
-  const latest = sortedChanges().filter(item => !importance || (item.importance || 'low') === importance).slice(0, 40);
+  const latest = sortedChanges().filter(item => !importance || (item.importance || 'low') === importance).slice(0, 25);
   const scans = changes.map(x => x.last_scanned || x.date).filter(Boolean).sort();
   const mostRecentScan = scans.length ? fmtDate(scans[scans.length - 1]) : '';
   count.textContent = latest.length ? `${latest.length} latest · scan ${mostRecentScan || '—'}` : 'No scans yet';
@@ -133,7 +133,6 @@ function renderBoard() {
     const imp = initialPending ? 'low' : (latest?.importance || 'low');
     const latestType = initialPending ? 'initial review pending' : (latest?.type || 'scan');
     const summary = initialPending ? 'Hermes will find official sources and run the first overview on the next scan.' : (latest?.summary || 'No project-info change logged yet.');
-    const accounts = (r.x_accounts || []).slice(0, 3).map(x => `<span class="pill">@${esc(x.split('/').pop())}</span>`).join('');
     const status = initialPending ? '<span class="status-pending">● Initial review pending</span>' : '';
     const meta = categoryMeta(r.category);
     const idx = (r.slug || '').split('-')[0] || String(i + 1).padStart(2, '0');
@@ -144,16 +143,15 @@ function renderBoard() {
         <span class="card-date"><span class="sig-dot importance-${esc(imp)}"></span>${esc(fmtDate(latestDate))}</span>
       </div>
       <h3>${esc(r.project)}</h3>
-      <span class="cat-chip">${esc(meta.label)}</span>
+      <div class="card-meta-row">
+        <span class="cat-chip">${esc(meta.label)}</span>
+        <span>${esc(r.links_count || 0)} sources</span>
+        <span>${esc((r.x_accounts || []).length)} X</span>
+      </div>
       ${status}
       <p class="latest-label">Latest · ${esc(latestType)}</p>
       <p class="latest-summary">${esc(summary)}</p>
-      <div class="card-footer">
-        <span><b>${esc(r.links_count || 0)}</b> sources</span>
-        <span><b>${esc((r.x_accounts || []).length)}</b> X accts</span>
-        <span class="card-idx">№${esc(idx)}</span>
-      </div>
-      <div class="card-pills">${accounts || '<span class="muted small">No X accounts</span>'}</div>
+      <span class="card-idx">№${esc(idx)}</span>
     </a>`;
   }).join('') || '<p class="change-empty">No matching projects.</p>';
 }
