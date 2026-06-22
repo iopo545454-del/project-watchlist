@@ -206,6 +206,15 @@ Each dossier should include a source table in this shape:
 | 0x123...abcd | Token contract address; use for holder/distribution checks |
 ```
 
+## Generated page styling contract (Signals Terminal)
+
+The dashboard and dossiers share one design system in [`docs/style.css`](docs/style.css) ("Signals Terminal": ink-black canvas, phosphor-lime primary accent — **no purple**, IBM Plex Mono for data/labels/tickers, Hanken Grotesk for prose, per-category color-coding). When generating or regenerating `docs/projects/*.html`, follow this contract so pages inherit the system automatically:
+
+- `<head>` must include the favicon and `<link rel="stylesheet" href="../style.css?v=20260621-terminal-2" />`. **Do not** add Google Fonts `<link>`/`preconnect` tags — `style.css` `@import`s the fonts. Bump the `?v=` query whenever shared CSS/JS changes so caches refresh.
+- `<body class="project-page">` and, just before `</body>`, include `<script src="../project.js?v=20260621-terminal-2"></script>`. `project.js` auto-builds the sticky scrollspy **Dossier** table of contents from the `<h2>` of each `<section class="section-card">` and staggers their reveal — no per-page TOC markup needed.
+- Keep the existing class contract: `.topbar`, `.project-hero` (with the **Latest** `.latest-card`), `<main class="project-content">` (or `.project-grid`) holding `<section class="section-card">` blocks, each led by a single `<h2>`. Special sections keep their accent classes: `.hermes-take` (warm amber), `.trigger-card` (lime), `.investor-theses` (cyan). Tables go in `.table-wrap`.
+- Numeric figures (market caps, multiples, $ amounts, counts) should be wrapped in `<code>…</code>` so they render as highlighted mono tokens.
+
 ## Project page Latest panel standard
 
 Generated `docs/projects/*.html` pages should show a right-side hero panel titled **Latest** instead of compact metadata like `Ticker`, `Links parsed`, or `Last updated`.

@@ -3,27 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Watchlist</title>
-  <link rel="stylesheet" href="style.css?v=20260614-layout" />
+  <title>Project Watchlist · Signals Terminal</title>
+  <meta name="description" content="Hermes Research watchlist — project-info scans, source changes, and trading-importance signals across crypto AI, neo-cloud, and DePIN projects." />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:title" content="Project Watchlist · Signals Terminal" />
+  <meta property="og:description" content="Project-info scans, source changes, and trading-importance signals." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080a'/%3E%3Cpath d='M5 17h6l3-7 4 13 3-6h6' fill='none' stroke='%23c8ff4d' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css?v=20260621-terminal-2" />
 </head>
 <body>
   <header>
     <div>
-      <p class="eyebrow">Hermes Research</p>
+      <p class="eyebrow">Hermes Research · Signals Terminal</p>
       <h1>Project Watchlist</h1>
-      <p class="sub">Project-info scans, source changes, and clickable research cards.</p>
+      <p class="sub">Project-info scans, source changes, and trading-importance signals — refreshed every 4 hours.</p>
     </div>
     <div class="header-actions">
       <a class="repo" href="scan-debug.html">Scan debug</a>
       <a class="repo" href="reference.html">Reference</a>
-      <button class="ghost-button" id="openIntake" type="button">Add project</button>
-      <a class="repo" id="repoLink" href="#">GitHub repo</a>
+      <button class="ghost-button" id="openIntake" type="button">+ Add project</button>
+      <a class="repo" id="repoLink" href="#">GitHub ↗</a>
     </div>
   </header>
+
+  <section class="stats-tape" aria-label="Watchlist summary">
+    <div class="stat"><span class="k">Tracked</span><span class="v" id="stat-projects">—</span></div>
+    <div class="stat"><span class="k">High signal · 14d</span><span class="v" id="stat-high">—</span></div>
+    <div class="stat"><span class="k">Categories</span><span class="v" id="stat-cats">—</span></div>
+    <div class="stat live"><span class="k">Last scan</span><span class="v"><span class="dot-live"></span><span id="stat-scan">—</span></span></div>
+  </section>
 
   <section class="controls">
     <input id="search" type="search" placeholder="Filter projects, tickers, X accounts, latest changes…" />
     <select id="category"><option value="">All categories</option></select>
+    <div class="seg" id="sortSeg" role="group" aria-label="Sort projects">
+      <button type="button" data-sort="recent" aria-pressed="true">Recent</button>
+      <button type="button" data-sort="importance" aria-pressed="false">Signal</button>
+      <button type="button" data-sort="name" aria-pressed="false">A–Z</button>
+    </div>
   </section>
 
   <section class="intake-modal" id="intakeModal" aria-labelledby="intake-title" aria-hidden="true">
@@ -59,11 +77,23 @@
   </section>
 
   <main class="dashboard-layout">
+    <section class="board-panel" aria-labelledby="board-title">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Project board</p>
+          <h2 id="board-title">Tracked projects</h2>
+          <p class="sub mini">Click a card to open the dossier. Cards show category, latest signal, and the most recent project-info update.</p>
+        </div>
+        <span class="muted small" id="project-count">Loading…</span>
+      </div>
+      <div id="projectBoard" class="project-board"></div>
+    </section>
+
     <aside class="changelog-panel" aria-labelledby="changelog-title">
       <div class="panel-head compact">
         <div>
-          <p class="eyebrow">Project research</p>
-          <h2 id="changelog-title">Change log</h2>
+          <p class="eyebrow">Change log</p>
+          <h2 id="changelog-title">Signal feed</h2>
           <p class="sub mini">Latest project-info changes and scan timestamps.</p>
         </div>
         <div class="changelog-tools">
@@ -73,20 +103,8 @@
       </div>
       <div id="changelog" class="changelog-list"></div>
     </aside>
-
-    <section class="board-panel" aria-labelledby="board-title">
-      <div class="panel-head">
-        <div>
-          <p class="eyebrow">Project board</p>
-          <h2 id="board-title">Tracked projects</h2>
-          <p class="sub mini">Click a card to open the project page. Cards show the latest known project-info update.</p>
-        </div>
-        <span class="muted small" id="project-count">Loading…</span>
-      </div>
-      <div id="projectBoard" class="project-board"></div>
-    </section>
   </main>
 
-  <script src="app.js?v=20260614-layout"></script>
+  <script src="app.js?v=20260621-terminal-2"></script>
 </body>
 </html>
