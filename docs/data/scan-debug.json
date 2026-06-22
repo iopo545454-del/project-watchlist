@@ -1,5 +1,97 @@
 [
   {
+    "run_id": "20260622-051535",
+    "started_at": "2026-06-22T05:15:35Z",
+    "completed_at": "2026-06-22T05:15:35Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/changelog baseline (2026-06-22T02:41:54Z to 2026-06-22T05:15:35Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X account chunks with x_search, and ran a broad materiality/weak-signal X query; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects": 25,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 0,
+      "material_entries": 0,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Open issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake project or duplicate update required."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2068923468515856493",
+        "summary": "Official Bankr bot continued routine Bankr launch posts, including $WSMAN and Pixie Chess contract deployments on Base.",
+        "decision": "No changelog entry: consistent with existing launchpad monitoring, but routine individual token launches did not show new BNKR value-capture, protocol, security, incentive, or integration changes."
+      },
+      {
+        "project": "META / MetaDAO",
+        "type": "weak-signal scan",
+        "source": "X/Twitter broad query",
+        "url": "https://x.com/i/status/2068920204004896950",
+        "summary": "Broad query surfaced a third-party Chinese-language bullish MetaDAO thesis citing futarchy, anti-rug mechanics, profitable launches, funds buying at market, and Coinbase listing/liquidity.",
+        "decision": "No dossier/changelog entry: third-party thesis was not from an investor/operator source already deemed high-signal and did not add confirmed project facts."
+      },
+      {
+        "project": "Virtuals / Bittensor / GRASS",
+        "type": "weak-signal scan",
+        "source": "X/Twitter broad query",
+        "url": "docs/data/index.json",
+        "summary": "Broad query found a Virtuals ecosystem agent token launch ($H.FACE), generic Bittensor revenue/incentive commentary, and a GRASS airdrop-farming mention.",
+        "decision": "No watchlist updates: items were ecosystem-level or low-signal and did not materially change the tracked project dossiers."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Official/team account chunk searches for material terms returned no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue watching Bankr reward season #2 criteria and console trust follow-through, Kinetiq Season 2 dates, NEAR Confidential Intents TVL, Akash proposal 329, Octra node release, Derive RFQ/OI, USD.AI incentive/peg behavior, TAO Root Reborn, EigenCloud value-accrual implementation, and newly added neo-cloud comps Chutes/Lium/Compute Horde.",
+      "Several legacy dossiers have missing initial_review_done flags in docs/data/index.json despite partial reviews; prioritize completing/normalizing BANKR, Kinetiq, GRASS, IOTA SN9, TAO, USD.AI, Worldcoin, NEAR, Octra and BIO in future runs."
+    ],
+    "importance_tagging": "No new or modified changelog entries in this run; independent tagger still requested to inspect changelog importance labels before commit."
+  },
+  {
     "run_id": "20260622-010251",
     "started_at": "2026-06-22T01:02:51Z",
     "completed_at": "2026-06-22T01:02:51Z",
