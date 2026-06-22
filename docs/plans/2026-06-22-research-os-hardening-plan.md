@@ -26,18 +26,18 @@ The repo has a strong analyst framework but weak machinery. The same project sta
 
 This creates drift, false confidence, and maintenance risk. Fix priority:
 
-1. Add validator for slug parity, required fields, JSON shape, local paths, generated HTML conventions.
-2. Add CI to run validator on every PR/push.
-3. Add generator so repeated artifacts are derived from one source.
-4. Normalize project metadata.
-5. Improve UI/data model for source quality, confidence, freshness, coverage, and open verification items.
+1. Add a strict-but-narrow validator for boring invariants: slug parity, required fields, existing paths, valid enums, generated blocks/files current.
+2. Run the validator locally and fix current repo drift until it passes.
+3. Enable CI only after the current repo is clean, so `main` does not start red.
+4. Add a generator so repeated artifacts are derived from one source.
+5. Normalize source quality/confidence/freshness only after the basic machinery is stable.
 
 ---
 
 ## Target Repository Shape
 
 ```txt
-projects/*.md                         canonical dossiers + optional YAML frontmatter
+projects/*.md                         canonical dossiers + YAML frontmatter
 scripts/lib/project_parser.py          parse markdown/frontmatter/source tables
 scripts/lib/project_model.py           normalized project/changelog/scan schemas
 scripts/validate.py                    drift + schema + path + HTML checks
@@ -226,12 +226,43 @@ git commit -m "feat: add project watchlist validator"
 
 ---
 
-### Task 5: Add GitHub Actions CI validation
+### Task 5: Fix current metadata drift until validator passes
 
-**Objective:** Make validation automatic on every push/PR.
+**Objective:** Normalize current data before CI is enabled, so `main` does not start red.
+
+**Files:**
+- Modify: `projects/*.md` frontmatter where missing `status` / `last_updated`.
+- Modify: `index.json`
+- Modify: `index.csv`
+- Modify: `docs/data/index.json`
+- Modify: `data/*.json` if still retained.
+- Modify: `README.md` if project list is stale.
+
+**Steps:**
+1. Run:
+   ```bash
+   python3 scripts/validate.py
+   ```
+2. Fix one class of error at a time: missing fields, missing pages, bad paths, stale README list.
+3. Re-run validator after each class.
+4. Commit:
+   ```bash
+   git add projects index.json index.csv docs/data/index.json data README.md
+   git commit -m "fix: normalize project metadata for validation"
+   ```
+
+**Verification:** `python3 scripts/validate.py` exits 0.
+
+---
+
+### Task 6: Add GitHub Actions CI validation
+
+**Objective:** Make validation automatic on every push/PR after the current repo is already passing locally.
 
 **Files:**
 - Create: `.github/workflows/validate.yml`
+
+**Precondition:** `python3 scripts/validate.py` exits 0 on `main`. Do not enable CI before Task 5 is complete.
 
 **Workflow:**
 ```yaml
@@ -262,36 +293,7 @@ git add .github/workflows/validate.yml
 git commit -m "ci: validate project watchlist artifacts"
 ```
 
-**Verification:** CI runs on GitHub and fails/passes for the same reasons as local validation.
-
----
-
-### Task 6: Fix current metadata drift until validator passes
-
-**Objective:** Normalize current data enough that CI can stay green.
-
-**Files:**
-- Modify: `projects/*.md` frontmatter where missing `status` / `last_updated`.
-- Modify: `index.json`
-- Modify: `index.csv`
-- Modify: `docs/data/index.json`
-- Modify: `data/*.json` if still retained.
-- Modify: `README.md` if project list is stale.
-
-**Steps:**
-1. Run:
-   ```bash
-   python3 scripts/validate.py
-   ```
-2. Fix one class of error at a time: missing fields, missing pages, bad paths, stale README list.
-3. Re-run validator after each class.
-4. Commit:
-   ```bash
-   git add projects index.json index.csv docs/data/index.json data README.md
-   git commit -m "fix: normalize project metadata for validation"
-   ```
-
-**Verification:** `python3 scripts/validate.py` exits 0.
+**Verification:** CI runs on GitHub and passes for the same reasons as local validation.
 
 ---
 
@@ -345,7 +347,7 @@ git commit -m "feat: generate README project list"
 
 **Canonical model source:**
 - Start with `projects/*.md` frontmatter + parsed sections.
-- Allow optional override file only if needed: `projects/_metadata.json`.
+- Avoid `projects/_metadata.json` in v1. An override file is allowed only if a field truly cannot live cleanly in frontmatter; otherwise it becomes another drift source.
 - Derive:
   - `file`
   - `github_file`
@@ -453,7 +455,7 @@ git commit -m "feat: generate project HTML pages from template"
 }
 ```
 
-**Migration rule:** Existing entries may default to `unknown` initially, but all new entries must provide these fields after this task.
+**Migration rule:** Migrate every existing changelog entry in one pass. Backfill `source_quality`, `confidence`, and `verification_status` as `unknown` where evidence is unclear, then require the fields on every row. Avoid diff-aware “new rows only” validation in v1.
 
 **Commit:**
 ```bash
@@ -542,6 +544,8 @@ git commit -m "feat: generate project coverage and freshness data"
 ### Task 14: Add dashboard coverage/freshness view
 
 **Objective:** Show scan health without forcing user into raw debug data.
+
+**Precondition:** Task 15 scan-debug schema normalization is implemented and real scan-debug data is reliable enough to drive UI. If not, keep this task blocked and do not ship a freshness UI that creates false confidence.
 
 **Files:**
 - Modify: `docs/index.html`
@@ -682,26 +686,37 @@ The hardening project is done when:
 
 ---
 
-## Implementation Order Recommendation
+## Phased Implementation Recommendation
 
-Do not start with the generator. Start with validation.
+Do not try to implement this roadmap in one push. Start by making drift visible and blocking regressions, then progressively convert manual artifacts into generated ones.
 
-Recommended order:
+### Phase 1 — Drift visibility and regression blocking
 
 1. Baseline audit.
 2. Metadata contract.
 3. Parser.
-4. Validator.
-5. Fix drift until validator passes.
-6. CI.
+4. Strict-but-narrow validator.
+5. Fix drift until validator passes locally.
+6. Enable CI after local validation is green.
+
+### Phase 2 — Generation machinery
+
 7. README/index generator.
-8. Per-project JSON generator.
-9. HTML generator.
-10. Source-quality/confidence schema.
+8. Per-project JSON generator or formal deprecation.
+9. Shared-template HTML generator. This is high leverage because it eliminates page-layout drift such as `.project-content` vs `.project-grid`.
+
+### Phase 3 — Evidence quality and coverage UX
+
+10. Source-quality/confidence/verification schema, migrated across all existing changelog rows with `unknown` where needed.
 11. Dashboard evidence-quality UI.
-12. Coverage/freshness generator + UI.
-13. Cron prompt update.
-14. Contributor/reference docs.
+12. Normalize scan-debug coverage schema.
+13. Coverage/freshness generator.
+14. Dashboard coverage/freshness UI only after scan-debug is reliable.
+
+### Phase 4 — Automation and contributor workflow
+
+15. Update the 4h cron prompt to run generator + validator before commit/push.
+16. Contributor/reference docs for humans and Discord users.
 
 This avoids building a generator on top of unknown drift and gives immediate protection against making the repo worse.
 
@@ -712,5 +727,5 @@ This avoids building a generator on top of unknown drift and gives immediate pro
 - Do not add a database. The repo itself is the database.
 - Do not add frontend write tokens. GitHub Pages remains static.
 - Do not overbuild a complex framework. Python stdlib scripts are enough.
-- Do not try to make every historical changelog entry perfect on day one. Add migration defaults, then enforce stricter fields for new entries.
+- Do not try to make every historical changelog entry perfect on day one. Backfill source-quality/confidence fields as `unknown` across all rows, then enforce those fields everywhere.
 - Do not remove `data/<slug>.json` until a search confirms no cron/job/tooling expects it.
