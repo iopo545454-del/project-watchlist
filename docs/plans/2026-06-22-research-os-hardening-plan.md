@@ -126,7 +126,6 @@ open_questions
 token_address
 source_quality_summary
 confidence
-freshness_status
 ```
 
 **Allowed enums:**
@@ -134,7 +133,6 @@ freshness_status
 status: active | paused | archived | needs-review
 initial_review_done: true | false
 confidence: high | medium | low | unknown
-freshness_status: fresh | aging | stale | unknown
 source_quality_summary: official-heavy | mixed | third-party-heavy | weak-signal-heavy | unknown
 ```
 
@@ -162,6 +160,12 @@ source_quality_summary: official-heavy | mixed | third-party-heavy | weak-signal
 
 **Parser responsibilities:**
 - Read YAML-ish frontmatter between `---` fences.
+- Keep the supported frontmatter subset deliberately small and documented in `docs/schema/project-metadata.md`:
+  - `key: string`
+  - `key: true` / `key: false`
+  - `key: ["array", "values"]`
+  - no nested objects unless the value is encoded as JSON in a string field
+  - no anchors, multiline scalars, implicit date coercion, or other YAML features
 - Extract H1 title.
 - Extract section headings.
 - Extract `## Sources / Research Inputs` table rows.
@@ -199,6 +203,9 @@ git commit -m "feat: add project dossier parser"
 - Create: `tests/test_validate.py`
 
 **Validator checks:**
+
+Keep Phase 1 boring: validator v1 must only catch mechanical drift, not research quality. Do not grade whether a thesis is strong, a source is high quality, or a project is important.
+
 1. Every `projects/*.md` slug appears in `docs/data/index.json`.
 2. Every `docs/data/index.json` row points to an existing `projects/*.md`.
 3. Every active project row has a matching `docs/projects/<slug>.html`.
@@ -500,81 +507,9 @@ cd docs && python3 -m http.server 8000
 
 ---
 
-### Task 13: Generate coverage/freshness data
+### Task 13: Tighten scan-debug schema for coverage vs findings
 
-**Objective:** Make coverage vs findings visible.
-
-**Files:**
-- Create: `scripts/audit_coverage.py`
-- Create: `docs/data/coverage.json`
-- Create: `tests/test_audit_coverage.py`
-- Modify: `scripts/generate.py` or call audit from generator.
-
-**Coverage model:**
-```json
-{
-  "slug": "23-eigencloud",
-  "project": "EIGEN / EigenCloud",
-  "last_scanned": "2026-06-22T02:41:54Z",
-  "freshness_status": "fresh | aging | stale | unknown",
-  "sources_checked_count": 4,
-  "sources_failed_count": 0,
-  "material_changes_30d": 3,
-  "open_verification_items": 2,
-  "next_checks": ["Verify ELIP-12 burn implementation"]
-}
-```
-
-**Freshness thresholds:**
-- `fresh`: scanned within 4h cadence + grace period, e.g. <= 8h.
-- `aging`: <= 72h.
-- `stale`: > 72h or never scanned.
-- `unknown`: missing data.
-
-**Commit:**
-```bash
-git add scripts/audit_coverage.py docs/data/coverage.json tests/test_audit_coverage.py scripts/generate.py
-git commit -m "feat: generate project coverage and freshness data"
-```
-
-**Verification:** Every project in `docs/data/index.json` has a coverage row.
-
----
-
-### Task 14: Add dashboard coverage/freshness view
-
-**Objective:** Show scan health without forcing user into raw debug data.
-
-**Precondition:** Task 15 scan-debug schema normalization is implemented and real scan-debug data is reliable enough to drive UI. If not, keep this task blocked and do not ship a freshness UI that creates false confidence.
-
-**Files:**
-- Modify: `docs/index.html`
-- Modify: `docs/app.js`
-- Modify: `docs/style.css`
-
-**UI changes:**
-- Add small status strip or card group:
-  - Fresh projects
-  - Aging projects
-  - Stale projects
-  - Projects with failed sources
-  - Projects with open verification items
-- Add project card badge: `fresh`, `aging`, `stale`, `unknown`.
-- Add filter: freshness.
-
-**Commit:**
-```bash
-git add docs/index.html docs/app.js docs/style.css
- git commit -m "feat: add coverage freshness view"
-```
-
-**Verification:** Browser console clean; project counts match `docs/data/coverage.json`.
-
----
-
-### Task 15: Tighten scan-debug schema for coverage vs findings
-
-**Objective:** Make future scans record both coverage and material findings distinctly.
+**Objective:** Make future scans record both coverage and material findings distinctly before any freshness data or UI depends on it.
 
 **Files:**
 - Modify: `docs/schema/project-metadata.md`
@@ -610,10 +545,84 @@ git add docs/index.html docs/app.js docs/style.css
 **Commit:**
 ```bash
 git add docs/schema/project-metadata.md AGENTS.md scripts/validate.py
- git commit -m "docs: define scan coverage schema"
+git commit -m "docs: define scan coverage schema"
 ```
 
-**Verification:** Validator warns/fails according to migration mode.
+**Verification:** Validator warns/fails according to migration mode, and scan-debug now has enough structure to support coverage/freshness generation without guessing.
+
+---
+
+### Task 14: Generate coverage/freshness data
+
+**Objective:** Make coverage vs findings visible from normalized scan-debug history.
+
+**Precondition:** Task 13 scan-debug schema normalization is implemented and real scan-debug data is reliable enough to derive freshness. `freshness_status` is derived data; do not store it in hand-authored project frontmatter.
+
+**Files:**
+- Create: `scripts/audit_coverage.py`
+- Create: `docs/data/coverage.json`
+- Create: `tests/test_audit_coverage.py`
+- Modify: `scripts/generate.py` or call audit from generator.
+
+**Coverage model:**
+```json
+{
+  "slug": "23-eigencloud",
+  "project": "EIGEN / EigenCloud",
+  "last_scanned": "2026-06-22T02:41:54Z",
+  "freshness_status": "fresh | aging | stale | unknown",
+  "sources_checked_count": 4,
+  "sources_failed_count": 0,
+  "material_changes_30d": 3,
+  "open_verification_items": 2,
+  "next_checks": ["Verify ELIP-12 burn implementation"]
+}
+```
+
+**Freshness thresholds:**
+- `fresh`: scanned within 4h cadence + grace period, e.g. <= 8h.
+- `aging`: <= 72h.
+- `stale`: > 72h or never scanned.
+- `unknown`: missing data.
+
+**Commit:**
+```bash
+git add scripts/audit_coverage.py docs/data/coverage.json tests/test_audit_coverage.py scripts/generate.py
+git commit -m "feat: generate project coverage and freshness data"
+```
+
+**Verification:** Every project in `docs/data/index.json` has a coverage row, and freshness is derived from scan history rather than copied from project metadata.
+
+---
+
+### Task 15: Add dashboard coverage/freshness view
+
+**Objective:** Show scan health without forcing user into raw debug data.
+
+**Precondition:** Task 14 coverage/freshness generation exists and real coverage data is reliable enough to drive UI. If not, keep this task blocked and do not ship a freshness UI that creates false confidence.
+
+**Files:**
+- Modify: `docs/index.html`
+- Modify: `docs/app.js`
+- Modify: `docs/style.css`
+
+**UI changes:**
+- Add small status strip or card group:
+  - Fresh projects
+  - Aging projects
+  - Stale projects
+  - Projects with failed sources
+  - Projects with open verification items
+- Add project card badge: `fresh`, `aging`, `stale`, `unknown`.
+- Add filter: freshness.
+
+**Commit:**
+```bash
+git add docs/index.html docs/app.js docs/style.css
+git commit -m "feat: add coverage freshness view"
+```
+
+**Verification:** Browser console clean; project counts match `docs/data/coverage.json`.
 
 ---
 
@@ -703,15 +712,15 @@ Do not try to implement this roadmap in one push. Start by making drift visible 
 
 7. README/index generator.
 8. Per-project JSON generator or formal deprecation.
-9. Shared-template HTML generator. This is high leverage because it eliminates page-layout drift such as `.project-content` vs `.project-grid`.
+9. Shared-template HTML generator — treat this as the highest-leverage Phase 2 generator task because it eliminates page-layout drift such as `.project-content` vs `.project-grid`.
 
 ### Phase 3 — Evidence quality and coverage UX
 
 10. Source-quality/confidence/verification schema, migrated across all existing changelog rows with `unknown` where needed.
 11. Dashboard evidence-quality UI.
 12. Normalize scan-debug coverage schema.
-13. Coverage/freshness generator.
-14. Dashboard coverage/freshness UI only after scan-debug is reliable.
+13. Coverage/freshness generator from normalized scan-debug data.
+14. Dashboard coverage/freshness UI only after generated coverage data is reliable.
 
 ### Phase 4 — Automation and contributor workflow
 
@@ -728,4 +737,5 @@ This avoids building a generator on top of unknown drift and gives immediate pro
 - Do not add frontend write tokens. GitHub Pages remains static.
 - Do not overbuild a complex framework. Python stdlib scripts are enough.
 - Do not try to make every historical changelog entry perfect on day one. Backfill source-quality/confidence fields as `unknown` across all rows, then enforce those fields everywhere.
+- Do not put `freshness_status` in hand-authored project metadata; freshness is derived from scan history into `docs/data/coverage.json` / dashboard data.
 - Do not remove `data/<slug>.json` until a search confirms no cron/job/tooling expects it.
