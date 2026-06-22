@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reference · Project Watchlist</title>
+  <link rel="stylesheet" href="style.css?v=20260622-reference" />
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Hermes Research</p>
+      <h1>Project Reference</h1>
+      <p class="sub">How to read, reference, and modify the project-watchlist dashboard without guessing which file matters.</p>
+    </div>
+    <div class="header-actions">
+      <a class="repo" href="index.html">Dashboard</a>
+      <a class="repo" href="scan-debug.html">Scan debug</a>
+      <a class="repo" id="repoLink" href="#">GitHub repo</a>
+    </div>
+  </header>
+
+  <main class="debug-layout">
+    <aside class="debug-summary" aria-labelledby="quick-title">
+      <div class="panel-head compact">
+        <div>
+          <p class="eyebrow">Quick use</p>
+          <h2 id="quick-title">Best interaction path</h2>
+          <p class="sub mini">Use the dashboard for reading, GitHub issues for adding, and Markdown dossiers for durable edits.</p>
+        </div>
+      </div>
+      <div class="status-grid">
+        <a class="status-card" href="index.html"><span>Read</span><strong>Dashboard</strong><small>Cards, latest changes, filters</small></a>
+        <a class="status-card" href="scan-debug.html"><span>Inspect</span><strong>Scan debug</strong><small>Runs, evidence, next checks</small></a>
+        <a class="status-card" id="issuesLink" href="#"><span>Add</span><strong>Intake issue</strong><small>Project name, token, X, notes</small></a>
+        <a class="status-card" id="agentsLink" href="#"><span>Rules</span><strong>AGENTS.md</strong><small>Monitoring framework</small></a>
+      </div>
+    </aside>
+
+    <section class="debug-runs" aria-labelledby="workflow-title">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Operating model</p>
+          <h2 id="workflow-title">How this project works</h2>
+          <p class="sub mini">The public site is static. The repo and Hermes cron job do the real updating.</p>
+        </div>
+      </div>
+
+      <details class="run-card" open>
+        <summary><div><span class="run-status completed">source of truth</span><h3>Canonical files</h3><p>Edit these first; generated pages should follow them.</p></div></summary>
+        <div class="run-body">
+          <ol class="decision-list">
+            <li><div class="decision-top"><strong><code>projects/*.md</code></strong><span>dossiers</span></div><p>Primary research files: overview, thesis, catalysts, sources, open questions, monitoring notes, unverified watch items.</p></li>
+            <li><div class="decision-top"><strong><code>index.json</code> / <code>index.csv</code></strong><span>root index</span></div><p>Machine-readable project metadata used by scripts and future agents.</p></li>
+            <li><div class="decision-top"><strong><code>docs/data/index.json</code></strong><span>dashboard data</span></div><p>Powers the project cards on the GitHub Pages dashboard.</p></li>
+            <li><div class="decision-top"><strong><code>docs/data/project-changelog.json</code></strong><span>latest feed</span></div><p>Powers dashboard changelog and individual project Latest panels.</p></li>
+            <li><div class="decision-top"><strong><code>docs/data/scan-debug.json</code></strong><span>operator log</span></div><p>Powers the scan-debug page: run status, decision trail, errors, next checks.</p></li>
+            <li><div class="decision-top"><strong><code>docs/projects/*.html</code></strong><span>generated presentation</span></div><p>Published project pages. Do not treat them as canonical; regenerate/update them from Markdown/data.</p></li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="run-card" open>
+        <summary><div><span class="run-status completed">modify</span><h3>Best way to change something</h3><p>Pick the workflow by intent.</p></div></summary>
+        <div class="run-body">
+          <ol class="decision-list">
+            <li><div class="decision-top"><strong>Add a new project</strong><span>public-safe</span></div><p>Use the dashboard <strong>Add project</strong> button or open a GitHub issue with project name, token/contract, main X, and context. The 4h Hermes job processes intake issues, creates the dossier/page, and runs initial review.</p></li>
+            <li><div class="decision-top"><strong>Correct project facts</strong><span>durable edit</span></div><p>Edit the relevant <code>projects/&lt;slug&gt;.md</code> section first, then update indexes/changelog/generated HTML so the live site matches.</p></li>
+            <li><div class="decision-top"><strong>Add sources or watch triggers</strong><span>monitoring edit</span></div><p>Add them to the dossier source table / monitoring notes. Good source entries include what the source is and when/why Hermes should check it.</p></li>
+            <li><div class="decision-top"><strong>Change scan behavior</strong><span>agent rules</span></div><p>Patch <code>AGENTS.md</code> for durable repo policy. Patch the 4h cron prompt only for scheduler-specific behavior. Repo rules are easier for future agents to reference.</p></li>
+            <li><div class="decision-top"><strong>Change the UI</strong><span>presentation edit</span></div><p>Modify <code>docs/index.html</code>, <code>docs/app.js</code>, and <code>docs/style.css</code>. Keep the data contracts stable or update the JSON producers at the same time.</p></li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="run-card" open>
+        <summary><div><span class="run-status completed">automation</span><h3>How Hermes is managing it</h3><p>Recurring scanner plus GitHub Pages.</p></div></summary>
+        <div class="run-body">
+          <ul class="next-list">
+            <li>A Hermes cron job named <strong>Project watchlist research scans — 4h</strong> runs every four hours in <code>/root/project-watchlist-github</code>.</li>
+            <li>It scans tracked project sources, X accounts, intake issues, weak signals, catalysts, and material updates.</li>
+            <li>It updates Markdown/data/HTML, validates JSON/diffs, commits, and pushes to GitHub when there are real changes.</li>
+            <li>GitHub Pages serves the dashboard from <code>/docs</code>. CDN lag can make the public site trail raw GitHub briefly.</li>
+            <li>Discord alerts should stay quiet unless there is material news; routine scan evidence belongs in the dashboard/debug data.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    const repoBase = () => {
+      const h = location.hostname;
+      const path = location.pathname.split('/').filter(Boolean);
+      if (h.endsWith('github.io') && path[0]) return `https://github.com/${h.replace('.github.io', '')}/${path[0]}`;
+      return '..';
+    };
+    const repo = repoBase();
+    document.querySelector('#repoLink').href = repo;
+    document.querySelector('#issuesLink').href = `${repo}/issues/new?labels=project-intake,hermes-review`;
+    document.querySelector('#agentsLink').href = `${repo}/blob/main/AGENTS.md`;
+  </script>
+</body>
+</html>

@@ -5,6 +5,7 @@ Source of truth for crypto/project monitoring dossiers.
 - Markdown dossiers: [`/projects`](projects/)
 - Machine-readable index: [`index.json`](index.json) / [`index.csv`](index.csv)
 - GitHub Pages dashboard source: [`/docs`](docs/)
+- Live usage/reference page: [`/docs/reference.html`](docs/reference.html)
 
 ## Workflow
 
