@@ -1,5 +1,112 @@
 [
   {
+    "run_id": "20260622-173406",
+    "started_at": "2026-06-22T17:34:06Z",
+    "completed_at": "2026-06-22T17:34:06Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-22T13:26:24Z to 2026-06-22T17:34:06Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X account chunks with x_search, and ran broad materiality/weak-signal X queries; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol",
+      "Ambient",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "projects": 25,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 4,
+      "material_entries": 4,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Open issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake project or duplicate update required."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2069108737466368417",
+        "summary": "Official NEAR X reported all-time monthly revenue/value capture after partner payouts above $4.2M, with May the strongest month yet.",
+        "decision": "Logged because protocol revenue/value capture is a material economic metric; dashboard/API verification remains a next check."
+      },
+      {
+        "project": "Ambient",
+        "type": "official update",
+        "source": "X/Twitter official + CEO scan",
+        "url": "https://x.com/IridiumEagle/status/2069102505913704537",
+        "summary": "CEO said Ambient Kimi 2.7 Coder is live/top of OpenRouter charts and official X reiterated open pinned weights plus Proof-of-Logits receipts.",
+        "decision": "Logged as source-proximate product/usage signal; not treated as mainnet/tokenomics."
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "type": "official update",
+        "source": "X/Twitter official/team scan",
+        "url": "https://x.com/IOTA_SN9/status/2069097814873821657",
+        "summary": "IOTA_SN9 said Dr. Alan Aboudib presented ResBM as backbone for Train at Home and Orion-100B; Macrocosmos scheduled a Hash Rate podcast on IOTA/Orion/Apex/hackathon.",
+        "decision": "Logged as official technical-progress signal for the decentralized-training catalyst."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "official update",
+        "source": "X/Twitter team scan",
+        "url": "https://x.com/saltorious1/status/2069082398256455951",
+        "summary": "Bankr DevRel said BerryFiBase, Obol_Collective, and pmfi_cc skills merged into the ecosystem over the last week.",
+        "decision": "Logged as source-proximate integration-surface expansion; below tokenomics/rules-change threshold but useful Latest feed signal."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in the scan window.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify NEAR all-time revenue and May revenue/value-capture figures against a live dashboard/API or official report if linked.",
+      "Watch Ambient OpenRouter/model ranking and product usage for machine-readable stats, and continue treating mainnet/tokenomics as unannounced.",
+      "Watch IOTA_SN9 for Orion-100B/Train at Home benchmarks, checkpoints, hackathon deliverables, and subnet economics.",
+      "Watch Bankr skill integrations for official user/revenue impact and Reward Season 2 rules/timing."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the four new 2026-06-22T17:34:06Z entries: NEAR high, Ambient medium, IOTA SN9 medium, and BANKR medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260622-132624",
     "started_at": "2026-06-22T13:26:24Z",
     "completed_at": "2026-06-22T13:26:24Z",

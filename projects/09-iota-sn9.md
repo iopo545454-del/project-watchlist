@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-13T21:15:15Z
+last_updated: 2026-06-22T17:34:06Z
 ---
 
 # IOTA — Macrocosmos Bittensor Subnet 9
@@ -11,6 +11,10 @@ last_updated: 2026-06-13T21:15:15Z
 - “IOTA” = Incentivised Orchestrated Training Architecture.
 - Focus: decentralized model training / distributed pretraining over Bittensor.
 - Built by Macrocosmos, which also operates other Bittensor subnets.
+
+## Latest scan notes
+
+- 2026-06-22 — Official IOTA_SN9 said AI Research Lead Dr. Alan Aboudib presented ResBM at the Pluralis Protocol Learning Workshop, framing Residual Bottleneck Models as the low-bandwidth pipeline-parallel backbone for Train at Home and Orion-100B; Macrocosmos also scheduled a Hash Rate podcast on IOTA/Orion-100B/Apex/hackathon. Sources: https://x.com/IOTA_SN9/status/2069097814873821657 and https://x.com/MacrocosmosAI/status/2069086571958067257
 
 ## Thesis
 - TBD / needs follow-up.

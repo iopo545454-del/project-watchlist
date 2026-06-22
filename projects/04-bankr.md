@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T13:26:24Z
+last_updated: 2026-06-22T17:34:06Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-22T13:26:24Z
 
 ## Latest scan notes
 
+- 2026-06-22 — Bankr DevRel `@saltorious1` said new Bankr ecosystem skills merged over the last week for BerryFiBase, Obol_Collective, and pmfi_cc; source-proximate skill/integration expansion, but not yet a BNKR value-capture or reward-rule change. Source: https://x.com/saltorious1/status/2069082398256455951
 - 2026-06-22 — Official Bankr bot activity showed Reward Season 2 score/balance checks live in the bot/Club flow, including a user ranked #2 overall and bot-reported total rewards distributed above 23M. This supports the existing BNKR incentive-catalyst watch item, but full Season 2 criteria/timing still need an official rules post. Source: https://x.com/bankrbot/status/2069018928505074037
 - 2026-06-21 — Core builder `@0xDeployer` addressed a Bankr console redesign/test-token incident after users complained about exposed test coins and losses; he said it was not fee farming, the test should not have surfaced that way, and internal/team policy changes were made. This is a trust/ops item to watch for follow-through, not a protocol exploit confirmation. Source: https://x.com/0xDeployer/status/2068496200937189424
 - 2026-06-21 — Core builder `@0xDeployer` teased `$BNKR` reward season #2 with new scoring metrics; Bankr bot replies said full criteria/timing are not public yet and may involve Bankr Club/wallet activity. This is a direct incentive catalyst to verify when official criteria drop. Source: https://x.com/0xDeployer/status/2068423554929143874

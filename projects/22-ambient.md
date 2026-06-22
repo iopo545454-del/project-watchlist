@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T09:19:06Z
+last_updated: 2026-06-22T17:34:06Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-06-22 — CEO `@IridiumEagle` said Ambient's Kimi 2.7 Coder model is live and top of the charts on OpenRouter, and official `@ambient_xyz` posted a portability/open-model thread saying Ambient has open pinned weights and Proof-of-Logits receipts for every answer; useful product/usage signal, still not tokenomics or mainnet. Sources: https://x.com/IridiumEagle/status/2069102505913704537 and https://x.com/ambient_xyz/status/2069092414112116856
 - 2026-06-22 — Official `@ambient_xyz` said Ambient Desktop updates are shipping non-stop and pointed users to the installation/getting-started guide; useful docs/product-distribution signal for the Desktop surface, but no mainnet/tokenomics update. Source: https://x.com/ambient_xyz/status/2068927797960245677
 - 2026-06-21 — CEO `@IridiumEagle` highlighted Ambient Desktop at `desktop.ambient.xyz`, emphasizing Docker/Podman process isolation and secret management; useful product-security positioning for a local agent/inference surface, but not a formal mainnet/token update. Source: https://x.com/IridiumEagle/status/2068599053559165199
 - 2026-06-21 — CEO `@IridiumEagle` showed Ambient Desktop running GLM 5.2 to train a small ML model end-to-end from a paper, plus replied that Ambient raised modest funds with long-term funder allocations; useful product-depth and token-distribution context, but still not a mainnet/tokenomics announcement. Source: https://x.com/IridiumEagle/status/2068543690164023415

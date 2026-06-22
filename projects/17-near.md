@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-19T19:37:32Z
+last_updated: 2026-06-22T17:34:06Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-19T19:37:32Z
 
 ## Latest scan notes
 
+- 2026-06-22 — Official NEAR X said monthly revenue/value capture after integration-partner payouts is climbing, with May the strongest month yet and all-time revenue now above $4.2M; this upgrades the NEAR Intents/revenue-capture watch item from narrative to source-proximate metric, but still needs dashboard/API verification. Source: https://x.com/NEARProtocol/status/2069108737466368417
 - 2026-06-19 — NEAR said Confidential Intents TVL is up 43x in 90 days and framed private-settlement volume as a fee/revenue funnel; Illia also highlighted confidential deposits for near.com RWA/equity-style perps including NVIDIA, SpaceX, Tesla and S&P500 markets. Sources: https://x.com/NEARProtocol/status/2068012791819014471 and https://x.com/ilblackdragon/status/2068051111161012224
 - 2026-06-18 — NEAR announced NEAR@3.33 for Confidential Intents users: eligible users receive NEAR@3.33 that converts 1:1 to NEAR after a $3.33 VWAP for three consecutive days once Confidential Intents TVL reaches $70M. This is a direct incentive/liquidity milestone for Confidential Intents. Source: https://x.com/NEARProtocol/status/2067735355835449509
 - 2026-06-18 — NEAR published a user-owned AI stack map with current proof points: Intents $20B+ volume, Confidential Intents $30M+ TVL, NEAR AI Cloud/private inference, Agent Market, House of Stake, and live revenue/buybacks. Source: https://x.com/NEARProtocol/status/2067593396168876452
