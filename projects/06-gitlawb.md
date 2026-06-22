@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-17T14:15:52Z
+last_updated: 2026-06-22T01:02:51Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -55,6 +55,8 @@ last_updated: 2026-06-17T14:15:52Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-22 — GitLawb official X said the entire network is now on node v0.3.9 and that the OSS migration is complete, pointing to https://github.com/Gitlawb/node; GitHub tags show v0.3.9 exists and the repo pushed at 2026-06-22T00:15:23Z. This is a material network/client milestone to verify through node participation and whether it unlocks the next OpenClaude/OpenGateway/node-incentive steps. Source: https://x.com/gitlawb/status/2068839282316603606
 
 - 2026-06-17 — GitLawb shipped OpenClaude v0.19.0 with NEAR AI, Fireworks, and Gemini Vertex providers plus context visualization, auto-compact, refreshed UI, and a demo video. Source: https://x.com/gitlawb/status/2067229885563883730
 
@@ -137,6 +139,8 @@ last_updated: 2026-06-17T14:15:52Z
 | https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
 | https://x.com/kevincodex/status/2065776569998787055 | Founder note on resuming open-source coding-model research/training |
 | https://x.com/kevincodex/status/2066451502496113086 | Founder update on OpenGateway inference-token earning integrated with OpenClaude and OpenClaw/Hermes plugins coming soon |
+| https://x.com/gitlawb/status/2068839282316603606 | Official node v0.3.9 / OSS migration complete update pointing to the GitLawb node repository |
+| https://github.com/Gitlawb/node | Official/open-source node repository referenced by GitLawb; monitor releases, commits, setup docs, and node/network migration status |
 
 ## Risks
 
