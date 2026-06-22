@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-22T21:42:05Z
 ---
 
 # AKT / Akash

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-18T23:11:30Z
+last_updated: 2026-06-22T21:42:05Z
 ---
 
 # OCT / Octra
@@ -51,6 +51,7 @@ last_updated: 2026-06-18T23:11:30Z
 
 ## Latest scan notes
 
+- 2026-06-22 — Co-founder/team account `@octralex` published the promised security disclosure: an encrypted-balance decryption proof-verification bug was found internally and privately reported, patched on 2026-06-01, and the only confirmed live impact was a 100 OCT test transaction; the team says the issue was not a break of HFHE/Ristretto/core proof equations, reduced the test-era delta-reconciliation cap to zero, and is moving to its own TAPE verifier before resuming node/features/listing plans. Source: https://x.com/i/status/2069156341776630141
 - 2026-06-18 — Octra team/community accounts teased that the node release “will be glorious” and leave “no excuses,” reinforcing node launch as the next near-term dependency after security checks and before broader ecosystem/listing progress. Source: https://x.com/octralex/status/2067706655232360455
 - 2026-06-16 — Community lead `@octrabunch` clarified the early-validator snapshot: 69 early validators still held/encrypted their claimed OCT stake at epoch 1118156 while 91 sold; this is not a general airdrop, but holders were told to expect news before validator-program launch. Source: https://x.com/octrabunch/status/2066788953689039271
 - 2026-06-14 — Official X said external researchers submitted credible bug reports/improvement suggestions; fixes have been implemented and will be published separately. Octra says it is finishing essential security checks before returning to a product release schedule that includes node release, HypEVM integration, multi-ecosystem stealth bridge, and HFHE-LLM interface. Source: https://x.com/i/status/2066055111952990487
@@ -64,6 +65,7 @@ last_updated: 2026-06-18T23:11:30Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Encrypted-balance proof-verification disclosure + TAPE verifier migration | Confirmed | Co-founder/team disclosure says a June 1 encrypted-balance decryption proof bug was patched within hours, only 100 OCT confirmed impacted, delta-reconciliation cap reduced to zero, and Octra will move to a native TAPE verifier before resuming roadmap/listing plans: https://x.com/i/status/2069156341776630141 | Published 2026-06-22; verifier release next | Clarifies severity of the prior security-work pause and makes TAPE the gating technical upgrade. | Transparent handling can rebuild confidence, but the custom verifier must ship cleanly before node/listing progress resumes. | Watch docs/GitHub release notes, audit language, wallet migration prompts, node-release timing, and any contrary exploit evidence. |
 | Security-update publication after external bug reports | Confirmed | Official X says credible external bug reports/improvement suggestions were implemented and will be published separately: https://x.com/i/status/2066055111952990487 | Near-term / after final checks | Clarifies what was fixed and how serious researcher findings were | Could improve confidence before node/listing work, or raise risk if issues were material | Watch official X/docs/GitHub for separate fix notes, audit language, or incident-style disclosure |
 | Node release | Confirmed | Official X lists “node release” as first item when regular product release schedule resumes: https://x.com/i/status/2066055111952990487 | After essential security updates/checks; exact date unknown | Lets external operators participate and is positioned as prerequisite infrastructure | Official reply says listings require the node to be published, so node release could unlock exchange/listing conversations | Watch node binaries/repos/docs, Octrascan network metrics, and official listing language |
 | HypEVM integration + multi-ecosystem stealth bridge | Confirmed | Official X roadmap list includes HypEVM integration and multi-ecosystem stealth bridge: https://x.com/i/status/2066055111952990487 | Unknown / after security-check phase | Expands Octra privacy/encrypted-compute reach beyond its own ecosystem | Could create cross-chain privacy narrative and liquidity/bridge monitoring needs | Watch docs, bridge UI, contracts, supported chains, and wallet warnings |

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T17:34:06Z
+last_updated: 2026-06-22T21:42:05Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-22T17:34:06Z
 
 ## Latest scan notes
 
+- 2026-06-22 — Bankr bot acknowledged a real issue where users may be routed to a dead/outdated BNKR staking contract: it said it does not have the current v2 staking contract in its toolset, asked for the live address/ABI, and said the team needs to update the agent knowledge base. Treat as an ops/trust watch item until official docs and the bot toolset point to the correct staking contract. Source: https://x.com/i/status/2069117276113305975
 - 2026-06-22 — Bankr DevRel `@saltorious1` said new Bankr ecosystem skills merged over the last week for BerryFiBase, Obol_Collective, and pmfi_cc; source-proximate skill/integration expansion, but not yet a BNKR value-capture or reward-rule change. Source: https://x.com/saltorious1/status/2069082398256455951
 - 2026-06-22 — Official Bankr bot activity showed Reward Season 2 score/balance checks live in the bot/Club flow, including a user ranked #2 overall and bot-reported total rewards distributed above 23M. This supports the existing BNKR incentive-catalyst watch item, but full Season 2 criteria/timing still need an official rules post. Source: https://x.com/bankrbot/status/2069018928505074037
 - 2026-06-21 — Core builder `@0xDeployer` addressed a Bankr console redesign/test-token incident after users complained about exposed test coins and losses; he said it was not fee farming, the test should not have surfaced that way, and internal/team policy changes were made. This is a trust/ops item to watch for follow-through, not a protocol exploit confirmation. Source: https://x.com/0xDeployer/status/2068496200937189424
@@ -84,6 +85,7 @@ last_updated: 2026-06-22T17:34:06Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-22 | Bankr bot may route users toward a dead/outdated BNKR staking contract because its toolset/knowledge base lacks the current v2 staking contract; bot acknowledged this as a real problem and requested the live address/ABI. | https://x.com/i/status/2069117276113305975 | High | Unverified | Staking-contract accuracy is directly relevant to user funds, BNKR utility, and trust in Bankr as an execution agent. | Verify official BNKR staking docs/address, Basescan contract state, and whether Bankr bot/tooling is updated to the correct v2 staking contract. |
 | 2026-06-21 | Bankr console redesign/testing exposed test-token deployments that drew user-loss complaints; core builder says it was not fee farming and that internal/team policy changes were made. | https://x.com/0xDeployer/status/2068496200937189424 | Medium | Unverified | Trust in Bankr launch/console tooling matters because users rely on agent execution and token-launch flows. | Re-check for official postmortem, mitigation/reimbursements if applicable, console controls, and repeat complaints next scan. |
 
 ## Team

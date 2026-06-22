@@ -1,5 +1,121 @@
 [
   {
+    "run_id": "20260622-214205",
+    "started_at": "2026-06-22T21:42:05Z",
+    "completed_at": "2026-06-22T21:42:05Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-22T17:34:06Z to 2026-06-22T21:42:05Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X account chunks with x_search, ran a broad materiality/weak-signal X query, and skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "OCT / Octra",
+      "BANKR / BankrCoin",
+      "NEAR Protocol",
+      "AKT / Akash",
+      "VVV / Venice AI"
+    ],
+    "counts": {
+      "projects": 25,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 5,
+      "material_entries": 4,
+      "unverified_items": 1
+    },
+    "decision_trail": [
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items. Open issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews done.",
+        "decision": "No new intake project or duplicate update required."
+      },
+      {
+        "project": "OCT / Octra",
+        "type": "official update",
+        "source": "X/Twitter team security disclosure",
+        "url": "https://x.com/i/status/2069156341776630141",
+        "summary": "Co-founder/team account disclosed a June 1 encrypted-balance proof-verification bug, patched within hours, with only a 100 OCT confirmed test transaction and a TAPE verifier migration before resumed roadmap/listing work.",
+        "decision": "Logged because security disclosures, exploit limits, and node/listing gating verifier work are material project context."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "unverified watch item",
+        "source": "X/Twitter official bot thread",
+        "url": "https://x.com/i/status/2069117276113305975",
+        "summary": "Bankr bot acknowledged it lacks the current v2 staking contract in its toolset and that routing users to a dead/outdated staking contract would be a real problem.",
+        "decision": "Tracked as unverified ops/user-funds trust item pending official docs/toolset correction and contract verification."
+      },
+      {
+        "project": "NEAR Protocol",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2069146261479882953",
+        "summary": "Official NEAR X said GLM-5.2 is live on NEAR AI with verifiable privacy and hardware-signed attestation.",
+        "decision": "Logged as official AI/private-inference product update; economic impact depends on usage and revenue capture."
+      },
+      {
+        "project": "AKT / Akash",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2069112975152054652",
+        "summary": "Official Akash X said GLM 5.2 landed on AkashML/OpenRouter for open-weight coding-agent workloads.",
+        "decision": "Logged as official model/platform update; not a tokenomics change."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "type": "official update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/AskVenice/status/2069135635848294875",
+        "summary": "Official Venice X said Seedance 2.0 4K is now live for anonymous native-4K video generation.",
+        "decision": "Logged as product/model surface expansion; token relevance depends on paid usage, staking demand, or burns."
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in the scan window. Observed GRASS Moonshot vote-farming was ignored as community spam/low-signal.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Octra TAPE verifier release, migration instructions, GitHub/docs/audit detail, and node/listing schedule after the security disclosure.",
+      "Verify official BNKR staking v2 address/docs and whether Bankr bot/toolset stops referencing stale contracts.",
+      "Watch NEAR AI/AkashML/Venice model additions for measurable usage/revenue/staking/burn follow-through rather than engagement-only launches.",
+      "Continue watching WLD unlock verification, Akash proposal 329 vote result, Bankr Reward Season 2 rules, Kinetiq Season 2 dates, TAO Root Reborn, EigenCloud value accrual, and neo-cloud comp revenue dashboards."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the five new 2026-06-22T21:42:05Z entries: OCT high, BANKR high, NEAR medium, AKT high, and VVV medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260622-173406",
     "started_at": "2026-06-22T17:34:06Z",
     "completed_at": "2026-06-22T17:34:06Z",
