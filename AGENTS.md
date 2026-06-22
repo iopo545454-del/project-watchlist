@@ -247,6 +247,28 @@ Avoid duplicate changelog entries for the same source/update. Keep summaries sho
 - Do not send routine "nothing happened" messages for autonomous scans.
 - If a run only updates local/dashboard scan state, the changelog is enough.
 
+## Discord command/reference conventions
+
+When the user asks from Discord to reference or modify this GitHub project, accept compact repo-aware shorthand and resolve it against this repository before asking follow-up questions.
+
+Recommended user shorthand:
+
+- `repo:` or `project-watchlist` means this repository: `iopo545454-del/project-watchlist` / local workdir `/root/project-watchlist-github`.
+- `page:<slug>` or a project name/ticker means the matching dossier in `projects/*.md`, its generated page in `docs/projects/*.html`, and corresponding rows in `index.json`, `docs/data/index.json`, and `docs/data/project-changelog.json`.
+- `file:<path>` means an explicit repository path, for example `file:projects/23-eigencloud.md` or `file:docs/data/index.json`.
+- `source:<url>` means user-provided evidence to add to a project source table, Latest/changelog entry, or scan-debug decision trail depending on context.
+- `issue:` means create or inspect a GitHub issue when GitHub CLI/API access is available; intake issues should use labels `project-intake,hermes-review`.
+
+Examples agents should understand:
+
+- `@hermes-agent in project-watchlist add this source to EigenCloud: <url> — context...`
+- `@hermes-agent update page:eigencloud thesis with this source: <url>`
+- `@hermes-agent from the repo, summarize file:projects/23-eigencloud.md`
+- `@hermes-agent compare page:eigencloud vs page:targon using source data from the repo`
+- `@hermes-agent make a small PR/change to docs/app.js to improve filtering`
+
+For edits, modify canonical Markdown/data first, regenerate presentation where needed, validate JSON/diffs, commit, push, and reply with the commit plus relevant Pages/GitHub links. For read-only requests, cite the exact repo file/path or live page used.
+
 ## Validation and git workflow
 
 Before committing:

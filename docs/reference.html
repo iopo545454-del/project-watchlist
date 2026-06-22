@@ -74,6 +74,25 @@
       </details>
 
       <details class="run-card" open>
+        <summary><div><span class="run-status completed">discord</span><h3>Discord reference shorthand</h3><p>Use these handles when asking Hermes to read or modify the GitHub repo.</p></div></summary>
+        <div class="run-body">
+          <ol class="decision-list">
+            <li><div class="decision-top"><strong><code>project-watchlist</code> / <code>repo:</code></strong><span>repo handle</span></div><p>Means the GitHub repo <code>iopo545454-del/project-watchlist</code> and local workdir <code>/root/project-watchlist-github</code>.</p></li>
+            <li><div class="decision-top"><strong><code>page:eigencloud</code></strong><span>project handle</span></div><p>Means the EigenCloud dossier, generated project page, index rows, changelog rows, and scan-debug entries.</p></li>
+            <li><div class="decision-top"><strong><code>file:projects/23-eigencloud.md</code></strong><span>exact file</span></div><p>Means a specific repo path. Use this when you want a precise read or edit.</p></li>
+            <li><div class="decision-top"><strong><code>source:https://...</code></strong><span>evidence</span></div><p>Means user-provided source data to add, summarize, compare, or validate against a project.</p></li>
+            <li><div class="decision-top"><strong><code>issue:</code></strong><span>GitHub issue</span></div><p>Means create/check an issue. Project intake should use labels <code>project-intake,hermes-review</code>.</p></li>
+          </ol>
+          <ul class="next-list">
+            <li><code>@hermes-agent in project-watchlist add this source to EigenCloud: https://... — context...</code></li>
+            <li><code>@hermes-agent from the repo, summarize file:projects/23-eigencloud.md</code></li>
+            <li><code>@hermes-agent compare page:eigencloud vs page:targon using source data from the repo</code></li>
+            <li><code>@hermes-agent update page:eigencloud catalysts with source:https://...</code></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="run-card" open>
         <summary><div><span class="run-status completed">automation</span><h3>How Hermes is managing it</h3><p>Recurring scanner plus GitHub Pages.</p></div></summary>
         <div class="run-body">
           <ul class="next-list">
