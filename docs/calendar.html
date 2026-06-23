@@ -4,22 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catalyst Calendar · Project Watchlist</title>
-  <meta name="description" content="Catalyst calendar for tracked Project Watchlist projects." />
+  <meta name="description" content="Simple catalyst calendar for tracked Project Watchlist projects." />
   <meta name="color-scheme" content="dark" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080a'/%3E%3Cpath d='M5 17h6l3-7 4 13 3-6h6' fill='none' stroke='%23c8ff4d' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="style.css?v=20260623-catalyst-1" />
+  <link rel="stylesheet" href="style.css?v=20260623-catalyst-simple-1" />
 </head>
 <body>
   <header>
     <div>
       <p class="eyebrow">Hermes Research · Watchlist</p>
       <h1>Catalyst Calendar</h1>
-      <p class="sub">Forward-looking launch, governance, value-accrual, product, and metric catalysts parsed from every tracked project dossier.</p>
+      <p class="sub">A simple graphic view of what matters now: this week, this month, and unconfirmed watch items.</p>
       <section class="stats-tape" aria-label="Catalyst summary">
-        <div class="stat"><span class="k">Catalysts</span><span class="v" id="cal-total">—</span></div>
-        <div class="stat"><span class="k">Live / ongoing</span><span class="v" id="cal-live">—</span></div>
-        <div class="stat"><span class="k">Upcoming</span><span class="v" id="cal-upcoming">—</span></div>
-        <div class="stat live"><span class="k">Projects</span><span class="v"><span class="dot-live"></span><span id="cal-projects">—</span></span></div>
+        <div class="stat"><span class="k">This week</span><span class="v" id="stat-week">—</span></div>
+        <div class="stat"><span class="k">This month</span><span class="v" id="stat-month">—</span></div>
+        <div class="stat"><span class="k">Unconfirmed</span><span class="v" id="stat-unconfirmed">—</span></div>
+        <div class="stat live"><span class="k">Total</span><span class="v"><span class="dot-live"></span><span id="stat-total">—</span></span></div>
       </section>
     </div>
     <div class="header-actions">
@@ -30,21 +30,31 @@
     </div>
   </header>
 
-  <section class="controls calendar-controls">
-    <input id="calSearch" type="search" placeholder="Filter catalysts, projects, tickers, impact, evidence…" />
-    <select id="calStatus"><option value="">All confidence</option><option value="confirmed">Confirmed</option><option value="tentative">Tentative</option><option value="speculative">Speculative</option></select>
-    <select id="calTiming"><option value="">All timing</option><option value="live">Live / ongoing</option><option value="upcoming">Upcoming / dated</option><option value="watch">Watch list</option><option value="unknown">Unknown timing</option></select>
-  </section>
-
-  <main class="calendar-page" aria-live="polite">
-    <section class="calendar-summary-card">
-      <p class="eyebrow">How to read this</p>
-      <h2>All project catalysts in one view</h2>
-      <p class="sub mini">This is a calendar-style operating view, not a claim that every item has a firm date. <strong>Live</strong> means already active or ongoing, <strong>Upcoming</strong> means dated/near-term/roadmap window, and <strong>Watch</strong> captures lower-date-confidence items that should still be monitored.</p>
+  <main class="simple-calendar" aria-live="polite">
+    <section class="calendar-mode-tabs" role="tablist" aria-label="Catalyst calendar views">
+      <button class="calendar-mode is-active" type="button" data-mode="week" role="tab" aria-selected="true">
+        <span>This week</span><strong id="tab-week">—</strong><small>live, near-term, weekly</small>
+      </button>
+      <button class="calendar-mode" type="button" data-mode="month" role="tab" aria-selected="false">
+        <span>This month</span><strong id="tab-month">—</strong><small>dated / monthly horizon</small>
+      </button>
+      <button class="calendar-mode" type="button" data-mode="unconfirmed" role="tab" aria-selected="false">
+        <span>Unconfirmed</span><strong id="tab-unconfirmed">—</strong><small>tentative, speculative, needs verification</small>
+      </button>
     </section>
-    <section id="calendarGroups" class="calendar-groups"></section>
+
+    <section class="simple-calendar-toolbar">
+      <div>
+        <p class="eyebrow" id="mode-eyebrow">This week</p>
+        <h2 id="mode-title">Catalysts to watch now</h2>
+        <p class="sub mini" id="mode-copy">Live / near-term / weekly items that should stay on the radar this week.</p>
+      </div>
+      <input id="calSearch" type="search" placeholder="Search project or catalyst…" />
+    </section>
+
+    <section id="calendarCards" class="simple-calendar-grid"></section>
   </main>
 
-  <script src="calendar.js?v=20260623-catalyst-1"></script>
+  <script src="calendar.js?v=20260623-catalyst-simple-1"></script>
 </body>
 </html>
