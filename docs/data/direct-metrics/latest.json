@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-23T17:19:38Z",
+  "generated_at": "2026-06-23T18:21:39Z",
   "projects": {
     "drv-derive": {
       "display_name": "DRV / Derive Protocol",
@@ -8,7 +8,7 @@
       "status": "active",
       "summary": "Fees, TVL, aggregate options volume, and Snapshot governance are fetchable. OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
       "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-06-23T17:19:38Z",
+      "last_refreshed": "2026-06-23T18:21:39Z",
       "metrics": [
         {
           "id": "fees_24h",
@@ -66,9 +66,9 @@
           "id": "tvl_total",
           "group": "tvl_collateral",
           "label": "TVL / collateral",
-          "value": 111086247,
+          "value": 111338084,
           "unit": "usd",
-          "display": "$111.1M",
+          "display": "$111.3M",
           "change": null,
           "source_id": "defillama_derive_tvl",
           "source_url": "https://api.llama.fi/protocol/derive",
@@ -118,27 +118,27 @@
       "chain_breakdown": [
         {
           "chain": "Hyperliquid L1",
-          "value": 40017534,
-          "display": "$40.0M"
+          "value": 40232333,
+          "display": "$40.2M"
         },
         {
           "chain": "OP Mainnet",
-          "value": 20762603,
+          "value": 20768766,
           "display": "$20.8M"
         },
         {
           "chain": "Base",
-          "value": 19361407,
+          "value": 19426090,
           "display": "$19.4M"
         },
         {
           "chain": "Arbitrum",
-          "value": 17990371,
-          "display": "$18.0M"
+          "value": 17941385,
+          "display": "$17.9M"
         },
         {
           "chain": "Ethereum",
-          "value": 12954329,
+          "value": 12969508,
           "display": "$13.0M"
         }
       ],
@@ -191,26 +191,14 @@
       ],
       "open_adapter_work": [
         {
-          "source_id": "derive_official_stats_fees",
-          "label": "Derive official stats API candidate",
-          "status": "failed",
-          "notes": "Returned HTTP 500 during tests; keep as an open adapter task, not a dashboard source.",
-          "next_step": "Inspect Derive docs/adapter parameters and replace DefiLlama proxy if an official stable endpoint is available."
-        },
-        {
           "label": "OI / volume by underlying",
           "status": "not_implemented",
-          "notes": "Need official Derive market-data endpoint for BTC/ETH/HYPE OI and volume splits."
+          "notes": "Should be onchain-derivable or available through Derive public market data, but the first iteration only used stable aggregate DefiLlama volume. Next adapter should test Derive public API/WebSocket or index Derive Chain events for BTC/ETH/HYPE OI and volume splits."
         },
         {
           "label": "DRV buyback wallet / onchain mapping",
-          "status": "not_implemented",
-          "notes": "Needed to compare fee generation with actual DRV bought; for now rely on official weekly buyback posts."
-        },
-        {
-          "label": "Market quality",
-          "status": "not_implemented",
-          "notes": "Need orderbook/spread/depth or RFQ stats endpoints before display."
+          "status": "needs_source_mapping",
+          "notes": "Official posts confirm weekly DAO buybacks, but the text does not publish a single canonical buyback wallet. Next adapter should extract txs/wallets from official buyback media or DAO/treasury docs, then verify swaps/transfers onchain before displaying."
         }
       ],
       "notes": [

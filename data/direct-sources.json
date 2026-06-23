@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23T17:19:38Z",
+  "updated_at": "2026-06-23T18:21:39Z",
   "projects": {
     "drv-derive": {
       "display_name": "DRV / Derive Protocol",
@@ -68,7 +68,7 @@
           "cadence": "manual",
           "status": "failed",
           "source_quality": "official_candidate",
-          "notes": "Returned HTTP 500 during tests; keep as an open adapter task, not a dashboard source."
+          "notes": "Candidate guessed during initial discovery; returned HTTP 500 without documented parameters. Do not show in dashboard until an official documented endpoint is confirmed."
         }
       ]
     }

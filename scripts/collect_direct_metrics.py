@@ -181,20 +181,17 @@ def collect_drv(config: dict, generated_at: str) -> tuple[dict, dict, dict]:
         sources_failed += 1
         errors.append({"source_id": gov_source["id"], "error": repr(exc)})
 
-    for source_id in ["derive_official_stats_fees"]:
-        src = sources[source_id]
-        open_adapter_work.append({
-            "source_id": source_id,
-            "label": src["label"],
-            "status": src["status"],
-            "notes": src.get("notes", ""),
-            "next_step": "Inspect Derive docs/adapter parameters and replace DefiLlama proxy if an official stable endpoint is available.",
-        })
-
     open_adapter_work.extend([
-        {"label": "OI / volume by underlying", "status": "not_implemented", "notes": "Need official Derive market-data endpoint for BTC/ETH/HYPE OI and volume splits."},
-        {"label": "DRV buyback wallet / onchain mapping", "status": "not_implemented", "notes": "Needed to compare fee generation with actual DRV bought; for now rely on official weekly buyback posts."},
-        {"label": "Market quality", "status": "not_implemented", "notes": "Need orderbook/spread/depth or RFQ stats endpoints before display."},
+        {
+            "label": "OI / volume by underlying",
+            "status": "not_implemented",
+            "notes": "Should be onchain-derivable or available through Derive public market data, but the first iteration only used stable aggregate DefiLlama volume. Next adapter should test Derive public API/WebSocket or index Derive Chain events for BTC/ETH/HYPE OI and volume splits."
+        },
+        {
+            "label": "DRV buyback wallet / onchain mapping",
+            "status": "needs_source_mapping",
+            "notes": "Official posts confirm weekly DAO buybacks, but the text does not publish a single canonical buyback wallet. Next adapter should extract txs/wallets from official buyback media or DAO/treasury docs, then verify swaps/transfers onchain before displaying."
+        },
     ])
 
     status = "active" if sources_failed == 0 else "partial"
