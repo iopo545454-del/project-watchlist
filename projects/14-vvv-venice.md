@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T21:42:05Z
+last_updated: 2026-06-23T18:22:47Z
 ---
 
 # VVV / Venice AI
@@ -74,5 +74,6 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 ## Latest scan notes
 
+- 2026-06-23 — Official Venice said Venice is now available through Base MCP, letting agents call Venice private/uncensored inference from Base's MCP server with x402; useful agent-commerce/private-inference distribution signal. Source: https://x.com/AskVenice/status/2069481225316905200
 - 2026-06-22 — Official Venice X said Seedance 2.0 4K is live on Venice, adding native-4K anonymous video generation to the product surface; monitor whether model launches translate to paid API/staking demand or burns. Source: https://x.com/AskVenice/status/2069135635848294875
 - 2026-06-17 — Venice launched Kling V3 Turbo for anonymous text-to-video and image-to-video use in Standard/Pro tiers, adding another video-generation model to the Venice product surface. Source: https://x.com/AskVenice/status/2067236016629432370

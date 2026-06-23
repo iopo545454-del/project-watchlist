@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T14:13:40Z
+last_updated: 2026-06-23T18:22:47Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-23T14:13:40Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official MetaDAO said FAF-002 is live for FlashTrade: a token compensation package for the founding team timed with the Flash Trade V2 launch, adding another live ownership-coin/proposal-market catalyst to monitor for proposal liquidity and settlement quality. Source: https://x.com/MetaDAOProject/status/2069473857740677421
 - 2026-06-23 — Ownership Report / MetaDAO ecosystem coverage said the LasoFinance curated raise is scheduled for June 30–July 3 with $750k minimum, hidden max cap, $50k monthly team allowance, and disclosed payment/revenue traction; useful futarchy/ownership-coin catalyst even though Laso is a portfolio/ecosystem raise rather than a META tokenomics change. Source: https://x.com/ownershipfm/status/2069382020275249386
 - 2026-06-21 — MetaDAO-affiliated `@0xSrMessi` flagged another percolator-meta issue: POLICY_PRINCIPAL partial insurance withdraws may reduce principal while burning zero shares, leaving a stale-high COIN claim weight in residual-distributor caps. Treat as unverified until a maintainer/GitHub issue or patch confirms severity and affected code. Source: https://x.com/0xSrMessi/status/2068477644086100156
 

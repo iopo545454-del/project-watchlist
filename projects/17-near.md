@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T14:13:40Z
+last_updated: 2026-06-23T18:22:47Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-23T14:13:40Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official NEAR promoted Hyperliquid perps directly from near.com accounts, letting users go long/short or hedge with profit-and-loss guardrails; this extends near.com from intents/confidential swaps into higher-velocity trading UX. Source: https://x.com/NEARProtocol/status/2069433480115568725
 - 2026-06-23 — Official NEAR said Confidential Intents participants can qualify for Drop 1 by holding at least $100 confidential balance and making one confidential swap; snapshot locks when confidential pools reach $70M TVL versus $30.86M shown in the post. Source: https://x.com/NEARProtocol/status/2069400493374189959
 - 2026-06-23 — Official NEAR X announced SPICE, an in-development protocol upgrade that decouples consensus from execution, targets ~200ms block times, parallel execution, optimized CPU scheduling and atomic execution across shards. This is a roadmap/catalyst item for the AI-agent/intent stack, with timing framed as “coming months.” Source: https://x.com/NEARProtocol/status/2069180409414406177
 

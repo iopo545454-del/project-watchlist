@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-06-23T14:13:40Z
+last_updated: 2026-06-23T18:22:47Z
 ---
 
 # AEON Framework / aeon
@@ -69,6 +69,7 @@ last_updated: 2026-06-23T14:13:40Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official Aeon said its B1 Token Transparency Filing scored 40/40 on Blockworks and highlighted a Bedrock Foundation structure, golden-share protection, native AEON trading-fee treasury capture, and 50% non-trading-fee revenue buybacks. Source: https://x.com/aeonframework/status/2069473683375005833
 - 2026-06-23 — Official Aeon community-call recording covered the consumer distribution push, Packs publishing, DAG executor/security work, x402 endpoints/non-crypto login, partner integrations, and a 1M cumulative GitHub-star milestone. Source: https://x.com/aeonframework/status/2069384845235470828
 - 2026-06-19 — AEON official X amplified a Litebeam video about integrating with aeonframework on Base and said the number/quality of projects building with Aeon is rising. Source: https://x.com/aeonframework/status/2068034567995289667
 - 2026-06-16 — Official X published blog Entry №003 on agentic commerce: Aeon agents can pay APIs using x402, USDC, and Circle agent wallets; the account also highlighted vulnerability-scanner/security positioning. Source: https://x.com/aeonframework/status/2066911131231293733

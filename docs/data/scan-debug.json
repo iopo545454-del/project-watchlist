@@ -1,5 +1,139 @@
 [
   {
+    "run_id": "20260623-182247",
+    "started_at": "2026-06-23T18:22:47Z",
+    "completed_at": "2026-06-23T18:22:47Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-23T14:13:40Z to 2026-06-23T18:22:47Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO",
+      "AEON Framework",
+      "Kinetiq",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "NEAR Protocol",
+      "EIGEN / EigenCloud"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 8,
+      "changelog_entries_added": 8,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/MetaDAOProject/status/2069473857740677421",
+        "summary": "Official MetaDAO said FAF-002 is live for FlashTrade: a token compensation package for the founding team timed with the Flash Trade V2 launch, adding another live ownership-coin/proposal-market catalyst to monitor for proposal liquidity and settlement quality.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "AEON Framework",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2069473683375005833",
+        "summary": "Official Aeon said its B1 Token Transparency Filing scored 40/40 on Blockworks and highlighted a Bedrock Foundation structure, golden-share protection, native AEON trading-fee treasury capture, and 50% non-trading-fee revenue buybacks.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Kinetiq",
+        "source": "X/Twitter related app scan",
+        "url": "https://x.com/Markets_xyz/status/2069467940529877281",
+        "summary": "Markets.xyz said kPoints are now visible in-app and limit orders are live, with Import Wallet and Auto-Breakeven coming soon; related Kinetiq chatter again pointed to the Sep. 29 points window, strengthening the KNTQ airdrop/market-UX watch item.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2069479618780987691",
+        "summary": "USD.AI promoted sUSDai/GHO leverage on Fluid at up to 41.5% APY with 8x Allo Points and reiterated underwriting around installed, verified, cash-generating GPU collateral, borrower repayment, recoverable collateral, insurance, and senior secured rights.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/AskVenice/status/2069481225316905200",
+        "summary": "Official Venice said Venice is now available through Base MCP, letting agents call Venice private/uncensored inference from Base's MCP server with x402; useful agent-commerce/private-inference distribution signal.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2069453041326338139",
+        "summary": "Official Virtuals paused the weekly $100k Arena copy-trading pot because weekly cadence encouraged short-horizon trading and capital caps limited concentration into the best agents; a reworked performance-to-capital system is coming while the leaderboard stays live.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2069433480115568725",
+        "summary": "Official NEAR promoted Hyperliquid perps directly from near.com accounts, letting users go long/short or hedge with profit-and-loss guardrails; this extends near.com from intents/confidential swaps into higher-velocity trading UX.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official/team scan",
+        "url": "https://x.com/eigenlabs/status/2069457376076501402",
+        "summary": "EigenLabs/Sreeram promoted PostAGI episode 2 with Christian Catalini around the thesis that verification is the only scarce resource as AI makes production abundant, reinforcing EigenCloud's verifiable-cloud/agent-liability narrative.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Track MetaDAO FAF-002 proposal outcome and Flash Trade V2 launch timing.",
+      "Verify Aeon B1 transparency filing details against Blockworks/Bedrock Foundation docs and watch for actual buyback/revenue reporting.",
+      "Watch Kinetiq/Markets.xyz for official KNTQ points snapshot/distribution confirmation.",
+      "Check whether Virtuals Arena relaunch changes incentives and whether agent trading quality improves.",
+      "Track NEAR Hyperliquid perps usage from near.com and Confidential Intents TVL toward the $70M Drop 1 snapshot."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the eight new 2026-06-23T18:22:47Z entries: META high, AEON high, Kinetiq high, CHIP/USD.AI high, VVV high, VIRTUAL high, NEAR high, and EIGEN medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260623-141340",
     "started_at": "2026-06-23T14:13:40Z",
     "completed_at": "2026-06-23T14:13:40Z",

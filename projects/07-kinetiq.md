@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-19T15:29:12Z
+last_updated: 2026-06-23T18:22:47Z
 ---
 
 # Kinetiq
@@ -61,6 +61,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Latest scan notes
 
+- 2026-06-23 — Markets.xyz said kPoints are now visible in-app and limit orders are live, with Import Wallet and Auto-Breakeven coming soon; related Kinetiq chatter again pointed to the Sep. 29 points window, strengthening the KNTQ airdrop/market-UX watch item. Source: https://x.com/Markets_xyz/status/2069467940529877281
 - 2026-06-19 — Core contributor `@0xOmnia` showed the Markets.xyz BTC app updating around every 50ms, framed as roughly 10x faster than Hyperliquid now and potentially 100x faster if Hyperliquid slows to 5s updates; useful product/performance signal for Markets/Kinetiq infrastructure. Source: https://x.com/0xOmnia/status/2067983258487308736
 - 2026-06-17 — Core contributor `@0xOmnia` said Markets.xyz generated $3.9B volume, 9,450 traders on listings, and became the 3rd-largest DEX by listings during the USDH phase, while framing the coming USDC migration as the next growth setup. Source: https://x.com/0xOmnia/status/2067371313128178119
 - 2026-06-16 — Official X said several USDH markets were settled/delisted as the USDH-to-USDC collateral migration nears completion, with final markets due June 17 and USDC transition next week; thread warned users about phishing replies. Source: https://x.com/Kinetiq_xyz/status/2066935343253774355
