@@ -1,5 +1,122 @@
 [
   {
+    "run_id": "20260623-223011",
+    "started_at": "2026-06-23T22:30:11Z",
+    "completed_at": "2026-06-23T22:30:11Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-23T18:22:47Z to 2026-06-23T22:30:11Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks plus broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "DRV / Derive Protocol",
+      "NEAR Protocol",
+      "Chutes — Bittensor Subnet 64",
+      "VVV / Venice AI"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 5,
+      "changelog_entries_added": 5,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2069544564323758282",
+        "summary": "Official Bankr changed default launch mechanics: new launches now seed 85% to LP and vest 15% to the fee/reward recipient over 2 years with a 90-day cliff, giving teams/reward recipients explicit incentive/listing/market-maker allocation while keeping fair-launch framing.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/DeriveXYZ/status/2069546381002621203",
+        "summary": "Derive completed weekly buyback #72, buying 171,135 DRV at a $0.10 average price; cumulative DAO buybacks reached 25,708,843 DRV, funded by 35% of protocol fees.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan + official blog",
+        "url": "https://x.com/NEARProtocol/status/2069534500418130190",
+        "summary": "NEAR published its post-quantum safety plan: rotatable account keys enable an in-place move to NIST-approved ML-DSA signatures, with testnet rollout planned this quarter and no address migration required.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/chutes_ai/status/2069519189665317138",
+        "summary": "Chutes week-6 update said GLM-5.2 is live, highlighted Terminal-Bench 2.1 performance, a community VS Code integration for multiple open models, a beta frontend, and Exploit Summit sponsorship.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official/partner scan",
+        "url": "https://x.com/i/status/2069488620650779104",
+        "summary": "Venice publicly endorsed Osaurus Cloud, a partner/product flow for privately running frontier open models through Venice with zero data retention on selected models, pay-as-you-go usage, and no API key requirement.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in this scan window.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch Bankr launch docs/adoption for the new 85/15 default and whether higher-quality launches or retroactive options follow.",
+      "Track DRV weekly buyback cadence, average price, cumulative DRV bought, and fee allocation changes.",
+      "Verify NEAR post-quantum testnet rollout/blog/docs and eventual mainnet/client governance timeline.",
+      "Track Chutes GLM-5.2 usage, VS Code integration adoption, new frontend rollout, and revenue quality.",
+      "Check whether Osaurus Cloud/Venice distribution converts into measurable API/staking/burn demand."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the five new 2026-06-23T22:30:11Z entries: BANKR high, DRV high, NEAR high, Chutes medium, and VVV high; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260623-182247",
     "started_at": "2026-06-23T18:22:47Z",
     "completed_at": "2026-06-23T18:22:47Z",

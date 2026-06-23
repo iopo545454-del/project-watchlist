@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-23T22:30:11Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-23T21:46:11Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official NEAR published its post-quantum safety plan: NEAR accounts use rotatable access keys, allowing an in-place upgrade to NIST-approved ML-DSA signatures without address migration; the post says testnet rollout is planned this quarter. Source: https://x.com/NEARProtocol/status/2069534500418130190
 - 2026-06-23 — Official NEAR promoted Hyperliquid perps directly from near.com accounts, letting users go long/short or hedge with profit-and-loss guardrails; this extends near.com from intents/confidential swaps into higher-velocity trading UX. Source: https://x.com/NEARProtocol/status/2069433480115568725
 - 2026-06-23 — Official NEAR said Confidential Intents participants can qualify for Drop 1 by holding at least $100 confidential balance and making one confidential swap; snapshot locks when confidential pools reach $70M TVL versus $30.86M shown in the post. Source: https://x.com/NEARProtocol/status/2069400493374189959
 - 2026-06-23 — Official NEAR X announced SPICE, an in-development protocol upgrade that decouples consensus from execution, targets ~200ms block times, parallel execution, optimized CPU scheduling and atomic execution across shards. This is a roadmap/catalyst item for the AI-agent/intent stack, with timing framed as “coming months.” Source: https://x.com/NEARProtocol/status/2069180409414406177
@@ -98,6 +99,7 @@ last_updated: 2026-06-23T21:46:11Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Post-quantum account/signature upgrade | Confirmed / official roadmap | Official NEAR post says rotatable account keys allow migration to NIST-approved ML-DSA signatures, with testnet rollout planned this quarter: https://x.com/NEARProtocol/status/2069534500418130190 | Testnet planned this quarter as of 2026-06-23 | Improves long-horizon account/security posture without forcing users to migrate addresses. | Security-roadmap credibility can matter for institutions and high-value agent/user-owned-AI accounts, though near-term token impact is indirect. | Watch blog/docs, testnet release notes, wallet support, mainnet governance/client upgrade dates, and migration UX. |
 | SPICE protocol upgrade for ~200ms blocks and atomic cross-shard execution | Tentative / official development | Official NEAR thread says SPICE brings ~200ms blocks and atomic cross-shard execution: https://x.com/NEARProtocol/status/2069180409414406177 | “Coming months” as of 2026-06-22 | Improves latency and execution model for Intents, near.com, and agent payments. | Makes NEAR’s chain-abstraction and AI-agent thesis more credible if shipped without validator/client instability. | Watch nearcore releases, governance/client upgrade dates, benchmark results, and any Nightshade 3.0 follow-up. |
 | Confidential Intents TVL milestone and NEAR@3.33 incentive | Confirmed / live incentive | Official NEAR posts describe Confidential Intents and a NEAR@3.33 incentive tied to confidential pools reaching $70M TVL: https://x.com/NEARProtocol/status/2067735351947309431 and https://x.com/NEARProtocol/status/2069400493374189959 | Snapshot when confidential pools reach $70M TVL | Directly incentivizes confidential-balance deposits and swaps on near.com. | Could bootstrap private settlement liquidity and increase fee/revenue capture if TVL is sticky after incentives. | Watch confidential-pool TVL, swap count, claim rules, post-incentive retention, and abuse filtering. |
 | Revenue dashboard and buyback/net-sink narrative | Confirmed / live KPI | Official revenue dashboard and NEAR thread: https://revenue.near.org/ and https://x.com/NEARProtocol/status/2069108737466368417 | Live; May 2026 cited as strongest month | Converts Intents/protocol usage into measurable revenue after partner payouts. | If revenue approaches or exceeds emissions, NEAR’s tokenomics narrative shifts from inflationary L1 to usage-funded buybacks. | Watch revenue vs emissions, partner payout share, buyback execution, and whether revenue is organic vs campaign-driven. |

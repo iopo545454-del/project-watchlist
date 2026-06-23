@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T06:01:00Z
+last_updated: 2026-06-23T22:30:11Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-23T06:01:00Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official Bankr changed default launch mechanics: new launches now seed 85% to LP and vest 15% to the fee/reward recipient over 2 years with a 90-day cliff. Core builder `@0xDeployer` clarified BNKR itself launched 100% to LP, but the new default gives projects an allocation for incentives, market makers, listings or investment while preserving fair-launch framing. Source: https://x.com/bankrbot/status/2069544564323758282 and https://x.com/0xDeployer/status/2069546435419500602
 - 2026-06-23 — Official Bankr bot said the public Bankr leaderboard is live at https://bankr.bot/leaderboard, tracking total score, mindshare, BNKR balance, and PnL across 24h/7d/30d/all-time windows. This is relevant to the Reward Season 2 incentive watch item because rewards can now be checked through the bot, but official criteria/timing still need a rules post. Source: https://x.com/bankrbot/status/2069285563237281851
 - 2026-06-22 — Bankr bot acknowledged a real issue where users may be routed to a dead/outdated BNKR staking contract: it said it does not have the current v2 staking contract in its toolset, asked for the live address/ABI, and said the team needs to update the agent knowledge base. Treat as an ops/trust watch item until official docs and the bot toolset point to the correct staking contract. Source: https://x.com/i/status/2069117276113305975
 - 2026-06-22 — Bankr DevRel `@saltorious1` said new Bankr ecosystem skills merged over the last week for BerryFiBase, Obol_Collective, and pmfi_cc; source-proximate skill/integration expansion, but not yet a BNKR value-capture or reward-rule change. Source: https://x.com/saltorious1/status/2069082398256455951
@@ -76,6 +77,7 @@ last_updated: 2026-06-23T06:01:00Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Bankr launch default allocation / vested recipient share | Confirmed | Official Bankr bot said new launches now seed 85% to LP and vest 15% to the fee/reward recipient over 2 years with a 90-day cliff: https://x.com/bankrbot/status/2069544564323758282 | Live default as of 2026-06-23 | Changes launch economics from 100% LP-only to an explicit team/reward/incentive allocation while keeping LP-first framing. | Could improve quality of Bankr-launched projects by funding market makers/listings/teams, but may also weaken the pure fair-launch narrative if abused. | Watch launch docs, whether prior projects get retroactive options, and whether this drives higher-quality launches or fee volume for Bankr/BNKR. |
 | x402 Cloud multi-token payments | Confirmed | Official X says users can accept payment in any coin when creating a Bankr x402 endpoint: https://x.com/bankrbot/status/2066182283380589020 | Live as of 2026-06-14 | Expands Bankr from natural-language execution/launch tooling into agent payment endpoints that can settle in arbitrary tokens | Could make ecosystem tokens more useful as agent/service payment rails and improve Bankr’s relevance to x402/agent-commerce narratives | Watch docs.bankr.bot and bankr.bot/x402 for fee routing, supported chains/tokens, endpoint volume, and whether BNKR captures value |
 | Bankr skills/integration surface | Confirmed | Team/DevRel post listed newly merged skills for Hunch, Signa, 1claw, and bankr-shopify: https://x.com/saltorious1/status/2066742373804122297 | Live / recently merged | Adds more agent actions/integrations, including prediction-market and commerce-related surfaces. | More skills can increase Bankr terminal/agent utility and transaction flow; token relevance depends on fees, Club/Max conversion, or BNKR utility linkage. | Watch skills.bankr.bot, docs, usage metrics, and whether these skills route fees or demand to BNKR. |
 | Coinbase agent-stack interaction | Confirmed | Official Bankr X showed Bankr agent/CLI interacting with Coinbase’s agents tooling: https://x.com/bankrbot/status/2067731259871351113 | Live demo / early | Puts Bankr in the Coinbase-for-agents distribution conversation, beyond internal Bankr launches. | If Coinbase agent workflows become common, Bankr can be one of the natural-language financial-action layers plugged into that stack. | Watch for docs, repeat usage, Coinbase/Base amplification, and whether this drives Bankr endpoint/agent transaction volume. |

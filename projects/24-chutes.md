@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-23T22:30:11Z
 ---
 
 # Chutes — Bittensor Subnet 64
