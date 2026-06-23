@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-19T19:37:32Z
+last_updated: 2026-06-23T14:13:40Z
 ---
 
 # DRV / Derive Protocol
@@ -13,6 +13,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 
 ## Latest scan notes
 
+- 2026-06-23 — Official Derive said December 25 HYPE options are live with early open interest in $100 and $150 strikes, extending listed HYPE tenor and giving a small but concrete market-structure/liquidity signal. Source: https://x.com/DeriveXYZ/status/2069423227022238013
 - 2026-06-19 — Derive official X amplified The DeFi Report / Michael Nadeau watch-list coverage arguing onchain options evolve crypto from directional betting into pricing/transferring risk; useful market-thesis input to verify against Derive OI, fees and buybacks. Source: https://x.com/DeriveXYZ/status/2068055600936702162
 - 2026-06-17 — Official Derive X highlighted a large RFQ-filled HYPE options trade: 150,000 contracts per leg on a long call condor, about $43.9M notional, framed as evidence Derive can handle permissionless onchain options size for BTC/ETH/HYPE. Source: https://x.com/DeriveXYZ/status/2067075153708925097
 ## Thesis

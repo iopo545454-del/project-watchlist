@@ -1,5 +1,115 @@
 [
   {
+    "run_id": "20260623-141340",
+    "started_at": "2026-06-23T14:13:40Z",
+    "completed_at": "2026-06-23T14:13:40Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-23T10:07:48Z to 2026-06-23T14:13:40Z)",
+    "scope": "Checked open GitHub project-intake issues (3 matching existing tracked projects, no new intake); scanned tracked-project official/team X account chunks with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO",
+      "AEON Framework",
+      "VIRTUAL / Virtuals Protocol",
+      "NEAR Protocol",
+      "Ambient",
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 6,
+      "changelog_entries_added": 6,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/ownershipfm/status/2069382020275249386",
+        "summary": "Ownership Report / MetaDAO ecosystem coverage said the LasoFinance curated raise is scheduled for June 30–July 3 with $750k minimum, hidden max cap, $50k monthly team allowance, and disclosed payment/revenue traction; useful futarchy/ownership-coin catalyst even though Laso is a portfolio/ecosystem raise rather than a META tokenomics change.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "AEON Framework",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2069384845235470828",
+        "summary": "Official Aeon community-call recording covered the consumer distribution push, Packs publishing, DAG executor/security work, x402 endpoints/non-crypto login, partner integrations, and a 1M cumulative GitHub-star milestone.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/virtuals_io/status/2069423887872643159",
+        "summary": "Official Virtuals said agents can now handle native payments from a single prompt by installing the Virtuals CLI and wiring a wallet, virtual card, and email, extending Agent Commerce Protocol into practical agent-to-agent/user commerce flows.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2069400493374189959",
+        "summary": "Official NEAR said Confidential Intents participants can qualify for Drop 1 by holding at least $100 confidential balance and making one confidential swap; snapshot locks when confidential pools reach $70M TVL versus $30.86M shown in the post.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Ambient",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/ambient_xyz/status/2069419113378984222",
+        "summary": "Official Ambient promoted the desktop app with a planning-mode demo where the agent generates and iteratively improves a Tetris game, adding distribution/product evidence for the verified-inference desktop workflow.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/DeriveXYZ/status/2069423227022238013",
+        "summary": "Official Derive said December 25 HYPE options are live with early open interest in $100 and $150 strikes, extending listed HYPE tenor and giving a small but concrete market-structure/liquidity signal.",
+        "decision": "logged as source-proximate Latest/changelog item"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no file update beyond scan-debug"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check whether LasoFinance raise opens on June 30 and whether MetaDAO publishes official governance/ICO details.",
+      "Track NEAR Confidential Intents TVL toward the $70M Drop 1 snapshot threshold.",
+      "Verify whether Virtuals native-payment CLI usage shows measurable agent commerce beyond announcement/demo flow.",
+      "Continue initial-review backlog cleanup for entries whose initial_review_done is missing/null."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the six new 2026-06-23T14:13:40Z entries: META high, AEON medium, VIRTUAL high, NEAR high, Ambient medium, and DRV high; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260623-100748",
     "started_at": "2026-06-23T10:07:48Z",
     "completed_at": "2026-06-23T10:07:48Z",
