@@ -524,7 +524,12 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
 .simple-catalyst-card.confidence-tentative::before{background:var(--md)}
 .simple-catalyst-card.confidence-speculative::before,.simple-catalyst-card.confidence-unknown::before{background:var(--hi)}
 .simple-catalyst-card:hover{transform:translateY(-2px);border-color:var(--accent-line);background:var(--panel-2)}
-.simple-card-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:10px}
+.simple-card-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;margin-bottom:8px}
+.catalyst-date-line{display:grid;gap:3px;border:1px solid var(--line-2);border-radius:10px;background:var(--bg-2);padding:8px 9px;margin-bottom:10px}
+.catalyst-date-line .date-label{font-family:var(--font-mono);font-size:11px;line-height:1.25;color:var(--ink-0)}
+.catalyst-date-line .date-status{font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-2)}
+.catalyst-date-line.date-confirmed{border-color:rgba(105,255,180,.34);background:rgba(105,255,180,.06)}
+.catalyst-date-line.date-needs-confirmation{border-color:rgba(255,214,102,.35);background:rgba(255,214,102,.07)}
 .date-badge,.confidence-badge{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line-2);border-radius:var(--r-pill);background:var(--bg-2);padding:4px 8px;color:var(--ink-2);line-height:1.25}
 .date-badge{color:var(--accent);border-color:var(--accent-line);background:var(--accent-dim)}
 .simple-catalyst-card h3{font-size:11px;font-family:var(--font-mono);letter-spacing:0;margin:0 0 5px;color:var(--ink-0)}

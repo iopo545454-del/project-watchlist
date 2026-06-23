@@ -1,4 +1,4 @@
-const dataVersion = '20260623-catalyst-board-1';
+const dataVersion = '20260623-catalyst-dates-1';
 let catalysts = [];
 const lanes = ['happened', 'week', 'month', 'later'];
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
@@ -40,10 +40,22 @@ function filteredData() {
   const q = document.querySelector('#calSearch')?.value.toLowerCase() || '';
   return catalysts
     .filter(item => !q || JSON.stringify(item).toLowerCase().includes(q))
-    .sort((a, b) => String(a.sort_key || '').localeCompare(String(b.sort_key || '')) ||
+    .sort((a, b) => String(a.catalyst_date || '9999').localeCompare(String(b.catalyst_date || '9999')) ||
+      String(a.sort_key || '').localeCompare(String(b.sort_key || '')) ||
       (confidenceRank[b.confidence] - confidenceRank[a.confidence]) ||
       String(a.project || '').localeCompare(String(b.project || '')) ||
       String(a.catalyst || '').localeCompare(String(b.catalyst || '')));
+}
+function dateStatusClass(item) {
+  return item.date_confirmation_status === 'confirmed' ? 'date-confirmed' : 'date-needs-confirmation';
+}
+function dateLine(item) {
+  const label = item.catalyst_date_label || item.timing || 'No set date yet — needs confirmation';
+  const status = item.date_confirmation_status === 'confirmed' ? 'confirmed date' : 'needs date check';
+  return `<div class="catalyst-date-line ${dateStatusClass(item)}">
+    <span class="date-label">${esc(label)}</span>
+    <span class="date-status">${esc(status)}</span>
+  </div>`;
 }
 function card(item) {
   return `<article class="simple-catalyst-card catalyst-board-card confidence-${esc(item.confidence || 'unknown')}">
@@ -51,6 +63,7 @@ function card(item) {
       <span class="date-badge">${esc(item.timing || 'unknown')}</span>
       <span class="confidence-badge">${esc(item.confidence || 'unknown')}</span>
     </div>
+    ${dateLine(item)}
     <h3><a href="${esc(linkFor(item))}">${esc(item.project || '')}</a></h3>
     <h4>${esc(item.catalyst || '')}</h4>
     <p>${esc(item.direct_impact || item.evidence || '')}</p>
