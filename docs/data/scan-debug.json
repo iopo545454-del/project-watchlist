@@ -1,5 +1,93 @@
 [
   {
+    "run_id": "20260623-060100",
+    "started_at": "2026-06-23T06:01:00Z",
+    "completed_at": "2026-06-23T06:01:00Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-23T01:57:59Z to 2026-06-23T06:01:00Z)",
+    "scope": "Checked open GitHub project-intake issues, scanned tracked-project official/team X account chunks with x_search, ran broad materiality/weak-signal X query, and skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "projects": 25,
+      "intake_issues_checked": 3,
+      "new_projects": 0,
+      "changelog_entries": 1,
+      "material_entries": 1,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitHub project-intake issues",
+        "type": "intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Labeled project-intake query returned zero items; open intake issues #1 Pluralis, #2 Ambient and #3 EigenCloud remain open but are already tracked with initial reviews.",
+        "decision": "no new intake project"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "catalyst update",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2069285563237281851",
+        "summary": "Official Bankr bot said the public leaderboard is live at bankr.bot/leaderboard and tracks total score, mindshare, BNKR balance, and PnL across timeframes.",
+        "decision": "logged as Reward Season 2/incentive catalyst update; update dossier Latest, catalyst table and changelog"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "type": "scan",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2069290190141854032",
+        "summary": "Bankr bot also posted routine token deployments for just t00ns and wonkies.",
+        "decision": "not logged separately; routine launchpad deployment without broader Bankr value-capture/rules change"
+      },
+      {
+        "project": "All other checked projects",
+        "type": "scan",
+        "source": "X/Twitter official/team account chunks and broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in the scan window.",
+        "decision": "No dossier/changelog update where no confirmed material update or credible weak signal met threshold."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch Bankr for official Reward Season 2 rules, reward pool/source, snapshots, BNKR balance or staking weight, anti-sybil controls, and claim timing.",
+      "Verify official BNKR staking v2 address/docs and whether Bankr bot/tooling stops referencing stale contracts.",
+      "Continue watching WLD unlock verification, Akash proposal 329 vote result, NEAR SPICE docs/GitHub, Lium burn proof, Kinetiq Season 2 dates, TAO Root Reborn, Octra node/TAPE release, EigenCloud value accrual, and neo-cloud revenue dashboards."
+    ],
+    "notes": "Changelog importance was independently tagged by delegate_task: BANKR high.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the new BANKR leaderboard / Reward Season 2 catalyst entry as high; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260623-015759",
     "started_at": "2026-06-23T01:57:59Z",
     "completed_at": "2026-06-23T01:57:59Z",

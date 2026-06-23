@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T21:42:05Z
+last_updated: 2026-06-23T06:01:00Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-22T21:42:05Z
 
 ## Latest scan notes
 
+- 2026-06-23 — Official Bankr bot said the public Bankr leaderboard is live at https://bankr.bot/leaderboard, tracking total score, mindshare, BNKR balance, and PnL across 24h/7d/30d/all-time windows. This is relevant to the Reward Season 2 incentive watch item because rewards can now be checked through the bot, but official criteria/timing still need a rules post. Source: https://x.com/bankrbot/status/2069285563237281851
 - 2026-06-22 — Bankr bot acknowledged a real issue where users may be routed to a dead/outdated BNKR staking contract: it said it does not have the current v2 staking contract in its toolset, asked for the live address/ABI, and said the team needs to update the agent knowledge base. Treat as an ops/trust watch item until official docs and the bot toolset point to the correct staking contract. Source: https://x.com/i/status/2069117276113305975
 - 2026-06-22 — Bankr DevRel `@saltorious1` said new Bankr ecosystem skills merged over the last week for BerryFiBase, Obol_Collective, and pmfi_cc; source-proximate skill/integration expansion, but not yet a BNKR value-capture or reward-rule change. Source: https://x.com/saltorious1/status/2069082398256455951
 - 2026-06-22 — Official Bankr bot activity showed Reward Season 2 score/balance checks live in the bot/Club flow, including a user ranked #2 overall and bot-reported total rewards distributed above 23M. This supports the existing BNKR incentive-catalyst watch item, but full Season 2 criteria/timing still need an official rules post. Source: https://x.com/bankrbot/status/2069018928505074037
@@ -79,6 +80,7 @@ last_updated: 2026-06-22T21:42:05Z
 | Bankr skills/integration surface | Confirmed | Team/DevRel post listed newly merged skills for Hunch, Signa, 1claw, and bankr-shopify: https://x.com/saltorious1/status/2066742373804122297 | Live / recently merged | Adds more agent actions/integrations, including prediction-market and commerce-related surfaces. | More skills can increase Bankr terminal/agent utility and transaction flow; token relevance depends on fees, Club/Max conversion, or BNKR utility linkage. | Watch skills.bankr.bot, docs, usage metrics, and whether these skills route fees or demand to BNKR. |
 | Coinbase agent-stack interaction | Confirmed | Official Bankr X showed Bankr agent/CLI interacting with Coinbase’s agents tooling: https://x.com/bankrbot/status/2067731259871351113 | Live demo / early | Puts Bankr in the Coinbase-for-agents distribution conversation, beyond internal Bankr launches. | If Coinbase agent workflows become common, Bankr can be one of the natural-language financial-action layers plugged into that stack. | Watch for docs, repeat usage, Coinbase/Base amplification, and whether this drives Bankr endpoint/agent transaction volume. |
 | Bankr app/game-linked launch flow | Confirmed | Official Bankr bot deployed Crypto Rider Track 1 (`$CRTrack1`) on Base as the “first official track”: https://x.com/bankrbot/status/2068092353077010516 | Live as of 2026-06-19 | Shows Bankr launch tooling being used for app/game-linked token assets, not just generic memecoin launches. | If repeated, Bankr can become a lightweight launch + agent surface for interactive apps; BNKR relevance depends on fees, Club/Max conversion, or token-utility linkage. | Watch Bankr launch page volume, docs, and whether first-party launches route fees/demand to BNKR. |
+| Reward Season 2 scoring / leaderboard | Confirmed | Core builder teased Reward Season 2, bot checks later showed reward-score/balance data, and official Bankr bot said the public leaderboard is live: https://x.com/bankrbot/status/2069285563237281851 | Live leaderboard as of 2026-06-23; reward season timing/rules still partly unknown | Makes the incentive surface observable across score, mindshare, BNKR balance, and PnL; gives users a clearer path to check rewards. | Leaderboards can concentrate attention and activity around BNKR balances/Club usage if criteria reward durable usage instead of pure farming. | Watch for official Season 2 rules, reward pool/source, snapshots, BNKR balance/staking weight, anti-sybil controls, and actual claim timing. |
 | Console redesign/test-token trust incident | Tentative | Core builder response: https://x.com/0xDeployer/status/2068496200937189424 | 2026-06-21 | Surfaces operational risk around Bankr launch/console testing and user expectations. | If handled poorly it can hurt trust in Bankr launch tooling; clear postmortems/policy changes would reduce concern. | Watch for official postmortem, reimbursements/mitigation if applicable, console controls, and repeat complaints. |
 
 ## Unverified Watch Items
