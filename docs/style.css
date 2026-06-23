@@ -451,3 +451,36 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
   html{scroll-behavior:auto}
   .project-card{opacity:1;transform:none}
 }
+
+/* ============================ CATALYST CALENDAR ============================ */
+.catalyst-strip{margin:14px var(--pad) 0;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);padding:16px 18px}
+.panel-head.compact-inline{margin:0 0 12px;align-items:center}
+.catalyst-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.catalyst-chip{display:grid;gap:5px;min-height:112px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--bg-1);padding:12px 13px;color:var(--ink-1);position:relative;overflow:hidden;transition:border-color .14s,transform .14s,background .14s}
+.catalyst-chip::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--lo)}
+.catalyst-chip.confidence-confirmed::before{background:var(--ok)}
+.catalyst-chip.confidence-tentative::before{background:var(--md)}
+.catalyst-chip.confidence-speculative::before{background:var(--hi)}
+.catalyst-chip:hover{transform:translateY(-2px);border-color:var(--accent-line);background:var(--panel-2)}
+.catalyst-chip strong{color:var(--ink-0);font-family:var(--font-mono);font-size:12px}
+.catalyst-chip span:last-child{font-size:12.5px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.catalyst-time{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent)}
+.skeleton.sk-chip{min-height:112px}
+.calendar-controls #calSearch{flex:1 1 420px}
+.calendar-page{display:grid;grid-template-columns:minmax(260px,320px) minmax(0,1fr);gap:18px;padding:22px var(--pad) 64px;align-items:start}
+.calendar-summary-card{position:sticky;top:74px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);padding:18px}
+.calendar-groups{display:grid;gap:18px;min-width:0}
+.calendar-group{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);padding:18px;min-width:0}
+.calendar-list{display:grid;gap:12px;margin-top:14px}
+.calendar-item{display:grid;grid-template-columns:minmax(130px,180px) minmax(0,1fr);gap:14px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--bg-1);padding:14px;position:relative;overflow:hidden}
+.calendar-item::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--lo)}
+.calendar-item.confidence-confirmed::before{background:var(--ok)}
+.calendar-item.confidence-tentative::before{background:var(--md)}
+.calendar-item.confidence-speculative::before{background:var(--hi)}
+.calendar-date{font-family:var(--font-mono);font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;line-height:1.4}
+.calendar-date span{display:inline-block;border:1px solid var(--accent-line);border-radius:var(--r-pill);background:var(--accent-dim);padding:5px 9px}
+.calendar-body h3{font-size:13px;font-family:var(--font-mono);letter-spacing:0;margin:0 0 4px;color:var(--ink-0)}
+.calendar-body h4{font-size:17px;line-height:1.2;margin:0 0 8px;color:var(--ink-0)}
+.calendar-body p{margin:0;color:var(--ink-1);font-size:13px;line-height:1.48}
+.calendar-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;font-family:var(--font-mono);font-size:11px}
+@media(max-width:1080px){.calendar-page{grid-template-columns:1fr}.calendar-summary-card{position:relative;top:auto}.calendar-item{grid-template-columns:1fr}}

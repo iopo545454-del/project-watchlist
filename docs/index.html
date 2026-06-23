@@ -10,7 +10,7 @@
   <meta property="og:description" content="Project-info scans, source changes, and trading-importance signals." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080a'/%3E%3Cpath d='M5 17h6l3-7 4 13 3-6h6' fill='none' stroke='%23c8ff4d' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="style.css?v=20260622-clean-2" />
+  <link rel="stylesheet" href="style.css?v=20260623-catalyst-1" />
 </head>
 <body>
   <header>
@@ -20,12 +20,14 @@
       <p class="sub">Project-info scans, source changes, and trading-importance signals — refreshed every 4 hours.</p>
       <section class="stats-tape" aria-label="Watchlist summary">
         <div class="stat"><span class="k">Tracked</span><span class="v" id="stat-projects">—</span></div>
+        <div class="stat"><span class="k">Catalysts</span><span class="v" id="stat-catalysts">—</span></div>
         <div class="stat"><span class="k">High signal · 14d</span><span class="v" id="stat-high">—</span></div>
         <div class="stat"><span class="k">Categories</span><span class="v" id="stat-cats">—</span></div>
         <div class="stat live"><span class="k">Last scan</span><span class="v"><span class="dot-live"></span><span id="stat-scan">—</span></span></div>
       </section>
     </div>
     <div class="header-actions">
+      <a class="repo" href="calendar.html">Catalyst calendar</a>
       <a class="repo" href="scan-debug.html">Scan debug</a>
       <a class="repo" href="reference.html">Reference</a>
       <button class="ghost-button" id="openIntake" type="button">+ Add project</button>
@@ -76,6 +78,18 @@
     </div>
   </section>
 
+  <section class="catalyst-strip" aria-labelledby="catalyst-strip-title">
+    <div class="panel-head compact-inline">
+      <div>
+        <p class="eyebrow">Catalyst calendar</p>
+        <h2 id="catalyst-strip-title">Live + upcoming watch items</h2>
+        <p class="sub mini">Forward-looking launches, governance, value-accrual, and product catalysts from the project dossiers.</p>
+      </div>
+      <a class="repo" href="calendar.html">Open full calendar →</a>
+    </div>
+    <div id="catalystPreview" class="catalyst-preview"></div>
+  </section>
+
   <main class="dashboard-layout">
     <section class="changelog-panel" aria-labelledby="changelog-title">
       <div class="panel-head">
@@ -105,6 +119,6 @@
     </aside>
   </main>
 
-  <script src="app.js?v=20260622-clean-2"></script>
+  <script src="app.js?v=20260623-catalyst-1"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 let rows = [];
 let changes = [];
+let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260622-clean-2';
+const dataVersion = '20260623-catalyst-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -72,9 +73,26 @@ function renderStats() {
   const scans = changes.map(x => x.last_scanned || x.date).filter(Boolean).sort();
   const set = (id, v) => { const el = document.querySelector(id); if (el) el.innerHTML = v; };
   set('#stat-projects', rows.length);
+  set('#stat-catalysts', catalysts.length || '0');
   set('#stat-high', highRecent || '0');
   set('#stat-cats', cats.size);
   set('#stat-scan', esc(scans.length ? fmtDate(scans[scans.length - 1]) : '—'));
+}
+
+/* ---------- catalyst preview ---------- */
+function renderCatalystPreview() {
+  const el = document.querySelector('#catalystPreview');
+  if (!el) return;
+  const bucketOrder = { live: 0, upcoming: 1, watch: 2, unknown: 3 };
+  const preview = [...catalysts]
+    .filter(item => ['live', 'upcoming'].includes(item.timing_bucket))
+    .sort((a, b) => (bucketOrder[a.timing_bucket] - bucketOrder[b.timing_bucket]) || String(a.sort_key || '').localeCompare(String(b.sort_key || '')) || String(a.project || '').localeCompare(String(b.project || '')))
+    .slice(0, 10);
+  el.innerHTML = preview.map(item => `<a class="catalyst-chip confidence-${esc(item.confidence || 'unknown')}" href="${esc(item.project_page || 'calendar.html')}">
+    <span class="catalyst-time">${esc(item.timing || 'unknown')}</span>
+    <strong>${esc(item.project || '')}</strong>
+    <span>${esc(item.catalyst || '')}</span>
+  </a>`).join('') || '<p class="change-empty">No catalyst rows parsed yet.</p>';
 }
 
 /* ---------- changelog feed ---------- */
@@ -156,21 +174,24 @@ function renderBoard() {
   }).join('') || '<p class="change-empty">No matching projects.</p>';
 }
 
-function renderAll() { renderStats(); renderChangelog(); renderBoard(); }
+function renderAll() { renderStats(); renderCatalystPreview(); renderChangelog(); renderBoard(); }
 
 /* ---------- skeleton loading ---------- */
 function showSkeletons() {
   document.querySelector('#projectBoard').innerHTML = Array.from({ length: 8 }, () => '<div class="skeleton"></div>').join('');
   document.querySelector('#changelog').innerHTML = Array.from({ length: 6 }, () => '<div class="skeleton sk-row"></div>').join('');
+  document.querySelector('#catalystPreview').innerHTML = Array.from({ length: 4 }, () => '<div class="skeleton sk-chip"></div>').join('');
 }
 
 showSkeletons();
 Promise.all([
   fetch(`data/index.json?v=${dataVersion}`).then(r => r.json()),
-  fetch(`data/project-changelog.json?v=${dataVersion}`).then(r => r.ok ? r.json() : [])
-]).then(([projectRows, changeRows]) => {
+  fetch(`data/project-changelog.json?v=${dataVersion}`).then(r => r.ok ? r.json() : []),
+  fetch(`data/catalysts.json?v=${dataVersion}`).then(r => r.ok ? r.json() : [])
+]).then(([projectRows, changeRows, catalystRows]) => {
   rows = projectRows;
   changes = changeRows;
+  catalysts = catalystRows;
   document.querySelector('#repoLink').href = repoBase();
   const cats = [...new Set(rows.map(r => r.category).filter(Boolean))].sort();
   document.querySelector('#category').innerHTML += cats.map(c => `<option value="${esc(c)}">${esc(categoryMeta(c).label)}</option>`).join('');
