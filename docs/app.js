@@ -1,7 +1,7 @@
 let rows = [];
 let changes = [];
 let sortMode = 'recent';
-const dataVersion = '20260622-clean-1';
+const dataVersion = '20260622-clean-2';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {

@@ -10,7 +10,7 @@
   <meta property="og:description" content="Project-info scans, source changes, and trading-importance signals." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080a'/%3E%3Cpath d='M5 17h6l3-7 4 13 3-6h6' fill='none' stroke='%23c8ff4d' stroke-width='2.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="style.css?v=20260622-clean-1" />
+  <link rel="stylesheet" href="style.css?v=20260622-clean-2" />
 </head>
 <body>
   <header>
@@ -77,24 +77,12 @@
   </section>
 
   <main class="dashboard-layout">
-    <section class="board-panel" aria-labelledby="board-title">
+    <section class="changelog-panel" aria-labelledby="changelog-title">
       <div class="panel-head">
         <div>
-          <p class="eyebrow">Project board</p>
-          <h2 id="board-title">Tracked projects</h2>
-          <p class="sub mini">Cards are dossiers. Search/tags are for quick triage; the feed keeps the raw scan trail.</p>
-        </div>
-        <span class="muted small" id="project-count">Loading…</span>
-      </div>
-      <div id="projectBoard" class="project-board"></div>
-    </section>
-
-    <aside class="changelog-panel" aria-labelledby="changelog-title">
-      <div class="panel-head compact">
-        <div>
-          <p class="eyebrow">Change log</p>
-          <h2 id="changelog-title">Signal feed</h2>
-          <p class="sub mini">Latest project-info changes and scan timestamps.</p>
+          <p class="eyebrow">Live signal feed</p>
+          <h2 id="changelog-title">Latest changes</h2>
+          <p class="sub mini">Project-info changes and scan timestamps across the watchlist, newest first.</p>
         </div>
         <div class="changelog-tools">
           <select id="importance" aria-label="Filter changelog by trading importance"><option value="">All importance</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select>
@@ -102,9 +90,21 @@
         </div>
       </div>
       <div id="changelog" class="changelog-list"></div>
+    </section>
+
+    <aside class="board-panel" aria-labelledby="board-title">
+      <div class="panel-head compact">
+        <div>
+          <p class="eyebrow">Project board</p>
+          <h2 id="board-title">Tracked projects</h2>
+          <p class="sub mini">Cards are dossiers — click to open.</p>
+        </div>
+        <span class="muted small" id="project-count">Loading…</span>
+      </div>
+      <div id="projectBoard" class="project-board"></div>
     </aside>
   </main>
 
-  <script src="app.js?v=20260622-clean-1"></script>
+  <script src="app.js?v=20260622-clean-2"></script>
 </body>
 </html>

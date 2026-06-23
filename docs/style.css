@@ -174,8 +174,12 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
   gap:16px;padding:16px var(--pad) 60px;align-items:start;
 }
 .changelog-panel,.board-panel{min-width:0;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--panel);position:relative}
-.board-panel{padding:18px;order:-1}
-.changelog-panel{position:sticky;top:74px;max-height:calc(100vh - 92px);overflow:auto;display:flex;flex-direction:column}
+/* Signal feed is the primary wide column; project board is a sticky right rail */
+.changelog-panel{padding:18px 20px 8px}
+.changelog-panel>.panel-head{margin-bottom:6px}
+.changelog-panel>.panel-head .changelog-tools{margin-top:0}
+.board-panel{position:sticky;top:74px;max-height:calc(100vh - 92px);overflow:auto;padding:0}
+.board-panel .project-board{padding:12px}
 
 .panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
 .panel-head.compact{display:block;padding:18px 18px 12px;margin:0;border-bottom:1px solid var(--line);position:sticky;top:0;background:linear-gradient(var(--bg-1),rgba(11,13,17,.86));backdrop-filter:blur(8px);z-index:2}
@@ -187,7 +191,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
 .changelog-tools #changelog-count{white-space:nowrap;margin-top:0}
 #changelog-count,#project-count{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-3)}
 
-.changelog-list{display:flex;flex-direction:column;padding:6px 14px 16px}
+.changelog-list{display:flex;flex-direction:column;padding:0 0 8px}
 .change-item{
   display:block;position:relative;padding:14px 12px 14px 18px;color:var(--ink-1);
   border-bottom:1px solid var(--line);transition:background .14s;
@@ -425,8 +429,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
 }
 @media(max-width:1080px){
   .dashboard-layout{grid-template-columns:1fr}
-  .changelog-panel{position:relative;top:auto;max-height:none;order:2}
-  .board-panel{order:1}
+  .board-panel{position:relative;top:auto;max-height:none}
   .project-hero,.project-hero.hero-solo{grid-template-columns:1fr}
   .dossier-shell,.dossier-shell.has-toc,.dossier-shell.has-rail,.dossier-shell.has-toc.has-rail{grid-template-columns:1fr}
   .latest-rail{position:static;max-height:none;order:-1}
