@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T21:42:05Z
+last_updated: 2026-06-23T01:57:59Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,8 @@ last_updated: 2026-06-22T21:42:05Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-06-23 — Official NEAR X announced SPICE, an in-development protocol upgrade that decouples consensus from execution, targets ~200ms block times, parallel execution, optimized CPU scheduling and atomic execution across shards. This is a roadmap/catalyst item for the AI-agent/intent stack, with timing framed as “coming months.” Source: https://x.com/NEARProtocol/status/2069180409414406177
 
 - 2026-06-22 — Official NEAR X said GLM-5.2 is live on NEAR AI with frontier open-source performance, verifiable privacy, and hardware-signed attestation for code/private inference workloads. Source: https://x.com/NEARProtocol/status/2069146261479882953
 - 2026-06-22 — Official NEAR X said monthly revenue/value capture after integration-partner payouts is climbing, with May the strongest month yet and all-time revenue now above $4.2M; this upgrades the NEAR Intents/revenue-capture watch item from narrative to source-proximate metric, but still needs dashboard/API verification. Source: https://x.com/NEARProtocol/status/2069108737466368417

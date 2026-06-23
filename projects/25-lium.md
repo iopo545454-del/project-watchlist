@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-23T01:57:59Z
 ---
 
 # Lium — Bittensor Subnet 51
@@ -13,6 +13,8 @@ last_updated: 2026-06-22T02:41:54Z
 - Alpha token: SN51 within Bittensor dTAO economy.
 
 ## Latest scan notes
+
+- 2026-06-23 — Official Lium X said it completed a buyback and burn of `2500 TAO` into Subnet 51, with funds sourced from GPU credit-purchase revenue. This materially upgrades the burn proxy from a community/analytics estimate to an official revenue-funded buyback datapoint; next check is wallet/dashboard confirmation and whether this cadence repeats. Source: https://x.com/lium_io/status/2069199663530471602
 - 2026-06-22 — Added Lium to the watchlist because it was missing from the neo-cloud basket. Taostats snapshot put SN51 alpha market cap around `187,071 TAO` / `~$42.9M` and liquidity around `215,771 TAO` / `~$49.5M` using TAO around `$229`. Source: https://taostats.io/subnets/51
 - 2026-06-22 — Revenue is not cleanly exposed through a public official API. Best found proxy was a third-party/community-cited `$530k` verified external revenue over 90 days, about `$2.15M annualized`; separate burn/buyback proxy of about `50 TAO/day` implies about `$4.17M annualized` at TAO around `$228`. Treat both as proxies pending dashboard/API verification. Source: https://taoflute.com and community/analytics posts tracked via X.
 - 2026-06-22 — Investment math: at `$42.9M` subnet value, Lium screens around `20x` the external-revenue proxy or `10.3x` the burn proxy. If the burn proxy is durable, 5x growth at 10x sales/burns implies about `$208M` value / `~4.9x`.

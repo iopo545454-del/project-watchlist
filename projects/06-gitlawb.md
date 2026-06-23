@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T01:02:51Z
+last_updated: 2026-06-23T01:57:59Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -38,6 +38,7 @@ last_updated: 2026-06-22T01:02:51Z
 - GitLawb website/docs for node setup, OpenClaude, OpenGateway, Playground.
 - Token page and Base contract data once verified from official source.
 - Node/repo/peer/agent metrics if published.
+- Playground stats: https://playground.gitlawb.com/stats
 - Official scam warnings, especially around Telegram groups.
 - GitHub mirror/import tooling updates.
 
@@ -55,6 +56,8 @@ last_updated: 2026-06-22T01:02:51Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-23 — Official GitLawb X pointed to the public Playground stats page at https://playground.gitlawb.com/stats. This is a useful source to track OpenClaude/Playground usage and should be monitored for whether node/client updates translate into measurable activity. Source: https://x.com/gitlawb/status/2069203538308436193
 
 - 2026-06-22 — GitLawb official X said the entire network is now on node v0.3.9 and that the OSS migration is complete, pointing to https://github.com/Gitlawb/node; GitHub tags show v0.3.9 exists and the repo pushed at 2026-06-22T00:15:23Z. This is a material network/client milestone to verify through node participation and whether it unlocks the next OpenClaude/OpenGateway/node-incentive steps. Source: https://x.com/gitlawb/status/2068839282316603606
 
