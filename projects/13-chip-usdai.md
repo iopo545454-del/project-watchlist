@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T18:22:47Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # CHIP / USD.AI
@@ -84,6 +84,15 @@ last_updated: 2026-06-23T18:22:47Z
 
 
 Target delivery channel for future alerts/recaps: `discord:1508537087992004778` with `@here`.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| CHIP token live for USD.AI governance and utility | Confirmed | USD.AI announced “$CHIP Is Live” and says CHIP holders can stake to govern risk, fees, staking module, and upgrades: https://usd.ai/insights/chip-is-live | Live since 2026-04-21/22 | Turns USD.AI from a credit/stablecoin product into a governable token system. | Governance decisions can directly affect collateral quality, loan pricing, revenue routing, and protocol risk. | Watch staking participation, proposal cadence, fee routing, exchange/liquidity depth, and unlocks. |
+| USD.AI Foundation and DAO stewardship launched | Confirmed | Official post says the USD.AI Foundation launched as off-chain steward of the DAO and CHIP governs protocol parameters, curators, and ecosystem initiatives: https://usd.ai/insights/usdai-foundation-chip | Announced 2026-01-27 | Establishes governance structure and treasury/ecosystem coordination around CHIP. | Better governance can accelerate borrower onboarding and risk management; weak governance could impair credit quality. | Watch foundation disclosures, DAO votes, curator approvals, treasury use, and legal/risk updates. |
+| Lighthouse report shows scaling loan book and revenue KPIs | Confirmed / KPI catalyst | USD.AI 2026 YTD Lighthouse report cites $398M TVL, $202M deployed, $30M Q2 annualized DAO ARR, $13B borrower pipeline, $817M signed term sheets, and $205M closed loans: https://usd.ai/insights/usdai-2026-ytd-report-lighthouse | Published 2026-06-08 | Provides hard KPI basis for CHIP value capture via GPU-backed credit growth. | If ARR and deployed loans continue growing, CHIP governance over risk and fee surfaces becomes more economically important. | Watch monthly ARR, deployed loans, defaults, sUSDai yield, borrower concentration, and pipeline-to-funded conversion. |
+| Large GPU-backed financing facilities validate borrower demand | Confirmed | Sharon AI facility up to $500M and Crucible $26.8M loan secured by 576 NVIDIA B300 GPUs: https://usd.ai/insights/sharon-ai-500m-gpu-financing-usdai and https://usd.ai/insights/crucible-capital-26m-gpu-backed-loan | Sharon announced 2026-01-22; Crucible announced 2026-04-06 | Shows USD.AI can originate institutional-scale GPU-backed credit. | Larger facilities can grow protocol revenue but increase collateral, counterparty, and liquidation complexity. | Watch drawdowns vs headline commitments, collateral verification, insurance, repayment performance, and loan concentration. |
 
 ## Open questions
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.

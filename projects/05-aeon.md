@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-06-23T18:22:47Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # AEON Framework / aeon
@@ -112,6 +112,14 @@ last_updated: 2026-06-23T18:22:47Z
 - Name collision: AEON Framework / `$aeon` is separate from AEON.XYZ and legacy AeonCoin.
 - Low-cap Base token; market-data metrics are volatile and should be rechecked per scan.
 - Need deeper tokenomics / ownership / deployer review before relying on supply, unlock, or insider-allocation assumptions.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| B1 transparency filing + tokenholder protections / buybacks | Confirmed / tokenomics-governance catalyst | Official AEON post says B1 filing scored 40/40 and highlights Bedrock Foundation structure, golden share, treasury fee capture, and 50% non-trading-fee revenue buybacks: https://x.com/aeonframework/status/2069473683375005833 | Published 2026-06-23 | Improves token diligence and clarifies value accrual. | Could reduce low-cap token-risk discount if revenue becomes measurable. | Watch filing link/docs, foundation details, actual treasury inflows, buyback transactions, and ownership/contract controls. |
+| DAG executor, x402 endpoints, non-crypto login, Packs publishing | Confirmed / product-security catalyst | Official community-call post covered DAG executor/security work, x402 endpoints, non-crypto login, Packs, partner integrations, and 1M cumulative GitHub stars: https://x.com/aeonframework/status/2069384845235470828 | Community Call #5, 2026-06-23 | Expands agent monetization, safer execution, and consumer onboarding. | If skills become paid x402 products, AEON can move from framework narrative to revenue platform. | Watch endpoint launch docs, partner integrations, paid skill usage, security incidents, and Packs adoption. |
+| Robinhood MCP integration | Confirmed / integration catalyst | Official post announced Robinhood MCP support for agentic trading, research, and rebalancing: https://x.com/aeonframework/status/2066616325611405483 | Announced 2026-06-15 | Adds a recognizable financial workflow/integration for AEON agents. | Can attract users building trading/rebalancing agents and expose security/compliance constraints. | Watch live demos, user adoption, permissioning safeguards, API limits, and additional MCP integrations. |
 
 ## Open questions
 - What are exact tokenomics, supply schedule, deployer/owner privileges, and holder concentration?

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # Compute Horde — Bittensor Subnet 12
@@ -59,6 +59,14 @@ last_updated: 2026-06-22T02:41:54Z
 - Revenue unavailable and current external demand unclear.
 - Historical large compute claims may not reflect current active paid GPU inventory.
 - Low subnet value can be attractive but also reflect weak demand/validator support.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Organic Jobs dashboard | Confirmed / KPI visibility catalyst | Official Compute Horde post: https://x.com/ComputeHorde/status/1981391037789573546 | Dashboard announced/live per official post | Exposes real non-synthetic job throughput, success/error rates, and validator routing. | Helps distinguish actual demand from synthetic subnet activity and could re-rate SN12 if organic usage grows. | Watch dashboard uptime, organic job counts, error rates, paying consumers, and whether data is machine-readable. |
+| On-chain configuration migration | Confirmed / decentralization-security upgrade | Official Compute Horde post: https://x.com/ComputeHorde/status/1954813966535868776 | Announced/implemented per official post | Moves config away from public GitHub JSON toward on-chain smart contracts, reducing centralized dependency. | Better resilience and governance may make SN12 more credible infrastructure for other subnets. | Watch contract addresses, upgrade controls, audits, validator adoption, and any config-related incidents. |
+| SDK and subnet integration path | Confirmed / integration catalyst | Official Compute Horde post and GitHub PR: https://x.com/ComputeHorde/status/1943634415386546576 and https://github.com/deval-core/De-Val/pull/68 | Integration PRs live | Makes it easier for other Bittensor subnets to offload compute jobs to SN12. | More subnet integrations could create organic demand and reduce reliance on emissions. | Watch merged integrations, active consumers, job volume per subnet, and revenue/payment mechanics. |
 
 ## Open questions
 - Where is the current canonical Compute Horde dashboard/API?

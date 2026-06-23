@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # POD / Dolphin POD
@@ -59,6 +59,14 @@ last_updated: 2026-06-22T02:41:54Z
 - Prior dossier identity was ambiguous; continue avoiding unrelated Pacific Pods/Pacifica `$POD` sources unless explicitly connected by official Dolphin sources.
 - Revenue is not currently cleanly public; claimed GPU count alone does not prove economic demand.
 - FDV is much larger than circulating market cap, so unlock/supply schedule matters.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| POD / Dolphin: public inference/subscription revenue → POD buybacks | Tentative / docs-backed | Official Dolphin tokenomics docs say subscriptions are “available soon,” API credits route requests to nodes, users can pay in POD/ETH/BTC/USDC/XMR/ZEC, and “100% of revenue buys back POD”: https://dphn.ai/docs/tokenomics | No fixed date; docs say subscriptions “soon” | Converts usage into direct token demand; makes paid inference/API traction the key KPI. | If revenue exceeds node emissions, POD can shift from emission-sell-pressure to net buy pressure. | Watch for public API/subscription launch, revenue dashboard, buyback wallet, and onchain buyback cadence. |
+| POD / Dolphin: datagen dashboard / GPU-capacity KPIs | Confirmed / live KPI surface | Official datagen dashboard exposes progress metrics, GPU capacity, latest generations, and contribution leaderboard: https://datagen.dphn.ai | Live | Makes network usage / supply observable instead of narrative-only. | Rising jobs/tokens/GPU capacity can validate real demand before clean revenue disclosure. | Track active GPUs, vRAM mix, completed generations, leaderboard concentration, and any paid-job metric. |
+| POD / Dolphin: node onboarding / high-vRAM worker expansion | Confirmed / capacity catalyst | Node quick-start links v2 app, wallet auth/API keys, worker script, and 60GB-vRAM hardware guidance: https://dphn.ai/docs/running-a-node | Live / ongoing onboarding | More qualified nodes increase inference/datagen capacity. | Capacity growth without demand worsens emissions; capacity plus usage supports buyback thesis. | Watch node count, required GPU specs, payout changes, uptime/verification rules, and V2 app updates. |
 
 ## Open questions
 - What is the official Dolphin/dphnAI website and canonical X handle for token disclosures?

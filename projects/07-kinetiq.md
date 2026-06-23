@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T18:22:47Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # Kinetiq
@@ -100,6 +100,15 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Risks
 - TBD / needs follow-up.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks | Confirmed / revenue-token catalyst | Official Kinetiq blog says Launch is live and 100% of Kinetiq’s 10% deployer-share revenue is used for KNTQ buybacks: https://kinetiq.xyz/blog/kip-3-launch-live | Live; blog dated 2026-06-10 | Creates explicit KNTQ buyback path from HIP-3 deployer revenue. | Successful deployer markets can compound staking demand, fees, and KNTQ value accrual. | Watch HIP-3 deployments, deployer fees, buyback transactions, Launch TVL/stake, and market quality. |
+| kPoints final snapshot / KNTQ distribution window | Confirmed / token-distribution catalyst | Official Kinetiq Foundation post says final kPoints snapshot is 2026-09-29 and distribution is 2026-10-01: https://x.com/KinetiqFND/status/2059275376270979523 | Snapshot 2026-09-29; distribution 2026-10-01 | Creates a dated participation/liquidity catalyst for KNTQ and Kinetiq ecosystem activity. | Can drive Markets.xyz trading, kHYPE/Pendle usage, and post-airdrop sell/lock dynamics. | Watch official rules, eligible activities, anti-sybil changes, final allocation, and post-distribution staking incentives. |
+| Markets.xyz in-app kPoints + limit orders live | Confirmed / product-UX catalyst | Official Markets post says weekly Kinetiq kPoints are visible in app, limit orders are live, and wallet import/auto-breakeven are coming soon: https://x.com/Markets_xyz/status/2069467940529877281 | Live 2026-06-23; more features “coming soon” | Improves trading UX and makes reward tracking visible. | Better UX can increase trading volume feeding Kinetiq/Markets value capture. | Watch active traders, volume, limit-order usage, wallet import launch, and kPoints-driven retention. |
+| USDH → USDC market migration / HIP-3 collateral transition | Confirmed / infrastructure transition catalyst | Official Kinetiq post says final USDH markets were settling/delisting and USDC collateral transition was next: https://x.com/Kinetiq_xyz/status/2067253563210801496 | Mid/late June 2026 transition | Cleaner USDC collateral can broaden market usability and reduce friction. | Successful migration may unlock more volume; failed migration risks user loss/outages. | Watch final market redeployments, liquidity recovery, open interest, user complaints, and fee/share changes. |
 
 ## Open questions
 - TBD / needs follow-up.

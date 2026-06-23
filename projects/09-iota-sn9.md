@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-22T17:34:06Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # IOTA — Macrocosmos Bittensor Subnet 9
@@ -74,6 +74,14 @@ last_updated: 2026-06-22T17:34:06Z
 - Traditional investor info is unclear; treat Bittensor emissions and subnet economics as the main funding signal.
 
 ---
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Training at Home public app for IOTA compute contributors | Confirmed | Macrocosmos docs say TAH is built on IOTA and lets users contribute hardware and earn rewards; FAQ says the app is available to everyone: https://docs.macrocosmos.ai/product-and-services/tah and https://docs.macrocosmos.ai/product-and-services/tah/faqs | Live; docs updated 2026 | Expands SN9 supply from professional miners toward long-tail consumer/prosumer GPUs. | More heterogeneous supply can strengthen the liquid-training thesis if reliability and rewards hold. | Watch TAH downloads, supported OS expansion beyond macOS, reward rates, active contributors, and dashboard miner counts. |
+| IOTA dashboard + whitepaper as live training proof surface | Confirmed | Official IOTA page links the dashboard and IOTA primer/whitepaper: https://iota.macrocosmos.ai/ and https://iota.macrocosmos.ai/research/iota_primer.pdf | Live | Gives investors/miners a public way to verify distributed-training activity rather than relying only on emissions. | If dashboard metrics show sustained model progress, SN9 can be valued as training infrastructure, not just a Bittensor emissions farm. | Track dashboard active miners, layers/training progress, validator activity, model milestones, and outages. |
+| Orion-100B distributed pretraining proof point | Confirmed / team post | Macrocosmos announced Project Orion / Orion-100B as a large distributed LLM pretraining run over open internet infrastructure: https://x.com/MacrocosmosAI/status/2061493162582118695 | Announced June 2026 | Demonstrates whether IOTA can coordinate economically meaningful frontier-scale training. | Successful runs could attract compute suppliers, validators, partners, and model buyers; failed economics would weaken SN9 narrative. | Watch follow-up technical reports, model release, cost/efficiency metrics, reproducibility, and buyer/use-case announcements. |
 
 ## Open questions
 - Not related to the separate IOTA L1 project/token.

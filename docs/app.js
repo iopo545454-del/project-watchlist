@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260623-catalyst-1';
+const dataVersion = '20260623-all-catalysts-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {

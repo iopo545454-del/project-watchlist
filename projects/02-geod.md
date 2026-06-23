@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-19T15:29:12Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # GEOD / GEODNET
@@ -68,6 +68,15 @@ last_updated: 2026-06-19T15:29:12Z
 - Hardware launches such as GEO-PULSE/GEO-SWARM need follow-through: availability, adoption, margins, and recurring revenue contribution.
 - Token-burn/revenue claims should be verified against dashboards rather than repeated from social posts.
 - Competitive risk from traditional RTK/GNSS providers, LEO satellite positioning, and alternative correction networks should remain on the watchlist.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| GIP-13 StableHex targeted reward multipliers | Confirmed | Official GEODNET post says StableHex is live with 6x/4x/2x reward zones, limited spots, and uptime requirements: https://x.com/GEODNET/status/2067956173689454667 | Live as of 2026-06-19 | Directly steers station growth into weak/zero-coverage commercial zones. | Better coverage can improve enterprise/API value and future burn/revenue quality. | Watch claimed hex fills, uptime retention, active-station growth, and coverage expansion in priority geos. |
+| GEO-PULSE hardware commercialization | Confirmed / product-sales catalyst | Official post describes GEO-PULSE as ~$149 centimeter-level RTK for Android via Bluetooth, with restock/availability messaging: https://x.com/GEODNET/status/2065909299776209110 | Recent restock / ongoing sales | Adds hardware revenue and consumer/fleet usage beyond miner emissions. | Hardware users can become demand-side consumers of GEODNET corrections, strengthening non-speculative revenue. | Watch order volumes, reviews, app usage, returns/support issues, and whether revenue/burn dashboards reflect sales. |
+| GEO-SWARM drone-in-a-box with HyfixAI | Confirmed / partner launch catalyst | Official post says GEO-SWARM is a HyfixAI-partnered autonomous home-security drone using GEODNET RTK and launching on Kickstarter: https://x.com/GEODNET/status/2065600132851097808 | Kickstarter / launch phase | Validates GEODNET as positioning infrastructure for robotics/physical AI. | Successful campaign could create partner proof for more robot/drone integrations. | Watch Kickstarter traction, delivery schedule, RTK dependency, partner follow-through, and post-launch customer usage. |
+| Revenue / burn transparency surface | Confirmed / KPI catalyst | Official GEOD token page highlights real-world data-service revenue sources, token-burning mechanisms, limited circulating supply, and Dune/dashboard links: https://geodnet.com/geod | Live dashboard surface; ongoing metric updates | Burn/revenue metrics can tie enterprise usage to token economics. | Sustained burns can offset miner emissions and support a fundamentals-based DePIN thesis. | Watch monthly revenue, GEOD burned, burn/revenue mix, miner rewards, and dashboard methodology changes. |
 
 ## Open questions
 - What is the current verified active-station count and paid customer/revenue trajectory?

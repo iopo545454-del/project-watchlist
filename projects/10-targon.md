@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # Targon — Bittensor Subnet 4
@@ -83,6 +83,15 @@ last_updated: 2026-06-22T02:41:54Z
 - Revenue and ARR claims should be treated as high-signal only if backed by dashboards, contracts, or third-party verification.
 - Subnet value is alpha/pool context, not a clean corporate equity-style market cap.
 - Confidential-compute positioning is differentiated but may be slower to monetize than simple inference APIs.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Targon Rentals and Serverless compute products live | Confirmed | Official docs describe Rentals as persistent GPU/CPU containers with SSH and Serverless as autoscaling apps that scale from zero: https://docs.targon.com/guides/rentals and https://docs.targon.com/guides/serverless | Live | Converts SN4 from pure miner incentives into user-facing confidential GPU cloud products. | Real customer workloads can justify emissions and improve subnet quality if demand routes back to miners. | Watch utilization, paid customer announcements, uptime, pricing, and whether user demand affects miner emissions. |
+| Public inventory API exposes available GPU resources and pricing | Confirmed | Targon API docs show unauthenticated inventory endpoint with specs, hourly cost, and availability: https://docs.targon.com/api/inventory | Live | Creates a measurable demand/supply surface for rentals and serverless capacity. | Transparent inventory can make SN4 easier to diligence versus opaque DePIN compute claims. | Poll inventory for H100/H200/B200 availability, utilization changes, price compression, and new resource tiers. |
+| Miner emissions tied to public-demand auctions, unused emissions burned | Confirmed | Targon miner docs say emissions are split proportionally to public demand via auctions API and unallocated emissions are burned: https://docs.targon.com/providers/miner/ | Live | Aligns miner rewards with customer demand instead of purely synthetic benchmarks. | Burning unused emissions can reduce waste but may pressure miners if demand lags supply. | Watch auctions API, emitted vs burned share, max bids, minimum cluster sizes, and miner churn. |
+| Confidential Blackwell GPU support path | Confirmed / docs-backed | Targon docs include Intel TDX plus NVIDIA B200 or RTX PRO 6000 Blackwell setup requirements: https://docs.targon.com/providers/miner/intel-blackwell-gpus | Live docs; hardware rollout dependent | Adds high-end confidential-compute GPU capacity to the supported miner set. | Blackwell support can differentiate Targon from generic GPU marketplaces if attestation and supply are credible. | Watch real B200/RTX6000B inventory, attestation flow, pricing, and customer workloads using confidential GPUs. |
 
 ## Open questions
 - Can the `2,000 TAO/month` buyback proxy be fully reconstructed from wallet flows?

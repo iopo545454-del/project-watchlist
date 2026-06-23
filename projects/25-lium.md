@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T01:57:59Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # Lium — Bittensor Subnet 51
@@ -69,6 +69,14 @@ last_updated: 2026-06-23T01:57:59Z
 - Revenue and burn figures are lower-confidence until verified from official dashboards/APIs or wallet flows.
 - GPU supply without demand does not create value; utilization is the key missing metric.
 - Subnet alpha value is pool context, not normal equity-style valuation.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| SN51 revenue-funded buyback and burn of 2500 TAO | Confirmed / official tokenomics event | Official Lium post: https://x.com/lium_io/status/2069199663530471602 | 2026-06-22 | Directly links GPU credit purchases to SN51 buybacks and burns. | If recurring, SN51 gets a measurable value-accrual loop from compute demand rather than emissions alone. | Watch burn wallet, cadence, credit revenue, utilization, and whether burns continue in down markets. |
+| Prior buybacks and owner-token burns | Confirmed / official cadence | Official Lium posts: https://x.com/lium_io/status/2051112124328374707 and https://x.com/lium_io/status/2049346952614007286 | April-May 2026 | Shows multiple burn events, including more than $150k buyback/burn and roughly $500k owner-controlled burn. | Establishes a tokenomics pattern investors can monitor, but needs dashboard/wallet verification. | Watch official burn receipts, owner allocation changes, SN51 supply, emissions to miners, and external-revenue reporting. |
+| High-end GPU inventory and Blackwell availability | Confirmed / product-supply catalyst | Lium-related posts surfaced current high-end inventory claims: https://x.com/i/status/2054359159546544238 and https://x.com/i/status/2062277289459454214 | Live inventory claims in 2026 | Scarce B200/B300/H200 supply can attract real AI workloads if pricing and uptime are competitive. | Higher utilization would make buybacks more durable and differentiate Lium from pure incentive-driven GPU supply. | Watch live inventory, utilization by GPU class, customer workloads, pricing, uptime, and credit-purchase revenue. |
 
 ## Open questions
 - Is the `$530k/90d` external revenue figure independently verifiable from an official dashboard/API?

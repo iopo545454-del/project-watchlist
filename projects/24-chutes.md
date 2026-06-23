@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-22T02:41:54Z
+last_updated: 2026-06-23T21:46:11Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -68,6 +68,15 @@ last_updated: 2026-06-22T02:41:54Z
 - Revenue quality and margin need monitoring; revenue can be boosted by sponsored inference or incentives.
 - Managed inference is highly competitive with centralized providers and routers.
 - Subnet alpha market cap is pool/alpha context, not normal equity-style valuation.
+
+## Catalysts
+
+| Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
+|---|---|---|---|---|---|---|
+| Chutes revenue visibility on DefiLlama | Confirmed / live KPI | DefiLlama Chutes revenue API and Taostats SN64 page: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue and https://taostats.io/subnets/64 | Live daily revenue | Gives a public revenue series for underwriting SN64 against subnet value. | Makes Chutes one of the cleaner Bittensor subnets to value on usage rather than emissions alone. | Watch 30d revenue trend, revenue quality, paid vs subsidized traffic, and SN64 market cap/liquidity. |
+| GLM-5.2 hosted with TEE and published pricing | Confirmed / live product | Official Chutes post: https://x.com/chutes_ai/status/2067612094178963874 | Live as of June 2026 | Adds a frontier open-source coding/agent model to Chutes’ inference catalog with explicit per-token pricing. | More high-demand open models can increase paid inference revenue and router integrations. | Watch GLM usage, latency, uptime, pricing changes, model removals, and OpenRouter or partner routing volume. |
+| TEE plus GraVal GPU verification | Confirmed / technical moat | Official Chutes post: https://x.com/chutes_ai/status/2047314719707422754 | Live / rolling infrastructure upgrade | Improves trust that miners provide claimed hardware and that prompts/outputs stay private. | Security and verification can justify enterprise or privacy-sensitive inference demand versus cheaper centralized APIs. | Watch audits, Blackwell coverage, slashing/traffic-routing stats, and any TEE or miner-cheating incidents. |
+| Revenue-quality pruning and pay-as-you-go growth | Confirmed / operating update | Official Chutes post: https://x.com/chutes_ai/status/2035102851479810097 | March 2026 operating update | Shows willingness to cut unprofitable/free-tier traffic and optimize revenue per GPU/token. | Supports a higher-quality revenue multiple if growth comes from paid demand rather than subsidized volume. | Watch revenue per token, revenue per GPU, gross margin, fleet size, and daily revenue after pruning. |
 
 ## Open questions
 - What share of revenue is organic paid usage versus sponsored/incentivized inference?
