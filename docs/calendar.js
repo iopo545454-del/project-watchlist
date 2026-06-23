@@ -1,4 +1,4 @@
-const dataVersion = '20260623-all-catalysts-2';
+const dataVersion = '20260623-catalyst-status-1';
 let catalysts = [];
 const lanes = ['happened', 'week', 'month', 'later'];
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
@@ -20,6 +20,15 @@ function isUnconfirmed(item) {
 function hasConfirmedDate(item) {
   return item.date_confirmation_status === 'confirmed' && Boolean(item.catalyst_date);
 }
+function eventStatus(item) {
+  return String(item.event_status || '').toLowerCase();
+}
+function isCompleted(item) {
+  return eventStatus(item) === 'completed';
+}
+function isUpcoming(item) {
+  return eventStatus(item) === 'upcoming';
+}
 function parseCatalystDate(item) {
   const raw = String(item.catalyst_date || '');
   if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return { precision: 'day', date: new Date(`${raw}T00:00:00Z`) };
@@ -33,6 +42,15 @@ function daysFromToday(date) {
   return Math.floor((date - today) / 86400000);
 }
 function bucketFor(item) {
+  // Event status wins over fuzzy timing. A source that says "live",
+  // "launched", "published", "released", or "run it now" is a completed
+  // event, not a forward-looking monthly catalyst. Completed items can be
+  // recent, but they live in Alr happened rather than This week/This month.
+  if (isCompleted(item)) return 'happened';
+
+  // Only unresolved/upcoming items are eligible for the future lanes.
+  if (!isUpcoming(item)) return 'later';
+
   // If a catalyst has no confirmed/derived date, it should not appear in
   // "This week" or "This month". It belongs in Unconfirmed / later until
   // a source-backed target date is found.
@@ -67,9 +85,11 @@ function dateStatusClass(item) {
 function dateLine(item) {
   const label = item.catalyst_date_label || item.timing || 'No set date yet — needs confirmation';
   const status = item.date_confirmation_status === 'confirmed' ? 'confirmed date' : 'needs date check';
+  const event = item.event_status ? `<span class="event-status event-${esc(item.event_status)}">${esc(item.event_status)}</span>` : '';
   return `<div class="catalyst-date-line ${dateStatusClass(item)}">
     <span class="date-label">${esc(label)}</span>
     <span class="date-status">${esc(status)}</span>
+    ${event}
   </div>`;
 }
 function card(item) {

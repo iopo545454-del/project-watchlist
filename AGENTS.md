@@ -124,7 +124,7 @@ For a new project or any project marked `initial_review_done: false`:
 4. Add sources using the standard two-column source table.
 5. Fill concise sections for overview, thesis/narrative, catalysts, token/contract notes, open questions, and monitoring notes.
 6. For `## Thesis`, collect linked investor/market theses from articles, memos, high-signal threads, podcasts/transcripts, or fund/operator posts; summarize each with a tight TLDR and source link, then add a separate `### Hermes take` that is short, direct, and not over-hedged.
-7. For `## Catalysts`, track future catalysts with status (`confirmed`, `tentative`, `speculative`, `disproven/stale`), evidence/source, timing, direct impact, second-order consequences, and what to watch next.
+7. For `## Catalysts`, track future catalysts and recent completed material events with evidence/source, timing, direct impact, second-order consequences, and what to watch next. Separate evidence confidence (`confirmed`, `tentative`, `speculative`, `disproven/stale`) from calendar event status (`upcoming`, `completed`, `ongoing`, `watch`). Already-live/launched/published/released items belong in **Alr happened**, not **This week** or **This month**.
 8. Update `docs/data/index.json` and root indexes with source counts, X accounts, token address, page path, and `initial_review_done: true` when complete.
 9. Add a changelog entry of type `initial review`.
 10. Regenerate the corresponding `docs/projects/<slug>.html` page.
@@ -143,12 +143,23 @@ Use this structure when enough information is available:
 | Mainnet launch | Confirmed | https://example.com/roadmap | Q3 2026 / tentative | Enables product usage | Could trigger exchange integrations, incentive programs, new TVL/liquidity loops | Watch docs, GitHub releases, official launch posts |
 ```
 
-Catalyst status should be one of:
+Catalyst status should separate evidence confidence from calendar direction:
+
+Evidence confidence:
 
 - `confirmed` — official source, announced date/window, governance result, committed roadmap, or observable onchain/GitHub evidence.
 - `tentative` — credible but not fully committed: soft roadmap, team hint, partner teaser, repeated founder comments, job posts, testnet activity.
 - `speculative` — plausible inference from market structure, ecosystem incentives, related-account chatter, terminal/news item, or second-order read-through, but not directly confirmed.
 - `disproven/stale` — previously tracked catalyst that missed, was denied, or no longer matters.
+
+Calendar event status:
+
+- `upcoming` — unresolved future event with a source-backed exact date, date window, or condition.
+- `completed` — already happened / already live / launched / published / released / announced / available now.
+- `ongoing` — continuous KPI/dashboard/program with no discrete upcoming milestone.
+- `watch` — tentative/speculative/no-date item that should be monitored but not scheduled.
+
+The calendar must use event status before timing strings: completed items go to **Alr happened** even if their source date is this week/month; only `upcoming` items with confirmed dates can enter **This week** or **This month**.
 
 Every catalyst should capture:
 

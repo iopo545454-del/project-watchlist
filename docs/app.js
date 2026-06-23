@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260623-all-catalysts-2';
+const dataVersion = '20260623-catalyst-status-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -83,13 +83,16 @@ function renderStats() {
 function renderCatalystPreview() {
   const el = document.querySelector('#catalystPreview');
   if (!el) return;
-  const bucketOrder = { live: 0, upcoming: 1, watch: 2, unknown: 3 };
   const preview = [...catalysts]
-    .filter(item => ['live', 'upcoming'].includes(item.timing_bucket))
-    .sort((a, b) => (bucketOrder[a.timing_bucket] - bucketOrder[b.timing_bucket]) || String(a.sort_key || '').localeCompare(String(b.sort_key || '')) || String(a.project || '').localeCompare(String(b.project || '')))
+    .filter(item => (item.event_status === 'upcoming' && item.date_confirmation_status === 'confirmed' && item.catalyst_date) || item.event_status === 'completed')
+    .sort((a, b) => {
+      if (a.event_status !== b.event_status) return a.event_status === 'upcoming' ? -1 : 1;
+      if (a.event_status === 'completed') return String(b.catalyst_date || '').localeCompare(String(a.catalyst_date || '')) || String(a.project || '').localeCompare(String(b.project || ''));
+      return String(a.catalyst_date || '9999').localeCompare(String(b.catalyst_date || '9999')) || String(a.project || '').localeCompare(String(b.project || ''));
+    })
     .slice(0, 10);
   el.innerHTML = preview.map(item => `<a class="catalyst-chip confidence-${esc(item.confidence || 'unknown')}" href="${esc(item.project_page || 'calendar.html')}">
-    <span class="catalyst-time">${esc(item.timing || 'unknown')}</span>
+    <span class="catalyst-time">${esc(item.event_status || item.timing_bucket || 'unknown')} · ${esc(item.timing || 'unknown')}</span>
     <strong>${esc(item.project || '')}</strong>
     <span>${esc(item.catalyst || '')}</span>
   </a>`).join('') || '<p class="change-empty">No catalyst rows parsed yet.</p>';

@@ -65,12 +65,21 @@ Do not add these as catalysts unless the user explicitly asks:
 
 ## Catalyst status labels
 
-Use one of these statuses:
+Use **confidence/status** for evidence strength, and **event status** for calendar direction. Do not let these collapse into one field.
+
+Evidence/confidence labels:
 
 - `confirmed` — official source, partner source, announced date/window, governance result, committed roadmap, observable onchain data, or observable GitHub/product evidence.
 - `tentative` — credible but not fully committed: soft roadmap, team hint, partner teaser, repeated founder comments, job posts, testnet activity, partial docs, or clear work-in-progress.
 - `speculative` — plausible inference from market structure, ecosystem incentives, related-account chatter, terminal/news item, or second-order read-through, but not directly confirmed.
 - `disproven/stale` — previously tracked catalyst that missed, was denied, became irrelevant, or no longer matters.
+
+Calendar event-status labels:
+
+- `upcoming` — an unresolved future event with a source-backed date/window/condition.
+- `completed` — an event that has already happened: `live`, `launched`, `published`, `released`, `announced`, `available now`, `run it now`, `opened`, `completed`, etc.
+- `ongoing` — a continuous KPI/dashboard/program/state with no discrete upcoming milestone.
+- `watch` — tentative/speculative/no-date items that should be monitored but not treated as scheduled.
 
 Keep confirmed, tentative, and speculative catalysts in the same table when useful, but label them clearly. Do not bury useful speculative catalysts; define what evidence would upgrade or downgrade them.
 
@@ -128,12 +137,12 @@ Use:
 
 Calendar bucket rules:
 
-- **Alr happened** — dated past catalysts, launches, milestones, or completed events.
-- **This week** — confirmed date within the next 7 days only.
-- **This month** — confirmed date or month-specific event in the current/near month.
-- **Unconfirmed / later** — tentative/speculative/unknown/TBD/no-set-date items and later-dated items.
+- **Alr happened** — completed events: launches, milestones, already-live products, published/announced updates, released models, completed votes/sales/buybacks, or other source text that says the thing is already available/happened. A fresh launch from the last 7 days still goes here unless there is a separate unresolved future action.
+- **This week** — `event_status: upcoming` with a confirmed exact date within the next 7 days only.
+- **This month** — `event_status: upcoming` with a confirmed exact date or month-specific window in the current/near month.
+- **Unconfirmed / later** — `event_status: watch`, `ongoing`, tentative/speculative/unknown/TBD/no-set-date items, later-dated items, and continuous dashboards/programs without a discrete unresolved milestone.
 
-Never place a no-set-date or needs-date-check item in **This week** or **This month**.
+Never place a no-set-date or needs-date-check item in **This week** or **This month**. Never place an already-live / launched / published / released / “run it now” item in **This week** or **This month** just because its source date is in the current month.
 
 Keep the original timing wording visible even after normalizing date fields for the calendar.
 
