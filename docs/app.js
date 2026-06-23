@@ -178,9 +178,12 @@ function renderAll() { renderStats(); renderCatalystPreview(); renderChangelog()
 
 /* ---------- skeleton loading ---------- */
 function showSkeletons() {
-  document.querySelector('#projectBoard').innerHTML = Array.from({ length: 8 }, () => '<div class="skeleton"></div>').join('');
-  document.querySelector('#changelog').innerHTML = Array.from({ length: 6 }, () => '<div class="skeleton sk-row"></div>').join('');
-  document.querySelector('#catalystPreview').innerHTML = Array.from({ length: 4 }, () => '<div class="skeleton sk-chip"></div>').join('');
+  const projectBoard = document.querySelector('#projectBoard');
+  const changelog = document.querySelector('#changelog');
+  const catalystPreview = document.querySelector('#catalystPreview');
+  if (projectBoard) projectBoard.innerHTML = Array.from({ length: 8 }, () => '<div class="skeleton"></div>').join('');
+  if (changelog) changelog.innerHTML = Array.from({ length: 6 }, () => '<div class="skeleton sk-row"></div>').join('');
+  if (catalystPreview) catalystPreview.innerHTML = Array.from({ length: 4 }, () => '<div class="skeleton sk-chip"></div>').join('');
 }
 
 showSkeletons();
