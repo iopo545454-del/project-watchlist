@@ -91,6 +91,10 @@ function card(item) {
 function render() {
   const grouped = { happened: [], week: [], month: [], later: [] };
   filteredData().forEach(item => grouped[bucketFor(item)].push(item));
+  grouped.happened.sort((a, b) => String(b.catalyst_date || '').localeCompare(String(a.catalyst_date || '')) ||
+    String(b.catalyst_date_label || '').localeCompare(String(a.catalyst_date_label || '')) ||
+    String(a.project || '').localeCompare(String(b.project || '')) ||
+    String(a.catalyst || '').localeCompare(String(b.catalyst || '')));
   lanes.forEach(lane => {
     setText(`#stat-${lane}`, grouped[lane].length);
     setText(`#lane-${lane}-count`, grouped[lane].length);
