@@ -152,6 +152,7 @@ Catalyst status should be one of:
 
 Every catalyst should capture:
 
+- **Evidence/source URL:** mandatory real source. Do not add catalyst rows with a blank source, `TBD`, `needs source`, or unsupported inference; keep those as Open questions / Unverified Watch Items until sourced.
 - **Evidence quality:** official / partner / investor / terminal / onchain / GitHub / community / inference.
 - **Timing:** firm date, tentative date/window, relative sequence, or `unknown`.
 - **Direct impact:** what changes for product, token, users, supply/demand, liquidity, revenue, emissions, governance, or attention.

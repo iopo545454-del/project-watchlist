@@ -11,7 +11,26 @@ A catalyst is a project-relevant event, change, or credible upcoming development
 5. **What second-order consequences could follow?**
 6. **What should we watch next to confirm, upgrade, downgrade, or kill the catalyst?**
 
-Catalysts are not generic bullish/bearish takes. They need a source, a timing frame, and a reason they matter.
+Catalysts are not generic bullish/bearish takes. **Every catalyst must have a source.** They also need a timing frame and a reason they matter.
+
+---
+
+## Non-negotiable source rule
+
+Do not add a catalyst unless the row has a real source in `Evidence / source`.
+
+Acceptable sources include:
+
+- a URL to an official announcement, docs page, blog, governance/forum post, GitHub release/PR/issue, dashboard, explorer transaction/address, onchain query, partner post, exchange/listing notice, founder/team/core-contributor post, credible terminal/news/research item, or high-signal X post/thread;
+- or, when the source came directly from the user, an explicit `user-provided context` note with date and enough detail to trace what was provided.
+
+Not acceptable:
+
+- blank `Evidence / source` cells;
+- `TBD`, `needs source`, `no source`, or “heard somewhere”;
+- unsupported internal inference without a linked post, dashboard, onchain object, GitHub artifact, or other observable basis.
+
+If a catalyst idea has no source yet, put it in `Open questions`, `Unverified Watch Items`, or a research TODO instead of the catalyst table. Once a source is found, promote it into `## Catalysts`.
 
 ---
 
@@ -73,7 +92,7 @@ Each project dossier should use this table when enough information exists:
 
 - **Catalyst** — short, specific name. Prefer “WLD unlock rate decreases by 43% starting July 2026” over “tokenomics update.”
 - **Status** — confirmed / tentative / speculative / disproven-stale.
-- **Evidence / source** — source URL plus short evidence summary. Prefer official/project/partner/onchain/GitHub sources.
+- **Evidence / source** — source URL plus short evidence summary. Prefer official/project/partner/onchain/GitHub sources. This field is mandatory; do not add the catalyst if the source is missing or only says `TBD` / `needs source`.
 - **Timing** — exact date, month, quarter, year, window, sequence, or `unknown / needs date check`.
 - **Direct impact** — what changes immediately for product, token, users, supply/demand, liquidity, revenue, emissions, governance, or attention.
 - **Second-order consequences** — what else could happen if it plays out: listings, integrations, incentives, unlock pressure, buybacks, ecosystem effects, narrative spillovers, competitor impacts.
