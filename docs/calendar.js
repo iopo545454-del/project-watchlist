@@ -1,4 +1,4 @@
-const dataVersion = '20260623-catalyst-compact-1';
+const dataVersion = '20260623-grass-world-backfill-1';
 let catalysts = [];
 const lanes = ['happened', 'week', 'month', 'later'];
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
