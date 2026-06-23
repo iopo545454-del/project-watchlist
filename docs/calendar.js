@@ -1,4 +1,4 @@
-const dataVersion = '20260623-catalyst-dates-1';
+const dataVersion = '20260623-catalyst-dates-2';
 let catalysts = [];
 const lanes = ['happened', 'week', 'month', 'later'];
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
@@ -17,24 +17,39 @@ function isUnconfirmed(item) {
   const text = timingText(item);
   return item.confidence !== 'confirmed' || /tentative|speculative|unverified|needs verification|needs current verification|early|unknown|watch/.test(text);
 }
-function isAlreadyHappened(item) {
-  const text = timingText(item);
-  return !isUnconfirmed(item) && /live|launched|shipped|completed|released|mainnet|went live|already|active|ongoing|current/.test(text);
+function hasConfirmedDate(item) {
+  return item.date_confirmation_status === 'confirmed' && Boolean(item.catalyst_date);
 }
-function isThisWeek(item) {
-  const text = timingText(item);
-  return !isUnconfirmed(item) && !isAlreadyHappened(item) && /weekly|near[- ]term|this week|now|recent|rolling/.test(text);
+function parseCatalystDate(item) {
+  const raw = String(item.catalyst_date || '');
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return { precision: 'day', date: new Date(`${raw}T00:00:00Z`) };
+  if (/^\d{4}-\d{2}$/.test(raw)) return { precision: 'month', date: new Date(`${raw}-01T00:00:00Z`) };
+  if (/^\d{4}$/.test(raw)) return { precision: 'year', date: new Date(`${raw}-01-01T00:00:00Z`) };
+  return { precision: 'unknown', date: null };
 }
-function isThisMonth(item) {
-  const text = timingText(item);
-  return !isUnconfirmed(item) && !isAlreadyHappened(item) && (/this month|month|2026|q[1-4]|scheduled|launch|roadmap|upcoming|phased|next|soon/.test(text) || item.timing_bucket === 'upcoming');
+function daysFromToday(date) {
+  const now = new Date();
+  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  return Math.floor((date - today) / 86400000);
 }
 function bucketFor(item) {
-  if (isUnconfirmed(item)) return 'later';
-  if (isAlreadyHappened(item)) return 'happened';
-  if (isThisWeek(item)) return 'week';
-  if (isThisMonth(item)) return 'month';
-  return 'month';
+  // If a catalyst has no confirmed/derived date, it should not appear in
+  // "This week" or "This month". It belongs in Unconfirmed / later until
+  // a source-backed target date is found.
+  if (!hasConfirmedDate(item) || isUnconfirmed(item)) return 'later';
+  const parsed = parseCatalystDate(item);
+  if (!parsed.date) return 'later';
+  if (parsed.precision === 'year') return 'later';
+  if (parsed.precision === 'month') {
+    const now = new Date();
+    const sameMonth = parsed.date.getUTCFullYear() === now.getUTCFullYear() && parsed.date.getUTCMonth() === now.getUTCMonth();
+    return sameMonth ? 'month' : (parsed.date < now ? 'happened' : 'later');
+  }
+  const delta = daysFromToday(parsed.date);
+  if (delta < 0) return 'happened';
+  if (delta <= 7) return 'week';
+  if (delta <= 31) return 'month';
+  return 'later';
 }
 function filteredData() {
   const q = document.querySelector('#calSearch')?.value.toLowerCase() || '';
