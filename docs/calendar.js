@@ -1,4 +1,4 @@
-const dataVersion = '20260623-catalyst-dates-2';
+const dataVersion = '20260623-catalyst-compact-1';
 let catalysts = [];
 const lanes = ['happened', 'week', 'month', 'later'];
 const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
@@ -101,7 +101,8 @@ function render() {
 }
 fetch(`data/catalysts.json?v=${dataVersion}`).then(r => r.json()).then(data => {
   catalysts = data;
-  document.querySelector('#repoLink').href = repoBase();
+  const repoLink = document.querySelector('#repoLink');
+  if (repoLink) repoLink.href = repoBase();
   render();
 }).catch(err => {
   document.querySelector('#catalystBoard').innerHTML = '<p class="change-empty">Failed to load catalyst data.</p>';
