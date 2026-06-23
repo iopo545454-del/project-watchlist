@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T14:13:40Z
+last_updated: 2026-06-23T17:05:14Z
 ---
 
 # DRV / Derive Protocol
@@ -48,6 +48,44 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 - Other official DRV addresses reported in prior research: Ethereum `0xB1D1eae60EEA9525032a6DCb4c1CE336a1dE71BE`, Optimism `0x33800De7E817A70A694F31476313A7c572BBa100`, Arbitrum `0x77b7787a09818502305C95d68A2571F090abb135`, Derive Chain `0x2EE0fd70756EDC663AcC9676658A1497C247693A`.
 - Core mechanism to verify every scan: percentage of protocol fees routed to buybacks, cumulative DRV bought, emissions/incentives, and any governance proposal that changes supply or fee allocation.
 
+## Direct Data / KPI Methodology
+
+DRV is the first worked example for the repo's direct-data process. The goal is to verify whether Derive's token story is supported by real options/perps activity, fee generation, buybacks, and governance/token-parameter discipline.
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Trading fees / protocol revenue | Core business metric and input to DRV buybacks. | DefiLlama fees summary; ideally official Derive stats API as source of record. | `tested_ok` via DefiLlama; official stats endpoint currently `failed`. | DefiLlama reports gross fees/revenue using Derive adapters; still need to confirm whether official endpoint access requires specific parameters/headers. |
+| TVL / collateral by chain | Measures collateral/liquidity available for options/perps and highlights chain mix such as Derive Chain, Hyperliquid L1, Base, OP, Arbitrum, Ethereum. | DefiLlama protocol API, cross-checked against Derive app/dashboard. | `tested_ok` via DefiLlama. | TVL is useful context but not enough; options OI/volume and fee quality matter more. |
+| Options/perps volume and OI by underlying | Most direct proof that Derive is winning real options flow, especially BTC/ETH/HYPE. | Official Derive app/API/docs first; DefiLlama options overview as fallback/context. | `partial` — DefiLlama options overview is fetchable; official per-market API still needs adapter work. | Need exact per-underlying OI/volume endpoint before dashboard integration. Social posts about large trades should be validated against this metric. |
+| DRV buyback amount / fee allocation percentage | Direct token-value-capture loop: protocol fees converted into DRV demand. | Official weekly buyback posts and, if possible, onchain buyback wallet/contract events. | `manual_only` for official posts; onchain path not fully mapped yet. | Track percentage of fees allocated, weekly DRV bought, average buy price, cumulative DRV bought, and whether governance changes the allocation. |
+| DRV token supply / holder distribution | Detects dilution, minting, bridge/supply inconsistencies, and concentration risk. | Onchain ERC-20 calls via Base/Ethereum/Optimism/Arbitrum/Derive Chain RPCs; Basescan/Etherscan APIs for holders/transfers where needed. | `tested_ok` for Base `totalSupply()` via local `BASE_HTTP_URL`; multi-chain holder mapping still `partial`. | Do not expose API keys. Need decimals/bridge reconciliation before showing supply as a dashboard figure. |
+| Governance activity | Captures proposals that can change supply, fee allocation, incentives, listings, risk settings, or token migration logic. | Snapshot space `lyra.eth`; official governance/forum if current Derive governance moved elsewhere. | `tested_ok` via Snapshot GraphQL. | Latest Snapshot proposals are older Lyra-era items; still need to identify the current canonical DRV governance venue. |
+| Listed markets / collateral types / risk-engine changes | New underlyings, HYPE/kHYPE margining, RFQ rails, and portfolio-margin changes can drive fee/OI growth or risk. | Official X, docs, app, and API. | `manual_only` / `partial`. | Treat as material when it changes addressable flow, collateral demand, or liquidation/risk profile. |
+
+### Fetch tests — 2026-06-23
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama Derive protocol | `GET https://api.llama.fi/protocol/derive` | `tested_ok` | Latest TVL and chain TVL breakdown; observed latest TVL about `$111.1M` with Hyperliquid L1, OP Mainnet, Base, Arbitrum, Ethereum components. | Add to direct-data collector as TVL/collateral source. |
+| DefiLlama Derive fees | `GET https://api.llama.fi/summary/fees/derive?dataType=dailyFees` | `tested_ok` | Fees/revenue summary; observed `24h fees ~$11.7K`, `7d ~$113.9K`, `30d ~$643.7K`, `all-time ~$13.4M`. | Add to collector but label as DefiLlama-derived until official stats API is stable. |
+| Derive official stats API candidate | `GET https://stats-api.derive.xyz/fees` and dated variants | `failed` | Returned HTTP 500 during test. | Investigate docs/adapter params or alternate official API path before relying on it. |
+| Snapshot governance | Snapshot GraphQL query for `space_in: ["lyra.eth"]` | `tested_ok` | Recent/old proposal metadata: title, state, created/end, link, vote totals. | Add governance adapter; verify whether `lyra.eth` remains canonical for DRV-era governance. |
+| Base DRV contract | `eth_call` `totalSupply()` on `0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083` using local `BASE_HTTP_URL` | `tested_ok` | ERC-20 totalSupply raw value response. | Add decimals/symbol calls, holder/transfer source, and multi-chain supply reconciliation before displaying. |
+
+### Direct-data panel draft
+
+Initial DRV Direct Data panel should show only metrics that pass repeatable fetch tests:
+
+1. **Fees / revenue:** 24h, 7d, 30d, all-time from DefiLlama, clearly labeled as DefiLlama-derived.
+2. **Collateral / TVL:** latest total and chain breakdown from DefiLlama.
+3. **Governance:** latest Snapshot proposal status, plus a warning if no recent DRV-era governance source is confirmed.
+4. **Token/supply checks:** raw onchain contract health/status first; only show normalized supply/holder figures after decimals and bridge reconciliation are tested.
+5. **Open adapter work:** Derive official stats/API for OI, volume by underlying, listed markets, and buyback/onchain wallet mapping.
+
+Material direct-data alerts for DRV should fire only when fee/OI/buyback/governance changes affect the token story: e.g. sustained fee acceleration/decline, a new HYPE/BTC/ETH options market milestone, a governance proposal changing emissions/supply/fee allocation, or a confirmed buyback allocation change.
+
 ## Sources / Research Inputs
 
 | Information source | Context about the source |
@@ -58,6 +96,10 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 | https://derive.xyz/ | Official site/app; product positioning and app entry point. |
 | https://docs.derive.xyz/ | Official docs; API, trading, margin, custody, market and risk-mechanic reference. |
 | https://defillama.com/protocol/derive | Third-party dashboard for TVL/protocol metrics; use only as context and cross-check with official/app data. |
+| https://api.llama.fi/protocol/derive | Programmatic DefiLlama protocol endpoint tested 2026-06-23; returns TVL and chain TVL breakdown for direct-data collector. |
+| https://api.llama.fi/summary/fees/derive?dataType=dailyFees | Programmatic DefiLlama fees endpoint tested 2026-06-23; returns 24h/7d/30d/all-time fee summaries for direct-data collector. |
+| https://hub.snapshot.org/graphql (`lyra.eth`) | Snapshot governance endpoint tested 2026-06-23; returns proposal metadata, but canonical DRV-era governance venue still needs confirmation. |
+| https://stats-api.derive.xyz/fees | Candidate official Derive stats endpoint; returned HTTP 500 in 2026-06-23 test, so do not rely on it until adapter/API params are resolved. |
 | https://x.com/MaelstromFund/status/1877486159678321137 | Maelstrom strategic-investment announcement; investor/backer context. |
 | https://x.com/DeriveXYZ/status/2064477916092858845 | Official weekly buyback update; concrete token-economic signal to compare against future weeks. |
 | `0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083` | DRV Base contract address to verify holders/supply/liquidity. |

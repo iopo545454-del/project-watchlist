@@ -206,6 +206,38 @@ Each dossier should include a source table in this shape:
 | 0x123...abcd | Token contract address; use for holder/distribution checks |
 ```
 
+## Direct data / KPI methodology
+
+Whenever scanning or onboarding a project, explicitly ask these questions before deciding what to track:
+
+1. **What are the relevant KPIs for this project?** Do not force every project into generic DeFi metrics. Pick KPIs that map to the actual business/protocol loop: revenue/fees, TVL/collateral, OI/volume, active users, supply-side capacity, usage/demand, governance activity, buybacks, emissions, operators/validators/providers, markets listed, or project-specific adoption metrics.
+2. **Can we get those KPIs onchain?** Prefer direct contract/event/RPC/indexer access when the metric is actually represented onchain. If yes, use the configured local env/API keys such as Alchemy, Basescan/Etherscan, Helius, QuickNode, or project-specific public endpoints. Never expose keys in committed files or GitHub Pages frontend JavaScript.
+3. **If not onchain, what is the next-best reliable source?** Prefer official APIs/docs/dashboards first, then DefiLlama/Token Terminal/Dune/Flipside/Snapshot/Tally/Commonwealth/GitHub or other credible third-party data. Public page scraping is a last resort and should be labeled as brittle.
+4. **Can we fetch it programmatically?** Test each candidate source with a repeatable command/script before integrating it into the dashboard. Record whether it is `tested_ok`, `partial`, `manual_only`, `blocked`, or `failed`, plus the tested endpoint and limitation.
+5. **How should the metric be interpreted?** Define why the KPI matters, what direction is good/bad, what thresholds are material, and what could make the number misleading. Distinguish fees, revenue, protocol revenue, tokenholder value capture, buybacks, incentives, and organic vs subsidized activity.
+6. **Where does the methodology live?** Put project-specific KPI logic in the relevant `projects/*.md` dossier under `## Direct Data / KPI Methodology`; put reusable machine-readable source config in a future direct-data registry; put generated latest/history values under `docs/data/direct-metrics/` once the source is stable.
+7. **How does it enter the UI/changelog?** Integrate only tested/stable metrics into the Direct Data panel. Add material direct-data deltas to `docs/data/project-changelog.json` and the project Latest feed; keep routine refreshes quiet unless the move is material.
+
+Each project dossier's `## Direct Data / KPI Methodology` section should include:
+
+```md
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Revenue / fees | Measures economic activity | DefiLlama / official API / onchain | tested_ok | Distinguish gross fees from tokenholder revenue |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama fees | `https://api.llama.fi/summary/fees/<slug>` | tested_ok | daily/weekly/monthly fees | Add to direct-data collector |
+```
+
+The DRV / Derive dossier is the worked example for this methodology. Use its lessons to generalize rules before rolling direct-data panels out to the full watchlist.
+
 ## Generated page styling contract (Signals Terminal)
 
 The dashboard and dossiers share one design system in [`docs/style.css`](docs/style.css) ("Signals Terminal": ink-black canvas, phosphor-lime primary accent — **no purple**, IBM Plex Mono for data/labels/tickers, Hanken Grotesk for prose, per-category color-coding). When generating or regenerating `docs/projects/*.html`, follow this contract so pages inherit the system automatically:
