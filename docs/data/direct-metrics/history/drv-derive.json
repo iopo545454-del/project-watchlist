@@ -1,0 +1,143 @@
+{
+  "slug": "drv-derive",
+  "display_name": "DRV / Derive Protocol",
+  "generated_at": "2026-06-23T17:19:38Z",
+  "series": {
+    "fees_24h": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 11683,
+        "source_id": "defillama_derive_fees"
+      }
+    ],
+    "fees_7d": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 113866,
+        "source_id": "defillama_derive_fees"
+      }
+    ],
+    "fees_30d": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 643698,
+        "source_id": "defillama_derive_fees"
+      }
+    ],
+    "fees_all_time": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 13355176,
+        "source_id": "defillama_derive_fees"
+      }
+    ],
+    "tvl_total": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 111086247,
+        "source_id": "defillama_derive_tvl"
+      }
+    ],
+    "options_volume_24h": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 472684,
+        "source_id": "defillama_derive_options_volume"
+      }
+    ],
+    "options_volume_7d": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 9746256,
+        "source_id": "defillama_derive_options_volume"
+      }
+    ],
+    "options_volume_30d": [
+      {
+        "t": "2026-06-23T17:19:38Z",
+        "v": 44404963,
+        "source_id": "defillama_derive_options_volume"
+      }
+    ]
+  },
+  "chain_breakdown": [
+    {
+      "t": "2026-06-23T17:19:38Z",
+      "values": [
+        {
+          "chain": "Hyperliquid L1",
+          "value": 40017534,
+          "display": "$40.0M"
+        },
+        {
+          "chain": "OP Mainnet",
+          "value": 20762603,
+          "display": "$20.8M"
+        },
+        {
+          "chain": "Base",
+          "value": 19361407,
+          "display": "$19.4M"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 17990371,
+          "display": "$18.0M"
+        },
+        {
+          "chain": "Ethereum",
+          "value": 12954329,
+          "display": "$13.0M"
+        }
+      ]
+    }
+  ],
+  "governance": [
+    {
+      "id": "0xe0d6ba06feee143a164960d0dac373c0a8f9ed1fbf14e236d75622f6d78c9af8",
+      "title": " [LRFC] Buy back $LYRA before migration to $LDX",
+      "state": "closed",
+      "created": "2024-04-23",
+      "end": "2024-04-26",
+      "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xe0d6ba06feee143a164960d0dac373c0a8f9ed1fbf14e236d75622f6d78c9af8",
+      "scores_total": 24959099.37960499
+    },
+    {
+      "id": "0xbf1b42931f34c6365864f15f7097a56d9e7e59d082fadd8fd81de31b948cc0c7",
+      "title": "[LRFC] Migrate $LYRA to $LDX",
+      "state": "closed",
+      "created": "2024-04-16",
+      "end": "2024-04-19",
+      "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xbf1b42931f34c6365864f15f7097a56d9e7e59d082fadd8fd81de31b948cc0c7",
+      "scores_total": 54328765.7372213
+    },
+    {
+      "id": "0xf5d29ec33b8095c1275ac4dd3e71cf08d9d313ee3cd0d356ab3cf05d85672fce",
+      "title": "[LRFC] Update to Lyra Trading Incentives - Incentivize Maker Volume",
+      "state": "closed",
+      "created": "2024-04-02",
+      "end": "2024-04-05",
+      "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xf5d29ec33b8095c1275ac4dd3e71cf08d9d313ee3cd0d356ab3cf05d85672fce",
+      "scores_total": 3507456.6432364853
+    },
+    {
+      "id": "0x4646b7c955917522f36776f40f3adef49aa2974ce6a9d9852dcb718d0d0fa20b",
+      "title": "[LRFC] Lyra & Aerodrome - Bootstrap liquidity for LYRA on Base",
+      "state": "closed",
+      "created": "2024-03-25",
+      "end": "2024-03-28",
+      "link": "https://snapshot.box/#/s:lyra.eth/proposal/0x4646b7c955917522f36776f40f3adef49aa2974ce6a9d9852dcb718d0d0fa20b",
+      "scores_total": 4928446.545583637
+    },
+    {
+      "id": "0x0c0c22066c502ce83176767a37f6eb38d361e0989b9848fc5cfa307ad8909975",
+      "title": "[LRFC] Whitelisting Strands Deploying Address on Lyra Chain",
+      "state": "closed",
+      "created": "2024-03-04",
+      "end": "2024-03-07",
+      "link": "https://snapshot.box/#/s:lyra.eth/proposal/0x0c0c22066c502ce83176767a37f6eb38d361e0989b9848fc5cfa307ad8909975",
+      "scores_total": 14174781.241416162
+    }
+  ],
+  "events": []
+}

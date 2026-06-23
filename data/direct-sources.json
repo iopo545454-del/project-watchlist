@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-23T17:19:38Z",
+  "projects": {
+    "drv-derive": {
+      "display_name": "DRV / Derive Protocol",
+      "ticker": "DRV",
+      "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
+      "status": "pilot",
+      "sources": [
+        {
+          "id": "defillama_derive_fees",
+          "label": "DefiLlama Derive fees",
+          "metric_group": "fees_revenue",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "change_7d_pct_abs": 25,
+            "change_30d_pct_abs": 30
+          }
+        },
+        {
+          "id": "defillama_derive_tvl",
+          "label": "DefiLlama Derive TVL",
+          "metric_group": "tvl_collateral",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/protocol/derive",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "change_7d_pct_abs": 20,
+            "change_30d_pct_abs": 25
+          }
+        },
+        {
+          "id": "defillama_derive_options_volume",
+          "label": "DefiLlama Derive Options volume",
+          "metric_group": "options_volume",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+          "cadence": "6h",
+          "status": "partial",
+          "source_quality": "third_party_adapter",
+          "notes": "Provides aggregate Derive Options volume, not per-underlying OI/volume. Use as first displayable proxy while official Derive market-data adapter is researched."
+        },
+        {
+          "id": "snapshot_lyra_governance",
+          "label": "Snapshot lyra.eth governance",
+          "metric_group": "governance",
+          "source_type": "snapshot_graphql",
+          "url": "https://hub.snapshot.org/graphql",
+          "space": "lyra.eth",
+          "cadence": "12h",
+          "status": "tested_ok",
+          "source_quality": "governance_api",
+          "notes": "Fetches proposal metadata from the older Lyra/Derive Snapshot space; canonical DRV-era governance location still needs confirmation."
+        },
+        {
+          "id": "derive_official_stats_fees",
+          "label": "Derive official stats API candidate",
+          "metric_group": "official_stats",
+          "source_type": "official_api_candidate",
+          "url": "https://stats-api.derive.xyz/fees",
+          "cadence": "manual",
+          "status": "failed",
+          "source_quality": "official_candidate",
+          "notes": "Returned HTTP 500 during tests; keep as an open adapter task, not a dashboard source."
+        }
+      ]
+    }
+  }
+}

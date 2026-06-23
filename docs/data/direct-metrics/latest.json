@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-23T17:19:38Z",
+  "projects": {
+    "drv-derive": {
+      "display_name": "DRV / Derive Protocol",
+      "ticker": "DRV",
+      "status": "active",
+      "summary": "Fees, TVL, aggregate options volume, and Snapshot governance are fetchable. OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
+      "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
+      "last_refreshed": "2026-06-23T17:19:38Z",
+      "metrics": [
+        {
+          "id": "fees_24h",
+          "group": "fees_revenue",
+          "label": "24h fees",
+          "value": 11683,
+          "unit": "usd",
+          "display": "$11.7K",
+          "change": "+19.3%",
+          "source_id": "defillama_derive_fees",
+          "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Gross fee proxy from DefiLlama's Derive adapter; compare against buybacks and incentives."
+        },
+        {
+          "id": "fees_7d",
+          "group": "fees_revenue",
+          "label": "7d fees",
+          "value": 113866,
+          "unit": "usd",
+          "display": "$113.9K",
+          "change": null,
+          "source_id": "defillama_derive_fees",
+          "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Weekly protocol-fee proxy. Useful for DRV buyback capacity context."
+        },
+        {
+          "id": "fees_30d",
+          "group": "fees_revenue",
+          "label": "30d fees",
+          "value": 643698,
+          "unit": "usd",
+          "display": "$643.7K",
+          "change": null,
+          "source_id": "defillama_derive_fees",
+          "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Monthly protocol-fee proxy. Track trend before treating buybacks as sustainable."
+        },
+        {
+          "id": "fees_all_time",
+          "group": "fees_revenue",
+          "label": "All-time fees",
+          "value": 13355176,
+          "unit": "usd",
+          "display": "$13.4M",
+          "change": null,
+          "source_id": "defillama_derive_fees",
+          "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Cumulative DefiLlama fee figure for Derive-linked adapters."
+        },
+        {
+          "id": "tvl_total",
+          "group": "tvl_collateral",
+          "label": "TVL / collateral",
+          "value": 111086247,
+          "unit": "usd",
+          "display": "$111.1M",
+          "change": null,
+          "source_id": "defillama_derive_tvl",
+          "source_url": "https://api.llama.fi/protocol/derive",
+          "source_quality": "third_party_adapter",
+          "interpretation": "DefiLlama TVL/collateral context; not a substitute for OI, volume, or fee quality."
+        },
+        {
+          "id": "options_volume_24h",
+          "group": "options_volume",
+          "label": "24h options volume",
+          "value": 472684,
+          "unit": "usd",
+          "display": "$472.7K",
+          "change": "+109.2%",
+          "source_id": "defillama_derive_options_volume",
+          "source_url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Aggregate Derive Options volume from DefiLlama; not per-underlying OI/volume yet."
+        },
+        {
+          "id": "options_volume_7d",
+          "group": "options_volume",
+          "label": "7d options volume",
+          "value": 9746256,
+          "unit": "usd",
+          "display": "$9.7M",
+          "change": "-43.9%",
+          "source_id": "defillama_derive_options_volume",
+          "source_url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Weekly options-flow proxy; needs official Derive market adapter for HYPE/BTC/ETH split."
+        },
+        {
+          "id": "options_volume_30d",
+          "group": "options_volume",
+          "label": "30d options volume",
+          "value": 44404963,
+          "unit": "usd",
+          "display": "$44.4M",
+          "change": "+29.9%",
+          "source_id": "defillama_derive_options_volume",
+          "source_url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+          "source_quality": "third_party_adapter",
+          "interpretation": "Monthly options-flow proxy; useful for trend context until per-underlying adapter exists."
+        }
+      ],
+      "chain_breakdown": [
+        {
+          "chain": "Hyperliquid L1",
+          "value": 40017534,
+          "display": "$40.0M"
+        },
+        {
+          "chain": "OP Mainnet",
+          "value": 20762603,
+          "display": "$20.8M"
+        },
+        {
+          "chain": "Base",
+          "value": 19361407,
+          "display": "$19.4M"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 17990371,
+          "display": "$18.0M"
+        },
+        {
+          "chain": "Ethereum",
+          "value": 12954329,
+          "display": "$13.0M"
+        }
+      ],
+      "governance": [
+        {
+          "id": "0xe0d6ba06feee143a164960d0dac373c0a8f9ed1fbf14e236d75622f6d78c9af8",
+          "title": " [LRFC] Buy back $LYRA before migration to $LDX",
+          "state": "closed",
+          "created": "2024-04-23",
+          "end": "2024-04-26",
+          "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xe0d6ba06feee143a164960d0dac373c0a8f9ed1fbf14e236d75622f6d78c9af8",
+          "scores_total": 24959099.37960499
+        },
+        {
+          "id": "0xbf1b42931f34c6365864f15f7097a56d9e7e59d082fadd8fd81de31b948cc0c7",
+          "title": "[LRFC] Migrate $LYRA to $LDX",
+          "state": "closed",
+          "created": "2024-04-16",
+          "end": "2024-04-19",
+          "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xbf1b42931f34c6365864f15f7097a56d9e7e59d082fadd8fd81de31b948cc0c7",
+          "scores_total": 54328765.7372213
+        },
+        {
+          "id": "0xf5d29ec33b8095c1275ac4dd3e71cf08d9d313ee3cd0d356ab3cf05d85672fce",
+          "title": "[LRFC] Update to Lyra Trading Incentives - Incentivize Maker Volume",
+          "state": "closed",
+          "created": "2024-04-02",
+          "end": "2024-04-05",
+          "link": "https://snapshot.box/#/s:lyra.eth/proposal/0xf5d29ec33b8095c1275ac4dd3e71cf08d9d313ee3cd0d356ab3cf05d85672fce",
+          "scores_total": 3507456.6432364853
+        },
+        {
+          "id": "0x4646b7c955917522f36776f40f3adef49aa2974ce6a9d9852dcb718d0d0fa20b",
+          "title": "[LRFC] Lyra & Aerodrome - Bootstrap liquidity for LYRA on Base",
+          "state": "closed",
+          "created": "2024-03-25",
+          "end": "2024-03-28",
+          "link": "https://snapshot.box/#/s:lyra.eth/proposal/0x4646b7c955917522f36776f40f3adef49aa2974ce6a9d9852dcb718d0d0fa20b",
+          "scores_total": 4928446.545583637
+        },
+        {
+          "id": "0x0c0c22066c502ce83176767a37f6eb38d361e0989b9848fc5cfa307ad8909975",
+          "title": "[LRFC] Whitelisting Strands Deploying Address on Lyra Chain",
+          "state": "closed",
+          "created": "2024-03-04",
+          "end": "2024-03-07",
+          "link": "https://snapshot.box/#/s:lyra.eth/proposal/0x0c0c22066c502ce83176767a37f6eb38d361e0989b9848fc5cfa307ad8909975",
+          "scores_total": 14174781.241416162
+        }
+      ],
+      "open_adapter_work": [
+        {
+          "source_id": "derive_official_stats_fees",
+          "label": "Derive official stats API candidate",
+          "status": "failed",
+          "notes": "Returned HTTP 500 during tests; keep as an open adapter task, not a dashboard source.",
+          "next_step": "Inspect Derive docs/adapter parameters and replace DefiLlama proxy if an official stable endpoint is available."
+        },
+        {
+          "label": "OI / volume by underlying",
+          "status": "not_implemented",
+          "notes": "Need official Derive market-data endpoint for BTC/ETH/HYPE OI and volume splits."
+        },
+        {
+          "label": "DRV buyback wallet / onchain mapping",
+          "status": "not_implemented",
+          "notes": "Needed to compare fee generation with actual DRV bought; for now rely on official weekly buyback posts."
+        },
+        {
+          "label": "Market quality",
+          "status": "not_implemented",
+          "notes": "Need orderbook/spread/depth or RFQ stats endpoints before display."
+        }
+      ],
+      "notes": [
+        "Snapshot lyra.eth fetch works, but current DRV-era canonical governance venue still needs confirmation."
+      ],
+      "errors": []
+    }
+  }
+}
