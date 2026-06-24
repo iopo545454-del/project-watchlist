@@ -1,5 +1,96 @@
 [
   {
+    "run_id": "20260624-065117",
+    "started_at": "2026-06-24T06:51:17Z",
+    "completed_at": "2026-06-24T06:51:17Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-24T02:39:39Z to 2026-06-24T06:51:17Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal queries with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "AKT / Akash"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 2,
+      "changelog_entries_added": 2,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/bankrbot/status/2069669392368152790",
+        "summary": "Official Bankr installed the $mfergpt skill with paid lore/ask/image-to-mfer services using x402 v2 USDC on Base and automatic EIP-3009 authorizations.",
+        "decision": "logged as official update; update dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter founder scan",
+        "url": "https://x.com/gregosuri/status/2069648170989277556",
+        "summary": "Founder Greg Osuri said website estimates assume 50% utilization while current RTX 5090s are utilized 100%.",
+        "decision": "logged as source-proximate high-end GPU demand/KPI signal; update dossier Latest and changelog"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in this scan window; Bittensor emission-upgrade chatter was follow-on discussion to an already logged catalyst.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Bankr x402 skill usage/fees and whether mfergpt or other third-party skills route value to BNKR/Club/Max.",
+      "Confirm Akash RTX 5090 inventory/utilization through official dashboard/API/provider data and watch whether 100% utilization expands total marketplace spend.",
+      "Continue watching Akash proposal 329, Bittensor emission gate effects, Bankr Reward Season 2 rules, WLD unlock verification, Kinetiq points, and Octra security/TAPE follow-up."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the two new 2026-06-24T06:51:17Z entries: BANKR high and AKT medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260624-023939",
     "started_at": "2026-06-24T02:39:39Z",
     "completed_at": "2026-06-24T02:39:39Z",

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-24T06:51:17Z
 ---
 
 # AKT / Akash
@@ -13,6 +13,8 @@ last_updated: 2026-06-23T21:46:11Z
 - Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.
 
 ## Latest scan notes
+
+- 2026-06-24 — Akash founder Greg Osuri said Akash website estimates assume conservative 50% utilization, while current RTX 5090s are utilized 100%. This is a useful high-end GPU demand signal, but it needs dashboard/API confirmation and context on how many 5090s are actually online. Source: https://x.com/gregosuri/status/2069648170989277556
 - 2026-06-22 — Added neo-cloud investment numbers from the official Akash Console API and CoinGecko: AKT market cap around `$210M`; official dashboard snapshot showed `699` active leases, `135` active GPUs, total marketplace spend about `$5.44M`, and 24h gross spend about `$7.37k` / `$2.69M annualized`. Source: https://console-api.akash.network/v1/dashboard-data
 - 2026-06-22 — Relative valuation note: at ~$210M market cap versus ~$2.69M annualized gross spend, AKT screens around `78x` gross marketplace spend; to look like 10x-20x gross spend, daily spend needs to rise toward roughly `$29k-$58k/day`.
 - 2026-06-18 — Akash proposal 329 is live: PIP Spot and Reservation Revenue Share would set 10% OCL / 90% community-pool spot revenue and 30% / 70% reservation revenue splits; voting ends June 25. Source: https://moon-runners.net/akash/mainnet/governance/329
