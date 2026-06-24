@@ -1,5 +1,104 @@
 [
   {
+    "run_id": "20260624-192004",
+    "started_at": "2026-06-24T19:20:04Z",
+    "completed_at": "2026-06-24T19:20:04Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-24T15:08:30Z to 2026-06-24T19:20:04Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AKT / Akash",
+      "NEAR Protocol",
+      "Worldcoin / WLD / World Network"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 3,
+      "changelog_entries_added": 3,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2069848542584201265",
+        "summary": "Official Akash said Homenode beta is accepting RTX 3090s, 4090s, and 5090s for inference and distributed training, quoting $500/month 5090 Homenode economics.",
+        "decision": "logged as catalyst update; updated dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan + official dashboard",
+        "url": "https://x.com/NEARProtocol/status/2069813867438375344",
+        "summary": "Official NEAR said Fireblocks/Figment enable institutional staking under qualified custody with SOVRN first live user; a second official post highlighted rising capture rate and the revenue dashboard.",
+        "decision": "logged as official update; updated dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "X/Twitter official scan + official blog",
+        "url": "https://x.com/worldnetwork/status/2069822016803459395",
+        "summary": "Official World published a verified AI-agent/AgentKit product-blog update for human-controlled AI-agent workflows.",
+        "decision": "logged as docs/blog update; updated dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in this scan window; GitLawb adapter work, MetaDAO media, USDai APY chatter, GRASS community votes, and Bio/Pluralis narrative posts were not durable enough for changelog.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Query Akash Console/API and provider data for Homenode inventory, paid utilization, and whether new high-end GPU supply increases marketplace spend.",
+      "For NEAR, query revenue.near.org directly for capture-rate/revenue figures and watch Fireblocks/Figment/SOVRN follow-through or additional institutional staking users.",
+      "For World, watch AgentKit docs/GitHub and named partner integrations proving verified AI agents are used outside blog demos."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the three new 2026-06-24T19:20:04Z entries: AKT high, NEAR high, and World medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260624-150830",
     "started_at": "2026-06-24T15:08:30Z",
     "completed_at": "2026-06-24T15:08:30Z",

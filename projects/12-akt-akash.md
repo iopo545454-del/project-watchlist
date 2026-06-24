@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-24T06:51:17Z
+last_updated: 2026-06-24T19:20:04Z
 ---
 
 # AKT / Akash
@@ -14,6 +14,7 @@ last_updated: 2026-06-24T06:51:17Z
 
 ## Latest scan notes
 
+- 2026-06-24 — Official Akash said Homenode beta is accepting RTX 3090s, 4090s, and 5090s for inference and distributed training, quoting Greg Osuri's $500/month 5090 Homenode economics. This upgrades the Homenode supply-expansion catalyst from roadmap context to live beta recruiting for high-end home GPUs. Source: https://x.com/akashnet/status/2069848542584201265
 - 2026-06-24 — Akash founder Greg Osuri said Akash website estimates assume conservative 50% utilization, while current RTX 5090s are utilized 100%. This is a useful high-end GPU demand signal, but it needs dashboard/API confirmation and context on how many 5090s are actually online. Source: https://x.com/gregosuri/status/2069648170989277556
 - 2026-06-22 — Added neo-cloud investment numbers from the official Akash Console API and CoinGecko: AKT market cap around `$210M`; official dashboard snapshot showed `699` active leases, `135` active GPUs, total marketplace spend about `$5.44M`, and 24h gross spend about `$7.37k` / `$2.69M annualized`. Source: https://console-api.akash.network/v1/dashboard-data
 - 2026-06-22 — Relative valuation note: at ~$210M market cap versus ~$2.69M annualized gross spend, AKT screens around `78x` gross marketplace spend; to look like 10x-20x gross spend, daily spend needs to rise toward roughly `$29k-$58k/day`.
@@ -96,7 +97,7 @@ last_updated: 2026-06-24T06:51:17Z
 |---|---|---|---|---|---|---|
 | Burn Mint Equilibrium live on mainnet | Confirmed | Akash Q1 2026 report says BME went live Mar. 23, 2026 after Proposal 318; roadmap lists AEP-76 completed: https://akash.network/blog/akash-network-q1-2026-report/ and https://akash.network/roadmap/2026/ | Live since 2026-03-23 | Creates direct link between compute demand and AKT via burn/mint economics while preserving stable pricing UX. | If compute spend grows, AKT capture narrative improves versus USDC-only marketplace usage. | Watch compute spend, AKT burned/minted, USDC vs AKT payment mix, provider receipts, and governance parameter changes. |
 | Akash crossed $5M all-time compute spend and Q1 usage milestones | Confirmed / KPI catalyst | Akash Q1 2026 report says first 90 days crossed an all-time high of $5M in compute spend: https://akash.network/blog/akash-network-q1-2026-report/ | Q1 2026 | Provides KPI evidence that marketplace demand is growing. | Higher spend improves credibility of BME and provider incentives. | Track quarterly compute spend, active leases, GPU utilization, customer retention, and revenue concentration. |
-| Homenode consumer/prosumer GPU supply expansion | Confirmed | Q1 report says Homenode beta opened signups for RTX 4090, RTX 5090, and Quadro RTX 6000 Ada; roadmap lists AEP-60 MVP completion Apr. 30, 2026: https://akash.network/blog/akash-network-q1-2026-report/ and https://akash.network/roadmap/2026/ | Beta Q1 2026; MVP target/completion 2026-04-30 | Adds a new supply category beyond datacenter providers. | If reliable, Akash can scale cheaper inference capacity and broaden provider participation. | Watch beta acceptance, supported GPUs, uptime/SLA, inference workloads, and Homenode earnings. |
+| Homenode consumer/prosumer GPU supply expansion | Confirmed / beta live | Q1 report says Homenode beta opened signups for RTX 4090, RTX 5090, and Quadro RTX 6000 Ada; official X later said beta is accepting RTX 3090s, 4090s, and 5090s for inference/distributed training: https://akash.network/blog/akash-network-q1-2026-report/ and https://x.com/akashnet/status/2069848542584201265 | Beta live / actively accepting GPUs as of 2026-06-24 | Adds a new supply category beyond datacenter providers, including high-end consumer GPUs. | If reliable, Akash can scale cheaper inference capacity and broaden provider participation; if $500/month 5090 economics are real and sustained, more home supply may join quickly. | Watch beta acceptance, supported GPUs, uptime/SLA, inference workloads, Homenode earnings, and whether new supply increases paid marketplace spend. |
 | Confidential computing and TEE roadmap | Confirmed / planned roadmap item | Akash 2026 roadmap lists AEP-83 Confidential Compute via Kata Containers estimated July 31, 2026: https://akash.network/roadmap/2026/ | Estimated 2026-07-31 | Adds CPU/GPU TEE workload support for enterprise and privacy-sensitive deployments. | Could unlock higher-value AI workloads that cannot use ordinary public decentralized compute. | Watch AEP-83 delivery, attestation UX, provider support, customer pilots, and security reviews. |
 
 ## Open questions
