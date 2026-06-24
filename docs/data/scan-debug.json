@@ -1,5 +1,104 @@
 [
   {
+    "run_id": "20260624-233152",
+    "started_at": "2026-06-24T23:31:52Z",
+    "completed_at": "2026-06-24T23:31:52Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-24T19:20:04Z to 2026-06-24T23:31:52Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GRASS",
+      "NEAR Protocol",
+      "GitlWab / GitLawb / Gitwab"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 3,
+      "changelog_entries_added": 3,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GRASS",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/grass/status/2069877504387514557",
+        "summary": "Official Grass announced an in-app non-custodial wallet for Grass accounts with GRASS/asset transfers, MoonPay withdrawals, passkey/email-OTP security, and mid-July launch timing.",
+        "decision": "logged as catalyst update; updated dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2069879673748591090",
+        "summary": "Official NEAR roadmap thread reiterated active post-quantum signing, dynamic resharding, and SPICE throughput/finality upgrades for the agent-economy settlement layer.",
+        "decision": "logged as catalyst update; updated dossier Latest/catalyst context and changelog"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/gitlawb/status/2069907248625983932",
+        "summary": "Official GitLawb said free GLM 5.2 whitelist review is underway and OpenGateway access grants will begin soon.",
+        "decision": "logged as official update / product-onboarding signal; updated dossier Latest and changelog"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; no duplicate projects created.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in this scan window; community Grass listing pushes and Virtuals/NOX narrative posts were treated as lower-confidence/community context only.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Grass, watch the exact wallet launch date, supported jurisdictions/assets, activation metrics, MoonPay limits/fees, scams, and whether Season 2 or rewards route through the wallet.",
+      "For NEAR, monitor nearcore releases/docs for dynamic resharding, SPICE benchmark/governance timing, and post-quantum testnet rollout.",
+      "For GitLawb, verify actual OpenGateway whitelist access grants, usage metrics on the Playground stats page, and whether GLM 5.2 access converts into durable users or credits/revenue."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the three new 2026-06-24T23:31:52Z entries: GRASS high, NEAR high, and GitLawb medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260624-192004",
     "started_at": "2026-06-24T19:20:04Z",
     "completed_at": "2026-06-24T19:20:04Z",
