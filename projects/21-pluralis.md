@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-17T22:35:49Z
+last_updated: 2026-06-25T07:44:44Z
 ---
 
 # Pluralis
@@ -17,6 +17,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 
 ## Latest scan notes
 
+- 2026-06-25 — Official Pluralis announced an ICML Protocol Learning workshop in Seoul on July 10, 2026, with talks/posters on decentralized collaborative learning, asynchronous pipeline parallelism, communication-efficient model-parallel training, and no ICML badge requirement for the workshop. This is a credible research/community catalyst for Pluralis' decentralized-training thesis rather than a token/economics update. Sources: https://x.com/Pluralis/status/2070042407278694795 and https://pluralis.ai/events/icml-protocol-learning-workshop/
 - 2026-06-17 — Jake Brukhman posted a stronger Pluralis-adjacent investor thesis after a decentralized AI training catchup: crypto capital formation can fund commercially viable decentralized models because the bottleneck is now commodity-device capital, not high-end GPUs. Source: https://x.com/jbrukh/status/2067358047899427276
 - 2026-06-17 — Jake Brukhman framed Chamin Hewa’s ICML 2026 Factored Gossip DiLoCo work as progress toward resilient decentralized training swarms and commercially viable models trained on decentralized networks. Source: https://x.com/jbrukh/status/2067216487719342307
 
@@ -43,6 +44,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | Pluralis-8B / Agora public training run | Confirmed | Official update: https://x.com/Pluralis/status/2065899910080115117 and docs: https://pluralis.ai/docs/ | Live / June 2026 | Demonstrates whether public, decentralized pipeline-parallel training can converge near centralized baselines. | Strong run metrics could pull attention from DeAI investors, compute networks, and model buyers; weak reliability would hurt the core thesis. | Track tokens processed, nodes, contributors, TPS, MFU, convergence/evals, and how much compute is Pluralis-operated vs external. |
+| ICML Protocol Learning workshop | Confirmed / upcoming | Official X announcement: https://x.com/Pluralis/status/2070042407278694795 and official event page: https://pluralis.ai/events/icml-protocol-learning-workshop/ | July 10, 2026, Seoul; social July 9 | Puts Pluralis' Protocol Learning agenda in front of academic/industry AI researchers with talks and posters on decentralized collaborative training. | Could improve recruiting, research credibility, and ecosystem mindshare for decentralized model-parallel training; not a token-economics catalyst by itself. | Watch for workshop slides/videos, paper/poster releases, new contributors, partnerships, and any follow-up on contributor ownership/economics. |
 | Contributor scores / points potentially tied to ownership | Tentative | Docs describe scores from raw PFLOPs and active time: https://pluralis.ai/docs/ | Live scoring; economics unknown | Gives contributors a measurable stake in the run, but no token/revenue-right conversion is confirmed. | If points become revenue share, credits, or token rights, Pluralis could gain a strong contributor acquisition loop. | Watch official docs/blog/X for token, revenue-share, ownership, or legal/economic model details. |
 | Protocol Learning research/code releases | Confirmed | Official site lists papers and GitHub: https://pluralis.ai/ and https://github.com/PluralisResearch | Ongoing | Builds technical credibility around asynchronous pipeline parallelism, subspace networks, and unextractable protocol models. | Academic validation or reproducible code can make Pluralis harder to dismiss as DeAI marketing. | Track arXiv/NeurIPS updates, repo activity, third-party replication, and benchmark comparisons. |
 | Seed-backed expansion of decentralized model ownership | Confirmed | USV post: https://blog.usv.com/pluralis-towards-actually-open-ai-1 | 2026+ | Gives Pluralis capital and investor support to keep developing Agora/model ownership infrastructure. | Could lead to partnerships with compute networks, open-source AI communities, or protocol/token design work. | Watch for partnerships, production inference revenue, model access pricing, and ownership structure announcements. |
