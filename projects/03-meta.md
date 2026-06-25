@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T18:22:47Z
+last_updated: 2026-06-25T03:35:56Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-23T18:22:47Z
 
 ## Latest scan notes
 
+- 2026-06-25 — MetaDAO-affiliated `@0xSrMessi` documented a percolator-meta auction round-end fairness issue: late bids could bypass normal competition because `place_bid` did not properly reject bids after `round_end`; tracked as unverified until maintainers patch/confirm severity. Sources: https://x.com/i/status/2069975700648423759, https://github.com/aeyakovenko/percolator-meta/issues/41
 - 2026-06-23 — Official MetaDAO said FAF-002 is live for FlashTrade: a token compensation package for the founding team timed with the Flash Trade V2 launch, adding another live ownership-coin/proposal-market catalyst to monitor for proposal liquidity and settlement quality. Source: https://x.com/MetaDAOProject/status/2069473857740677421
 - 2026-06-23 — Ownership Report / MetaDAO ecosystem coverage said the LasoFinance curated raise is scheduled for June 30–July 3 with $750k minimum, hidden max cap, $50k monthly team allowance, and disclosed payment/revenue traction; useful futarchy/ownership-coin catalyst even though Laso is a portfolio/ecosystem raise rather than a META tokenomics change. Source: https://x.com/ownershipfm/status/2069382020275249386
 - 2026-06-21 — MetaDAO-affiliated `@0xSrMessi` flagged another percolator-meta issue: POLICY_PRINCIPAL partial insurance withdraws may reduce principal while burning zero shares, leaving a stale-high COIN claim weight in residual-distributor caps. Treat as unverified until a maintainer/GitHub issue or patch confirms severity and affected code. Source: https://x.com/0xSrMessi/status/2068477644086100156
@@ -115,6 +116,7 @@ last_updated: 2026-06-23T18:22:47Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-25 | MetaDAO-affiliated `@0xSrMessi` documented a percolator-meta auction round-end fairness issue where late bids could bypass normal competition because `place_bid` did not properly reject bids after `round_end`; GitHub issue #41 is linked. | https://x.com/i/status/2069975700648423759 and https://github.com/aeyakovenko/percolator-meta/issues/41 | Medium | Unverified | Percolator-style launch/buyback auctions are MetaDAO-adjacent market infrastructure; fairness bugs can undermine ownership-coin launch trust even if this is not a confirmed exploit or principal-drain issue. | Check GitHub issue #41 for maintainer acknowledgement/patch, affected program version, deployment status, and any official MetaDAO/founder comment; downgrade if it remains only design discussion. |
 | 2026-06-21 | MetaDAO-affiliated `@0xSrMessi` flagged another percolator-meta issue: POLICY_PRINCIPAL partial insurance withdraws may reduce principal while burning zero shares, so a depositor could de-risk before claiming while keeping a stale-high COIN claim weight. | https://x.com/0xSrMessi/status/2068477644086100156 | Medium | Unverified | If accurate, claim-weight/accounting bugs in percolator-meta would matter for MetaDAO-adjacent market infrastructure and post-raise trust, but this is not yet an official MetaDAO security disclosure. | Check for a GitHub issue/PR, maintainer acknowledgement from `@toly`/PercolatorTrade, affected program version, patch, or official MetaDAO/founder comment; downgrade if no corroboration appears. |
 | 2026-06-17 | A random X account referenced what it called the “first MetaDAO exploit,” while MetaDAO-affiliated discussion focused on program-authority and DAO-treasury controls after Zinc/percolator concerns. | https://x.com/RaspKimi/status/2067121169480745221 | Low | Unverified | A real exploit/security issue would be material for trust in MetaDAO launches and proposal-market infrastructure, but the current source lacks details. | Look for official MetaDAO/founder acknowledgement, GitHub issue/patch, postmortem, affected contract/program, tx/signature, or credible researcher writeup; mark stale if none appears. |
 | 2026-06-15 | Related MetaDAO account `@0xSrMessi` flagged percolator-meta GitHub issues around permissionless `init`, target-coin squatting with bad parameters, and residual fee defaulting/allowing 0 bps; needs maintainer confirmation. | https://x.com/i/status/2066338574706852142 | Medium | Unverified | If accurate, initialization/fee-parameter issues could affect MetaDAO-adjacent market infrastructure and trusted launch/ownership-coin mechanics. | Check the referenced GitHub issues/maintainer replies from `@toly`/repo maintainers and whether patches or docs clarify intended 0% fee behavior. |

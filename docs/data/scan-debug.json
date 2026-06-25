@@ -1,5 +1,95 @@
 [
   {
+    "run_id": "20260625-033556",
+    "started_at": "2026-06-25T03:35:56Z",
+    "completed_at": "2026-06-25T03:35:56Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-24T23:31:52Z to 2026-06-25T03:35:56Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO",
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 2,
+      "changelog_entries_added": 2,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter related-account scan + GitHub issue",
+        "url": "https://x.com/i/status/2069975700648423759",
+        "summary": "MetaDAO-affiliated 0xSrMessi explained a percolator-meta auction timing/fairness issue and linked GitHub issue #41; described as a fairness issue rather than a principal-drain exploit.",
+        "decision": "logged as unverified watch item; updated dossier Latest/unverified table and changelog pending maintainer patch/severity confirmation"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/DeriveXYZ/status/2069941496384786472",
+        "summary": "Official Derive shared cumulative notional volume progress toward $30B, a usage/throughput milestone for the options/perps venue.",
+        "decision": "logged as official update; updated dossier Latest and changelog"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; labeled project-intake query returned no labeled issues.",
+        "decision": "no project file update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold in this scan window; USD.AI narrative repost, Bankr automated swaps/mints, Ownership Radio clip, and NEAR duplicate roadmap thread were not logged as new durable changes.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For MetaDAO/percolator-meta, check GitHub issue #41 for maintainer acknowledgement, patch/PR, affected program/deployment status, and whether official MetaDAO/founders address launch-auction fairness.",
+      "For Derive, verify cumulative notional/volume against app/API or dashboard data if available and watch whether the $30B milestone coincides with fee/OI or DRV buyback acceleration."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the two new 2026-06-25T03:35:56Z entries: META / MetaDAO high and DRV / Derive Protocol medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260624-233152",
     "started_at": "2026-06-24T23:31:52Z",
     "completed_at": "2026-06-24T23:31:52Z",
