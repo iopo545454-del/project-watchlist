@@ -1,5 +1,117 @@
 [
   {
+    "run_id": "20260625-200828",
+    "started_at": "2026-06-25T20:08:28Z",
+    "completed_at": "2026-06-25T20:08:28Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-25T15:59:14Z to 2026-06-25T20:08:28Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "CHIP / USD.AI",
+      "VVV / Venice AI"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 2,
+      "changelog_entries_added": 2,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2070219678597927125",
+        "summary": "Official USD.AI announced a $34M NexGen Cloud GPU financing facility for 96 B200 servers / 768 GPUs in Sweden, with installed/verified-online collateral, 12% APR, and Wilmington Trust escrow structure.",
+        "decision": "logged as official update/catalyst; updated dossier Latest/catalyst context, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter founder scan",
+        "url": "https://x.com/ErikVoorhees/status/2070188683416715519",
+        "summary": "Founder Erik Voorhees said Venice reached 100B daily tokens, increasing the prior source-proximate usage metric from 85B/day.",
+        "decision": "logged as official/founder usage update; updated dossier Latest/catalyst context, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2070213297052205351",
+        "summary": "Official NEAR repeated Near@3.33 / Confidential Intents Drop 1 qualification mechanics already captured in prior catalyst entries.",
+        "decision": "not logged as duplicate existing catalyst context"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter core-contributor scan",
+        "url": "https://x.com/everythingempty/status/2070230246901649623",
+        "summary": "Core contributor highlighted os.virtuals.io/EconomyOS capabilities; current dossier already tracks EconomyOS private endpoint and OS source.",
+        "decision": "not logged as incremental enough versus existing 2026-06-25 Virtuals entry"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official/bot scan",
+        "url": "https://x.com/bankrbot/status/2070221812886307017",
+        "summary": "Bankr bot said Staking Season 2 and daily inference platform details remain under wraps with no confirmed date; other bot posts were user-requested token launches or Aerodrome info not Bankr fundamentals.",
+        "decision": "not logged until official rules/date/product details appear"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; labeled project-intake query returned no labeled issues.",
+        "decision": "no new intake project update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold; routine replies, broad thesis posts, duplicate NEAR incentive posts, and low-signal commentary were not logged.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For USD.AI, verify NexGen Cloud collateral/escrow attestations, borrower concentration, loan term/drawdown status, repayment performance, and whether the 12% APR supports sUSDai/CHIP economics.",
+      "For Venice, verify 100B daily-token methodology, paid vs free usage, API revenue per token, burn/emission ratio, and whether VVV staking demand tracks usage growth.",
+      "For Bankr, re-check official Staking Season 2 and daily inference platform details once dates/rules are posted."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the two new 2026-06-25T20:08:28Z entries: CHIP / USD.AI high and VVV / Venice AI medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260625-155914",
     "started_at": "2026-06-25T15:59:14Z",
     "completed_at": "2026-06-25T15:59:14Z",
