@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T18:22:47Z
+last_updated: 2026-06-25T15:59:14Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-25 — Official Virtuals said "every frontier model" is now available through one private endpoint on Virtuals, powered by EconomyOS. This extends the recent Agent Commerce / EconomyOS push into private inference distribution; the tradeable question is whether this drives external API usage/fees or is mostly product narrative. Source: https://x.com/i/status/2070130016588038399
 - 2026-06-23 — Official Virtuals paused the weekly $100k Arena copy-trading pot because weekly cadence encouraged short-horizon trading and capital caps limited concentration into the best agents; a reworked performance-to-capital system is coming while the leaderboard stays live. Source: https://x.com/virtuals_io/status/2069453041326338139
 - 2026-06-23 — Official Virtuals said agents can now handle native payments from a single prompt by installing the Virtuals CLI and wiring a wallet, virtual card, and email, extending Agent Commerce Protocol into practical agent-to-agent/user commerce flows. Source: https://x.com/virtuals_io/status/2069423887872643159
 - 2026-06-21 — Official Virtuals weekly roundup highlighted a broader robotics/agent-commerce push: Liquid Machine Labor thesis, Eastworlds open robotics data, Leyten/c0mputeAI distributed GLM-5.2 inference, 14 Peaks humanoid Everest partnership, Caspius iOS robot-data beta, Reppo Orquestra private beta, BunnyOS 3B+ daily tokens with early OS-holder governance, and multiple agent launches/upgrades. Source: https://x.com/virtuals_io/status/2068677179811217707
@@ -54,6 +55,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| EconomyOS private frontier-model endpoint | Confirmed | Official Virtuals says favorite/frontier LLMs are available through one private endpoint powered by EconomyOS: https://x.com/i/status/2070130016588038399 | Live announcement as of 2026-06-25 | Adds a private inference API surface to the Virtuals/EconomyOS stack alongside agent trading, payments, and coordination rails. | Could make EconomyOS more than a launch/agent UX if third-party users route model spend through it; weak adoption would make it just another LLM wrapper. | Watch docs, supported models, pricing, privacy architecture, API key flow, usage metrics, and whether endpoint fees connect to Virtuals protocol/token value. |
 | EconomyOS lets LLMs trade agents, Hyperliquid perps, and HIP-3 markets | Confirmed | Official weekly update: https://x.com/virtuals_io/status/2066171168986644821 | Live / June 2026 | Makes Virtuals rails more usable by external AI workflows and trading interfaces. | Could pull more agent/user flow into Virtuals if LLM interfaces become meaningful crypto front ends. | Track usage metrics, Arena participation, external integrations, and whether this becomes sustained volume rather than launch-week activity. |
 | ERC-8126 AI-agent verification standard | Confirmed | Official weekly update says Virtuals released ERC-8126 with collaborators: https://x.com/virtuals_io/status/2066171168986644821 | Released / June 2026 | Adds a standards layer for proving agent audits, wallet control, and identity without exposing private keys. | Standards adoption could make Virtuals more defensible as infrastructure if wallets/apps integrate it beyond Virtuals-native agents. | Watch EIP/ERC repository progress, wallet/app integrations, and security/audit tooling adoption. |
 | ERC-8183 / Agent Payments Protocol adoption | Confirmed | Official update highlights OKX Wallet co-authorship with Ethereum Foundation and Virtuals: https://x.com/virtuals_io/status/2066171168986644821 | Active / ongoing | Pushes agent commerce/payments from a Virtuals-only feature toward a broader open standard. | If wallets adopt APP/ERC-8183, Virtuals could become a default payments/commerce rail for agents. | Confirm production implementations, transaction counts, partner announcements, and docs/spec changes. |

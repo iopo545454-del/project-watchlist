@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T22:30:11Z
+last_updated: 2026-06-25T15:59:14Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -13,6 +13,7 @@ last_updated: 2026-06-23T22:30:11Z
 - Alpha token: SN64 within Bittensor dTAO economy.
 
 ## Latest scan notes
+- 2026-06-25 — Official Chutes teased that pointing idle consumer/gaming GPU compute at training is part of the Parallax roadmap, framing millions of idle gaming machines as a future distributed-training supply base. This is a roadmap/catalyst signal rather than a live revenue item; verification requires Parallax docs, miner requirements, incentives, and whether training jobs produce paid demand. Source: https://x.com/chutes_ai/status/2070145081185534115
 - 2026-06-22 — Added Chutes to the watchlist because it was missing from the neo-cloud basket despite being the cleanest direct inference-revenue comp. DefiLlama showed revenue of about `$11.1k` 24h, `$78.9k` 7d, `$407.2k` 30d, and `$2.74M` all-time. Source: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue
 - 2026-06-22 — Taostats snapshot put SN64 alpha market cap around `339,135 TAO` / `~$77.8M` and liquidity around `373,975 TAO` / `~$85.8M` using TAO around `$229`; this is subnet alpha/pool context, not normal token FDV. Source: https://taostats.io/subnets/64
 - 2026-06-22 — Investment math: `$77.8M` subnet value versus `$4.95M` annualized 30d revenue is about `15.7x` revenue; 5x revenue growth at 10x sales implies about `$248M` value / `~3.2x`, while 10x growth at 15x implies about `$743M` / `~9.6x`.
@@ -73,6 +74,7 @@ last_updated: 2026-06-23T22:30:11Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Parallax distributed training using idle gaming GPUs | Tentative roadmap | Official Chutes says pointing idle consumer/gaming GPUs at training is part of the Parallax roadmap: https://x.com/chutes_ai/status/2070145081185534115 | Unknown / roadmap | Would expand Chutes beyond managed inference into training workloads that can use consumer GPU supply. | If credible, Chutes could compete for decentralized training mindshare and convert a much larger hardware base into subnet utility; if vague, it remains narrative. | Watch for Parallax docs, testnet/mainnet rollout, miner onboarding requirements, training-job pricing, reward mechanics, and paid customer evidence. |
 | Chutes revenue visibility on DefiLlama | Confirmed / live KPI | DefiLlama Chutes revenue API and Taostats SN64 page: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue and https://taostats.io/subnets/64 | Live daily revenue | Gives a public revenue series for underwriting SN64 against subnet value. | Makes Chutes one of the cleaner Bittensor subnets to value on usage rather than emissions alone. | Watch 30d revenue trend, revenue quality, paid vs subsidized traffic, and SN64 market cap/liquidity. |
 | GLM-5.2 hosted with TEE and published pricing | Confirmed / completed live product | Official Chutes post says GLM-5.2 is live/run-now on Chutes with TEE and published pricing: https://x.com/chutes_ai/status/2067612094178963874 | Completed / live as of June 2026 | Adds a frontier open-source coding/agent model to Chutes’ inference catalog with explicit per-token pricing. | More high-demand open models can increase paid inference revenue and router integrations. | Watch GLM usage, latency, uptime, pricing changes, model removals, and OpenRouter or partner routing volume. |
 | TEE plus GraVal GPU verification | Confirmed / technical moat | Official Chutes post: https://x.com/chutes_ai/status/2047314719707422754 | Live / rolling infrastructure upgrade | Improves trust that miners provide claimed hardware and that prompts/outputs stay private. | Security and verification can justify enterprise or privacy-sensitive inference demand versus cheaper centralized APIs. | Watch audits, Blackwell coverage, slashing/traffic-routing stats, and any TEE or miner-cheating incidents. |

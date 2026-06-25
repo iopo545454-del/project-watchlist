@@ -1,5 +1,113 @@
 [
   {
+    "run_id": "20260625-155914",
+    "started_at": "2026-06-25T15:59:14Z",
+    "completed_at": "2026-06-25T15:59:14Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-25T11:51:54Z to 2026-06-25T15:59:14Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GitlWab / GitLawb / Gitwab",
+      "BANKR / BankrCoin",
+      "VIRTUAL / Virtuals Protocol",
+      "Chutes — Bittensor Subnet 64"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 4,
+      "changelog_entries_added": 4,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/gitlawb/status/2070174891073261795",
+        "summary": "Official GitLawb said advertisers can now use $GITLAWB or USDC to run ads across OpenClaude and GitLawb Playground.",
+        "decision": "logged as catalyst update; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official/founder scan",
+        "url": "https://x.com/bankrbot/status/2070167520523469128",
+        "summary": "Official Bankr launched private inference on the Bankr LLM Gateway with selected TEE models, encrypted prompts in use, 30+ models, and pay-with-any-coin support.",
+        "decision": "logged as official update/catalyst; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/i/status/2070130016588038399",
+        "summary": "Official Virtuals said frontier LLMs are available through one private endpoint powered by EconomyOS.",
+        "decision": "logged as official product update; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/chutes_ai/status/2070145081185534115",
+        "summary": "Official Chutes teased Parallax roadmap work to use idle gaming GPUs for distributed training.",
+        "decision": "logged as tentative catalyst update; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; labeled project-intake query returned no labeled issues.",
+        "decision": "no new intake project update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or onchain item meeting threshold; generic price chatter, broad NEAR narrative reposts, Bio OpenLabs duplicate live-now posts, and low-signal commentary were not logged as new durable changes.",
+        "decision": "no dossier/changelog update"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For GitLawb, verify advertiser dashboard, bid/pricing rules, campaign examples, and whether $GITLAWB spend is burned, retained, or recycled.",
+      "For Bankr, verify LLM Gateway docs/pricing, TEE model list, usage metrics, and whether any gateway fees accrue to BNKR.",
+      "For Virtuals, verify EconomyOS private endpoint docs, supported models, privacy architecture, and fee/value routing.",
+      "For Chutes, check Parallax docs/testnet, miner requirements, training-job pricing, reward mechanics, and paid customer evidence."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the four new 2026-06-25T15:59:14Z entries: GitlWab / GitLawb / Gitwab high, BANKR / BankrCoin high, VIRTUAL / Virtuals Protocol medium, and Chutes — Bittensor Subnet 64 medium; JSON schema/importance validation passed."
+  },
+  {
     "run_id": "20260625-115154",
     "started_at": "2026-06-25T11:51:54Z",
     "completed_at": "2026-06-25T11:51:54Z",

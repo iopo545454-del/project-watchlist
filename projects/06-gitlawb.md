@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-25T11:51:54Z
+last_updated: 2026-06-25T15:59:14Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-06-25T11:51:54Z
 
 ## Latest scan notes
 
+- 2026-06-25 — Official GitLawb announced that advertisers can now use `$GITLAWB` or USDC to run ads across OpenClaude and GitLawb Playground, calling the "GitLawb attention layer" online. This is a stronger token/product-economics signal than the earlier tiny earned-credit screenshot because the official account now says token-denominated ad spend is live; next checks are advertiser dashboard, bid/pricing rules, fill rate, and revenue/credit routing. Source: https://x.com/gitlawb/status/2070174891073261795
 - 2026-06-25 — Founder Kevin amplified an OpenGateway/OpenClaude "earn while you code" flow from a user screenshot: sponsored tips/ads can credit OpenGateway balance spendable on inference, with the shown early example at $0.001 lifetime / 1 tip credited. This is still tiny, but it is concrete evidence that the ads/credits loop is being exposed to users, not just promised. Source: https://x.com/kevincodex/status/2070079928691982808
 - 2026-06-24 — Official GitLawb said the team is reviewing emails for the free GLM 5.2 whitelist and will start granting OpenGateway access soon to users who registered and emailed `freeglm@gitlawb.com`. This is a near-term usage-onboarding signal for OpenGateway/OpenClaude rather than durable tokenomics yet. Source: https://x.com/gitlawb/status/2069907248625983932
 
@@ -88,6 +89,7 @@ last_updated: 2026-06-25T11:51:54Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| `$GITLAWB` / USDC ad spend across OpenClaude and Playground | Confirmed | Official GitLawb says advertisers can now use `$GITLAWB` or USDC to run ads across OpenClaude and GitLawb Playground: https://x.com/gitlawb/status/2070174891073261795 | Live as of 2026-06-25 | Converts the earlier ad-feed/credit concept into an official paid advertising surface and explicitly includes the project token as a spend asset. | If real budgets show up, GitLawb can create a measurable attention/revenue loop around developer inference usage; weak execution would leave it as low-value ad clutter. | Watch advertiser UI, pricing/bid engine, campaign examples, Playground/OpenClaude impressions, earned-credit balances, and whether token spend is burned, retained, or recycled. |
 | Playground ad feeds / bid engine | Confirmed product update, bid engine still tentative | Official X says ads are launching, OpenClaude users can earn credits, fresh Playground UI shipped, and bid engine is still in progress: https://x.com/gitlawb/status/2065789938889883810 | Live/near-term | Adds a revenue layer and user-credit loop around OpenClaude wait time | Could make usage/credits measurable, attract advertisers, and create token or treasury demand if economics are later connected | Watch for ad dashboard, bidding docs, advertiser list, revenue stats, and whether credits connect to token sinks |
 | Resume open-source coding-model research/training | Tentative | Founder Kevin says paused open-source coding model work will resume after Anthropic restrictions: https://x.com/kevincodex/status/2065776569998787055 | Unknown | Would move GitLawb beyond wrapper/UI toward model-side infrastructure | If credible, could improve narrative versus centralized coding agents and create repo/model benchmark catalysts | Watch GitHub/model repo, Hugging Face release, training updates, benchmarks, and compute/funding disclosures |
 | Voting mechanism / merch shop | Tentative | Founder post says he is working on voting mechanism and merch shop: https://x.com/kevincodex/status/2065593231958802857 | Near-term / unknown | Adds community governance/engagement surfaces | Voting could become relevant if tied to nodes, token utility, grants, or product priorities | Watch official docs, token page, onchain proposals, and whether voting is offchain/social or tokenized |
