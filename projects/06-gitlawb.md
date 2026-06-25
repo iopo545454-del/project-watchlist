@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-24T23:31:52Z
+last_updated: 2026-06-25T11:51:54Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-06-24T23:31:52Z
 
 ## Latest scan notes
 
+- 2026-06-25 — Founder Kevin amplified an OpenGateway/OpenClaude "earn while you code" flow from a user screenshot: sponsored tips/ads can credit OpenGateway balance spendable on inference, with the shown early example at $0.001 lifetime / 1 tip credited. This is still tiny, but it is concrete evidence that the ads/credits loop is being exposed to users, not just promised. Source: https://x.com/kevincodex/status/2070079928691982808
 - 2026-06-24 — Official GitLawb said the team is reviewing emails for the free GLM 5.2 whitelist and will start granting OpenGateway access soon to users who registered and emailed `freeglm@gitlawb.com`. This is a near-term usage-onboarding signal for OpenGateway/OpenClaude rather than durable tokenomics yet. Source: https://x.com/gitlawb/status/2069907248625983932
 
 - 2026-06-23 — Official GitLawb X pointed to the public Playground stats page at https://playground.gitlawb.com/stats. This is a useful source to track OpenClaude/Playground usage and should be monitored for whether node/client updates translate into measurable activity. Source: https://x.com/gitlawb/status/2069203538308436193

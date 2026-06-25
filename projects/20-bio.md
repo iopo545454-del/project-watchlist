@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-25T11:51:54Z
 ---
 
 # BIO / Bio Protocol
@@ -51,6 +51,7 @@ last_updated: 2026-06-23T21:46:11Z
 
 ## Latest scan notes
 
+- 2026-06-25 — Official Bio Protocol announced a livestream unveiling OpenLabs, described as a coordination/collaboration layer where humans and agents turn scientific ideas into funded execution, with OpenLabs mechanics and first projects to be covered. This upgrades OpenLabs from prior conference mention to a near-term product reveal/launch surface to monitor for funded projects, BioAgent workflows, and BIO/BioXP linkage. Sources: https://x.com/BioProtocol/status/2070099913724359105 and https://x.com/BioProtocol/status/2070099925766209584
 - 2026-06-19 — Bio Protocol announced OpenLabs at DeSci Berlin as a collaboration/coordination layer where humans and agents turn scientific ideas into funded execution, with community voting, BioAgents, RheumaAI, and PeptAI as examples. Source: https://x.com/BioProtocol/status/2067960165891244134
 - 2026-06-18 — Bio Protocol went live from DeSci Berlin 2026 with talks on DeSci, AI-driven biotech, agentic science, autonomous drug discovery, and RWA tokenisation; Paul Kohlhaas framed it as an up-to-date DeSci/AI efforts stream. Source: https://x.com/BioProtocol/status/2067521860967727283
 
@@ -87,7 +88,7 @@ last_updated: 2026-06-23T21:46:11Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| OpenLabs coordination layer with BioAgents | Confirmed / announced product direction | Official BIO post: https://x.com/BioProtocol/status/2067960165891244134 | Announced at DeSci Berlin, 2026-06-19 | Turns BIO from launchpad/staking into a science coordination layer where communities and agents fund and execute research. | If OpenLabs creates recurring BioDAO launches or IP assets, BIO demand can tie to a broader DeSci workflow rather than isolated sales. | Watch OpenLabs app/docs, funded experiments, agent outputs, governance votes, and conversion into Ignition Sales. |
+| OpenLabs coordination layer with BioAgents | Confirmed / announced product direction; livestream reveal scheduled | Official BIO posts: https://x.com/BioProtocol/status/2067960165891244134 and https://x.com/BioProtocol/status/2070099913724359105 | Announced at DeSci Berlin, 2026-06-19; livestream product reveal 2026-06-25 | Turns BIO from launchpad/staking into a science coordination layer where communities and agents fund and execute research. | If OpenLabs creates recurring BioDAO launches or IP assets, BIO demand can tie to a broader DeSci workflow rather than isolated sales. | Watch the OpenLabs livestream/app/docs, first funded projects, agent outputs, governance votes, BioXP/BIO linkage, and conversion into Ignition Sales. |
 | Ignition Sale allocation upgrade using BioXP only when oversubscribed | Confirmed / live mechanism | Official ecosystem post: https://x.com/BioProtocolEco/status/2056751909143490736 | 2026 launchpad rules | Lowers participation friction by opening sales to USDC users while preserving BioXP priority for scarce allocations. | Could expand launchpad demand while keeping staking/content contribution valuable. | Watch new Ignition Sales, oversubscription rates, BioXP mint/earn rules, and sale settlement transparency. |
 | PeptAI Ignition Sale proof point and post-sale science progress | Confirmed / ecosystem KPI | Official BIO sale post and ecosystem science update: https://x.com/BioProtocol/status/2062162117264802168 and https://x.com/BioProtocolEco/status/2069050048508571652 | Sale completed May 2026; science update June 2026 | Shows demand for BioAI/IP-token launches and tracks candidates moving toward wet-lab validation. | Successful wet-lab follow-through would differentiate BIO from speculative DeSci token launches. | Watch PEPTAI vesting, wet-lab assay results, IP ownership terms, secondary liquidity, and future agent-led sales. |
 | veBIO staking and launch airdrop utility | Confirmed / live token utility | Official BIO post: https://x.com/BioProtocol/status/2050508238550966482 | Live staking / launch-linked | Gives BIO lockers pro-rata launch exposure and BioXP accrual ahead of sales. | Sustained valuable launches could reduce liquid BIO float and make staking reflexive. | Watch veBIO lock growth, unlock cliffs, airdrop value, dilution, and whether rewards justify long locks. |
