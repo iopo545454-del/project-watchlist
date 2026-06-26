@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-25T15:59:14Z
+last_updated: 2026-06-26T04:20:27Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-26 — Official Virtuals announced tokenized stock trading for AI agents, powered by Ondo tokenized equities and executed through Treasures, with US equities available on Ethereum and Solana at launch (jurisdiction restrictions apply). This is a material agent-commerce/RWA integration because it gives Virtuals agents a new real-world asset execution surface beyond native agent/perp markets. Source: https://x.com/virtuals_io/status/2070312149088661505
 - 2026-06-25 — Official Virtuals said "every frontier model" is now available through one private endpoint on Virtuals, powered by EconomyOS. This extends the recent Agent Commerce / EconomyOS push into private inference distribution; the tradeable question is whether this drives external API usage/fees or is mostly product narrative. Source: https://x.com/i/status/2070130016588038399
 - 2026-06-23 — Official Virtuals paused the weekly $100k Arena copy-trading pot because weekly cadence encouraged short-horizon trading and capital caps limited concentration into the best agents; a reworked performance-to-capital system is coming while the leaderboard stays live. Source: https://x.com/virtuals_io/status/2069453041326338139
 - 2026-06-23 — Official Virtuals said agents can now handle native payments from a single prompt by installing the Virtuals CLI and wiring a wallet, virtual card, and email, extending Agent Commerce Protocol into practical agent-to-agent/user commerce flows. Source: https://x.com/virtuals_io/status/2069423887872643159
