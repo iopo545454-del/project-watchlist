@@ -1,5 +1,93 @@
 [
   {
+    "run_id": "20260626-082730",
+    "started_at": "2026-06-26T08:27:30Z",
+    "completed_at": "2026-06-26T08:27:30Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-26T04:20:27Z to 2026-06-26T08:27:30Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently. Also normalized initial_review_done metadata for already-reviewed dossiers that contain Overview, Thesis, Catalysts, and source sections.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 0,
+      "changelog_entries_added": 0,
+      "initial_review_flags_normalized": 11,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis, #2 Ambient, and #3 EigenCloud remain open but are already represented in docs/data/index.json with existing dossiers/pages.",
+        "decision": "no new project created or duplicate dossier added"
+      },
+      {
+        "project": "Tracked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Official/team X searches for the 04:20-08:30 UTC window returned no confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or high-signal weak item meeting the materiality threshold.",
+        "decision": "no dossier or changelog project-information update"
+      },
+      {
+        "project": "Broad weak-signal scan",
+        "source": "X/Twitter broad project keyword scan",
+        "url": "docs/data/index.json",
+        "summary": "Broad monitored-project keyword scan did not surface credible project-specific listing, exploit/outage, funding, partnership, integration, buyback, unlock, governance, mainnet/testnet, or revenue items in the scan window.",
+        "decision": "no unverified watch item added"
+      },
+      {
+        "project": "Initial-review metadata",
+        "source": "Local dossier inspection",
+        "url": "docs/data/index.json",
+        "summary": "Normalized initial_review_done=true for already-reviewed dossiers with Overview/Thesis/Catalysts/source sections: BANKR / BankrCoin, AEON Framework, Kinetiq, GRASS, IOTA — Macrocosmos Bittensor Subnet 9, TAO / Bittensor, CHIP / USD.AI, Worldcoin / WLD / World Network, NEAR Protocol, OCT / Octra, BIO / Bio Protocol.",
+        "decision": "metadata cleanup; no project changelog entry because no new research finding was added"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue monitoring Bankr Staking Season 2, GitLawb ad-spend/token-routing metrics, USD.AI NexGen collateral attestations, Venice 100B-token methodology, and Virtuals tokenized-equities agent usage.",
+      "Only treat @USDAINetwork DAO/points posts as actionable for USD.AI if confirmed by @USDai_Official, official docs, or the usd.ai website."
+    ],
+    "importance_tagging": "No changelog entries were added in this run; independent delegate_task tagger inspected docs/data/project-changelog.json, found all 201 entries already labeled with valid importance values (high 116 / medium 61 / low 24), made no changes, and JSON validation passed."
+  },
+  {
     "run_id": "20260626-042027",
     "started_at": "2026-06-26T04:20:27Z",
     "completed_at": "2026-06-26T04:20:27Z",
