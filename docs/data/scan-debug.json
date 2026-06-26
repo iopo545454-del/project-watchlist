@@ -1,5 +1,102 @@
 [
   {
+    "run_id": "20260626-164213",
+    "started_at": "2026-06-26T16:42:13Z",
+    "completed_at": "2026-06-26T16:42:13Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-26T12:39:44Z to 2026-06-26T16:42:13Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks and broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AKT / Akash",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 2,
+      "changelog_entries_added": 2,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/akashnet/status/2070539636544266464",
+        "summary": "Official Akash said it is rethinking marketplace UX for the shifting GPU market, starting with Resource Reclamation for timed compute; Greg Osuri followed that details are being finalized soon.",
+        "decision": "logged as catalyst update; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2070500258597986371",
+        "summary": "Official NEAR broke out revenue capture into front-end fees, quote improvement, and B2B partner revenue share, linked the live revenue dashboard, and separately said Intents routes across 30+ chains and 180+ assets into Agent Market flows.",
+        "decision": "logged as official update/catalyst; updated dossier Latest/catalysts, generated project page, index timestamp, and changelog"
+      },
+      {
+        "project": "Kinetiq",
+        "source": "X/Twitter related-account scan",
+        "url": "https://x.com/i/status/2070485396564140528",
+        "summary": "Related account VikingoDigital repeated KNTQ Season 2 farming/snapshot/distribution claims; existing dossier already has this as a watched/verified catalyst from prior sources, so no new entry was added.",
+        "decision": "no duplicate changelog update"
+      },
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis, #2 Ambient, and #3 EigenCloud remain open but are already represented in docs/data/index.json with existing dossiers/pages.",
+        "decision": "no new project created or duplicate dossier added"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and broad weak-signal searches",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, onchain, or high-signal weak item meeting the materiality threshold; routine Bankr launch-bot token deployments and already-logged Derive/BIO/Virtuals posts were not logged again.",
+        "decision": "no dossier/changelog update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Akash, verify Resource Reclamation article/spec/docs, billing/refund semantics, provider adoption, console rollout, and whether timed leases increase gross spend.",
+      "For NEAR, query revenue.near.org directly for exact current values, track revenue vs emissions/buybacks, and verify Agent Market transaction examples flowing through Intents."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json and labeled the two new 2026-06-26T16:42:13Z entries: NEAR Protocol high and AKT / Akash medium; JSON validation passed."
+  },
+  {
     "run_id": "20260626-123345",
     "started_at": "2026-06-26T12:33:45Z",
     "completed_at": "2026-06-26T12:39:44Z",
