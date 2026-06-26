@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-25T03:35:56Z
+last_updated: 2026-06-26T12:33:45Z
 ---
 
 # DRV / Derive Protocol
@@ -13,6 +13,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 
 ## Latest scan notes
 
+- 2026-06-26 — Official Derive launched $ZEC options and perps, calling it the first onchain options market for Zcash and a privacy-market expansion beyond the existing BTC/ETH/HYPE focus. This is directly relevant to DRV fee/OI growth if ZEC volatility sustains real options demand. Source: https://x.com/DeriveXYZ/status/2070477289507443121
 - 2026-06-25 — Official Derive posted cumulative notional volume progress toward $30B, a source-proximate throughput milestone to monitor against fees, OI, and weekly DRV buybacks. Source: https://x.com/DeriveXYZ/status/2069941496384786472
 - 2026-06-23 — Official Derive completed Weekly Buyback #72, buying 171,135 DRV at a $0.10 average price; cumulative Derive DAO buybacks reached 25,708,843 DRV, funded by 35% of protocol fees. Source: https://x.com/DeriveXYZ/status/2069546381002621203
 - 2026-06-23 — Official Derive said December 25 HYPE options are live with early open interest in $100 and $150 strikes, extending listed HYPE tenor and giving a small but concrete market-structure/liquidity signal. Source: https://x.com/DeriveXYZ/status/2069423227022238013
@@ -39,6 +40,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | HYPE options market share / Derive as primary HYPE options venue | Confirmed | CEO replies during the 2026-06-15 scan said Derive is the primary on/offchain HYPE options venue and supports stable/HYPE/kHYPE margin plus portfolio margining: https://x.com/nickforster/status/2066662428814049501 and https://x.com/nickforster/status/2066623266534605136 | Live | More listed-underlying demand and HYPE-native collateral can drive OI, fees, and DRV buyback capacity. | If Hyperliquid ecosystem volumes persist, Derive can become a key structured-products venue instead of just an ETH/BTC options app. | Track HYPE options OI/volume, spreads, liquidation incidents, collateral uptake, and whether Derive/Hyperliquid ecosystem partners integrate the product. |
+| ZEC options and perps launch | Confirmed / live | Official Derive announced $ZEC options and perps are live and framed it as the first onchain options market for Zcash: https://x.com/DeriveXYZ/status/2070477289507443121 | Live as of 2026-06-26 | Adds a new privacy-asset underlying and expands Derive beyond BTC/ETH/HYPE flow. | If ZEC volatility and privacy narrative attention persist, Derive can capture incremental options/perps fees and strengthen the DRV buyback input. | Track ZEC OI, volume, spreads, market-maker depth, fee contribution, and whether weekly buybacks/DefiLlama fees reflect the new market. |
 | Protocol-fee buyback program | Confirmed | Official buyback posts; June 2026 update reported 35% of protocol fees allocated to DRV buybacks and cumulative DRV repurchased above 25M: https://x.com/DeriveXYZ/status/2064477916092858845 | Weekly / ongoing | Converts protocol revenue into open-market DRV demand. | Sustained organic fees can make DRV one of the cleaner revenue-linked DeFi tokens; weak volume makes the buyback narrative cosmetic. | Monitor weekly buyback amount, average buy price, cumulative DRV bought, revenue source quality, and whether percentage allocation changes. |
 | 0DTE / short-dated options expansion | Tentative | Maelstrom/Derive thesis context and official docs/product pages: https://www.maelstrom.fund/ and https://docs.derive.xyz/ | Unknown / roadmap-dependent | Could widen retail/speculative options demand and increase fee velocity. | More retail flow may increase liquidity-maker demand, risk controls, and potential venue attention. | Watch official Derive product releases/docs and risk-engine notes; verify actual listed expiries and volumes. |
 | Institutional/RFQ / custody-friendly options rails | Tentative | Official Derive website/docs for options/perps and institutional-style trading UX: https://www.derive.xyz/ and https://docs.derive.xyz/ | Unknown | Could bring larger flow than retail-only options markets. | May require custody, onboarding, API, and liquidity integrations that change revenue mix. | Track official docs, venue integrations, API/RFQ releases, and institutional custody partner announcements. |
