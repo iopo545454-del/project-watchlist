@@ -1,5 +1,107 @@
 [
   {
+    "run_id": "20260626-001914",
+    "started_at": "2026-06-26T00:19:14Z",
+    "completed_at": "2026-06-26T00:19:14Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-25T20:08:28Z to 2026-06-26T00:19:14Z)",
+    "scope": "Checked open GitHub project-intake issues (3 open issues already represented in index); scanned tracked-project official/team X account chunks with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 0,
+      "changelog_entries_added": 0,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Intake",
+        "source": "GitHub issues",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open issue scan found Pluralis, Ambient, and EigenCloud intake issues already represented in docs/data/index.json; labeled project-intake query returned no labeled issues.",
+        "decision": "no new intake project update"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official/team scan",
+        "url": "https://x.com/bankrbot/status/2070291134249931226",
+        "summary": "Bankrbot posted a governance/integration proposal involving prism lp, spectrum mini, Bankr agentic execution, and GitLawb coordination; treated as a substantive idea/proposal rather than confirmed Bankr roadmap or live integration.",
+        "decision": "not logged until confirmed by project roadmap, implementation, partner acceptance, or durable product docs"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot scan",
+        "url": "https://x.com/bankrbot/status/2070295474280759492",
+        "summary": "Bankrbot launched a user-requested CLANK token on Base via the launch flow; useful as platform activity but not a Bankr protocol/token economics update.",
+        "decision": "not logged as durable project information"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official/founder scan",
+        "url": "https://x.com/NEARProtocol/status/2070290438754390031",
+        "summary": "Official NEAR shared a guide to trading perps on near.com and Illia described near_ai Agent Market commercial primitives; no new launch/token/governance details beyond existing NEAR monitoring context.",
+        "decision": "not logged as incremental enough for dossier/changelog"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/eigencloud/status/2070282445698818323",
+        "summary": "EigenCloud congratulated Sentient and reiterated open/user-owned AGI infrastructure framing; no new EigenCloud product, AVS, token, staking, or roadmap details.",
+        "decision": "not logged as material update"
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Other checked accounts produced no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, onchain, or high-signal weak item meeting threshold; routine replies, memes, duplicate context, and broad commentary were not logged.",
+        "decision": "no dossier/changelog update"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, re-check whether the prism/spectrum/GitLawb governance proposal becomes an accepted integration, docs entry, partner announcement, or live product flow.",
+      "For NEAR, watch whether near.com perps and near_ai Agent Market produce formal product docs, incentives, fee capture, or ecosystem integrations beyond guide/social posts.",
+      "Continue monitoring USD.AI NexGen Cloud facility verification, Venice 100B daily-token methodology, and Bankr Staking Season 2 details from the prior scan."
+    ],
+    "importance_tagging": "No changelog entries were added in this run; independent delegate_task tagger still inspected docs/data/project-changelog.json and confirmed existing entries retain valid importance labels."
+  },
+  {
     "run_id": "20260625-200828",
     "started_at": "2026-06-25T20:08:28Z",
     "completed_at": "2026-06-25T20:08:28Z",
