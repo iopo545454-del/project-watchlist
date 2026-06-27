@@ -1,5 +1,85 @@
 [
   {
+    "run_id": "20260627-173901",
+    "started_at": "2026-06-27T17:39:01Z",
+    "completed_at": "2026-06-27T17:39:01Z",
+    "status": "completed",
+    "scan_window": "roughly since prior scan/debug baseline (2026-06-27T13:27:52Z to 2026-06-27T17:39:01Z)",
+    "scope": "Checked open GitHub project-intake issues (labeled query empty; all-open issue query found the same 3 duplicate/intake issues already represented in index); scanned tracked-project official/team X account chunks plus broad weak-signal query with x_search; skipped user-suppressed POD/Dolphin/Pacific Pods silently.",
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_checked": 3,
+      "new_intake_projects": 0,
+      "projects_checked": 25,
+      "logged_projects": 0,
+      "changelog_entries_added": 0,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis, #2 Ambient, and #3 EigenCloud remain open but are already represented in docs/data/index.json with existing dossiers/pages; labeled project-intake query returned no labeled issues.",
+        "decision": "no new project created or duplicate dossier added"
+      },
+      {
+        "project": "Tracked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Official/team account scans for all non-suppressed tracked projects returned no new confirmed launch, governance, security, funding, tokenomics/unlock, buyback, revenue, incentive, integration, docs/blog, or roadmap item meeting the materiality threshold in the narrow window.",
+        "decision": "no dossier/changelog update"
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad project/ticker search",
+        "url": "docs/data/index.json",
+        "summary": "Broad credible weak-signal search across tracked project names/tickers found no listing, incentive, unlock, buyback, security, governance, funding, partnership, launch, or material integration signal worth adding to Unverified Watch Items.",
+        "decision": "no unverified watch item added"
+      },
+      {
+        "project": "Suppressed project",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD / Dolphin POD remained in index but was skipped silently per user suppression.",
+        "decision": "not scanned or logged"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue checking official/team X, docs/blog, governance/forum, GitHub, and dashboards for material launches, token/economic changes, integrations, security events, or credible weak signals.",
+      "Continue checking open project-intake issues; current Pluralis/Ambient/EigenCloud issues are duplicates of tracked projects."
+    ],
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json; no new or modified changelog entries required importance labels this run."
+  },
+  {
     "run_id": "20260627-132752",
     "started_at": "2026-06-27T13:27:52Z",
     "completed_at": "2026-06-27T13:27:52Z",
