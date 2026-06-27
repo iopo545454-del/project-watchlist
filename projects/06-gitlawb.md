@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T09:21:10Z
+last_updated: 2026-06-27T13:27:52Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-06-27T09:21:10Z
 
 ## Latest scan notes
 
+- 2026-06-27 — Founder Kevin said he is working on Memlawb as a free, open-source AI memory tool and linked https://github.com/Gitlawb/memlawb; the public repo describes a self-hostable, end-to-end encrypted / zero-knowledge memory layer for AI agents that works with MCP agents. This extends GitLawb from git/playground/ads into agent-memory infrastructure; next checks are releases, docs, active usage, and whether it plugs into OpenClaude/OpenGateway. Source: https://x.com/kevincodex/status/2070846283880018076
 - 2026-06-27 — Official GitLawb said users can now use the OpenSea agent tool to fund GitLawb Ads, adding another agent-commerce funding path on top of the live `$GITLAWB`/USDC ad surface. This matters if ads become a cross-agent spend sink rather than only a manual advertiser workflow; next checks are whether OpenSea-agent-funded campaigns show budget, impressions, clicks, CPMs, and token/credit routing. Source: https://x.com/gitlawb/status/2070763726878445896
 - 2026-06-26 — Official GitLawb introduced a permissionless ad board for GitLawb Ads, while founder Kevin said ads now work inside Codex and that sponsored Claude Code tips are clickable with impressions/clicks/CPM tracking. This is incremental proof that the ad/credit loop is moving from manual intake toward a measurable marketplace. Sources: https://x.com/gitlawb/status/2070457830776381617, https://x.com/kevincodex/status/2070475069277753400, and https://x.com/kevincodex/status/2070435742262992986
 - 2026-06-25 — Official GitLawb announced that advertisers can now use `$GITLAWB` or USDC to run ads across OpenClaude and GitLawb Playground, calling the "GitLawb attention layer" online. This is a stronger token/product-economics signal than the earlier tiny earned-credit screenshot because the official account now says token-denominated ad spend is live; next checks are advertiser dashboard, bid/pricing rules, fill rate, and revenue/credit routing. Source: https://x.com/gitlawb/status/2070174891073261795
@@ -91,6 +92,7 @@ last_updated: 2026-06-27T09:21:10Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Memlawb open-source AI memory tool | Confirmed repo / in development | Founder Kevin said he is working on “memlawb” as free and open source and linked the public GitHub repo; GitHub repo description says self-hostable, end-to-end encrypted / zero-knowledge memory for AI agents: https://x.com/kevincodex/status/2070846283880018076 and https://github.com/Gitlawb/memlawb | In development as of 2026-06-27 | Expands GitLawb from git/playground/ads into agent memory infrastructure that could plug into MCP/OpenClaude-style workflows. | If it ships and gets used, GitLawb can bundle developer identity, git, inference, ads/credits, and memory into a broader agent-dev stack; if abandoned, it remains repo noise. | Watch repo releases/commits, docs, MCP examples, OpenClaude/OpenGateway integration, user adoption, and security model review. |
 | `$GITLAWB` / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths | Confirmed / live | Official GitLawb says advertisers can use `$GITLAWB` or USDC to run ads across OpenClaude and Playground, introduced a permissionless ad board, founder Kevin said Codex/Claude Code ads now support click/impression/CPM tracking, and official GitLawb said OpenSea agent tooling can fund GitLawb Ads: https://x.com/gitlawb/status/2070174891073261795, https://x.com/gitlawb/status/2070457830776381617, https://x.com/kevincodex/status/2070475069277753400, https://x.com/kevincodex/status/2070435742262992986 and https://x.com/gitlawb/status/2070763726878445896 | Live / rolling out as of 2026-06-27 | Converts the earlier ad-feed/credit concept into a measurable paid advertising surface and expands funding from manual/token spend toward agent-driven campaign funding. | If real budgets show up, GitLawb can create a measurable attention/revenue loop around developer inference usage and agent commerce; weak execution would leave it as low-value ad clutter. | Watch advertiser UI, pricing/bid engine, OpenSea-agent-funded campaign examples, Playground/OpenClaude/Codex impressions, CPM/click data, earned-credit balances, and whether token spend is burned, retained, or recycled. |
 | Playground ad feeds / bid engine | Confirmed product update, bid engine still tentative | Official X says ads are launching, OpenClaude users can earn credits, fresh Playground UI shipped, and bid engine is still in progress: https://x.com/gitlawb/status/2065789938889883810 | Live/near-term | Adds a revenue layer and user-credit loop around OpenClaude wait time | Could make usage/credits measurable, attract advertisers, and create token or treasury demand if economics are later connected | Watch for ad dashboard, bidding docs, advertiser list, revenue stats, and whether credits connect to token sinks |
 | Resume open-source coding-model research/training | Tentative | Founder Kevin says paused open-source coding model work will resume after Anthropic restrictions: https://x.com/kevincodex/status/2065776569998787055 | Unknown | Would move GitLawb beyond wrapper/UI toward model-side infrastructure | If credible, could improve narrative versus centralized coding agents and create repo/model benchmark catalysts | Watch GitHub/model repo, Hugging Face release, training updates, benchmarks, and compute/funding disclosures |
@@ -151,6 +153,7 @@ last_updated: 2026-06-27T09:21:10Z
 | https://x.com/kevincodex/status/2066451502496113086 | Founder update on OpenGateway inference-token earning integrated with OpenClaude and OpenClaw/Hermes plugins coming soon |
 | https://x.com/gitlawb/status/2068839282316603606 | Official node v0.3.9 / OSS migration complete update pointing to the GitLawb node repository |
 | https://github.com/Gitlawb/node | Official/open-source node repository referenced by GitLawb; monitor releases, commits, setup docs, and node/network migration status |
+| https://github.com/Gitlawb/memlawb | Public Memlawb repo linked by founder Kevin; monitor releases, docs, MCP examples, and whether the agent-memory tool becomes part of the GitLawb/OpenClaude stack |
 
 ## Risks
 

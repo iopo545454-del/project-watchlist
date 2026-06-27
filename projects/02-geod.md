@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-27T01:00:07Z
+last_updated: 2026-06-27T13:27:52Z
 ---
 
 # GEOD / GEODNET
@@ -13,6 +13,7 @@ last_updated: 2026-06-27T01:00:07Z
 
 ## Latest scan notes
 
+- 2026-06-27 — Official GEODNET framed precision RTK positioning as the thread connecting ground robots with 100x accuracy improvements, precise drone landings, robotic mowers, AR positioning, and LiDAR-fused HD maps for self-driving vehicles. This is not a new product launch, but it is a useful demand-vertical signal to check against enterprise/API usage, hardware orders, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2070862212470600042
 - 2026-06-27 — GEODNET showed a GEO-PULSE / GEODNET RTK comparison against standard GPS for autonomous-driving use cases and said Gen 2 GEO-PULSE is on sale; useful demand-side hardware signal to verify against orders, app usage, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2070658436824432834
 - 2026-06-26 — GEODNET said TokenRun is live on Android, turning walking/navigation into a reward app around hidden treasure chests; early consumer app distribution is less important than enterprise RTK demand, but it is a new live demand/engagement surface to monitor. Source: https://x.com/GEODNET/status/2070575326074220720
 - 2026-06-19 — GEODNET said GIP-13 StableHex is live with targeted station reward multipliers: 6x in remote/zero-coverage zones (200 spots), 4x weak-coverage zones (1,000 spots), and 2x reinforcement zones (2,000 spots), with uptime requirements for bonus retention. Source: https://x.com/GEODNET/status/2067956173689454667
