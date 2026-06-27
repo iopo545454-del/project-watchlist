@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T01:00:07Z
+last_updated: 2026-06-27T21:49:35Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-27T01:00:07Z
 
 ## Latest scan notes
 
+- 2026-06-27 — Official NEAR again promoted Hyperliquid perpetuals inside near.com: users can fund with any asset and go long/short without leaving a near.com account, framed as one account / one balance UX. This reinforces near.com as a trading front end for NEAR Intents and account abstraction; next checks are perps volume, fees captured, supported collateral, and whether Hyperliquid flow appears in NEAR revenue dashboards. Source: https://x.com/NEARProtocol/status/2070892027034706276
 - 2026-06-26 — Official NEAR said NEAR AI Cloud private/verifiable inference is now integrated across 17 open-source AI projects, including Goose, Eliza, and the Vercel AI SDK; this upgrades NEAR AI Cloud from standalone capability to a developer-distribution catalyst if usage follows. Source: https://x.com/NEARProtocol/status/2070644017323249882
 - 2026-06-26 — Official NEAR broke out NEAR revenue capture into three usage-linked mechanisms: front-end fees (12.5% 30D capture), quote improvement/positive slippage retained by the protocol (11.4%), and B2B partner revenue share (6.6%), and pointed to the live revenue dashboard. This is a useful value-capture decomposition for Intents/near.com, but dashboard data should be checked directly for exact current values. Source: https://x.com/NEARProtocol/status/2070500258597986371 and https://x.com/NEARProtocol/status/2070500261479543099
 - 2026-06-26 — Official NEAR said NEAR Intents now routes value across 30+ chains and 180+ assets, expanding from RWAs/perps into the NEAR Agent Market; this strengthens the agentic-finance settlement rail narrative if volumes and fees continue to show up in the revenue dashboard. Source: https://x.com/NEARProtocol/status/2070528852036600030

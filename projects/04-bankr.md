@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-25T15:59:14Z
+last_updated: 2026-06-27T21:49:35Z
 ---
 
 # BANKR / BankrCoin
@@ -54,6 +54,7 @@ last_updated: 2026-06-25T15:59:14Z
 
 ## Latest scan notes
 
+- 2026-06-27 — Official Bankr bot deployed `$vyroxai` on Base for “vyrox sec” using the new default launch mechanics: 85% sold into the pool and 15% vesting over two years after a 90-day cliff. This is another live example of the post-2026-06-23 Bankr launch allocation model; next checks are whether higher-quality projects use the launch flow and whether launch fees/Club/BNKR capture value. Source: https://x.com/bankrbot/status/2070951127693308301
 - 2026-06-25 — Official Bankr launched private inference on the Bankr LLM Gateway: select models now run inside TEEs, prompts stay encrypted in use, one API key reaches 30+ models, and users can pay with any crypto held in their wallet. This upgrades Bankr from generic x402/agent payments into privacy-sensitive inference distribution; BNKR value capture and actual gateway volume still need verification. Sources: https://x.com/bankrbot/status/2070167520523469128 and https://x.com/0xDeployer/status/2070167867459596591
 
 - 2026-06-24 — MiroShark launched MiroShark Sim with native Base x402 payments and explicitly said simulations can be run directly from Bankr; minutes later official `@bankrbot` launched a paid $1 USDC simulation run (`run_1e7057a2faa8`) on the future of the agentic economy using the x402 standard. This is another concrete external x402/agent-service integration for Bankr, but BNKR fee/value capture and repeat endpoint volume still need verification. Sources: https://x.com/miroshark_/status/2069788925988569358 and https://x.com/bankrbot/status/2069800133278261373

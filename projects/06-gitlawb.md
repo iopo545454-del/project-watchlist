@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T13:27:52Z
+last_updated: 2026-06-27T21:49:35Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-06-27T13:27:52Z
 
 ## Latest scan notes
 
+- 2026-06-27 — Official GitLawb posted https://ads.gitlawb.com directly from the project account, making the GitLawb Ads surface easier to verify after the prior `$GITLAWB`/USDC ad-spend and OpenSea-agent funding posts. This upgrades the ads catalyst from scattered tweet evidence toward a live product property; next checks are dashboard access, campaign creation, budgets, impressions/clicks/CPMs, and token/credit routing. Source: https://x.com/gitlawb/status/2070902111609782731
 - 2026-06-27 — Founder Kevin said he is working on Memlawb as a free, open-source AI memory tool and linked https://github.com/Gitlawb/memlawb; the public repo describes a self-hostable, end-to-end encrypted / zero-knowledge memory layer for AI agents that works with MCP agents. This extends GitLawb from git/playground/ads into agent-memory infrastructure; next checks are releases, docs, active usage, and whether it plugs into OpenClaude/OpenGateway. Source: https://x.com/kevincodex/status/2070846283880018076
 - 2026-06-27 — Official GitLawb said users can now use the OpenSea agent tool to fund GitLawb Ads, adding another agent-commerce funding path on top of the live `$GITLAWB`/USDC ad surface. This matters if ads become a cross-agent spend sink rather than only a manual advertiser workflow; next checks are whether OpenSea-agent-funded campaigns show budget, impressions, clicks, CPMs, and token/credit routing. Source: https://x.com/gitlawb/status/2070763726878445896
 - 2026-06-26 — Official GitLawb introduced a permissionless ad board for GitLawb Ads, while founder Kevin said ads now work inside Codex and that sponsored Claude Code tips are clickable with impressions/clicks/CPM tracking. This is incremental proof that the ad/credit loop is moving from manual intake toward a measurable marketplace. Sources: https://x.com/gitlawb/status/2070457830776381617, https://x.com/kevincodex/status/2070475069277753400, and https://x.com/kevincodex/status/2070435742262992986
@@ -147,6 +148,7 @@ last_updated: 2026-06-27T13:27:52Z
 | https://x.com/gitlawb_intern | Related/intern/community account; lower-authority signal |
 | https://gitlawb.com | Official website; project positioning and app entry point |
 | https://gitlawb.com/token | Official token page to verify contract/tokenomics before recording durable token facts |
+| https://ads.gitlawb.com | Official GitLawb Ads product surface posted by the project account; monitor campaign creation, budgets, impressions/clicks/CPM, and token/credit routing |
 | https://t.me/gitlawbofficial | Reported official Telegram; verify from official site/X because the project has warned about fake groups |
 | https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
 | https://x.com/kevincodex/status/2065776569998787055 | Founder note on resuming open-source coding-model research/training |

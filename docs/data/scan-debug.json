@@ -1,5 +1,117 @@
 [
   {
+    "run_id": "scan-20260627T214935Z",
+    "started_at": "2026-06-27T21:49:35Z",
+    "completed_at": "2026-06-27T21:49:35Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-27T13:27:52Z",
+      "until": "2026-06-27T21:49:35Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GitlWab / GitLawb / Gitwab",
+      "NEAR Protocol",
+      "EIGEN / EigenCloud",
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 4,
+      "changelog_entries_added": 4,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/gitlawb/status/2070902111609782731",
+        "summary": "Official account posted ads.gitlawb.com.",
+        "decision": "Logged as official update/latest because it makes the ads product surface directly verifiable."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2070892027034706276",
+        "summary": "Official NEAR promoted Hyperliquid perps inside near.com with one account/one balance UX.",
+        "decision": "Logged as official update/latest because it reinforces Intents/account-abstraction trading UX."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official/team account",
+        "url": "https://x.com/eigenlabs/status/2070938161774244169",
+        "summary": "Eigen Labs framed PostAGI coordination/verifiable agent infrastructure strategy.",
+        "decision": "Logged as official update/latest; strategic direction, not fee proof."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2070951127693308301",
+        "summary": "Bankr bot deployed $vyroxai using updated 85% LP / 15% vested-recipient mechanics.",
+        "decision": "Logged as scan/latest because it is another live example of the changed launch model."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2070862212470600042",
+        "summary": "Official use-case/product-positioning post for precision positioning.",
+        "decision": "Not logged; useful marketing context but no discrete launch/integration/token change."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/gregosuri/status/2070955763401638024",
+        "summary": "Founder said new homenodes are coming online and should be cheaper.",
+        "decision": "Not logged this run; weak founder signal requiring official product/docs confirmation."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify GitLawb Ads dashboard/campaign metrics and token/credit routing.",
+      "Check near.com/NEAR revenue dashboard for Hyperliquid perps fee capture.",
+      "Watch EigenCloud AgentKit/EigenCompute concrete releases and EIGEN fee/buyback implementation.",
+      "Verify whether Bankr launches create recurring fee/BNKR value capture."
+    ],
+    "notes": "Changelog importance labeling delegated to independent tagger after scanner edits."
+  },
+  {
     "run_id": "20260627-173901",
     "started_at": "2026-06-27T17:39:01Z",
     "completed_at": "2026-06-27T17:39:01Z",
