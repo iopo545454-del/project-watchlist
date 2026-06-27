@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-25T03:35:56Z
+last_updated: 2026-06-27T05:16:10Z
 ---
 
 # META / MetaDAO
@@ -29,6 +29,7 @@ last_updated: 2026-06-25T03:35:56Z
 
 ## Latest scan notes
 
+- 2026-06-27 — MetaDAO co-founder Proph3t said an unnamed agentic-commerce / agentic-spending company from exited founder `@huntermmonk` is raising on MetaDAO at a $3M valuation and was already oversubscribed; useful live demand signal for MetaDAO as a curated internet-capital-formation venue, but project name/terms still need official/app verification. Sources: https://x.com/metaproph3t/status/2070660454670819687, https://x.com/metaproph3t/status/2070661129257550087
 - 2026-06-25 — MetaDAO-affiliated `@0xSrMessi` documented a percolator-meta auction round-end fairness issue: late bids could bypass normal competition because `place_bid` did not properly reject bids after `round_end`; tracked as unverified until maintainers patch/confirm severity. Sources: https://x.com/i/status/2069975700648423759, https://github.com/aeyakovenko/percolator-meta/issues/41
 - 2026-06-23 — Official MetaDAO said FAF-002 is live for FlashTrade: a token compensation package for the founding team timed with the Flash Trade V2 launch, adding another live ownership-coin/proposal-market catalyst to monitor for proposal liquidity and settlement quality. Source: https://x.com/MetaDAOProject/status/2069473857740677421
 - 2026-06-23 — Ownership Report / MetaDAO ecosystem coverage said the LasoFinance curated raise is scheduled for June 30–July 3 with $750k minimum, hidden max cap, $50k monthly team allowance, and disclosed payment/revenue traction; useful futarchy/ownership-coin catalyst even though Laso is a portfolio/ecosystem raise rather than a META tokenomics change. Source: https://x.com/ownershipfm/status/2069382020275249386
@@ -62,6 +63,7 @@ last_updated: 2026-06-25T03:35:56Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Agentic-commerce founder raise on MetaDAO | Confirmed / live raise signal | Proph3t said an unnamed `@huntermmonk` agentic-spending company is raising on MetaDAO at a $3M valuation and was already oversubscribed: https://x.com/metaproph3t/status/2070660454670819687; https://x.com/metaproph3t/status/2070661129257550087 | June 27, 2026 / live-or-imminent | Adds a fresh, founder-quality raise to the MetaDAO ownership-coin/capital-formation pipeline. | If execution/settlement is clean, it strengthens MetaDAO as a venue for small high-demand founder raises and can pull more Solana/internet-capital-markets attention into META. | Verify the project name, app listing, raise mechanics, final amount, participant quality, post-raise liquidity, and whether any fees/value accrue to META. |
 | 2026-06-16 | Related-account discussion of the Zinc dispute/pivot and a possible rule requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO | https://x.com/i/status/2066930615895671047 | Medium | Unverified | Would affect launch-market governance, founder alignment, and whether MetaDAO can prevent project pivots/rugs after raises | Re-check official MetaDAO/Futardio accounts, proposal text, Zinc founder response, and any program-authority policy before treating as confirmed |
 | More ownership-coin launches on MetaDAO | Confirmed / ongoing | Official app and project posts around ownership coins; https://x.com/MetaDAOProject | Ongoing | More raises/proposals increase product usage and make META more visible as the platform asset. | Successful launches could create a Solana ICM flywheel with founders, tokenholders, and Colosseum-style distribution. | Watch app activity, launch quality, proposal volume, fee/revenue disclosure, and follow-on financing. |
 | META-039 / Ownership Capital activist-fund experiment | Tentative | https://x.com/MetaDAOProject/status/2065553991639941405 | Unknown / proposal-dependent | Adds a capital allocator/fund layer native to MetaDAO instead of only launch/governance tooling. | If it works, MetaDAO can influence external projects and recycle ecosystem upside; if not, it may create governance complexity. | Track proposal status, committed capital, investment mandate, and whether outcomes are reported transparently. |
@@ -89,6 +91,7 @@ last_updated: 2026-06-25T03:35:56Z
 | METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta | Reported Solana token mint; verify against official docs/app and explorer pages |
 | https://x.com/MetaDAOProject/status/2054911529783382433 | July 2026 Owners Meeting catalyst source |
 | https://x.com/MetaDAOProject/status/2065553991639941405 | META-039 / Ownership Capital catalyst source |
+| https://x.com/metaproph3t/status/2070660454670819687 | Co-founder signal on a live/near-live agentic-commerce raise at a $3M valuation; track for app listing and final outcome |
 
 ## Risks
 
