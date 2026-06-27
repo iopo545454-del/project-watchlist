@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-27T01:00:07Z
 ---
 
 # GEOD / GEODNET
@@ -13,6 +13,8 @@ last_updated: 2026-06-23T21:46:11Z
 
 ## Latest scan notes
 
+- 2026-06-27 — GEODNET showed a GEO-PULSE / GEODNET RTK comparison against standard GPS for autonomous-driving use cases and said Gen 2 GEO-PULSE is on sale; useful demand-side hardware signal to verify against orders, app usage, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2070658436824432834
+- 2026-06-26 — GEODNET said TokenRun is live on Android, turning walking/navigation into a reward app around hidden treasure chests; early consumer app distribution is less important than enterprise RTK demand, but it is a new live demand/engagement surface to monitor. Source: https://x.com/GEODNET/status/2070575326074220720
 - 2026-06-19 — GEODNET said GIP-13 StableHex is live with targeted station reward multipliers: 6x in remote/zero-coverage zones (200 spots), 4x weak-coverage zones (1,000 spots), and 2x reinforcement zones (2,000 spots), with uptime requirements for bonus retention. Source: https://x.com/GEODNET/status/2067956173689454667
 - 2026-06-17 — GEODNET official X amplified tokenomics diligence around real operators, enterprise revenue, and drone/tractor/robot use cases after Coinbase Markets added GEOD to its listing roadmap; roadmap status is not a guaranteed listing. Source: https://x.com/GEODNET/status/2067245884526514313
 
@@ -74,6 +76,7 @@ last_updated: 2026-06-23T21:46:11Z
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | GIP-13 StableHex targeted reward multipliers | Confirmed | Official GEODNET post says StableHex is live with 6x/4x/2x reward zones, limited spots, and uptime requirements: https://x.com/GEODNET/status/2067956173689454667 | Live as of 2026-06-19 | Directly steers station growth into weak/zero-coverage commercial zones. | Better coverage can improve enterprise/API value and future burn/revenue quality. | Watch claimed hex fills, uptime retention, active-station growth, and coverage expansion in priority geos. |
+| TokenRun Android app live | Confirmed / product live | Official GEODNET post says TokenRun is live on Android for walking-based treasure-chest rewards: https://x.com/GEODNET/status/2070575326074220720 | Live as of 2026-06-26 | Adds a consumer engagement/reward surface on top of the GEODNET positioning stack. | If real users adopt it, TokenRun could provide extra app-level demand/attention; if not, it remains mostly marketing compared with enterprise RTK. | Watch Google Play traction, retention, reward economics, fraud controls, and whether any usage/revenue flows back to GEOD demand/burns. |
 | GEO-PULSE hardware commercialization | Confirmed / product-sales catalyst | Official post describes GEO-PULSE as ~$149 centimeter-level RTK for Android via Bluetooth, with restock/availability messaging: https://x.com/GEODNET/status/2065909299776209110 | Recent restock / ongoing sales | Adds hardware revenue and consumer/fleet usage beyond miner emissions. | Hardware users can become demand-side consumers of GEODNET corrections, strengthening non-speculative revenue. | Watch order volumes, reviews, app usage, returns/support issues, and whether revenue/burn dashboards reflect sales. |
 | GEO-SWARM drone-in-a-box with HyfixAI | Confirmed / partner launch catalyst | Official post says GEO-SWARM is a HyfixAI-partnered autonomous home-security drone using GEODNET RTK and launching on Kickstarter: https://x.com/GEODNET/status/2065600132851097808 | Kickstarter / launch phase | Validates GEODNET as positioning infrastructure for robotics/physical AI. | Successful campaign could create partner proof for more robot/drone integrations. | Watch Kickstarter traction, delivery schedule, RTK dependency, partner follow-through, and post-launch customer usage. |
 | Revenue / burn transparency surface | Confirmed / KPI catalyst | Official GEOD token page highlights real-world data-service revenue sources, token-burning mechanisms, limited circulating supply, and Dune/dashboard links: https://geodnet.com/geod | Live dashboard surface; ongoing metric updates | Burn/revenue metrics can tie enterprise usage to token economics. | Sustained burns can offset miner emissions and support a fundamentals-based DePIN thesis. | Watch monthly revenue, GEOD burned, burn/revenue mix, miner rewards, and dashboard methodology changes. |
