@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T21:49:35Z
+last_updated: 2026-06-28T06:11:58Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-27T21:49:35Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-28 — Official Bankr bot surfaced multiple live Hunch prediction markets around `$SURPLUS` market cap and payment/transaction milestones, with resolution tied to DexScreener and Dune Analytics. This is another Bankr/Hunch agent-market usage signal, but BNKR value capture remains unverified. Source: https://x.com/bankrbot/status/2071113104705098190
 
 - 2026-06-27 — Official Bankr bot deployed `$vyroxai` on Base for “vyrox sec” using the new default launch mechanics: 85% sold into the pool and 15% vesting over two years after a 90-day cliff. This is another live example of the post-2026-06-23 Bankr launch allocation model; next checks are whether higher-quality projects use the launch flow and whether launch fees/Club/BNKR capture value. Source: https://x.com/bankrbot/status/2070951127693308301
 - 2026-06-25 — Official Bankr launched private inference on the Bankr LLM Gateway: select models now run inside TEEs, prompts stay encrypted in use, one API key reaches 30+ models, and users can pay with any crypto held in their wallet. This upgrades Bankr from generic x402/agent payments into privacy-sensitive inference distribution; BNKR value capture and actual gateway volume still need verification. Sources: https://x.com/bankrbot/status/2070167520523469128 and https://x.com/0xDeployer/status/2070167867459596591

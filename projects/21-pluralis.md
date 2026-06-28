@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-25T07:44:44Z
+last_updated: 2026-06-28T06:11:58Z
 ---
 
 # Pluralis
@@ -16,6 +16,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 - **Positioning:** a credible DeAI research bet: if contributor-owned training can converge near centralized baselines and preserve model economics, it becomes a serious alternative to closed AI and simple open-weight releases.
 
 ## Latest scan notes
+
+- 2026-06-28 — Pluralis founder Alexander Long posted a detailed decentralized-training thesis tying Pluralis-adjacent work such as DiLoCo variants, Subspace Networks, Agora, and SENTINEL verification into a broader response to closed-lab model centralization. It is not token news, but it strengthens the technical/research catalyst around protocol-owned decentralized model training. Source: https://x.com/AlexanderLong/status/2070970697300775125
 
 - 2026-06-25 — Official Pluralis announced an ICML Protocol Learning workshop in Seoul on July 10, 2026, with talks/posters on decentralized collaborative learning, asynchronous pipeline parallelism, communication-efficient model-parallel training, and no ICML badge requirement for the workshop. This is a credible research/community catalyst for Pluralis' decentralized-training thesis rather than a token/economics update. Sources: https://x.com/Pluralis/status/2070042407278694795 and https://pluralis.ai/events/icml-protocol-learning-workshop/
 - 2026-06-17 — Jake Brukhman posted a stronger Pluralis-adjacent investor thesis after a decentralized AI training catchup: crypto capital formation can fund commercially viable decentralized models because the bottleneck is now commodity-device capital, not high-end GPUs. Source: https://x.com/jbrukh/status/2067358047899427276

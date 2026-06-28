@@ -1,5 +1,111 @@
 [
   {
+    "run_id": "scan-20260628T061158Z",
+    "started_at": "2026-06-28T06:11:58Z",
+    "completed_at": "2026-06-28T06:11:58Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-27T21:49:35Z",
+      "until": "2026-06-28T06:11:58Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol",
+      "Pluralis",
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis, #2 Ambient, and #3 EigenCloud remain open but are already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2071036065671270807",
+        "summary": "Derive highlighted improved HYPE options order-book liquidity and HYPE OI leadership versus SOL since April.",
+        "decision": "Logged as catalyst update because options liquidity/OI is directly tied to DRV fees and buyback capacity."
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/AlexanderLong/status/2070970697300775125",
+        "summary": "Founder tied DiLoCo variants, Subspace Networks/Agora, and SENTINEL verification into a strategic decentralized-training thesis.",
+        "decision": "Logged as catalyst update; no token/economics claim added."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2071113104705098190",
+        "summary": "Bankr bot surfaced Hunch prediction markets for SURPLUS milestones using DexScreener/Dune resolution data.",
+        "decision": "Logged as source-proximate scan note; BNKR value capture left unverified."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Other official/team account searches found no non-duplicate material token, governance, security, funding, or listing updates in the window; NEAR/Eigen items found were already logged in the prior changelog.",
+        "decision": "No duplicate changelog entries added."
+      }
+    ],
+    "errors": [
+      "One delegated X-search worker timed out and one hit a broken-pipe summary after successful x_search calls; scanner reran targeted x_search queries directly for affected account chunks."
+    ],
+    "next_checks": [
+      "Cross-check Derive HYPE OI/liquidity against app/DefiLlama/official data and weekly DRV buybacks.",
+      "For Pluralis, watch official run metrics, workshop outputs, and any concrete contributor ownership/economics update.",
+      "For Bankr, verify whether Hunch/SURPLUS activity creates repeat Bankr fees or BNKR/Club value capture.",
+      "Deduplicate open intake issues until they are closed or receive materially new source context."
+    ],
+    "notes": "Independent changelog importance tagger completed: DRV high, Pluralis medium, BANKR medium."
+  },
+  {
     "run_id": "scan-20260628T015428Z",
     "started_at": "2026-06-28T01:54:28Z",
     "completed_at": "2026-06-28T01:54:28Z",
