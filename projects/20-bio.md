@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-26T12:33:45Z
+last_updated: 2026-06-28T10:18:46Z
 ---
 
 # BIO / Bio Protocol
@@ -51,6 +51,7 @@ last_updated: 2026-06-26T12:33:45Z
 
 ## Latest scan notes
 
+- 2026-06-28 — Official Bio Protocol framed the OpenLabs/BioAgent direction as closing the loop where anyone with an idea and an API can run a wet-lab experiment. This is not a new token/economics announcement, but it reinforces the project direction to watch: whether OpenLabs turns agent/science workflows into funded experiments, IP assets, Ignition Sales, or veBIO/BioXP demand. Source: https://x.com/BioProtocol/status/2071172604338303380
 - 2026-06-26 — Bio Protocol ecosystem account said retroactive staking rewards are live: veBIO stakers can claim token distributions from five launched projects (FOXO3, Holi, GALE, RELIEVA and AUBRAI). This makes the veBIO launch-airdrop utility more concrete and should be checked against claim values, lock growth, and future Ignition Sale demand. Source: https://x.com/BioProtocolEco/status/2070434625256656985
 - 2026-06-25 — Official Bio Protocol announced a livestream unveiling OpenLabs, described as a coordination/collaboration layer where humans and agents turn scientific ideas into funded execution, with OpenLabs mechanics and first projects to be covered. This upgrades OpenLabs from prior conference mention to a near-term product reveal/launch surface to monitor for funded projects, BioAgent workflows, and BIO/BioXP linkage. Sources: https://x.com/BioProtocol/status/2070099913724359105 and https://x.com/BioProtocol/status/2070099925766209584
 - 2026-06-19 — Bio Protocol announced OpenLabs at DeSci Berlin as a collaboration/coordination layer where humans and agents turn scientific ideas into funded execution, with community voting, BioAgents, RheumaAI, and PeptAI as examples. Source: https://x.com/BioProtocol/status/2067960165891244134
