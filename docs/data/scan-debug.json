@@ -1,5 +1,111 @@
 [
   {
+    "run_id": "scan-20260628T015428Z",
+    "started_at": "2026-06-28T01:54:28Z",
+    "completed_at": "2026-06-28T01:54:28Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-27T21:49:35Z",
+      "until": "2026-06-28T01:54:28Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Open intake issues #1 Pluralis, #2 Ambient, and #3 EigenCloud remain open but are already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Scanned tracked official/team account chunks since the prior changelog timestamp; no qualifying original posts from most project accounts in the window.",
+        "decision": "No changelog entry because no official/product/token/governance/security/funding update met materiality."
+      },
+      {
+        "project": "Kinetiq",
+        "source": "X/Twitter team account",
+        "url": "https://x.com/0xOmnia/status/2071005179252457878",
+        "summary": "0xOmnia posted a short HIP-5/HIP-3 opinion without a concrete Kinetiq product, token, governance, or roadmap update.",
+        "decision": "Not logged; too terse/unsourced for durable project context."
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter contributor account",
+        "url": "https://x.com/jbrukh/status/2071006129434304692",
+        "summary": "Jake Brukhman asked who will pay for open-source AI training, alongside several general AI/culture posts.",
+        "decision": "Not logged; thematically relevant to decentralized/open AI but not a Pluralis-specific update."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter weak-signal query",
+        "url": "https://x.com/TheSeyiOfficial/status/2071042760308650173",
+        "summary": "Community posts discussed Moonshot voting/listing chatter and Season 2 airdrop size/snapshot expectations, but official GRASS/grassfdn/0xdrej searches found no matching confirmation in the window.",
+        "decision": "Not logged; low-signal community chatter without official confirmation."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2071041417494086138",
+        "summary": "Bankr bot posted a routine small ETH mainnet transaction confirmation; another post was unrelated sneaker-launch content.",
+        "decision": "Not logged; routine bot output/unrelated content."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check official GRASS/grassfdn/0xdrej accounts for any confirmed Season 2 airdrop, unlock, or listing updates before logging community claims.",
+      "Continue watching official/team accounts for concrete launches, integrations, incentives, token events, governance, or security incidents.",
+      "Deduplicate open intake issues until they are closed or receive materially new source context."
+    ],
+    "notes": "No changelog entries were added; independent changelog importance tagger still requested to inspect/confirm no unlabeled entries."
+  },
+  {
     "run_id": "scan-20260627T214935Z",
     "started_at": "2026-06-27T21:49:35Z",
     "completed_at": "2026-06-27T21:49:35Z",
