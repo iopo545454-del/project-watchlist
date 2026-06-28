@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-26T04:20:27Z
+last_updated: 2026-06-28T14:24:01Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -17,6 +17,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 ## Latest scan notes
 
+- 2026-06-28 — Official Virtuals weekly ecosystem/robotics update said 50,000+ Virtuals agents can trade 430+ Ondo tokenized equities via Treasures, EconomyOS opened private inference across frontier models, BitRobot released the 10+ TB HIW-500 humanoid teleop dataset, and RootAI launched with free inference, Base MCP, x402 and natural-language Hyperliquid trading. This materially extends the agent-commerce/robotics thesis, but the next check is actual usage/fees flowing through Virtuals rails. Source: https://x.com/virtuals_io/status/2071231771220578528
 - 2026-06-26 — Official Virtuals announced tokenized stock trading for AI agents, powered by Ondo tokenized equities and executed through Treasures, with US equities available on Ethereum and Solana at launch (jurisdiction restrictions apply). This is a material agent-commerce/RWA integration because it gives Virtuals agents a new real-world asset execution surface beyond native agent/perp markets. Source: https://x.com/virtuals_io/status/2070312149088661505
 - 2026-06-25 — Official Virtuals said "every frontier model" is now available through one private endpoint on Virtuals, powered by EconomyOS. This extends the recent Agent Commerce / EconomyOS push into private inference distribution; the tradeable question is whether this drives external API usage/fees or is mostly product narrative. Source: https://x.com/i/status/2070130016588038399
 - 2026-06-23 — Official Virtuals paused the weekly $100k Arena copy-trading pot because weekly cadence encouraged short-horizon trading and capital caps limited concentration into the best agents; a reworked performance-to-capital system is coming while the leaderboard stays live. Source: https://x.com/virtuals_io/status/2069453041326338139

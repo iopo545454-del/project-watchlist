@@ -1,13 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-24T02:39:39Z
+last_updated: 2026-06-28T14:24:01Z
 ---
 
 # TAO / Bittensor
 
 ## Latest scan notes
 
+- 2026-06-28 — Official OpenTensor weekly ecosystem highlights covered Katana agentic IDE (SN66), SCORE Satori 1.0 vision-language model work, BitSec audit performance, Lium's revenue-funded 2,500 TAO buyback/burn, Quasar's 10T-token incentive mechanism, MinosVM 2.0 on Targon, Ditto mobile app, Chutes provider integrations, and other subnet infrastructure updates. This is a useful subnet-quality/emission-allocation scan note rather than a single TAO protocol parameter change. Source: https://x.com/opentensor/status/2071227748744335416
 - 2026-06-24 — Core contributor Jacob Steeves / `@const_reborn` said the chain upgraded to Subtensor v3.4.6-421 and replaced the prior subnet-emission formula with `root_prop × price × (1 − miner_burn)`, creating a hard gate against inactive/no-mining subnets. Follow-on TAOFlows/IntoTAO monitoring reported roughly 57 subnets losing emissions and rewards concentrating into active subnets such as Chutes, Lium and Targon. Source: https://x.com/i/status/2069229442522599847; follow-up: https://x.com/TAOFlows/status/2069536761307627534
 - 2026-06-21 — OpenTensor weekly ecosystem recap highlighted new subnet launches (Ralph Labs SN40 and CookingTAO SN122), Chutes moving fully to TEE with Blackwell B200/openGPU support, Score factory vision deployment, Minos genomics acceleration, TAO bridge to Solana, Taoswap redesign, NameTensor migration, and subnet product/buyback milestones. Source: https://x.com/opentensor/status/2068691849271779444
 
