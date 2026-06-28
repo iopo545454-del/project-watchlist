@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-28T18:32:33Z
+last_updated: 2026-06-28T22:45:24Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-28T18:32:33Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-28 — Official Bankr bot deployed `BunnyOS v1.0` on Base with contract `0xdC13c67367641331284F9BF5AA4d2Ba3c18a9ba3`. Treat this as another live Bankr launch/deployment proof point rather than a BNKR-tokenomics update; next checks are launch page metadata, whether BunnyOS develops real usage, and whether deployment/launch flow fees route to Bankr/BNKR. Source: https://x.com/bankrbot/status/2071346630641791076
 
 - 2026-06-28 — Official Bankr bot posted a 0xComputer Command Center update: the app is framed as the primary interface for the agentic economy, with Base inventory sync, agentic inventory tracking, heartbeat/status monitoring, and next steps for Botchan registration, cron automation/rebalancing, and Glidepath token management. This is useful product-surface evidence for Bankr as an agent-ops layer; BNKR value capture remains unverified. Source: https://x.com/bankrbot/status/2071280510161318281
 

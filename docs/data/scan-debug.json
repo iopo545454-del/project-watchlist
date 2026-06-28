@@ -1,5 +1,100 @@
 [
   {
+    "run_id": "scan-20260628T224524Z",
+    "started_at": "2026-06-28T22:45:24Z",
+    "completed_at": "2026-06-28T22:45:24Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-28T18:32:33Z",
+      "until": "2026-06-28T22:45:24Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol",
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2071332966660186499",
+        "summary": "Official NEAR promoted confidential swaps on near.com as hiding amount, route, wallet addresses and token pair while settling across 35+ chains in seconds.",
+        "decision": "Logged as official product-surface update for Confidential Intents / chain-abstraction funnel; dashboard metrics still need direct verification."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2071346630641791076",
+        "summary": "Official Bankr bot deployed BunnyOS v1.0 on Base with a contract address and Basescan transaction context.",
+        "decision": "Logged as a source-proximate Bankr launch/deployment proof point, not as a BNKR tokenomics update."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other tracked official/team accounts produced no non-duplicate qualifying launch, token, governance, security, funding, listing, integration, or roadmap update in the window; short replies/forum clips/price-rank chatter were not logged.",
+        "decision": "No additional changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, verify confidential swap TVL, route count, fees and revenue dashboard movement instead of relying on X copy.",
+      "For Bankr, check the launch page/Basescan metadata for BunnyOS and whether Bankr deployment/launch fees route to Bankr/BNKR.",
+      "Continue to skip POD / Dolphin POD unless the user explicitly re-enables it."
+    ],
+    "notes": "Independent changelog importance tagger completed: NEAR confidential-swap update high, BANKR BunnyOS deployment medium."
+  },
+  {
     "run_id": "scan-20260628T183233Z",
     "started_at": "2026-06-28T18:32:33Z",
     "completed_at": "2026-06-28T18:32:33Z",

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-28T14:24:01Z
+last_updated: 2026-06-28T22:45:24Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-06-28T14:24:01Z
 
 ## Latest scan notes
 
+- 2026-06-28 — Official NEAR promoted confidential swaps on near.com as hiding amount, route, wallet addresses and token pair while settling across 35+ chains in seconds. This is a concise product-positioning update for the Confidential Intents / chain-abstraction funnel; next check is whether confidential swap TVL, route count, fees and revenue dashboard values move after the campaign. Source: https://x.com/NEARProtocol/status/2071332966660186499
 - 2026-06-28 — Official NEAR posted an ICYMI roadmap/history thread tying Illia appearances into the user-owned AI / agent-economy roadmap: chain abstraction, confidential execution, private inference, confidential intents, post-quantum crypto, root-of-trust work, AI frontend plus blockchain backend, and NEAR as money for inference/compute/agent transactions. It is mostly roadmap synthesis, but useful because it links the canonical roadmap history page and repeats token/usage claims like fee switch, $20B+ Intents volume and rising Confidential Intents TVL. Source: https://x.com/i/status/2071231604551217395 and https://www.near.org/roadmap-history
 - 2026-06-27 — Official NEAR again promoted Hyperliquid perpetuals inside near.com: users can fund with any asset and go long/short without leaving a near.com account, framed as one account / one balance UX. This reinforces near.com as a trading front end for NEAR Intents and account abstraction; next checks are perps volume, fees captured, supported collateral, and whether Hyperliquid flow appears in NEAR revenue dashboards. Source: https://x.com/NEARProtocol/status/2070892027034706276
 - 2026-06-26 — Official NEAR said NEAR AI Cloud private/verifiable inference is now integrated across 17 open-source AI projects, including Goose, Eliza, and the Vercel AI SDK; this upgrades NEAR AI Cloud from standalone capability to a developer-distribution catalyst if usage follows. Source: https://x.com/NEARProtocol/status/2070644017323249882
