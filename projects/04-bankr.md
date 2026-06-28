@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-28T06:11:58Z
+last_updated: 2026-06-28T18:32:33Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,10 @@ last_updated: 2026-06-28T06:11:58Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-28 — Official Bankr bot posted a 0xComputer Command Center update: the app is framed as the primary interface for the agentic economy, with Base inventory sync, agentic inventory tracking, heartbeat/status monitoring, and next steps for Botchan registration, cron automation/rebalancing, and Glidepath token management. This is useful product-surface evidence for Bankr as an agent-ops layer; BNKR value capture remains unverified. Source: https://x.com/bankrbot/status/2071280510161318281
+
+- 2026-06-28 — Official Bankr bot summarized recent releases including Glidepath, full Solana expansion with Raydium token launches/SPL asset management, and multi-agent DeFi coordination on Base. Treat as a source-proximate product/update bundle rather than new tokenomics until docs/usage metrics confirm durable fee capture. Source: https://x.com/bankrbot/status/2071268485754507300
 
 - 2026-06-28 — Official Bankr bot surfaced multiple live Hunch prediction markets around `$SURPLUS` market cap and payment/transaction milestones, with resolution tied to DexScreener and Dune Analytics. This is another Bankr/Hunch agent-market usage signal, but BNKR value capture remains unverified. Source: https://x.com/bankrbot/status/2071113104705098190
 

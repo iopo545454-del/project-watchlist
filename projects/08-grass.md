@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-24T23:31:52Z
+last_updated: 2026-06-28T18:32:33Z
 ---
 
 # GRASS
@@ -62,6 +62,8 @@ last_updated: 2026-06-24T23:31:52Z
 
 ## Latest scan notes
 
+- 2026-06-28 — Community/airdrop-monitor accounts circulated a Grass Discord/moderator-style clarification that Diamonds are just a points symbol and not a separate reward, while Season 2 allocation may be based on Uptime Points plus Network Points. This is not an official @grass confirmation, so it is tracked as an unverified incentive-mechanics watch item ahead of the July 7 holder/network call. Sources: https://x.com/thisisnosaa/status/2071286025905721413 and https://x.com/Sonnbay1/status/2071297326056939717
+
 - 2026-06-24 — Official Grass announced an in-app non-custodial wallet coming in mid-July: every Grass account gets an app-native wallet for holding/sending/receiving assets including GRASS, MoonPay-powered withdrawal to debit card/Venmo/PayPal, passkey/email-OTP security, exportable private key/seed, and scam warnings to use only the official dashboard. This is a token-utility/onboarding catalyst ahead of the July 7 holder/network call. Source: https://x.com/grass/status/2069877504387514557
 
 ---
@@ -85,6 +87,12 @@ last_updated: 2026-06-24T23:31:52Z
 | Human-data / native-language reward experiments | Tentative | @0xdrej said Grass is exploring opportunities where node runners could record conversations in their native language in exchange for immediate rewards. Source: https://x.com/0xdrej/status/2014736310020223118 | Explored in 2026; no launch date announced | Would expand Grass from passive bandwidth/data collection into higher-value human/speech data collection. | Native-language human data could open differentiated AI-data revenue lines, but needs privacy, consent, quality-control, and payout design. | Watch for official product launch, consent/privacy terms, language coverage, reward rates, and customer demand evidence. |
 
 ---
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|
+| 2026-06-28 | Grass Season 2 allocation may be based on Uptime Points plus Network Points, while Diamonds are only a points symbol and not a separate reward. | https://x.com/thisisnosaa/status/2071286025905721413 | Medium | Unverified | If confirmed, this changes how node operators should optimize uptime/quality versus superficial dashboard points and could affect farming behavior before Airdrop Two. | Re-check official @grass/@grassfdn, Discord/mod docs, and the July 7 holder/network call for explicit Season 2 criteria. |
 
 ## Open questions
 - Official handle appears to have shifted/standardized around `@grass`; older references may use GetGrass/Wynd branding.

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-28T06:11:58Z
+last_updated: 2026-06-28T18:32:33Z
 ---
 
 # Pluralis
@@ -16,6 +16,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 - **Positioning:** a credible DeAI research bet: if contributor-owned training can converge near centralized baselines and preserve model economics, it becomes a serious alternative to closed AI and simple open-weight releases.
 
 ## Latest scan notes
+
+- 2026-06-28 — CoinFund investor Jake Brukhman sharpened the Pluralis investment case around decentralized-training output being ownable, said Erfan Miahi joining is bullish for decentralized-AI scaling, and noted that public training runs are open for participation. This is investor/market-thesis evidence, not an official token/economics announcement. Sources: https://x.com/jbrukh/status/2071277638904098983, https://x.com/jbrukh/status/2071279179681665299, and https://x.com/jbrukh/status/2071300396954386648
 
 - 2026-06-28 — Pluralis founder Alexander Long posted a detailed decentralized-training thesis tying Pluralis-adjacent work such as DiLoCo variants, Subspace Networks, Agora, and SENTINEL verification into a broader response to closed-lab model centralization. It is not token news, but it strengthens the technical/research catalyst around protocol-owned decentralized model training. Source: https://x.com/AlexanderLong/status/2070970697300775125
 
@@ -36,6 +38,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 | https://x.com/Pluralis/status/1902367132597252177 | Official funding announcement | Pluralis announced a $7.6M seed co-led by USV and CoinFund, with Variant, Topology, Bodhi, Eden Block, Fabric, ConsenSys Mesh and angels including Balaji/Clement Delangue cited. | Funding quality and investor roster are part of the early credibility signal. |
 | https://x.com/jbrukh/status/2065839328312574137 | Jake Brukhman / CoinFund | Investor-side commentary frames Pluralis and Agora as a serious decentralized AI counterweight where contributors can help create and own model value. | Useful investor narrative; treat as investor advocacy, not neutral validation. |
 | https://x.com/jbrukh/status/2067358047899427276 | Jake Brukhman / CoinFund | After a decentralized-AI-training catchup, Brukhman argued crypto capital formation can finally fund commercially viable decentralized models because high-end GPUs are no longer the key bottleneck; the constraint is enough capital coordinated toward commodity devices. | Stronger investor thesis for Pluralis/Agora-style training networks, but still investor advocacy rather than an official Pluralis milestone. |
+| https://x.com/jbrukh/status/2071277638904098983 | Jake Brukhman / CoinFund | Brukhman framed Pluralis as differentiated because decentralized-training outputs can be **ownable**, then reinforced the thread with Erfan Miahi joining and public training runs open to participants. | Adds a sharper investor-side value-capture thesis: model ownership/contributor economics can matter more than generic decentralized compute if it becomes enforceable. |
 
 ### Hermes take
 
