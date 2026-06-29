@@ -1,5 +1,102 @@
 [
   {
+    "run_id": "scan-20260629T233121Z",
+    "started_at": "2026-06-29T23:31:21Z",
+    "completed_at": "2026-06-29T23:31:21Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T19:22:06Z",
+      "until": "2026-06-29T23:31:21Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "Kinetiq"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 1,
+      "weak_signals_logged": 1
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2071718633357885847",
+        "summary": "Official Bankr bot launched the new Bankr Console for plain-language trading, automation and x402/app/token building, while claiming $4.75B+ traded across the ecosystem.",
+        "decision": "Logged as official product-surface launch; BNKR fee/value capture and repeat console usage remain next checks."
+      },
+      {
+        "project": "Kinetiq",
+        "source": "X/Twitter related account",
+        "url": "https://x.com/VikingoDigital_/status/2071690233356198251",
+        "summary": "Related Markets/Kinetiq account claimed the Kinetiq buyback wallet has bought $320K of KNTQ over two months and buys daily.",
+        "decision": "Added as unverified watch item because buyback evidence is material to KNTQ value accrual but needs wallet/official verification."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were product-marketing repeats, low-signal price/community posts, duplicate Chutes/Kraken context from prior scan, or lacked project-specific evidence. NEAR GLM-5.2/private-AI posts repeated already logged product context; GEOD stadium mapping and Octra FHE commentary were not material enough for a changelog entry.",
+        "decision": "No additional changelog entries; POD/Dolphin remained suppressed."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify Bankr Console docs, live endpoint/app creation flow, repeat users/volume, and any BNKR/Club fee or reward linkage.",
+      "For Kinetiq, verify the claimed buyback-wallet address, transaction history, official Foundation confirmation, and whether buys are revenue-funded.",
+      "Continue to verify Kraken trading enablement for SN64, SN4, and SN51 from the prior scan.",
+      "Continue to skip POD / Dolphin POD unless explicitly re-enabled."
+    ],
+    "notes": "Changelog importance labels independently tagged by delegate_task: BANKR / BankrCoin high; Kinetiq medium. All changelog entries validated with high/medium/low labels.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json, labeled the 2026-06-29T23:31:21Z BANKR entry high and Kinetiq entry medium, verified all 247 changelog entries have valid importance values, and ran python3 -m json.tool successfully."
+  },
+  {
     "run_id": "scan-20260629T192206Z",
     "started_at": "2026-06-29T19:22:06Z",
     "completed_at": "2026-06-29T19:22:06Z",

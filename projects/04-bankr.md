@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-29T06:58:00Z
+last_updated: 2026-06-29T23:31:21Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-29T06:58:00Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-29 — Official Bankr bot launched the new **Bankr Console**, framed as the financial interface for the agentic economy: users can trade, automate, and build onchain in plain language across apps, tokens, and x402 endpoints; Bankr also claimed `$4.75B+` already traded across the ecosystem. Treat as a concrete product-surface launch and usage claim; next checks are console docs, repeat users/volume, supported endpoint creation flow, and whether fees or rewards route to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2071718633357885847
 
 - 2026-06-29 — Official Bankr bot said `MANAGR Artist OS` is live and public on Bankr as `managr-os-v2` / "managr atelier," with 10 strategy agents plus a demo agent, Suno audio generation, and immediate label-dossier generation for rollout planning, content, release strategy, and market positioning. This is a concrete public app deployment on the Bankr agent surface; next checks are repeat usage, whether the MANAGR app creates paid x402/API flow, and whether any fees route to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2071475594542604346
 

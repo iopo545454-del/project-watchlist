@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-29T23:31:21Z
 ---
 
 # Kinetiq
@@ -61,6 +61,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Latest scan notes
 
+- 2026-06-29 — Related Markets/Kinetiq ecosystem account `@VikingoDigital_` claimed the Kinetiq buyback wallet has bought `$320K` of `$KNTQ` over two months and has been buying daily. This supports the Launch/KIP-3 buyback thesis if wallet data verifies, but it is not yet an official Kinetiq Foundation statement; next checks are buyback-wallet address, transactions, Foundation confirmation, and whether buybacks are revenue-funded versus discretionary. Source: https://x.com/VikingoDigital_/status/2071690233356198251
 - 2026-06-23 — Markets.xyz said kPoints are now visible in-app and limit orders are live, with Import Wallet and Auto-Breakeven coming soon; related Kinetiq chatter again pointed to the Sep. 29 points window, strengthening the KNTQ airdrop/market-UX watch item. Source: https://x.com/Markets_xyz/status/2069467940529877281
 - 2026-06-19 — Core contributor `@0xOmnia` showed the Markets.xyz BTC app updating around every 50ms, framed as roughly 10x faster than Hyperliquid now and potentially 100x faster if Hyperliquid slows to 5s updates; useful product/performance signal for Markets/Kinetiq infrastructure. Source: https://x.com/0xOmnia/status/2067983258487308736
 - 2026-06-17 — Core contributor `@0xOmnia` said Markets.xyz generated $3.9B volume, 9,450 traders on listings, and became the 3rd-largest DEX by listings during the USDH phase, while framing the coming USDC migration as the next growth setup. Source: https://x.com/0xOmnia/status/2067371313128178119
@@ -75,6 +76,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-06-29 | Related Markets/Kinetiq ecosystem account claims the Kinetiq buyback wallet has bought `$320K` of `$KNTQ` over two months and has been buying daily. | https://x.com/VikingoDigital_/status/2071690233356198251 (`related account` / wallet-data screenshot claim) | Medium | Unverified | If verified, it is direct evidence that KIP-3/Launch buybacks are active and material for KNTQ value accrual. | Verify the buyback-wallet address, transaction history, official Kinetiq/Foundation confirmation, and whether buys are revenue-funded versus discretionary. |
 | 2026-06-14 | Kinetiq Season 2 `$KNTQ` airdrop has final snapshot on 2026-09-29 and distribution on 2026-10-01; Markets.xyz trading earns kPoints tied to the airdrop. | https://x.com/VikingoDigital_/status/2066215140152815998 (`related account` / Markets.xyz growth-community account) | Medium | Unverified | If confirmed, gives a concrete token-distribution catalyst and explains why Markets.xyz activity may matter to Kinetiq flows. | Re-check `@Kinetiq_xyz`, `@KinetiqFND`, Kinetiq blog/docs/app, and Markets.xyz official posts for the same dates and rules. |
 
 ## Team
