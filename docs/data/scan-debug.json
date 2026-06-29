@@ -1,5 +1,108 @@
 [
   {
+    "run_id": "scan-20260629T110541Z",
+    "started_at": "2026-06-29T11:05:41Z",
+    "completed_at": "2026-06-29T11:05:41Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T06:58:00Z",
+      "until": "2026-06-29T11:05:41Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter CEO account",
+        "url": "https://x.com/nickforster/status/2071522847223074871",
+        "summary": "Nick Forster said Derive has about 90% onchain options share by recent premium volume, referenced the record $210M BTC options trade, and said Derive v3 is close as an infinite payoff factory for crypto and future RWA payoffs.",
+        "decision": "Logged as catalyst update and added a v3 catalyst row; it is CEO-level product/market-structure evidence but still needs official release/docs and KPI verification."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter governance account",
+        "url": "https://x.com/NEARGovernance/status/2071549766736257309",
+        "summary": "NEAR Governance said HSP-027 to remove Developer Gas Rebate reached the fast-track threshold and advances to the main vote, closing July 3.",
+        "decision": "Logged as catalyst update because it is an active economic-parameter governance vote."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official/third-party scan",
+        "url": "https://x.com/AskVenice/status/2061503966702162407",
+        "summary": "Scan resurfaced July 1 emissions step-down context; official source was already represented in the dossier catalyst table and no new official post changed the plan in-window.",
+        "decision": "No changelog entry to avoid duplicate old-source logging; continue checking July 1 execution and burn/emission dashboard."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other tracked accounts and broader weak-signal searches produced no non-duplicate qualifying token, governance, security, funding, listing, integration, roadmap, or credible weak-signal item in the scan window.",
+        "decision": "No additional changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Derive, verify Derive v3 with official release notes/docs and watch OI, fees, RWA market launches and buyback inputs.",
+      "For NEAR, check the HSP-027 main vote result by July 3 and any developer-incentive/revenue-accounting follow-up.",
+      "For Venice, verify July 1 VVV emissions reduction execution and current burn/emission ratio from official dashboard/onchain sources.",
+      "Continue to skip POD / Dolphin POD unless the user explicitly re-enables it."
+    ],
+    "notes": "Independent changelog importance tagger completed: DRV Derive v3 catalyst high; NEAR HSP-027 governance/economic-parameter vote high."
+  },
+  {
     "run_id": "scan-20260629T065800Z",
     "started_at": "2026-06-29T06:58:00Z",
     "completed_at": "2026-06-29T06:58:00Z",

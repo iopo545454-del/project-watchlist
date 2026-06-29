@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-28T18:32:33Z
+last_updated: 2026-06-29T11:05:41Z
 ---
 
 # DRV / Derive Protocol
@@ -12,6 +12,8 @@ Derive is an onchain options and perps venue formerly known as Lyra. The current
 Derive is most worth monitoring when new listed underlyings, collateral types, buyback parameters, liquidity incentives, institutional/RFQ rails, or risk-engine changes alter the revenue/buyback loop. The platform is especially tied to ETH/BTC options and, recently, HYPE options.
 
 ## Latest scan notes
+
+- 2026-06-29 — Derive CEO Nick Forster posted a strategic update saying Derive is about 90% of onchain options by recent DeFiLlama premium volume, that the prior day's $210M BTC options trade was the venue's largest ever, and that Derive v3 is close with an “infinite payoff factory” for programmable payoffs across crypto and eventually RWA categories. This is CEO-level catalyst evidence for v3/asset-expansion monitoring, but should still be verified against product release notes, OI, fees, and buybacks. Source: https://x.com/nickforster/status/2071522847223074871
 
 - 2026-06-28 — Official Derive said it printed the largest trade in platform history: roughly $210M / 3,552 BTC notional across BTC option legs. This is more than generic volume chatter because it tests Derive's institutional/RFQ-scale onchain options capacity; it should be verified against fees, OI, counterparty concentration, and subsequent buyback inputs. Source: https://x.com/DeriveXYZ/status/2071262503187927434
 
@@ -43,6 +45,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Derive v3 / “infinite payoff factory” rollout | Tentative / CEO says close | CEO Nick Forster said Derive v3 is close and will let traders, builders and integrators create programmable payoffs for yield, hedging or speculation on any asset: https://x.com/nickforster/status/2071522847223074871 | Near-term / exact launch date TBD | Could expand Derive from listed crypto options/perps into a programmable payoff platform with more integrator flow. | If shipped with liquidity and developer integrations, DRV fee/buyback inputs can diversify beyond BTC/ETH/HYPE and the venue can own more onchain structured-products surface area. | Watch official v3 release notes, docs/API changes, new payoff builders, RWA market launches, OI/fee lift, and whether buybacks reflect incremental revenue. |
 | HYPE options market share / Derive as primary HYPE options venue | Confirmed | CEO replies during the 2026-06-15 scan said Derive is the primary on/offchain HYPE options venue and supports stable/HYPE/kHYPE margin plus portfolio margining: https://x.com/nickforster/status/2066662428814049501 and https://x.com/nickforster/status/2066623266534605136 | Live | More listed-underlying demand and HYPE-native collateral can drive OI, fees, and DRV buyback capacity. | If Hyperliquid ecosystem volumes persist, Derive can become a key structured-products venue instead of just an ETH/BTC options app. | Track HYPE options OI/volume, spreads, liquidation incidents, collateral uptake, and whether Derive/Hyperliquid ecosystem partners integrate the product. |
 | ZEC options and perps launch | Confirmed / live | Official Derive announced $ZEC options and perps are live and framed it as the first onchain options market for Zcash: https://x.com/DeriveXYZ/status/2070477289507443121 | Live as of 2026-06-26 | Adds a new privacy-asset underlying and expands Derive beyond BTC/ETH/HYPE flow. | If ZEC volatility and privacy narrative attention persist, Derive can capture incremental options/perps fees and strengthen the DRV buyback input. | Track ZEC OI, volume, spreads, market-maker depth, fee contribution, and whether weekly buybacks/DefiLlama fees reflect the new market. |
 | Protocol-fee buyback program | Confirmed | Official buyback posts; June 2026 update reported 35% of protocol fees allocated to DRV buybacks and cumulative DRV repurchased above 25M: https://x.com/DeriveXYZ/status/2064477916092858845 | Weekly / ongoing | Converts protocol revenue into open-market DRV demand. | Sustained organic fees can make DRV one of the cleaner revenue-linked DeFi tokens; weak volume makes the buyback narrative cosmetic. | Monitor weekly buyback amount, average buy price, cumulative DRV bought, revenue source quality, and whether percentage allocation changes. |
