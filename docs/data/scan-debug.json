@@ -1,5 +1,92 @@
 [
   {
+    "run_id": "scan-20260629T025140Z",
+    "started_at": "2026-06-29T02:51:40Z",
+    "completed_at": "2026-06-29T02:51:40Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-28T22:45:24Z",
+      "until": "2026-06-29T02:51:40Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter founder account + GitHub release",
+        "url": "https://github.com/near/nearcore/releases/tag/2.13.0-rc.1",
+        "summary": "Illia Polosukhin said NEAR testnet release 2.13.0-rc.1 is out and being voted on. GitHub release is CODE_YELLOW_TESTNET with PROTOCOL_UPGRADE and DATABASE_UPGRADE true; protocol changes include stabilized FIPS 204 ML-DSA-65 signatures.",
+        "decision": "Logged as catalyst update because the post-quantum account/signature upgrade moved from planned roadmap item to active testnet release/vote monitoring."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other tracked official/team accounts produced no non-duplicate qualifying launch, token, governance, security, funding, listing, integration, or roadmap update in the window. Bankr ethmoji replies, generic market ranking posts, and short/reactive posts were not logged.",
+        "decision": "No additional changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, track vote result/client adoption for nearcore 2.13.0-rc.1 and any validator issues from the protocol/database upgrade.",
+      "Continue checking confidential Intents TVL/revenue dashboard directly instead of relying on X copy.",
+      "Continue to skip POD / Dolphin POD unless the user explicitly re-enables it."
+    ],
+    "notes": "Independent changelog importance tagger completed: NEAR nearcore 2.13.0-rc.1 catalyst update high."
+  },
+  {
     "run_id": "scan-20260628T224524Z",
     "started_at": "2026-06-28T22:45:24Z",
     "completed_at": "2026-06-28T22:45:24Z",
