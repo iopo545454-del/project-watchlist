@@ -1,5 +1,143 @@
 [
   {
+    "run_id": "scan-20260629T192206Z",
+    "started_at": "2026-06-29T19:22:06Z",
+    "completed_at": "2026-06-29T19:22:06Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T15:16:43Z",
+      "until": "2026-06-29T19:22:06Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "Targon — Bittensor Subnet 4",
+      "CHIP / USD.AI",
+      "NEAR Protocol",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 7,
+      "changelog_entries_added": 8,
+      "material_confirmed": 8,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2071670179587625249",
+        "summary": "Official GEODNET said GEOD is now live on Coinbase.",
+        "decision": "Logged as completed major-exchange listing/liquidity catalyst."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/MetaDAOProject/status/2071663802069000225",
+        "summary": "MetaDAO said Laso Finance curated raise starts June 30 at 1 PM EST.",
+        "decision": "Logged as near-term product/futarchy raise catalyst; not treated as direct META tokenomics change."
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "source": "X/Twitter official account + Kraken listings page",
+        "url": "https://x.com/TargonCompute/status/2071644073241264403",
+        "summary": "Targon said MinosVM 2.0 is live; Kraken listings page also includes Targon/SN4 on roadmap.",
+        "decision": "Logged product integration and exchange-roadmap catalyst."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/USDai_Official/status/2071639863817048553",
+        "summary": "USD.AI announced $100M DEX Liquidity Facility for sUSDai with Fluid.",
+        "decision": "Logged as liquidity/market-structure catalyst."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2071631116633530739",
+        "summary": "NEAR announced coming post-quantum signing, dynamic resharding, and SPICE upgrades.",
+        "decision": "Logged as protocol-roadmap catalyst; follow release/governance execution."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "X/Twitter official account + Kraken listings page",
+        "url": "https://x.com/chutes_ai/status/2071662544574382437",
+        "summary": "Chutes said $SN64 is coming to Kraken and linked Kraken listings roadmap.",
+        "decision": "Logged as high-signal listing/liquidity catalyst."
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "source": "Kraken listings page",
+        "url": "https://www.kraken.com/listings#roadmap",
+        "summary": "Kraken listings page includes Lium/SN51 on roadmap; no in-window official Lium X post found.",
+        "decision": "Logged as confirmed Kraken-page roadmap evidence pending Lium confirmation/trading enablement."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter project/ticker and terminal-account queries",
+        "url": "docs/data/index.json",
+        "summary": "Broad weak-signal queries surfaced Moonshot leaderboard vote campaigns and old Octra discourse but no new qualifying exploit, unlock, buyback, airdrop, funding, or governance rumor requiring an Unverified Watch Item.",
+        "decision": "No weak-signal items added; POD/Dolphin remains suppressed."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Confirm actual Kraken trading enablement, pairs, deposits/withdrawals, and jurisdiction support for SN64, SN4, and SN51.",
+      "Check Coinbase GEOD liquidity/volume quality and whether custody/withdrawals are enabled.",
+      "For MetaDAO, review Laso raise result after June 30 1 PM EST.",
+      "For USD.AI/Fluid, monitor actual deployed liquidity, peg/slippage, APYs, and loop risk.",
+      "For NEAR, follow nearcore release notes/governance/mainnet activation for post-quantum, dynamic resharding, and SPICE upgrades.",
+      "Continue to skip POD / Dolphin POD unless explicitly re-enabled."
+    ],
+    "notes": "Changelog importance labels independently tagged by delegate_task: 7 high and 1 medium among the 8 new entries."
+  },
+  {
     "run_id": "scan-20260629T151643Z",
     "started_at": "2026-06-29T15:16:43Z",
     "completed_at": "2026-06-29T15:16:43Z",

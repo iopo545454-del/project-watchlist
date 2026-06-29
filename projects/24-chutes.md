@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-26T20:53:05Z
+last_updated: 2026-06-29T19:22:06Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -13,6 +13,8 @@ last_updated: 2026-06-26T20:53:05Z
 - Alpha token: SN64 within Bittensor dTAO economy.
 
 ## Latest scan notes
+
+- 2026-06-29 — Official Chutes said $SN64 is coming to Kraken and linked Kraken’s listings roadmap; this is a major liquidity/access catalyst for the SN64 subnet token pending actual trading enablement. Source: https://x.com/chutes_ai/status/2071662544574382437 and https://www.kraken.com/listings#roadmap
 - 2026-06-26 — Official Chutes highlighted confidential compute via TEEs for its OpenAI-compatible API, saying GPU operators cannot read prompts/outputs and listing current high-context/open-model offerings such as GLM-5.2, Kimi K2.6, Gemma 4, Qwen3.6 and MiniMax M2.5 with example pricing. This reinforces the privacy + model-catalog moat, but needs follow-up on real usage, routing volume, and whether TEE-enabled inference earns higher-quality revenue. Source: https://x.com/chutes_ai/status/2070567809713606938
 - 2026-06-25 — Official Chutes teased that pointing idle consumer/gaming GPU compute at training is part of the Parallax roadmap, framing millions of idle gaming machines as a future distributed-training supply base. This is a roadmap/catalyst signal rather than a live revenue item; verification requires Parallax docs, miner requirements, incentives, and whether training jobs produce paid demand. Source: https://x.com/chutes_ai/status/2070145081185534115
 - 2026-06-22 — Added Chutes to the watchlist because it was missing from the neo-cloud basket despite being the cleanest direct inference-revenue comp. DefiLlama showed revenue of about `$11.1k` 24h, `$78.9k` 7d, `$407.2k` 30d, and `$2.74M` all-time. Source: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue
@@ -75,6 +77,7 @@ last_updated: 2026-06-26T20:53:05Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Kraken listings-roadmap entry for Chutes / SN64 | Confirmed / listing roadmap | Official Chutes says $SN64 is coming to Kraken and links Kraken’s listings roadmap: https://x.com/chutes_ai/status/2071662544574382437 and https://www.kraken.com/listings#roadmap | Roadmap as of 2026-06-29; trading timing unknown | Adds a major centralized exchange path for SN64 alpha exposure. | Better access/liquidity can re-rate the subnet against revenue KPIs and draw broader attention to Bittensor subnet tokens. | Watch Kraken trading-enable date, pairs, deposit/withdrawal support, jurisdiction limits, order-book depth, and whether revenue multiples expand. |
 | Parallax distributed training using idle gaming GPUs | Tentative roadmap | Official Chutes says pointing idle consumer/gaming GPUs at training is part of the Parallax roadmap: https://x.com/chutes_ai/status/2070145081185534115 | Unknown / roadmap | Would expand Chutes beyond managed inference into training workloads that can use consumer GPU supply. | If credible, Chutes could compete for decentralized training mindshare and convert a much larger hardware base into subnet utility; if vague, it remains narrative. | Watch for Parallax docs, testnet/mainnet rollout, miner onboarding requirements, training-job pricing, reward mechanics, and paid customer evidence. |
 | Chutes revenue visibility on DefiLlama | Confirmed / live KPI | DefiLlama Chutes revenue API and Taostats SN64 page: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue and https://taostats.io/subnets/64 | Live daily revenue | Gives a public revenue series for underwriting SN64 against subnet value. | Makes Chutes one of the cleaner Bittensor subnets to value on usage rather than emissions alone. | Watch 30d revenue trend, revenue quality, paid vs subsidized traffic, and SN64 market cap/liquidity. |
 | GLM-5.2 hosted with TEE and published pricing | Confirmed / completed live product | Official Chutes post says GLM-5.2 is live/run-now on Chutes with TEE and published pricing: https://x.com/chutes_ai/status/2067612094178963874 | Completed / live as of June 2026 | Adds a frontier open-source coding/agent model to Chutes’ inference catalog with explicit per-token pricing. | More high-demand open models can increase paid inference revenue and router integrations. | Watch GLM usage, latency, uptime, pricing changes, model removals, and OpenRouter or partner routing volume. |

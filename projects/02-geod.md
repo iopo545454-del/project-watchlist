@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-27T13:27:52Z
+last_updated: 2026-06-29T19:22:06Z
 ---
 
 # GEOD / GEODNET
@@ -12,6 +12,8 @@ last_updated: 2026-06-27T13:27:52Z
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
 
 ## Latest scan notes
+
+- 2026-06-29 — Official GEODNET said GEOD is now live on Coinbase after the prior roadmap add; this converts the listing catalyst from roadmap/watch to an actual major CEX availability event and should be checked against Coinbase spot depth, regional availability, and whether the listing changes liquidity/burn visibility. Source: https://x.com/GEODNET/status/2071670179587625249
 
 - 2026-06-27 — Official GEODNET framed precision RTK positioning as the thread connecting ground robots with 100x accuracy improvements, precise drone landings, robotic mowers, AR positioning, and LiDAR-fused HD maps for self-driving vehicles. This is not a new product launch, but it is a useful demand-vertical signal to check against enterprise/API usage, hardware orders, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2070862212470600042
 - 2026-06-27 — GEODNET showed a GEO-PULSE / GEODNET RTK comparison against standard GPS for autonomous-driving use cases and said Gen 2 GEO-PULSE is on sale; useful demand-side hardware signal to verify against orders, app usage, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2070658436824432834
@@ -76,6 +78,7 @@ last_updated: 2026-06-27T13:27:52Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Coinbase GEOD listing live | Confirmed / completed listing | Official GEODNET said GEOD is now live on Coinbase: https://x.com/GEODNET/status/2071670179587625249 | Live as of 2026-06-29 | Adds a major US exchange/liquidity venue for GEOD. | Better liquidity can widen the buyer base, increase institutional/retail access, and make burn/revenue diligence more market-relevant. | Watch Coinbase order-book depth, regional support, custody/withdrawal status, volume quality, and whether new liquidity changes holder distribution. |
 | GIP-13 StableHex targeted reward multipliers | Confirmed | Official GEODNET post says StableHex is live with 6x/4x/2x reward zones, limited spots, and uptime requirements: https://x.com/GEODNET/status/2067956173689454667 | Live as of 2026-06-19 | Directly steers station growth into weak/zero-coverage commercial zones. | Better coverage can improve enterprise/API value and future burn/revenue quality. | Watch claimed hex fills, uptime retention, active-station growth, and coverage expansion in priority geos. |
 | TokenRun Android app live | Confirmed / product live | Official GEODNET post says TokenRun is live on Android for walking-based treasure-chest rewards: https://x.com/GEODNET/status/2070575326074220720 | Live as of 2026-06-26 | Adds a consumer engagement/reward surface on top of the GEODNET positioning stack. | If real users adopt it, TokenRun could provide extra app-level demand/attention; if not, it remains mostly marketing compared with enterprise RTK. | Watch Google Play traction, retention, reward economics, fraud controls, and whether any usage/revenue flows back to GEOD demand/burns. |
 | GEO-PULSE hardware commercialization | Confirmed / product-sales catalyst | Official post describes GEO-PULSE as ~$149 centimeter-level RTK for Android via Bluetooth, with restock/availability messaging: https://x.com/GEODNET/status/2065909299776209110 | Recent restock / ongoing sales | Adds hardware revenue and consumer/fleet usage beyond miner emissions. | Hardware users can become demand-side consumers of GEODNET corrections, strengthening non-speculative revenue. | Watch order volumes, reviews, app usage, returns/support issues, and whether revenue/burn dashboards reflect sales. |

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-06-29T19:22:06Z
 ---
 
 # Targon — Bittensor Subnet 4
@@ -14,6 +14,9 @@ last_updated: 2026-06-23T21:46:11Z
 - Alpha token: SN4 within Bittensor dTAO economy.
 
 ## Latest scan notes
+
+- 2026-06-29 — Official Targon said MinosVM 2.0 is live on targon.com powering Minos with secure confidential compute, stronger native-agent support, and a move from manual optimization toward autonomous improvement on SN107. Source: https://x.com/TargonCompute/status/2071644073241264403
+- 2026-06-29 — Kraken’s public listings page includes Targon / SN4 on its roadmap, alongside other Bittensor subnet alpha tokens; treat as exchange-roadmap/listing catalyst pending actual trading enablement and official Targon/Kraken trading details. Source: https://www.kraken.com/listings#roadmap
 - 2026-06-22 — Added neo-cloud investment numbers: Taostats snapshot put SN4 alpha market cap around `245,062 TAO` / `~$56.2M` and liquidity around `249,735 TAO` / `~$57.3M` using TAO around `$229`; this is subnet alpha/pool context, not a normal token FDV. Source: https://taostats.io/subnets/4
 - 2026-06-22 — Revenue is not cleanly exposed through a public API, but the best current proxy is Targon/Manifold's cited `2,000 TAO` of revenue-backed buybacks over a month, about `$456k/month` or `$5.5M annualized` at TAO around `$228`. Treat as a buyback proxy until verified against wallet flows. Source: https://x.com/TargonCompute/status/2060387734120751126
 - 2026-06-22 — Capacity scan found Targon as the strongest visible high-end GPU inventory among the compared decentralized neo-clouds: auction/inventory surfaces showed H200/B200/B300/H100 availability including multiple 8-GPU pod configurations. Source: https://targon.com/inventory
@@ -88,6 +91,8 @@ last_updated: 2026-06-23T21:46:11Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Kraken listings-roadmap entry for Targon / SN4 | Confirmed / listing roadmap | Kraken listings page includes Targon and SN4 on the roadmap: https://www.kraken.com/listings#roadmap | Roadmap as of 2026-06-29; trading timing unknown | Would add centralized exchange access for SN4 alpha exposure. | Easier access could broaden Bittensor subnet-token liquidity, improve price discovery, and attract non-Bittensor-native buyers to Targon’s revenue/buyback thesis. | Watch Kraken trading-enable announcement, supported jurisdictions/pairs, deposits/withdrawals, liquidity, and whether Targon confirms details. |
+| MinosVM 2.0 live on Targon | Confirmed / product integration | Official Targon post says MinosVM 2.0 is live on targon.com and uses secure confidential compute for native-agent/genomics infrastructure: https://x.com/TargonCompute/status/2071644073241264403 | Live as of 2026-06-29 | Demonstrates customer/application usage of Targon confidential compute. | More real workloads can support SN4 buyback/revenue claims and differentiate Targon from generic GPU rental markets. | Watch Minos usage, paid workload evidence, recurring revenue, and whether similar agent/genomics deployments follow. |
 | Targon Rentals and Serverless compute products live | Confirmed | Official docs describe Rentals as persistent GPU/CPU containers with SSH and Serverless as autoscaling apps that scale from zero: https://docs.targon.com/guides/rentals and https://docs.targon.com/guides/serverless | Live | Converts SN4 from pure miner incentives into user-facing confidential GPU cloud products. | Real customer workloads can justify emissions and improve subnet quality if demand routes back to miners. | Watch utilization, paid customer announcements, uptime, pricing, and whether user demand affects miner emissions. |
 | Public inventory API exposes available GPU resources and pricing | Confirmed | Targon API docs show unauthenticated inventory endpoint with specs, hourly cost, and availability: https://docs.targon.com/api/inventory | Live | Creates a measurable demand/supply surface for rentals and serverless capacity. | Transparent inventory can make SN4 easier to diligence versus opaque DePIN compute claims. | Poll inventory for H100/H200/B200 availability, utilization changes, price compression, and new resource tiers. |
 | Miner emissions tied to public-demand auctions, unused emissions burned | Confirmed | Targon miner docs say emissions are split proportionally to public demand via auctions API and unallocated emissions are burned: https://docs.targon.com/providers/miner/ | Live | Aligns miner rewards with customer demand instead of purely synthetic benchmarks. | Burning unused emissions can reduce waste but may pressure miners if demand lags supply. | Watch auctions API, emitted vs burned share, max bids, minimum cluster sizes, and miner churn. |

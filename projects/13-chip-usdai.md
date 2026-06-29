@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T01:00:07Z
+last_updated: 2026-06-29T19:22:06Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-06-27T01:00:07Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-06-29 — USD.AI announced a $100M DEX Liquidity Facility for sUSDai with Fluid, saying Fluid will provide Liquidity-as-a-Service to deepen sUSDai markets and improve entering, exiting, and looping with less slippage. Source: https://x.com/USDai_Official/status/2071639863817048553
 
 - 2026-06-26 — USD.AI said GPU loans grew from $620k to $98M in less than a year, framing the growth as AI capex demand meeting institutional underwriting and onchain capital; this strengthens the loan-book growth thesis but needs dashboard/report verification for drawdowns, concentration, defaults, and idle liquidity. Source: https://x.com/USDai_Official/status/2070477300857213131
 - 2026-06-25 — USD.AI announced a $34M facility for NexGen Cloud covering 96 NVIDIA B200 servers / 768 GPUs deployed in Sweden; official thread says the GPUs are installed, verified online, yielding 12% APR, and this is the first loan under the Wilmington Trust escrow structure. Sources: https://x.com/USDai_Official/status/2070219678597927125 and https://x.com/USDai_Official/status/2070219691151564833
@@ -91,6 +93,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| $100M sUSDai DEX Liquidity Facility with Fluid | Confirmed / liquidity integration | Official USD.AI post says USD.AI and Fluid are launching a $100M DEX Liquidity Facility for sUSDai: https://x.com/USDai_Official/status/2071639863817048553 | Announced 2026-06-29 | Deepens sUSDai liquidity and improves entry/exit/looping capacity. | Better liquidity can support larger Earn/curator programs, reduce peg/slippage stress, and increase protocol capacity for GPU-backed credit growth. | Watch actual deployed liquidity, utilization, APYs, leverage/loop risk, peg stability, and whether CHIP governance captures any incremental economics. |
 | CHIP token live for USD.AI governance and utility | Confirmed | USD.AI announced “$CHIP Is Live” and says CHIP holders can stake to govern risk, fees, staking module, and upgrades: https://usd.ai/insights/chip-is-live | Live since 2026-04-21/22 | Turns USD.AI from a credit/stablecoin product into a governable token system. | Governance decisions can directly affect collateral quality, loan pricing, revenue routing, and protocol risk. | Watch staking participation, proposal cadence, fee routing, exchange/liquidity depth, and unlocks. |
 | USD.AI Foundation and DAO stewardship launched | Confirmed | Official post says the USD.AI Foundation launched as off-chain steward of the DAO and CHIP governs protocol parameters, curators, and ecosystem initiatives: https://usd.ai/insights/usdai-foundation-chip | Announced 2026-01-27 | Establishes governance structure and treasury/ecosystem coordination around CHIP. | Better governance can accelerate borrower onboarding and risk management; weak governance could impair credit quality. | Watch foundation disclosures, DAO votes, curator approvals, treasury use, and legal/risk updates. |
 | Lighthouse report shows scaling loan book and revenue KPIs | Confirmed / KPI catalyst | USD.AI 2026 YTD Lighthouse report cites $398M TVL, $202M deployed, $30M Q2 annualized DAO ARR, $13B borrower pipeline, $817M signed term sheets, and $205M closed loans: https://usd.ai/insights/usdai-2026-ytd-report-lighthouse | Published 2026-06-08 | Provides hard KPI basis for CHIP value capture via GPU-backed credit growth. | If ARR and deployed loans continue growing, CHIP governance over risk and fee surfaces becomes more economically important. | Watch monthly ARR, deployed loans, defaults, sUSDai yield, borrower concentration, and pipeline-to-funded conversion. |

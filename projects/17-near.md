@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-29T11:05:41Z
+last_updated: 2026-06-29T19:22:06Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,8 @@ last_updated: 2026-06-29T11:05:41Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-06-29 — Official NEAR posted a thread that post-quantum signing, dynamic resharding, and SPICE separation of consensus/execution are coming to NEAR, targeting quantum-hardening, automatic scaling, and 200ms block times for agentic use cases. Source: https://x.com/NEARProtocol/status/2071631116633530739
 
 - 2026-06-29 — NEAR House of Stake / NEAR Governance said HSP-027 to remove the NEAR Developer Gas Rebate reached the 30% voting-power threshold in fast-track and advances to the main vote, closing July 3. This is a governance/economic-parameter item to monitor because rebate removal can change developer incentives and protocol revenue/capture optics if passed. Sources: https://x.com/NEARGovernance/status/2071549766736257309 and https://x.com/NEARGovernance/status/2071549769265344622
 
@@ -111,6 +113,7 @@ last_updated: 2026-06-29T11:05:41Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Post-quantum signing, dynamic resharding, and SPICE upgrades | Confirmed / roadmap-protocol upgrade | Official NEAR thread says these upgrades are coming to harden against quantum threats, enable automatic scaling, and accelerate block time to 200ms: https://x.com/NEARProtocol/status/2071631116633530739 | Roadmap / rollout timing to verify | Improves protocol security and performance positioning for agentic/AI applications. | If shipped cleanly, the upgrades can strengthen NEAR’s technical narrative, validator/client requirements, and intent/agent product moat. | Watch nearcore release notes, governance/testnet votes, mainnet activation dates, validator impact, and app latency evidence. |
 | HSP-027 Developer Gas Rebate removal vote | Confirmed / governance vote active | NEAR House of Stake / NEAR Governance said HSP-027 reached the 30% voting-power fast-track threshold and advances to the main vote, closing July 3: https://x.com/NEARGovernance/status/2071549766736257309 and https://x.com/NEARGovernance/status/2071549769265344622 | Main vote closes 2026-07-03 | Could remove the developer gas rebate, changing developer incentives and possibly protocol revenue/capture presentation. | If passed, NEAR's economics may look cleaner from a capture perspective but could reduce a subsidy for app builders; if rejected, rebate incentives stay but value-capture optics remain messier. | Watch House of Stake vote results, turnout, official rationale, any replacement incentive mechanism, and follow-up docs/accounting changes. |
 | Post-quantum account/signature upgrade | Confirmed / active testnet release | Official NEAR post says rotatable account keys allow migration to NIST-approved ML-DSA signatures; Illia later said the testnet release is out/being voted on, and nearcore `2.13.0-rc.1` lists `PROTOCOL_UPGRADE: TRUE` with stabilized FIPS 204 ML-DSA-65 signatures: https://x.com/NEARProtocol/status/2069534500418130190, https://x.com/ilblackdragon/status/2071414107971158142, and https://github.com/near/nearcore/releases/tag/2.13.0-rc.1 | Testnet release/vote active as of 2026-06-29; mainnet timing TBD | Moves post-quantum signature support from roadmap to testnet/governance execution; improves long-horizon account/security posture without forcing address migration. | Security-roadmap credibility can matter for institutions and high-value agent/user-owned-AI accounts; successful testnet vote could set up mainnet upgrade attention, while database/protocol-upgrade flags raise client/validator execution risk to monitor. | Watch vote result, validator/client upgrade adoption, wallet support, mainnet governance/client dates, and any issues from the database upgrade. |
 | SPICE protocol upgrade for ~200ms blocks and atomic cross-shard execution | Tentative / official development | Official NEAR posts say SPICE separates consensus from execution for ~200ms blocks, parallel execution and atomic cross-shard execution, while the broader roadmap thread pairs it with dynamic resharding and post-quantum signing: https://x.com/NEARProtocol/status/2069180409414406177 and https://x.com/NEARProtocol/status/2069879673748591090 | “Coming months” as of 2026-06-22; roadmap reiterated 2026-06-24 | Improves latency, throughput scaling, and execution model for Intents, near.com, and agent payments. | Makes NEAR’s chain-abstraction and AI-agent thesis more credible if shipped without validator/client instability; dynamic resharding could reduce coordination friction as usage grows. | Watch nearcore releases, governance/client upgrade dates, benchmark results, dynamic resharding docs, and any Nightshade 3.0 follow-up. |
