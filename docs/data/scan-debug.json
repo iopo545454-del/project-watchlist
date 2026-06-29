@@ -1,5 +1,100 @@
 [
   {
+    "run_id": "scan-20260629T065800Z",
+    "started_at": "2026-06-29T06:58:00Z",
+    "completed_at": "2026-06-29T06:58:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T02:51:40Z",
+      "until": "2026-06-29T06:58:00Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "GitlWab / GitLawb / Gitwab"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2071475594542604346",
+        "summary": "Official Bankr bot said MANAGR Artist OS is live/public on Bankr as managr-os-v2 with 10 strategy agents, Suno demo generation, and label-dossier planning outputs.",
+        "decision": "Logged as official update / latest scan note because it is a concrete public app deployment on the Bankr agent surface; BNKR fee capture remains an open check."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/gitlawb/status/2071435531402268767",
+        "summary": "Official GitLawb said Ads impressions quadrupled over 24h and are approaching 100k, with a $100 inference-credit prize at the milestone.",
+        "decision": "Logged as scan/latest traction telemetry for ads/credits loop; not treated as tokenomics confirmation."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Other tracked accounts and the broader weak-signal query produced no non-duplicate qualifying token, governance, security, funding, listing, integration, roadmap, or credible project-relevant weak signal in the window. Bittensor SN98/CodeArmor/Verathos items were outside the tracked project set.",
+        "decision": "No additional changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, check whether MANAGR creates paid x402/API flow, repeat usage, and any fee/BNKR/Club linkage.",
+      "For GitLawb, verify whether Ads impressions convert to paid budgets, clicks/CPM, advertiser retention, and $GITLAWB or USDC spend.",
+      "Continue to skip POD / Dolphin POD unless the user explicitly re-enables it."
+    ],
+    "notes": "Independent changelog importance tagger completed: BANKR MANAGR Artist OS official update medium; GitLawb Ads impressions traction scan medium."
+  },
+  {
     "run_id": "scan-20260629T025140Z",
     "started_at": "2026-06-29T02:51:40Z",
     "completed_at": "2026-06-29T02:51:40Z",

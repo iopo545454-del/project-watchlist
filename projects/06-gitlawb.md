@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-27T21:49:35Z
+last_updated: 2026-06-29T06:58:00Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,8 @@ last_updated: 2026-06-27T21:49:35Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-29 — Official GitLawb said GitLawb Ads impressions quadrupled over the last 24 hours and are approaching 100k, with one builder set to win $100 in inference credits at the milestone. This is not a tokenomics change, but it is useful traction telemetry for the ads/credits loop; next checks are whether impressions convert into paid budgets, clicks/CPM, advertiser retention, and `$GITLAWB` or USDC spend. Source: https://x.com/gitlawb/status/2071435531402268767
 
 - 2026-06-27 — Official GitLawb posted https://ads.gitlawb.com directly from the project account, making the GitLawb Ads surface easier to verify after the prior `$GITLAWB`/USDC ad-spend and OpenSea-agent funding posts. This upgrades the ads catalyst from scattered tweet evidence toward a live product property; next checks are dashboard access, campaign creation, budgets, impressions/clicks/CPMs, and token/credit routing. Source: https://x.com/gitlawb/status/2070902111609782731
 - 2026-06-27 — Founder Kevin said he is working on Memlawb as a free, open-source AI memory tool and linked https://github.com/Gitlawb/memlawb; the public repo describes a self-hostable, end-to-end encrypted / zero-knowledge memory layer for AI agents that works with MCP agents. This extends GitLawb from git/playground/ads into agent-memory infrastructure; next checks are releases, docs, active usage, and whether it plugs into OpenClaude/OpenGateway. Source: https://x.com/kevincodex/status/2070846283880018076

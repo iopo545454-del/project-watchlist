@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-28T22:45:24Z
+last_updated: 2026-06-29T06:58:00Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-28T22:45:24Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-29 — Official Bankr bot said `MANAGR Artist OS` is live and public on Bankr as `managr-os-v2` / "managr atelier," with 10 strategy agents plus a demo agent, Suno audio generation, and immediate label-dossier generation for rollout planning, content, release strategy, and market positioning. This is a concrete public app deployment on the Bankr agent surface; next checks are repeat usage, whether the MANAGR app creates paid x402/API flow, and whether any fees route to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2071475594542604346
 
 - 2026-06-28 — Official Bankr bot deployed `BunnyOS v1.0` on Base with contract `0xdC13c67367641331284F9BF5AA4d2Ba3c18a9ba3`. Treat this as another live Bankr launch/deployment proof point rather than a BNKR-tokenomics update; next checks are launch page metadata, whether BunnyOS develops real usage, and whether deployment/launch flow fees route to Bankr/BNKR. Source: https://x.com/bankrbot/status/2071346630641791076
 
