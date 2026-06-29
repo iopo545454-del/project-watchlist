@@ -1,5 +1,91 @@
 [
   {
+    "run_id": "scan-20260629T151643Z",
+    "started_at": "2026-06-29T15:16:43Z",
+    "completed_at": "2026-06-29T15:16:43Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T11:05:41Z",
+      "until": "2026-06-29T15:16:43Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest changelog plus prior scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Searched tracked official/team accounts in chunks from the prior scan timestamp through the current run. X search returned no public posts or no qualifying official/project-info posts from the monitored accounts in-window.",
+        "decision": "No changelog entries because no launch, token, governance, security, funding, listing, integration, roadmap, or credible project-specific update met materiality."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad project/ticker and terminal-account queries",
+        "url": "docs/data/index.json",
+        "summary": "Broad weak-signal queries across tracked project names/tickers and selected high-signal terminal/data accounts found no qualifying unverified listing, unlock, exploit, airdrop, governance, funding, buyback, integration, or outage signal in the scan window.",
+        "decision": "No Unverified Watch Items added; POD/Dolphin remains suppressed per user instruction."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, check the HSP-027 main vote result by July 3 and any developer-incentive/revenue-accounting follow-up.",
+      "For Derive, verify Derive v3 with official release notes/docs and watch OI, fees, RWA market launches and buyback inputs.",
+      "For Venice, verify July 1 VVV emissions reduction execution and current burn/emission ratio from official dashboard/onchain sources.",
+      "Continue to skip POD / Dolphin POD unless the user explicitly re-enables it."
+    ],
+    "notes": "No changelog entries were added; independent changelog importance tagger requested to inspect/confirm no unlabeled or changed entries."
+  },
+  {
     "run_id": "scan-20260629T110541Z",
     "started_at": "2026-06-29T11:05:41Z",
     "completed_at": "2026-06-29T11:05:41Z",
