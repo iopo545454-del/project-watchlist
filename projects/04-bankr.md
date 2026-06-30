@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-29T23:31:21Z
+last_updated: 2026-06-30T20:05:00Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-29T23:31:21Z
 ---
 
 ## Latest scan notes
+
+- 2026-06-30 — A third-party Bankr ecosystem post surfaced `@happyhour_base` saying Happy Hour (`base:0x8235edf32a1e10bd1867ad622915ab613664cba3`) is now live/published on the new Bankr Console, with a direct Bankr terminal agent link. Treat this as source-proximate evidence that external projects are being published into the Console surface after the official launch; next checks are whether Bankr/Happy Hour confirms sustained use, paid flows, or BNKR/Club value capture. Source: https://x.com/i/status/2072035043241857049
 
 - 2026-06-29 — Official Bankr bot launched the new **Bankr Console**, framed as the financial interface for the agentic economy: users can trade, automate, and build onchain in plain language across apps, tokens, and x402 endpoints; Bankr also claimed `$4.75B+` already traded across the ecosystem. Treat as a concrete product-surface launch and usage claim; next checks are console docs, repeat users/volume, supported endpoint creation flow, and whether fees or rewards route to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2071718633357885847
 

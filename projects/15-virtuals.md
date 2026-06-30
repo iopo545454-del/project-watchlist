@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-30T07:44:12Z
+last_updated: 2026-06-30T20:05:00Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-06-30 — Root Edge said its token-gated Launch Pad will let projects launch through a custom Clanker build while also adding a Virtuals option, with an `incubate` category coming to its app. This is a partner/ecosystem launch-surface signal for Virtuals rather than official protocol economics; next check is whether Root Edge launches actually route through Virtuals rails and create measurable agent/project activity. Source: https://x.com/i/status/2072045350899073323
 
 - 2026-06-30 — Official Virtuals amplified an ArAIstotle Chrome extension that live fact-checks video/podcast claims and marks them true/false/unverifiable; the cited demo used `@ethermage`'s CoinDesk appearance. This is a small ecosystem-product signal for Virtuals' AI-agent app surface, but not yet a token-economic update; next check is whether ArAIstotle shows real users, integrations, fees, or protocol-rail usage. Source: https://x.com/virtuals_io/status/2071839915361591806
 

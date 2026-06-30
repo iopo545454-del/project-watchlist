@@ -1,5 +1,107 @@
 [
   {
+    "run_id": "scan-20260630T200500Z",
+    "started_at": "2026-06-30T20:01:57Z",
+    "completed_at": "2026-06-30T20:05:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-30T16:00:35Z",
+      "until": "2026-06-30T20:05:00Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "All non-suppressed tracked projects",
+        "source": "X/Twitter account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Searched official/team/core x_accounts since the prior scan window; no direct authored posts were returned for the account chunks in the narrow 4h window.",
+        "decision": "No dossier update from direct authored-account scans."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter ecosystem account",
+        "url": "https://x.com/i/status/2072045350899073323",
+        "summary": "Root Edge said its token-gated Launch Pad will add a Virtuals option alongside a custom Clanker build.",
+        "decision": "Logged as an ecosystem launch-surface signal; monitor for actual Virtuals-routed launches and measurable usage/value capture."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter ecosystem account",
+        "url": "https://x.com/i/status/2072035043241857049",
+        "summary": "A Bankr ecosystem post surfaced Happy Hour as live/published on the new Bankr Console with a direct terminal-agent link.",
+        "decision": "Logged as a Console adoption signal; monitor official confirmation, paid usage, and BNKR/Club value capture."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter community mention",
+        "url": "https://x.com/trtrhes_network/status/2072043897652387901",
+        "summary": "Community drive to vote GRASS onto a Moonshot leaderboard surfaced in broad search, but follow-up search did not return corroboration and it is mainly community visibility/voting.",
+        "decision": "Ignored as low-signal/non-durable."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check Root Edge / Virtuals launchpad path for actual launched projects routed through Virtuals.",
+      "Re-check Happy Hour / Bankr Console for official Bankr amplification, paid endpoint usage, and fee/BNKR capture evidence.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance tagging completed by independent delegate tagger; new entries labeled high (Virtuals) and medium (Bankr)."
+  },
+  {
     "run_id": "scan-20260630T155741Z",
     "started_at": "2026-06-30T15:57:41Z",
     "completed_at": "2026-06-30T16:00:35Z",
@@ -9495,120 +9597,5 @@
       "Re-check official/team X accounts and source tables next 4h run."
     ],
     "importance_tagging": "completed by independent delegate tagger; new Bankr changelog entry labeled high"
-  },
-  {
-    "run_id": "scan-2026-06-21T08-27-41Z",
-    "started_at": "2026-06-21T08:27:41Z",
-    "completed_at": "2026-06-21T08:27:41Z",
-    "status": "completed",
-    "scan_window": {
-      "since": "2026-06-21T04:25:00Z",
-      "until": "2026-06-21T08:27:41Z",
-      "lookback": "roughly 4 hours"
-    },
-    "scope": {
-      "source": "docs/data/index.json",
-      "suppressed": [
-        "POD / Dolphin POD"
-      ],
-      "x_search": "official/team accounts plus intake issue #3"
-    },
-    "projects_checked": [
-      "GEOD / GEODNET",
-      "META / MetaDAO",
-      "BANKR / BankrCoin",
-      "AEON Framework",
-      "GitlWab / GitLawb / Gitwab",
-      "Kinetiq",
-      "GRASS",
-      "IOTA — Macrocosmos Bittensor Subnet 9",
-      "Targon — Bittensor Subnet 4",
-      "TAO / Bittensor",
-      "AKT / Akash",
-      "CHIP / USD.AI",
-      "VVV / Venice AI",
-      "VIRTUAL / Virtuals Protocol",
-      "Worldcoin / WLD / World Network",
-      "NEAR Protocol",
-      "DRV / Derive Protocol",
-      "OCT / Octra",
-      "BIO / Bio Protocol",
-      "Pluralis",
-      "Ambient",
-      "EIGEN / EigenCloud"
-    ],
-    "logged_projects": [
-      "EIGEN / EigenCloud",
-      "BANKR / BankrCoin",
-      "Ambient"
-    ],
-    "counts": {
-      "projects_checked": 22,
-      "intake_issues_checked": 3,
-      "changelog_entries_added": 4,
-      "material_entries": 4,
-      "unverified_items": 1
-    },
-    "decision_trail": [
-      {
-        "project": "Pluralis",
-        "source": "GitHub issue intake",
-        "url": "https://github.com/iopo545454-del/project-watchlist/issues/1",
-        "summary": "Open intake issue already represented by tracked slug 21-pluralis with initial_review_done=true.",
-        "decision": "Deduped; no new project created."
-      },
-      {
-        "project": "Ambient",
-        "source": "GitHub issue intake",
-        "url": "https://github.com/iopo545454-del/project-watchlist/issues/2",
-        "summary": "Open intake issue already represented by tracked slug 22-ambient with initial_review_done=true.",
-        "decision": "Deduped; no new project created."
-      },
-      {
-        "project": "EIGEN / EigenCloud",
-        "source": "GitHub issue intake",
-        "url": "https://github.com/iopo545454-del/project-watchlist/issues/3",
-        "summary": "New intake for eigencloud / EigenLayer with token address and main X account.",
-        "decision": "Created slug 23-eigencloud, initial dossier, index row, generated HTML, and changelog intake/initial-review entries."
-      },
-      {
-        "project": "BANKR / BankrCoin",
-        "source": "X/Twitter core-builder scan",
-        "url": "https://x.com/0xDeployer/status/2068496200937189424",
-        "summary": "Core builder addressed a console redesign/test-token incident and user-loss complaints.",
-        "decision": "Logged as unverified watch item / ops-trust Latest item pending follow-through."
-      },
-      {
-        "project": "Ambient",
-        "source": "X/Twitter CEO scan",
-        "url": "https://x.com/IridiumEagle/status/2068599053559165199",
-        "summary": "CEO highlighted Ambient Desktop process isolation and secret management.",
-        "decision": "Logged as official product-security context; not a token/mainnet update."
-      },
-      {
-        "project": "Virtuals",
-        "source": "X/Twitter core-contributor scan",
-        "url": "https://x.com/0xTP91/status/2068570833556267221",
-        "summary": "Core contributor reacted to 14 Peaks Expedition/humanoid mountain expedition partnership.",
-        "decision": "Observed as weak ecosystem signal but not logged because official Virtuals confirmation/details were insufficient."
-      },
-      {
-        "project": "All tracked projects",
-        "source": "X/Twitter broad weak-signal scan",
-        "url": "n/a",
-        "summary": "No other credible new listings, funding, governance, exploits, unlocks, buybacks, or high-signal unverified rumors found in the scan window.",
-        "decision": "No additional changelog entries."
-      }
-    ],
-    "errors": [
-      "Initial EigenCloud research delegate timed out; scanner completed EigenCloud research directly with x_search."
-    ],
-    "next_checks": [
-      "Verify EIGEN canonical token contract and ELIP-12/buyback-burn implementation status.",
-      "Re-check Bankr for postmortem/follow-up on console test-token incident and reward Season 2 criteria.",
-      "Re-check Ambient Desktop docs/security model and any mainnet/tokenomics posts.",
-      "Continue suppressing POD/Dolphin until user re-enables it."
-    ],
-    "importance_tagging": "completed by independent delegate tagger; labeled 2026-06-21T08:27:41Z changelog additions as Ambient official product-security update medium, BANKR ops/trust unverified watch item high, EIGEN initial review high, and EIGEN intake low; JSON validation passed"
   }
 ]
