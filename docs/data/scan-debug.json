@@ -1,5 +1,101 @@
 [
   {
+    "run_id": "scan-20260630T074412Z",
+    "started_at": "2026-06-30T07:44:12Z",
+    "completed_at": "2026-06-30T07:47:12Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-30T03:42:16Z",
+      "until": "2026-06-30T07:47:12Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Searched tracked official/team accounts in chunks for the post-2026-06-30T03:42Z window. Most accounts had no original non-reply posts; NEAR reposted confidential near.com swap positioning already represented by prior Confidential Intents notes, and OwnershipFM posted MetaDAO-adjacent decision-market discussion that was not a direct project update.",
+        "decision": "Avoid duplicate/low-materiality items; no NEAR or MetaDAO changelog entries added."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/virtuals_io/status/2071839915361591806",
+        "summary": "Official Virtuals highlighted an ArAIstotle Chrome extension for live fact-checking podcasts/videos, using an ethermage CoinDesk appearance as the demo.",
+        "decision": "Added a Latest/changelog entry as a relevant ecosystem-product signal; marked pending proof of real users, fees, integrations, or protocol-rail usage."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad project/ticker, terminal, exchange, onchain/security-style search",
+        "url": "docs/data/index.json",
+        "summary": "Broad event-keyword search across tracked projects found no credible new listing, unlock, buyback, airdrop, exploit/security incident, funding, governance, or integration signal since the prior scan.",
+        "decision": "No Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Virtuals/ArAIstotle, verify extension users, docs/download source, integrations, fees, and whether activity routes through Virtuals/EconomyOS rails.",
+      "Confirm actual Kraken trading enablement, pairs, deposits/withdrawals, and jurisdiction support for SN64, SN4, and SN51.",
+      "For Kinetiq, verify the claimed buyback-wallet address, transaction history, official Foundation confirmation, and whether buys are revenue-funded.",
+      "Continue to skip POD / Dolphin POD unless explicitly re-enabled."
+    ],
+    "notes": "One changelog entry was added before independent importance tagging; POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger labeled the new VIRTUAL changelog entry medium; post-tag counts high=145, medium=79, low=24, missing/invalid=0."
+  },
+  {
     "run_id": "scan-20260630T033731Z",
     "started_at": "2026-06-30T03:37:31Z",
     "completed_at": "2026-06-30T03:42:16Z",
