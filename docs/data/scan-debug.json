@@ -1,5 +1,92 @@
 [
   {
+    "run_id": "scan-20260630T155741Z",
+    "started_at": "2026-06-30T15:57:41Z",
+    "completed_at": "2026-06-30T16:00:35Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-30T11:50:19Z",
+      "until": "2026-06-30T16:00:35Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Searched tracked official/team accounts in five chunks for the post-2026-06-30T11:50Z window, excluding POD/Dolphin. x_search returned no non-reply posts from the tracked account chunks in the exact window.",
+        "decision": "No dossier Latest/changelog entries added from official/team account scan."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad project/ticker and event-keyword search",
+        "url": "docs/data/index.json",
+        "summary": "Broad event-keyword search across tracked projects found no credible new listing, unlock, buyback, airdrop, exploit/security incident, funding, governance, migration, or partnership signal in the exact scan window. Broader X context mentioned Bittensor decentralization/fund items, but targeted follow-up searches did not verify those claims from official/high-priority sources.",
+        "decision": "No Unverified Watch Items or changelog entries added; continue to monitor official Bittensor/OpenTensor sources."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue to verify actual Kraken trading enablement, pairs, deposits/withdrawals, and jurisdiction support for SN64, SN4, and SN51.",
+      "For Kinetiq, verify the claimed buyback-wallet address, transaction history, official Foundation confirmation, and whether buys are revenue-funded.",
+      "For GitLawb, verify LongCat availability inside OpenClaude/Zero, model/provider details, usage, latency/cost, and whether it routes through paid credits or ads.",
+      "Continue to skip POD / Dolphin POD unless explicitly re-enabled."
+    ],
+    "notes": "Routine 4h scan; no material confirmed updates or high-signal weak items surfaced. POD/Dolphin remained suppressed.",
+    "importance_tagging": "No changelog entries were added or modified; independent delegate_task tagger still inspected project-changelog.json schema/importances before commit."
+  },
+  {
     "run_id": "scan-20260630T115019Z",
     "started_at": "2026-06-30T11:50:19Z",
     "completed_at": "2026-06-30T11:56:00Z",
