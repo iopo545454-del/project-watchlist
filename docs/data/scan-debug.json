@@ -1,5 +1,92 @@
 [
   {
+    "run_id": "scan-20260630T033731Z",
+    "started_at": "2026-06-30T03:37:31Z",
+    "completed_at": "2026-06-30T03:42:16Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-29T23:31:21Z",
+      "until": "2026-06-30T03:42:16Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created; deduped against existing tracked projects."
+      },
+      {
+        "project": "Official/team X account scan",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Searched tracked official/team accounts in chunks for the post-2026-06-29T23:31Z window. X search found no qualifying in-window official launch, roadmap/protocol update, governance result, tokenomics/buyback, listing, security, funding, docs/blog, or dashboard update. Several surfaced posts were pre-cutoff items already logged in prior scans (Bankr Console, GEOD Coinbase, USD.AI/Fluid liquidity facility, Targon MinosVM 2.0, Chutes/Kraken).",
+        "decision": "No changelog entries added; avoid duplicate pre-cutoff items. POD/Dolphin remained suppressed."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad project/ticker, terminal, exchange, onchain/security-style search",
+        "url": "docs/data/index.json",
+        "summary": "Broad search across tracked project names/tickers and high-signal source classes found no credible new listing, unlock, buyback, airdrop, exploit/security incident, funding, governance, or integration signal since the prior scan. Low-quality Moonshot/community vote chatter and broad AI/crypto narrative summaries were filtered out.",
+        "decision": "No Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Confirm actual Kraken trading enablement, pairs, deposits/withdrawals, and jurisdiction support for SN64, SN4, and SN51.",
+      "For Kinetiq, verify the claimed buyback-wallet address, transaction history, official Foundation confirmation, and whether buys are revenue-funded.",
+      "For Bankr, verify Bankr Console docs, live endpoint/app creation flow, repeat users/volume, and any BNKR/Club fee or reward linkage.",
+      "Continue to skip POD / Dolphin POD unless explicitly re-enabled."
+    ],
+    "notes": "No changelog entries were added; independent delegate_task tagger inspected docs/data/project-changelog.json and confirmed all existing entries have valid importance labels.",
+    "importance_tagging": "Independent delegate_task tagger verified 247 changelog entries: high=145, medium=78, low=24, missing/invalid=0; no changelog file changes were needed."
+  },
+  {
     "run_id": "scan-20260629T233121Z",
     "started_at": "2026-06-29T23:31:21Z",
     "completed_at": "2026-06-29T23:31:21Z",
