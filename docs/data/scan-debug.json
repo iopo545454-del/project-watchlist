@@ -1,5 +1,92 @@
 [
   {
+    "run_id": "scan-20260701T164103Z",
+    "started_at": "2026-07-01T16:41:03Z",
+    "completed_at": "2026-07-01T16:41:03Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T12:31:36Z",
+      "until": "2026-07-01T16:41:03Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "Tracked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Official/team-account searches across 25 non-suppressed tracked projects since the prior scan returned no qualifying non-reply announcements for launches, listings, token/buyback/unlock, governance, partnerships, integrations, outages/security, roadmap, docs/blog/releases, or usage KPIs.",
+        "decision": "No changelog or dossier updates."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter broad keyword/news/research searches",
+        "url": "docs/data/index.json",
+        "summary": "Broad project/ticker, credible-news/listing-monitor, and investor/operator thesis searches found no concrete high-signal claims or substantive new theses in the scan window. POD/Dolphin remained suppressed.",
+        "decision": "No Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue monitoring official/team accounts and high-signal weak sources for material project updates.",
+      "For Bankr, continue to verify Reward Season 2, DEPLOYER utility/liquidity and BNKR/Club value capture from official sources.",
+      "Re-check any veVIRTUAL Sprint/Governance Virtuals reward claims against official Virtuals accounts before logging.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "No changelog entries were added; independent delegate tagger still inspected changelog importance fields before commit. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json, found no new/unlabeled changelog entries, validated json.tool, and confirmed missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260701T123136Z",
     "started_at": "2026-07-01T12:31:36Z",
     "completed_at": "2026-07-01T12:31:36Z",
