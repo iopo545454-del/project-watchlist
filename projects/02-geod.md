@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T00:12:30Z
+last_updated: 2026-07-01T04:15:21Z
 ---
 
 # GEOD / GEODNET
@@ -12,6 +12,8 @@ last_updated: 2026-07-01T00:12:30Z
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
 
 ## Latest scan notes
+
+- 2026-07-01 — Official GEODNET said the scheduled GEOD halving is here: from July 1, max base mining rewards drop from 12 to 6 GEOD/day, a tokenomics issuance reduction tied to the fixed annual schedule. This should be verified against docs/tokenomics, active station rewards, circulating supply, and burn/revenue dashboards. Source: https://x.com/GEODNET/status/2072126946222223472
 
 - 2026-07-01 — Official GEODNET said its RTK network is now 22,000+ stations across 150+ countries, another source-proximate network-scale milestone to verify against the live console/map and revenue/burn dashboards. Source: https://x.com/GEODNET/status/2072077930805518825
 
@@ -80,6 +82,7 @@ last_updated: 2026-07-01T00:12:30Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| GEOD halving / base mining reward reduction | Confirmed / completed tokenomics event | Official GEODNET said the scheduled halving is here and max base mining rewards drop from 12 to 6 GEOD/day from July 1: https://x.com/GEODNET/status/2072126946222223472 | Live from 2026-07-01 | Reduces new base issuance to station operators under the fixed tokenomics schedule. | Lower issuance can improve the tokenomics story if network revenue/burns and paid demand keep growing; otherwise miner economics and station growth need monitoring. | Verify docs/tokenomics, station reward behavior, circulating supply, miner profitability, burn/revenue dashboards, and whether StableHex multipliers offset lower base rewards in priority areas. |
 | Coinbase GEOD listing live | Confirmed / completed listing | Official GEODNET said GEOD is now live on Coinbase: https://x.com/GEODNET/status/2071670179587625249 | Live as of 2026-06-29 | Adds a major US exchange/liquidity venue for GEOD. | Better liquidity can widen the buyer base, increase institutional/retail access, and make burn/revenue diligence more market-relevant. | Watch Coinbase order-book depth, regional support, custody/withdrawal status, volume quality, and whether new liquidity changes holder distribution. |
 | 22,000+ station / 150+ country network milestone | Confirmed / network-scale KPI | Official GEODNET post says the RTK network is now 22,000+ strong across 150+ countries: https://x.com/GEODNET/status/2072077930805518825 | Live as of 2026-06-30 | Reinforces GEODNET's global coverage and station-supply scale after the Coinbase listing. | Larger coverage can make enterprise/API demand more credible, but only if active stations, uptime, revenue and burns validate the headline count. | Verify current active stations on the console/map, country coverage quality, paid usage, revenue/burn mix, and whether StableHex is improving commercially valuable gaps. |
 | GIP-13 StableHex targeted reward multipliers | Confirmed | Official GEODNET post says StableHex is live with 6x/4x/2x reward zones, limited spots, and uptime requirements: https://x.com/GEODNET/status/2067956173689454667 | Live as of 2026-06-19 | Directly steers station growth into weak/zero-coverage commercial zones. | Better coverage can improve enterprise/API value and future burn/revenue quality. | Watch claimed hex fills, uptime retention, active-station growth, and coverage expansion in priority geos. |

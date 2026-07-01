@@ -1,5 +1,126 @@
 [
   {
+    "run_id": "scan-20260701T041521Z",
+    "started_at": "2026-07-01T04:15:21Z",
+    "completed_at": "2026-07-01T04:15:21Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T00:12:30Z",
+      "until": "2026-07-01T04:15:21Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GEOD / GEODNET",
+      "GitlWab / GitLawb / Gitwab",
+      "AKT / Akash",
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 4,
+      "changelog_entries_added": 5,
+      "material_confirmed": 5,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2072126946222223472",
+        "summary": "Official GEODNET said the scheduled halving is live from July 1 and max base mining rewards drop from 12 to 6 GEOD/day.",
+        "decision": "Logged as a tokenomics/catalyst update; verify docs, station rewards, supply, burn and revenue dashboards."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/gitlawb/status/2072133348009685018",
+        "summary": "Official GitLawb reported a bot attack creating ~370k junk repositories, iCaptcha deployment, and cleanup of 230k+ fake repos.",
+        "decision": "Logged as security/resilience official update; verify user impact, node reports, repo integrity and any postmortem."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/kevincodex/status/2072125600496775557",
+        "summary": "Founder said the team is preparing Zero release alongside Fable 5 access.",
+        "decision": "Logged as tentative catalyst added; wait for official release notes and usage/economic evidence."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/gregosuri/status/2072136586201067680",
+        "summary": "Founder said AkashML processed 200B+ tokens this month and exceeded 10B tokens in a single day.",
+        "decision": "Logged as usage KPI official/team signal; verify against dashboard/API, revenue, provider payout and BME impact."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2072123109663265061",
+        "summary": "Official Derive completed weekly buyback #73: 187,362 DRV at $0.10 average; cumulative 25,896,205 DRV bought; 35% of fees allocated.",
+        "decision": "Logged as routine but token-economic official update; compare against OI/fees and recent market launches."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Other monitored accounts in-window had no non-reply project information above threshold, duplicate context, podcast/marketing commentary, light BD outreach, or no activity. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog entries or Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify GEOD halving effects against official tokenomics, station reward data, miner economics, revenue and burn dashboards.",
+      "For GitLawb, watch for a postmortem, node-operator reports, repo integrity/backups, iCaptcha false positives and Zero/Fable 5 release notes.",
+      "For AkashML, verify token-throughput claims against any live dashboard/API, compute spend, provider payouts and BME burn/mint data.",
+      "For Derive, compare buyback #73 size against fees, OI, v3 release progress and recent BTC/HYPE/ZEC activity.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance tagging completed by independent delegate tagger; GEODNET, GitLawb bot-attack, GitLawb Zero/Fable, and DRV buyback labeled high; AkashML usage KPI labeled medium. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json, labeled 5 new entries, validated json.tool, and confirmed invalid/missing importance fields = 0."
+  },
+  {
     "run_id": "scan-20260701T001230Z",
     "started_at": "2026-07-01T00:09:29Z",
     "completed_at": "2026-07-01T00:12:30Z",

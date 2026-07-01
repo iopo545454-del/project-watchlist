@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-26T16:42:13Z
+last_updated: 2026-07-01T04:15:21Z
 ---
 
 # AKT / Akash
@@ -13,6 +13,8 @@ last_updated: 2026-06-26T16:42:13Z
 - Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.
 
 ## Latest scan notes
+
+- 2026-07-01 — Founder Greg Osuri said AkashML processed 200B+ tokens this month and set a new daily ATH above 10B tokens/day. This is a meaningful usage/KPI signal for AkashML/OpenRouter inference demand, but needs API/dashboard verification and context on revenue, provider payout, and AKT/BME value capture. Sources: https://x.com/gregosuri/status/2072136586201067680 and https://x.com/gregosuri/status/2072118592930484360
 
 - 2026-06-26 — Official Akash said it is rethinking marketplace UX for the shifting GPU market, starting with Resource Reclamation for timed compute so providers and tenants get cleaner lease expiry/release mechanics. Greg Osuri followed with “finalizing details to announce soon,” so treat this as a concrete product-roadmap signal rather than a live launch. Source: https://x.com/akashnet/status/2070539636544266464 and https://x.com/gregosuri/status/2070541033486827554
 - 2026-06-24 — Official Akash said Homenode beta is accepting RTX 3090s, 4090s, and 5090s for inference and distributed training, quoting Greg Osuri's $500/month 5090 Homenode economics. This upgrades the Homenode supply-expansion catalyst from roadmap context to live beta recruiting for high-end home GPUs. Source: https://x.com/akashnet/status/2069848542584201265
@@ -96,6 +98,7 @@ last_updated: 2026-06-26T16:42:13Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| AkashML token-throughput records | Confirmed / usage KPI | Founder Greg Osuri said AkashML processed 200B+ tokens this month and set a new daily ATH above 10B tokens/day: https://x.com/gregosuri/status/2072136586201067680 and https://x.com/gregosuri/status/2072118592930484360 | Live KPI as of 2026-07-01 | Signals growing inference usage on AkashML/OpenRouter-connected workloads. | Token-throughput only matters for AKT if it converts into marketplace spend, provider payouts, BME burns, and durable customers; otherwise it is a vanity usage metric. | Verify against AkashML/dashboard/API data, revenue/spend, provider payout mix, model mix, gross margin/subsidy level, and BME burn/mint impact. |
 | Burn Mint Equilibrium live on mainnet | Confirmed | Akash Q1 2026 report says BME went live Mar. 23, 2026 after Proposal 318; roadmap lists AEP-76 completed: https://akash.network/blog/akash-network-q1-2026-report/ and https://akash.network/roadmap/2026/ | Live since 2026-03-23 | Creates direct link between compute demand and AKT via burn/mint economics while preserving stable pricing UX. | If compute spend grows, AKT capture narrative improves versus USDC-only marketplace usage. | Watch compute spend, AKT burned/minted, USDC vs AKT payment mix, provider receipts, and governance parameter changes. |
 | Akash crossed $5M all-time compute spend and Q1 usage milestones | Confirmed / KPI catalyst | Akash Q1 2026 report says first 90 days crossed an all-time high of $5M in compute spend: https://akash.network/blog/akash-network-q1-2026-report/ | Q1 2026 | Provides KPI evidence that marketplace demand is growing. | Higher spend improves credibility of BME and provider incentives. | Track quarterly compute spend, active leases, GPU utilization, customer retention, and revenue concentration. |
 | Homenode consumer/prosumer GPU supply expansion | Confirmed / beta live | Q1 report says Homenode beta opened signups for RTX 4090, RTX 5090, and Quadro RTX 6000 Ada; official X later said beta is accepting RTX 3090s, 4090s, and 5090s for inference/distributed training: https://akash.network/blog/akash-network-q1-2026-report/ and https://x.com/akashnet/status/2069848542584201265 | Beta live / actively accepting GPUs as of 2026-06-24 | Adds a new supply category beyond datacenter providers, including high-end consumer GPUs. | If reliable, Akash can scale cheaper inference capacity and broaden provider participation; if $500/month 5090 economics are real and sustained, more home supply may join quickly. | Watch beta acceptance, supported GPUs, uptime/SLA, inference workloads, Homenode earnings, and whether new supply increases paid marketplace spend. |
