@@ -1,5 +1,126 @@
 [
   {
+    "run_id": "scan-20260701T204614Z",
+    "started_at": "2026-07-01T20:46:14Z",
+    "completed_at": "2026-07-01T20:46:14Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T16:41:03Z",
+      "until": "2026-07-01T20:46:14Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "VVV / Venice AI",
+      "NEAR Protocol",
+      "META / MetaDAO"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 5,
+      "material_confirmed": 4,
+      "weak_signals_logged": 1
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter co-founder/account scan",
+        "url": "https://x.com/metaproph3t/status/2072418035198263559",
+        "summary": "Proph3t reported the live Laso Finance raise at $14,272,696 from 311 contributors and described it as oversubscribed; Ownership FM posted a founder clip on Laso proposal mechanics.",
+        "decision": "Added Latest/changelog catalyst update; watch final accepted amount, allocation, settlement and fee/value accrual."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter related account",
+        "url": "https://x.com/0xSrMessi/status/2072408682483024325",
+        "summary": "0xSrMessi said his X account was compromised and used to connect to Pumpfun/create coins, warning users not to click links.",
+        "decision": "Added Unverified Watch Item as account-security risk; not treated as confirmed MetaDAO protocol exploit."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/AskVenice/status/2072408045007573141",
+        "summary": "Official Venice said VVV annual emissions were reduced from 4M to 3M tokens/year and reiterated burn-over-emissions net-deflation target.",
+        "decision": "Added Latest/changelog catalyst update and updated emissions catalyst."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072415778557632982",
+        "summary": "Official NEAR said Protocol Upgrade 2.13 is live on testnet with post-quantum safe access keys and dynamic resharding.",
+        "decision": "Added Latest/changelog update and upgraded post-quantum catalyst status to live testnet."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072365539637301396",
+        "summary": "Official NEAR said NEAR perpetuals are live on Kalshi.",
+        "decision": "Added Latest/changelog update as regulated-market distribution signal."
+      },
+      {
+        "project": "Other tracked projects",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Scans of remaining non-suppressed tracked official/team accounts surfaced no additional qualifying launches, listings, token/unlock/buyback, governance, security, partnership, dashboard, or thesis changes above threshold. Several posts were routine/promotional or outside the scan window.",
+        "decision": "No additional changelog or dossier updates."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Laso final accepted/allocated amount, settlement, secondary liquidity and any MetaDAO/META fee or value accrual.",
+      "Re-check 0xSrMessi account-recovery status and official MetaDAO/founder accounts for any broader impact; mark stale if resolved with no project impact.",
+      "Verify Venice VVV emission cut on official dashboard/onchain data and compare monthly burns to the new 3M/year run-rate.",
+      "Watch NEAR 2.13 testnet validator/client adoption, wallet support, mainnet timing and any upgrade issues.",
+      "Monitor NEAR/Kalshi perps volume and whether any economics route into NEAR/near.com value capture.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance was independently tagged via delegate_task before validation/commit. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger labeled five new changelog entries: high for VVV emissions cut, NEAR Kalshi perps, MetaDAO Laso raise, and 0xSrMessi account compromise watch item; medium for NEAR 2.13 testnet upgrade. json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260701T164103Z",
     "started_at": "2026-07-01T16:41:03Z",
     "completed_at": "2026-07-01T16:41:03Z",

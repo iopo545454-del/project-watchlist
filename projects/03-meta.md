@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T00:12:30Z
+last_updated: 2026-07-01T20:46:14Z
 ---
 
 # META / MetaDAO
@@ -28,6 +28,9 @@ last_updated: 2026-07-01T00:12:30Z
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
 
 ## Latest scan notes
+
+- 2026-07-01 — Proph3t reported the live Laso Finance raise at $14,272,696 from 311 contributors and said it is oversubscribed; Ownership FM also posted a founder clip explaining the first Laso proposal around weekend card-issuer stock/buffer funding. This is a stronger MetaDAO capital-formation demand signal than the earlier $5.13M note, but final accepted amount/allocation/fees still need verification. Sources: https://x.com/metaproph3t/status/2072418035198263559, https://x.com/ownershipfm/status/2072419608368464158
+- 2026-07-01 — MetaDAO-affiliated `@0xSrMessi` said his X account was compromised, connected to Pumpfun, and used to create coins; he warned users not to click links while access/revocation was unresolved. Treat this as an account-security watch item, not a protocol exploit, unless official MetaDAO/founder accounts corroborate broader impact. Source: https://x.com/0xSrMessi/status/2072408682483024325
 
 - 2026-07-01 — MetaDAO official account said Laso's raise is live for four days, and co-founder Proph3t later reported $5,132,914 committed; this upgrades the Laso catalyst from scheduled to active with strong demand, but final settlement, allocation, fees, and META value accrual still need verification. Sources: https://x.com/MetaDAOProject/status/2072054410742751387, https://x.com/metaproph3t/status/2072104030009180518
 
@@ -67,6 +70,7 @@ last_updated: 2026-07-01T00:12:30Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| 2026-07-01 | MetaDAO-affiliated `@0xSrMessi` said his X account was compromised and used to connect to Pumpfun/create coins, warning users not to click links while revocation/access was unresolved. | https://x.com/0xSrMessi/status/2072408682483024325 | Medium | Unverified | Account-compromise risk can mislead users around MetaDAO-adjacent launch/security discussions even if it is not a protocol exploit. | Re-check `@0xSrMessi`, official MetaDAO/founder accounts, and any postmortem/deletion/confirmation; downgrade to stale once account recovery is confirmed and no broader impact appears. |
 | Laso Finance curated raise on MetaDAO | Confirmed / active product event | Official MetaDAO said the raise is live for four days and Proph3t later reported $5,132,914 committed: https://x.com/MetaDAOProject/status/2072054410742751387 and https://x.com/metaproph3t/status/2072104030009180518 | Live 2026-06-30 through early July 2026 | Turns the prior scheduled catalyst into an active high-demand raise on MetaDAO’s capital-formation surface. | A clean, large Laso raise can reinforce MetaDAO as Solana’s ownership-coin venue; weak settlement, poor allocation quality, or unclear fees would cap the META read-through. | Watch final committed/accepted amount, wallet distribution, allocation mechanics, settlement, secondary liquidity, platform fee disclosure, and whether any economics accrue to META. |
 | Agentic-commerce founder raise on MetaDAO | Confirmed / live raise signal | Proph3t said an unnamed `@huntermmonk` agentic-spending company is raising on MetaDAO at a $3M valuation and was already oversubscribed: https://x.com/metaproph3t/status/2070660454670819687; https://x.com/metaproph3t/status/2070661129257550087 | June 27, 2026 / live-or-imminent | Adds a fresh, founder-quality raise to the MetaDAO ownership-coin/capital-formation pipeline. | If execution/settlement is clean, it strengthens MetaDAO as a venue for small high-demand founder raises and can pull more Solana/internet-capital-markets attention into META. | Verify the project name, app listing, raise mechanics, final amount, participant quality, post-raise liquidity, and whether any fees/value accrue to META. |
 | 2026-06-16 | Related-account discussion of the Zinc dispute/pivot and a possible rule requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO | https://x.com/i/status/2066930615895671047 | Medium | Unverified | Would affect launch-market governance, founder alignment, and whether MetaDAO can prevent project pivots/rugs after raises | Re-check official MetaDAO/Futardio accounts, proposal text, Zinc founder response, and any program-authority policy before treating as confirmed |

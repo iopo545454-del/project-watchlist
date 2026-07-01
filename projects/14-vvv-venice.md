@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-25T20:08:28Z
+last_updated: 2026-07-01T20:46:14Z
 ---
 
 # VVV / Venice AI
@@ -32,7 +32,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | New frontier/coding model launches in Venice | Confirmed | Official X said Kimi K2.7 Code is live on Venice with 1T total parameters, 32B active, 256K context, vision/function calling/structured output/web search: https://x.com/AskVenice/status/2066634900652879949 | Live as of 2026-06-15 | Improves product utility for developers and AI-agent workflows. | Better models can increase API demand, staking-for-capacity demand, and revenue/burn capacity if usage monetizes. | Track docs/model list, API pricing, user uptake, and whether new model launches correlate with burn/revenue growth. |
-| Emissions reduction path | Confirmed | Official Venice posts described reductions from prior annual emissions toward lower future emissions: https://x.com/AskVenice/status/2037231269449523276 and https://x.com/AskVenice/status/2061503966702162407 | Ongoing through scheduled cuts | Lowers inflation and makes burns easier to compare against issuance. | If burns exceed emissions, VVV gets a simple deflationary-capital-asset narrative. | Verify current annual emissions, staking yield, and whether cuts executed onchain as announced. |
+| Emissions reduction path | Confirmed / latest cut executed | Official Venice posts described reductions from prior annual emissions toward lower future emissions; on 2026-07-01 Venice said annual emissions were cut from 4M to 3M VVV: https://x.com/AskVenice/status/2037231269449523276, https://x.com/AskVenice/status/2061503966702162407, and https://x.com/AskVenice/status/2072408045007573141 | Latest cut announced 2026-07-01; ongoing scheduled path | Lowers inflation and makes burns easier to compare against issuance. | If burns exceed emissions, VVV gets a simple deflationary-capital-asset narrative. | Verify current annual emissions onchain/dashboard, staking yield changes, and whether July burns exceed the new 3M/year run-rate. |
 | Revenue-linked buyback/burn program | Confirmed | Official burn update/dashboard references: https://x.com/AskVenice/status/2064158076303790131 | Monthly / recurring if revenue continues | Directly links Venice revenue to VVV supply reduction. | Larger repeated burns can shift VVV from “AI app token” to revenue-linked asset; failed/irregular burns weaken thesis. | Track burn size, txs, revenue source, burn/emission ratio, and whether dashboard data is machine-readable. |
 | Staking for API/inference capacity | Confirmed / needs exact current terms | Official VVV landing page and Venice API docs describe token/API utility and developer usage; founder reported Venice reaching 100B daily tokens on 2026-06-25: https://venice.ai/lp/vvv, https://docs.venice.ai/, and https://x.com/ErikVoorhees/status/2070188683416715519 | Live, terms may evolve | Creates non-speculative demand from heavy users/devs/agents that need inference, with usage milestones indicating whether the product surface is actually scaling. | If AI agents require persistent private inference, capacity staking could become a real working-capital use case; if token throughput is mostly free/promotional, burn/capacity impact may lag usage. | Verify current staking rules, capacity quotas, unstaking constraints, daily-token methodology, revenue per token, and whether staked demand grows with API usage. |
 | Contract/admin/security clarity | Speculative watch item | Onchain token-admin verification source to monitor: https://basescan.org/token/0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf | Unknown | Security clarity can affect institutional comfort and holder trust. | A verified timelock/multisig/admin-control change or exploit disclosure would be material. | Check token contract, audits, official responses, and any admin-role changes. |
@@ -73,6 +73,9 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 
 ## Latest scan notes
+
+- 2026-07-01 — Official Venice said VVV annual emissions have been reduced from 4M to 3M tokens/year, the third planned cut after May and June reductions, and reiterated the goal of net-deflationary VVV when burns exceed emissions; verify the onchain/emissions dashboard and next burn math. Source: https://x.com/AskVenice/status/2072408045007573141
+- 2026-07-01 — Official Venice said Claude Fable 5 is back on Venice anonymously; useful model-availability/product-surface note, but less tradeable than the emissions cut unless API/staking demand follows. Source: https://x.com/AskVenice/status/2072409008908943615
 
 - 2026-06-25 — Founder Erik Voorhees said Venice reached 100B daily tokens, a new source-proximate usage milestone versus the prior 85B/day note; still needs dashboard/API verification and burn/emission comparison. Source: https://x.com/ErikVoorhees/status/2070188683416715519
 - 2026-06-23 — Venice publicly endorsed Osaurus Cloud, which launched a pay-as-you-go flow for privately running frontier open models through Venice with zero data retention on selected models and no API key requirement; useful distribution signal beyond the Base MCP integration. Source: https://x.com/i/status/2069488620650779104
