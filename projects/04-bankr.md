@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-30T20:05:00Z
+last_updated: 2026-07-01T12:31:36Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-06-30T20:05:00Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-01 — Official Bankr bot completed a `$DEPLOYER` airdrop of 1,000,000 tokens each to the top 500 Bankr Club members, covering ranks 1 through 511 on Base, with contract `0x4d1be7e1a73d1068cc87697226f97ff26c54bba3`; the same scan also saw another Bankr launch-flow deployment (`98KDAO`) using the 85% Uniswap v4 pool / 15% two-year vesting pattern. Treat this as a concrete Bankr Club reward-distribution and launchpad-mechanics proof point; next checks are official Season 2 criteria, whether DEPLOYER has durable utility/liquidity, and whether launch/vesting fees route to BNKR/Club value capture. Sources: https://x.com/i/status/2072288763133432300 and https://x.com/i/status/2072297116576452804
 
 - 2026-06-30 — A third-party Bankr ecosystem post surfaced `@happyhour_base` saying Happy Hour (`base:0x8235edf32a1e10bd1867ad622915ab613664cba3`) is now live/published on the new Bankr Console, with a direct Bankr terminal agent link. Treat this as source-proximate evidence that external projects are being published into the Console surface after the official launch; next checks are whether Bankr/Happy Hour confirms sustained use, paid flows, or BNKR/Club value capture. Source: https://x.com/i/status/2072035043241857049
 

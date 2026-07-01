@@ -1,5 +1,100 @@
 [
   {
+    "run_id": "scan-20260701T123136Z",
+    "started_at": "2026-07-01T12:31:36Z",
+    "completed_at": "2026-07-01T12:31:36Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T08:25:59Z",
+      "until": "2026-07-01T12:31:36Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/i/status/2072288763133432300",
+        "summary": "Official Bankr bot said a DEPLOYER airdrop of 1,000,000 tokens each to the top 500 Bankr Club members is complete on Base; related same-window Bankr launch-flow activity included a 98KDAO launch with the 85% pool / 15% vesting mechanics.",
+        "decision": "Logged as a Bankr Club reward-distribution and launchpad-mechanics proof point; verify Season 2 rules, DEPLOYER utility/liquidity, fee routing and BNKR/Club value capture."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter broad weak-signal search",
+        "url": "https://x.com/i/status/2072295481300902357",
+        "summary": "Broad keyword search surfaced a Governance Virtuals account claiming veVIRTUAL Sprint 2026 is live with 2.4M VIRTUAL rewards, but follow-up official/team-account search did not corroborate it from tracked Virtuals sources in the window.",
+        "decision": "Not added as durable context or unverified watch item; re-check official Virtuals accounts before logging."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Other monitored accounts in-window had no non-reply project information above threshold, no activity, generic replies, user-specific Bankr automations, or weak/uncorroborated third-party claims. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog entries or Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify official Reward Season 2 rules and whether DEPLOYER/Bankr Club airdrops have utility, liquidity, anti-sybil controls, and BNKR-linked value capture.",
+      "Re-check any veVIRTUAL Sprint/Governance Virtuals reward claims against official Virtuals accounts before logging.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance tagging completed by independent delegate tagger; new BANKR / BankrCoin DEPLOYER airdrop entry labeled high. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json, added importance=high to the 2026-07-01T12:31:36Z BANKR / BankrCoin entry, validated json.tool, and reported missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260701T082559Z",
     "started_at": "2026-07-01T08:25:59Z",
     "completed_at": "2026-07-01T08:25:59Z",
