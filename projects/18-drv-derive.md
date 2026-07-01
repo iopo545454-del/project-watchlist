@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T04:15:21Z
+last_updated: 2026-07-01T08:25:59Z
 ---
 
 # DRV / Derive Protocol
@@ -12,6 +12,8 @@ Derive is an onchain options and perps venue formerly known as Lyra. The current
 Derive is most worth monitoring when new listed underlyings, collateral types, buyback parameters, liquidity incentives, institutional/RFQ rails, or risk-engine changes alter the revenue/buyback loop. The platform is especially tied to ETH/BTC options and, recently, HYPE options.
 
 ## Latest scan notes
+
+- 2026-07-01 — Official Derive said the venue crossed $30B in all-time notional volume across its onchain options platform, highlighting BTC, ETH and HYPE markets after five years of iteration by the same core team. This is a throughput/mindshare milestone to cross-check against OI, fees, and whether weekly DRV buybacks scale with the volume base. Source: https://x.com/DeriveXYZ/status/2072179571525591069
 
 - 2026-07-01 — Official Derive completed Weekly Buyback #73, purchasing 187,362 DRV at a $0.10 average price and taking cumulative DAO buybacks to 25,896,205 DRV, with buybacks allocated 35% of protocol fees. This is a routine but directly token-economic update; compare against fees/OI and watch whether buyback size accelerates after recent BTC/HYPE/ZEC activity. Source: https://x.com/DeriveXYZ/status/2072123109663265061
 

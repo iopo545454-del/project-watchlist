@@ -1,5 +1,93 @@
 [
   {
+    "run_id": "scan-20260701T082559Z",
+    "started_at": "2026-07-01T08:25:59Z",
+    "completed_at": "2026-07-01T08:25:59Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T04:15:21Z",
+      "until": "2026-07-01T08:25:59Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2072179571525591069",
+        "summary": "Official Derive said it crossed $30B in all-time notional volume across its onchain options platform, highlighting BTC, ETH and HYPE markets and five years of iteration by the same core team.",
+        "decision": "Logged as an official throughput milestone; verify against OI, fees, volume composition and DRV buyback cadence."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Other monitored accounts in-window had no non-reply project information above threshold, duplicate/third-party context, marketing/event chatter, or no activity. Third-party Grass wallet/airdrop, Virtuals agent launch, and NEAR/WLD unlock chatter were not logged because sources were not official/high-signal enough for durable project context. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog entries or Unverified Watch Items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Derive, verify the $30B notional milestone against fees, OI, per-underlying volume and future weekly buybacks.",
+      "Continue monitoring Pluralis ICML workshop speaker/agenda updates for post-event artifacts, but do not over-log routine event marketing.",
+      "Watch Ambient verified-inference and pricing posts for concrete docs/product changes versus general thesis commentary.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance tagging completed by independent delegate tagger; new Derive $30B notional milestone labeled high. POD/Dolphin remained suppressed."
+  },
+  {
     "run_id": "scan-20260701T041521Z",
     "started_at": "2026-07-01T04:15:21Z",
     "completed_at": "2026-07-01T04:15:21Z",
