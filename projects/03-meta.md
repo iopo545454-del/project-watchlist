@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-29T19:22:06Z
+last_updated: 2026-07-01T00:12:30Z
 ---
 
 # META / MetaDAO
@@ -28,6 +28,8 @@ last_updated: 2026-06-29T19:22:06Z
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
 
 ## Latest scan notes
+
+- 2026-07-01 — MetaDAO official account said Laso's raise is live for four days, and co-founder Proph3t later reported $5,132,914 committed; this upgrades the Laso catalyst from scheduled to active with strong demand, but final settlement, allocation, fees, and META value accrual still need verification. Sources: https://x.com/MetaDAOProject/status/2072054410742751387, https://x.com/metaproph3t/status/2072104030009180518
 
 - 2026-06-29 — MetaDAO official account said the Laso Finance curated raise starts June 30 at 1 PM EST; track as a near-term futarchy/curated-raise product event for MetaDAO’s launch/raise funnel, not as a META token-economics change by itself. Source: https://x.com/MetaDAOProject/status/2071663802069000225
 
@@ -65,7 +67,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| Laso Finance curated raise on MetaDAO | Confirmed / upcoming product event | Official MetaDAO post says the Laso Finance curated raise starts June 30 at 1 PM EST: https://x.com/MetaDAOProject/status/2071663802069000225 | 2026-06-30 1 PM EST | Adds another live raise/use case to MetaDAO’s futarchy launch stack. | Successful curated raises can reinforce MetaDAO as Solana’s prediction-market capital-formation venue and improve attention around META governance/fees if value accrual is clarified. | Watch raise terms, participation, settlement mechanics, fee capture, and whether the event creates durable MetaDAO volume. |
+| Laso Finance curated raise on MetaDAO | Confirmed / active product event | Official MetaDAO said the raise is live for four days and Proph3t later reported $5,132,914 committed: https://x.com/MetaDAOProject/status/2072054410742751387 and https://x.com/metaproph3t/status/2072104030009180518 | Live 2026-06-30 through early July 2026 | Turns the prior scheduled catalyst into an active high-demand raise on MetaDAO’s capital-formation surface. | A clean, large Laso raise can reinforce MetaDAO as Solana’s ownership-coin venue; weak settlement, poor allocation quality, or unclear fees would cap the META read-through. | Watch final committed/accepted amount, wallet distribution, allocation mechanics, settlement, secondary liquidity, platform fee disclosure, and whether any economics accrue to META. |
 | Agentic-commerce founder raise on MetaDAO | Confirmed / live raise signal | Proph3t said an unnamed `@huntermmonk` agentic-spending company is raising on MetaDAO at a $3M valuation and was already oversubscribed: https://x.com/metaproph3t/status/2070660454670819687; https://x.com/metaproph3t/status/2070661129257550087 | June 27, 2026 / live-or-imminent | Adds a fresh, founder-quality raise to the MetaDAO ownership-coin/capital-formation pipeline. | If execution/settlement is clean, it strengthens MetaDAO as a venue for small high-demand founder raises and can pull more Solana/internet-capital-markets attention into META. | Verify the project name, app listing, raise mechanics, final amount, participant quality, post-raise liquidity, and whether any fees/value accrue to META. |
 | 2026-06-16 | Related-account discussion of the Zinc dispute/pivot and a possible rule requiring teams raising through MetaDAO/Futardio to hand Solana program upgrade authority to the DAO | https://x.com/i/status/2066930615895671047 | Medium | Unverified | Would affect launch-market governance, founder alignment, and whether MetaDAO can prevent project pivots/rugs after raises | Re-check official MetaDAO/Futardio accounts, proposal text, Zinc founder response, and any program-authority policy before treating as confirmed |
 | More ownership-coin launches on MetaDAO | Confirmed / ongoing | Official app and project posts around ownership coins; https://x.com/MetaDAOProject | Ongoing | More raises/proposals increase product usage and make META more visible as the platform asset. | Successful launches could create a Solana ICM flywheel with founders, tokenholders, and Colosseum-style distribution. | Watch app activity, launch quality, proposal volume, fee/revenue disclosure, and follow-on financing. |

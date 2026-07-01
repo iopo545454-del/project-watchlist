@@ -1,5 +1,102 @@
 [
   {
+    "run_id": "scan-20260701T001230Z",
+    "started_at": "2026-07-01T00:09:29Z",
+    "completed_at": "2026-07-01T00:12:30Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-06-30T20:05:00Z",
+      "until": "2026-07-01T00:12:30Z",
+      "lookback": "roughly 4h/default; exact cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO",
+      "GEOD / GEODNET"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official + co-founder accounts",
+        "url": "https://x.com/metaproph3t/status/2072104030009180518",
+        "summary": "MetaDAO said Laso's raise is live for four days and Proph3t later reported $5,132,914 committed.",
+        "decision": "Logged as catalyst update; raises are a core MetaDAO product KPI, but final allocation/settlement/fee capture remain next checks."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2072077930805518825",
+        "summary": "Official GEODNET said its RTK network is now 22,000+ stations across 150+ countries.",
+        "decision": "Logged as network-scale KPI/source-proximate Latest item; verify live active station count, uptime, revenue and burns."
+      },
+      {
+        "project": "Other checked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Other in-window posts were duplicate context, thesis/marketing commentary, merch/promo, or community Moonshot vote campaigns for GRASS/TAO without durable project-information impact.",
+        "decision": "No further changelog entries or Unverified Watch Items added; POD/Dolphin remained suppressed."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For MetaDAO/Laso, verify final committed versus accepted amount, allocation mechanics, settlement, secondary liquidity, platform fee disclosure, and META value accrual.",
+      "For GEODNET, verify the 22,000+ station count against console/map active-station data, uptime, revenue, and burn dashboards.",
+      "Continue checking Kraken trading enablement for SN64, SN4, and SN51.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance tagging completed by independent delegate tagger; META labeled high and GEODNET labeled medium. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json, labeled the new MetaDAO entry high and GEODNET entry medium, and verified missing/invalid importance fields = 0 with json.tool validation."
+  },
+  {
     "run_id": "scan-20260630T200500Z",
     "started_at": "2026-06-30T20:01:57Z",
     "completed_at": "2026-06-30T20:05:00Z",
