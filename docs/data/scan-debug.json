@@ -1,5 +1,124 @@
 [
   {
+    "run_id": "scan-20260702T172651Z",
+    "started_at": "2026-07-02T17:26:51Z",
+    "completed_at": "2026-07-02T17:26:51Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T13:22:55Z",
+      "until": "2026-07-02T17:26:51Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GEOD / GEODNET",
+      "NEAR Protocol",
+      "BIO / Bio Protocol",
+      "EIGEN / EigenCloud"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 4,
+      "changelog_entries_added": 4,
+      "material_confirmed": 4,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2072713418818068898",
+        "summary": "Official June 2026 burn stats and a follow-up buyback/halving framing were material token-economics evidence.",
+        "decision": "Logged as official update and added to Latest."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072704958261068277",
+        "summary": "Fogo Chain integration into NEAR Intents adds another asset/chain integration and API surface; July 7 business teaser noted as next check.",
+        "decision": "Logged as official update and added to Latest."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "source": "X/Twitter ecosystem account",
+        "url": "https://x.com/BioProtocolEco/status/2072732899418202427",
+        "summary": "Gaia governance/commitment-monitoring AI agent is a BIO-specific product/governance signal, but enforcement is not yet proven.",
+        "decision": "Logged as official update and added to Latest."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official account / official blog",
+        "url": "https://x.com/eigencloud/status/2072716458384396760",
+        "summary": "EigenCloud blog/link reinforces orchestration/routing-receipts positioning and agent-security wedge.",
+        "decision": "Logged as docs/blog update and added to Latest."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter official/founder accounts",
+        "url": "https://x.com/grassfdn/status/2072715255923290209",
+        "summary": "Follow-up article repost on USDC rewards was already covered by the prior scan entry from official/founder sources.",
+        "decision": "No duplicate changelog entry."
+      },
+      {
+        "project": "Community-vote/listing campaigns",
+        "source": "X/Twitter broad weak-signal queries",
+        "url": "https://x.com/ToxicSignalNFT/status/2072732720900276534",
+        "summary": "Moonshot leaderboard vote posts for VIRTUAL/GRASS/NEAR/WLD appeared community-driven/promotional, not official listings.",
+        "decision": "Ignored; below materiality for durable project facts."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify GEOD burn/buyback numbers against Dune/Blockworks and revenue source disclosures.",
+      "Check NEAR 2026-07-07 “for Business” teaser for concrete product/revenue implications.",
+      "Review Gaia full thread/talk and whether BIO governance formally acts on agent-monitored commitments.",
+      "Read EigenCloud blog details and look for live receipt/runtime-visibility product plus EIGEN fee capture."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-02T17:26:51Z changelog entries: GEOD and NEAR high; BIO and EigenCloud medium; json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260702T132255Z",
     "started_at": "2026-07-02T13:22:55Z",
     "completed_at": "2026-07-02T13:22:55Z",

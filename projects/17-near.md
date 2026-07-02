@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T04:59:41Z
+last_updated: 2026-07-02T17:26:51Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,8 @@ last_updated: 2026-07-02T04:59:41Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-07-02 — Official NEAR said Fogo Chain is now integrated into NEAR Intents: users can swap `FOGO` with 100+ assets across 30+ chains without manual gas/wallet/bridge steps, and developers can access the flow via the NEAR Intents 1-Click Swap API. Same window, NEAR teased “for Business” on `2026-07-07`; watch whether it is a real product/revenue catalyst or just campaign packaging. Sources: https://x.com/NEARProtocol/status/2072704958261068277 and https://x.com/NEARProtocol/status/2072682038256128510
 
 - 2026-07-02 — Official NEAR monthly recap said NEAR Intents crossed $22B+ all-time volume and 28M+ swaps, Confidential Intents TVL exceeded $28M, NEAR@3.33 kicked off, Movement/Hypercore plus Hinkal and wallet integrations went live, GLM-5.2 and NEAR AI Cloud integrations expanded, and SPICE was previewed. This mostly consolidates already-tracked catalysts but updates key KPI/integration numbers. Source: https://x.com/NEARProtocol/status/2072495510166925703
 - 2026-07-02 — NEAR co-founder Illia highlighted EURe in a NEAR account via RHEA cross-chain trade powered by NEAR Intents and Monerium, framing confidential cross-chain FX/payments as a near.com neo-banking flow. This is an ecosystem/product integration signal; verify official RHEA/Monerium details, supported jurisdictions, fees, volume, and whether value routes into NEAR revenue/capture dashboards. Source: https://x.com/ilblackdragon/status/2072446177711177789

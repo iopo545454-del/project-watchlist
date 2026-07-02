@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T04:59:41Z
+last_updated: 2026-07-02T17:26:51Z
 ---
 
 # BIO / Bio Protocol
@@ -50,6 +50,8 @@ last_updated: 2026-07-02T04:59:41Z
 - Use only `bio.xyz`, `app.bio.xyz`, `docs.bio.xyz` and verified X accounts for claim/staking links due high phishing risk.
 
 ## Latest scan notes
+
+- 2026-07-02 — Bio Protocol ecosystem account introduced Gaia, an AI agent meant to monitor DeSci/BioDAO commitments on behalf of the protocol, with the explicit framing that token holders have governance rights on paper but rarely exercise them. Treat as a governance/product signal, not proven enforcement yet; next checks are the full Gaia talk/thread, which BioDAOs it monitors, evidence of alerts/actions, and whether BIO/veBIO governance processes integrate it formally. Source: https://x.com/BioProtocolEco/status/2072732899418202427
 
 - 2026-07-02 — Official Bio Protocol published a Gaia/OpenLabs agent-stack thread: Gaia connects to ecosystem agents/platforms, tracks delivery/transparency/momentum/stewardship/legitimacy/impact, drafts governance proposals, verifies milestones, generates reports, pings admins, and is intended to eventually vote on behalf of Bio/token holders. Source: https://x.com/BioProtocol/status/2072501410726580609
 - 2026-06-28 — Official Bio Protocol framed the OpenLabs/BioAgent direction as closing the loop where anyone with an idea and an API can run a wet-lab experiment. This is not a new token/economics announcement, but it reinforces the project direction to watch: whether OpenLabs turns agent/science workflows into funded experiments, IP assets, Ignition Sales, or veBIO/BioXP demand. Source: https://x.com/BioProtocol/status/2071172604338303380

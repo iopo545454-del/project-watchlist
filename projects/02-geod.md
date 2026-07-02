@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-02T00:52:37Z
+last_updated: 2026-07-02T17:26:51Z
 ---
 
 # GEOD / GEODNET
@@ -12,6 +12,8 @@ last_updated: 2026-07-02T00:52:37Z
 - Current monitoring angle: whether GEODNET can convert its base-station network and positioning data into enterprise/hardware revenue while the robotics/physical-AI narrative accelerates.
 
 ## Latest scan notes
+
+- 2026-07-02 — Official GEODNET reported June 2026 burn stats: `$722,021` of GEOD burned in June and `58,383,936` GEOD burned to date; a follow-up post framed the post-halving setup as roughly `$466k/month` of revenue-funded buybacks against halved daily issuance. This is a token-economics/value-capture KPI to verify against the live burn dashboard, Dune/Blockworks analytics, revenue source, and circulating-supply methodology. Sources: https://x.com/GEODNET/status/2072713418818068898 and https://x.com/GEODNET/status/2072727296054898833
 
 - 2026-07-02 — Official GEODNET said GIP-13 StableHex now rewards top hexes in the continental US with up to 6x multipliers. This refines the prior StableHex incentive into a US-priority coverage push after the July 1 halving; verify eligible hex fill, station quality/uptime, reward spend, and whether coverage improves commercially valuable regions. Source: https://x.com/GEODNET/status/2072455292990685656
 

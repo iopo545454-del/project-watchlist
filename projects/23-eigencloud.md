@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-27T21:49:35Z
+last_updated: 2026-07-02T17:26:51Z
 ---
 
 # EIGEN / EigenCloud
