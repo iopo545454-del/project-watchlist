@@ -1,5 +1,125 @@
 [
   {
+    "run_id": "scan-20260702T005237Z",
+    "started_at": "2026-07-02T00:52:37Z",
+    "completed_at": "2026-07-02T00:52:37Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-01T20:46:14Z",
+      "until": "2026-07-02T00:52:37Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GRASS",
+      "GEOD / GEODNET",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project intake changes."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter official/founder accounts",
+        "url": "https://x.com/grassfdn/status/2072440279244656685",
+        "summary": "Grass Foundation shared an official article and co-founder Andrej said network participants are being rewarded in USDC rather than native GRASS because the network reached profitability and can pay from revenue. Broad X search also surfaced user complaints about small payouts.",
+        "decision": "Added Latest/changelog/catalyst update; verify payout eligibility, cadence, accounting, and operator retention."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2072455292990685656",
+        "summary": "Official GEODNET said GIP-13 StableHex now rewards top continental-US hexes with up to 6x multipliers.",
+        "decision": "Added Latest/changelog/catalyst update as targeted reward-coverage expansion after the halving."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter founder/ecosystem integration scan",
+        "url": "https://x.com/ilblackdragon/status/2072446177711177789",
+        "summary": "Illia highlighted EURe in NEAR accounts via RHEA cross-chain trade powered by NEAR Intents and Monerium.",
+        "decision": "Added Latest/changelog update as cross-chain FX/payments/neo-banking integration signal; verify official partner details and revenue dashboard impact."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter related/founder accounts",
+        "url": "https://x.com/0xSrMessi/status/2072461061861609493",
+        "summary": "0xSrMessi posted a fuller account of the X/Pumpfun compromise and Proph3t posted more Laso risk-context content, but the account compromise and Laso raise were already logged in the prior scan.",
+        "decision": "No duplicate changelog; keep next check on account recovery and Laso final settlement/allocation."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2072455237538082889",
+        "summary": "Derive posted a June monthly recap bundling already-logged items: $30B notional, largest $210M BTC options structure, HYPE OI, ZEC options/perps, NautilusTrader and dashboard tooling.",
+        "decision": "No new changelog because core datapoints were recently logged; watch whether Nautilus/systematic-trader integration gets standalone usage evidence."
+      },
+      {
+        "project": "Other tracked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Scans of remaining non-suppressed tracked accounts and broad event-keyword searches surfaced no additional qualifying official launches, listings, token/unlock/buyback, governance, security, partnership, funding, docs/blog, or thesis changes above threshold. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog or dossier updates."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Grass USDC payout mechanics, amounts, cadence, revenue accounting/Foundation wallet flow, Season 2 methodology, and node-operator retention/backlash.",
+      "For GEODNET, verify StableHex eligible top-US hex fill, station uptime/quality, reward spend, and whether commercial coverage improves.",
+      "For NEAR, verify RHEA/Monerium EURe details, supported jurisdictions/assets, route volume, fees, and any impact in NEAR revenue/capture dashboards.",
+      "Continue tracking MetaDAO Laso final accepted amount/allocation/settlement and 0xSrMessi account recovery status without duplicate alerts.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance was independently tagged via delegate_task before validation/commit. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger labeled three new changelog entries high: GRASS USDC participant rewards, GEODNET StableHex 6x US hex multipliers, and NEAR EURe/RHEA/Monerium integration. json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260701T204614Z",
     "started_at": "2026-07-01T20:46:14Z",
     "completed_at": "2026-07-01T20:46:14Z",
