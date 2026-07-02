@@ -1,5 +1,98 @@
 [
   {
+    "run_id": "scan-20260702T132255Z",
+    "started_at": "2026-07-02T13:22:55Z",
+    "completed_at": "2026-07-02T13:22:55Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T09:15:02Z",
+      "until": "2026-07-02T13:22:55Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "Tracked official/team X accounts",
+        "source": "X/Twitter official/team account chunks",
+        "url": "docs/data/index.json",
+        "summary": "Four account-chunk searches covering non-suppressed tracked official, founder, team and contributor X accounts since the prior scan returned no qualifying new posts after the 09:15Z baseline.",
+        "decision": "No changelog/dossier updates."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter project-keyword searches",
+        "url": "docs/data/index.json",
+        "summary": "Keyword sweeps for launches, listings, buybacks, airdrops, governance, exploits, funding, mainnet/testnet, partnerships, integrations, rewards, emissions and upgrades across tracked projects returned no credible new material items above threshold.",
+        "decision": "No unverified watch items added."
+      },
+      {
+        "project": "POD / Dolphin POD",
+        "source": "User suppression rule",
+        "url": "docs/data/index.json",
+        "summary": "POD/Dolphin remains present in index but was intentionally skipped per user suppression.",
+        "decision": "Suppressed silently; no scan, update, or changelog."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue monitoring official/team X accounts and source URLs for material project-info updates on the next 4h run.",
+      "Re-check existing intake issues only for dedupe unless new dashboard submissions appear.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "No material changes or high-signal weak items found. Changelog importance was independently checked via delegate_task; no changelog edits were needed. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger inspected docs/data/project-changelog.json: 275 objects, all with valid importance fields; no changes made; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260702T091502Z",
     "started_at": "2026-07-02T09:15:02Z",
     "completed_at": "2026-07-02T09:15:02Z",
