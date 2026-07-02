@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-29T19:22:06Z
+last_updated: 2026-07-02T21:47:35Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-06-29T19:22:06Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-02 — USD.AI said sUSDai is now manageable through PrismFi Earn vaults on Arbitrum, adding a live DeFi integration with yield access and Allo Points toward CHIP. Source: https://x.com/USDai_Official/status/2072748060971798732
 
 - 2026-06-29 — USD.AI announced a $100M DEX Liquidity Facility for sUSDai with Fluid, saying Fluid will provide Liquidity-as-a-Service to deepen sUSDai markets and improve entering, exiting, and looping with less slippage. Source: https://x.com/USDai_Official/status/2071639863817048553
 

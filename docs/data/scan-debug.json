@@ -1,5 +1,124 @@
 [
   {
+    "run_id": "scan-20260702T214735Z",
+    "started_at": "2026-07-02T21:36:59Z",
+    "completed_at": "2026-07-02T21:47:35Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T17:26:51Z",
+      "until": "2026-07-02T21:47:35Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "NEAR Protocol",
+      "TAO / Bittensor"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 4,
+      "changelog_entries_added": 5,
+      "material_confirmed": 5,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true and unchanged after cutoff.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/opentensor/status/2072735469775847689",
+        "summary": "Official OpenTensor highlighted Bittensor subnet Trishool/HaloGuard 1.0 reaching SOTA open-weight prompt-safety performance across seven benchmarks, adding a concrete AI-safety performance milestone to the subnet ecosystem.",
+        "decision": "Logged in changelog and Latest scan notes."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/USDai_Official/status/2072748060971798732",
+        "summary": "Official USD.AI said sUSDai is now manageable through PrismFi Earn vaults on Arbitrum, adding a live DeFi integration with yield access and Allo Points toward CHIP.",
+        "decision": "Logged in changelog and Latest scan notes."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072747500914544907",
+        "summary": "Official NEAR promoted live near.com confidential trading/perps functionality: confidential swaps/deposits/transfers/withdrawals, 50+ perps markets, up to 40x leverage, cross-chain deposits, and referral incentives.",
+        "decision": "Logged in changelog and Latest scan notes."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072794894901420250",
+        "summary": "Official NEAR reframed AI agents as emerging economic actors and pointed to near_ai as user-owned data/agent/upside infrastructure, a strategic ecosystem catalyst rather than a finished product metric.",
+        "decision": "Logged in changelog and Latest scan notes."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter official community channel",
+        "url": "https://x.com/akashians_/status/2072752666514800797",
+        "summary": "Akash official community June recap highlighted Mainnet 18 completion, Console Air launch, AkashML model additions, $5.5M+ total USD spend, and 229.4K AKT burned in June.",
+        "decision": "Logged in changelog and Latest scan notes."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No confirmed post-cutoff material official/project-info updates found for the other non-suppressed tracked projects.",
+        "decision": "No changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify USD.AI PrismFi integration TVL/usage and Allo Points mechanics from PrismFi/USD.AI dashboards.",
+      "Track whether NEAR near.com confidential trading/perps activity translates into Intents volume and fee/value-capture disclosures.",
+      "Check OpenTensor/HaloGuard follow-up benchmarks/adoption and whether Trishool gains subnet emissions/attention.",
+      "Cross-check Akash June recap metrics against canonical Akash dashboards and official monthly reporting."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-02T21:47:35Z changelog entries: TAO medium; USD.AI, NEAR confidential trading/perps, and Akash high; NEAR AI-agents catalyst medium; json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260702T172651Z",
     "started_at": "2026-07-02T17:26:51Z",
     "completed_at": "2026-07-02T17:26:51Z",

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T04:15:21Z
+last_updated: 2026-07-02T21:47:35Z
 ---
 
 # AKT / Akash
@@ -13,6 +13,8 @@ last_updated: 2026-07-01T04:15:21Z
 - Focus areas: open cloud, GPU compute, AI workloads, permissionless compute supply.
 
 ## Latest scan notes
+
+- 2026-07-02 — Akash official community June recap highlighted Mainnet 18 completion, Console Air launch, AkashML model additions, $5.5M+ total USD spend, and 229.4K AKT burned in June. Source: https://x.com/akashians_/status/2072752666514800797
 
 - 2026-07-01 — Founder Greg Osuri said AkashML processed 200B+ tokens this month and set a new daily ATH above 10B tokens/day. This is a meaningful usage/KPI signal for AkashML/OpenRouter inference demand, but needs API/dashboard verification and context on revenue, provider payout, and AKT/BME value capture. Sources: https://x.com/gregosuri/status/2072136586201067680 and https://x.com/gregosuri/status/2072118592930484360
 

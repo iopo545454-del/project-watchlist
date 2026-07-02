@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T17:26:51Z
+last_updated: 2026-07-02T21:47:35Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,9 @@ last_updated: 2026-07-02T17:26:51Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-07-02 — NEAR promoted live near.com confidential trading/perps functionality: confidential swaps/deposits/transfers/withdrawals, 50+ perps markets, up to 40x leverage, cross-chain deposits, and referral incentives. Sources: https://x.com/NEARProtocol/status/2072747500914544907, https://x.com/NEARProtocol/status/2072747620351582334, https://x.com/NEARProtocol/status/2072747731114701135, https://x.com/NEARProtocol/status/2072747737431339495
+- 2026-07-02 — NEAR reframed AI agents as emerging economic actors and pointed to near_ai as user-owned data/agent/upside infrastructure; useful strategic catalyst signal, but monitor for concrete releases, users, and value capture. Source: https://x.com/NEARProtocol/status/2072794894901420250
 
 - 2026-07-02 — Official NEAR said Fogo Chain is now integrated into NEAR Intents: users can swap `FOGO` with 100+ assets across 30+ chains without manual gas/wallet/bridge steps, and developers can access the flow via the NEAR Intents 1-Click Swap API. Same window, NEAR teased “for Business” on `2026-07-07`; watch whether it is a real product/revenue catalyst or just campaign packaging. Sources: https://x.com/NEARProtocol/status/2072704958261068277 and https://x.com/NEARProtocol/status/2072682038256128510
 
