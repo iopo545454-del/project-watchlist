@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-28T18:32:33Z
+last_updated: 2026-07-02T09:15:02Z
 ---
 
 # Pluralis
@@ -16,6 +16,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 - **Positioning:** a credible DeAI research bet: if contributor-owned training can converge near centralized baselines and preserve model economics, it becomes a serious alternative to closed AI and simple open-weight releases.
 
 ## Latest scan notes
+
+- 2026-07-02 — Pluralis researcher Hadi Molatabadi detailed the team’s ICML 2026 Seoul schedule: decentralized-AI alignment workshop on July 6, Chamin Hewa presenting the **Factored Gossip DiLoCo** main-conference paper on July 7, an official ICML decentralized-training social on July 9, and the Protocol Learning workshop on July 10. This upgrades the ICML catalyst with concrete paper/event timing and team presence; next checks are slides, recordings, paper reception, new contributors, and any economics/ownership follow-up. Source: https://x.com/hmdolatabadi/status/2072565140223086691
 
 - 2026-06-28 — CoinFund investor Jake Brukhman sharpened the Pluralis investment case around decentralized-training output being ownable, said Erfan Miahi joining is bullish for decentralized-AI scaling, and noted that public training runs are open for participation. This is investor/market-thesis evidence, not an official token/economics announcement. Sources: https://x.com/jbrukh/status/2071277638904098983, https://x.com/jbrukh/status/2071279179681665299, and https://x.com/jbrukh/status/2071300396954386648
 

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-01T12:31:36Z
+last_updated: 2026-07-02T09:15:02Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-07-01T12:31:36Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-02 — Official Bankr bot said **Robinhood Chain is live on Bankr**, adding natural-language/agent commands for tokenized stocks, ETFs, memecoins and strategy automation (examples included buying NVDA on Robinhood and auto-rebalancing strategies via Telegram). Treat this as a concrete new-chain/RWA-agent surface for Bankr; next checks are supported assets, custody/execution details, volume, and whether any fees or incentives accrue to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2072607194391216564
 
 - 2026-07-01 — Official Bankr bot completed a `$DEPLOYER` airdrop of 1,000,000 tokens each to the top 500 Bankr Club members, covering ranks 1 through 511 on Base, with contract `0x4d1be7e1a73d1068cc87697226f97ff26c54bba3`; the same scan also saw another Bankr launch-flow deployment (`98KDAO`) using the 85% Uniswap v4 pool / 15% two-year vesting pattern. Treat this as a concrete Bankr Club reward-distribution and launchpad-mechanics proof point; next checks are official Season 2 criteria, whether DEPLOYER has durable utility/liquidity, and whether launch/vesting fees route to BNKR/Club value capture. Sources: https://x.com/i/status/2072288763133432300 and https://x.com/i/status/2072297116576452804
 

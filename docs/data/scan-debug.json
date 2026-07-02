@@ -1,5 +1,110 @@
 [
   {
+    "run_id": "scan-20260702T091502Z",
+    "started_at": "2026-07-02T09:15:02Z",
+    "completed_at": "2026-07-02T09:15:02Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T04:59:41Z",
+      "until": "2026-07-02T09:15:02Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "OCT / Octra",
+      "Pluralis"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2072607194391216564",
+        "summary": "Official Bankr said Robinhood Chain is live on Bankr with tokenized-stock/ETF/memecoin commands and strategy automation examples.",
+        "decision": "Added Latest/changelog as a new-chain/RWA-agent surface; verify supported assets, execution details, usage, and BNKR/Club value capture."
+      },
+      {
+        "project": "OCT / Octra",
+        "source": "X/Twitter co-founder account",
+        "url": "https://x.com/octralex/status/2072604940896280872",
+        "summary": "Co-founder said a proper whitepaper is being compiled and pointed to WIP Lean 4 formal verification for Octra HFHE from Nebulayer.",
+        "decision": "Added Latest/changelog as technical docs/formal-verification catalyst; not treated as node/listing completion."
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter team/research account",
+        "url": "https://x.com/hmdolatabadi/status/2072565140223086691",
+        "summary": "Team researcher detailed ICML Seoul schedule including Factored Gossip DiLoCo main-conference paper, social and Protocol Learning workshop.",
+        "decision": "Added Latest/changelog to update existing ICML catalyst with concrete schedule and paper/event presence."
+      },
+      {
+        "project": "Other tracked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Scans of remaining non-suppressed tracked accounts surfaced mostly duplicate Venice/Grass clarification, routine replies, or low-signal discussion, with no additional qualifying material updates. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog or dossier updates."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify Robinhood Chain execution/custody, supported assets, real volume, fees and BNKR/Club value capture.",
+      "For Octra, watch for published whitepaper, Lean 4 verification artifacts, TAPE verifier release and node/listing timing.",
+      "For Pluralis, check ICML slides/recordings, paper reception, new contributors and any ownership/economics follow-up.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance was independently tagged via delegate_task before validation/commit. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger labeled three new changelog entries: BANKR high, OCT medium, and Pluralis medium. json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260702T045941Z",
     "started_at": "2026-07-02T04:59:41Z",
     "completed_at": "2026-07-02T04:59:41Z",

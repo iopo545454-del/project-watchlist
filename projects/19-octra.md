@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-24T11:00:28Z
+last_updated: 2026-07-02T09:15:02Z
 ---
 
 # OCT / Octra
@@ -50,6 +50,8 @@ last_updated: 2026-06-24T11:00:28Z
 - Community has many unofficial guides/hubs; avoid wallet links unless reached from `octra.org`, `docs.octra.org` or `@octra`.
 
 ## Latest scan notes
+
+- 2026-07-02 — Co-founder/team account `@octralex` said Octra is compiling a proper whitepaper and pointed to `@nebulayer` publishing still-WIP Lean 4 formal verification work for Octra’s HFHE scheme that will feed into the whitepaper. Treat this as a technical-credibility/docs catalyst, not a shipped node/listing event; next checks are the actual whitepaper, reproducible verification artifacts, and whether TAPE/node release timing changes. Source: https://x.com/octralex/status/2072604940896280872
 
 - 2026-06-24 — Co-founder/team account `@octralex` reiterated that the encrypted-balance incident was an implementation bug in the ZK verification path used when releasing encrypted balances, not a break of HFHE, Ristretto, or Octra's encrypted-computation layer; the TAPE verifier replacement is underway and remains the next security-gated dependency before node/features/listing progress. Source: https://x.com/i/status/2069689030694899972
 - 2026-06-22 — Co-founder/team account `@octralex` published the promised security disclosure: an encrypted-balance decryption proof-verification bug was found internally and privately reported, patched on 2026-06-01, and the only confirmed live impact was a 100 OCT test transaction; the team says the issue was not a break of HFHE/Ristretto/core proof equations, reduced the test-era delta-reconciliation cap to zero, and is moving to its own TAPE verifier before resuming node/features/listing plans. Source: https://x.com/i/status/2069156341776630141
