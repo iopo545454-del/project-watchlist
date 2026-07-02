@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T00:52:37Z
+last_updated: 2026-07-02T04:59:41Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-07-02T00:52:37Z
 
 ## Latest scan notes
 
+- 2026-07-02 — Official NEAR monthly recap said NEAR Intents crossed $22B+ all-time volume and 28M+ swaps, Confidential Intents TVL exceeded $28M, NEAR@3.33 kicked off, Movement/Hypercore plus Hinkal and wallet integrations went live, GLM-5.2 and NEAR AI Cloud integrations expanded, and SPICE was previewed. This mostly consolidates already-tracked catalysts but updates key KPI/integration numbers. Source: https://x.com/NEARProtocol/status/2072495510166925703
 - 2026-07-02 — NEAR co-founder Illia highlighted EURe in a NEAR account via RHEA cross-chain trade powered by NEAR Intents and Monerium, framing confidential cross-chain FX/payments as a near.com neo-banking flow. This is an ecosystem/product integration signal; verify official RHEA/Monerium details, supported jurisdictions, fees, volume, and whether value routes into NEAR revenue/capture dashboards. Source: https://x.com/ilblackdragon/status/2072446177711177789
 
 - 2026-07-01 — Official NEAR said Protocol Upgrade 2.13 is live on testnet with post-quantum safe access keys and dynamic resharding, moving the prior nearcore release/vote watch item into live testnet execution. Source: https://x.com/NEARProtocol/status/2072415778557632982

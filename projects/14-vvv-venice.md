@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T20:46:14Z
+last_updated: 2026-07-02T04:59:41Z
 ---
 
 # VVV / Venice AI
@@ -31,6 +31,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Venice Series A / GPU vertical-integration funding | Confirmed / completed funding | Founder thread: https://x.com/ErikVoorhees/status/2072336114950545755 | Announced 2026-07-01 | Adds $65M of equity capital at a $1B post-money valuation, with investor VVV grant/warrant alignment and proceeds for datacenter/GPU buildout, hiring, growth and acquisitions without selling treasury VVV. | Owning compute can improve margins and burn capacity if Venice demand scales; the VVV grant/warrant package creates future supply/overhang to model but is locked/vesting. | Verify definitive docs, actual GPU/datacenter deployment, exercised warrants, VVV vesting unlock timing, burns vs emissions, and whether revenue/gross margin improves. |
 | New frontier/coding model launches in Venice | Confirmed | Official X said Kimi K2.7 Code is live on Venice with 1T total parameters, 32B active, 256K context, vision/function calling/structured output/web search: https://x.com/AskVenice/status/2066634900652879949 | Live as of 2026-06-15 | Improves product utility for developers and AI-agent workflows. | Better models can increase API demand, staking-for-capacity demand, and revenue/burn capacity if usage monetizes. | Track docs/model list, API pricing, user uptake, and whether new model launches correlate with burn/revenue growth. |
 | Emissions reduction path | Confirmed / latest cut executed | Official Venice posts described reductions from prior annual emissions toward lower future emissions; on 2026-07-01 Venice said annual emissions were cut from 4M to 3M VVV: https://x.com/AskVenice/status/2037231269449523276, https://x.com/AskVenice/status/2061503966702162407, and https://x.com/AskVenice/status/2072408045007573141 | Latest cut announced 2026-07-01; ongoing scheduled path | Lowers inflation and makes burns easier to compare against issuance. | If burns exceed emissions, VVV gets a simple deflationary-capital-asset narrative. | Verify current annual emissions onchain/dashboard, staking yield changes, and whether July burns exceed the new 3M/year run-rate. |
 | Revenue-linked buyback/burn program | Confirmed | Official burn update/dashboard references: https://x.com/AskVenice/status/2064158076303790131 | Monthly / recurring if revenue continues | Directly links Venice revenue to VVV supply reduction. | Larger repeated burns can shift VVV from “AI app token” to revenue-linked asset; failed/irregular burns weaken thesis. | Track burn size, txs, revenue source, burn/emission ratio, and whether dashboard data is machine-readable. |
@@ -50,6 +51,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 | https://x.com/AskVenice | Main official Venice account; product, model, burn, token and app announcements. |
 | https://x.com/tryvenice | Related Venice/product-company account; lower priority than @AskVenice unless source-specific. |
 | https://x.com/ErikVoorhees | Founder/philosophical/product narrative; may contain material comments on privacy, AI access, VVV and regulation. |
+| https://x.com/ErikVoorhees/status/2072336114950545755 | Founder thread announcing Venice Series A, equity/VVV investor terms, profitability, compute-vertical-integration plan, and no treasury VVV sale. |
 | https://venice.ai/ | Official app/site. |
 | https://venice.ai/lp/vvv | Official VVV/token landing page and burn/token information source. |
 | https://docs.venice.ai/ | Official API/docs; model list, API usage, developer integration and pricing/capacity details. |
@@ -74,6 +76,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 ## Latest scan notes
 
+- 2026-07-02 — Founder Erik Voorhees announced Venice raised a $65M Series A led by Dragonfly at a $1B post-money equity valuation; investors received equity plus a vesting 1.5M VVV grant and 5M VVV warrants, while Venice said it chose equity instead of selling treasury VVV, remains profitable, and will use proceeds for datacenter/GPU vertical integration, growth, hiring and acquisitions. Source: https://x.com/ErikVoorhees/status/2072336114950545755
 - 2026-07-01 — Official Venice said VVV annual emissions have been reduced from 4M to 3M tokens/year, the third planned cut after May and June reductions, and reiterated the goal of net-deflationary VVV when burns exceed emissions; verify the onchain/emissions dashboard and next burn math. Source: https://x.com/AskVenice/status/2072408045007573141
 - 2026-07-01 — Official Venice said Claude Fable 5 is back on Venice anonymously; useful model-availability/product-surface note, but less tradeable than the emissions cut unless API/staking demand follows. Source: https://x.com/AskVenice/status/2072409008908943615
 

@@ -1,5 +1,141 @@
 [
   {
+    "run_id": "scan-20260702T045941Z",
+    "started_at": "2026-07-02T04:59:41Z",
+    "completed_at": "2026-07-02T04:59:41Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T00:52:37Z",
+      "until": "2026-07-02T04:59:41Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "VVV / Venice AI",
+      "BIO / Bio Protocol",
+      "VIRTUAL / Virtuals Protocol",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 4,
+      "changelog_entries_added": 4,
+      "material_confirmed": 4,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No new intake changes."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/ErikVoorhees/status/2072336114950545755",
+        "summary": "Official founder thread disclosed a $65M Series A led by Dragonfly at $1B post-money, equity plus vesting VVV grant/warrants, no treasury VVV sale, profitability, and datacenter/GPU use of proceeds.",
+        "decision": "Added Latest/changelog/catalyst context as material funding, token-alignment, and compute-capex update."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/BioProtocol/status/2072501410726580609",
+        "summary": "Official thread described Gaia/OpenLabs agent infrastructure for delivery tracking, transparency, governance proposal drafting, and future token-holder voting support.",
+        "decision": "Added Latest/changelog update as meaningful product/governance-stack signal; watch docs/app release and BIO/BioXP linkage."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter core contributor account",
+        "url": "https://x.com/0xTP91/status/2072522630746571261",
+        "summary": "0xTP91 quoted StrikeRobot SR Platform launch, describing Venice-powered browser-based asset/environment generation and robot-policy rollout tooling.",
+        "decision": "Added Latest/changelog as ecosystem robotics/agent-tooling signal; watch whether usage routes through Virtuals rails or remains partner-only."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2072495510166925703",
+        "summary": "Monthly recap updated Intents KPIs ($22B+ volume, 28M+ swaps), Confidential Intents TVL >$28M, NEAR@3.33 kickoff, integrations, GLM-5.2, AI Cloud and SPICE preview.",
+        "decision": "Added Latest/changelog because KPI/integration numbers changed, though many components were already tracked."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official bot",
+        "url": "https://x.com/bankrbot/status/2072543582536552711",
+        "summary": "Bankrbot clarified BNKR has not been created on Robinhood network and official BNKR remains on Base only; same scan saw routine user-triggered token launch/Ethscriptions bot actions.",
+        "decision": "No changelog; treated as useful anti-phishing/token-context observation but not a durable project update beyond existing Base focus."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter founder/community weak-signal sweep",
+        "url": "https://x.com/0xdrej/status/2072502320802545959",
+        "summary": "Founder clarified USDC participant payouts are supply-side costs, not profit; broad X scan saw community dissatisfaction with small Season 2 payouts and token-value-accrual questions.",
+        "decision": "No duplicate changelog because USDC reward shift was logged last scan; keep next check on payout mechanics, revenue accounting and holder call/transparency."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter broad weak-signal sweep",
+        "url": "https://x.com/aixbt_agent/status/2072485755809869918",
+        "summary": "Third-party/VC accounts amplified the Venice funding and debated token-vs-equity alignment, revenue run-rate claims, GPU capex and VVV as junior instrument.",
+        "decision": "Used official founder thread as durable source; did not log unsourced revenue-run-rate numbers from third-party posts."
+      },
+      {
+        "project": "Other tracked projects",
+        "source": "X/Twitter official/team account chunks and weak-signal sweep",
+        "url": "docs/data/index.json",
+        "summary": "Scans of remaining non-suppressed tracked accounts surfaced no additional qualifying launches, listings, token/unlock/buyback, governance, security, partnership, funding, docs/blog or thesis changes above threshold. POD/Dolphin remained suppressed.",
+        "decision": "No further changelog or dossier updates."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify Venice Series A docs/details, VVV grant/warrant vesting and warrant exercise, GPU/datacenter deployment, gross-margin impact, burns versus emissions, and whether equity/token alignment holds.",
+      "For BIO, verify Gaia/OpenLabs docs/app release, report/proposal examples, agent permissions, BioXP/veBIO linkage, and DAO adoption.",
+      "For Virtuals, verify whether StrikeRobot SR Platform has real usage and any Virtuals/EconomyOS/payment-rail connection.",
+      "For NEAR, query live Intents/revenue/confidential TVL dashboards for machine-readable KPI confirmation rather than relying on recap text.",
+      "Continue checking Grass payout/accounting and community retention after USDC reward change without duplicating last scan.",
+      "Continue suppressing POD/Dolphin until explicitly re-enabled."
+    ],
+    "notes": "Changelog importance was independently tagged via delegate_task before validation/commit. POD/Dolphin remained suppressed.",
+    "importance_tagging": "Independent delegate_task tagger labeled four new changelog entries: VVV high, BIO medium, VIRTUAL medium, and NEAR high. json.tool validation passed and missing/invalid importance fields = 0."
+  },
+  {
     "run_id": "scan-20260702T005237Z",
     "started_at": "2026-07-02T00:52:37Z",
     "completed_at": "2026-07-02T00:52:37Z",
