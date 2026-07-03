@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T09:15:02Z
+last_updated: 2026-07-03T05:54:30Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-07-02T09:15:02Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-03 — Official Bankr bot clarified that current token deploys are **Base-only via Doppler multicurve** and that Robinhood Chain / other networks are not fully supported in its toolset, after HOODINI/Robinhood Chain launch discussion. Treat this as a scope correction to the prior “Robinhood Chain is live on Bankr” item: Bankr can surface some Robinhood-chain activity, but full deploy/support coverage is not confirmed. Next checks are official docs for supported Robinhood Chain actions, custody/execution details, and whether non-Base deploy support actually ships. Source: https://x.com/bankrbot/status/2072921095188164702
 
 - 2026-07-02 — Official Bankr bot said **Robinhood Chain is live on Bankr**, adding natural-language/agent commands for tokenized stocks, ETFs, memecoins and strategy automation (examples included buying NVDA on Robinhood and auto-rebalancing strategies via Telegram). Treat this as a concrete new-chain/RWA-agent surface for Bankr; next checks are supported assets, custody/execution details, volume, and whether any fees or incentives accrue to BNKR/Bankr Club. Source: https://x.com/bankrbot/status/2072607194391216564
 

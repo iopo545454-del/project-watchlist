@@ -1,5 +1,114 @@
 [
   {
+    "run_id": "scan-20260703T055430Z",
+    "started_at": "2026-07-03T05:54:30Z",
+    "completed_at": "2026-07-03T05:54:30Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-03T01:52:25Z",
+      "until": "2026-07-03T05:54:30Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "GitlWab / GitLawb / Gitwab"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/kevincodex/status/2072862666952225134",
+        "summary": "Founder Kevin said the new GitLawb node repository explorer is live at explorer.gitlawb.com.",
+        "decision": "Logged in changelog and Latest scan notes as a product/ops observability surface after the recent bot-spam cleanup."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2072921095188164702",
+        "summary": "Official Bankr bot clarified current token deploys are Base-only via Doppler multicurve and Robinhood Chain/other networks are not fully supported in its toolset after HOODINI launch discussion.",
+        "decision": "Logged as a verification update that narrows the prior Robinhood Chain live-on-Bankr interpretation."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter broad weak-signal sweep",
+        "url": "https://x.com/thahaarsh/status/2072855343848411620",
+        "summary": "Broad discussion showed heavy user dissatisfaction around Season 2 rewards and a July 7 community/token-holder call; official USDC/reward shift was already logged and no new official criteria appeared in this scan.",
+        "decision": "No duplicate changelog; keep July 7 call and eligibility/17% allocation as next checks."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter broad scan",
+        "url": "https://x.com/alvariance_/status/2072876347995889929",
+        "summary": "Third-party/developer post highlighted quantum-safe signing on testnet, already covered by official NEAR 2.13/testnet changelog context.",
+        "decision": "No duplicate changelog."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No confirmed post-cutoff material official/project-info updates found for the other non-suppressed tracked projects; Derive teaser and EigenCloud amplification were reviewed but not new durable facts.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify GitLawb explorer reachability/metrics after 429 response during machine check and watch for official repo/node health figures.",
+      "Check Bankr docs/tooling for confirmed Robinhood Chain supported actions versus Base-only deploys; avoid over-reading bot reply examples as full chain support.",
+      "Watch Grass July 7 community/token-holder update for official Season 2 rewards methodology, 17% future allocation, and operator retention impact."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-03T05:54:30Z changelog entries: BANKR high; GitLawb medium; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260703T015225Z",
     "started_at": "2026-07-03T01:50:50Z",
     "completed_at": "2026-07-03T01:52:25Z",

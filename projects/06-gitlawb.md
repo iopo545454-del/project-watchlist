@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-01T04:15:21Z
+last_updated: 2026-07-03T05:54:30Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,8 @@ last_updated: 2026-07-01T04:15:21Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-03 — Founder Kevin said the new **GitLawb node repository explorer** is live at `https://explorer.gitlawb.com`, adding a public network/repo-observability surface after the recent bot-spam cleanup. Treat as a concrete product/ops surface; next checks are whether the explorer stays reachable, exposes useful repo/node metrics, and confirms post-cleanup network health. Source: https://x.com/kevincodex/status/2072862666952225134
 
 - 2026-07-01 — Official GitLawb reported a large bot attack that created roughly 370,000 junk repositories, pushed some nodes to 100% storage, then was mitigated by iCaptcha plus a cleanup of 230,000+ fake repositories; GitLawb claims spam creation fell to zero and usage dropped back toward ~30%. Treat as a material resilience/security incident and verify whether node operators, legitimate repos, backups, and user friction stayed healthy. Source: https://x.com/gitlawb/status/2072133348009685018
 
