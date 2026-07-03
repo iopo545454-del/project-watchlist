@@ -1,5 +1,103 @@
 [
   {
+    "run_id": "scan-20260703T015225Z",
+    "started_at": "2026-07-03T01:50:50Z",
+    "completed_at": "2026-07-03T01:52:25Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-02T21:47:35Z",
+      "until": "2026-07-03T01:52:25Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2072853051187318800",
+        "summary": "Official Bankr bot showed a PMFI spread-intelligence x402 query succeeding and later handled a one-user failed token-launch/factory troubleshooting thread on Robinhood Chain/Net Protocol.",
+        "decision": "Reviewed as product/support activity; not logged as durable material project update because it was operational and not a new integration, token-economic change, incident disclosure, or broad outage."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/gitlawb/status/2072857229850825165",
+        "summary": "Official account asked a user to submit an issue and tagged a contributor for follow-up.",
+        "decision": "Routine support/dev triage; no changelog entry."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter team/core contributor scan",
+        "url": "https://x.com/0xSrMessi/status/2072833638857576647",
+        "summary": "MetaDAO-linked account replied “metadao” to a thread criticizing fundraising-only token structures and arguing tokens should be ownership assets.",
+        "decision": "Weak positive positioning signal but too low-context for thesis/catalyst/watch-item update."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No confirmed post-cutoff material official/project-info updates found for the other non-suppressed tracked projects in the sampled official/team-account scan.",
+        "decision": "No changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue watching Bankr Robinhood Chain/Net Protocol factory support for any official broader incident, refund/recovery process, or launch-flow fix.",
+      "Continue checking official/project accounts for post-cutoff launches, token/liquidity changes, governance, integrations, docs/blog releases, and high-signal weak items."
+    ],
+    "importance_tagging": "No new or modified changelog entries in this run; independent delegate_task tagger still inspected changelog schema/importance coverage before commit."
+  },
+  {
     "run_id": "scan-20260702T214735Z",
     "started_at": "2026-07-02T21:36:59Z",
     "completed_at": "2026-07-02T21:47:35Z",
