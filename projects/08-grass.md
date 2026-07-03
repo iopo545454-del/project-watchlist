@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T00:52:37Z
+last_updated: 2026-07-03T22:26:33Z
 ---
 
 # GRASS
@@ -62,6 +62,8 @@ last_updated: 2026-07-02T00:52:37Z
 
 ## Latest scan notes
 
+- 2026-07-03 — Third-party/high-signal X discussion (not official @grass/@grassfdn confirmation) framed July 7 as a possible governance vote on routing AI-customer revenue to GRASS holders alongside a roughly $10.25M unlock. Official Grass accounts did not post a matching confirmation in the scan window, so this is tracked as an unverified tokenomics/governance watch item until actual vote language or official agenda appears. Sources: https://x.com/aixbt_agent/status/2073113909347955091 and https://x.com/BenjiValeAi/status/2073166225346015623
+
 - 2026-07-02 — Grass Foundation shared the official article and co-founder Andrej said Grass is rewarding network participants in USDC instead of the native token, framing the change as possible because Grass reached profitability and can compensate contributors from generated revenue. This is a material incentive/value-accrual update; verify exact eligibility, payout cadence, revenue source, Foundation wallet/accounting, and community backlash over small Season 2 payouts. Sources: https://x.com/grassfdn/status/2072440279244656685 and https://x.com/0xdrej/status/2072441343406666189
 
 - 2026-06-28 — Community/airdrop-monitor accounts circulated a Grass Discord/moderator-style clarification that Diamonds are just a points symbol and not a separate reward, while Season 2 allocation may be based on Uptime Points plus Network Points. This is not an official @grass confirmation, so it is tracked as an unverified incentive-mechanics watch item ahead of the July 7 holder/network call. Sources: https://x.com/thisisnosaa/status/2071286025905721413 and https://x.com/Sonnbay1/status/2071297326056939717
@@ -95,6 +97,7 @@ last_updated: 2026-07-02T00:52:37Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
+| 2026-07-03 | July 7 may include a governance vote on whether Grass AI-customer revenue is routed to GRASS token holders, with the same week also carrying a roughly $10.25M / 3.56% supply unlock. | https://x.com/aixbt_agent/status/2073113909347955091 | Medium | Unverified | If official, this would be a material token-value-accrual and supply/liquidity catalyst; if false, it is just third-party positioning around the already-scheduled holder/network call. | Re-check official @grass/@grassfdn posts, governance/forum pages, and the July 7 call agenda/recording for exact vote language, revenue-routing mechanics, and unlock confirmation. |
 | 2026-06-28 | Grass Season 2 allocation may be based on Uptime Points plus Network Points, while Diamonds are only a points symbol and not a separate reward. | https://x.com/thisisnosaa/status/2071286025905721413 | Medium | Unverified | If confirmed, this changes how node operators should optimize uptime/quality versus superficial dashboard points and could affect farming behavior before Airdrop Two. | Re-check official @grass/@grassfdn, Discord/mod docs, and the July 7 holder/network call for explicit Season 2 criteria. |
 
 ## Open questions
