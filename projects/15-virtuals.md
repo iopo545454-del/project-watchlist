@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-02T04:59:41Z
+last_updated: 2026-07-03T10:03:56Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-07-03 — Banana Gun announced that Virtuals pre-bond tokens on Robinhood Chain are now supported in the Banana Gun Telegram Bot, and Virtuals/core accounts amplified the announcement. This is a partner distribution/trading-surface integration for early agent tokens; next check is actual pre-bond trading flow, supported-token scope, volume, and whether it routes durable attention/liquidity back to Virtuals launches. Sources: https://x.com/bananagun/status/2072945224280912337 and https://x.com/virtuals_io/status/2072951163729944864
 
 - 2026-07-02 — Core contributor 0xTP91 highlighted the StrikeRobot SR Platform launch, powered by Venice, for browser-based 3D asset/simulation environment generation, robot policy rollouts, sensor/metric exports, and user-owned data; this is a robotics/agent tooling integration signal rather than a direct VIRTUAL token-economics update. Source: https://x.com/0xTP91/status/2072522630746571261
 - 2026-06-30 — Root Edge said its token-gated Launch Pad will let projects launch through a custom Clanker build while also adding a Virtuals option, with an `incubate` category coming to its app. This is a partner/ecosystem launch-surface signal for Virtuals rather than official protocol economics; next check is whether Root Edge launches actually route through Virtuals rails and create measurable agent/project activity. Source: https://x.com/i/status/2072045350899073323

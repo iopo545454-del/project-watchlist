@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-07-03T10:03:56Z
 ---
 
 # AEON Framework / aeon
@@ -68,6 +68,8 @@ last_updated: 2026-06-23T21:46:11Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-03 — Official AEON shared the Jun 25-Jul 2 MiroShark + Aeon shiplog: Aeon hardening PRs #546-554 shipped by default, Claude Sonnet 5 support landed same-day, Telegram slash commands/buttons/deep links went live, skills were consolidated from 187 to 102, Grok Build was in PR as harness #6, private-repo prefetch/self-repair/email skills shipped, and MiroShark x402 paid sims reached 174 paid runs / 34 buyers / $174 volume. This is a substantive product/developer-progress update rather than a direct tokenomics change. Sources: https://x.com/aeonframework/status/2072967389273080130 and https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/shiplog-2026-07-02.md
 
 - 2026-06-23 — Official Aeon said its B1 Token Transparency Filing scored 40/40 on Blockworks and highlighted a Bedrock Foundation structure, golden-share protection, native AEON trading-fee treasury capture, and 50% non-trading-fee revenue buybacks. Source: https://x.com/aeonframework/status/2069473683375005833
 - 2026-06-23 — Official Aeon community-call recording covered the consumer distribution push, Packs publishing, DAG executor/security work, x402 endpoints/non-crypto login, partner integrations, and a 1M cumulative GitHub-star milestone. Source: https://x.com/aeonframework/status/2069384845235470828

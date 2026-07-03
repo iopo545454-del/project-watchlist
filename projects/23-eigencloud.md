@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-02T17:26:51Z
+last_updated: 2026-07-03T10:03:56Z
 ---
 
 # EIGEN / EigenCloud
@@ -14,6 +14,8 @@ EigenCloud is the EigenLayer/Eigen Labs team's attempt to extend the original re
 - **Positioning:** verifiable cloud / agent trust infrastructure, not a pure high-end GPU rental network.
 
 ## Latest scan notes
+
+- 2026-07-03 — Official EigenCloud said an EigenLabs open-swarm project at ecdsa.fail beat Google Quantum AI's private ECDSA result by 47.5% and that the open swarm is still pushing. This is a high-signal research/marketing proof point for EigenCloud/EigenLabs' verifiable/open-agent-science positioning, but not yet evidence of EIGEN fee capture. Sources: https://x.com/eigencloud/status/2072953982029529504, https://x.com/eigencloud/status/2072954128314376603 and https://www.ecdsa.fail/
 - 2026-06-22 — Added neo-cloud comparison numbers: EIGEN market cap around `$200M`; DefiLlama shows EigenCloud/EigenLayer protocol revenue as `$0` but fees/rewards of about `$981` 24h, `$145k` 7d, `$756k` 30d, and `$160.7M` all-time. DefiLlama methodology says all rewards are supplier-side and protocol revenue is zero. Source: https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees
 - 2026-06-22 — Compute-capacity note: EigenCloud/Darkbloom is better framed as verifiable/agent compute and distributed inference than as a CoreWeave-style H100/H200/B200 neo-cloud; no public high-end GPU fleet count was found. Recent public signals referenced ~250 live Darkbloom providers peak and 600M+ tokens served, but not datacenter GPU inventory. Sources: https://x.com/eigenlabs/status/2066591846550343745 and https://x.com/eigencloud/status/2059315711139549229
 - 2026-06-21 — GitHub intake issue #3 added EigenCloud / EigenLayer to the dashboard. Initial review found the current product narrative has shifted toward verifiable cloud/agent infrastructure, with recent official X emphasizing PostAGI, open agentic science, verifiable memory/identity/proofs, EigenCompute, and EIGEN value accrual via EigenCloud fees. Source: https://github.com/iopo545454-del/project-watchlist/issues/3

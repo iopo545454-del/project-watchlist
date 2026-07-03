@@ -1,5 +1,115 @@
 [
   {
+    "run_id": "scan-20260703T100356Z",
+    "started_at": "2026-07-03T10:03:56Z",
+    "completed_at": "2026-07-03T10:03:56Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-03T05:54:30Z",
+      "until": "2026-07-03T10:03:56Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AEON Framework",
+      "VIRTUAL / Virtuals Protocol",
+      "EIGEN / EigenCloud"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "AEON Framework",
+        "source": "X/Twitter official account + GitHub shiplog",
+        "url": "https://x.com/aeonframework/status/2072967389273080130",
+        "summary": "Official AEON shared the Jun 25-Jul 2 shiplog with hardening PRs, Claude Sonnet 5 support, Telegram interactions, skill consolidation, Grok Build harness work, private-repo prefetch/self-repair/email skills, and MiroShark x402 paid-sim traction.",
+        "decision": "Logged as product/developer-progress update; no direct tokenomics change."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter partner + official amplification",
+        "url": "https://x.com/bananagun/status/2072945224280912337",
+        "summary": "Banana Gun announced support for Virtuals pre-bond tokens on Robinhood Chain in its Telegram bot; Virtuals/core accounts amplified.",
+        "decision": "Logged as partner distribution/trading-surface integration for early agent tokens."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/eigencloud/status/2072953982029529504",
+        "summary": "Official EigenCloud said an EigenLabs open-swarm project at ecdsa.fail beat Google Quantum AI's private ECDSA result by 47.5%.",
+        "decision": "Logged as high-signal research/product-positioning proof point; not treated as fee-capture evidence."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter DevHub scan",
+        "url": "https://x.com/NEARDevHub/status/2072924864328225228",
+        "summary": "NEAR DevHub amplified first unattended dynamic resharding on testnet; dynamic resharding/testnet upgrade was already logged July 1.",
+        "decision": "No duplicate changelog entry."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No other confirmed post-cutoff material official/project-info updates found for non-suppressed tracked projects; low-signal replies and automated token deploys/swaps were ignored.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Virtuals, check Banana Gun/Virtuals posts for actual Robinhood Chain pre-bond token volume, supported-token scope, and whether the integration persists beyond launch attention.",
+      "For AEON, verify whether Grok Build harness PR merges and whether shiplog x402 paid-sim metrics continue to grow in the next weekly report.",
+      "For EigenCloud, watch ecdsa.fail/EigenCloud follow-ups for reproducible benchmark details and whether open-swarm activity creates measurable EigenCloud usage or fees."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-03T10:03:56Z changelog entries: AEON medium; VIRTUAL high; EIGEN medium; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260703T055430Z",
     "started_at": "2026-07-03T05:54:30Z",
     "completed_at": "2026-07-03T05:54:30Z",
