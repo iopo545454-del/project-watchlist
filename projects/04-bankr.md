@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-03T05:54:30Z
+last_updated: 2026-07-03T14:12:09Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-07-03T05:54:30Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-03 — Official Bankr bot published a HOODINI buying guide for the first bankrbot-deployed token on Robinhood Chain, with wallet-funding, LLM credit, Bankr Club, bridging and manual-RPC guidance. Treat this as a partial correction/extension to the earlier Base-only deployment scope: Bankr can help users access this Robinhood Chain token/trading flow, but broader non-Base deploy coverage and BNKR value capture remain unverified. Source: https://x.com/bankrbot/status/2073037676975141328
 
 - 2026-07-03 — Official Bankr bot clarified that current token deploys are **Base-only via Doppler multicurve** and that Robinhood Chain / other networks are not fully supported in its toolset, after HOODINI/Robinhood Chain launch discussion. Treat this as a scope correction to the prior “Robinhood Chain is live on Bankr” item: Bankr can surface some Robinhood-chain activity, but full deploy/support coverage is not confirmed. Next checks are official docs for supported Robinhood Chain actions, custody/execution details, and whether non-Base deploy support actually ships. Source: https://x.com/bankrbot/status/2072921095188164702
 

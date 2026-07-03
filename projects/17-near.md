@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T21:47:35Z
+last_updated: 2026-07-03T14:12:09Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,8 @@ last_updated: 2026-07-02T21:47:35Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-07-03 — Official NEAR pointed to `revenue.near.org` as the live dashboard view tying together Intents volume, Confidential TVL, and 30-day unique users who expressed an intent — framed as settlement, trust, and live demand in one funnel. The dashboard was reachable during this scan, but exact numbers were not logged from the static X graphic; query live dashboard/API before using current quantitative values. Sources: https://x.com/NEARProtocol/status/2073030607731384694 and https://revenue.near.org/
 
 - 2026-07-02 — NEAR promoted live near.com confidential trading/perps functionality: confidential swaps/deposits/transfers/withdrawals, 50+ perps markets, up to 40x leverage, cross-chain deposits, and referral incentives. Sources: https://x.com/NEARProtocol/status/2072747500914544907, https://x.com/NEARProtocol/status/2072747620351582334, https://x.com/NEARProtocol/status/2072747731114701135, https://x.com/NEARProtocol/status/2072747737431339495
 - 2026-07-02 — NEAR reframed AI agents as emerging economic actors and pointed to near_ai as user-owned data/agent/upside infrastructure; useful strategic catalyst signal, but monitor for concrete releases, users, and value capture. Source: https://x.com/NEARProtocol/status/2072794894901420250

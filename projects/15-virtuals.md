@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-03T10:03:56Z
+last_updated: 2026-07-03T14:12:09Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-07-03 — Official Virtuals said AI agents are leading volume on Robinhood Chain and that its first Robinhood Chain agent, Raxol (`@axol_io`), reached top-four volume within 24 hours of launch; core contributor 0xTP91 amplified that the launch pipeline is still busy and urged users to bridge VIRT. This strengthens the Robinhood Chain / pre-bond agent-token catalyst beyond the Banana Gun integration, but the next check is sustained post-launch volume and whether activity routes back into Virtuals protocol economics. Sources: https://x.com/virtuals_io/status/2073005792618504304 and https://x.com/0xTP91/status/2073011951538753796
 
 - 2026-07-03 — Banana Gun announced that Virtuals pre-bond tokens on Robinhood Chain are now supported in the Banana Gun Telegram Bot, and Virtuals/core accounts amplified the announcement. This is a partner distribution/trading-surface integration for early agent tokens; next check is actual pre-bond trading flow, supported-token scope, volume, and whether it routes durable attention/liquidity back to Virtuals launches. Sources: https://x.com/bananagun/status/2072945224280912337 and https://x.com/virtuals_io/status/2072951163729944864
 

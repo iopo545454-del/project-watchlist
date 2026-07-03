@@ -1,5 +1,108 @@
 [
   {
+    "run_id": "scan-20260703T141209Z",
+    "started_at": "2026-07-03T14:12:09Z",
+    "completed_at": "2026-07-03T14:12:09Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-03T10:03:56Z",
+      "until": "2026-07-03T14:12:09Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "VIRTUAL / Virtuals Protocol",
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2073037676975141328",
+        "summary": "Official Bankr bot posted a HOODINI buying guide for the first bankrbot-deployed token on Robinhood Chain.",
+        "decision": "Logged as verification/scope update for Robinhood Chain trading support; broader non-Base deploy coverage remains a watch item."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official account + core contributor",
+        "url": "https://x.com/virtuals_io/status/2073005792618504304",
+        "summary": "Official Virtuals said AI agents are leading volume on Robinhood Chain and Raxol reached top-four volume within 24h.",
+        "decision": "Logged as material Robinhood Chain/agent-token launch distribution signal."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account + live dashboard",
+        "url": "https://x.com/NEARProtocol/status/2073030607731384694",
+        "summary": "Official NEAR pointed to revenue.near.org for Intents volume, Confidential TVL, and 30d unique-user funnel metrics; dashboard returned HTTP 200 during scan.",
+        "decision": "Logged as measurable KPI/dashboard signal; exact numbers not copied from static X graphic."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No other confirmed post-cutoff material official/project-info updates found for non-suppressed tracked projects; low-signal replies, price chatter, and generic community posts were ignored.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify whether Robinhood Chain support expands beyond HOODINI trading guides into full deploy/tool coverage and whether any fees accrue to BNKR/Bankr Club.",
+      "For Virtuals, check whether Robinhood Chain agent-token volume persists after Raxol launch and whether it routes measurable demand/liquidity into Virtuals rails.",
+      "For NEAR, query revenue.near.org/dashboard data directly before recording exact Intents volume, Confidential TVL, unique-user, fee, or revenue numbers."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-03T14:12:09Z changelog entries: BANKR high; VIRTUAL high; NEAR medium; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260703T100356Z",
     "started_at": "2026-07-03T10:03:56Z",
     "completed_at": "2026-07-03T10:03:56Z",
