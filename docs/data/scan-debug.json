@@ -1,5 +1,108 @@
 [
   {
+    "run_id": "scan-20260703T181852Z",
+    "started_at": "2026-07-03T18:18:52Z",
+    "completed_at": "2026-07-03T18:18:52Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-03T14:12:09Z",
+      "until": "2026-07-03T18:18:52Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol",
+      "CHIP / USD.AI"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 3,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0,
+      "thesis_updates": 1
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2073105015225418084",
+        "summary": "Official NEAR scheduled a July 7 'The Big Reveal' livestream with Illia Polosukhin and Alex Shevchenko/NEAR Intents.",
+        "decision": "Logged as dated catalyst watch item."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2073068502160720193",
+        "summary": "Official NEAR said Fogo Chain went confidential on near.com for private swaps of 100+ tokens to/from FOGO.",
+        "decision": "Logged as material product/integration update tied to Confidential Intents/near.com."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/0xZergs/status/2073094153139900421",
+        "summary": "USD.AI co-founder discussed why neocloud businesses use cash/equity/debt structures while CHIP sits around compute settlement/GPU-credit governance and value capture.",
+        "decision": "Logged as thesis update/founder context, not a new token-mechanics announcement."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No other confirmed post-cutoff material official/project-info updates found for non-suppressed tracked projects; low-signal replies, price chatter, routine token launches, and generic community posts were ignored.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, watch the July 7 Big Reveal livestream and follow-up docs/blogs for concrete product, enterprise, or revenue-capture announcements.",
+      "For NEAR, compare Fogo confidential-swap launch against Confidential TVL, routed volume, revenue.near.org, and near.com usage after launch.",
+      "For USD.AI, verify whether founder thesis around CHIP value capture maps to explicit fee routing, buybacks, governance rights, staking participation, and loan-book performance."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-03T18:18:52Z changelog entries: NEAR Big Reveal high; NEAR Fogo confidential swaps high; CHIP/USD.AI founder thesis medium; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260703T141209Z",
     "started_at": "2026-07-03T14:12:09Z",
     "completed_at": "2026-07-03T14:12:09Z",

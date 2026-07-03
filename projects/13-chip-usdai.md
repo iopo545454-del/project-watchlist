@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T21:47:35Z
+last_updated: 2026-07-03T18:18:52Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-02T21:47:35Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-03 — USD.AI co-founder David / `@0xZergs` argued that neocloud businesses cannot practically use crypto tokens for enterprise business development today, so USD.AI uses cash/equity/debt-style structures while CHIP is positioned as the onchain governance/value-capture resource around GPU financing and compute settlement. This is founder thesis context, not a new token-mechanics announcement. Sources: https://x.com/0xZergs/status/2073077846344675663, https://x.com/0xZergs/status/2073090173227675836, and https://x.com/0xZergs/status/2073094153139900421
 
 - 2026-07-02 — USD.AI said sUSDai is now manageable through PrismFi Earn vaults on Arbitrum, adding a live DeFi integration with yield access and Allo Points toward CHIP. Source: https://x.com/USDai_Official/status/2072748060971798732
 
@@ -30,7 +32,16 @@ last_updated: 2026-07-02T21:47:35Z
 - 2026-06-15 — USDAI said it is working with Hydra Host after Hydra’s $100M Series A to connect GPU sourcing with asset-backed financing for AI factory deployment; also posted broad hiring tied to a $1B compute-financing goal. Source: https://x.com/USDai_Official/status/2066611721234772415
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/0xZergs/status/2073094153139900421 | David / `@0xZergs`, USD.AI co-founder | In a broader equity-token thread, David argues that neoclouds need cash, equity, debt, and real enterprise BD rather than pretending tokens can close customer deals today; CHIP’s role is as the scarce onchain governance/value-capture resource tied to compute settlement and GPU-backed credit. | Useful founder thesis for why USD.AI/CHIP may use hybrid capital structures instead of pure token-only value accrual; track whether actual fee routing, buybacks, staking, and governance confirm the thesis. |
+
+### Hermes take
+
+> USD.AI is interesting because it is not pretending GPUs become DeFi-native overnight. The bet is that real AI capex needs boring credit rails, and CHIP matters only if governance/value capture sits on top of that growing loan book without dumping all business value into an offchain labsco. Watch cash flows, defaults, and explicit fee routing; ignore hand-wavy “AI RWA” framing without loan performance.
 
 ## Team
 - Permian Labs — core builder.
