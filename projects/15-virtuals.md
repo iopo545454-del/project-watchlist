@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-04T06:42:05Z
+last_updated: 2026-07-04T10:51:19Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-07-04 — Official Virtuals said users can now buy any **Robinhood Chain agent directly on Virtuals** without bridging or chain switching, including bonded and pre-bond agents. This is the direct official confirmation/UX layer for the Robinhood Chain agent-token push after the earlier Raxol and Banana Gun signals; next checks are sustained Robinhood-chain agent volume, supported asset scope, wallet routing, and whether this adds protocol fees or VIRTUAL liquidity demand. Source: https://x.com/virtuals_io/status/2073299312751284569
 
 - 2026-07-04 — Fenix Finance said `$FENIX` is live on Virtuals as the first Trading and Liquidity Marketplace on the platform, powered by Rise Labs in partnership with Nest Exchange, with a direct Virtuals app link. This is a partner/ecosystem launch signal, not yet confirmed by official Virtuals; next checks are Virtuals amplification, app traction, volume/liquidity, and whether marketplace activity routes meaningful fees or attention back to Virtuals rails. Source: https://x.com/fenixfinance/status/2073296583547146278
 
@@ -68,6 +70,7 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Direct Robinhood Chain agent trading on Virtuals | Confirmed | Official Virtuals said users can buy any Robinhood Chain agent directly on Virtuals with no bridging or chain switching: https://x.com/virtuals_io/status/2073299312751284569 | Live as of 2026-07-04 | Removes cross-chain UX friction for Robinhood Chain agents and makes bonded/pre-bond agent trading reachable from the Virtuals app. | Could increase agent launch/trading throughput and attention around Virtuals' Robinhood Chain expansion if volume persists; weak follow-through would make it mostly a short-lived UX headline. | Track app flow, supported wallets/assets, Raxol and follow-on agent volume, Banana Gun/partner routing, protocol fee capture, and whether VIRTUAL liquidity/staking demand benefits. |
 | EconomyOS private frontier-model endpoint | Confirmed | Official Virtuals says favorite/frontier LLMs are available through one private endpoint powered by EconomyOS: https://x.com/i/status/2070130016588038399 | Live announcement as of 2026-06-25 | Adds a private inference API surface to the Virtuals/EconomyOS stack alongside agent trading, payments, and coordination rails. | Could make EconomyOS more than a launch/agent UX if third-party users route model spend through it; weak adoption would make it just another LLM wrapper. | Watch docs, supported models, pricing, privacy architecture, API key flow, usage metrics, and whether endpoint fees connect to Virtuals protocol/token value. |
 | EconomyOS lets LLMs trade agents, Hyperliquid perps, and HIP-3 markets | Confirmed | Official weekly update: https://x.com/virtuals_io/status/2066171168986644821 | Live / June 2026 | Makes Virtuals rails more usable by external AI workflows and trading interfaces. | Could pull more agent/user flow into Virtuals if LLM interfaces become meaningful crypto front ends. | Track usage metrics, Arena participation, external integrations, and whether this becomes sustained volume rather than launch-week activity. |
 | ERC-8126 AI-agent verification standard | Confirmed | Official weekly update says Virtuals released ERC-8126 with collaborators: https://x.com/virtuals_io/status/2066171168986644821 | Released / June 2026 | Adds a standards layer for proving agent audits, wallet control, and identity without exposing private keys. | Standards adoption could make Virtuals more defensible as infrastructure if wallets/apps integrate it beyond Virtuals-native agents. | Watch EIP/ERC repository progress, wallet/app integrations, and security/audit tooling adoption. |

@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-04T02:33:56Z
+last_updated: 2026-07-04T10:51:19Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-07-04T02:33:56Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-04 — Official Bankr bot detailed the **cc0company launch-token** skill: one atomic ERC20 + Uniswap v4 pool deploy on Base/Ethereum/Robinhood Chain, creator/provider fee splits, optional anti-snipe/vault/airdrop settings, and a factory-enforced 75% creator / 15% `$cc0company` stakers / 10% treasury LP-fee split for the standard path. Treat this as a material Bankr/cc0company launch-infra and staking-fee-routing update, but not direct BNKR tokenomics; next checks are docs, factory contracts, actual launch volume, and whether Bankr/BNKR captures any economics. Source: https://x.com/bankrbot/status/2073355111548735679
 
 - 2026-07-04 — Official Bankr bot said **OK, Terminal BETA** is now public-by-link and forkable, with the app live through a Bankr share URL. Treat this as another public app/tool on the Bankr agent surface rather than direct BNKR tokenomics; next checks are repeat usage, docs/listing metadata, and whether forked apps or terminal access create paid flow to Bankr/Club/BNKR. Source: https://x.com/bankrbot/status/2073180919142474211
 
@@ -108,6 +110,7 @@ last_updated: 2026-07-04T02:33:56Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| cc0company launch-token skill / staker fee split | Confirmed | Official Bankr bot detailed cc0company-launch-token with atomic ERC20 + Uniswap v4 pool deployment and a standard 75% creator / 15% `$cc0company` stakers / 10% platform treasury LP-fee split: https://x.com/bankrbot/status/2073355111548735679 | Live / published 2026-07-04 | Adds a more explicit launchpad factory + staking-fee-routing surface to the Bankr/cc0company agent-skills stack across Base, Ethereum, and Robinhood Chain. | Could make cc0company staking economically relevant if launches generate real LP fees; for BNKR, the impact is indirect unless Bankr itself routes demand, fees, or users into BNKR/Club. | Verify docs and factory contracts, actual launched-token volume, fee-claim activity, chain support, and whether Bankr/BNKR captures or only surfaces cc0company economics. |
 | Bankr launch default allocation / vested recipient share | Confirmed | Official Bankr bot said new launches now seed 85% to LP and vest 15% to the fee/reward recipient over 2 years with a 90-day cliff: https://x.com/bankrbot/status/2069544564323758282 | Live default as of 2026-06-23 | Changes launch economics from 100% LP-only to an explicit team/reward/incentive allocation while keeping LP-first framing. | Could improve quality of Bankr-launched projects by funding market makers/listings/teams, but may also weaken the pure fair-launch narrative if abused. | Watch launch docs, whether prior projects get retroactive options, and whether this drives higher-quality launches or fee volume for Bankr/BNKR. |
 | Private inference on Bankr LLM Gateway | Confirmed | Official Bankr says private inference is live through the Bankr LLM Gateway, with select models in TEEs, encrypted prompts in use, one API key, 30+ models, and pay-with-any-coin support: https://x.com/bankrbot/status/2070167520523469128 | Live as of 2026-06-25 | Adds a privacy-sensitive inference product to Bankr's agent/payment stack, not just transaction execution or token launches. | If used, Bankr can sit closer to AI API spend and x402 inference payments; token relevance depends on fee routing, Club/Max utility, or BNKR-linked economics. | Watch gateway docs/pricing, TEE model list, usage metrics, supported settlement assets, and whether any gateway fees or incentives accrue to BNKR. |
 | x402 Cloud multi-token payments | Confirmed | Official X says users can accept payment in any coin when creating a Bankr x402 endpoint: https://x.com/bankrbot/status/2066182283380589020 | Live as of 2026-06-14 | Expands Bankr from natural-language execution/launch tooling into agent payment endpoints that can settle in arbitrary tokens | Could make ecosystem tokens more useful as agent/service payment rails and improve Bankr’s relevance to x402/agent-commerce narratives | Watch docs.bankr.bot and bankr.bot/x402 for fee routing, supported chains/tokens, endpoint volume, and whether BNKR captures value |
