@@ -1,5 +1,100 @@
 [
   {
+    "run_id": "scan-20260704T023356Z",
+    "started_at": "2026-07-04T02:33:56Z",
+    "completed_at": "2026-07-04T02:33:56Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-03T22:26:33Z",
+      "until": "2026-07-04T02:33:56Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 2,
+      "material_confirmed": 1,
+      "weak_signals_logged": 1,
+      "thesis_updates": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2073180919142474211",
+        "summary": "Official Bankr bot said OK, Terminal BETA is live, public-by-link and forkable.",
+        "decision": "Logged as public app/tool surface update and catalyst row; BNKR value capture remains a next-check."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account / prompted bot context",
+        "url": "https://x.com/bankrbot/status/2073186758867779991",
+        "summary": "Official Bankr bot described OK, Terminal / OKT utility around terminal access, AI/agent micro-payments, feature gating and possible governance.",
+        "decision": "Logged as unverified watch item pending docs/app/contract confirmation."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No other confirmed post-cutoff material official/project-info updates found for non-suppressed tracked projects; routine replies, broad positioning, price chatter and out-of-window items were ignored.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify OK, Terminal app metadata/share URL, usage/fork behavior, and whether any terminal/app fees route to Bankr Club or BNKR.",
+      "For Bankr, verify OKT contract/launch-page details and formal access-gating/AI micro-payment utility before upgrading the weak signal to durable tokenomics.",
+      "Continue suppressing POD / Dolphin POD unless user explicitly re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task tagger labeled the new 2026-07-04T02:33:56Z changelog entries: BANKR OK Terminal public/forkable high; BANKR OKT utility-token watch item high; json.tool validation passed."
+  },
+  {
     "run_id": "scan-20260703T222633Z",
     "started_at": "2026-07-03T22:26:33Z",
     "completed_at": "2026-07-03T22:26:33Z",
