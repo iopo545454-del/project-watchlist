@@ -1,5 +1,112 @@
 [
   {
+    "run_id": "scan-20260704T230650Z",
+    "started_at": "2026-07-04T23:06:50Z",
+    "completed_at": "2026-07-04T23:09:47Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-04T19:05:59Z",
+      "until": "2026-07-04T23:06:50Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Official X scan chunk 1",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3AGEODNET%20OR%20from%3AMetaDAOProject%20OR%20from%3Abankrbot%20OR%20from%3Aaeonframework%20OR%20from%3Agitlawb%20OR%20from%3AKinetiq_xyz%20OR%20from%3Agrass%20OR%20from%3AIOTA_SN9%20OR%20from%3ATargonCompute)",
+        "summary": "No posts found from this official/primary account chunk between the prior scan cutoff and this run.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 2",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aopentensor%20OR%20from%3Aakashnet%20OR%20from%3AUSDai_Official%20OR%20from%3AAskVenice%20OR%20from%3Avirtuals_io%20OR%20from%3Aworldnetwork%20OR%20from%3ANEARProtocol%20OR%20from%3ADeriveXYZ)",
+        "summary": "No posts found from this official/primary account chunk between the prior scan cutoff and this run.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 3",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aoctra%20OR%20from%3ABioProtocol%20OR%20from%3APluralis%20OR%20from%3Aambient_xyz%20OR%20from%3Aeigencloud%20OR%20from%3Achutes_ai%20OR%20from%3Alium_io%20OR%20from%3AComputeHorde)",
+        "summary": "No posts found from this official/primary account chunk between the prior scan cutoff and this run.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Related/team X account scan",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Tracked related/team accounts produced only non-material posts in-window: NEAR co-founder security/tooling thoughts and Independence Day/return-to-SF context; Virtuals contributor posts were light Robinhood-chain engagement. No durable project fact, confirmed catalyst, or high-signal weak signal was found.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Targeted sweeps for GRASS July 7/revenue/vote/unlock chatter, Bittensor subnet Kraken listing follow-through, and Bankr/Virtuals/NEAR/Derive/EigenCloud/USD.AI/GEODNET catalyst keywords found no new qualifying posts in-window.",
+        "decision": "no material change"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue 4h monitoring of official X/project sources, intake issues, and high-signal weak signals.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "No changelog entries were added. Independent delegate_task tagger inspected docs/data/project-changelog.json as a no-op and confirmed all 303 entries have valid high/medium/low importance labels; JSON validation passed."
+  },
+  {
     "run_id": "scan-20260704T190320Z",
     "started_at": "2026-07-04T19:03:20Z",
     "completed_at": "2026-07-04T19:05:59Z",
