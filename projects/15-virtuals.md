@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-03T14:12:09Z
+last_updated: 2026-07-04T06:42:05Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-07-04 — Fenix Finance said `$FENIX` is live on Virtuals as the first Trading and Liquidity Marketplace on the platform, powered by Rise Labs in partnership with Nest Exchange, with a direct Virtuals app link. This is a partner/ecosystem launch signal, not yet confirmed by official Virtuals; next checks are Virtuals amplification, app traction, volume/liquidity, and whether marketplace activity routes meaningful fees or attention back to Virtuals rails. Source: https://x.com/fenixfinance/status/2073296583547146278
 
 - 2026-07-03 — Official Virtuals said AI agents are leading volume on Robinhood Chain and that its first Robinhood Chain agent, Raxol (`@axol_io`), reached top-four volume within 24 hours of launch; core contributor 0xTP91 amplified that the launch pipeline is still busy and urged users to bridge VIRT. This strengthens the Robinhood Chain / pre-bond agent-token catalyst beyond the Banana Gun integration, but the next check is sustained post-launch volume and whether activity routes back into Virtuals protocol economics. Sources: https://x.com/virtuals_io/status/2073005792618504304 and https://x.com/0xTP91/status/2073011951538753796
 

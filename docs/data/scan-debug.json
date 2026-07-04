@@ -1,5 +1,109 @@
 [
   {
+    "run_id": "scan-20260704T064205Z",
+    "started_at": "2026-07-04T06:42:05Z",
+    "completed_at": "2026-07-04T06:42:05Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-04T02:33:56Z",
+      "until": "2026-07-04T06:42:05Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 2,
+      "changelog_entries_added": 2,
+      "material_confirmed": 2,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned none; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial_review_done=true.",
+        "decision": "No intake changes."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2073254793477554230",
+        "summary": "Official Derive promoted mobile options trading through a personal QR-code device connection.",
+        "decision": "Logged as official UX/distribution update; monitor whether easier mobile access contributes to options flow, fees, and buybacks."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter partner/ecosystem account",
+        "url": "https://x.com/fenixfinance/status/2073296583547146278",
+        "summary": "Fenix Finance said $FENIX is live on Virtuals as the first Trading and Liquidity Marketplace on the platform, powered by Rise Labs with Nest Exchange.",
+        "decision": "Logged as partner/ecosystem launch signal pending Virtuals official amplification and measurable app/liquidity traction."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter third-party discussion",
+        "url": "https://x.com/dcfgod/status/2073255694329901278",
+        "summary": "Third-party discussion continued to frame July 7 Token Holder Call as a revenue/metrics catalyst, but still no new official @grass/@grassfdn confirmation in-window.",
+        "decision": "Kept existing unverified watch item; no duplicate changelog entry."
+      },
+      {
+        "project": "Remaining tracked projects",
+        "source": "X/Twitter official/team scans",
+        "url": "docs/data/index.json",
+        "summary": "No other confirmed post-cutoff material official/project-info updates found for non-suppressed tracked projects; routine Bankr token deploys, short replies, hype, and broad community chatter were ignored.",
+        "decision": "No further changelog entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Derive, track whether mobile QR connection meaningfully changes options/RFQ usage, fees, OI, or weekly DRV buyback size.",
+      "For Virtuals, verify whether official Virtuals amplifies FENIX, whether the app page sustains liquidity/volume, and whether the Trading and Liquidity Marketplace routes activity through Virtuals rails.",
+      "For GRASS, re-check official accounts before/around the July 7 Token Holder Call for confirmed revenue, governance, unlock, or holder-distribution language.",
+      "Continue suppressing POD / Dolphin POD unless user explicitly re-enables it."
+    ],
+    "importance_tagging": "Independent tagger completed for 2026-07-04T06:42:05Z entries: DRV medium; VIRTUAL high; JSON validation passed."
+  },
+  {
     "run_id": "scan-20260704T023356Z",
     "started_at": "2026-07-04T02:33:56Z",
     "completed_at": "2026-07-04T02:33:56Z",
