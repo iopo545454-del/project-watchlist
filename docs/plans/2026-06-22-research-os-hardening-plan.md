@@ -1,5 +1,7 @@
 # Project Watchlist Research OS Hardening Implementation Plan
 
+> **SUPERSEDED (2026-07-05):** Do not implement tasks from this plan. The operative plan is [`2026-07-04-verification-loop-and-scan-quality-plan.md`](2026-07-04-verification-loop-and-scan-quality-plan.md), which pulls in a reduced subset of this plan's validation work and defers the generator layer. Items 15–16 appended to this plan's roadmap on 2026-07-05 have been relocated into the operative plan (Task 3.1 check 7 and the Task 1.1 addendum). This file is kept for architectural reference only.
+
 > **For Hermes:** Use subagent-driven-development skill to implement this plan task-by-task.
 
 **Goal:** Turn the project-watchlist repo from a manually synchronized research dashboard into a validated, generated, drift-resistant research operating system.
