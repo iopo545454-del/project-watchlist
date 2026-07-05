@@ -74,6 +74,7 @@ Each unverified watch item should include:
 - `verification_status` as `unverified`, `partially supported`, `confirmed`, `stale`, or `disproven`
 - `why_it_matters`
 - `next_check` or what evidence would confirm/disprove it
+- `carried_from` when a prior run's `next_check` could not be resolved and is intentionally carried forward
 
 Example:
 
@@ -105,13 +106,16 @@ Every autonomous monitoring run should:
 7. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
 8. Apply the materiality threshold before editing files or alerting Discord.
 9. Add confirmed durable findings in the relevant `projects/*.md` dossier.
-10. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
-11. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
-12. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
-13. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked/logged_projects, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. Distinguish full scan coverage from projects that produced logged/material entries; if a project was checked and had no material change, record that explicitly only when useful. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
-14. Update indexes and generated project pages when metadata, links, or displayed content change.
-15. Validate JSON and inspect the diff before committing.
-16. Commit and push real changes to `main`.
+10. At run start, consume the previous run's `next_checks` plus each dossier's `## Unverified Watch Items` `next_check` fields. Each item must be either addressed with a decision-trail entry or explicitly carried forward with a reason and `carried_from` pointing to the originating run/date; do not silently drop checks.
+11. Before writing a material Latest/changelog entry, check the project's catalyst table, open questions, Unverified Watch Items, and available direct-metrics history for the relevant metric. Populate the context block (`novelty`, `delta`, `relates_to`) from that repo history before committing the entry.
+12. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
+13. If a finding advances, completes, narrows, disproves, or materially changes a catalyst, open question, or watch item, update that row/item in the same run and link it via `relates_to`.
+14. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, next-check criteria, and carry-forward state when applicable.
+15. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
+16. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked/logged_projects, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. Distinguish full scan coverage from projects that produced logged/material entries; if a project was checked and had no material change, record that explicitly only when useful. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
+17. Update indexes and generated project pages when metadata, links, or displayed content change.
+18. Validate JSON and inspect the diff before committing.
+19. Commit and push real changes to `main`.
 
 If no material change exists, the run should update scan state only when useful and otherwise stay quiet.
 
@@ -201,6 +205,7 @@ Guidelines:
 - Separate sourced thesis from Hermes opinion. Never make Hermes' take look like an external investor quote.
 - Hermes take should be quick, blunt, and useful: avoid generic caution paragraphs, avoid self-hedging, and do not end with a forced bull/bear call unless the user asks.
 - These are speculative crypto assets; the take can assume high risk is obvious and focus on whether the setup is interesting, reflexive, crowded, under-owned, or dead.
+- Hermes takes are append-only. Date each take. When a take changes, keep the prior take struck through (`~~prior take~~`) with one line explaining what changed/why, then write the new dated take above it. Do not silently rewrite old takes; do not add price-stamping, scoring, prediction-journal math, or comps screens unless explicitly requested.
 - If there are no good investor theses yet, write `No strong sourced investor thesis found yet` and add what sources should be searched next.
 
 For generated project HTML, render Hermes' take in a visually distinctive callout/card. Use a warm accent such as `.hermes-take` so it stands apart from sourced thesis material.
@@ -288,9 +293,16 @@ Prefer short source-proximate entries over polished prose here. This panel is th
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
   "url": "projects/<slug>.html or direct source URL when useful",
   "last_scanned": "ISO-8601 UTC timestamp",
-  "importance": "high | medium | low"
+  "importance": "high | medium | low",
+  "novelty": "new | update | recurring",
+  "delta": "Short context vs prior state; quantitative/history-sourced when collector or prior entries support it",
+  "relates_to": [
+    {"type": "catalyst | open_question | watch_item | thesis | metric", "ref": "Catalyst/question/watch item/metric identifier"}
+  ]
 }
 ```
+
+For every new material entry, `novelty`, `delta`, and `relates_to` are required. `relates_to` may be an empty array, but the field must be present. Use `novelty: recurring` for routine recurring events such as weekly buybacks, and include comparison to the previous occurrence plus direct-metrics trend where history exists. If collector coverage exists, `delta` should cite the relevant metric/history rather than only restating the source. If an entry links to a catalyst, open question, watch item, thesis, or metric, update that referenced dossier item in the same commit when the new evidence advances, completes, narrows, confirms, weakens, or kills it.
 
 Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance`, but treat it as a strict **signal tier**, not a generic priority score:
 
@@ -304,6 +316,7 @@ Bias downward when uncertain. The dashboard should have few `high` items; if too
 
 - Send Discord updates only for material changes or explicit user requests.
 - Prefer concise TLDRs with links to the dashboard, project page, source, or commit.
+- Material alerts must carry the context block: `novelty`, the `delta`, and the single most relevant `relates_to` line. An alert that only restates the source is below the bar.
 - Do not spam raw tables.
 - Do not send routine "nothing happened" messages for autonomous scans.
 - If a run only updates local/dashboard scan state, the changelog is enough.

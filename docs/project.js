@@ -2,10 +2,69 @@
    the section headings and reveals sections on load. Runs only on detail pages
    and degrades gracefully if anything is missing. */
 (function () {
+  const dataVersion = '20260705-context-blocks-1';
   if (!document.body.classList.contains('project-page')) return;
 
   const main = document.querySelector('main.project-content, main.project-grid');
   if (!main) return;
+
+
+  function enhanceLatestFromChangelog() {
+    const latestCard = document.querySelector('.latest-card');
+    const latestList = latestCard?.querySelector('.latest-list');
+    if (!latestList) return;
+    const title = document.querySelector('.project-hero h1')?.textContent?.trim();
+    const file = location.pathname.split('/').pop();
+    const slug = file ? file.replace(/\.html$/, '') : '';
+    const dataUrl = location.pathname.includes('/projects/')
+      ? `../data/project-changelog.json?v=${dataVersion}`
+      : `data/project-changelog.json?v=${dataVersion}`;
+    const esc = value => String(value ?? '').replace(/[&<>\"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
+    const fmtDate = value => {
+      if (!value) return '';
+      const d = new Date(value);
+      if (Number.isNaN(d.getTime())) return String(value).slice(0, 10);
+      return d.toISOString().slice(0, 10);
+    };
+    const relLabel = { catalyst: 'catalyst', open_question: 'question', watch_item: 'watch', thesis: 'thesis', metric: 'metric' };
+    const contextHtml = item => {
+      const bits = [];
+      if (item.novelty) bits.push(`<span class="context-pill novelty-${esc(item.novelty)}">${esc(item.novelty)}</span>`);
+      if (item.delta) bits.push(`<span class="context-delta">Δ ${esc(item.delta)}</span>`);
+      const rel = Array.isArray(item.relates_to) ? item.relates_to[0] : null;
+      if (rel?.type || rel?.ref) bits.push(`<span class="context-rel">${esc(relLabel[rel.type] || rel.type || 'ref')}: ${esc(rel.ref || '')}</span>`);
+      return bits.length ? `<div class="context-block compact">${bits.join('')}</div>` : '';
+    };
+    fetch(dataUrl, { cache: 'no-cache' })
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(items => {
+        const rows = (Array.isArray(items) ? items : [])
+          .filter(item => item.project === title || String(item.url || '').includes(`projects/${slug}.html`) || String(item.url || '').endsWith(`${slug}.html`))
+          .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
+          .slice(0, 10);
+        if (!rows.length) return;
+        latestList.innerHTML = rows.map(item => {
+          const href = item.url || '#';
+          const linkedSummary = href && href !== '#'
+            ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(item.summary || '')}</a>`
+            : esc(item.summary || '');
+          return `<article class="latest-item">
+            <div class="latest-meta">
+              <span>${esc(fmtDate(item.date))}</span>
+              <span>${esc(item.type || 'update')}</span>
+              ${item.novelty ? `<span class="novelty-tag novelty-${esc(item.novelty)}">${esc(item.novelty)}</span>` : ''}
+            </div>
+            <p class="latest-summary">${linkedSummary}</p>
+            ${contextHtml(item)}
+            <p class="latest-source">${esc(item.source || '')}</p>
+          </article>`;
+        }).join('');
+      })
+      .catch(() => {
+        // Static, pre-rendered Latest entries remain as the graceful fallback.
+      });
+  }
+  enhanceLatestFromChangelog();
 
   const sections = [...main.querySelectorAll(':scope > section.section-card')];
   const headed = sections
@@ -111,7 +170,11 @@
     fetch(dataUrl, { cache: 'no-cache' })
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
-        const project = data.projects && data.projects[slug];
+        const projects = data.projects || {};
+        const projectKey = projects[slug]
+          ? slug
+          : Object.keys(projects).find(k => k === slug || k.endsWith(`-${slug}`) || slug.endsWith(`-${k}`));
+        const project = projectKey ? projects[projectKey] : null;
         if (!project) throw new Error(`No direct metrics for ${slug}`);
         const metricHtml = (project.metrics || []).map(metricCard).join('') || '<p class="latest-empty">No metrics fetched yet.</p>';
         const chains = (project.chain_breakdown || []).slice(0, 8).map(c => `

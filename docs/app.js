@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260705-signal-tier-1';
+const dataVersion = '20260705-context-blocks-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -62,6 +62,20 @@ const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({
 }[c]));
 const IMP_RANK = { high: 3, medium: 2, low: 1 };
 const SIGNAL_LABEL = { high: 'actionable', medium: 'watch', low: 'log' };
+const REL_LABEL = { catalyst: 'catalyst', open_question: 'question', watch_item: 'watch', thesis: 'thesis', metric: 'metric' };
+
+function renderContextBlock(item, { compact = false } = {}) {
+  const bits = [];
+  if (item.novelty) bits.push(`<span class="context-pill novelty-${esc(item.novelty)}">${esc(item.novelty)}</span>`);
+  if (item.delta) bits.push(`<span class="context-delta">Δ ${esc(item.delta)}</span>`);
+  const rels = Array.isArray(item.relates_to) ? item.relates_to : [];
+  const rel = rels[0];
+  if (rel?.type || rel?.ref) {
+    bits.push(`<span class="context-rel">${esc(REL_LABEL[rel.type] || rel.type || 'ref')}: ${esc(rel.ref || '')}</span>`);
+  }
+  if (!bits.length) return '';
+  return `<div class="context-block${compact ? ' compact' : ''}">${bits.join('')}</div>`;
+}
 
 const sortedChanges = () => [...changes].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
 const latestChangeFor = projectName => sortedChanges().find(c => c.project === projectName) || null;
@@ -118,10 +132,12 @@ function renderChangelog() {
         <span>${esc(fmtDate(item.date))}</span>
         <span>${esc(item.type || 'update')}</span>
         <span class="importance-pill importance-${esc(imp)}">${esc(sig)}</span>
+        ${item.novelty ? `<span class="novelty-tag novelty-${esc(item.novelty)}">${esc(item.novelty)}</span>` : ''}
         ${scan}
       </div>
       <div class="change-project">${esc(item.project || 'Watchlist')}</div>
       <div class="change-summary">${esc(item.summary || '')}</div>
+      ${renderContextBlock(item)}
       <div class="change-source">${esc(item.source || '')}</div>
     </a>`;
   }).join('') || '<p class="change-empty">No project scans yet.</p>';
@@ -156,6 +172,7 @@ function renderBoard() {
     const imp = initialPending ? 'low' : (latest?.importance || 'low');
     const latestType = initialPending ? 'initial review pending' : (latest?.type || 'scan');
     const summary = initialPending ? 'Hermes will find official sources and run the first overview on the next scan.' : (latest?.summary || 'No project-info change logged yet.');
+    const context = !initialPending && latest ? renderContextBlock(latest, { compact: true }) : '';
     const status = initialPending ? '<span class="status-pending">● Initial review pending</span>' : '';
     const meta = categoryMeta(r.category);
     const idx = (r.slug || '').split('-')[0] || String(i + 1).padStart(2, '0');
@@ -174,6 +191,7 @@ function renderBoard() {
       ${status}
       <p class="latest-label">Latest · ${esc(latestType)}</p>
       <p class="latest-summary">${esc(summary)}</p>
+      ${context}
       <span class="card-idx">№${esc(idx)}</span>
     </a>`;
   }).join('') || '<p class="change-empty">No matching projects.</p>';

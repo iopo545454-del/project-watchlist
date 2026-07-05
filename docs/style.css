@@ -217,6 +217,18 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shad
 .importance-pill.importance-medium{color:var(--md);border-color:var(--md-line);background:var(--md-dim)}
 .importance-pill.importance-low{color:var(--lo)}
 
+.context-block{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.context-block.compact{margin-top:8px}
+.context-pill,.novelty-tag,.context-delta,.context-rel{font-family:var(--font-mono);font-size:10px;line-height:1.35;border:1px solid var(--line-2);border-radius:var(--r-pill);padding:3px 7px;color:var(--ink-2);background:rgba(255,255,255,.025)}
+.context-delta{color:var(--accent);border-color:rgba(200,255,77,.28);background:rgba(200,255,77,.06)}
+.context-rel{color:var(--ink-1)}
+.context-pill,.novelty-tag{text-transform:uppercase;letter-spacing:.12em}
+.novelty-new{color:var(--hi);border-color:var(--hi-line);background:var(--hi-dim)}
+.novelty-update{color:var(--md);border-color:var(--md-line);background:var(--md-dim)}
+.novelty-recurring{color:var(--lo);border-color:var(--lo-line);background:var(--lo-dim)}
+.project-card .context-block{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.project-card .context-delta,.project-card .context-rel{display:inline-block;margin:0 4px 4px 0}
+
 /* ============================ PROJECT BOARD ============================ */
 .project-board{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .project-card{
