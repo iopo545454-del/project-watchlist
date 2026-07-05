@@ -1,4 +1,120 @@
 [
+{
+    "run_id": "scan-20260705T071517Z",
+    "started_at": "2026-07-05T07:15:17Z",
+    "completed_at": "2026-07-05T07:17:19Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-05T03:10:53Z",
+      "until": "2026-07-05T07:15:17Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0,
+      "direct_metrics_refreshed": 24,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Observed ordinary dashboard movement only; no configured materiality threshold was treated as a scan finding, so noisy metric refresh changes were not kept.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Official X scan chunk 1",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3AGEODNET%20OR%20from%3AMetaDAOProject%20OR%20from%3Abankrbot%20OR%20from%3Aaeonframework%20OR%20from%3Agitlawb%20OR%20from%3AKinetiq_xyz%20OR%20from%3Agrass%20OR%20from%3AIOTA_SN9%20OR%20from%3ATargonCompute)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 2",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aopentensor%20OR%20from%3Aakashnet%20OR%20from%3AUSDai_Official%20OR%20from%3AAskVenice%20OR%20from%3Avirtuals_io%20OR%20from%3Aworldnetwork%20OR%20from%3ANEARProtocol%20OR%20from%3ADeriveXYZ)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 3",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aoctra%20OR%20from%3ABioProtocol%20OR%20from%3APluralis%20OR%20from%3Aambient_xyz%20OR%20from%3Aeigencloud%20OR%20from%3Achutes_ai%20OR%20from%3Alium_io%20OR%20from%3AComputeHorde)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Related/team X account scan",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Keyword scan across tracked team/founder/contributor accounts for launch, revenue, fees, buybacks, staking, token, governance, roadmap, mainnet, integration, partnership, listing, proposal, unlock, and product returned no matching posts in-window.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Targeted GRASS July 7/revenue/unlock/governance sweep and broader catalyst/risk keyword sweep for Bankr, Virtuals, Derive, EigenCloud, USD.AI, GEODNET, MetaDAO, and NEAR found no new qualifying posts in-window.",
+        "decision": "no new watch item"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue 4h monitoring of official X/project sources, intake issues, direct metrics, and high-signal weak signals.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "No changelog entries were added. Independent delegate_task tagger inspected docs/data/project-changelog.json as a no-op and confirmed all 303 entries have valid high/medium/low importance labels; JSON validation passed."
+  },
   {
     "run_id": "scan-20260705T031053Z",
     "started_at": "2026-07-05T03:10:53Z",
