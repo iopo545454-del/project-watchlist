@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260623-catalyst-status-1';
+const dataVersion = '20260705-signal-tier-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -61,6 +61,7 @@ const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
 }[c]));
 const IMP_RANK = { high: 3, medium: 2, low: 1 };
+const SIGNAL_LABEL = { high: 'actionable', medium: 'watch', low: 'log' };
 
 const sortedChanges = () => [...changes].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
 const latestChangeFor = projectName => sortedChanges().find(c => c.project === projectName) || null;
@@ -111,11 +112,12 @@ function renderChangelog() {
     const href = item.url ? esc(item.url) : '#';
     const scan = item.last_scanned ? `<span>scanned ${esc(fmtDate(item.last_scanned))}</span>` : '';
     const imp = item.importance || 'low';
+    const sig = SIGNAL_LABEL[imp] || imp;
     return `<a class="change-item importance-${esc(imp)}" href="${href}">
       <div class="change-meta">
         <span>${esc(fmtDate(item.date))}</span>
         <span>${esc(item.type || 'update')}</span>
-        <span class="importance-pill importance-${esc(imp)}">${esc(imp)}</span>
+        <span class="importance-pill importance-${esc(imp)}">${esc(sig)}</span>
         ${scan}
       </div>
       <div class="change-project">${esc(item.project || 'Watchlist')}</div>

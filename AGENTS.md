@@ -292,7 +292,13 @@ Prefer short source-proximate entries over polished prose here. This panel is th
 }
 ```
 
-Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance` from a trading perspective: `high` for potentially tradeable catalysts/market-structure/token/liquidity/security/listing/funding changes, `medium` for meaningful product/roadmap/ecosystem signals, and `low` for routine scans, housekeeping, or context with little near-term trading relevance.
+Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance`, but treat it as a strict **signal tier**, not a generic priority score:
+
+- `high` = **Actionable**: reserve for directly tradeable or market-structure/material items with near-term implications, such as tokenomics/value-capture changes, listings/liquidity/market-access changes, governance votes/results with token impact, security incidents/outages, funding/acquisition, confirmed incentives/snapshots/unlocks/buybacks/staking/rewards, or a major live product/mainnet launch with immediate distribution/usage/revenue implications. Unverified items should be `high` only when the source/evidence is unusually high-signal, time-sensitive, and would be materially tradeable if confirmed.
+- `medium` = **Watch**: meaningful product, roadmap, ecosystem, source, thesis, partnership, or usage signal worth tracking, but not directly actionable yet or without explicit token/liquidity/revenue/market-structure impact.
+- `low` = **Log**: routine scan/status, housekeeping, source additions, minor UX/content/marketing updates, weak context, or speculative items without concrete actionability.
+
+Bias downward when uncertain. The dashboard should have few `high` items; if too many entries feel high-priority, the tagger is probably labeling product relevance instead of trade/actionability.
 
 ## Discord update policy
 
