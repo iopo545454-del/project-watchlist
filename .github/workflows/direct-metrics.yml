@@ -59,4 +59,5 @@ jobs:
           git config user.email "hermes-agent@users.noreply.github.com"
           git add data/direct-sources.json docs/data/direct-metrics
           git commit -m "chore: refresh direct project metrics"
+          git pull --rebase origin main
           git push

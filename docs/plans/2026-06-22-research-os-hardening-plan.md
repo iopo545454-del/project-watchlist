@@ -721,11 +721,13 @@ Do not try to implement this roadmap in one push. Start by making drift visible 
 12. Normalize scan-debug coverage schema.
 13. Coverage/freshness generator from normalized scan-debug data.
 14. Dashboard coverage/freshness UI only after generated coverage data is reliable.
+15. Extend validator parity checks to catch orphan generated/history files whose slug no longer appears in `data/direct-sources.json` / `docs/data/index.json` (for example, legacy `docs/data/direct-metrics/history/drv-derive.json` alongside canonical `18-drv-derive.json`).
+16. Backfill `data/direct-sources.json` entries for remaining Task 1.1 candidate-table projects that were tested but omitted from config (for example GEOD, META, CHIP, BANKR, TAO, Targon). Record failed/blocked/manual-only candidates explicitly instead of leaving them absent; this is coverage debt, not a blocker while the ≥10 acceptance threshold is already met.
 
 ### Phase 4 — Automation and contributor workflow
 
-15. Update the 4h cron prompt to run generator + validator before commit/push.
-16. Contributor/reference docs for humans and Discord users.
+17. Update the 4h cron prompt to run generator + validator before commit/push.
+18. Contributor/reference docs for humans and Discord users.
 
 This avoids building a generator on top of unknown drift and gives immediate protection against making the repo worse.
 
