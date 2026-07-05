@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-03T05:54:30Z
+last_updated: 2026-07-05T11:19:33Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,8 @@ last_updated: 2026-07-03T05:54:30Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-05 — Official GitLawb said its new optimized **GitLawb Node Explorer** is live and now loads near-instantly, letting users browse repositories faster. This is an incremental product/ops improvement to the explorer surfaced after the 2026-07-03 founder launch note; next checks are whether explorer uptime/latency holds, repo/node metrics become more useful, and post-spam-cleanup network health remains visible. Source: https://x.com/gitlawb/status/2073725916531069022
 
 - 2026-07-03 — Founder Kevin said the new **GitLawb node repository explorer** is live at `https://explorer.gitlawb.com`, adding a public network/repo-observability surface after the recent bot-spam cleanup. Treat as a concrete product/ops surface; next checks are whether the explorer stays reachable, exposes useful repo/node metrics, and confirms post-cleanup network health. Source: https://x.com/kevincodex/status/2072862666952225134
 

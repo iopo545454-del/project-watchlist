@@ -1,5 +1,124 @@
 [
-{
+  {
+    "run_id": "scan-20260705T111933Z",
+    "started_at": "2026-07-05T11:19:33Z",
+    "completed_at": "2026-07-05T11:28:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-05T07:15:17Z",
+      "until": "2026-07-05T11:19:33Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GitlWab / GitLawb / Gitwab"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0,
+      "direct_metrics_refreshed": 24,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. No configured materiality threshold was treated as a scan finding; routine metric-file movement was reverted rather than committed.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Official X scan chunk 1",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/gitlawb/status/2073725916531069022",
+        "summary": "Official GitLawb said its optimized Node Explorer is live and loads near-instantly for faster repository browsing. Other accounts in the chunk had no qualifying non-reply posts.",
+        "decision": "logged official update for GitLawb"
+      },
+      {
+        "project": "Official X scan chunk 2",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aopentensor%20OR%20from%3Aakashnet%20OR%20from%3AUSDai_Official%20OR%20from%3AAskVenice%20OR%20from%3Avirtuals_io%20OR%20from%3Aworldnetwork%20OR%20from%3ANEARProtocol%20OR%20from%3ADeriveXYZ)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 3",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/octra/status/2073717319990223358",
+        "summary": "Octra posted a broad anti-surveillance quote-tweet; no concrete project/product/token change. Other accounts in the chunk had no qualifying posts.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Related/team X account scan",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/ownershipfm/status/2073702707697783224",
+        "summary": "Ownership.fm posted a governance/revenue-enforcement discussion relevant as generic MetaDAO/futarchy context, but it did not change tracked project facts. Other related-account keyword chunks had no in-window qualifying project updates.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/CryptoLakhan/status/2073690744075030984",
+        "summary": "GRASS July 7/community-allocation chatter continued from low-signal community accounts; no official @grass/@grassfdn confirmation in-window. Broader catalyst/risk sweep was mostly Moonshot listing-vote spam and unrelated matches.",
+        "decision": "no new watch item"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue 4h monitoring of official X/project sources, intake issues, direct metrics, and high-signal weak signals.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "For GitLawb, verify whether the optimized Node Explorer exposes stable repo/node metrics and whether any explorer improvements connect to token/credit/node incentives.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "One new changelog entry was added for GitLawb. Independent delegate_task tagger labeled the entry medium and confirmed all 304 changelog entries have valid high/medium/low importance labels; JSON validation passed."
+  },
+  {
     "run_id": "scan-20260705T071517Z",
     "started_at": "2026-07-05T07:15:17Z",
     "completed_at": "2026-07-05T07:17:19Z",
