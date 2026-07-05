@@ -95,6 +95,8 @@ Acceptance: three consecutive scan-debug runs show previous `next_checks` consum
 
 > This phase is the product core (see Purpose). Task 2.0 is the top priority of the entire remaining plan.
 
+> **Status 2026-07-05:** Tasks 2.0, 1.5, and 2.4 shipped in `380c44d` (AGENTS.md rules, changelog schema, dashboard rendering with graceful degradation). Acceptance pending by nature: 2.0 needs the next 10 material entries to carry the context block; 1.5 needs three consecutive scan-debug runs consuming/carrying next_checks; 2.4 needs the first take revision. Tasks 2.1–2.3 not started.
+
 ### Task 2.0: Context blocks on every material entry
 
 **Problem:** entries carry context as prose, not as links into what the repo already knows. Example: the DRV Weekly Buyback #73 entry reports the numbers, but the repo already held buyback #72's size (delta: +9.5%), the collector's fee series (flat 7d — buyback grew while fees didn't), a catalyst row this advances ("Protocol-fee buyback program"), and an open question it touches (organic vs. incentive-driven volume). None of it was connected. Connecting it is exactly the reasoning work the operator wants offloaded — they look at the chart; the entry must tell them what the news means.
@@ -211,13 +213,13 @@ Summary of the agreed design, recorded here so it isn't lost:
 | ✅ | 1.1 extend sources config | M | shipped `866fe19`; backfill addendum open |
 | ✅ | 1.3 scheduling (scan step + CI cron) | S | shipped `866fe19`/`8590eb7`; cron acceptance pending (check Actions history) |
 | ✅ | 1.4 stale-number rule + Chutes/POD refresh | S | shipped `866fe19` |
-| 1 | **2.0 context blocks** | M | — (top priority of remaining plan) |
-| 2 | 1.5 next_check consumption | S | — |
-| 3 | 2.1 deep-pass rotation | S–M | — |
-| 4 | 2.2 source_class + diversification | S | 2.1 |
-| 5 | 2.3 open-questions burn-down | ongoing | 2.1 |
-| 6 | 2.4 append-only takes | XS | — |
-| 7 | 1.1 addendum: sources backfill | S | fold into a scan run |
+| ✅ | **2.0 context blocks** | M | shipped `380c44d`; acceptance pending (next 10 material entries) |
+| ✅ | 1.5 next_check consumption | S | shipped `380c44d`; acceptance pending (3 consecutive runs) |
+| ✅ | 2.4 append-only takes | XS | shipped `380c44d` |
+| 1 | 2.1 deep-pass rotation | S–M | — |
+| 2 | 2.2 source_class + diversification | S | 2.1 |
+| 3 | 2.3 open-questions burn-down | ongoing | 2.1 |
+| 4 | 1.1 addendum: sources backfill | S | fold into a scan run |
 | 8 | 3.1 validator | M | — |
 | 9 | 3.2 drift fix + data/ decision | S | 3.1 |
 | 10 | 3.3 CI | S | 3.2 |
