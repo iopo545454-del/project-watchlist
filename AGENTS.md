@@ -288,6 +288,7 @@ Prefer short source-proximate entries over polished prose here. This panel is th
 {
   "date": "ISO-8601 UTC timestamp",
   "project": "Project display name",
+  "slug": "Stable project slug from docs/data/index.json, e.g. 18-drv-derive",
   "type": "scan | intake | initial review | source added | official update | docs/blog update | contract/address update | catalyst added | catalyst update | thesis update | investor thesis added | hermes take update | unverified watch item | verification update | rumor disproven",
   "summary": "Concise summary of what changed or what was checked",
   "source": "X/Twitter / official blog / docs / GitHub issue / manual / etc.",
@@ -302,7 +303,7 @@ Prefer short source-proximate entries over polished prose here. This panel is th
 }
 ```
 
-For every new material entry, `novelty`, `delta`, and `relates_to` are required. `relates_to` may be an empty array, but the field must be present. Use `novelty: recurring` for routine recurring events such as weekly buybacks, and include comparison to the previous occurrence plus direct-metrics trend where history exists. If collector coverage exists, `delta` should cite the relevant metric/history rather than only restating the source. If an entry links to a catalyst, open question, watch item, thesis, or metric, update that referenced dossier item in the same commit when the new evidence advances, completes, narrows, confirms, weakens, or kills it.
+For every new material entry, `slug`, `novelty`, `delta`, and `relates_to` are required. Use the stable slug from `docs/data/index.json` so project-page Latest rails do not depend on mutable display-name equality. `relates_to` may be an empty array, but the field must be present. Use `novelty: recurring` for routine recurring events such as weekly buybacks, and include comparison to the previous occurrence plus direct-metrics trend where history exists. If collector coverage exists, `delta` should cite the relevant metric/history rather than only restating the source. If an entry links to a catalyst, open question, watch item, thesis, or metric, update that referenced dossier item in the same commit when the new evidence advances, completes, narrows, confirms, weakens, or kills it.
 
 Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance`, but treat it as a strict **signal tier**, not a generic priority score:
 

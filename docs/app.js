@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260705-baseline-tier-1';
+const dataVersion = '20260705-context-blocks-2';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
@@ -78,7 +78,12 @@ function renderContextBlock(item, { compact = false } = {}) {
 }
 
 const sortedChanges = () => [...changes].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
-const latestChangeFor = projectName => sortedChanges().find(c => c.project === projectName) || null;
+const slugMatches = (entrySlug, rowSlug) => {
+  const a = String(entrySlug || '').replace(/\.html$/, '');
+  const b = String(rowSlug || '').replace(/\.html$/, '');
+  return !!a && !!b && (a === b || a.endsWith(`-${b}`) || b.endsWith(`-${a}`));
+};
+const latestChangeFor = row => sortedChanges().find(c => slugMatches(c.slug, row.slug) || c.project === row.project) || null;
 
 /* ---------- stats tape ---------- */
 function renderStats() {
@@ -145,8 +150,8 @@ function renderChangelog() {
 
 /* ---------- project board ---------- */
 function sortRows(data) {
-  const recency = r => latestChangeFor(r.project)?.date || r.last_updated || '';
-  const impOf = r => IMP_RANK[latestChangeFor(r.project)?.importance] || 0;
+  const recency = r => latestChangeFor(r)?.date || r.last_updated || '';
+  const impOf = r => IMP_RANK[latestChangeFor(r)?.importance] || 0;
   if (sortMode === 'name') return data.sort((a, b) => String(a.project || '').localeCompare(String(b.project || '')));
   if (sortMode === 'importance') return data.sort((a, b) => (impOf(b) - impOf(a)) || String(recency(b)).localeCompare(String(recency(a))));
   return data.sort((a, b) => String(recency(b)).localeCompare(String(recency(a))) || String(a.project || '').localeCompare(String(b.project || '')));
@@ -159,14 +164,14 @@ function renderBoard() {
   const count = document.querySelector('#project-count');
 
   const data = sortRows(rows.filter(r => {
-    const latest = latestChangeFor(r.project);
+    const latest = latestChangeFor(r);
     const blob = JSON.stringify({ ...r, latest }).toLowerCase();
     return (!q || blob.includes(q)) && (!cat || r.category === cat);
   }));
 
   count.textContent = `${data.length} / ${rows.length} tracked`;
   board.innerHTML = data.map((r, i) => {
-    const latest = latestChangeFor(r.project);
+    const latest = latestChangeFor(r);
     const latestDate = latest?.last_scanned || latest?.date || r.last_updated || '';
     const initialPending = r.initial_review_done === false;
     const imp = initialPending ? 'low' : (latest?.importance || 'low');

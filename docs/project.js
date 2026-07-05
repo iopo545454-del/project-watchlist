@@ -2,7 +2,7 @@
    the section headings and reveals sections on load. Runs only on detail pages
    and degrades gracefully if anything is missing. */
 (function () {
-  const dataVersion = '20260705-context-blocks-1';
+  const dataVersion = '20260705-context-blocks-2';
   if (!document.body.classList.contains('project-page')) return;
 
   const main = document.querySelector('main.project-content, main.project-grid');
@@ -38,8 +38,12 @@
     fetch(dataUrl, { cache: 'no-cache' })
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(items => {
+        const slugMatches = entrySlug => {
+          const value = String(entrySlug || '').replace(/\.html$/, '');
+          return !!value && !!slug && (value === slug || value.endsWith(`-${slug}`) || slug.endsWith(`-${value}`));
+        };
         const rows = (Array.isArray(items) ? items : [])
-          .filter(item => item.project === title || String(item.url || '').includes(`projects/${slug}.html`) || String(item.url || '').endsWith(`${slug}.html`))
+          .filter(item => slugMatches(item.slug) || item.project === title || String(item.url || '').includes(`projects/${slug}.html`) || String(item.url || '').endsWith(`${slug}.html`))
           .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
           .slice(0, 10);
         if (!rows.length) return;
