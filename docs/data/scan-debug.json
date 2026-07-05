@@ -1,5 +1,118 @@
 [
   {
+    "run_id": "scan-20260705T234106Z",
+    "started_at": "2026-07-05T23:41:06Z",
+    "completed_at": "2026-07-05T23:50:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-05T19:36:11Z",
+      "until": "2026-07-05T23:41:06Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 0,
+      "changelog_entries_added": 0,
+      "material_confirmed": 0,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0,
+      "direct_metrics_refreshed": 24,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Changes were routine market/dashboard refreshes, including suppressed POD market data; no configured materiality threshold was treated as a scan finding, so metric-file changes were reverted rather than committed.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Official X scan chunk 1",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3AGEODNET%20OR%20from%3AMetaDAOProject%20OR%20from%3Abankrbot%20OR%20from%3Aaeonframework%20OR%20from%3Agitlawb%20OR%20from%3AKinetiq_xyz%20OR%20from%3Agrass%20OR%20from%3AIOTA_SN9%20OR%20from%3ATargonCompute)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 2",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aopentensor%20OR%20from%3Aakashnet%20OR%20from%3AUSDai_Official%20OR%20from%3AAskVenice%20OR%20from%3Avirtuals_io%20OR%20from%3Aworldnetwork%20OR%20from%3ANEARProtocol%20OR%20from%3ADeriveXYZ)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Official X scan chunk 3",
+        "source": "X/Twitter via x_search",
+        "url": "https://x.com/search?q=(from%3Aoctra%20OR%20from%3ABioProtocol%20OR%20from%3APluralis%20OR%20from%3Aambient_xyz%20OR%20from%3Aeigencloud%20OR%20from%3AEigenLayer%20OR%20from%3Aeigenlabs%20OR%20from%3Achutes_ai%20OR%20from%3Alium_io%20OR%20from%3AComputeHorde)",
+        "summary": "No non-reply posts found from this official/primary account chunk after the prior scan cutoff.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Related/team and weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Broad in-window searches for launch/revenue/fees/buyback/burn/staking/tokenomics/governance/listing/partnership/integration/unlock/security terms found no qualifying new material posts. Kraken Bittensor subnet roadmap and Chutes/Targon/Lium listing-roadmap signals were already present in dossiers from prior runs; Azzle staking/revenue chatter remains an ecosystem-adjacent Bankr item without direct BNKR value-capture confirmation. Existing GRASS July 7 watch item remains unresolved without new official confirmation.",
+        "decision": "no new changelog or watch item"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue 4h monitoring of official X/project sources, intake issues, direct metrics, and high-signal weak signals.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "For Bankr, verify Robinhood Chain launch-hook integration, skill catalog adoption, app/docs support, Azzle/skills-stack adoption, and whether flow accrues to BNKR/Bankr Club.",
+      "For TAO/Chutes/Targon/Lium, verify actual Kraken trading-enable announcements and liquidity after prior listing-roadmap entries.",
+      "For Virtuals, track sustained Robinhood Chain agent volume, 50,000-agent milestone quality, routed calls/jobs, and protocol fee/value capture.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "No changelog entries were added. Independent delegate_task tagger ran as a no-op verification and confirmed project-changelog importance labels remain valid.",
+    "importance_tagging": "Independent delegate_task completed as no-op for this run; no new or modified changelog entries required labeling."
+  },
+  {
     "run_id": "scan-20260705T193611Z",
     "started_at": "2026-07-05T19:36:11Z",
     "completed_at": "2026-07-05T19:45:00Z",
