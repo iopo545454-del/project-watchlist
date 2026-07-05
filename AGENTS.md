@@ -306,11 +306,20 @@ For every new material entry, `novelty`, `delta`, and `relates_to` are required.
 
 Avoid duplicate changelog entries for the same source/update. Keep summaries short enough to render cleanly on the dashboard. After each 4h scan, an independent tagger agent should label each new/changed changelog entry with `importance`, but treat it as a strict **signal tier**, not a generic priority score:
 
-- `high` = **Actionable**: reserve for directly tradeable or market-structure/material items with near-term implications, such as tokenomics/value-capture changes, listings/liquidity/market-access changes, governance votes/results with token impact, security incidents/outages, funding/acquisition, confirmed incentives/snapshots/unlocks/buybacks/staking/rewards, or a major live product/mainnet launch with immediate distribution/usage/revenue implications. Unverified items should be `high` only when the source/evidence is unusually high-signal, time-sensitive, and would be materially tradeable if confirmed.
+- `high` = **Actionable**: reserve for directly tradeable or market-structure/material items with near-term implications, such as tokenomics/value-capture changes, listings/liquidity/market-access changes, governance votes/results with token impact, protocol/funds security incidents/outages, funding/acquisition, confirmed incentives/snapshots/unlocks/buybacks/staking/rewards, or a major live product/mainnet launch with immediate distribution/usage/revenue implications. Unverified items should be `high` only when the source/evidence is unusually high-signal, time-sensitive, and would be materially tradeable if confirmed. These are candidate categories; an item must also pass the step-change or magnitude test below.
 - `medium` = **Watch**: meaningful product, roadmap, ecosystem, source, thesis, partnership, or usage signal worth tracking, but not directly actionable yet or without explicit token/liquidity/revenue/market-structure impact.
 - `low` = **Log**: routine scan/status, housekeeping, source additions, minor UX/content/marketing updates, weak context, or speculative items without concrete actionability.
 
-Bias downward when uncertain. The dashboard should have few `high` items; if too many entries feel high-priority, the tagger is probably labeling product relevance instead of trade/actionability.
+**Routine output of a project's core function is never `high` on its own.** For launchpads (Virtuals, Bankr), individual token launches are the product working as intended — tag them `medium` at most, even if the token is novel or the launch is large by launchpad standards. The same applies to any project's recurring milestones: another integration, another volume record, another agent going live.
+
+An event earns `high` only if at least one of these holds:
+
+- **Step change:** it changes how the project itself operates going forward — new fee or value-capture mechanics, tokenomics change, new market structure, expansion of the protocol itself to a new chain/venue — rather than another instance of mechanics that already exist. (Calibration: the Bankr cc0company launch-token *skill* with LP fee split is a new mechanic → `high`; a token *deployed using* that skill is an instance → `medium`/`low`.)
+- **Magnitude:** the capital at stake is large *relative to the project's own size* — roughly >5–10% of market cap, TVL, or typical flows. Cite a concrete number in the summary; **no number, no `high`.** Exception: security incidents and confirmed dated events (unlocks, snapshots, halvings) may be `high` before dollar impact is quantifiable.
+
+Litmus test: if essentially the same event will plausibly happen again within a few weeks, it is the baseline, not a signal. Ask: *does this change the thesis, or just add another example of it?*
+
+Bias downward when uncertain. The dashboard should have few `high` items; if too many entries feel high-priority, the tagger is probably labeling project relevance instead of trade/actionability.
 
 ## Discord update policy
 

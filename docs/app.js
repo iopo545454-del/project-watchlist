@@ -2,7 +2,7 @@ let rows = [];
 let changes = [];
 let catalysts = [];
 let sortMode = 'recent';
-const dataVersion = '20260705-context-blocks-1';
+const dataVersion = '20260705-baseline-tier-1';
 
 /* ---------- category color + label system ---------- */
 const CATEGORY_MAP = {
