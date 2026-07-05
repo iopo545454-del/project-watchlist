@@ -1,12 +1,197 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23T18:21:39Z",
+  "updated_at": "2026-07-05T00:24:09Z",
   "projects": {
-    "drv-derive": {
+    "01-pod": {
+      "display_name": "POD / Dolphin",
+      "ticker": "POD",
+      "methodology_file": "projects/01-pod.md#direct-data--kpi-methodology",
+      "summary": "Base Blockscout token endpoint covers live price, market cap, volume, holders, and total supply; revenue/utilization still needs official dashboard or onchain adapter work.",
+      "sources": [
+        {
+          "id": "blockscout_pod_token",
+          "label": "Base Blockscout POD token",
+          "metric_group": "token_market",
+          "source_type": "blockscout_token",
+          "url": "https://base.blockscout.com/api/v2/tokens/0xeD664536023d8E4b1640C394777D34aBAFF1dF8F",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "explorer_api",
+          "materiality_rules": {
+            "holders_change_abs": 100,
+            "volume_24h_change_pct_abs": 35
+          }
+        }
+      ],
+      "open_adapter_work": [
+        {
+          "label": "Revenue/utilization",
+          "status": "needs_source_mapping",
+          "notes": "Dolphin data-generation dashboard needs a clean public JSON/API adapter before product-facing revenue/utilization metrics are shown."
+        },
+        {
+          "label": "Buyback wallet",
+          "status": "needs_source_mapping",
+          "notes": "Identify official/candidate buyback wallets before displaying buyback metrics."
+        }
+      ]
+    },
+    "07-kinetiq": {
+      "display_name": "Kinetiq",
+      "ticker": "Kinetiq",
+      "methodology_file": "projects/07-kinetiq.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_kinetiq_khype_tvl",
+          "label": "DefiLlama Kinetiq kHYPE TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/kinetiq-khype",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "08-grass": {
+      "display_name": "GRASS",
+      "ticker": "GRASS",
+      "methodology_file": "projects/08-grass.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_grass_tvl",
+          "label": "DefiLlama Grass TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/grass",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "12-akt-akash": {
+      "display_name": "AKT / Akash",
+      "ticker": "AKT",
+      "methodology_file": "projects/12-akt-akash.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_akash_candidate",
+          "label": "DefiLlama Akash candidate",
+          "metric_group": "tvl",
+          "source_type": "manual_only",
+          "url": "https://api.llama.fi/protocol/akash-network",
+          "cadence": "manual",
+          "status": "failed",
+          "source_quality": "third_party_candidate",
+          "notes": "Tested 2026-07-04: DefiLlama slug candidate returned HTTP 400; keep as documented failure until a working public API source is identified."
+        }
+      ]
+    },
+    "14-vvv-venice": {
+      "display_name": "VVV / Venice AI",
+      "ticker": "VVV",
+      "methodology_file": "projects/14-vvv-venice.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_venice_tvl",
+          "label": "DefiLlama Venice TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/venice",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "15-virtuals": {
+      "display_name": "VIRTUAL / Virtuals Protocol",
+      "ticker": "VIRTUAL",
+      "methodology_file": "projects/15-virtuals.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_virtuals_fees",
+          "label": "DefiLlama Virtuals fees",
+          "metric_group": "fees_revenue",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/summary/fees/virtuals-protocol?dataType=dailyFees",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "change_7d_pct_abs": 25
+          }
+        },
+        {
+          "id": "defillama_virtuals_tvl",
+          "label": "DefiLlama Virtuals TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/virtuals-protocol",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "16-worldcoin-wld": {
+      "display_name": "Worldcoin / WLD / World Network",
+      "ticker": "WLD",
+      "methodology_file": "projects/16-worldcoin-wld.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_worldcoin_tvl",
+          "label": "DefiLlama Worldcoin TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/worldcoin",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "17-near": {
+      "display_name": "NEAR Protocol",
+      "ticker": "NEAR",
+      "methodology_file": "projects/17-near.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_near_bridge_tvl",
+          "label": "DefiLlama NEAR canonical bridge TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/near",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "18-drv-derive": {
       "display_name": "DRV / Derive Protocol",
       "ticker": "DRV",
       "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
-      "status": "pilot",
+      "summary": "Fees, TVL, and aggregate options volume are fetchable; OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
       "sources": [
         {
           "id": "defillama_derive_fees",
@@ -26,7 +211,7 @@
           "id": "defillama_derive_tvl",
           "label": "DefiLlama Derive TVL",
           "metric_group": "tvl_collateral",
-          "source_type": "defillama_api",
+          "source_type": "defillama_protocol",
           "url": "https://api.llama.fi/protocol/derive",
           "cadence": "6h",
           "status": "tested_ok",
@@ -40,35 +225,126 @@
           "id": "defillama_derive_options_volume",
           "label": "DefiLlama Derive Options volume",
           "metric_group": "options_volume",
-          "source_type": "defillama_api",
+          "source_type": "json_api",
           "url": "https://api.llama.fi/overview/options?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
           "cadence": "6h",
           "status": "partial",
           "source_quality": "third_party_adapter",
-          "notes": "Provides aggregate Derive Options volume, not per-underlying OI/volume. Use as first displayable proxy while official Derive market-data adapter is researched."
+          "notes": "Provides aggregate options overview; collector keeps this as source-tested adapter work but does not yet extract Derive protocol row from the protocols list."
+        }
+      ],
+      "open_adapter_work": [
+        {
+          "label": "OI / volume by underlying",
+          "status": "not_implemented",
+          "notes": "Should be onchain-derivable or available through Derive public market data; next adapter should test Derive public API/WebSocket or index Derive Chain events for BTC/ETH/HYPE OI and volume splits."
         },
         {
-          "id": "snapshot_lyra_governance",
-          "label": "Snapshot lyra.eth governance",
-          "metric_group": "governance",
-          "source_type": "snapshot_graphql",
-          "url": "https://hub.snapshot.org/graphql",
-          "space": "lyra.eth",
-          "cadence": "12h",
+          "label": "DRV buyback wallet / onchain mapping",
+          "status": "needs_source_mapping",
+          "notes": "Official posts confirm weekly DAO buybacks, but do not publish a single canonical buyback wallet. Verify candidate wallets onchain before displaying."
+        }
+      ]
+    },
+    "20-bio": {
+      "display_name": "BIO / Bio Protocol",
+      "ticker": "BIO",
+      "methodology_file": "projects/20-bio.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "defillama_bio_tvl",
+          "label": "DefiLlama Bio Protocol TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/bio-protocol",
+          "cadence": "6h",
           "status": "tested_ok",
-          "source_quality": "governance_api",
-          "notes": "Fetches proposal metadata from the older Lyra/Derive Snapshot space; canonical DRV-era governance location still needs confirmation."
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 25
+          }
+        }
+      ]
+    },
+    "24-chutes": {
+      "display_name": "Chutes \u2014 Bittensor Subnet 64",
+      "ticker": "SN64 / Chutes",
+      "methodology_file": "projects/24-chutes.md#direct-data--kpi-methodology",
+      "summary": "DefiLlama covers Chutes revenue and TVL; Taostats subnet metrics remain manual/keyed until a public endpoint is confirmed.",
+      "sources": [
+        {
+          "id": "defillama_chutes_revenue",
+          "label": "DefiLlama Chutes revenue",
+          "metric_group": "fees_revenue",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "change_7d_pct_abs": 25,
+            "change_30d_pct_abs": 30
+          }
         },
         {
-          "id": "derive_official_stats_fees",
-          "label": "Derive official stats API candidate",
-          "metric_group": "official_stats",
-          "source_type": "official_api_candidate",
-          "url": "https://stats-api.derive.xyz/fees",
+          "id": "defillama_chutes_tvl",
+          "label": "DefiLlama Chutes TVL",
+          "metric_group": "tvl",
+          "source_type": "defillama_protocol",
+          "url": "https://api.llama.fi/protocol/chutes",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "tvl_change_7d_pct_abs": 20
+          }
+        },
+        {
+          "id": "taostats_sn64",
+          "label": "Taostats SN64 subnet metrics",
+          "metric_group": "subnet",
+          "source_type": "taostats",
+          "url": "https://api.taostats.io/api/subnet/latest/v1?netuid=64",
           "cadence": "manual",
-          "status": "failed",
-          "source_quality": "official_candidate",
-          "notes": "Candidate guessed during initial discovery; returned HTTP 500 without documented parameters. Do not show in dashboard until an official documented endpoint is confirmed."
+          "status": "manual_only",
+          "source_quality": "subnet_api_candidate",
+          "notes": "Public endpoint requires credentials or documented params not available in CI; mark manual/keyed until tested with TAOSTATS_API_KEY."
+        }
+      ]
+    },
+    "25-lium": {
+      "display_name": "Lium \u2014 Bittensor Subnet 51",
+      "ticker": "SN51 / Lium",
+      "methodology_file": "projects/25-lium.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "taostats_sn51",
+          "label": "Taostats SN51 subnet metrics",
+          "metric_group": "subnet",
+          "source_type": "taostats",
+          "url": "https://api.taostats.io/api/subnet/latest/v1?netuid=51",
+          "cadence": "manual",
+          "status": "manual_only",
+          "source_quality": "subnet_api_candidate",
+          "notes": "Shared Taostats adapter is configured but self-skips without TAOSTATS_API_KEY."
+        }
+      ]
+    },
+    "26-compute-horde": {
+      "display_name": "Compute Horde \u2014 Bittensor Subnet 12",
+      "ticker": "SN12 / Compute Horde",
+      "methodology_file": "projects/26-compute-horde.md#direct-data--kpi-methodology",
+      "sources": [
+        {
+          "id": "taostats_sn12",
+          "label": "Taostats SN12 subnet metrics",
+          "metric_group": "subnet",
+          "source_type": "taostats",
+          "url": "https://api.taostats.io/api/subnet/latest/v1?netuid=12",
+          "cadence": "manual",
+          "status": "manual_only",
+          "source_quality": "subnet_api_candidate",
+          "notes": "Shared Taostats adapter is configured but self-skips without TAOSTATS_API_KEY."
         }
       ]
     }

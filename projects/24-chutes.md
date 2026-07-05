@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-29T19:22:06Z
+last_updated: 2026-07-05T00:22:42Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -14,6 +14,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 ## Latest scan notes
 
+- 2026-07-05 — Refreshed Chutes direct metrics via DefiLlama: revenue `$10.7K` 24h / `$69.3K` 7d / `$359.8K` 30d, annualized 30d revenue about `$4.38M`, and DefiLlama TVL `$43.6M`. Taostats SN64 metrics remain keyed/manual in the collector. Source: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue
 - 2026-06-29 — Official Chutes said $SN64 is coming to Kraken and linked Kraken’s listings roadmap; this is a major liquidity/access catalyst for the SN64 subnet token pending actual trading enablement. Source: https://x.com/chutes_ai/status/2071662544574382437 and https://www.kraken.com/listings#roadmap
 - 2026-06-26 — Official Chutes highlighted confidential compute via TEEs for its OpenAI-compatible API, saying GPU operators cannot read prompts/outputs and listing current high-context/open-model offerings such as GLM-5.2, Kimi K2.6, Gemma 4, Qwen3.6 and MiniMax M2.5 with example pricing. This reinforces the privacy + model-catalog moat, but needs follow-up on real usage, routing volume, and whether TEE-enabled inference earns higher-quality revenue. Source: https://x.com/chutes_ai/status/2070567809713606938
 - 2026-06-25 — Official Chutes teased that pointing idle consumer/gaming GPU compute at training is part of the Parallax roadmap, framing millions of idle gaming machines as a future distributed-training supply base. This is a roadmap/catalyst signal rather than a live revenue item; verification requires Parallax docs, miner requirements, incentives, and whether training jobs produce paid demand. Source: https://x.com/chutes_ai/status/2070145081185534115
@@ -32,10 +33,10 @@ last_updated: 2026-06-29T19:22:06Z
 | Subnet | SN64 | Bittensor dTAO alpha |
 | Alpha market cap / subnet value | ~$77.8M | Taostats, converted from TAO |
 | Liquidity / pool value | ~$85.8M | Taostats, converted from TAO |
-| Revenue 24h | ~$11.1k | DefiLlama Chutes revenue |
-| Revenue 7d | ~$78.9k | DefiLlama Chutes revenue |
-| Revenue 30d | ~$407.2k | DefiLlama Chutes revenue |
-| Annualized 30d revenue | ~$4.95M | 30d run-rate |
+| Revenue 24h | `$10.7K` | DefiLlama Chutes revenue, as of 2026-07-05 |
+| Revenue 7d | `$69.3K` | DefiLlama Chutes revenue, as of 2026-07-05 |
+| Revenue 30d | `$359.8K` | DefiLlama Chutes revenue, as of 2026-07-05 |
+| Annualized 30d revenue | `$4.38M` | 30d run-rate, as of 2026-07-05 |
 | Current value / revenue | ~15.7x | Cleanest current comp in basket |
 | Revenue needed at 10x | ~$7.8M/yr, ~$21.3k/day | Implied hurdle |
 | Revenue needed at 20x | ~$3.9M/yr, ~$10.7k/day | Already near/above this on 30d run-rate |

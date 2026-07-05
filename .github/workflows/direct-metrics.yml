@@ -1,0 +1,62 @@
+name: Direct metrics collector
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-direct-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Keep previous latest payload for material comparison
+        run: |
+          mkdir -p /tmp/direct-metrics-before
+          cp docs/data/direct-metrics/latest.json /tmp/direct-metrics-before/latest.json 2>/dev/null || true
+      - name: Collect direct metrics
+        run: python3 scripts/collect_direct_metrics.py --write
+      - name: Revert timestamp-only refreshes
+        id: material
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, subprocess
+
+          before_path = pathlib.Path('/tmp/direct-metrics-before/latest.json')
+          after_path = pathlib.Path('docs/data/direct-metrics/latest.json')
+
+          def load(path):
+              if not path.exists():
+                  return None
+              return json.loads(path.read_text())
+
+          def strip_volatile(payload):
+              if payload is None:
+                  return None
+              payload = json.loads(json.dumps(payload))
+              payload.pop('generated_at', None)
+              for project in payload.get('projects', {}).values():
+                  project.pop('last_refreshed', None)
+              return payload
+
+          material = strip_volatile(load(before_path)) != strip_volatile(load(after_path))
+          pathlib.Path('/tmp/direct-metrics-material').write_text('true' if material else 'false')
+          print(f'material={material}')
+          if not material:
+              subprocess.run(['git', 'checkout', '--', 'data/direct-sources.json', 'docs/data/direct-metrics'], check=False)
+          PY
+          echo "changed=$(cat /tmp/direct-metrics-material)" >> "$GITHUB_OUTPUT"
+      - name: Commit direct metric refresh
+        if: steps.material.outputs.changed == 'true'
+        run: |
+          git config user.name "hermes-agent"
+          git config user.email "hermes-agent@users.noreply.github.com"
+          git add data/direct-sources.json docs/data/direct-metrics
+          git commit -m "chore: refresh direct project metrics"
+          git push

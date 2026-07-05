@@ -98,19 +98,20 @@ Every autonomous monitoring run should:
 
 1. Check open project-intake GitHub issues from the dashboard form.
 2. Load tracked projects from `docs/data/index.json`.
-3. Use each project's `primary_x`, `x_accounts`, source list, token address, and dossier links to define the scan scope.
-4. Prioritize official sources, team/core-contributor X accounts, docs/blogs, GitHub/governance/forum, and relevant data dashboards.
-5. Look back roughly to the prior scan timestamp; if missing, use the latest relevant changelog/index timestamp as the baseline.
-6. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
-7. Apply the materiality threshold before editing files or alerting Discord.
-8. Add confirmed durable findings in the relevant `projects/*.md` dossier.
-9. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
-10. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
-11. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
-12. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked/logged_projects, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. Distinguish full scan coverage from projects that produced logged/material entries; if a project was checked and had no material change, record that explicitly only when useful. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
-13. Update indexes and generated project pages when metadata, links, or displayed content change.
-14. Validate JSON and inspect the diff before committing.
-15. Commit and push real changes to `main`.
+3. Refresh direct metrics with `python3 scripts/collect_direct_metrics.py --write`; treat metric deltas that trip configured `materiality_rules` as scan findings, and commit refreshed metric JSON with the rest of the scan when values materially change.
+4. Use each project's `primary_x`, `x_accounts`, source list, token address, and dossier links to define the scan scope.
+5. Prioritize official sources, team/core-contributor X accounts, docs/blogs, GitHub/governance/forum, and relevant data dashboards.
+6. Look back roughly to the prior scan timestamp; if missing, use the latest relevant changelog/index timestamp as the baseline.
+7. Search for credible weak signals: latest mentions of the token/project by related accounts, credible news terminals/feeds, governance/forum/GitHub activity, onchain/data anomalies, and independent high-signal accounts.
+8. Apply the materiality threshold before editing files or alerting Discord.
+9. Add confirmed durable findings in the relevant `projects/*.md` dossier.
+10. Add any relevant source-proximate observations to the project-page **Latest** feed/changelog: useful tweets, dashboard changes, docs/blog notes, onchain metrics, product updates, and why they matter. This feed should preserve raw scan signal even when the polished dossier section only gets a concise summary.
+11. Add credible but unconfirmed findings to `## Unverified Watch Items` with credibility, status, why it matters, and next-check criteria.
+12. Update `docs/data/project-changelog.json` with scan timestamps, material changes, source-proximate Latest items, and rare high-signal unverified watch items when useful.
+13. Update `docs/data/scan-debug.json` for every run with a compact operator trail: run_id, started_at/completed_at, status, scan_window, scope, projects_checked/logged_projects, counts, decision_trail entries (project, source, url, summary, decision), errors if any, and next_checks. Distinguish full scan coverage from projects that produced logged/material entries; if a project was checked and had no material change, record that explicitly only when useful. This is observable reasoning/evidence only; do not include hidden chain-of-thought.
+14. Update indexes and generated project pages when metadata, links, or displayed content change.
+15. Validate JSON and inspect the diff before committing.
+16. Commit and push real changes to `main`.
 
 If no material change exists, the run should update scan state only when useful and otherwise stay quiet.
 
@@ -227,8 +228,9 @@ Whenever scanning or onboarding a project, explicitly ask these questions before
 3. **If not onchain, what is the next-best reliable source?** Prefer official APIs/docs/dashboards first, then DefiLlama/Token Terminal/Dune/Flipside/Snapshot/Tally/Commonwealth/GitHub or other credible third-party data. Public page scraping is a last resort and should be labeled as brittle.
 4. **Can we fetch it programmatically?** Test each candidate source with a repeatable command/script before integrating it into the dashboard. Record whether it is `tested_ok`, `partial`, `manual_only`, `blocked`, or `failed`, plus the tested endpoint and limitation.
 5. **How should the metric be interpreted?** Define why the KPI matters, what direction is good/bad, what thresholds are material, and what could make the number misleading. Distinguish fees, revenue, protocol revenue, tokenholder value capture, buybacks, incentives, and organic vs subsidized activity.
-6. **Where does the methodology live?** Put project-specific KPI logic in the relevant `projects/*.md` dossier under `## Direct Data / KPI Methodology`; put reusable machine-readable source config in a future direct-data registry; put generated latest/history values under `docs/data/direct-metrics/` once the source is stable.
+6. **Where does the methodology live?** Put project-specific KPI logic in the relevant `projects/*.md` dossier under `## Direct Data / KPI Methodology`; put reusable machine-readable source config in `data/direct-sources.json`; put generated latest/history values under `docs/data/direct-metrics/` once the source is stable.
 7. **How does it enter the UI/changelog?** Integrate only tested/stable metrics into the Direct Data panel. Add material direct-data deltas to `docs/data/project-changelog.json` and the project Latest feed; keep routine refreshes quiet unless the move is material.
+8. **How fresh are displayed figures?** Any dossier table row containing market, revenue, TVL, volume, supply, holder, buyback, or other numeric investment-math figures must carry an `as of YYYY-MM-DD` date. If collector coverage exists and the displayed figure is more than 7 days older than `docs/data/direct-metrics/latest.json`, refresh it during the scan; if no programmatic coverage exists, mark the row `stale — manual refresh needed` once it is more than 14 days old.
 
 Each project dossier's `## Direct Data / KPI Methodology` section should include:
 
