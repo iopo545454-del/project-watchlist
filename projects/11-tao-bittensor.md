@@ -1,12 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T21:47:35Z
+last_updated: 2026-07-05T15:27:32Z
 ---
 
 # TAO / Bittensor
 
 ## Latest scan notes
+
+- 2026-07-05 — Official OpenTensor's weekly ecosystem highlights included OKX/OKX AI support: OKX AI was unveiled with Opentensor support, Bittensor subnet APIs are coming to the agent marketplace, and `$TAO` was listed on OKX spot. This is the durable item from the weekly recap because it changes TAO market access and potential subnet-API distribution, while the rest of the recap was normal subnet progress. Sources: https://x.com/opentensor/status/2073771523492524281 and https://x.com/okx/status/2073293545637585379
 
 - 2026-07-02 — Official OpenTensor highlighted Bittensor subnet Trishool/HaloGuard 1.0 reaching SOTA open-weight prompt-safety performance across seven benchmarks, adding a concrete AI-safety performance milestone to the subnet ecosystem. Source: https://x.com/opentensor/status/2072735469775847689
 
@@ -96,6 +98,7 @@ last_updated: 2026-07-02T21:47:35Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| OKX spot listing / OKX AI subnet-API support | Confirmed | OpenTensor weekly ecosystem highlights said OKX AI was unveiled with Opentensor support, Bittensor subnet APIs are coming to the agent marketplace, and `$TAO` was listed; OKX also highlighted `$TAO` spot as a weekly listing: https://x.com/opentensor/status/2073771523492524281 and https://x.com/okx/status/2073293545637585379 | Listed / highlighted 2026-07-04 to 2026-07-05 | Adds a major centralized-exchange spot venue and puts Opentensor support into OKX's AI product/agent-marketplace narrative. | More market access can deepen TAO liquidity and distribution; subnet API integration could matter if OKX routes real agent traffic to Bittensor subnets. | Verify OKX market depth/volume, geographic restrictions, any deposit/trading incentives, OKX AI subnet API launch details, and whether usage flows to specific subnets. |
 | Flow-based emissions “Taoflow” active | Confirmed / docs-backed | Bittensor docs say as of November 2025 emissions moved to flow-based Taoflow, based on net TAO inflows from staking activity: https://docs.learnbittensor.org/learn/emissions | Active since November 2025 | Changes subnet capital allocation from price-based signals toward staker flow. | Can re-rank subnets and redirect TAO/alpha incentives toward projects attracting real stake demand. | Watch subnet emissions, stake inflows/outflows, alpha liquidity, and any governance changes to Taoflow. |
 | Subtensor v3.4.6-421 inactive-subnet emission gate | Confirmed / core contributor + official amplification | Jacob Steeves / `@const_reborn` said “we upgraded the chain today” and linked the Subtensor release: https://x.com/i/status/2069229442522599847; OpenTensor promoted the protocol-upgrade discussion: https://x.com/opentensor/status/2069443585586684328 | Live June 23, 2026 | Replaces prior flow/netflow averages with `root_prop × price × (1 − miner_burn)`, making active mining/IM a pass-fail gate for emissions. | TAO/alpha incentives should rotate away from inactive or self-cycling subnets toward active utility subnets; Chutes/Lium/Targon-style compute/inference subnets can benefit if they keep proving work. | Watch TAOFlows/TaoStats/IntoTAO for subnets losing or regaining emissions, validator review cadence, miner-burn flags, and whether the formula creates new gaming vectors. |
 | Bittensor EVM and vTAO bridge/liquidity rails | Confirmed / docs-backed | Official docs cover TAO movement between Substrate and Bittensor EVM plus vTAO bridging and Aerodrome liquidity: https://docs.learnbittensor.org/evm-tutorials/bridge-vtao and https://docs.learnbittensor.org/evm-tutorials/vtao-liquidity-on-aerodrome | Live docs updated 2026 | Expands TAO liquidity and composability into EVM venues. | More EVM liquidity can improve access, DeFi integrations, and staking/alpha strategies but adds bridge/liquidity risk. | Watch bridge volumes, vTAO liquidity depth, Aerodrome pool incentives, bridge incidents, and major EVM app integrations. |

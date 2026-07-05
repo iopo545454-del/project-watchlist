@@ -1,5 +1,128 @@
 [
   {
+    "run_id": "scan-20260705T152732Z",
+    "started_at": "2026-07-05T15:27:32Z",
+    "completed_at": "2026-07-05T15:27:32Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-05T11:19:33Z",
+      "until": "2026-07-05T15:27:32Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "TAO / Bittensor",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 3,
+      "changelog_entries_added": 3,
+      "material_confirmed": 3,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0,
+      "direct_metrics_refreshed": 24,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. No configured materiality threshold was treated as a scan finding; routine metric-file movement was reverted rather than committed.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2073779586274615788",
+        "summary": "Official Bankr bot posted a two-week dev update: live Robinhood Chain tokenized-stock trading, token launching built pending hooks, Discover/LLM/Polymarket/safety upgrades, and sandboxed skill catalog.",
+        "decision": "logged catalyst update; direct BNKR value capture still unverified"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter official account + OKX account",
+        "url": "https://x.com/opentensor/status/2073771523492524281",
+        "summary": "OpenTensor weekly recap included OKX AI/Opentensor support and $TAO listed; OKX independently highlighted $TAO Spot in its weekly update.",
+        "decision": "logged catalyst update for market access and potential subnet-API distribution"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/virtuals_io/status/2073755767547777244",
+        "summary": "Official Virtuals weekly update said direct Robinhood Chain agent buying is live and the ecosystem crossed 50,000 agents launched, with several ecosystem usage datapoints.",
+        "decision": "logged official update; requires follow-through on volume/fees/value capture"
+      },
+      {
+        "project": "Official X scan remainder",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Other official/primary accounts had no qualifying post-cutoff project-info changes; GitLawb 30K GitHub-star badge post and Bio Protocol AI/science framing were not durable project changes.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Related/team and weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Related-account chunks found no new qualifying in-window posts beyond a low-context Octra cofounder reply; GRASS July 7 chatter remained community/third-party with no new official confirmation.",
+        "decision": "no new watch item"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify Robinhood Chain launch-hook integration, skill catalog adoption, app/docs support, and whether flow accrues to BNKR/Bankr Club.",
+      "For TAO, verify OKX spot market depth/volume and details of OKX AI / Bittensor subnet API marketplace support.",
+      "For Virtuals, track sustained Robinhood Chain agent volume, 50,000-agent milestone quality, routed calls/jobs, and protocol fee/value capture.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "Three changelog entries added. Independent delegate_task tagger labeled BANKR medium, TAO high, and VIRTUAL medium; all changelog entries have valid high/medium/low importance labels. Direct metric refresh found no material metric-threshold finding.",
+    "importance_tagging": "Independent delegate_task completed for 2026-07-05T15:27:32Z entries: BANKR medium; TAO high; VIRTUAL medium; JSON validation passed."
+  },
+  {
     "run_id": "scan-20260705T111933Z",
     "started_at": "2026-07-05T11:19:33Z",
     "completed_at": "2026-07-05T11:28:00Z",

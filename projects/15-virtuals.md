@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-04T10:51:19Z
+last_updated: 2026-07-05T15:27:32Z
 ---
 
 # VIRTUAL / Virtuals Protocol
@@ -16,6 +16,8 @@ Virtuals Protocol is a Base-centered AI-agent economy and launch ecosystem. The 
 - **Positioning:** pick-and-shovel infrastructure for AI agents rather than a single agent app; the bull case depends on sustained agent activity, external standards adoption, and protocol/token value capture.
 
 ## Latest scan notes
+
+- 2026-07-05 — Official Virtuals weekly update said agent tokenization went live on Robinhood Chain from day one, users can buy Robinhood Chain agents directly on Virtuals without bridging, and the ecosystem crossed **50,000 agents launched**. The same post bundled robotics/ecosystem items including Raxol top-volume activity, SR Platform, c0mputeAI's 229B model run, Mission Control's 100,000+ agent jobs, Litebeam's 10,000+ routed calls, Banana Gun/Maestro trading surfaces, and July 8 Reppo Orquestra beta watch. Treat as a broad source-proximate weekly update; the tradeable follow-through is sustained agent volume, routing calls, and protocol fee/value capture. Source: https://x.com/virtuals_io/status/2073755767547777244
 
 - 2026-07-04 — Official Virtuals said users can now buy any **Robinhood Chain agent directly on Virtuals** without bridging or chain switching, including bonded and pre-bond agents. This is the direct official confirmation/UX layer for the Robinhood Chain agent-token push after the earlier Raxol and Banana Gun signals; next checks are sustained Robinhood-chain agent volume, supported asset scope, wallet routing, and whether this adds protocol fees or VIRTUAL liquidity demand. Source: https://x.com/virtuals_io/status/2073299312751284569
 
