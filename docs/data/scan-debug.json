@@ -1,5 +1,115 @@
 [
   {
+    "run_id": "scan-20260706T115954Z",
+    "started_at": "2026-07-06T11:59:54Z",
+    "completed_at": "2026-07-06T11:59:54Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-06T07:50:53Z",
+      "until": "2026-07-06T11:59:54Z",
+      "lookback": "roughly 4h/default; cutoff from latest changelog/scan state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AEON Framework",
+      "BIO / Bio Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 2,
+      "material_entries": 2,
+      "unverified_items": 0
+    },
+    "decision_trail": [
+      {
+        "project": "EigenCloud / EigenLayer",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/3",
+        "summary": "Open intake issue is already represented by tracked slug 23-eigencloud with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Ambient",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/2",
+        "summary": "Open intake issue is already represented by tracked slug 22-ambient with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Pluralis",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/1",
+        "summary": "Open intake issue is already represented by tracked slug 21-pluralis with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "AEON Framework",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/aeonframework/status/2074052227799412882",
+        "summary": "Official community-call recording listed product/integration roadmap items including MiroShark × x402/Base App, BYOK/X subscription provider support, Bankr integration, Telegram upgrades, and transparency dashboard.",
+        "decision": "Logged as official update / Latest item because it updates product/integration catalysts."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/BioProtocol/status/2074048387788288393",
+        "summary": "Official June Biosphere recap says OpenLabs is live, cites PeptAI wet-lab results, BIOS/BioAI candidate generation, ARTAN Bio $1M seed, and staking rewards live for five projects.",
+        "decision": "Logged as catalyst update / Latest item because it advances live product, science validation, ecosystem funding, and staking utility."
+      },
+      {
+        "project": "All tracked projects",
+        "source": "X/Twitter broad official/team scan",
+        "url": "n/a",
+        "summary": "Chunked official/team X scans found no other material official updates or credible high-signal unverified watch items; ignored community engagement, bot interactions, price/market chatter, and duplicates.",
+        "decision": "No additional changelog or unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Re-check AEON community-call follow-through: x402/Base App and Bankr integration evidence, transparency dashboard, provider usage, and any fee/buyback execution.",
+      "Re-check BIO OpenLabs app/docs, first funded projects, launchpad graduations, veBIO/BioXP linkage, claim values, and ARTAN Bio follow-up.",
+      "Continue suppressing POD/Dolphin until user re-enables it.",
+      "Re-check official/team X accounts and source tables next 4h run."
+    ],
+    "importance_tagging": "Independent delegate_task completed; newest BIO catalyst update labeled high for concrete $1M ecosystem funding plus live staking rewards/product signal, and AEON community-call update labeled medium for meaningful product/integration roadmap without explicit token/liquidity/revenue impact."
+  },
+  {
     "run_id": "scan-20260706T075053Z",
     "started_at": "2026-07-06T07:50:53Z",
     "completed_at": "2026-07-06T07:59:00Z",

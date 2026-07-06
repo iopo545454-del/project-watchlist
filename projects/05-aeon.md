@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-07-03T10:03:56Z
+last_updated: 2026-07-06T11:59:54Z
 ---
 
 # AEON Framework / aeon
@@ -69,6 +69,8 @@ last_updated: 2026-07-03T10:03:56Z
 
 ## Latest scan notes
 
+- 2026-07-06 — Official AEON posted the latest community-call recording with roadmap/product items: MiroShark × x402/Base App integration, on-chain affiliation strategy, MiroShark benchmarks/self-evolution, transparency dashboard, BYOK/X subscription as an Aeon provider, skill consolidation, Bankr integration, Telegram upgrades, and metrics for OpenRouter tokens/x402 volume/security stars/autonomous runs. Useful official product/integration update; no new tokenomics or live revenue claims were disclosed. Source: https://x.com/aeonframework/status/2074052227799412882
+
 - 2026-07-03 — Official AEON shared the Jun 25-Jul 2 MiroShark + Aeon shiplog: Aeon hardening PRs #546-554 shipped by default, Claude Sonnet 5 support landed same-day, Telegram slash commands/buttons/deep links went live, skills were consolidated from 187 to 102, Grok Build was in PR as harness #6, private-repo prefetch/self-repair/email skills shipped, and MiroShark x402 paid sims reached 174 paid runs / 34 buyers / $174 volume. This is a substantive product/developer-progress update rather than a direct tokenomics change. Sources: https://x.com/aeonframework/status/2072967389273080130 and https://github.com/aaronjmars/miroshark-aeon/blob/main/articles/shiplog-2026-07-02.md
 
 - 2026-06-23 — Official Aeon said its B1 Token Transparency Filing scored 40/40 on Blockworks and highlighted a Bedrock Foundation structure, golden-share protection, native AEON trading-fee treasury capture, and 50% non-trading-fee revenue buybacks. Source: https://x.com/aeonframework/status/2069473683375005833
@@ -120,7 +122,7 @@ last_updated: 2026-07-03T10:03:56Z
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | B1 transparency filing + tokenholder protections / buybacks | Confirmed / tokenomics-governance catalyst | Official AEON post says B1 filing scored 40/40 and highlights Bedrock Foundation structure, golden share, treasury fee capture, and 50% non-trading-fee revenue buybacks: https://x.com/aeonframework/status/2069473683375005833 | Published 2026-06-23 | Improves token diligence and clarifies value accrual. | Could reduce low-cap token-risk discount if revenue becomes measurable. | Watch filing link/docs, foundation details, actual treasury inflows, buyback transactions, and ownership/contract controls. |
-| DAG executor, x402 endpoints, non-crypto login, Packs publishing | Confirmed / product-security catalyst | Official community-call post covered DAG executor/security work, x402 endpoints, non-crypto login, Packs, partner integrations, and 1M cumulative GitHub stars: https://x.com/aeonframework/status/2069384845235470828 | Community Call #5, 2026-06-23 | Expands agent monetization, safer execution, and consumer onboarding. | If skills become paid x402 products, AEON can move from framework narrative to revenue platform. | Watch endpoint launch docs, partner integrations, paid skill usage, security incidents, and Packs adoption. |
+| DAG executor, x402 endpoints, non-crypto login, Packs publishing, and provider/integration expansion | Confirmed / product-security catalyst | Community Call #5 covered DAG executor/security work and x402 endpoints: https://x.com/aeonframework/status/2069384845235470828; latest community-call recording added MiroShark × x402/Base App integration, BYOK/X subscription provider work, Bankr integration, Telegram upgrades, and transparency dashboard: https://x.com/aeonframework/status/2074052227799412882 | Ongoing; latest call posted 2026-07-06 | Expands agent monetization, provider options, safer execution, integrations, and consumer onboarding. | If paid x402 skills/providers and integrations become measurable, AEON can move from framework narrative to revenue platform. | Watch endpoint docs, Base App/Bankr integration evidence, dashboard metrics, paid skill/provider usage, security incidents, and Packs adoption. |
 | Robinhood MCP integration | Confirmed / integration catalyst | Official post announced Robinhood MCP support for agentic trading, research, and rebalancing: https://x.com/aeonframework/status/2066616325611405483 | Announced 2026-06-15 | Adds a recognizable financial workflow/integration for AEON agents. | Can attract users building trading/rebalancing agents and expose security/compliance constraints. | Watch live demos, user adoption, permissioning safeguards, API limits, and additional MCP integrations. |
 
 ## Open questions
