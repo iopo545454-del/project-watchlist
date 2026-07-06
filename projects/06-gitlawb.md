@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-05T11:19:33Z
+last_updated: 2026-07-06T03:45:21Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,8 @@ last_updated: 2026-07-05T11:19:33Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-06 — Official GitLawb shipped **OpenClaude v0.22.0** with LSP diagnostics, markdown task reports, branched-session grouping, and 20+ reliability fixes, with a demo video. This is an incremental but relevant OpenClaude developer-workflow release; next checks are whether diagnostics/reporting improve real usage, whether public Playground/OpenClaude stats move, and whether this release connects to paid credits, ads, or `$GITLAWB` demand. Source: https://x.com/gitlawb/status/2073950038729117787
 
 - 2026-07-05 — Official GitLawb said its new optimized **GitLawb Node Explorer** is live and now loads near-instantly, letting users browse repositories faster. This is an incremental product/ops improvement to the explorer surfaced after the 2026-07-03 founder launch note; next checks are whether explorer uptime/latency holds, repo/node metrics become more useful, and post-spam-cleanup network health remains visible. Source: https://x.com/gitlawb/status/2073725916531069022
 
@@ -170,6 +172,7 @@ last_updated: 2026-07-05T11:19:33Z
 | https://x.com/gitlawb/status/2068839282316603606 | Official node v0.3.9 / OSS migration complete update pointing to the GitLawb node repository |
 | https://github.com/Gitlawb/node | Official/open-source node repository referenced by GitLawb; monitor releases, commits, setup docs, and node/network migration status |
 | https://github.com/Gitlawb/memlawb | Public Memlawb repo linked by founder Kevin; monitor releases, docs, MCP examples, and whether the agent-memory tool becomes part of the GitLawb/OpenClaude stack |
+| https://x.com/gitlawb/status/2073950038729117787 | Official OpenClaude v0.22.0 release note; monitor LSP diagnostics, task reports, session grouping, reliability fixes, and usage/credit impact |
 
 ## Risks
 
