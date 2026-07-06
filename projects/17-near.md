@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-03T18:18:52Z
+last_updated: 2026-07-06T20:19:42Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-07-03T18:18:52Z
 
 ## Latest scan notes
 
+- 2026-07-06 — Official NEAR said MiCA-compliant EURe is now live on near.com, letting European users move euros onchain and trade across 30+ major blockchains from their own wallet; the same window NEAR re-amplified Protocol Upgrade 2.13 testnet status for dynamic resharding and post-quantum access keys. This advances the NEAR Intents/near.com distribution and protocol-upgrade catalyst, but needs live revenue/volume and mainnet-upgrade follow-through before it becomes a stronger token/value-capture signal. Sources: https://x.com/NEARProtocol/status/2074178525616123984 and https://x.com/NEARProtocol/status/2074211063139066229
 - 2026-07-03 — Official NEAR scheduled “The Big Reveal” livestream for July 7 at 11am ET with Illia Polosukhin and Alex Shevchenko/NEAR Intents, upgrading the prior 2026-07-07 tease into a dated reveal watch item. Source: https://x.com/NEARProtocol/status/2073105015225418084
 - 2026-07-03 — Official NEAR said Fogo Chain has gone confidential on near.com, with swaps of 100+ tokens to/from FOGO hiding amounts, routes, and wallets. This extends the Fogo/NEAR Intents integration into private trading UX and should be tracked against Confidential TVL and routed volume. Source: https://x.com/NEARProtocol/status/2073068502160720193
 

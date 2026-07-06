@@ -1,5 +1,123 @@
 [
   {
+    "run_id": "scan-20260706T201942Z",
+    "started_at": "2026-07-06T20:19:42Z",
+    "completed_at": "2026-07-06T20:19:42Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-06T16:11:13Z",
+      "until": "2026-07-06T20:19:42Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol",
+      "Ambient"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 2,
+      "material_entries": 2,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "EigenCloud / EigenLayer",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/3",
+        "summary": "Open intake issue is already represented by tracked slug 23-eigencloud with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Ambient",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/2",
+        "summary": "Open intake issue is already represented by tracked slug 22-ambient with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Pluralis",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/1",
+        "summary": "Open intake issue is already represented by tracked slug 21-pluralis with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Changes appeared to be routine market/TVL refreshes with no configured materiality threshold treated as a scan finding.",
+        "decision": "Metric-file changes reverted rather than committed."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/NEARProtocol/status/2074178525616123984",
+        "summary": "Official NEAR said MiCA-compliant EURe is now live on near.com for euro onchain movement and trading across 30+ blockchains; it also re-amplified 2.13 testnet dynamic resharding and post-quantum access keys.",
+        "decision": "Logged as official update / Latest item because it advances the near.com/Intents product surface, but without current revenue/volume numbers."
+      },
+      {
+        "project": "Ambient",
+        "source": "X/Twitter founder + official scan",
+        "url": "https://x.com/i/status/2074190855590859170",
+        "summary": "CEO/co-founder Travis Good published a long-form open-model/AI-capex/verified-inference thesis and official Ambient amplified it.",
+        "decision": "Logged as thesis update / Latest item because it sharpens founder-market framing for Ambient’s Proof-of-Logits thesis, not as token/mainnet news."
+      },
+      {
+        "project": "Official X scan remainder",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Other official/team scans found MetaDAO futarchy commentary, a Bankr bot swap, Markets/Kinetiq app feature notes, Akash CEOWorld marketing, Derive replies, and no high-signal terminal/news-feed weak signals.",
+        "decision": "No additional changelog or unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch NEAR July 7 Big Reveal / near.com for Business follow-up, EURe/near.com volume or revenue-dashboard movement, and 2.13 mainnet activation timing.",
+      "Watch Ambient for any tokenomics/mainnet/miner rollout, Proof-of-Logits audits or third-party validation, and whether the founder thesis is followed by docs/code/customer evidence.",
+      "Continue re-checking AEON x402/Base App and Bankr integration follow-through, BIO OpenLabs/staking follow-through, GRASS July 7 official confirmation, TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes, and routine official/team X sources.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task completed; new NEAR and Ambient changelog entries were labeled medium under strict signal/actionability criteria."
+  },
+  {
     "run_id": "scan-20260706T161113Z",
     "started_at": "2026-07-06T16:11:13Z",
     "completed_at": "2026-07-06T16:11:13Z",

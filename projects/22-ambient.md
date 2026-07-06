@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T14:13:40Z
+last_updated: 2026-07-06T20:19:42Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-07-06 — Ambient CEO/co-founder Travis Good published a long-form thesis arguing frontier AI is getting cheaper/more reproducible, closed-lab scarcity narratives are fragile, and verified inference can become a credibly neutral trust layer for open agentic AI. Official Ambient amplified it as one of the most important articles of the past year; this is strong founder-market framing for Ambient’s Proof-of-Logits thesis, not a mainnet/tokenomics update. Sources: https://x.com/i/status/2074190855590859170 and https://x.com/ambient_xyz/status/2074191141566910530
 - 2026-06-23 — Official Ambient promoted the desktop app with a planning-mode demo where the agent generates and iteratively improves a Tetris game, adding distribution/product evidence for the verified-inference desktop workflow. Source: https://x.com/ambient_xyz/status/2069419113378984222
 - 2026-06-22 — CEO `@IridiumEagle` said Ambient's Kimi 2.7 Coder model is live and top of the charts on OpenRouter, and official `@ambient_xyz` posted a portability/open-model thread saying Ambient has open pinned weights and Proof-of-Logits receipts for every answer; useful product/usage signal, still not tokenomics or mainnet. Sources: https://x.com/IridiumEagle/status/2069102505913704537 and https://x.com/ambient_xyz/status/2069092414112116856
 - 2026-06-22 — Official `@ambient_xyz` said Ambient Desktop updates are shipping non-stop and pointed users to the installation/getting-started guide; useful docs/product-distribution signal for the Desktop surface, but no mainnet/tokenomics update. Source: https://x.com/ambient_xyz/status/2068927797960245677
@@ -38,6 +39,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 | https://x.com/ambient_xyz/status/1912524000586264704 | Official funding announcement | Ambient announced a $7.3M round led by a16z crypto CSX, Delphi Ventures, and Amber Group, with other crypto/infra investors and Solana co-founder angels cited. | Funding roster gives early credibility and puts Ambient in the crypto-AI / verified-inference market map. |
 | https://ambient.xyz/Ambient_Litepaper_V1.pdf | Official litepaper | Ambient argues zkML, optimistic verification, and TEEs are too costly/slow/trust-heavy for large-model inference; Proof of Logits is presented as a low-overhead alternative for verifying 600B+ model inference. | This is the core technical thesis to validate; if wrong, the project loses its differentiator. |
 | https://x.com/IridiumEagle/status/2014399588766253517 | Travis Good / CEO-cofounder | CEO frames Ambient as “Uber for Inference” and useful Proof-of-Work: miners do commercially valuable AI inference rather than waste hash work. | Useful founder-market framing for why a tokenized PoW network could have real demand rather than pure emissions. |
+| https://x.com/i/status/2074190855590859170 | Travis Good / Ambient CEO-cofounder long-form thesis | Argues open/cheap frontier models and fragile closed-lab scarcity narratives make verified inference/provenance a key trust layer for an open agentic economy. | Useful market-structure framing for why Ambient’s Proof-of-Logits receipts might matter if buyers demand tamper-proof, credibly neutral inference. |
 
 ### Hermes take
 
@@ -78,6 +80,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 | https://x.com/IridiumEagle | Travis Good / CEO-cofounder account to monitor for thesis, technical explainers, usage claims, and roadmap hints. |
 | https://x.com/IridiumEagle/status/2014399588766253517 | CEO thesis post framing Ambient as decentralized/permissionless verified inference / “Uber for Inference.” |
 | https://x.com/IridiumEagle/status/2065922292975288754 | CEO usage/status claim about testnet tokens per day and app/OpenRouter availability; needs external verification. |
+| https://x.com/i/status/2074190855590859170 | CEO/co-founder long-form market thesis on open models, AI-capex fragility, and verified inference as a neutral trust layer; useful for tracking Ambient narrative, not a token launch source. |
 
 ## Open questions
 
