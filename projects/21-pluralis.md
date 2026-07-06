@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-02T09:15:02Z
+last_updated: 2026-07-06T07:50:53Z
 ---
 
 # Pluralis
@@ -16,6 +16,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 - **Positioning:** a credible DeAI research bet: if contributor-owned training can converge near centralized baselines and preserve model economics, it becomes a serious alternative to closed AI and simple open-weight releases.
 
 ## Latest scan notes
+
+- 2026-07-06 — Official Pluralis amplified Chamin Hewa's ICML 2026 **Factored Gossip DiLoCo** thread and published the companion blog/ArXiv links. The paper targets low-bandwidth data-parallel training by factorizing communication into non-blocking parameter mixing and blocking gradient mixing, which is directly relevant to Pluralis' consumer-internet / heterogeneous-compute training thesis. This is a research-credibility update, not token/economics news; next checks are poster reception, code/results follow-up, and whether the method feeds back into Agora/run metrics. Sources: https://x.com/Pluralis/status/2074001099917500855, https://x.com/ChaminHewa/status/2073986231026032960, https://pluralis.ai/blog/factored-gossip-diloco/, and https://arxiv.org/abs/2606.22768
 
 - 2026-07-02 — Pluralis researcher Hadi Molatabadi detailed the team’s ICML 2026 Seoul schedule: decentralized-AI alignment workshop on July 6, Chamin Hewa presenting the **Factored Gossip DiLoCo** main-conference paper on July 7, an official ICML decentralized-training social on July 9, and the Protocol Learning workshop on July 10. This upgrades the ICML catalyst with concrete paper/event timing and team presence; next checks are slides, recordings, paper reception, new contributors, and any economics/ownership follow-up. Source: https://x.com/hmdolatabadi/status/2072565140223086691
 
@@ -68,6 +70,8 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 |---|---|
 | https://pluralis.ai/ | Official website; overview of collectively-owned AI, Protocol Learning, papers, GitHub, Agora, docs, and team context. |
 | https://pluralis.ai/blog/a-third-path-protocol-learning/ | Official blog thesis for Protocol Learning as a third path between closed models and unsustainable open weights. |
+| https://pluralis.ai/blog/factored-gossip-diloco/ | Official companion blog for the ICML 2026 Factored Gossip DiLoCo paper; useful for low-bandwidth decentralized-training methodology. |
+| https://arxiv.org/abs/2606.22768 | ArXiv paper for Factored Gossip DiLoCo; technical source for the ICML 2026 research catalyst. |
 | https://pluralis.ai/docs/ | Official docs for Pluralis-8B / Agora, hardware requirements, contributor scoring, and run mechanics. |
 | https://agora.pluralis.ai/ | Live Agora dashboard for training metrics: tokens, nodes, contributors, TPS, overhead, and Pluralis/external compute split. |
 | https://github.com/PluralisResearch | Official GitHub org; public repos include Agora, Node0, AsyncPP, and AsyncMesh. |

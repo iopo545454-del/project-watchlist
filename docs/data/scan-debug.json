@@ -1,5 +1,121 @@
 [
   {
+    "run_id": "scan-20260706T075053Z",
+    "started_at": "2026-07-06T07:50:53Z",
+    "completed_at": "2026-07-06T07:59:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-06T03:45:21Z",
+      "until": "2026-07-06T07:50:53Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "Pluralis"
+    ],
+    "counts": {
+      "intake_issues_open": 3,
+      "intake_new_projects": 0,
+      "projects_with_logged_entries": 1,
+      "changelog_entries_added": 1,
+      "material_confirmed": 1,
+      "weak_signals_logged": 0,
+      "thesis_updates": 0,
+      "direct_metrics_refreshed": 24,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project-intake issues",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query again found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already tracked with initial reviews complete.",
+        "decision": "no intake changes"
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Deltas were routine dashboard/market refreshes and no configured materiality threshold was treated as a scan finding, so metric-file changes were reverted rather than committed.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Official X scan chunk 1",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official-account sweep found routine Bankr bot operational posts including a token deployment/fee claim, but these were baseline agent/launchpad function outputs with no new BNKR value-capture or market-structure change. Other accounts in chunk had no qualifying material posts.",
+        "decision": "no changelog entry for Bankr routine output"
+      },
+      {
+        "project": "Official X scan chunk 2",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "No qualifying material official posts from OpenTensor, Akash, USD.AI, Venice, Virtuals, World/Worldcoin, NEAR, or Derive after the prior cutoff; Virtuals had a non-material robotics quote post.",
+        "decision": "no material change"
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter official account + official blog + arXiv",
+        "url": "https://x.com/Pluralis/status/2074001099917500855",
+        "summary": "Official Pluralis amplified Chamin Hewa’s Factored Gossip DiLoCo ICML 2026 thread with companion blog and ArXiv links. The paper is directly relevant to Pluralis’ low-bandwidth decentralized-training thesis.",
+        "decision": "logged docs/blog update"
+      },
+      {
+        "project": "Related/team and weak-signal sweep",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Broad in-window weak-signal searches surfaced GRASS airdrop/community criticism and Moonshot vote campaigns for GRASS/NEAR, but no official confirmation or concrete project-level change. GRASS July 7 watch item and TAO/Chutes/Targon/Lium Kraken-listing roadmap checks remain unresolved.",
+        "decision": "no additional changelog or watch item"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue 4h monitoring of official X/project sources, intake issues, direct metrics, and high-signal weak signals.",
+      "For Pluralis, watch Factored Gossip DiLoCo ICML poster reception, code/results follow-up, Agora/run metric impact, and any contributor ownership/economics language around Protocol Learning.",
+      "For GRASS, keep checking official accounts before/around the July 7 Token Holder Call for confirmed revenue/governance/unlock language.",
+      "For Bankr, verify Robinhood Chain launch-hook integration, skill catalog adoption, app/docs support, Azzle/skills-stack adoption, and whether flow accrues to BNKR/Bankr Club.",
+      "For TAO/Chutes/Targon/Lium, verify actual Kraken trading-enable announcements and liquidity after prior listing-roadmap entries.",
+      "For Virtuals, track sustained Robinhood Chain agent volume, routed calls/jobs, and protocol fee/value capture.",
+      "Keep POD / Dolphin POD suppressed unless the user explicitly re-enables it."
+    ],
+    "notes": "One changelog entry was added for Pluralis research/blog signal. Independent delegate_task tagger labeled it medium and validated changelog and scan-debug JSON.",
+    "importance_tagging": "Independent delegate_task completed; newest Pluralis research/blog changelog entry labeled medium as meaningful research-credibility/source signal without token, liquidity, revenue, or market-structure impact."
+  },
+  {
     "run_id": "scan-20260706T034521Z",
     "started_at": "2026-07-06T03:45:21Z",
     "completed_at": "2026-07-06T03:47:00Z",
