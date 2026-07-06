@@ -1,5 +1,114 @@
 [
   {
+    "run_id": "scan-20260706T161113Z",
+    "started_at": "2026-07-06T16:11:13Z",
+    "completed_at": "2026-07-06T16:11:13Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-06T11:59:54Z",
+      "until": "2026-07-06T16:11:13Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "CHIP / USD.AI"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "EigenCloud / EigenLayer",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/3",
+        "summary": "Open intake issue is already represented by tracked slug 23-eigencloud with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Ambient",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/2",
+        "summary": "Open intake issue is already represented by tracked slug 22-ambient with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Pluralis",
+        "source": "GitHub issue intake",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues/1",
+        "summary": "Open intake issue is already represented by tracked slug 21-pluralis with initial_review_done=true.",
+        "decision": "Deduped; no new project created."
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Changes were routine dashboard/market refreshes and no configured materiality threshold was treated as a scan finding, so metric-file changes were reverted rather than committed.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official scan",
+        "url": "https://x.com/USDai_Official/status/2074153968973037851",
+        "summary": "Official USD.AI announced a new $11.3M loan for 32 B200 Blackwell servers / 256 GPUs online in Texas, escrow capital release, and sUSDai yield moving from 7% to 11.5% APY; June recap also reiterated $98.1M largest loan, $20M cumulative yield, $100M Fluid liquidity, and $300M APAC JV.",
+        "decision": "Logged as catalyst update / Latest item because it changes loan-book deployment and user yield metrics."
+      },
+      {
+        "project": "Official X scan remainder",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Other official/team scans found only non-material AEON Reddit promo, OpenTensor Novelty Search event promo, NEAR Intents TVL marketing, Virtuals robotics event invite, Chutes unit-economics marketing, Pluralis ICML attendance note, Octra fair-launch commentary, MetaDAO ecosystem launch-platform commentary, and low-signal GRASS/TAO promotional chatter.",
+        "decision": "No additional changelog or unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Verify USD.AI Texas B200 loan docs/escrow attestations, borrower concentration, whether 11.5% sUSDai APY is cash-yield backed and sustained, default/delinquency status, and CHIP fee/governance linkage.",
+      "Continue re-checking AEON x402/Base App and Bankr integration follow-through, BIO OpenLabs/staking follow-through, GRASS July 7 official confirmation, TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes, and routine official/team X sources.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task completed; new USD.AI loan/APY catalyst update labeled high for confirmed $11.3M capital deployment, GPUs online, escrow release, and sUSDai APY increase from 7% to 11.5%."
+  },
+  {
     "run_id": "scan-20260706T115954Z",
     "started_at": "2026-07-06T11:59:54Z",
     "completed_at": "2026-07-06T11:59:54Z",

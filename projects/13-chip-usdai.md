@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-03T18:18:52Z
+last_updated: 2026-07-06T16:11:13Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-03T18:18:52Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-06 — USD.AI announced a new $11.3M loan for 32 B200 Blackwell servers / 256 GPUs now online in Texas, with capital released from escrow and sUSDai yield increasing from 7% to 11.5% APY; the same recap also cited a $98.1M largest loan to date, $20M cumulative yield, the $100M Fluid sUSDai liquidity facility, and the $300M APAC compute-financing JV. This is a material loan-book/yield update, but still needs follow-up on borrower concentration, escrow attestations, default/delinquency status, and how CHIP captures economics. Sources: https://x.com/USDai_Official/status/2074153968973037851 and https://x.com/USDai_Official/status/2074114347148927431
 
 - 2026-07-03 — USD.AI co-founder David / `@0xZergs` argued that neocloud businesses cannot practically use crypto tokens for enterprise business development today, so USD.AI uses cash/equity/debt-style structures while CHIP is positioned as the onchain governance/value-capture resource around GPU financing and compute settlement. This is founder thesis context, not a new token-mechanics announcement. Sources: https://x.com/0xZergs/status/2073077846344675663, https://x.com/0xZergs/status/2073090173227675836, and https://x.com/0xZergs/status/2073094153139900421
 
@@ -106,6 +108,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| New Texas B200 loan and sUSDai APY step-up | Confirmed / loan deployment + yield update | Official USD.AI post says a new $11.3M loan funded 32 B200 Blackwell servers / 256 GPUs now online in Texas, capital was released from escrow, and sUSDai yield increased from 7% to 11.5% APY: https://x.com/USDai_Official/status/2074153968973037851 | Announced 2026-07-06 | Adds another funded/online GPU deployment and directly changes sUSDai yield. | More deployed capital can raise protocol revenue/NIM if underwritten well, but increases borrower/collateral concentration and duration risk; the CHIP read-through depends on governance/value-capture mechanics. | Verify loan docs/escrow attestation, borrower identity/concentration, whether 11.5% APY is sustained by cash yield vs incentives, default/delinquency status, and CHIP fee/governance linkage. |
 | $100M sUSDai DEX Liquidity Facility with Fluid | Confirmed / liquidity integration | Official USD.AI post says USD.AI and Fluid are launching a $100M DEX Liquidity Facility for sUSDai: https://x.com/USDai_Official/status/2071639863817048553 | Announced 2026-06-29 | Deepens sUSDai liquidity and improves entry/exit/looping capacity. | Better liquidity can support larger Earn/curator programs, reduce peg/slippage stress, and increase protocol capacity for GPU-backed credit growth. | Watch actual deployed liquidity, utilization, APYs, leverage/loop risk, peg stability, and whether CHIP governance captures any incremental economics. |
 | CHIP token live for USD.AI governance and utility | Confirmed | USD.AI announced “$CHIP Is Live” and says CHIP holders can stake to govern risk, fees, staking module, and upgrades: https://usd.ai/insights/chip-is-live | Live since 2026-04-21/22 | Turns USD.AI from a credit/stablecoin product into a governable token system. | Governance decisions can directly affect collateral quality, loan pricing, revenue routing, and protocol risk. | Watch staking participation, proposal cadence, fee routing, exchange/liquidity depth, and unlocks. |
 | USD.AI Foundation and DAO stewardship launched | Confirmed | Official post says the USD.AI Foundation launched as off-chain steward of the DAO and CHIP governs protocol parameters, curators, and ecosystem initiatives: https://usd.ai/insights/usdai-foundation-chip | Announced 2026-01-27 | Establishes governance structure and treasury/ecosystem coordination around CHIP. | Better governance can accelerate borrower onboarding and risk management; weak governance could impair credit quality. | Watch foundation disclosures, DAO votes, curator approvals, treasury use, and legal/risk updates. |
@@ -114,7 +117,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Open questions
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.
-- Verify Lighthouse/YTD report numbers against live protocol data: ARR calculation, deployed-vs-idle sUSDAI liquidity, loan book concentration, origination-fee/NIM durability, and default/delinquency status.
+- Verify Lighthouse/YTD report numbers and the 2026-07-06 Texas B200 loan against live protocol data: ARR calculation, deployed-vs-idle sUSDAI liquidity, loan book concentration, escrow release/attestation, origination-fee/NIM durability, sustained 11.5% sUSDai APY, and default/delinquency status.
 - GPU-backed private credit has real-world collateral, duration, and liquidation risk; headline APY is not risk-free.
 - Team is partly pseudonymous; prioritize official reports, attestations, and verifiable loan performance.
 
