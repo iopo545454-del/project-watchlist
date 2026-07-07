@@ -1,5 +1,110 @@
 [
   {
+    "run_id": "scan-20260707T131756Z",
+    "started_at": "2026-07-07T13:14:11Z",
+    "completed_at": "2026-07-07T13:17:56Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T08:58:25Z",
+      "until": "2026-07-07T13:17:56Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 0,
+      "material_entries": 0,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Tracked projects batch 1",
+        "source": "X/Twitter official-account search",
+        "url": "X search: GEODNET/MetaDAO/Bankr/AEON/GitLawb/Kinetiq/Grass/IOTA_SN9/Targon/opentensor",
+        "summary": "No official-account posts matching launch/governance/docs/blog/partnership/listing/tokenomics/product-release terms in the scan window.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "Tracked projects batch 2",
+        "source": "X/Twitter official-account search",
+        "url": "X search: Akash/USD.AI/Venice/Virtuals/World/NEAR/Derive/Octra/Bio official accounts",
+        "summary": "No qualifying official posts found for material event keywords in the scan window.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "Tracked projects batch 3",
+        "source": "X/Twitter official-account search",
+        "url": "X search: Pluralis/Ambient/EigenCloud/EigenLayer/Chutes/Lium/ComputeHorde official accounts",
+        "summary": "No qualifying official posts found for material event keywords in the scan window.",
+        "decision": "No changelog entry."
+      },
+      {
+        "project": "Weak-signal sweep",
+        "source": "X/Twitter project-keyword search",
+        "url": "X search: project names plus listing/partnership/governance/launch/tokenomics/security/funding terms",
+        "summary": "Broad project-name keyword sweeps across tracked projects returned no credible high-signal weak items for the scan window.",
+        "decision": "No unverified watch items added."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "Configured public APIs via scripts/collect_direct_metrics.py",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics refreshed for configured non-suppressed projects; no materiality-threshold metric move was promoted to changelog. Suppressed POD metric changes were restored to prior state and not scanned/logged.",
+        "decision": "Keep refreshed metric files as scan state; no material alert."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Continue next scheduled scan from this completed_at timestamp; re-check official X/blog/docs/governance sources and carried project watch items."
+    ],
+    "notes": "No new or modified changelog entries this run; independent signal-tier tagger should report no labels needed."
+  },
+  {
     "run_id": "scan-20260707T085825Z",
     "started_at": "2026-07-07T08:58:25Z",
     "completed_at": "2026-07-07T08:58:25Z",
