@@ -1,5 +1,102 @@
 [
   {
+    "run_id": "scan-20260707T043639Z",
+    "started_at": "2026-07-07T04:36:39Z",
+    "completed_at": "2026-07-07T04:36:39Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T00:48:00Z",
+      "until": "2026-07-07T04:36:39Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created."
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Changes were routine dashboard/market refreshes; no configured materiality threshold was treated as a scan finding, and POD output remains suppressed.",
+        "decision": "Metric-file changes reverted rather than committed."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter ecosystem partner scan",
+        "url": "https://x.com/i/status/2074346563129016366",
+        "summary": "P2P.me showed a coffee-payment demo routing TRON USDT through NEAR Intents into Base USDC and settling a Brazil PIX payment through P2P Protocol in under 60 seconds.",
+        "decision": "Logged as source-proximate ecosystem/partner update because it advances the tracked NEAR Intents money-rail catalyst; not treated as tokenomics or revenue evidence."
+      },
+      {
+        "project": "Official/team X scan remainder",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team scans found routine Bankrbot token deployments, a light GitLawb Tencent/Hunyuan inference teaser, Ambient desktop teaser, Pluralis ICML poster note, repeated NEAR HSP-027 founder context already logged last run, and low-signal GRASS/Moonshot vote chatter.",
+        "decision": "No additional changelog or unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch the NEAR Big Reveal / near.com for Business livestream and any official blog/docs pages for concrete product, revenue, API, or partner announcements.",
+      "Verify whether P2P.me / Near Intents PIX-style payment flows produce sustained volume, fees, and visible dashboard/revenue.near.org movement.",
+      "Continue checking GRASS official accounts for confirmation/disproof of the July 7 revenue/governance/unlock watch item; current scan only found low-signal Moonshot listing-vote chatter.",
+      "Continue re-checking TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes, Bankr/Virtuals Robinhood Chain value-capture follow-through, and Pluralis technical report/economics follow-up.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task completed; new NEAR/P2P.me Intents payment-demo changelog entry labeled medium as meaningful ecosystem/product usage evidence without disclosed NEAR tokenomics, liquidity, revenue, fee, or market-structure impact."
+  },
+  {
     "run_id": "scan-20260707T004800Z",
     "started_at": "2026-07-07T00:27:50Z",
     "completed_at": "2026-07-07T00:48:00Z",

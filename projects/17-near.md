@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-07T00:48:00Z
+last_updated: 2026-07-07T04:36:39Z
 ---
 
 # NEAR Protocol
@@ -53,6 +53,7 @@ last_updated: 2026-07-07T00:48:00Z
 
 ## Latest scan notes
 
+- 2026-07-07 — P2P.me posted a live payments demo routing TRON USDT through NEAR Intents into Base USDC, then through P2P Protocol to pay a Brazil PIX merchant in under 60 seconds while preserving privacy. This is a partner/ecosystem proof point for NEAR Intents as a real-world cross-chain payment/fiat-exit rail, but it is not a NEAR-official revenue or tokenomics update; verify sustained payment volume, fees, and whether the flow appears in `revenue.near.org`. Source: https://x.com/i/status/2074346563129016366
 - 2026-07-07 — NEAR House of Stake ratified **HSP-027**, phasing out the legacy 30% developer gas rebate so transaction execution fees move to 100% native protocol fee processing/burn after deployment. Illia Polosukhin framed it as protocol simplification, cleaner accounting, and a live test of explicit House of Stake economic-parameter governance; third-party/governance context says deployment targets nearcore Protocol Update v2.14 in August 2026 after testnet validation. This is a real tokenomics/governance update, but practical impact depends on actual fee volumes and app-builder incentive response. Sources: https://x.com/i/status/2074147778830401999, https://houseofstake.org/blog/house-of-stake-update-hsp-027-ratified, https://houseofstake.org/proposals/27, and https://x.com/ilblackdragon/status/2074266944488734840
 - 2026-07-06 — Official NEAR said MiCA-compliant EURe is now live on near.com, letting European users move euros onchain and trade across 30+ major blockchains from their own wallet; the same window NEAR re-amplified Protocol Upgrade 2.13 testnet status for dynamic resharding and post-quantum access keys. This advances the NEAR Intents/near.com distribution and protocol-upgrade catalyst, but needs live revenue/volume and mainnet-upgrade follow-through before it becomes a stronger token/value-capture signal. Sources: https://x.com/NEARProtocol/status/2074178525616123984 and https://x.com/NEARProtocol/status/2074211063139066229
 - 2026-07-03 — Official NEAR scheduled “The Big Reveal” livestream for July 7 at 11am ET with Illia Polosukhin and Alex Shevchenko/NEAR Intents, upgrading the prior 2026-07-07 tease into a dated reveal watch item. Source: https://x.com/NEARProtocol/status/2073105015225418084
