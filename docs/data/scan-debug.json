@@ -1,5 +1,100 @@
 [
   {
+    "run_id": "scan-20260707T085825Z",
+    "started_at": "2026-07-07T08:58:25Z",
+    "completed_at": "2026-07-07T08:58:25Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T04:36:39Z",
+      "until": "2026-07-07T08:58:25Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 0,
+      "material_entries": 0,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No new project created."
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Changes were routine dashboard/market refreshes; no configured materiality threshold was treated as a scan finding, and POD output remains suppressed.",
+        "decision": "Metric-file changes reverted rather than committed."
+      },
+      {
+        "project": "Official/team X scan",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team scans across tracked handles since the prior run found no matching posts for most groups; the only in-window results were low-signal Virtuals/core-contributor chatter around Robinhood Chain/Uniswap and Reppo, with no confirmed official product, tokenomics, listing, governance, security, funding, or revenue change.",
+        "decision": "No changelog entries or dossier updates added."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter weak-signal verification scan",
+        "url": "https://x.com/aixbt_agent/status/2073113909347955091",
+        "summary": "Re-checked the carried GRASS revenue/governance/unlock watch item using targeted X search; no official or credible new confirmation/disproof appeared in the scan window.",
+        "decision": "Carried forward as unverified watch item; no alert or changelog entry repeated."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch the NEAR Big Reveal / near.com for Business livestream later on July 7 and any official blog/docs pages for concrete product, revenue, API, or partner announcements.",
+      "Verify whether P2P.me / NEAR Intents PIX-style payment flows produce sustained volume, fees, and visible dashboard/revenue.near.org movement.",
+      "Continue checking GRASS official accounts for confirmation/disproof of the July 7 revenue/governance/unlock watch item; this scan found no in-window confirmation.",
+      "Continue re-checking TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes, Bankr/Virtuals Robinhood Chain value-capture follow-through, Pluralis technical report/economics follow-up, and USD.AI loan/APY backing evidence.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task completed; docs/data/project-changelog.json had no current git diff, so no new or modified changelog objects required importance labeling."
+  },
+  {
     "run_id": "scan-20260707T043639Z",
     "started_at": "2026-07-07T04:36:39Z",
     "completed_at": "2026-07-07T04:36:39Z",
