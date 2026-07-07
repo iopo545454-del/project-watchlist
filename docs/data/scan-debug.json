@@ -1,5 +1,129 @@
 [
   {
+    "run_id": "scan-20260707T213013Z",
+    "started_at": "2026-07-07T21:30:13Z",
+    "completed_at": "2026-07-07T21:30:13Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T17:28:00Z",
+      "until": "2026-07-07T21:30:13Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Previous next_checks",
+        "source": "scan-debug carry-forward",
+        "url": "docs/data/scan-debug.json",
+        "summary": "Previous run asked to continue NEAR Confidential Intents dashboard/API and livestream follow-up plus routine official/team source checks. This run used 2026-07-07T17:28:00Z as cutoff, refreshed direct metrics, and scanned official/team X sources.",
+        "decision": "Addressed; NEAR agent-mainnet follow-up logged and dashboard/revenue checks carried forward."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics refreshed for configured projects; changes were routine dashboard/market refreshes and no configured materiality threshold was promoted to changelog. Suppressed POD metric changes were not kept.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official developer account",
+        "url": "https://x.com/NEARDevHub/status/2074586616425816502",
+        "summary": "NEAR DevHub said Confidential Intents are live on mainnet for AI agents, with wallet registration through a simple skill/markdown file, confidential swaps with pre-commit quotes, private transfers, cross-chain deposits/withdrawals, gasless execution, TEE-held keys, spending limits, and whitelists.",
+        "decision": "Logged as a catalyst update/source-proximate Latest item tied to the Confidential Intents GA catalyst."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2074582972204711969",
+        "summary": "Official NEAR re-highlighted NEAR@3.33 qualification: hold $100+ confidential balance and complete a confidential swap; qualification remains open until Confidential Intents reaches $70M TVL.",
+        "decision": "Included as context for the same catalyst; not a separate changelog entry."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2074605380496458171",
+        "summary": "Bankrbot posted multiple Robinhood Chain token deployments with a recurring 85% LP / 15% vesting / 0.7% fee template.",
+        "decision": "Treated as routine core-function launchpad output already covered by the Bankr/Robinhood Chain catalyst; no new changelog entry."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/AskVenice/status/2074576534359195922",
+        "summary": "Venice posted a product-capability thread for building AI influencer/persona/world-bible workflows with Claude Fable 5 and large context.",
+        "decision": "Useful marketing/product demo but no formal release, tokenomics, revenue, or distribution change; no changelog entry."
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/AlexanderLong/status/2074584810627182758",
+        "summary": "Alexander Long posted a substantive thesis on protocol-owned, distributed model training and serving with participant ownership.",
+        "decision": "Good thesis reinforcement, but overlaps existing Pluralis thesis/latest notes and did not add new economics/token details; no changelog entry this run."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, check revenue.near.org/API and NEAR Intents dashboards after Confidential Intents GA for fee/revenue, confidential TVL toward the $70M NEAR@3.33 trigger, route volume, and partner/agent adoption movement.",
+      "For NEAR, watch DevHub/docs for concrete agent skill templates, SDK/API docs, named agent integrations, and security model details for TEE-held keys/spending limits.",
+      "Continue re-checking GRASS official accounts for confirmation/disproof of the prior revenue/governance/unlock watch item, and TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new NEAR DevHub Confidential Intents agent-mainnet entry labeled medium by tagger."
+  },
+  {
     "run_id": "scan-20260707T172800Z",
     "started_at": "2026-07-07T17:20:12Z",
     "completed_at": "2026-07-07T17:28:00Z",
