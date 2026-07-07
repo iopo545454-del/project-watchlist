@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-07-07T00:48:00Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "catalyst update",
+    "summary": "House of Stake ratified HSP-027, phasing out NEAR’s legacy 30% developer gas rebate so transaction execution fees route to native protocol fee processing/burn once implemented; Illia framed it as protocol simplification and a successful economic-governance test.",
+    "source": "House of Stake / X/Twitter founder account",
+    "url": "https://houseofstake.org/blog/house-of-stake-update-hsp-027-ratified",
+    "last_scanned": "2026-07-07T00:48:00Z",
+    "importance": "high",
+    "novelty": "update",
+    "delta": "Moves the tracked HSP-027 row from active vote/watch item to ratified governance result with implementation targeted for nearcore v2.14/August 2026; direct value impact still depends on actual NEAR fee volume and app-builder response.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "HSP-027 Developer Gas Rebate removal"
+      },
+      {
+        "type": "open_question",
+        "ref": "Dashboard fee/burn impact and replacement builder incentives after v2.14 activation"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-07T00:48:00Z",
+    "project": "Pluralis",
+    "slug": "21-pluralis",
+    "type": "catalyst update",
+    "summary": "Official Pluralis announced completion of the Pluralis-8B / Agora WAN training run: ~20% MFU, 176 contributors, 669 GPU joins / 607 drops, and stable ~170k tokens/s over consumer-grade networking; a detailed technical report is promised.",
+    "source": "X/Twitter official account + team account",
+    "url": "https://x.com/Pluralis/status/2074232225344995636",
+    "last_scanned": "2026-07-07T00:48:00Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Advances the prior live Agora run from in-progress research catalyst to completed technical evidence with concrete run statistics; still no token, revenue-share, or contributor-ownership conversion details.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Pluralis-8B / Agora public training run"
+      },
+      {
+        "type": "open_question",
+        "ref": "Contributor points / shared ownership economics"
+      }
+    ]
+  },
+  {
     "date": "2026-07-06T20:19:42Z",
     "project": "NEAR Protocol",
     "slug": "17-near",

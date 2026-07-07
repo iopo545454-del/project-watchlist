@@ -1,5 +1,109 @@
 [
   {
+    "run_id": "scan-20260707T004800Z",
+    "started_at": "2026-07-07T00:27:50Z",
+    "completed_at": "2026-07-07T00:48:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-06T20:19:42Z",
+      "until": "2026-07-07T00:48:00Z",
+      "lookback": "roughly 4h/default; cutoff from latest scan-debug/changelog state"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol",
+      "Pluralis"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 2,
+      "material_entries": 2,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Checked open issues; existing open intakes for EigenCloud, Ambient, and Pluralis remain deduped against tracked projects from prior runs; no new project-intake issue with project-intake label was returned.",
+        "decision": "No new project created."
+      },
+      {
+        "project": "Direct metrics refresh",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 24 metrics for 13 configured projects. Observed routine market/TVL refreshes and no configured materiality threshold was treated as a scan finding; POD metric output was not committed due user suppression.",
+        "decision": "Metric-file changes reverted rather than committed."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "House of Stake / X/Twitter founder scan",
+        "url": "https://houseofstake.org/blog/house-of-stake-update-hsp-027-ratified",
+        "summary": "HSP-027 ratified, phasing out the legacy 30% developer gas rebate and targeting implementation in nearcore v2.14/August 2026; Illia framed it as cleanup and a House of Stake economic-governance test.",
+        "decision": "Logged as catalyst update because this changes an economic parameter and closes an existing governance watch item."
+      },
+      {
+        "project": "Pluralis",
+        "source": "X/Twitter official/team scan",
+        "url": "https://x.com/Pluralis/status/2074232225344995636",
+        "summary": "Official Pluralis announced completion of Pluralis-8B / Agora WAN training run with ~20% MFU, 176 contributors, 669 GPU joins / 607 drops, and ~170k tokens/s.",
+        "decision": "Logged as catalyst update / Latest item because it completes the live decentralized-training run catalyst with concrete technical metrics; not token news."
+      },
+      {
+        "project": "Official X scan remainder",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Other official/team scans found Bankr bot operational token deployments/failures, MetaDAO commentary, GitLawb/GemsHunting community promotion, Grass founder thesis endorsement, USDai founder sourcing quote, Derive market commentary, and no matching high-signal terminal/news-feed weak signals.",
+        "decision": "No additional changelog or unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Watch NEAR nearcore v2.14/testnet/mainnet activation for HSP-027, fee/burn dashboard effects, app-builder response, and the July 7 Big Reveal / near.com for Business follow-up.",
+      "Watch Pluralis promised ~70-page technical report, eval/convergence detail, code/artifacts, ICML workshop follow-up, and whether contributor points/shared ownership become enforceable economics.",
+      "Continue re-checking AEON x402/Base App and Bankr integration follow-through, BIO OpenLabs/staking follow-through, GRASS July 7 official confirmation, TAO/Chutes/Targon/Lium Kraken-listing roadmap outcomes, and routine official/team X sources.",
+      "Continue suppressing POD/Dolphin until user re-enables it."
+    ],
+    "importance_tagging": "Independent delegate_task completed; new NEAR entry labeled high for tokenomics/economic-parameter governance result, and new Pluralis entry labeled medium for technical catalyst without token/liquidity/revenue impact."
+  },
+  {
     "run_id": "scan-20260706T201942Z",
     "started_at": "2026-07-06T20:19:42Z",
     "completed_at": "2026-07-06T20:19:42Z",
