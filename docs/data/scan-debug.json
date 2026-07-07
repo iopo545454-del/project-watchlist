@@ -1,5 +1,120 @@
 [
   {
+    "run_id": "scan-20260707T172800Z",
+    "started_at": "2026-07-07T17:20:12Z",
+    "completed_at": "2026-07-07T17:28:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T13:17:56Z",
+      "until": "2026-07-07T17:28:00Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "NEAR Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Previous next_checks",
+        "source": "scan-debug carry-forward",
+        "url": "docs/data/scan-debug.json",
+        "summary": "Previous run asked to continue from its completed_at timestamp and re-check official X/blog/docs/governance sources plus carried watch items. This run used 2026-07-07T13:17:56Z as cutoff and scanned official/project X sources plus intake issues; no dossier Unverified Watch Items required escalation.",
+        "decision": "Addressed; new NEAR follow-up checks recorded."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2074515816670781812",
+        "summary": "Official thread announced Confidential Intents GA through the NEAR Intents 1Click Swap API and cited >$1.5B ZEC settled, 42% near.com volume using Confidential Mode shortly after launch, and daily confidential TVL >$30M.",
+        "decision": "Logged as catalyst update; updated NEAR dossier Latest and catalysts."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "official blog",
+        "url": "https://www.near.org/blog/announcing-general-availability-of-confidential-intents",
+        "summary": "Official blog page reachable; used as durable source for the GA launch.",
+        "decision": "Added to changelog and dossier source context."
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "source": "X/Twitter related account",
+        "url": "https://x.com/MacrocosmosAI/status/2074524518173888526",
+        "summary": "Macrocosmos posted an open-source AI/distributed-training economics thread referencing IOTA/Orion-100B cost-performance claims.",
+        "decision": "Useful narrative reinforcement but not a new launch, parameter change, or KPI beyond already tracked context; no changelog entry."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/grass/status/2074539199999746362",
+        "summary": "Grass posted that the token holder/network participant call was live.",
+        "decision": "Routine event reminder; no durable update logged without substantive call outcome."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/AskVenice/status/2074519382995226770",
+        "summary": "Venice amplified bunnyOS/bunnyCompute using Venice as an LLM inference provider.",
+        "decision": "Integration/marketing signal but small and already consistent with Venice distribution theme; no changelog entry this run."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For NEAR, check revenue.near.org/API and NEAR Intents dashboards after Confidential Intents GA for fee/revenue, confidential TVL, route volume, and partner adoption movement.",
+      "For NEAR, check whether July 7 livestream recap/API docs expose named partner integrations or only general availability docs."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new NEAR Confidential Intents GA entry labeled high by tagger."
+  },
+  {
     "run_id": "scan-20260707T131756Z",
     "started_at": "2026-07-07T13:14:11Z",
     "completed_at": "2026-07-07T13:17:56Z",
