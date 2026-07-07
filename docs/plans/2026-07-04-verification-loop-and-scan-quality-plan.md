@@ -96,6 +96,8 @@ Acceptance: three consecutive scan-debug runs show previous `next_checks` consum
 > This phase is the product core (see Purpose). Task 2.0 is the top priority of the entire remaining plan.
 
 > **Status 2026-07-05:** Tasks 2.0, 1.5, and 2.4 shipped in `380c44d` (AGENTS.md rules, changelog schema, dashboard rendering with graceful degradation). Acceptance pending by nature: 2.0 needs the next 10 material entries to carry the context block; 1.5 needs three consecutive scan-debug runs consuming/carrying next_checks; 2.4 needs the first take revision. Tasks 2.1–2.3 not started.
+>
+> **Status 2026-07-07:** Tasks 2.1–2.3 are now sequenced for immediate execution by `2026-07-07-deep-pass-execution-plan.md`, which sharpens their acceptance (trail-proof deep passes with negative-result lines) and adds two small AGENTS.md rules plus cron/skill propagation. Execute them via that plan; where wording differs, that plan wins for those tasks.
 
 ### Task 2.0: Context blocks on every material entry
 
