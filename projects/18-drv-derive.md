@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-04T06:42:05Z
+last_updated: 2026-07-08T14:01:33Z
 ---
 
 # DRV / Derive Protocol
@@ -12,6 +12,8 @@ Derive is an onchain options and perps venue formerly known as Lyra. The current
 Derive is most worth monitoring when new listed underlyings, collateral types, buyback parameters, liquidity incentives, institutional/RFQ rails, or risk-engine changes alter the revenue/buyback loop. The platform is especially tied to ETH/BTC options and, recently, HYPE options.
 
 ## Latest scan notes
+
+- 2026-07-08 — Official Derive said it is now live on **LorisTools** alongside top CEXes in the options dashboard, letting traders compare options plus funding, open interest, volume, and liquidations across venues. This is a distribution/data-discovery integration for Derive’s options venue, not a new market or buyback change; next checks are whether Loris-driven visibility improves HYPE/BTC/ETH options flow, OI, fees, or weekly DRV buybacks. Source: https://x.com/DeriveXYZ/status/2074840966947889191
 
 - 2026-07-04 — Official Derive promoted mobile options trading via a personal QR-code device connection, letting users monitor and manage positions from a phone. Treat this as a UX/distribution update rather than a new token-economic mechanism; next checks are mobile usage, RFQ/options flow from easier access, and whether it contributes to fees/buybacks. Source: https://x.com/DeriveXYZ/status/2073254793477554230
 

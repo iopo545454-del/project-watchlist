@@ -1,5 +1,126 @@
 [
   {
+    "run_id": "scan-20260708T140133Z",
+    "started_at": "2026-07-08T14:01:33Z",
+    "completed_at": "2026-07-08T14:01:33Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T09:55:40Z",
+      "until": "2026-07-08T14:01:33Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin",
+      "GitlWab / GitLawb / Gitwab",
+      "DRV / Derive Protocol",
+      "Chutes — Bittensor Subnet 64"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 4,
+      "material_entries": 4,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog. Routine metric file refreshes, including suppressed POD metrics, were not intended as project-information changes.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2074855944337723849",
+        "summary": "Official Bankr said full Robinhood Chain integration is live, including tokenized-stock/memecoin trading, Doppler launches, routing, bridge demo, and live deployments.",
+        "decision": "Added catalyst/latest entry; still no direct BNKR value-capture disclosure."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/gitlawb/status/2074855395806601500",
+        "summary": "Official GitLawb reported OpenGateway usage peaking at 555M inference tokens/hour.",
+        "decision": "Added usage-telemetry entry; requires dashboard/API and paid/free/revenue context."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2074840966947889191",
+        "summary": "Official Derive said it is live on LorisTools options dashboard alongside top CEXes.",
+        "decision": "Added distribution/dashboard integration entry; no buyback or market-parameter change."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "X/Twitter official account and official blog",
+        "url": "https://x.com/i/status/2074856074260128213",
+        "summary": "Official Chutes announced Parallax non-blocking decentralized training on a recurrent model within 0.6% of centralized quality.",
+        "decision": "Added catalyst update and catalyst-row milestone; monitor for production/revenue/token impacts."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team-account chunks covered all non-suppressed tracked projects; other observed posts were routine replies, broad market commentary, community voting prompts, duplicate Robinhood/Virtuals teasers, or no qualifying durable project information.",
+        "decision": "Only Bankr, GitLawb, Derive, and Chutes received source-proximate entries."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify docs/app behavior and whether Robinhood Chain trading/launch flow shows usage volume, fee routing, or BNKR/Club value accrual.",
+      "For GitLawb, cross-check the 555M inference tokens/hour claim against public stats/API if available, and identify paid/free split, duration, provider mix, credits, ads, and token routing.",
+      "For Derive, monitor whether LorisTools visibility correlates with OI/volume/fees or weekly DRV buyback acceleration.",
+      "For Chutes, read/verify the Parallax technical write-up, watch for benchmarks/code, production training jobs, miner requirements, incentive mechanics, and revenue/DefiLlama impact.",
+      "Carry forward prior unresolved checks for Bankr staking/OKT utility, MetaDAO Credible July 13 raise, NEAR Confidential Intents dashboards, Akash capacity evidence, and Grass July 7 recap."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new Bankr, GitLawb, Derive, and Chutes entries labeled medium."
+  },
+  {
     "run_id": "scan-20260708T095540Z",
     "started_at": "2026-07-08T09:55:40Z",
     "completed_at": "2026-07-08T09:55:40Z",

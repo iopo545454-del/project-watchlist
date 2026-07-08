@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-05T00:22:42Z
+last_updated: 2026-07-08T14:01:33Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -13,6 +13,8 @@ last_updated: 2026-07-05T00:22:42Z
 - Alpha token: SN64 within Bittensor dTAO economy.
 
 ## Latest scan notes
+
+- 2026-07-08 — Official Chutes announced **Parallax** achieved fully non-blocking decentralized training on a recurrent model within 0.6% of centralized quality and linked a technical write-up at https://chutes.ai/news/non-blocking-recurrent-training. This is a meaningful Parallax technical milestone because it claims decentralized training without sync blocking or meaningful quality loss on a hard recurrent-model test case; it is not yet a revenue/liquidity event until training jobs, miner requirements, incentives, customer demand, and SN64 economics are disclosed. Source: https://x.com/i/status/2074856074260128213
 
 - 2026-07-05 — Refreshed Chutes direct metrics via DefiLlama: revenue `$10.7K` 24h / `$69.3K` 7d / `$359.8K` 30d, annualized 30d revenue about `$4.38M`, and DefiLlama TVL `$43.6M`. Taostats SN64 metrics remain keyed/manual in the collector. Source: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue
 - 2026-06-29 — Official Chutes said $SN64 is coming to Kraken and linked Kraken’s listings roadmap; this is a major liquidity/access catalyst for the SN64 subnet token pending actual trading enablement. Source: https://x.com/chutes_ai/status/2071662544574382437 and https://www.kraken.com/listings#roadmap
@@ -78,6 +80,7 @@ last_updated: 2026-07-05T00:22:42Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Parallax non-blocking decentralized training milestone | Confirmed technical milestone / roadmap not revenue yet | Official Chutes announced Parallax achieved fully non-blocking decentralized training on a recurrent model within 0.6% of centralized quality and linked a technical write-up: https://x.com/i/status/2074856074260128213 and https://chutes.ai/news/non-blocking-recurrent-training | Announced 2026-07-08; production training-market timing unknown | Strengthens the claim that Chutes can move beyond inference into decentralized training without forcing GPUs to wait on sync. | If replicated on larger transformer workloads and attached to paid jobs, Chutes could compete for training spend and broaden SN64 utility beyond inference revenue; if it remains a lab demo, impact is narrative only. | Watch technical write-up details, open benchmarks/code, miner requirements, customer jobs, pricing, rewards, and whether training revenue appears in DefiLlama/Chutes metrics. |
 | Kraken listings-roadmap entry for Chutes / SN64 | Confirmed / listing roadmap | Official Chutes says $SN64 is coming to Kraken and links Kraken’s listings roadmap: https://x.com/chutes_ai/status/2071662544574382437 and https://www.kraken.com/listings#roadmap | Roadmap as of 2026-06-29; trading timing unknown | Adds a major centralized exchange path for SN64 alpha exposure. | Better access/liquidity can re-rate the subnet against revenue KPIs and draw broader attention to Bittensor subnet tokens. | Watch Kraken trading-enable date, pairs, deposit/withdrawal support, jurisdiction limits, order-book depth, and whether revenue multiples expand. |
 | Parallax distributed training using idle gaming GPUs | Tentative roadmap | Official Chutes says pointing idle consumer/gaming GPUs at training is part of the Parallax roadmap: https://x.com/chutes_ai/status/2070145081185534115 | Unknown / roadmap | Would expand Chutes beyond managed inference into training workloads that can use consumer GPU supply. | If credible, Chutes could compete for decentralized training mindshare and convert a much larger hardware base into subnet utility; if vague, it remains narrative. | Watch for Parallax docs, testnet/mainnet rollout, miner onboarding requirements, training-job pricing, reward mechanics, and paid customer evidence. |
 | Chutes revenue visibility on DefiLlama | Confirmed / live KPI | DefiLlama Chutes revenue API and Taostats SN64 page: https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue and https://taostats.io/subnets/64 | Live daily revenue | Gives a public revenue series for underwriting SN64 against subnet value. | Makes Chutes one of the cleaner Bittensor subnets to value on usage rather than emissions alone. | Watch 30d revenue trend, revenue quality, paid vs subsidized traffic, and SN64 market cap/liquidity. |

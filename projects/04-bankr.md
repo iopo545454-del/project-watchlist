@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-08T05:54:43Z
+last_updated: 2026-07-08T14:01:33Z
 ---
 
 # BANKR / BankrCoin
@@ -53,6 +53,8 @@ last_updated: 2026-07-08T05:54:43Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-08 — Official Bankr bot said **full Robinhood Chain integration** is now live: users can trade memecoins and tokenized stocks such as `$AAPL`/`$NVDA`, launch tokens via Doppler, and route through USDG/ETH without manual RPC setup or separate bridging; the bot also posted a successful 0.5 ETH bridge and deployed multiple Robinhood Chain tokens with the 85% locked-pool / 15% two-year vesting pattern. This upgrades the earlier “live but launch-hook pending / scope unclear” Robinhood notes into a stronger product-surface signal, but BNKR value capture is still indirect until fees, usage volume, or Club/BNKR economics are disclosed. Sources: https://x.com/bankrbot/status/2074855944337723849, https://x.com/bankrbot/status/2074856002269401250, https://x.com/bankrbot/status/2074852605365555707, https://x.com/bankrbot/status/2074856338107355262
 
 - 2026-07-08 — Follow-up verification on Bankr watch items: official Bankr bot described current `$BNKR` staking as a vault-based flow with deposit, 18-hour cooldown, and 3-day withdrawal window, while also saying docs did not label it “v2”; it also reaffirmed the canonical `$BNKR` token address `0x22af33fe49fd1fa80c7149773dde5890d3c76f3b` and flagged a queried alternate address as not Bankr-launched / potentially malicious. On OK, Terminal, Bankr bot characterized `$OKT` as lacking documented utility as of July 4, then suggested possible future utility only if integrated with Bankr/x402 or a dedicated Bankr app. Treat this as a partial verification/correction: staking guidance is less unresolved than the June 22 watch item implied, but the exact staking vault contract address and docs page still need source-of-truth verification; `$OKT` utility remains unconfirmed rather than durable tokenomics. Sources: https://x.com/bankrbot/status/2074242273882333210, https://x.com/bankrbot/status/2074233865699557405, https://x.com/bankrbot/status/2074242694717878406, https://x.com/bankrbot/status/2074234539816484875, https://x.com/bankrbot/status/2074233036447900074, https://x.com/bankrbot/status/2073216315289170008, https://x.com/bankrbot/status/2073722786204520456
 

@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-07-08T14:01:33Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "catalyst update",
+    "summary": "Official Bankr bot said full Robinhood Chain integration is live, including tokenized-stock/memecoin trading, Doppler token launches, USDG/ETH routing, a demonstrated 0.5 ETH bridge, and live Robinhood Chain token deployments; this upgrades prior scope-unclear Robinhood support but still lacks BNKR fee/value-capture disclosure.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/bankrbot/status/2074855944337723849",
+    "last_scanned": "2026-07-08T14:01:33Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Prior Bankr notes showed Robinhood Chain trading live but token launching/hook support partly pending or scope-unclear; the new official post says full integration is live and shows actual bridge/deployment examples, but no BNKR economics or usage volume were disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Two-week agent dev update / skill catalog and Robinhood Chain readiness"
+      },
+      {
+        "type": "open_question",
+        "ref": "Whether Robinhood Chain trading/launch flow accrues fees or incentives to BNKR/Bankr Club"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T14:01:33Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "Official GitLawb reported OpenGateway usage peaking at 555 million inference tokens per hour, a large source-proximate throughput claim that still needs dashboard/API confirmation and paid/free/revenue context.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/gitlawb/status/2074855395806601500",
+    "last_scanned": "2026-07-08T14:01:33Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Adds a new high-water usage claim after the prior OpenClaude v0.22.0 and node-explorer updates; no audited revenue, paid-credit split, unique-user count, or token-value route was disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "$GITLAWB / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths"
+      },
+      {
+        "type": "open_question",
+        "ref": "Public OpenClaude/OpenGateway usage metrics and whether ads/credits/voting connect to token economics"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T14:01:33Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "official update",
+    "summary": "Official Derive said it is live on LorisTools’ options dashboard alongside top CEXes, adding a data-discovery venue where traders can compare options, funding, OI, volume, and liquidations across venues.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/DeriveXYZ/status/2074840966947889191",
+    "last_scanned": "2026-07-08T14:01:33Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Adds a distribution/dashboard integration after the prior mobile UX and $30B notional notes; it does not change listed markets, DRV buyback parameters, or fee allocation by itself.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Institutional/RFQ / custody-friendly options rails"
+      },
+      {
+        "type": "metric",
+        "ref": "Options/perps volume and OI by underlying"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T14:01:33Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "catalyst update",
+    "summary": "Official Chutes announced Parallax achieved fully non-blocking decentralized training on a recurrent model within 0.6% of centralized quality and linked a technical write-up, strengthening the Parallax distributed-training roadmap but not yet proving paid training demand or SN64 economic impact.",
+    "source": "X/Twitter official account and official blog",
+    "url": "https://x.com/i/status/2074856074260128213",
+    "last_scanned": "2026-07-08T14:01:33Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Advances the existing Parallax/idle-GPU distributed-training catalyst from roadmap teaser to claimed technical milestone; no training revenue, customer, miner incentive, or token-economic change was disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Parallax distributed training using idle gaming GPUs"
+      }
+    ]
+  },
+  {
     "date": "2026-07-08T09:55:40Z",
     "project": "AEON Framework",
     "slug": "05-aeon",
