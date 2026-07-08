@@ -1,5 +1,251 @@
 [
   {
+    "run_id": "scan-20260708T095540Z",
+    "started_at": "2026-07-08T09:55:40Z",
+    "completed_at": "2026-07-08T09:55:40Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T05:54:43Z",
+      "until": "2026-07-08T09:55:40Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "AEON Framework"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Previous next_checks",
+        "source": "scan-debug carry-forward",
+        "url": "docs/data/scan-debug.json",
+        "summary": "Previous checks for Bankr staking/OKT utility, MetaDAO/Credible raise details, NEAR Confidential Intents dashboards, Akash capacity evidence, and Grass July 7 recap were reviewed through the official/team X scan; no qualifying new verification was found in this window.",
+        "decision": "Carry forward unresolved checks."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog. Routine metric file refreshes, including suppressed POD metrics, were reverted rather than committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "AEON Framework",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/aeonframework/status/2074777247349645428",
+        "summary": "Official AEON amplified Sparkleware; the quoted ecosystem post said Sparkleware is live on Virtuals, tradeable on Robinhood, and functions as a registry for AEON skill packs with a community token contract.",
+        "decision": "Added low/medium-signal Latest/changelog item as ecosystem distribution context; no direct aeon tokenomics or revenue change."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official/core accounts",
+        "url": "https://x.com/0xTP91/status/2074779335404171658",
+        "summary": "Virtuals/core accounts posted brief Robinhood Chain / AI-agent teasers; this is consistent with already logged July 3-5 Robinhood Chain agent-token catalyst entries and did not add new durable details.",
+        "decision": "No new Virtuals changelog entry."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter developer account",
+        "url": "https://x.com/NEARDevHub/status/2074750354672279885",
+        "summary": "NEARDevHub weekly recap repeated Confidential Intents GA and HSP-027 passage details already logged in prior runs.",
+        "decision": "Duplicate/recap only; no changelog entry."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team-account chunks covering all non-suppressed tracked projects found only AEON Sparkleware context, Virtuals Robinhood-chain teasers, and a NEAR weekly recap; broad high-signal keyword search found no additional material announcements, listings, governance, funding, security, tokenomics, or credible weak signals.",
+        "decision": "Only AEON received a new source-proximate entry."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For AEON, check whether Sparkleware becomes documented in AEON official docs/source lists, whether skill-pack registry usage is measurable, and whether any fees/revenue route to AEON or aeon-token value accrual.",
+      "For Bankr, verify the official BNKR staking vault contract/docs address, Basescan state, and live bot behavior before marking the staking watch item confirmed; monitor for stale-address warnings or user-fund complaints.",
+      "For Bankr/OK Terminal, re-check official OK Terminal docs/app metadata, Bankr launch page, contract details, and access-gating behavior; mark OKT utility stale/disproven if no actual OKT-gated product emerges.",
+      "For MetaDAO, check the Credible July 13 raise page/app/proposal for final raise size, allocations, settlement, CRED legal/treasury-rights documentation, secondary liquidity, and any platform fee/value accrual to META.",
+      "For NEAR, keep checking revenue.near.org/API and NEAR Intents dashboards for confidential TVL toward the $70M NEAR@3.33 trigger, fee/revenue movement, route volume, and named agent/partner integrations.",
+      "For Akash, watch official Akash/Greg Osuri posts and marketplace dashboards for concrete new GPU capacity, utilization, pricing, or customer/revenue evidence after the “supply is tight” signal.",
+      "For Grass, check the July 7 call recording or official recap for revenue-routing governance, Season 2 allocation/uptime-point rules, and unlock mechanics."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new AEON Framework entry labeled medium."
+  },
+  {
+    "run_id": "scan-20260708T055443Z",
+    "started_at": "2026-07-08T05:54:43Z",
+    "completed_at": "2026-07-08T05:54:43Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T01:46:39Z",
+      "until": "2026-07-08T05:54:43Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Previous next_checks",
+        "source": "scan-debug carry-forward",
+        "url": "docs/data/scan-debug.json",
+        "summary": "Previous run asked to check MetaDAO/Credible July 13 raise details, NEAR Confidential Intents dashboards/adoption, and Akash capacity evidence. The 4h official/team X scan found no new qualifying MetaDAO, NEAR, or Akash updates after the prior cutoff; checks are carried forward.",
+        "decision": "No changelog entries for those projects this run; carry forward."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog. Routine metric file refreshes, including suppressed POD metrics, were reverted rather than committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team-account chunks covering all non-suppressed tracked projects returned no qualifying new posts in the 2026-07-08T01:46Z–05:54Z window. Broad high-signal X search across the tracked project names also found no material announcements, listings, governance, funding, security, tokenomics, or credible weak signals.",
+        "decision": "No routine monitoring changelog entries beyond watch-item verification."
+      },
+      {
+        "project": "GRASS",
+        "source": "X/Twitter official accounts",
+        "url": "https://x.com/grass/status/2074539199999746362",
+        "summary": "Official @grass posts on July 7 only announced/reminded the token-holder/network-participant call; no official X details were found on revenue-routing governance, Season 2 allocation rules, uptime points, or unlock mechanics.",
+        "decision": "Existing Grass unverified watch items remain unresolved/carried forward; no new changelog entry."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2074242273882333210",
+        "summary": "Official Bankr bot described current BNKR staking as a vault flow with deposit, 18-hour cooldown, and 3-day withdrawal window, while separate replies said docs do not label it v2, reaffirmed canonical BNKR token address, and flagged an alternate address as not Bankr-launched/potentially malicious.",
+        "decision": "Updated Bankr dossier Latest and Unverified Watch Items as a verification update; exact staking vault/docs source remains a next check."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2073216315289170008",
+        "summary": "Official Bankr bot said OKT had no documented utility as of July 4 and later suggested Bankr/x402/app integration as a path for relevance rather than confirming current token utility.",
+        "decision": "Updated OKT watch item to partially supported / utility unconfirmed; no durable tokenomics catalyst added."
+      },
+      {
+        "project": "Kinetiq",
+        "source": "X/Twitter project-related accounts",
+        "url": "https://x.com/Kinetiq_xyz/status/2072714553021075461",
+        "summary": "Project-related searches re-surfaced Markets/kPoints and buyback claims from earlier windows but found no new official wallet address or final snapshot/distribution confirmation after the current cutoff.",
+        "decision": "Kinetiq watch items remain carried forward; no changelog entry."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Bankr, verify the official BNKR staking vault contract/docs address, Basescan state, and live bot behavior before marking the staking watch item confirmed; monitor for stale-address warnings or user-fund complaints.",
+      "For Bankr/OK Terminal, re-check official OK Terminal docs/app metadata, Bankr launch page, contract details, and access-gating behavior; mark OKT utility stale/disproven if no actual OKT-gated product emerges.",
+      "For MetaDAO, check the Credible July 13 raise page/app/proposal for final raise size, allocations, settlement, CRED legal/treasury-rights documentation, secondary liquidity, and any platform fee/value accrual to META.",
+      "For NEAR, keep checking revenue.near.org/API and NEAR Intents dashboards for confidential TVL toward the $70M NEAR@3.33 trigger, fee/revenue movement, route volume, and named agent/partner integrations.",
+      "For Akash, watch official Akash/Greg Osuri posts and marketplace dashboards for concrete new GPU capacity, utilization, pricing, or customer/revenue evidence after the “supply is tight” signal.",
+      "For Grass, check the July 7 call recording or official recap for revenue-routing governance, Season 2 allocation/uptime-point rules, and unlock mechanics."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new Bankr verification entry labeled medium."
+  },
+  {
     "run_id": "scan-20260708T014639Z",
     "started_at": "2026-07-08T01:46:39Z",
     "completed_at": "2026-07-08T01:46:39Z",

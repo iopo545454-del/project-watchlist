@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-08T09:55:40Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "official update",
+    "summary": "Official AEON amplified Sparkleware, which said it is live on Virtuals, tradeable on Robinhood, and serving as a holographic registry for AEON skill packs with a community token contract; this is an ecosystem/distribution signal for AEON Skill Packs, not confirmed direct aeon tokenomics.",
+    "source": "X/Twitter official account and ecosystem account",
+    "url": "https://x.com/aeonframework/status/2074777247349645428",
+    "last_scanned": "2026-07-08T09:55:40Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Adds a concrete third-party Skill Packs registry/community-token example after the prior AEON roadmap/community-call notes; no AEON fee route, revenue number, or aeon-token value accrual was disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "DAG executor, x402 endpoints, non-crypto login, Packs publishing, and provider/integration expansion"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T05:54:43Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "Follow-up verification on Bankr watch items: official Bankr bot described current BNKR staking as a vault flow with deposit, 18-hour cooldown, and 3-day withdrawal window; reaffirmed canonical BNKR token address; flagged a queried alternate address as not Bankr-launched/potentially malicious; and characterized OKT as having no documented utility unless future Bankr/x402/app integration is formalized.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/bankrbot/status/2074242273882333210",
+    "last_scanned": "2026-07-08T05:54:43Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Updates two existing Bankr Unverified Watch Items rather than adding a new catalyst: staking-tooling risk is partially reduced by official bot guidance, but exact vault/docs source remains open; OKT remains utility-unconfirmed after the bot said no documented utility existed as of July 4.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "BNKR staking v2/current contract address problem"
+      },
+      {
+        "type": "watch_item",
+        "ref": "OK, Terminal / OKT utility"
+      }
+    ]
+  },
+  {
     "date": "2026-07-08T01:46:39Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",

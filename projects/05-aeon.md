@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-07-06T11:59:54Z
+last_updated: 2026-07-08T09:55:40Z
 ---
 
 # AEON Framework / aeon
@@ -68,6 +68,8 @@ last_updated: 2026-07-06T11:59:54Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-08 — Official AEON amplified Sparkleware as an ecosystem project: Sparkleware said it is live on Virtuals, tradeable on Robinhood, and positioned as a “holographic registry” for AEON skill packs with community token `0x1dAe71A215eE5C696cb644F030597AE4F32831C0`. Treat as an AEON ecosystem/distribution signal for Skill Packs rather than direct `$aeon` tokenomics; next checks are whether AEON documents Sparkleware in official docs, actual skill-pack usage, and whether any fees/revenue route to AEON. Sources: https://x.com/aeonframework/status/2074777247349645428 and https://x.com/sparklewarefun/status/2074758106644611200
 
 - 2026-07-06 — Official AEON posted the latest community-call recording with roadmap/product items: MiroShark × x402/Base App integration, on-chain affiliation strategy, MiroShark benchmarks/self-evolution, transparency dashboard, BYOK/X subscription as an Aeon provider, skill consolidation, Bankr integration, Telegram upgrades, and metrics for OpenRouter tokens/x402 volume/security stars/autonomous runs. Useful official product/integration update; no new tokenomics or live revenue claims were disclosed. Source: https://x.com/aeonframework/status/2074052227799412882
 
