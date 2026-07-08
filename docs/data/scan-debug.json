@@ -1,5 +1,99 @@
 [
   {
+    "run_id": "scan-20260708T181109Z",
+    "started_at": "2026-07-08T18:11:09Z",
+    "completed_at": "2026-07-08T18:14:57Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T14:01:33Z",
+      "until": "2026-07-08T18:11:09Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "DRV / Derive Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query again found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog. Routine metric refresh files were reverted rather than committed, including suppressed POD metrics.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter founder/team account",
+        "url": "https://x.com/nickforster/status/2074897534200295660",
+        "summary": "Derive CEO Nick Forster criticized Binance covered-call vault fee design and said Derive v3 will solve vaults soon.",
+        "decision": "Added catalyst/latest entry as a v3 scope/timing update; no shipped docs, fee/OI evidence, or DRV buyback parameter change yet."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team-account chunks covered all non-suppressed tracked projects. Other observed items were routine Bankr token launches, broad market/commentary posts, Akash/NEAR/Virtuals promotional context, Chutes duplicate amplification, Prime Intellect funding congratulations not specific to tracked project operations, or no qualifying durable project information.",
+        "decision": "Only Derive received a new source-proximate entry this run."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For Derive, watch official v3 release notes/docs for vault mechanics, fee/risk design, launch timing, OI/fee impact, and whether v3 usage changes weekly DRV buybacks.",
+      "Carry forward prior unresolved checks for Bankr staking/OKT utility, MetaDAO Credible July 13 raise, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass July 7 recap, and Chutes Parallax technical details."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new Derive entry labeled medium."
+  },
+  {
     "run_id": "scan-20260708T140133Z",
     "started_at": "2026-07-08T14:01:33Z",
     "completed_at": "2026-07-08T14:01:33Z",
