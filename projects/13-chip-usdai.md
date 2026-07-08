@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-06T16:11:13Z
+last_updated: 2026-07-08T22:18:01Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-06T16:11:13Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-08 — USD.AI announced new `@withAUSD` borrow markets for sUSDai on Morpho with up to 60% max looped APY, plus a same-day framing post that AI-compute middle-market credit offers IG-like security with 400–600 bps extra yield because many lenders avoid unfamiliar collateral. This is a meaningful DeFi-liquidity/yield integration and lending-demand narrative, but it still needs live market utilization, risk-parameter, loop-leverage, and CHIP value-capture follow-up. Sources: https://x.com/USDai_Official/status/2074945329095639400 and https://x.com/USDai_Official/status/2074960738683367540
 
 - 2026-07-06 — USD.AI announced a new $11.3M loan for 32 B200 Blackwell servers / 256 GPUs now online in Texas, with capital released from escrow and sUSDai yield increasing from 7% to 11.5% APY; the same recap also cited a $98.1M largest loan to date, $20M cumulative yield, the $100M Fluid sUSDai liquidity facility, and the $300M APAC compute-financing JV. This is a material loan-book/yield update, but still needs follow-up on borrower concentration, escrow attestations, default/delinquency status, and how CHIP captures economics. Sources: https://x.com/USDai_Official/status/2074153968973037851 and https://x.com/USDai_Official/status/2074114347148927431
 

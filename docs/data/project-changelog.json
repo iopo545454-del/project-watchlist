@@ -1,5 +1,97 @@
 [
   {
+    "date": "2026-07-08T22:18:01Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "official update",
+    "summary": "USD.AI announced new AUSD borrow markets for sUSDai on Morpho with up to 60% max looped APY and reiterated the AI-compute credit spread thesis; useful liquidity/yield integration, but live utilization, loop risk, and CHIP economics remain unresolved.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/USDai_Official/status/2074945329095639400",
+    "last_scanned": "2026-07-08T22:18:01Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Builds on prior PrismFi/Pendle/Fluid sUSDai integrations and the July 6 loan/yield step-up; this adds another borrow/loop venue but no new loan-book cashflow, default data, or CHIP fee-routing change.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "$100M sUSDai DEX Liquidity Facility with Fluid / DeFi liquidity integrations"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify live market utilization, APY source, leverage risk, and CHIP value capture."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T22:18:01Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "official update",
+    "summary": "Venice added Grok 4.5 private access and Seedream 5.0 Pro anonymous image access, expanding the model/product surface without a disclosed VVV burn, staking, pricing, or usage change.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/AskVenice/status/2074924384674783574",
+    "last_scanned": "2026-07-08T22:18:01Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "Routine model launches are an established Venice pattern; these are notable model additions after the July 1 emissions cut and Series A, but no new burn/emission ratio, API revenue, or staking-demand metric was disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "New frontier/coding model launches in Venice"
+      },
+      {
+        "type": "open_question",
+        "ref": "Which model/API launches actually drive revenue rather than engagement-only usage?"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T22:18:01Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "verification update",
+    "summary": "Octra co-founder Alex apologized for a rushed challenge/PoC release, said GPT had been used against internal policy, and clarified the early-2024 PoC is not production code; this is a security-process credibility note rather than a confirmed production exploit.",
+    "source": "X/Twitter founder/team account",
+    "url": "https://x.com/octralex/status/2074891420188447200",
+    "last_scanned": "2026-07-08T22:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Extends the existing security/TAPE-verifier monitoring thread after June encrypted-balance disclosures; it does not add a new production incident or ship the verifier/node release.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Encrypted-balance proof-verification disclosure + TAPE verifier migration"
+      },
+      {
+        "type": "open_question",
+        "ref": "Watch reviewed PoC/whitepaper/verifier artifacts and node-release timing."
+      }
+    ]
+  },
+  {
+    "date": "2026-07-08T22:18:01Z",
+    "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+    "slug": "09-iota-sn9",
+    "type": "official update",
+    "summary": "IOTA_SN9 showed Train at Home runs with stable loss reduction on consumer-grade Apple hardware and cited 217 devices across 22 countries, strengthening the heterogeneous consumer-hardware training thesis pending dashboard/reward verification.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/IOTA_SN9/status/2074886501125787897",
+    "last_scanned": "2026-07-08T22:18:01Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Adds live participation/quality context after the June ResBM/Orion notes; no subnet-emissions change, released checkpoint, or monetized training demand was disclosed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Training at Home public app for IOTA compute contributors"
+      },
+      {
+        "type": "metric",
+        "ref": "TAH active devices/countries, training loss, rewards, and subnet metrics."
+      }
+    ]
+  },
+  {
     "date": "2026-07-08T18:11:09Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",

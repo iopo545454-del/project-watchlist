@@ -1,5 +1,126 @@
 [
   {
+    "run_id": "scan-20260708T221801Z",
+    "started_at": "2026-07-08T22:18:01Z",
+    "completed_at": "2026-07-08T22:29:01Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T18:14:57Z",
+      "until": "2026-07-08T22:18:01Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "OCT / Octra",
+      "IOTA — Macrocosmos Bittensor Subnet 9"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 4,
+      "material_entries": 3,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog. Routine metric refresh files were reverted rather than committed, including suppressed POD metrics.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/USDai_Official/status/2074945329095639400",
+        "summary": "USD.AI announced AUSD borrow markets for sUSDai on Morpho with up to 60% max looped APY.",
+        "decision": "Added latest/changelog entry as liquidity/yield integration; follow live utilization, loop risk, and CHIP economics."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/AskVenice/status/2074924384674783574",
+        "summary": "Venice added Grok 4.5 private access and Seedream 5.0 Pro anonymous access.",
+        "decision": "Added product-surface entry; no burn/emission/staking metric changed."
+      },
+      {
+        "project": "OCT / Octra",
+        "source": "X/Twitter founder/team account",
+        "url": "https://x.com/octralex/status/2074891420188447200",
+        "summary": "Octra co-founder apologized for a rushed challenge/PoC release and clarified it was not production code.",
+        "decision": "Added verification/security-process note tied to existing TAPE/node-release diligence."
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/IOTA_SN9/status/2074886501125787897",
+        "summary": "IOTA_SN9 showed stable Train at Home runs and cited 217 devices across 22 countries.",
+        "decision": "Added usage/technical-progress entry; monitor dashboard, rewards, and training evidence."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team chunks covered all non-suppressed tracked projects. Other observed items were routine Bankr token launches/trade explanations, NEAR promotional roadmap/Delphi framing, Derive duplicate v3 teaser already logged, Chutes duplicate amplification, Akash/Virtuals comments, and broad decentralized-training/investor narrative without project-specific durable changes.",
+        "decision": "Logged four source-proximate project-information updates; no unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For USD.AI, verify live AUSD/sUSDai Morpho utilization, APY source, loop risk, and whether incremental liquidity changes CHIP governance/value capture.",
+      "For Venice, check whether Grok 4.5/Seedream usage appears in API, staking-capacity, burn, or revenue metrics.",
+      "For Octra, watch reviewed PoC/whitepaper/TAPE verifier artifacts and node-release timing after the process-credibility clarification.",
+      "For IOTA_SN9, verify Train at Home device count, reward economics, dashboard loss curves, and any public model/checkpoint output.",
+      "Carry forward prior unresolved checks for Bankr staking/OKT utility, MetaDAO Credible July 13 raise, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass July 7 recap, Chutes Parallax technical details, and Derive v3 release notes."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new entries labeled USD.AI=medium, Venice=low, Octra=medium, IOTA_SN9=medium."
+  },
+  {
     "run_id": "scan-20260708T181109Z",
     "started_at": "2026-07-08T18:11:09Z",
     "completed_at": "2026-07-08T18:14:57Z",

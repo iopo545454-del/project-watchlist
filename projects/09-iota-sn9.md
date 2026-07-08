@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-07-08T22:18:01Z
 ---
 
 # IOTA — Macrocosmos Bittensor Subnet 9
@@ -13,6 +13,8 @@ last_updated: 2026-06-23T21:46:11Z
 - Built by Macrocosmos, which also operates other Bittensor subnets.
 
 ## Latest scan notes
+
+- 2026-07-08 — Official IOTA_SN9 showcased live Train at Home runs with stable loss reduction on consumer-grade Apple hardware and cited 217 devices across 22 countries, while separately tying NVIDIA RTX Spark-style consumer AI hardware to IOTA’s heterogeneous-training thesis. This is a useful usage/technical-progress datapoint, but needs dashboard and reward/economics follow-up. Sources: https://x.com/IOTA_SN9/status/2074886501125787897 and https://x.com/IOTA_SN9/status/2074886481286697058
 
 - 2026-06-22 — Official IOTA_SN9 said AI Research Lead Dr. Alan Aboudib presented ResBM at the Pluralis Protocol Learning Workshop, framing Residual Bottleneck Models as the low-bandwidth pipeline-parallel backbone for Train at Home and Orion-100B; Macrocosmos also scheduled a Hash Rate podcast on IOTA/Orion-100B/Apex/hackathon. Sources: https://x.com/IOTA_SN9/status/2069097814873821657 and https://x.com/MacrocosmosAI/status/2069086571958067257
 

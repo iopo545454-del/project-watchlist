@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-02T04:59:41Z
+last_updated: 2026-07-08T22:18:01Z
 ---
 
 # VVV / Venice AI
@@ -75,6 +75,8 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 
 ## Latest scan notes
+
+- 2026-07-08 — Official Venice said Grok 4.5 is available privately on Venice and Seedream 5.0 Pro by BytePlus is live with anonymous access. These are product-surface/model-availability updates that matter if they drive paid API usage, staking-for-capacity demand, or burn growth; by themselves they do not change VVV emissions or buyback mechanics. Sources: https://x.com/AskVenice/status/2074924384674783574 and https://x.com/AskVenice/status/2074980587979342155
 
 - 2026-07-02 — Founder Erik Voorhees announced Venice raised a $65M Series A led by Dragonfly at a $1B post-money equity valuation; investors received equity plus a vesting 1.5M VVV grant and 5M VVV warrants, while Venice said it chose equity instead of selling treasury VVV, remains profitable, and will use proceeds for datacenter/GPU vertical integration, growth, hiring and acquisitions. Source: https://x.com/ErikVoorhees/status/2072336114950545755
 - 2026-07-01 — Official Venice said VVV annual emissions have been reduced from 4M to 3M tokens/year, the third planned cut after May and June reductions, and reiterated the goal of net-deflationary VVV when burns exceed emissions; verify the onchain/emissions dashboard and next burn math. Source: https://x.com/AskVenice/status/2072408045007573141

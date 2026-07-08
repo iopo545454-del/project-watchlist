@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-02T09:15:02Z
+last_updated: 2026-07-08T22:18:01Z
 ---
 
 # OCT / Octra
@@ -50,6 +50,8 @@ last_updated: 2026-07-02T09:15:02Z
 - Community has many unofficial guides/hubs; avoid wallet links unless reached from `octra.org`, `docs.octra.org` or `@octra`.
 
 ## Latest scan notes
+
+- 2026-07-08 — Octra co-founder/team account `@octralex` addressed criticism of a challenge/PoC release, took responsibility for rushing it and using GPT despite an internal zero-LLM policy for important code, and clarified the published PoC was an early-2024 experimental version not used in production. This is a credibility/security-process note rather than a new exploit, but it keeps the TAPE/node-release diligence thread active. Source: https://x.com/octralex/status/2074891420188447200
 
 - 2026-07-02 — Co-founder/team account `@octralex` said Octra is compiling a proper whitepaper and pointed to `@nebulayer` publishing still-WIP Lean 4 formal verification work for Octra’s HFHE scheme that will feed into the whitepaper. Treat this as a technical-credibility/docs catalyst, not a shipped node/listing event; next checks are the actual whitepaper, reproducible verification artifacts, and whether TAPE/node release timing changes. Source: https://x.com/octralex/status/2072604940896280872
 
