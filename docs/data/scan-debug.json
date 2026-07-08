@@ -1,5 +1,142 @@
 [
   {
+    "run_id": "scan-20260708T014639Z",
+    "started_at": "2026-07-08T01:46:39Z",
+    "completed_at": "2026-07-08T01:46:39Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-07T21:30:13Z",
+      "until": "2026-07-08T01:46:39Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Previous next_checks",
+        "source": "scan-debug carry-forward",
+        "url": "docs/data/scan-debug.json",
+        "summary": "Previous run asked to continue NEAR Confidential Intents dashboard/API and routine official/team source checks. This run used 2026-07-07T21:30:13Z as cutoff, refreshed direct metrics, and scanned official/team X sources across tracked projects except suppressed POD.",
+        "decision": "Addressed for this scan window; NEAR dashboard/API adoption checks carried forward."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no configured materiality threshold was promoted to changelog, and routine metric file refreshes were not committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official/project account",
+        "url": "https://x.com/crediblefin/status/2074580495955111983",
+        "summary": "Credible announced a July 13 MetaDAO curated raise after $700M+ processed volume and a $3.5M revenue run rate, describing CRED as an ownership coin with legally binding IP/treasury rights secured by MetaDAO governance.",
+        "decision": "Logged as a new MetaDAO catalyst/latest item because it adds a scheduled, high-traction raise to the platform funnel."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter official MetaDAO account",
+        "url": "https://x.com/MetaDAOProject/status/2074581151268909553",
+        "summary": "MetaDAO confirmed Credible as the next curated raise on July 13.",
+        "decision": "Included as official confirmation for the Credible catalyst."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter ecosystem media account",
+        "url": "https://x.com/ownershipfm/status/2074632675823145109",
+        "summary": "Ownership Report #10 covered Credible raise terms, allocations, team FDV milestone vesting, revenue/treasury flows, take rate, and capital use.",
+        "decision": "Used as source-proximate context for what to verify next; not treated as direct META value-accrual disclosure."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official/founder accounts",
+        "url": "https://x.com/gitlawb/status/2074651876038185359",
+        "summary": "Official Gitlawb posted “we are so back baby!” and founder replied positively; replies speculated something large is coming.",
+        "decision": "Too vague for durable update or watch item without verifiable product/date/terms; no changelog entry."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/gregosuri/status/2074648866344063434",
+        "summary": "Founder replied that supply is tight but some capacity may be coming online in a thread about GPU-cloud availability.",
+        "decision": "Credible weak capacity signal but no concrete quantity, marketplace listing, revenue, or official capacity announcement; no changelog entry."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2074649740327735690",
+        "summary": "Official NEAR described its user-owned AI stack vision following Confidential Intents GA.",
+        "decision": "Strategic narrative continuation of prior NEAR entries; no new separate changelog entry."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter Eigen Labs account",
+        "url": "https://x.com/eigenlabs/status/2074625550489141646",
+        "summary": "Eigen Labs said the ECDSA.fail leaderboard is still moving and now 49.2% ahead of Google’s classified circuit.",
+        "decision": "Useful benchmark update but still research/benchmark progress without tokenomics, revenue, or live product-distribution impact; no changelog entry."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For MetaDAO, check the Credible July 13 raise page/app/proposal for final raise size, allocations, settlement, CRED legal/treasury-rights documentation, secondary liquidity, and any platform fee/value accrual to META.",
+      "For NEAR, keep checking revenue.near.org/API and NEAR Intents dashboards for confidential TVL toward the $70M NEAR@3.33 trigger, fee/revenue movement, route volume, and named agent/partner integrations.",
+      "For Akash, watch official Akash/Greg Osuri posts and marketplace dashboards for concrete new GPU capacity, utilization, pricing, or customer/revenue evidence after the “supply is tight” signal."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; new MetaDAO entry labeled medium."
+  },
+  {
     "run_id": "scan-20260707T213013Z",
     "started_at": "2026-07-07T21:30:13Z",
     "completed_at": "2026-07-07T21:30:13Z",

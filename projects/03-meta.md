@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-01T20:46:14Z
+last_updated: 2026-07-08T01:46:39Z
 ---
 
 # META / MetaDAO
@@ -28,6 +28,8 @@ last_updated: 2026-07-01T20:46:14Z
 - Colosseum tie-ins matter because Solana hackathon/team distribution can feed MetaDAO ownership-coin launches.
 
 ## Latest scan notes
+
+- 2026-07-08 — Credible announced it will run the next curated MetaDAO raise on July 13 after processing $700M+ volume and reaching a $3.5M revenue run rate; Ownership Report #10 added source-proximate context on CRED ownership-coin terms, allocations, FDV milestone vesting, revenue/treasury flows, take rate, and capital use. This strengthens the “repeat high-quality raises” catalyst, but META value accrual/platform fees still need direct verification. Sources: https://x.com/crediblefin/status/2074580495955111983, https://x.com/MetaDAOProject/status/2074581151268909553, https://x.com/ownershipfm/status/2074632675823145109
 
 - 2026-07-01 — Proph3t reported the live Laso Finance raise at $14,272,696 from 311 contributors and said it is oversubscribed; Ownership FM also posted a founder clip explaining the first Laso proposal around weekend card-issuer stock/buffer funding. This is a stronger MetaDAO capital-formation demand signal than the earlier $5.13M note, but final accepted amount/allocation/fees still need verification. Sources: https://x.com/metaproph3t/status/2072418035198263559, https://x.com/ownershipfm/status/2072419608368464158
 - 2026-07-01 — MetaDAO-affiliated `@0xSrMessi` said his X account was compromised, connected to Pumpfun, and used to create coins; he warned users not to click links while access/revocation was unresolved. Treat this as an account-security watch item, not a protocol exploit, unless official MetaDAO/founder accounts corroborate broader impact. Source: https://x.com/0xSrMessi/status/2072408682483024325
@@ -70,6 +72,7 @@ last_updated: 2026-07-01T20:46:14Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Credible curated raise on MetaDAO | Confirmed / upcoming product event | Credible announced a July 13 MetaDAO curated raise after $700M+ processed volume and a $3.5M revenue run rate; MetaDAO confirmed it as the next curated raise; Ownership Report #10 covers raise terms, allocations, FDV milestone vesting, revenue/treasury flows, take rate, and capital use: https://x.com/crediblefin/status/2074580495955111983, https://x.com/MetaDAOProject/status/2074581151268909553, https://x.com/ownershipfm/status/2074632675823145109 | July 13, 2026 | Adds another high-traction fintech/agentic-commerce-adjacent ownership-coin launch to MetaDAO's curated raise funnel. | A clean Credible raise would strengthen MetaDAO's repeat-founder/repeat-raise thesis and give a better test case for legal ownership rights, treasury rights, and revenue-flow disclosure than smaller launches; unclear fees or weak settlement would cap the META read-through. | Watch final raise size, accepted allocation, wallet distribution, settlement, secondary liquidity, exact platform fees/value accrual to META, and whether CRED legal/treasury rights are documented in app/proposal text. |
 | 2026-07-01 | MetaDAO-affiliated `@0xSrMessi` said his X account was compromised and used to connect to Pumpfun/create coins, warning users not to click links while revocation/access was unresolved. | https://x.com/0xSrMessi/status/2072408682483024325 | Medium | Unverified | Account-compromise risk can mislead users around MetaDAO-adjacent launch/security discussions even if it is not a protocol exploit. | Re-check `@0xSrMessi`, official MetaDAO/founder accounts, and any postmortem/deletion/confirmation; downgrade to stale once account recovery is confirmed and no broader impact appears. |
 | Laso Finance curated raise on MetaDAO | Confirmed / active product event | Official MetaDAO said the raise is live for four days and Proph3t later reported $5,132,914 committed: https://x.com/MetaDAOProject/status/2072054410742751387 and https://x.com/metaproph3t/status/2072104030009180518 | Live 2026-06-30 through early July 2026 | Turns the prior scheduled catalyst into an active high-demand raise on MetaDAO’s capital-formation surface. | A clean, large Laso raise can reinforce MetaDAO as Solana’s ownership-coin venue; weak settlement, poor allocation quality, or unclear fees would cap the META read-through. | Watch final committed/accepted amount, wallet distribution, allocation mechanics, settlement, secondary liquidity, platform fee disclosure, and whether any economics accrue to META. |
 | Agentic-commerce founder raise on MetaDAO | Confirmed / live raise signal | Proph3t said an unnamed `@huntermmonk` agentic-spending company is raising on MetaDAO at a $3M valuation and was already oversubscribed: https://x.com/metaproph3t/status/2070660454670819687; https://x.com/metaproph3t/status/2070661129257550087 | June 27, 2026 / live-or-imminent | Adds a fresh, founder-quality raise to the MetaDAO ownership-coin/capital-formation pipeline. | If execution/settlement is clean, it strengthens MetaDAO as a venue for small high-demand founder raises and can pull more Solana/internet-capital-markets attention into META. | Verify the project name, app listing, raise mechanics, final amount, participant quality, post-raise liquidity, and whether any fees/value accrue to META. |
@@ -101,6 +104,8 @@ last_updated: 2026-07-01T20:46:14Z
 | https://x.com/MetaDAOProject/status/2054911529783382433 | July 2026 Owners Meeting catalyst source |
 | https://x.com/MetaDAOProject/status/2065553991639941405 | META-039 / Ownership Capital catalyst source |
 | https://x.com/metaproph3t/status/2070660454670819687 | Co-founder signal on a live/near-live agentic-commerce raise at a $3M valuation; track for app listing and final outcome |
+| https://x.com/crediblefin/status/2074580495955111983 | Credible official announcement for July 13 MetaDAO curated raise; includes $700M+ volume and $3.5M revenue run-rate context |
+| https://x.com/ownershipfm/status/2074632675823145109 | Ownership Report #10; detailed source-proximate breakdown of Credible raise terms, allocations, revenue/treasury flow, take rate, and capital use |
 
 ## Risks
 
