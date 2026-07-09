@@ -1,5 +1,120 @@
 [
   {
+    "run_id": "scan-20260709T064008Z",
+    "started_at": "2026-07-09T06:40:08Z",
+    "completed_at": "2026-07-09T06:46:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T02:37:16Z",
+      "until": "2026-07-09T06:46:00Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "META / MetaDAO"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects. Metric changes were routine/non-material for this scan, and generated metric churn was reverted rather than committed, including suppressed POD metric noise.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter co-founder account",
+        "url": "https://x.com/metaproph3t/status/2075078768012730638",
+        "summary": "Proph3t said the Credible raise page is live with $2.315M already soft-committed toward a $4M max raise.",
+        "decision": "Added Latest/changelog/catalyst update because it advances the already-tracked July 13 Credible catalyst from announced to live pre-commit demand; still verify final accepted allocation, settlement, fees, and META value accrual."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter ecosystem account",
+        "url": "https://x.com/ownershipfm/status/2075090457185452039",
+        "summary": "Ownership FM shared Jurassic Finance context about tokenizing dinosaur fossils/onchain liquidity as an ownership-coin case study.",
+        "decision": "Included as source-proximate context in the MetaDAO Latest note, but not a separate durable changelog item because it is ecosystem thesis support rather than a MetaDAO protocol/economic update."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter founder account",
+        "url": "https://x.com/sreeramkannan/status/2075049981329977402",
+        "summary": "Sreeram Kannan amplified the FrontierCS/open agentic research partnership already logged from Eigen Labs in the previous scan.",
+        "decision": "No duplicate changelog entry."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter ecosystem search",
+        "url": "https://x.com/gitlawbmerc/status/2075107490010693640",
+        "summary": "GitLawb Mercenary/community builder activity showed browser/Playwright agent capability and third-party integrations around GitLawb/OpenClaude/Zero.",
+        "decision": "Watched as ecosystem activity, but no canonical GitLawb/team post or token/economic change; no changelog entry."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team X chunks covered all non-suppressed tracked projects from the scan window. Aside from MetaDAO/Credible, observed items were no-post results, duplicate Eigen FrontierCS amplification, Sam Altman general OpenAI posts not material to Worldcoin, and a Virtuals open-source editor quote without token/liquidity/revenue impact.",
+        "decision": "Logged one source-proximate MetaDAO catalyst update; no new unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For MetaDAO, re-check the Credible raise page and official/founder accounts on/after July 13 for final committed versus accepted amount, allocation quality, settlement, secondary liquidity, platform fees, and any META value-accrual disclosure.",
+      "Carry forward prior unresolved checks for Bankr staking/OKT utility, MetaDAO Credible July 13 raise, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass July 7 recap, Chutes Parallax technical details, Octra verifier artifacts, Venice model usage, USD.AI Morpho utilization, GitLawb leaderboard/premium usage, EigenCloud FrontierCS usage, and IOTA Train at Home metrics."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task for new entries before commit."
+  },
+  {
     "run_id": "scan-20260709T023007Z",
     "started_at": "2026-07-09T02:30:07Z",
     "completed_at": "2026-07-09T02:37:16Z",
