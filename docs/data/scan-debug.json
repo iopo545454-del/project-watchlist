@@ -1,5 +1,96 @@
 [
   {
+    "run_id": "scan-20260709T105059Z",
+    "started_at": "2026-07-09T10:47:52Z",
+    "completed_at": "2026-07-09T10:50:59Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T06:40:08Z",
+      "until": "2026-07-09T10:50:59Z",
+      "lookback": "roughly 4h/default; cutoff from previous changelog/scan-debug timestamp"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 0,
+      "material_entries": 0,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects. Metric movement appeared routine/non-material for this scan; generated metric churn, including suppressed POD history noise, was reverted rather than committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team X account chunks covered all non-suppressed tracked projects from the scan window. x_search returned no qualifying official/team posts for the window.",
+        "decision": "No dossier/changelog updates."
+      },
+      {
+        "project": "Tracked projects weak-signal scan",
+        "source": "X/Twitter keyword/event search via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Event-keyword searches across non-suppressed tracked project names/tickers for launch/release/mainnet/listing/integration/governance/funding/partnership/buyback/staking/rewards/exploit/outage returned no qualifying posts.",
+        "decision": "No new unverified watch items."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Carry forward prior unresolved checks for MetaDAO Credible final accepted allocation/settlement/fees/META value accrual, Bankr staking/OKT utility, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass recap/follow-through, Chutes Parallax technical details, Octra verifier artifacts, Venice model usage, USD.AI Morpho utilization, GitLawb leaderboard/premium usage, EigenCloud FrontierCS usage, and IOTA Train at Home metrics."
+    ],
+    "notes": "No new/modified changelog entries in this run; independent tagger still inspected changelog before commit."
+  },
+  {
     "run_id": "scan-20260709T064008Z",
     "started_at": "2026-07-09T06:40:08Z",
     "completed_at": "2026-07-09T06:46:00Z",
