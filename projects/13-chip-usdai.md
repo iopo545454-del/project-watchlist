@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-08T22:18:01Z
+last_updated: 2026-07-09T23:18:33Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-08T22:18:01Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-09 — USD.AI published a compute-credit thesis post/article arguing there is a roughly $2T financing gap in the AI compute middle market because traditional lenders miss unfamiliar GPU collateral and borrower structures. This is useful market-thesis/source material for the CHIP/USD.AI credit narrative, but it is not a new loan, APY, default, governance, or token value-capture update. Sources: https://x.com/USDai_Official/status/2075310919429804417 and https://x.com/USDai_Official/status/2075297871088308226
 
 - 2026-07-08 — USD.AI announced new `@withAUSD` borrow markets for sUSDai on Morpho with up to 60% max looped APY, plus a same-day framing post that AI-compute middle-market credit offers IG-like security with 400–600 bps extra yield because many lenders avoid unfamiliar collateral. This is a meaningful DeFi-liquidity/yield integration and lending-demand narrative, but it still needs live market utilization, risk-parameter, loop-leverage, and CHIP value-capture follow-up. Sources: https://x.com/USDai_Official/status/2074945329095639400 and https://x.com/USDai_Official/status/2074960738683367540
 

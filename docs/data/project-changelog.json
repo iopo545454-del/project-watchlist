@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-07-09T23:18:33Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "official update",
+    "importance": "high",
+    "summary": "Official Venice announced its latest discretionary VVV burn, about $267k at burn time and described as the largest burn yet, with dashboard and Base transaction links in follow-ups; this directly advances the revenue-linked buyback/burn catalyst rather than only expanding model availability.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/AskVenice/status/2075312526393249846",
+    "last_scanned": "2026-07-09T23:18:33Z",
+    "novelty": "new",
+    "delta": "Prior Venice entries in this repo tracked the July 1 emissions cut to 3M VVV/year and model launches without token-economic deltas; this adds a concrete burn amount ($267k) to compare against emissions and prior burn cadence.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Revenue-linked buyback/burn program"
+      },
+      {
+        "type": "open_question",
+        "ref": "burn dashboard machine-readability and burn-vs-emissions math"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09T23:18:33Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Official NEAR said Hyperliquid perps liquidity is accessible from near.com with 35+ chain deposits/conversion and 50+ markets up to 40x, reinforcing near.com/NEAR Intents as a cross-chain trading front end.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/NEARProtocol/status/2075327108688081403",
+    "last_scanned": "2026-07-09T23:18:33Z",
+    "novelty": "update",
+    "delta": "NEAR already had Hyperliquid/perps and near.com Intents entries from late June/early July; this is a refreshed distribution/product proof point, but still lacks routed volume, revenue-dashboard movement, or tokenomics change.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "NEAR Intents as cross-chain / agent-market money rail"
+      },
+      {
+        "type": "metric",
+        "ref": "revenue.near.org routed volume/front-end fees to verify"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09T23:18:33Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Octra launched open HFHE challenge v2 with 500,000 OCT in a wallet and another 500,000 OCT reward for key recovery, after team accounts said v1 had a brute-forceable path and v2 removes it; this is a technical/security-credibility signal tied to the verifier diligence thread.",
+    "source": "X/Twitter official/team accounts",
+    "url": "https://x.com/octra/status/2075336875322032268",
+    "last_scanned": "2026-07-09T23:18:33Z",
+    "novelty": "new",
+    "delta": "Prior Octra notes tracked the June encrypted-balance proof-verification disclosure, TAPE verifier dependency, and a July 8 process/PoC criticism response; this adds a new public 1M OCT HFHE challenge but no production node/listing milestone.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Encrypted-balance proof-verification disclosure + TAPE verifier migration"
+      },
+      {
+        "type": "open_question",
+        "ref": "formal HFHE whitepaper / reproducible verification artifacts"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09T23:18:33Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "thesis update",
+    "importance": "low",
+    "summary": "USD.AI published a compute-credit thesis post/article framing a roughly $2T AI-compute middle-market financing gap that traditional lenders miss; useful context for the GPU-backed credit narrative, but not a new loan, APY, default, governance, or CHIP value-capture change.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/USDai_Official/status/2075310919429804417",
+    "last_scanned": "2026-07-09T23:18:33Z",
+    "novelty": "update",
+    "delta": "Follows the July 6 $11.3M Texas B200 loan/APY step-up and July 8 Morpho borrow-market note; this adds market-size narrative, not fresh deployed capital or protocol economics.",
+    "relates_to": [
+      {
+        "type": "thesis",
+        "ref": "GPU-backed private credit / AI compute financing gap"
+      }
+    ]
+  },
+  {
     "date": "2026-07-09T19:10:19Z",
     "project": "TAO / Bittensor",
     "slug": "11-tao-bittensor",

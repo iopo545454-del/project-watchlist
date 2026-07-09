@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-07T21:30:13Z
+last_updated: 2026-07-09T23:18:33Z
 ---
 
 # NEAR Protocol
@@ -52,6 +52,8 @@ last_updated: 2026-07-07T21:30:13Z
 - AI narrative is prominent but should be tracked separately from core L1 usage metrics.
 
 ## Latest scan notes
+
+- 2026-07-09 — Official NEAR said Hyperliquid perps liquidity is now accessible from near.com: users can bridge from 35+ chains, convert on deposit, and trade 50+ markets up to 40x with one account. This reinforces near.com/NEAR Intents as a cross-chain trading front end, but token/value impact still depends on routed volume, front-end fees, partner revenue share, and whether Hyperliquid flow appears in `revenue.near.org`. Source: https://x.com/NEARProtocol/status/2075327108688081403
 
 - 2026-07-07 — NEAR DevHub said **Confidential Intents are live on mainnet for AI agents**, with wallet registration via a simple skill/markdown file, confidential swaps with pre-commit quotes, private agent-to-agent transfers, cross-chain deposits/withdrawals, gasless execution, TEE-held keys, spending limits, and whitelists. Official NEAR also re-highlighted NEAR@3.33 qualification: hold $100+ in confidential balance and make one confidential swap before Confidential Intents reaches $70M TVL. This is an agent-specific follow-up to the GA launch, not a fresh tokenomics or revenue-dashboard update; next checks are DevHub docs/templates, named agent integrations, TVL toward $70M, and fee/revenue movement. Sources: https://x.com/NEARDevHub/status/2074586616425816502 and https://x.com/NEARProtocol/status/2074582972204711969
 - 2026-07-07 — Official NEAR announced **Confidential Intents general availability** for builders/dApps through the NEAR Intents 1Click Swap API: existing 1Click integrations can add a `confidential` parameter and new teams can enable privacy-preserving execution without extra infrastructure. The thread and blog cited >$1.5B in ZEC settled across NEAR Intents, 42% of near.com volume using Confidential Mode shortly after launch, and daily confidential TVL above $30M. This completes the earlier July 7 reveal watch item and strengthens the Intents/privacy catalyst, but token/value impact still depends on sustained fee capture, partner integration, and live `revenue.near.org` movement. Sources: https://x.com/NEARProtocol/status/2074515816670781812, https://www.near.org/blog/announcing-general-availability-of-confidential-intents, and https://www.near.org/blog/how-confidential-intents-works

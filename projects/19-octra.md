@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-08T22:18:01Z
+last_updated: 2026-07-09T23:18:33Z
 ---
 
 # OCT / Octra
@@ -50,6 +50,8 @@ last_updated: 2026-07-08T22:18:01Z
 - Community has many unofficial guides/hubs; avoid wallet links unless reached from `octra.org`, `docs.octra.org` or `@octra`.
 
 ## Latest scan notes
+
+- 2026-07-09 — Octra launched open HFHE challenge v2: a wallet holds 500,000 OCT and recovery of its private key earns another 500,000 OCT, for a 1M OCT bounty; co-founder/team posts said v1 had a brute-forceable flaw and v2 removes that path. This is a credible security/technical-credibility signal in the same diligence lane as the TAPE/verifier work, not a listing or production-network milestone. Sources: https://x.com/octra/status/2075336875322032268, https://x.com/octralex/status/2075338455639364025, and https://x.com/octrabunch/status/2075346412384952744
 
 - 2026-07-08 — Octra co-founder/team account `@octralex` addressed criticism of a challenge/PoC release, took responsibility for rushing it and using GPT despite an internal zero-LLM policy for important code, and clarified the published PoC was an early-2024 experimental version not used in production. This is a credibility/security-process note rather than a new exploit, but it keeps the TAPE/node-release diligence thread active. Source: https://x.com/octralex/status/2074891420188447200
 

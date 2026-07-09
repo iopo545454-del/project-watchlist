@@ -1,5 +1,137 @@
 [
   {
+    "run_id": "scan-20260709T231833Z",
+    "started_at": "2026-07-09T23:18:33Z",
+    "completed_at": "2026-07-09T23:18:33Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T19:10:19Z",
+      "until": "2026-07-09T23:18:33Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "VVV / Venice AI",
+      "NEAR Protocol",
+      "OCT / Octra",
+      "CHIP / USD.AI"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 4,
+      "material_entries": 4,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still shows existing Pluralis, Ambient, and EigenCloud intake issues already represented in the index, so no new intake dossier was created.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/AskVenice/status/2075312526393249846",
+        "summary": "Official Venice announced a discretionary VVV burn of about $267k, its largest yet, with follow-up burn dashboard/Base tx links.",
+        "decision": "logged as official update and Latest note because it directly relates to the VVV buyback/burn catalyst"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/NEARProtocol/status/2075327108688081403",
+        "summary": "Official NEAR promoted Hyperliquid perps access through near.com with 35+ chain deposits/conversion and 50+ markets up to 40x.",
+        "decision": "logged as product/distribution update; watch revenue dashboard and routed volume"
+      },
+      {
+        "project": "OCT / Octra",
+        "source": "X/Twitter official/team accounts",
+        "url": "https://x.com/octra/status/2075336875322032268",
+        "summary": "Octra launched HFHE challenge v2 with a 1M OCT total bounty structure after v1 had a brute-forceable flaw.",
+        "decision": "logged as security/technical-credibility update tied to the verifier diligence thread"
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/USDai_Official/status/2075310919429804417",
+        "summary": "USD.AI posted/article-framed a roughly $2T AI-compute middle-market financing gap.",
+        "decision": "logged as thesis context, not a new deployed-capital or token-economics event"
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2075354330652176488",
+        "summary": "Official GEODNET posted a GEO-MEASURE customer/use-case video from a farmer in Japan.",
+        "decision": "not logged; promotional/product-use content but no metric, contract, partnership, revenue, or token change"
+      },
+      {
+        "project": "MetaDAO / Bankr / Grass / Akash / Worldcoin / BIO / EigenCloud / Compute Horde / Lium and other checked projects",
+        "source": "X/Twitter tracked accounts",
+        "url": "docs/data/index.json",
+        "summary": "Tracked-account searches surfaced no new official material project-info updates above threshold in this 4h window, aside from casual replies/promotional/event posts already filtered.",
+        "decision": "no changelog entry"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {
+        "project": "VVV / Venice AI",
+        "check": "Verify the burn dashboard/Base transaction, compare the $267k burn against current 3M VVV/year emissions and prior burn cadence, and determine whether the dashboard is machine-readable."
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Check revenue.near.org or underlying APIs for near.com/Hyperliquid routed volume, front-end fees, partner share, and whether confidential/perps activity changed after the July 9 post."
+      },
+      {
+        "project": "OCT / Octra",
+        "check": "Monitor HFHE challenge v2 submissions/results plus TAPE verifier, formal whitepaper, and node-release follow-through."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "check": "Look for the linked compute-credit article/report details and any live loan-book, utilization, default, or CHIP value-capture data that substantiates the $2T financing-gap thesis."
+      }
+    ],
+    "notes": "Changelog importance labels were applied by an independent delegate_task tagger before commit."
+  },
+  {
     "run_id": "scan-20260709T191019Z",
     "started_at": "2026-07-09T19:10:19Z",
     "completed_at": "2026-07-09T19:10:19Z",
