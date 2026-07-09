@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-07-09T14:53:22Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Official Bankr dev update shipped advanced order types on Robinhood Chain (limit, stop/trailing, DCA, TWAP), default price-impact protection, Robinhood Chain airdrops, Glidepath support, and Discover/route-provider QoL updates; product surface widened, but BNKR fee capture and live usage remain unverified.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/bankrbot/status/2075203322764812411",
+    "last_scanned": "2026-07-09T14:53:22Z",
+    "novelty": "update",
+    "delta": "Builds on the July 8 full Robinhood Chain integration note by adding concrete advanced-order, airdrop, Glidepath, and safety features; no disclosed volume, fees, BNKR staking/reward linkage, or Club economics change.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain execution / agent dev update / skill catalog"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify Robinhood Chain usage/volume and whether Bankr/BNKR/Club captures any economics."
+      }
+    ]
+  },
+  {
     "date": "2026-07-09T06:40:08Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",

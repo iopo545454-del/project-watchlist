@@ -1,5 +1,106 @@
 [
   {
+    "run_id": "scan-20260709T145322Z",
+    "started_at": "2026-07-09T14:53:22Z",
+    "completed_at": "2026-07-09T14:55:15Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T10:50:59Z",
+      "until": "2026-07-09T14:55:15Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "BANKR / BankrCoin"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects. No metric movement crossed materiality; generated metric churn, including suppressed POD history noise, was reverted rather than committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/bankrbot/status/2075203322764812411",
+        "summary": "Official Bankr dev update shipped advanced Robinhood Chain orders, price-impact protection, Robinhood Chain airdrops, Glidepath support, and Discover/route-provider QoL updates.",
+        "decision": "Add Latest/dossier/changelog official update; treat as medium product-surface signal pending usage and BNKR/Club economics."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team X account chunks covered all non-suppressed tracked projects for the scan window. Aside from Bankr, x_search returned no qualifying official/team posts above the materiality threshold.",
+        "decision": "No other dossier/changelog updates."
+      },
+      {
+        "project": "Tracked projects weak-signal scan",
+        "source": "X/Twitter keyword/event search via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Event-keyword searches across non-suppressed tracked project names/tickers for launch/release/mainnet/listing/integration/governance/funding/partnership/buyback/staking/rewards/exploit/outage found no new high-signal unverified watch items.",
+        "decision": "No new unverified watch items."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Bankr: verify Robinhood Chain advanced-order/airdrop/Glidepath usage, volume, route-provider behavior, and whether fees or access route to BNKR/Bankr Club.",
+      "Carry forward prior unresolved checks for MetaDAO Credible final accepted allocation/settlement/fees/META value accrual, Bankr staking/OKT utility, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass recap/follow-through, Chutes Parallax technical details, Octra verifier artifacts, Venice model usage, USD.AI Morpho utilization, GitLawb leaderboard/premium usage, EigenCloud FrontierCS usage, and IOTA Train at Home metrics."
+    ],
+    "notes": "One new/modified changelog entry was independently tagged by delegate_task; tagger set Bankr official update importance=medium and validated JSON."
+  },
+  {
     "run_id": "scan-20260709T105059Z",
     "started_at": "2026-07-09T10:47:52Z",
     "completed_at": "2026-07-09T10:50:59Z",
