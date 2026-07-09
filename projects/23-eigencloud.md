@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-03T10:03:56Z
+last_updated: 2026-07-09T02:37:16Z
 ---
 
 # EIGEN / EigenCloud
@@ -15,6 +15,7 @@ EigenCloud is the EigenLayer/Eigen Labs team's attempt to extend the original re
 
 ## Latest scan notes
 
+- 2026-07-09 — Eigen Labs/EigenCloud announced a Berkeley/Princeton researcher partnership to launch **open science auto-research challenges on Frontier CS**, with the challenge live globally at https://openfrontiercs.com/ and an ICML-linked paper/context. This extends the recent ecdsa.fail/open-swarm positioning into a live challenge surface, but no EIGEN fee capture, burn, ELIP-12 implementation status, or usage dashboard was disclosed. Sources: https://x.com/eigenlabs/status/2075022637772964100 and https://x.com/eigencloud/status/2075025705986035863
 - 2026-07-03 — Official EigenCloud said an EigenLabs open-swarm project at ecdsa.fail beat Google Quantum AI's private ECDSA result by 47.5% and that the open swarm is still pushing. This is a high-signal research/marketing proof point for EigenCloud/EigenLabs' verifiable/open-agent-science positioning, but not yet evidence of EIGEN fee capture. Sources: https://x.com/eigencloud/status/2072953982029529504, https://x.com/eigencloud/status/2072954128314376603 and https://www.ecdsa.fail/
 - 2026-06-22 — Added neo-cloud comparison numbers: EIGEN market cap around `$200M`; DefiLlama shows EigenCloud/EigenLayer protocol revenue as `$0` but fees/rewards of about `$981` 24h, `$145k` 7d, `$756k` 30d, and `$160.7M` all-time. DefiLlama methodology says all rewards are supplier-side and protocol revenue is zero. Source: https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees
 - 2026-06-22 — Compute-capacity note: EigenCloud/Darkbloom is better framed as verifiable/agent compute and distributed inference than as a CoreWeave-style H100/H200/B200 neo-cloud; no public high-end GPU fleet count was found. Recent public signals referenced ~250 live Darkbloom providers peak and 600M+ tokens served, but not datacenter GPU inventory. Sources: https://x.com/eigenlabs/status/2066591846550343745 and https://x.com/eigencloud/status/2059315711139549229

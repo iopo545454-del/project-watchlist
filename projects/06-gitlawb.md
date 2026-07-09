@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-08T14:01:33Z
+last_updated: 2026-07-09T02:37:16Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-07-08T14:01:33Z
 
 ## Latest scan notes
 
+- 2026-07-09 — Official/team GitLawb posts said GitLawb/OpenClaude was back at the top of OpenRouter’s coding/cloud-agent leaderboard. This improves the prior June #5 / 1.67B-token leaderboard signal and supports the OpenClaude/OpenGateway traction narrative, but it still needs independent dashboard confirmation, duration, paid-versus-free mix, and whether leaderboard usage converts into credits, ads, or `$GITLAWB` demand. Source: https://x.com/i/status/2075008059248963726
 - 2026-07-08 — Official GitLawb said **OpenGateway usage peaked at 555 million inference tokens per hour**. Treat this as source-proximate usage telemetry for OpenGateway/OpenClaude demand rather than audited revenue: it is a large throughput claim, but needs dashboard/API confirmation, duration, unique-user/request count, provider mix, paid-versus-free split, and whether the usage translates into credits, ads, or `$GITLAWB` demand. Source: https://x.com/gitlawb/status/2074855395806601500
 
 - 2026-07-06 — Official GitLawb shipped **OpenClaude v0.22.0** with LSP diagnostics, markdown task reports, branched-session grouping, and 20+ reliability fixes, with a demo video. This is an incremental but relevant OpenClaude developer-workflow release; next checks are whether diagnostics/reporting improve real usage, whether public Playground/OpenClaude stats move, and whether this release connects to paid credits, ads, or `$GITLAWB` demand. Source: https://x.com/gitlawb/status/2073950038729117787

@@ -1,5 +1,117 @@
 [
   {
+    "run_id": "scan-20260709T023007Z",
+    "started_at": "2026-07-09T02:30:07Z",
+    "completed_at": "2026-07-09T02:37:16Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-08T22:29:01Z",
+      "until": "2026-07-09T02:30:07Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "GitlWab / GitLawb / Gitwab",
+      "DRV / Derive Protocol",
+      "EIGEN / EigenCloud"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 3,
+      "material_entries": 3,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects; no metric delta was promoted to changelog, and routine metric file refreshes were reverted rather than committed to avoid non-material churn and suppressed POD updates.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter official/team account",
+        "url": "https://x.com/i/status/2075008059248963726",
+        "summary": "GitLawb/OpenClaude posts claimed a return to the top of OpenRouter coding/cloud-agent rankings.",
+        "decision": "Added Latest/changelog traction entry; verify leaderboard duration, source stats, paid/free mix, and token/credit linkage."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/DeriveXYZ/status/2074982633126371753",
+        "summary": "Derive said HYPE options volume alone more than doubled the platform’s first BTC/ETH billion within six months.",
+        "decision": "Added Latest/changelog metric-context entry tied to HYPE options and fee/buyback monitoring."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/eigenlabs/status/2075022637772964100",
+        "summary": "Eigen Labs/EigenCloud announced Berkeley/Princeton open science auto-research challenges on Frontier CS.",
+        "decision": "Added official update; monitor whether challenges produce usage, fees, dashboards, or EIGEN value capture."
+      },
+      {
+        "project": "Tracked projects official/team X scan",
+        "source": "X/Twitter official/team accounts via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team chunks covered all non-suppressed tracked projects. Other observed items were routine Bankr bot token launches, NEAR posts repeating already-tracked Confidential Intents/roadmap/HSP-027 items, Venice/USD.AI repeats from prior run, Kinetiq giveaway/community engagement, Bio educational thread, Akash commentary, Virtuals Robinhood-chain agent mention, and earlier Chutes technical milestone already logged in adjacent scans.",
+        "decision": "Logged three source-proximate updates; no new unverified watch items added."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "For GitLawb, verify OpenRouter leaderboard rank/duration, public stats, paid-versus-free OpenGateway usage, and whether usage creates credits, ads, or GITLAWB demand.",
+      "For Derive, compare HYPE volume momentum with OI, DefiLlama fees, and weekly DRV buyback size; watch official v3/vault release notes.",
+      "For EigenCloud, check openfrontiercs.com/GitHub/ICML follow-up for active participants, challenge output, fee-paying usage, and any EIGEN fee/burn linkage.",
+      "Carry forward prior unresolved checks for Bankr staking/OKT utility, MetaDAO Credible July 13 raise, NEAR Confidential Intents dashboards/roadmap, Akash capacity evidence, Grass July 7 recap, Chutes Parallax technical details, Octra verifier artifacts, Venice model usage, USD.AI Morpho utilization, and IOTA Train at Home metrics."
+    ],
+    "notes": "Changelog importance independently tagged via delegate_task; latest entries labeled GitLawb=medium, Derive=medium, EigenCloud=medium."
+  },
+  {
     "run_id": "scan-20260708T221801Z",
     "started_at": "2026-07-08T22:18:01Z",
     "completed_at": "2026-07-08T22:29:01Z",

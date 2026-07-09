@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-08T18:11:09Z
+last_updated: 2026-07-09T02:37:16Z
 ---
 
 # DRV / Derive Protocol
@@ -13,6 +13,7 @@ Derive is most worth monitoring when new listed underlyings, collateral types, b
 
 ## Latest scan notes
 
+- 2026-07-09 — Official Derive said it took years to reach the first $1B of BTC/ETH options volume, while **HYPE alone has more than doubled that in six months** with demand still climbing. This strengthens the HYPE-underlying growth vector for Derive’s onchain options thesis, but the tradeable token question remains whether HYPE flow lifts organic fees and weekly DRV buybacks. Source: https://x.com/DeriveXYZ/status/2074982633126371753
 - 2026-07-08 — Derive CEO Nick Forster criticized Binance’s covered-call vault fee design and said **“Derive v3 will solve vaults, once and for all, soon.”** This narrows the existing v3/infinite-payoff catalyst toward structured vault UX/economics, but remains a founder tease rather than a shipped release; next checks are official v3 docs, vault fee/risk mechanics, launch timing, and whether v3 vault flow contributes to fees/DRV buybacks. Source: https://x.com/nickforster/status/2074897534200295660
 - 2026-07-08 — Official Derive said it is now live on **LorisTools** alongside top CEXes in the options dashboard, letting traders compare options plus funding, open interest, volume, and liquidations across venues. This is a distribution/data-discovery integration for Derive’s options venue, not a new market or buyback change; next checks are whether Loris-driven visibility improves HYPE/BTC/ETH options flow, OI, fees, or weekly DRV buybacks. Source: https://x.com/DeriveXYZ/status/2074840966947889191
 
