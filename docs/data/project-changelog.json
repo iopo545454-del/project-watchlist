@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-07-09T19:10:19Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Official OpenTensor published a Conviction mechanism thread/docs for subnet ownership and staking: stakers can lock alpha conviction, visible onchain, and qualifying subnets can change ownership after 365 days once aggregate conviction reaches at least 10% of alpha held by stakers; this adds a governance/ownership market-structure primitive to dTAO rather than a spot-market listing or fee change.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/opentensor/status/2075235253430694290",
+    "last_scanned": "2026-07-09T19:10:19Z",
+    "novelty": "new",
+    "delta": "Prior TAO dossier tracked dTAO, Taoflow, inactive-subnet emission gating, and OKX access; this adds a new owner-conviction/alpha-lock mechanism with explicit 365-day and 10%-of-alpha thresholds, but no immediate emissions amount, listing, or TAO supply change.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "dTAO governance/subnet ownership and alpha staking mechanics"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09T19:10:19Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "official update",
+    "importance": "low",
+    "summary": "Official Venice said the full GPT-5.6 family is now available on Venice with anonymous access, while Erik Voorhees reiterated zero-retention/contractual handling and E2EE-labelled model guidance; this is a major model-surface update, but no VVV staking, burn, emission, pricing, or usage delta was disclosed.",
+    "source": "X/Twitter official/founder accounts",
+    "url": "https://x.com/AskVenice/status/2075290416547590411",
+    "last_scanned": "2026-07-09T19:10:19Z",
+    "novelty": "update",
+    "delta": "Follows the July 8 Grok 4.5 and Seedream 5.0 Pro model additions and the June Kimi K2.7 Code/Kling/Seedance launches; no new VVV burn size, emissions cut, staking-capacity rule, or revenue metric accompanied the GPT-5.6 launch.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "New frontier/coding model launches in Venice"
+      },
+      {
+        "type": "open_question",
+        "ref": "Which model/API launches actually drive revenue rather than engagement-only usage?"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-09T19:10:19Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "docs/blog update",
+    "importance": "medium",
+    "summary": "Official Virtuals shared a practical guide for teams launching on Virtuals Protocol, including capital-formation mechanics such as a 25% team stack and tiered sell orders; useful mechanics/source update for launch quality and builder incentives, but not a new fee/value-accrual change.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/virtuals_io/status/2075236942866981047",
+    "last_scanned": "2026-07-09T19:10:19Z",
+    "novelty": "update",
+    "delta": "Builds on the existing Genesis/ACF launch-flywheel thesis and Robinhood Chain launch-surface updates; clarifies launch/team allocation mechanics but does not disclose protocol revenue, fee routing, VIRTUAL emissions/unlocks, or sustained agent-volume data.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Genesis / agent launch flywheel remains active after incentives"
+      },
+      {
+        "type": "open_question",
+        "ref": "What are the cleanest current protocol revenue, fee routing, and token value-accrual metrics?"
+      }
+    ]
+  },
+  {
     "date": "2026-07-09T14:53:22Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",

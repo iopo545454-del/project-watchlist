@@ -1,13 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-05T15:27:32Z
+last_updated: 2026-07-09T19:10:19Z
 ---
 
 # TAO / Bittensor
 
 ## Latest scan notes
 
+- 2026-07-09 — Official OpenTensor published a detailed Conviction mechanism thread/docs for subnet ownership and staking: stakers can lock alpha conviction, locks are visible onchain, owner emissions can route into conviction, and qualifying subnets can change ownership after 365 days once aggregate conviction reaches at least 10% of alpha held by stakers. This is a governance/ownership market-structure primitive for dTAO; next checks are docs/PR details, early conviction locks, ownership challenges, and whether capital rotates toward or away from affected subnets. Source: https://x.com/opentensor/status/2075235253430694290
 - 2026-07-05 — Official OpenTensor's weekly ecosystem highlights included OKX/OKX AI support: OKX AI was unveiled with Opentensor support, Bittensor subnet APIs are coming to the agent marketplace, and `$TAO` was listed on OKX spot. This is the durable item from the weekly recap because it changes TAO market access and potential subnet-API distribution, while the rest of the recap was normal subnet progress. Sources: https://x.com/opentensor/status/2073771523492524281 and https://x.com/okx/status/2073293545637585379
 
 - 2026-07-02 — Official OpenTensor highlighted Bittensor subnet Trishool/HaloGuard 1.0 reaching SOTA open-weight prompt-safety performance across seven benchmarks, adding a concrete AI-safety performance milestone to the subnet ecosystem. Source: https://x.com/opentensor/status/2072735469775847689

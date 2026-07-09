@@ -1,5 +1,124 @@
 [
   {
+    "run_id": "scan-20260709T191019Z",
+    "started_at": "2026-07-09T19:10:19Z",
+    "completed_at": "2026-07-09T19:10:19Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T14:55:15Z",
+      "until": "2026-07-09T19:10:19Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "TAO / Bittensor",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 3,
+      "material_entries": 3,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query found #1 Pluralis, #2 Ambient, and #3 EigenCloud, all already represented in docs/data/index.json with initial_review_done=true.",
+        "decision": "No intake edits."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metrics collector ran and returned 24 metrics for 13 projects. No metric movement was treated as material for changelog; generated metric churn was reverted rather than committed.",
+        "decision": "No metric changelog entry."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/GEODNET/status/2075294261180821757",
+        "summary": "Official GEODNET posted that a carbon-fiber survey pole is available for GEO-MEASURE and mainstream RTK GNSS receivers.",
+        "decision": "Product accessory note only; no durable dossier/changelog entry this run."
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/opentensor/status/2075235253430694290",
+        "summary": "OpenTensor described Conviction staking/ownership mechanics with onchain alpha locks, owner-emission routing, 365-day subnet eligibility, and a 10% aggregate-conviction threshold for ownership changes.",
+        "decision": "Add Latest/dossier/changelog catalyst update."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "X/Twitter official/founder accounts",
+        "url": "https://x.com/AskVenice/status/2075290416547590411",
+        "summary": "Venice added GPT-5.6 model family access and founder privacy-routing context; no VVV burn/staking/emissions/usage delta.",
+        "decision": "Add Latest/dossier/changelog official update as product-surface signal."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/virtuals_io/status/2075236942866981047",
+        "summary": "Virtuals shared a practical guide for launch teams including 25% team stack and tiered sell order mechanics.",
+        "decision": "Add Latest/dossier/changelog docs/blog update as launch-mechanics context."
+      },
+      {
+        "project": "Tracked projects weak-signal scan",
+        "source": "X/Twitter keyword/event search via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Official/team X account chunks covered all non-suppressed tracked projects; low-signal replies/price chatter and Bankr automated action noise were ignored. No new high-signal unverified watch items were found.",
+        "decision": "No new unverified watch items."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Bittensor: monitor Conviction docs/PR implementation, early alpha locks, ownership challenges, and subnet capital rotation.",
+      "Venice: verify whether GPT-5.6/Grok model additions move API usage, staking demand, burn size, or revenue metrics.",
+      "Virtuals: verify whether launch-guide mechanics show up in official docs/app flows and whether they improve sustained agent quality, volume, or protocol fees.",
+      "Carry forward prior unresolved checks for MetaDAO Credible final allocation/fees/META value accrual, Bankr Robinhood Chain usage/BNKR economics, NEAR Confidential Intents dashboards, Akash capacity, Grass governance/revenue follow-through, Chutes Parallax technical details, Octra verifier artifacts, USD.AI Morpho utilization, GitLawb leaderboard/premium usage, EigenCloud FrontierCS usage, and IOTA Train at Home metrics."
+    ],
+    "notes": "Independent signal-tier tagging ran for the three new/modified changelog entries: TAO / Bittensor=medium, VVV / Venice AI=low, VIRTUAL / Virtuals Protocol=medium. JSON validated."
+  },
+  {
     "run_id": "scan-20260709T145322Z",
     "started_at": "2026-07-09T14:53:22Z",
     "completed_at": "2026-07-09T14:55:15Z",
