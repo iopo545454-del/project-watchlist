@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-07-10T11:37:16Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "catalyst update",
+    "summary": "Official Derive announced DRV-USDC spot trading is live on Hyperliquid and provided the HyperEVM contract address, creating a new market-access/liquidity venue for DRV inside the same ecosystem that drives much of Derive’s recent HYPE options flow.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/DeriveXYZ/status/2075544040175493409",
+    "last_scanned": "2026-07-10T11:37:16Z",
+    "importance": "high",
+    "novelty": "new",
+    "delta": "Prior DRV repo state tracked Hyperliquid mainly as a HYPE options growth vector and Derive product-surface updates; this scan adds confirmed DRV-USDC spot market access on Hyperliquid plus a HyperEVM contract address, but no liquidity depth, deposits/withdrawals, or buyback-parameter change yet.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "HYPE options market share / Derive as primary HYPE options venue"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify canonical DRV contracts across chains and Hyperliquid spot liquidity/deposit-withdrawal quality"
+      }
+    ]
+  },
+  {
     "date": "2026-07-10T07:29:45Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",
