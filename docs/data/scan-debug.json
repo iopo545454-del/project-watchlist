@@ -1,5 +1,133 @@
 [
   {
+    "run_id": "scan-20260710T154700Z",
+    "started_at": "2026-07-10T15:47:00Z",
+    "completed_at": "2026-07-10T15:47:00Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-10T11:37:16Z",
+      "until": "2026-07-10T15:47:00Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "CHIP / USD.AI",
+      "Chutes — Bittensor Subnet 64"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 2,
+      "material_entries": 2,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still shows existing Pluralis, Ambient, and EigenCloud intake issues already represented in the index, so no new intake dossier was created.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metric refresh ran for configured projects; generated metric movement did not trigger a material direct-metric changelog item, and metric churn including suppressed POD was reverted rather than committed.",
+        "decision": "no metric changelog entry"
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "X/Twitter official account / Stablewatch reference",
+        "url": "https://x.com/USDai_Official/status/2075599042541748426",
+        "summary": "Official USD.AI highlighted sUSDai at about 7.76% 30-day APY and nearing $2M/month in yield paid out; second post claimed nearly double the 30-day yield for any asset over $100M.",
+        "decision": "logged as source-proximate yield/loan-demand metric update; verify underlying Stablewatch/API values, APY durability, loan performance, and CHIP value-capture linkage"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/chutes_ai/status/2075581795232321649",
+        "summary": "Official Chutes said it is live as part of Internet Court, an open skill for agent contracts, payments, escrow, and dispute resolution, with Chutes providing decentralized inference.",
+        "decision": "logged as integration/product-surface update; monitor for paid usage, DefiLlama revenue attribution, and whether Internet Court creates recurring SN64 inference demand"
+      },
+      {
+        "project": "Tracked projects excluding logged projects and suppressed POD",
+        "source": "X/Twitter tracked accounts + weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Tracked-account searches found routine Bankr bot launches/transfers, GitLawb/community chatter, Virtuals VEX campaign/meme posts, NEAR strategic AI-money thread, Bio NYC event promotion, Ambient/Jake inference commentary, and no broader keyword matches for high-signal listing/buyback/security/governance items in-window.",
+        "decision": "no additional changelog entries or watch items"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {
+        "project": "CHIP / USD.AI",
+        "check": "Verify sUSDai 7.76% 30-day APY and nearing $2M/month yield paid out against Stablewatch or official dashboard/API; compare with July 6 11.5% APY step-up, loan-book deployment, defaults/delinquencies, and CHIP fee/governance value capture."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "check": "Check whether Internet Court usage creates measurable Chutes paid inference demand, DefiLlama revenue movement, named agent integrations, or SN64 incentive/economic changes."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "check": "Carry forward Hyperliquid DRV-USDC liquidity, contract canonicality, deposits/withdrawals/region availability, and whether market access changes DRV liquidity, options flow, fees, or buyback execution."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "check": "Carry forward Strategy Builder Yield follow-through: options OI/volume/fee lift, relation to v3/vault rollout, and weekly DRV buyback changes."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "check": "Carry forward burn dashboard/Base transaction verification and burn-vs-emissions comparison."
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Carry forward revenue.near.org / near.com Hyperliquid routed-volume and front-end-fee check."
+      },
+      {
+        "project": "OCT / Octra",
+        "check": "Carry forward HFHE challenge v2 results plus TAPE verifier/formal whitepaper/node-release checks."
+      }
+    ],
+    "notes": "Independent delegate_task importance tagging ran for the 2026-07-10T15:47:00Z changelog entries: CHIP / USD.AI = medium; Chutes — Bittensor Subnet 64 = medium."
+  },
+  {
     "run_id": "scan-20260710T113716Z",
     "started_at": "2026-07-10T11:37:16Z",
     "completed_at": "2026-07-10T11:37:16Z",

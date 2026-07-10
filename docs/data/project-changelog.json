@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-07-10T15:47:00Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Official USD.AI highlighted issuer-reported Stablewatch data showing sUSDai at about 7.76% 30-day APY and nearing $2M/month in yield paid out, a useful loan-demand/yield metric to verify after recent GPU-loan and DeFi-liquidity updates.",
+    "source": "X/Twitter official account / Stablewatch metric reference",
+    "url": "https://x.com/USDai_Official/status/2075599042541748426",
+    "last_scanned": "2026-07-10T15:47:00Z",
+    "novelty": "update",
+    "delta": "Prior repo state logged the July 6 Texas B200 loan raising sUSDai yield from 7% to 11.5% and July 8 AUSD/Morpho loop markets; this scan adds a 30-day realized-yield/payments datapoint, but it is issuer-reported and does not resolve CHIP fee routing, loan concentration, defaults, or risk-adjusted yield.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Lighthouse report / loan-book and yield KPI scaling"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify live loan book, APY durability, defaults, and CHIP value-capture linkage"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-10T15:47:00Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Official Chutes said it is live as part of Internet Court, an open agent-to-agent contracts, payments, escrow, and dispute-resolution skill, positioning Chutes decentralized inference as infrastructure for agent workflows.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/chutes_ai/status/2075581795232321649",
+    "last_scanned": "2026-07-10T15:47:00Z",
+    "novelty": "new",
+    "delta": "Prior Chutes repo state focused on Parallax decentralized training, TEE inference, DefiLlama revenue, and Kraken listing-roadmap access; this adds a live agent-workflow integration but no disclosed revenue, paid usage, miner incentive, or SN64 economic change yet.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Chutes revenue visibility on DefiLlama"
+      },
+      {
+        "type": "open_question",
+        "ref": "Which integrations route meaningful recurring volume to Chutes?"
+      }
+    ]
+  },
+  {
     "date": "2026-07-10T11:37:16Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",

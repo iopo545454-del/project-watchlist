@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-08T14:01:33Z
+last_updated: 2026-07-10T15:47:00Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -13,6 +13,8 @@ last_updated: 2026-07-08T14:01:33Z
 - Alpha token: SN64 within Bittensor dTAO economy.
 
 ## Latest scan notes
+
+- 2026-07-10 — Official Chutes said it is part of **Internet Court**, an open skill for agent-to-agent contracts, negotiation, payments, escrow, and dispute resolution, with Chutes providing decentralized inference for the agentic workflow. This is a live integration/product-surface signal for SN64 inference demand, but not yet a revenue/liquidity event until usage, paid volume, and fee attribution show up in Chutes/DefiLlama/Taostats data. Source: https://x.com/chutes_ai/status/2075581795232321649
 
 - 2026-07-08 — Official Chutes announced **Parallax** achieved fully non-blocking decentralized training on a recurrent model within 0.6% of centralized quality and linked a technical write-up at https://chutes.ai/news/non-blocking-recurrent-training. This is a meaningful Parallax technical milestone because it claims decentralized training without sync blocking or meaningful quality loss on a hard recurrent-model test case; it is not yet a revenue/liquidity event until training jobs, miner requirements, incentives, customer demand, and SN64 economics are disclosed. Source: https://x.com/i/status/2074856074260128213
 

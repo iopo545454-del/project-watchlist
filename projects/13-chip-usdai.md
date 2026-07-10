@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-09T23:18:33Z
+last_updated: 2026-07-10T15:47:00Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-09T23:18:33Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-10 — USD.AI posted issuer-reported Stablewatch metrics for sUSDai: about **7.76% 30-day APY** and “closing in on **$2M/month**” in yield paid out, claiming nearly double the 30-day yield of any asset above $100M. This is useful live-yield/loan-demand context after the July 6 Texas B200 loan and July 8 AUSD borrow-market updates, but it still needs source/API verification, risk-adjusted yield checks, and CHIP value-capture linkage. Sources: https://x.com/USDai_Official/status/2075599042541748426 and https://x.com/USDai_Official/status/2075599045993574772
 
 - 2026-07-09 — USD.AI published a compute-credit thesis post/article arguing there is a roughly $2T financing gap in the AI compute middle market because traditional lenders miss unfamiliar GPU collateral and borrower structures. This is useful market-thesis/source material for the CHIP/USD.AI credit narrative, but it is not a new loan, APY, default, governance, or token value-capture update. Sources: https://x.com/USDai_Official/status/2075310919429804417 and https://x.com/USDai_Official/status/2075297871088308226
 
