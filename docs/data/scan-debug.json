@@ -1,5 +1,116 @@
 [
   {
+    "run_id": "scan-20260710T195104Z",
+    "started_at": "2026-07-10T19:51:04Z",
+    "completed_at": "2026-07-10T20:13:40Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-10T15:47:00Z",
+      "until": "2026-07-10T19:51:04Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": ["GRASS", "NEAR Protocol", "TAO / Bittensor"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 3,
+      "material_entries": 3,
+      "unverified_items": 0,
+      "watch_items_resolved": 2,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific intake query returned 0; all-open query still contains Pluralis, Ambient, and EigenCloud issues already represented in the index with initial reviews complete.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 24 metrics for 13 projects. Observed moves, including Kinetiq TVL near $992.5M and Derive TVL near $113.6M, did not cross a configured/materiality threshold; generated churn and suppressed POD history were reverted.",
+        "decision": "no direct-metric changelog entry"
+      },
+      {
+        "project": "GRASS",
+        "source": "Official Grass X and official website",
+        "url": "https://www.grass.io/learn/how-your-stage-2-rewards-allocation-works",
+        "summary": "Official Stage 2 documentation set July 22 claims, January 22 2027 deadline, USDC-from-revenue/zero-emission treatment, points conversion and eligibility mechanics; the call recap added H1 revenue/cost guidance and a later-summer LCR window.",
+        "decision": "updated catalyst rows and Latest; confirmed the Stage 2 formula watch item and marked the rumored July 7 token-holder revenue-routing vote/unlock item disproven-stale"
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "X/Twitter official account / Internet Court launch",
+        "url": "https://x.com/NEARProtocol/status/2075649426442392008",
+        "summary": "Internet Court launched with NEAR wallet/transaction skills, NEAR Intents swaps, and NEAR AI Cloud private inference in an agent negotiation/escrow/dispute workflow; no paid usage or token impact was disclosed.",
+        "decision": "logged as product/integration catalyst; monitor actual deals, contracts, volume, fees, and revenue-dashboard movement"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter official account",
+        "url": "https://x.com/opentensor/status/2075665104625172894",
+        "summary": "OpenTensor highlighted SN54 miners adversarially testing Yanez AI biometric liveness/deepfake systems and reported two client integrations for Sybil-resistant Web3 and verifiable payments.",
+        "decision": "logged as external-demand/security proof point; keep below actionable tier absent client names, paid volume, revenue, or emissions impact"
+      },
+      {
+        "project": "Tracked projects excluding logged projects and suppressed POD",
+        "source": "X/Twitter tracked accounts + broad weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Coverage found routine Bankr token deployments/Agent Hour, Virtuals Robinhood Chain amplification, USD.AI/compute narrative, Venice alignment commentary, a NEAR architecture article, and no additional qualifying listing, governance, tokenomics, funding, security, or onchain anomaly in-window.",
+        "decision": "no additional changelog entries or watch items"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 claim execution, total USDC pool/claim rate, wallet reliability, distribution accounting, operator retention, and whether any separate GRASS buyback/staking/value-routing policy follows."},
+      {"project": "NEAR Protocol", "check": "Verify named Internet Court agent deals, escrow contracts/transactions, paid volume, fees, disputes, integrations, and movement in revenue.near.org; carry forward Hyperliquid routed-volume/front-end-fee checks."},
+      {"project": "TAO / Bittensor", "check": "Identify the two SN54/Yanez AI clients and verify paid usage, benchmark improvement, subnet revenue, emissions, and whether the integration creates durable external demand."},
+      {"project": "CHIP / USD.AI", "check": "Carry forward Stablewatch/API verification of 7.76% 30-day APY and nearly $2M/month yield paid, plus loan-book risk and CHIP value-capture linkage."},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Carry forward Internet Court paid-inference demand, DefiLlama revenue, named agent integration, and SN64 economic checks."},
+      {"project": "DRV / Derive Protocol", "check": "Carry forward Hyperliquid DRV-USDC liquidity/contract/access checks and Strategy Builder Yield follow-through in OI, volume, fees, and weekly buybacks."},
+      {"project": "VVV / Venice AI", "check": "Carry forward burn dashboard/Base transaction verification and burn-versus-emissions comparison."},
+      {"project": "OCT / Octra", "check": "Carry forward HFHE challenge v2 results plus TAPE verifier, formal whitepaper, and node-release checks."}
+    ],
+    "notes": "Two independent delegate_task tagger passes were dispatched before commit but did not return within the cron run. Emergency fallback labels were applied under the documented contingency: GRASS=high because it is a confirmed dated revenue-funded rewards distribution with zero emissions; NEAR=medium and TAO/Bittensor=medium because both are meaningful product/usage signals without disclosed token, fee, revenue, or market-structure impact."
+  },
+  {
     "run_id": "scan-20260710T154700Z",
     "started_at": "2026-07-10T15:47:00Z",
     "completed_at": "2026-07-10T15:47:00Z",

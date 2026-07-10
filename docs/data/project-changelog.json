@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-07-10T19:51:04Z",
+    "project": "GRASS",
+    "slug": "08-grass",
+    "type": "catalyst update",
+    "importance": "high",
+    "summary": "Official Grass confirmed Stage 2 USDC rewards funded from network revenue with zero GRASS emissions, July 22 claims, detailed points conversion, H1 revenue/cost guidance, and a later-summer Live Context Retrieval launch window.",
+    "source": "Official Grass X / official recap and rewards documentation",
+    "url": "https://www.grass.io/learn/how-your-stage-2-rewards-allocation-works",
+    "last_scanned": "2026-07-10T19:51:04Z",
+    "novelty": "update",
+    "delta": "The repo previously knew rewards would use USDC, but mechanics and dates were unresolved; official docs now set a July 22 claim start, January 22 2027 deadline, >0 Network Points eligibility floor, $0.0049 per Network Point, device multipliers, and zero new emissions. The recap also disproves the rumored July 7 token-holder revenue-routing vote and does not substantiate the quoted $10.25M unlock.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stage 2 USDC participant rewards from network revenue"},
+      {"type": "watch_item", "ref": "Stage 2 allocation formula / Uptime Points plus Network Points"},
+      {"type": "watch_item", "ref": "Rumored July 7 revenue-routing vote and $10.25M unlock"},
+      {"type": "catalyst", "ref": "Live Context Retrieval inference-data products"}
+    ]
+  },
+  {
+    "date": "2026-07-10T19:51:04Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Official NEAR said Internet Court is live, connecting NEAR wallet/transaction skills, NEAR Intents swaps, and NEAR AI Cloud private inference to an open agent negotiation, escrow, and dispute workflow.",
+    "source": "X/Twitter official account / project launch",
+    "url": "https://x.com/NEARProtocol/status/2075649426442392008",
+    "last_scanned": "2026-07-10T19:51:04Z",
+    "novelty": "new",
+    "delta": "Prior NEAR repo state tracked Confidential Intents, Agent Market, AI Cloud integrations, and near.com trading; this adds a live agent-commerce integration surface, but launch posts disclose no paid deals, fees, volume, escrow contract, or NEAR token impact.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "NEAR Intents as cross-chain / agent-market money rail"},
+      {"type": "catalyst", "ref": "Internet Court agent-commerce integration"},
+      {"type": "metric", "ref": "revenue.near.org routed volume and fees"}
+    ]
+  },
+  {
+    "date": "2026-07-10T19:51:04Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "OpenTensor highlighted Novelty Search / SN54 miners adversarially testing Yanez AI biometric liveness and deepfake detection, with two clients reportedly integrated for Sybil-resistant Web3 and verifiable-payment use cases.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/opentensor/status/2075665104625172894",
+    "last_scanned": "2026-07-10T19:51:04Z",
+    "novelty": "new",
+    "delta": "Prior TAO repo state focused on dTAO/Conviction governance, emissions gating, listings, and other subnet milestones; this adds an external-client/security proof point for SN54, but no client names, paid volume, revenue, emissions change, or TAO value-capture metric.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Bittensor subnet external demand / useful AI output"},
+      {"type": "open_question", "ref": "Verify subnet quality and real external demand"}
+    ]
+  },
+  {
     "date": "2026-07-10T15:47:00Z",
     "project": "CHIP / USD.AI",
     "slug": "13-chip-usdai",
