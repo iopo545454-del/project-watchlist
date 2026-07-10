@@ -1,5 +1,117 @@
 [
   {
+    "run_id": "scan-20260710T032255Z",
+    "started_at": "2026-07-10T03:22:55Z",
+    "completed_at": "2026-07-10T03:22:55Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-09T23:18:33Z",
+      "until": "2026-07-10T03:22:55Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": [
+        "POD / Dolphin POD"
+      ],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET",
+      "META / MetaDAO",
+      "BANKR / BankrCoin",
+      "AEON Framework",
+      "GitlWab / GitLawb / Gitwab",
+      "Kinetiq",
+      "GRASS",
+      "IOTA — Macrocosmos Bittensor Subnet 9",
+      "Targon — Bittensor Subnet 4",
+      "TAO / Bittensor",
+      "AKT / Akash",
+      "CHIP / USD.AI",
+      "VVV / Venice AI",
+      "VIRTUAL / Virtuals Protocol",
+      "Worldcoin / WLD / World Network",
+      "NEAR Protocol",
+      "DRV / Derive Protocol",
+      "OCT / Octra",
+      "BIO / Bio Protocol",
+      "Pluralis",
+      "Ambient",
+      "EIGEN / EigenCloud",
+      "Chutes — Bittensor Subnet 64",
+      "Lium — Bittensor Subnet 51",
+      "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": [
+      "Lium — Bittensor Subnet 51"
+    ],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Label-specific project-intake query returned 0; all-open query still shows existing Pluralis, Ambient, and EigenCloud intake issues already represented in the index, so no new intake dossier was created.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "source": "X/Twitter official exchange/project accounts",
+        "url": "https://x.com/krakenlistings/status/2075221836749738365",
+        "summary": "Kraken announced SN51 live for trading on July 9 and official Lium later amplified the listing within this scan window.",
+        "decision": "logged as catalyst update because the earlier Kraken roadmap catalyst is now completed/live"
+      },
+      {
+        "project": "Tracked projects excluding Lium and suppressed POD",
+        "source": "X/Twitter tracked accounts + weak-signal search",
+        "url": "docs/data/index.json",
+        "summary": "Tracked-account searches and a broader material-keyword search found no new official material project-info updates above threshold in this 4h window; earlier posts for NEAR/OCTRA/USD.AI were already logged in the previous scan.",
+        "decision": "no changelog entry"
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Direct metric refresh committed for 12 non-suppressed projects / 18 metrics after excluding suppressed POD from the persisted metric state; no material direct-metric threshold changes were identified for changelog escalation.",
+        "decision": "refreshed metric JSON only"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "check": "Verify Kraken SN51 pairs, liquidity, deposits/withdrawals/region availability, and whether post-listing access changes SN51 buyback/burn cadence, credit purchases, or GPU utilization."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "check": "Carry forward prior burn dashboard/Base transaction verification and burn-vs-emissions comparison."
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Carry forward revenue.near.org / near.com Hyperliquid routed-volume and front-end-fee check."
+      },
+      {
+        "project": "OCT / Octra",
+        "check": "Carry forward HFHE challenge v2 results plus TAPE verifier/formal whitepaper/node-release checks."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "check": "Carry forward compute-credit article/report details and live loan-book/utilization/default/CHIP value-capture verification."
+      }
+    ],
+    "notes": "Changelog importance labels were applied by an independent delegate_task tagger before commit; latest Lium/SN51 entry labeled high as a confirmed Kraken listing / market-access change."
+  },
+  {
     "run_id": "scan-20260709T231833Z",
     "started_at": "2026-07-09T23:18:33Z",
     "completed_at": "2026-07-09T23:18:33Z",

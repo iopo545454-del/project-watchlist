@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-29T19:22:06Z
+last_updated: 2026-07-10T03:22:55Z
 ---
 
 # Lium — Bittensor Subnet 51
@@ -14,6 +14,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 ## Latest scan notes
 
+- 2026-07-10 — Kraken listed SN51 for trading and official Lium amplified the listing after the earlier Kraken roadmap entry; this completes the CEX-access catalyst and moves the watch to live pairs/liquidity/deposit-withdrawal quality plus whether broader access changes buyback/burn or GPU-credit demand. Sources: https://x.com/krakenlistings/status/2075221836749738365 and https://x.com/lium_io/status/2075365366134456625
 - 2026-06-29 — Kraken’s public listings page includes Lium / SN51 on its roadmap with other Bittensor subnet alpha tokens; no matching official Lium X announcement was found in-window, so track as exchange-roadmap evidence pending trading enablement and project confirmation. Source: https://www.kraken.com/listings#roadmap
 
 - 2026-06-23 — Official Lium X said it completed a buyback and burn of `2500 TAO` into Subnet 51, with funds sourced from GPU credit-purchase revenue. This materially upgrades the burn proxy from a community/analytics estimate to an official revenue-funded buyback datapoint; next check is wallet/dashboard confirmation and whether this cadence repeats. Source: https://x.com/lium_io/status/2069199663530471602
@@ -76,7 +77,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| Kraken listings-roadmap entry for Lium / SN51 | Confirmed / listing roadmap | Kraken listings page includes Lium and SN51 on the roadmap: https://www.kraken.com/listings#roadmap | Roadmap as of 2026-06-29; trading timing unknown | Would add centralized exchange access for SN51 alpha exposure. | New liquidity can widen participation in the GPU-marketplace/buyback thesis and raise scrutiny on revenue/burn verification. | Watch Lium confirmation, Kraken trading-enable announcement, pairs, liquidity, deposits/withdrawals, and whether buyback/burn cadence changes after listing. |
+| Kraken SN51 trading live | Confirmed / completed listing | Kraken listings announced SN51 live for trading: https://x.com/krakenlistings/status/2075221836749738365; official Lium follow-up: https://x.com/lium_io/status/2075365366134456625 | 2026-07-09 | Adds centralized exchange access for SN51 alpha exposure after the earlier roadmap entry. | Broader access can widen participation in the GPU-marketplace/buyback thesis and raise scrutiny on revenue/burn verification. | Watch pairs, spot liquidity, deposits/withdrawals, Kraken availability by region, and whether buyback/burn cadence or credit demand changes after listing. |
 | SN51 revenue-funded buyback and burn of 2500 TAO | Confirmed / official tokenomics event | Official Lium post: https://x.com/lium_io/status/2069199663530471602 | 2026-06-22 | Directly links GPU credit purchases to SN51 buybacks and burns. | If recurring, SN51 gets a measurable value-accrual loop from compute demand rather than emissions alone. | Watch burn wallet, cadence, credit revenue, utilization, and whether burns continue in down markets. |
 | Prior buybacks and owner-token burns | Confirmed / official cadence | Official Lium posts: https://x.com/lium_io/status/2051112124328374707 and https://x.com/lium_io/status/2049346952614007286 | April-May 2026 | Shows multiple burn events, including more than $150k buyback/burn and roughly $500k owner-controlled burn. | Establishes a tokenomics pattern investors can monitor, but needs dashboard/wallet verification. | Watch official burn receipts, owner allocation changes, SN51 supply, emissions to miners, and external-revenue reporting. |
 | High-end GPU inventory and Blackwell availability | Confirmed / product-supply catalyst | Lium-related posts surfaced current high-end inventory claims: https://x.com/i/status/2054359159546544238 and https://x.com/i/status/2062277289459454214 | Live inventory claims in 2026 | Scarce B200/B300/H200 supply can attract real AI workloads if pricing and uptime are competitive. | Higher utilization would make buybacks more durable and differentiate Lium from pure incentive-driven GPU supply. | Watch live inventory, utilization by GPU class, customer workloads, pricing, uptime, and credit-purchase revenue. |
