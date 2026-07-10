@@ -1,11 +1,12 @@
 {
   "version": 1,
   "latest_run": {
-    "run_id": "direct-data-20260710T032234Z",
-    "started_at": "2026-07-10T03:22:34Z",
-    "completed_at": "2026-07-10T03:22:48Z",
+    "run_id": "direct-data-20260710T072948Z",
+    "started_at": "2026-07-10T07:29:48Z",
+    "completed_at": "2026-07-10T07:29:55Z",
     "status": "active",
     "projects_checked": [
+      "01-pod",
       "07-kinetiq",
       "08-grass",
       "12-akt-akash",
@@ -19,11 +20,20 @@
       "25-lium",
       "26-compute-horde"
     ],
-    "sources_checked": 17,
-    "sources_ok": 13,
+    "sources_checked": 18,
+    "sources_ok": 14,
     "sources_failed": 0,
     "sources_skipped": 4,
     "project_results": [
+      {
+        "slug": "01-pod",
+        "status": "active",
+        "sources_checked": 1,
+        "sources_ok": 1,
+        "sources_failed": 0,
+        "sources_skipped": 0,
+        "errors": []
+      },
       {
         "slug": "07-kinetiq",
         "status": "active",
