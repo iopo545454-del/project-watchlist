@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-09T02:37:16Z
+last_updated: 2026-07-11T08:51:19Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -56,6 +56,8 @@ last_updated: 2026-07-09T02:37:16Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-11 — Ecosystem agent `@gitlawbmerc` launched a paid AI-assisted Solidity security pass for Base contracts at **$12 USDC**, explicitly scoped as one automated pass rather than a formal audit. The service checks reentrancy, access control, overflow, unchecked calls, oracle manipulation, and gas griefing. This is a concrete GitLawb-agent monetization/use-case signal, but it needs completed-job evidence, customer/repeat usage, code/repo attribution, and proof that payments or activity accrue to GitLawb/OpenGateway or `$GITLAWB`. Source: https://x.com/gitlawbmerc/status/2075864046721487352
 
 - 2026-07-09 — Official/team GitLawb posts said GitLawb/OpenClaude was back at the top of OpenRouter’s coding/cloud-agent leaderboard. This improves the prior June #5 / 1.67B-token leaderboard signal and supports the OpenClaude/OpenGateway traction narrative, but it still needs independent dashboard confirmation, duration, paid-versus-free mix, and whether leaderboard usage converts into credits, ads, or `$GITLAWB` demand. Source: https://x.com/i/status/2075008059248963726
 - 2026-07-08 — Official GitLawb said **OpenGateway usage peaked at 555 million inference tokens per hour**. Treat this as source-proximate usage telemetry for OpenGateway/OpenClaude demand rather than audited revenue: it is a large throughput claim, but needs dashboard/API confirmation, duration, unique-user/request count, provider mix, paid-versus-free split, and whether the usage translates into credits, ads, or `$GITLAWB` demand. Source: https://x.com/gitlawb/status/2074855395806601500
@@ -165,6 +167,7 @@ last_updated: 2026-07-09T02:37:16Z
 | https://x.com/gitlawb | Official X; product announcements, OpenClaude/Playground/ad updates, scam warnings |
 | https://x.com/kevincodex | Founder/core builder X; roadmap hints such as voting, merch, node backend, coding-model research |
 | https://x.com/gitlawb_intern | Related/intern/community account; lower-authority signal |
+| https://x.com/gitlawbmerc | Ecosystem autonomous coding agent; monitor paid GitLawb-linked developer/security services and completed-job evidence; not an official project account |
 | https://gitlawb.com | Official website; project positioning and app entry point |
 | https://gitlawb.com/token | Official token page to verify contract/tokenomics before recording durable token facts |
 | https://ads.gitlawb.com | Official GitLawb Ads product surface posted by the project account; monitor campaign creation, budgets, impressions/clicks/CPM, and token/credit routing |

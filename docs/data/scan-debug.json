@@ -1,5 +1,116 @@
 [
   {
+    "run_id": "scan-20260711T085119Z",
+    "started_at": "2026-07-11T08:51:19Z",
+    "completed_at": "2026-07-11T08:57:02Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-11T04:45:08Z",
+      "until": "2026-07-11T08:51:19Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET", "META / MetaDAO", "BANKR / BankrCoin", "AEON Framework", "GitlWab / GitLawb / Gitwab", "Kinetiq", "GRASS", "IOTA — Macrocosmos Bittensor Subnet 9", "Targon — Bittensor Subnet 4", "TAO / Bittensor", "AKT / Akash", "CHIP / USD.AI", "VVV / Venice AI", "VIRTUAL / Virtuals Protocol", "Worldcoin / WLD / World Network", "NEAR Protocol", "DRV / Derive Protocol", "OCT / Octra", "BIO / Bio Protocol", "Pluralis", "Ambient", "EIGEN / EigenCloud", "Chutes — Bittensor Subnet 64", "Lium — Bittensor Subnet 51", "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": ["GitlWab / GitLawb / Gitwab"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "watch_items_resolved": 0,
+      "sources_added": 1,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "The three open intake-form issues remain Pluralis, Ambient, and EigenCloud, all already deduplicated into the index with initial reviews complete.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 24 metrics for 13 projects. Non-suppressed changes included Kinetiq TVL near $976.6M, Derive 24h fees near $11.5K and TVL near $113.0M, Virtuals 30d fees near $154.4K, and Chutes 24h revenue near $11.7K; none crossed configured materiality rules, so generated refresh churn including suppressed POD was reverted.",
+        "decision": "no direct-metric changelog entry"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter ecosystem agent account",
+        "url": "https://x.com/gitlawbmerc/status/2075864046721487352",
+        "summary": "GitLawb Mercenary launched a $12 USDC AI-assisted Solidity security pass for Base contracts, explicitly not a formal audit; the service has concrete scope but no completed-job, customer, repeat-use, payment-routing, or token-accrual evidence yet.",
+        "decision": "added source-proximate Latest/changelog item and ecosystem source; monitor paid completion and value routing"
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter Ownership FM account",
+        "url": "https://x.com/ownershipfm/status/2075834614921523201",
+        "summary": "Ownership Report repeated Credible raise allocation, treasury-flow, milestone-vesting, and regulatory context already captured from the same report in the dossier.",
+        "decision": "no duplicate changelog entry"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter ecosystem analysts",
+        "url": "https://x.com/TaoOutsider/status/2075828703855071723",
+        "summary": "Third-party posts reiterated the already-logged Conviction rollout and reported nine previously cut subnets active again; no official runtime, governance, TAO supply, fee, or aggregate emissions delta was established in-window.",
+        "decision": "kept as monitoring context; no duplicate or unsupported durable entry"
+      },
+      {
+        "project": "BANKR / BankrCoin and VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official/core accounts",
+        "url": "docs/data/index.json",
+        "summary": "In-window posts were routine Bankr token deployments and Robinhood Chain builder onboarding/token-launch instances, including a cited $800K VEX raise already within the existing ecosystem flow; these are repeatable core-function output rather than project step changes.",
+        "decision": "no changelog entry under routine-output calibration"
+      },
+      {
+        "project": "Tracked projects excluding logged project and suppressed POD",
+        "source": "X/Twitter tracked-account batches, broad high-signal search, and targeted watch-item search",
+        "url": "docs/data/index.json",
+        "summary": "No additional qualifying listing, governance, tokenomics, funding, security incident, major release, sourced investor thesis, or quantitative onchain anomaly was found. Grass posts repeated already-recorded Stage 2 terms; Internet Court mentions disclosed no Chutes/NEAR paid-volume or revenue result.",
+        "decision": "no additional changelog entries or weak-signal watch items"
+      },
+      {
+        "project": "Outstanding dossier watch items",
+        "source": "previous run next_checks and dossier Unverified Watch Items",
+        "url": "projects/",
+        "summary": "Targeted searches produced no resolving evidence for AEON attestations, GEOD adoption, Yanez implementation, MetaDAO deployment/backers, Grass execution, NEAR usage, USD.AI yield risk, Chutes revenue, Derive liquidity, Venice burn math, Octra verifier, Bankr utility/staking, Kinetiq buyback, or Lium post-listing effects.",
+        "decision": "all unresolved checks explicitly carried forward below with origins"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Verify completed GitLawb Mercenary security-pass jobs, customer/repeat usage, code/repo attribution, payment transactions, and whether activity routes through GitLawb/OpenGateway, ads/credits, or $GITLAWB.", "carried_from": "scan-20260711T085119Z"},
+      {"project": "AEON Framework", "check": "Reproduce v0.1 from the tagged release; inspect the attestation format/verifier and public log, partner/user activity, security assumptions, fees, and any $aeon buyback/value-capture linkage.", "carried_from": "scan-20260711T043633Z"},
+      {"project": "GEOD / GEODNET", "check": "Seek GEO-PULSE measured in-motion accuracy/route evidence, order and active-device counts, rewards paid, reviews, and hardware contribution to revenue/burn; continue partner-quality diligence.", "carried_from": "scan-20260711T043633Z and 2026-06-17 watch item"},
+      {"project": "TAO / Bittensor", "check": "Verify Yanez/SN54 client names/apps, Exploit Summit incentive, conversion/retention contracts and wallets, dashboard, revenue, alpha buy cadence, and treatment of the retained 20%.", "carried_from": "scan-20260711T001809Z"},
+      {"project": "META / MetaDAO", "check": "Verify whether percolator-meta issues #38-41 affected deployed programs, deployed versions/upgrade transactions, or real transactions; source-code fixes are confirmed.", "carried_from": "2026-06-15 to 2026-06-25 watch items"},
+      {"project": "META / MetaDAO", "check": "Seek concrete official/GitHub evidence for the separate vague exploit claim; mark stale if none emerges.", "carried_from": "2026-06-17 watch item"},
+      {"project": "META / MetaDAO", "check": "Verify exact Paradigm/Colosseum ownership and active-support terms from fund or founder sources.", "carried_from": "2026-06-14 watch item"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 claim execution, total USDC pool/claim rate, wallet reliability, distribution accounting, operator retention, and any separate GRASS value-routing policy.", "carried_from": "scan-20260710T195104Z"},
+      {"project": "NEAR Protocol", "check": "Verify NEAR@3.33 $70M TVL trigger/snapshot/allocation/claims and post-incentive retention; also check Internet Court deals, escrow transactions, paid volume, fees, disputes, and revenue.near.org movement.", "carried_from": "2026-06-18 catalyst and scan-20260710T195104Z"},
+      {"project": "CHIP / USD.AI", "check": "Verify Stablewatch/API support for 7.76% 30-day APY and nearly $2M/month yield paid, plus loan-book risk and CHIP value capture.", "carried_from": "scan-20260710T154700Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Verify Internet Court paid-inference demand, DefiLlama revenue, named agent integration and SN64 economic effects.", "carried_from": "scan-20260710T154700Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify Hyperliquid DRV-USDC liquidity/contracts/access and Strategy Builder follow-through in OI, volume, fees and weekly buybacks.", "carried_from": "scan-20260710T113716Z"},
+      {"project": "VVV / Venice AI", "check": "Verify the latest burn dashboard/Base transaction and compare the burn against current emissions.", "carried_from": "scan-20260709T231833Z"},
+      {"project": "OCT / Octra", "check": "Verify HFHE challenge v2 results plus TAPE verifier, formal whitepaper and node release.", "carried_from": "scan-20260709T231833Z"},
+      {"project": "BANKR / BankrCoin", "check": "Verify OKT-gated utility, canonical BNKR staking vault/docs address, and any postmortem or repeat complaints from the console test-token incident.", "carried_from": "2026-06-21 to 2026-07-04 watch items"},
+      {"project": "Kinetiq", "check": "Verify the claimed $320K KNTQ buyback wallet and whether purchases are revenue-funded.", "carried_from": "2026-06-29 watch item"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Verify Kraken SN51 liquidity/deposits/withdrawals and any post-listing buyback, burn, credit-purchase or GPU-utilization effect.", "carried_from": "scan-20260710T032255Z"}
+    ],
+    "notes": "Independent signal-tier labeling completed for the new GitLawb entry: low."
+  },
+  {
     "run_id": "scan-20260711T043633Z",
     "started_at": "2026-07-11T04:36:33Z",
     "completed_at": "2026-07-11T04:45:08Z",
