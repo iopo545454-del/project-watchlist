@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-11T17:20:06Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Bankr core builder disclosed a 250,000,000 BNKR Reward Season 2 pool with 11 scoring inputs; Bankr bot says BNKR score uses Base balance and detailed participation requires Bankr Club, while weights, snapshot, claim contract and distribution timing remain undisclosed.",
+    "source": "X/Twitter core builder and official bot; Base Blockscout token endpoint",
+    "url": "https://x.com/0xDeployer/status/2075708868420841954",
+    "last_scanned": "2026-07-11T17:20:06Z",
+    "novelty": "update",
+    "delta": "Prior repo state only had a vague Season 2 teaser, live score checks and leaderboard with no pool size or full score list. The new 250M pool equals 0.25% of BNKR's 100B supply and roughly $90K at the 2026-07-11 Blockscout price check; full allocation weights, snapshot, funding wallet, claim mechanics, vesting and anti-sybil controls remain unknown.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Reward Season 2 — 250M BNKR pool and composite scoring"},
+      {"type": "open_question", "ref": "Verify Reward Season 2 weights, snapshot, claim contract, funding wallet, vesting and anti-sybil rules"}
+    ]
+  },
+  {
     "date": "2026-07-11T13:05:03Z",
     "project": "OCT / Octra",
     "slug": "19-octra",
