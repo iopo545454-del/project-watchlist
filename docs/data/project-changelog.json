@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-11T21:53:24Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Octra's largest devnet update added direct GPU compute for resource-sharing Circles; after the network returned, Octrascan observed encrypted LLM chunks onchain and the co-founder confirmed custom ML inference is live on devnet.",
+    "source": "X/Twitter co-founder and independent Octrascan explorer",
+    "url": "https://x.com/lambda0xE/status/2076056399881118168",
+    "last_scanned": "2026-07-11T21:53:24Z",
+    "novelty": "update",
+    "delta": "The dossier previously tracked Circle/app-launchpad and HFHE-LLM inference as roadmap items. This adds a live devnet capability plus source-proximate explorer evidence, but no public node, production workload, usage/fee metric, TAPE verifier, formal paper, or listing followed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Circle app launchpad + encrypted inference"},
+      {"type": "open_question", "ref": "Verify public node/container, AppliedLang docs, external workloads, resource accounting, fees, and production readiness"}
+    ]
+  },
+  {
     "date": "2026-07-11T17:20:06Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
