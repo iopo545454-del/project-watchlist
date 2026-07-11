@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-11T13:05:03Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Octra made HFHE challenge v2 easier and more transparent by publishing leak-style LPN samples from sk.bin, while explicitly cautioning that the challenge is not substantive proof of security and the formal paper remains pending.",
+    "source": "X/Twitter co-founder/team accounts and GitHub challenge repository",
+    "url": "https://x.com/octralex/status/2075870093708235148",
+    "last_scanned": "2026-07-11T13:05:03Z",
+    "novelty": "update",
+    "delta": "The repo already tracked the 1M OCT HFHE challenge v2 and forthcoming whitepaper. This update adds requested LPN samples and clearer rules in response to criticism, but the team says the samples model a leak that should not occur in normal operation and do not prove production security; no challenge result, paper date, TAPE verifier, node release, or listing followed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "HFHE challenge v2 / formal security paper"},
+      {"type": "open_question", "ref": "Verify formal HFHE paper, reproducible security artifacts, TAPE verifier, and node release"}
+    ]
+  },
+  {
     "date": "2026-07-11T08:51:19Z",
     "project": "GitlWab / GitLawb / Gitwab",
     "slug": "06-gitlawb",

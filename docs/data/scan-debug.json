@@ -1,5 +1,109 @@
 [
   {
+    "run_id": "scan-20260711T130503Z",
+    "started_at": "2026-07-11T13:05:03Z",
+    "completed_at": "2026-07-11T13:13:40Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-11T08:57:02Z",
+      "until": "2026-07-11T13:13:40Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": [
+      "GEOD / GEODNET", "META / MetaDAO", "BANKR / BankrCoin", "AEON Framework", "GitlWab / GitLawb / Gitwab", "Kinetiq", "GRASS", "IOTA — Macrocosmos Bittensor Subnet 9", "Targon — Bittensor Subnet 4", "TAO / Bittensor", "AKT / Akash", "CHIP / USD.AI", "VVV / Venice AI", "VIRTUAL / Virtuals Protocol", "Worldcoin / WLD / World Network", "NEAR Protocol", "DRV / Derive Protocol", "OCT / Octra", "BIO / Bio Protocol", "Pluralis", "Ambient", "EIGEN / EigenCloud", "Chutes — Bittensor Subnet 64", "Lium — Bittensor Subnet 51", "Compute Horde — Bittensor Subnet 12"
+    ],
+    "logged_projects": ["OCT / Octra"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "watch_items_resolved": 0,
+      "sources_added": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "The label-specific query returned no issues; the three open intake-form issues remain Pluralis, Ambient, and EigenCloud, all already deduplicated into the index with initial reviews complete.",
+        "decision": "no new project intake"
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 24 metrics for 13 projects. Non-suppressed changes included Kinetiq TVL near $985.5M, Derive TVL near $113.1M, BIO TVL near $3.9M, and Chutes TVL near $43.1M; none crossed configured materiality rules, so generated refresh churn including suppressed POD was reverted.",
+        "decision": "no direct-metric changelog entry"
+      },
+      {
+        "project": "OCT / Octra",
+        "source": "X/Twitter co-founder/team accounts and GitHub challenge repository",
+        "url": "https://x.com/octralex/status/2075870093708235148",
+        "summary": "HFHE challenge v2 added LPN samples derived from sk.bin to make the target easier and fairer after criticism. Team accounts say the samples model a leak that should not occur normally and explicitly caution that the challenge is not substantive proof of security; the formal paper remains undated.",
+        "decision": "updated the challenge/formal-paper catalyst and Latest feed; TAPE verifier, paper, node, and listing checks remain open"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter official account quoting Robinhood",
+        "url": "https://x.com/virtuals_io/status/2075916831743975780",
+        "summary": "Virtuals amplified Robinhood's general teaser that eligible US users will soon connect agents to dedicated accounts, then linked its existing July 2 Robinhood Chain tokenization post. Robinhood did not name Virtuals, and the posts add no live date, new mechanics, fees, volume, contracts, or token impact.",
+        "decision": "no duplicate or inferred partnership entry; continue monitoring live access and measurable Virtuals usage"
+      },
+      {
+        "project": "BANKR / BankrCoin and CHIP / USD.AI",
+        "source": "X/Twitter official accounts",
+        "url": "docs/data/index.json",
+        "summary": "Bankr activity was automated token deployments, launch prompts, and implementation chatter rather than a project-level step change. USD.AI reiterated its existing offchain GPU-claim/onchain-transparency design without a new loan, reserve metric, default, yield, or CHIP value-capture change.",
+        "decision": "no changelog entries under routine-output and duplicate-context calibration"
+      },
+      {
+        "project": "Tracked projects excluding logged project and suppressed POD",
+        "source": "X/Twitter tracked-account batches, broad high-signal search, and targeted watch-item searches",
+        "url": "docs/data/index.json",
+        "summary": "No additional qualifying listing, governance, tokenomics, unlock/buyback, funding, security incident, major release, partner confirmation, sourced investor thesis, or quantitative onchain anomaly was found in-window. Investor/team posts on open AI and harness-level model routing were broad commentary rather than project updates.",
+        "decision": "no additional changelog entries or weak-signal watch items"
+      },
+      {
+        "project": "Outstanding dossier watch items",
+        "source": "previous run next_checks and dossier Unverified Watch Items",
+        "url": "projects/",
+        "summary": "The Octra challenge-material check narrowed but did not resolve the formal-paper/verifier dependency. No new evidence resolved GitLawb paid security jobs, AEON attestations, GEOD adoption, Yanez implementation, MetaDAO deployment/backers, Grass execution, NEAR usage, USD.AI yield risk, Chutes revenue, Derive liquidity, Venice burn math, Bankr utility/staking, Kinetiq buyback, or Lium post-listing effects.",
+        "decision": "all unresolved checks explicitly carried forward below with origins"
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      {"project": "OCT / Octra", "check": "Monitor HFHE challenge v2 repository/results and payout; verify the formal paper, security model/proofs, independent review, production TAPE verifier, node release, and whether a credible break delays listing dependencies.", "carried_from": "scan-20260709T231833Z; narrowed by scan-20260711T130503Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Verify completed GitLawb Mercenary security-pass jobs, customer/repeat usage, code/repo attribution, payment transactions, and whether activity routes through GitLawb/OpenGateway, ads/credits, or $GITLAWB.", "carried_from": "scan-20260711T085119Z"},
+      {"project": "AEON Framework", "check": "Reproduce v0.1 from the tagged release; inspect the attestation format/verifier and public log, partner/user activity, security assumptions, fees, and any $aeon buyback/value-capture linkage.", "carried_from": "scan-20260711T043633Z"},
+      {"project": "GEOD / GEODNET", "check": "Seek GEO-PULSE measured in-motion accuracy/route evidence, order and active-device counts, rewards paid, reviews, and hardware contribution to revenue/burn; continue partner-quality diligence.", "carried_from": "scan-20260711T043633Z and 2026-06-17 watch item"},
+      {"project": "TAO / Bittensor", "check": "Verify Yanez/SN54 client names/apps, Exploit Summit incentive, conversion/retention contracts and wallets, dashboard, revenue, alpha buy cadence, and treatment of the retained 20%.", "carried_from": "scan-20260711T001809Z"},
+      {"project": "META / MetaDAO", "check": "Verify whether percolator-meta issues #38-41 affected deployed programs, deployed versions/upgrade transactions, or real transactions; source-code fixes are confirmed.", "carried_from": "2026-06-15 to 2026-06-25 watch items"},
+      {"project": "META / MetaDAO", "check": "Seek concrete official/GitHub evidence for the separate vague exploit claim; mark stale if none emerges.", "carried_from": "2026-06-17 watch item"},
+      {"project": "META / MetaDAO", "check": "Verify exact Paradigm/Colosseum ownership and active-support terms from fund or founder sources.", "carried_from": "2026-06-14 watch item"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 claim execution, total USDC pool/claim rate, wallet reliability, distribution accounting, operator retention, and any separate GRASS value-routing policy.", "carried_from": "scan-20260710T195104Z"},
+      {"project": "NEAR Protocol", "check": "Verify NEAR@3.33 $70M TVL trigger/snapshot/allocation/claims and post-incentive retention; also check Internet Court deals, escrow transactions, paid volume, fees, disputes, and revenue.near.org movement.", "carried_from": "2026-06-18 catalyst and scan-20260710T195104Z"},
+      {"project": "CHIP / USD.AI", "check": "Verify Stablewatch/API support for 7.76% 30-day APY and nearly $2M/month yield paid, plus loan-book risk and CHIP value capture.", "carried_from": "scan-20260710T154700Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Verify Internet Court paid-inference demand, DefiLlama revenue, named agent integration and SN64 economic effects.", "carried_from": "scan-20260710T154700Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify Hyperliquid DRV-USDC liquidity/contracts/access and Strategy Builder follow-through in OI, volume, fees and weekly buybacks.", "carried_from": "scan-20260710T113716Z"},
+      {"project": "VVV / Venice AI", "check": "Verify the latest burn dashboard/Base transaction and compare the burn against current emissions.", "carried_from": "scan-20260709T231833Z"},
+      {"project": "BANKR / BankrCoin", "check": "Verify OKT-gated utility, canonical BNKR staking vault/docs address, and any postmortem or repeat complaints from the console test-token incident.", "carried_from": "2026-06-21 to 2026-07-04 watch items"},
+      {"project": "Kinetiq", "check": "Verify the claimed $320K KNTQ buyback wallet and whether purchases are revenue-funded.", "carried_from": "2026-06-29 watch item"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Verify Kraken SN51 liquidity/deposits/withdrawals and any post-listing buyback, burn, credit-purchase or GPU-utilization effect.", "carried_from": "scan-20260710T032255Z"}
+    ],
+    "notes": "Two independent delegate_task tagger passes were dispatched before commit but did not return within the cron run. Emergency fallback applied the strict rubric: Octra=medium because this is a meaningful security-research/catalyst update, but there is no confirmed break, incident, token/liquidity/revenue impact, paper release, verifier release, node launch, or listing."
+  },
+  {
     "run_id": "scan-20260711T085119Z",
     "started_at": "2026-07-11T08:51:19Z",
     "completed_at": "2026-07-11T08:57:02Z",
