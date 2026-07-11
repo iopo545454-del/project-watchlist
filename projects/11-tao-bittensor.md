@@ -1,12 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-10T19:51:04Z
+last_updated: 2026-07-11T00:18:09Z
 ---
 
 # TAO / Bittensor
 
 ## Latest scan notes
+
+- 2026-07-11 — Official Yanez AI / SN54 account disclosed a planned Proof of Humanhood / Proof of Uniqueness token loop: SN54 alpha is intended to become the product currency, all PoH/PoU revenue received in USD, stablecoins, or Bittensor-native assets is intended to be converted into SN54 alpha and tracked onchain, and 20% of the resulting alpha “will never be sold.” Yanez also said two clients are already integrated but awaiting app-store availability, described a second incentive for registry-user growth, and said the permissionless incentive will be announced at Exploit Summit. This materially advances the prior OpenTensor client-integration note into a subnet value-capture design, but the conversion wallet/contracts, revenue dashboard, exact treatment of the retained 20%, client names, and live revenue remain unverified. Source: https://x.com/yanez__ai/status/2075695559097401400
 
 - 2026-07-10 — Official OpenTensor highlighted Novelty Search / SN54 miners adversarially testing Yanez AI biometric liveness and deepfake-detection systems with synthetic faces and replay attacks; the post says two clients are fully integrated for Sybil-resistant Web3 and verifiable-payment use cases. This is a useful external-client/security proof point for subnet output, but no client names, paid volume, revenue, emissions change, or TAO value-capture metric was disclosed. Source: https://x.com/opentensor/status/2075665104625172894
 
@@ -55,6 +57,7 @@ last_updated: 2026-07-10T19:51:04Z
 - `@BittensorAssist`
 - `@dTAOfordummies`
 - `@bittingthembits`
+- `@yanez__ai` — official Yanez AI / SN54 project account; monitor PoH/PoU clients, subnet revenue conversion, incentives, and onchain evidence.
 
 ## KOLs
 - `@opentensor`
@@ -101,6 +104,7 @@ last_updated: 2026-07-10T19:51:04Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Yanez AI / SN54 Proof-of-Humanhood revenue-to-alpha loop | Confirmed announcement / implementation pending | Official Yanez AI / SN54 account says SN54 alpha will become the PoH/PoU product currency, all PoH/PoU revenue in USD/stablecoins/Bittensor-native assets will become SN54 alpha and be tracked onchain, 20% will never be sold, two clients are integrated, and a permissionless incentive will be announced at Exploit Summit: https://x.com/yanez__ai/status/2075695559097401400 | Announced 2026-07-10; client apps and permissionless incentive upcoming; revenue-conversion activation date unknown | Creates an explicit external-revenue-to-subnet-alpha demand path and a retained-token component around Yanez identity-verification usage. | If real client revenue is systematically converted and partly retained, SN54 can demonstrate a closed-loop subnet economy and strengthen the broader thesis that Bittensor alpha demand can come from customers rather than emissions alone; weak/no onchain execution would reduce this to podcast tokenomics. | Verify client names/app-store releases, Exploit Summit incentive details, conversion/retention contracts and wallets, dashboard, gross revenue, buy frequency, whether “20% never sold” means burn/treasury/permanent lock, and effects on SN54 alpha liquidity/emissions. |
 | OKX spot listing / OKX AI subnet-API support | Confirmed | OpenTensor weekly ecosystem highlights said OKX AI was unveiled with Opentensor support, Bittensor subnet APIs are coming to the agent marketplace, and `$TAO` was listed; OKX also highlighted `$TAO` spot as a weekly listing: https://x.com/opentensor/status/2073771523492524281 and https://x.com/okx/status/2073293545637585379 | Listed / highlighted 2026-07-04 to 2026-07-05 | Adds a major centralized-exchange spot venue and puts Opentensor support into OKX's AI product/agent-marketplace narrative. | More market access can deepen TAO liquidity and distribution; subnet API integration could matter if OKX routes real agent traffic to Bittensor subnets. | Verify OKX market depth/volume, geographic restrictions, any deposit/trading incentives, OKX AI subnet API launch details, and whether usage flows to specific subnets. |
 | Flow-based emissions “Taoflow” active | Confirmed / docs-backed | Bittensor docs say as of November 2025 emissions moved to flow-based Taoflow, based on net TAO inflows from staking activity: https://docs.learnbittensor.org/learn/emissions | Active since November 2025 | Changes subnet capital allocation from price-based signals toward staker flow. | Can re-rank subnets and redirect TAO/alpha incentives toward projects attracting real stake demand. | Watch subnet emissions, stake inflows/outflows, alpha liquidity, and any governance changes to Taoflow. |
 | Subtensor v3.4.6-421 inactive-subnet emission gate | Confirmed / core contributor + official amplification | Jacob Steeves / `@const_reborn` said “we upgraded the chain today” and linked the Subtensor release: https://x.com/i/status/2069229442522599847; OpenTensor promoted the protocol-upgrade discussion: https://x.com/opentensor/status/2069443585586684328 | Live June 23, 2026 | Replaces prior flow/netflow averages with `root_prop × price × (1 − miner_burn)`, making active mining/IM a pass-fail gate for emissions. | TAO/alpha incentives should rotate away from inactive or self-cycling subnets toward active utility subnets; Chutes/Lium/Targon-style compute/inference subnets can benefit if they keep proving work. | Watch TAOFlows/TaoStats/IntoTAO for subnets losing or regaining emissions, validator review cadence, miner-burn flags, and whether the formula creates new gaming vectors. |

@@ -1,5 +1,76 @@
 [
   {
+    "date": "2026-07-11T04:36:33Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "AEON released aeon v0.1 as its first stable version after use by 70 partners, adding multi-harness support, automatic skills/MCP discovery, opt-in observability, Open Knowledge Format support, and attestations for provable skill runs.",
+    "source": "X/Twitter official/founder accounts and GitHub release",
+    "url": "https://github.com/aaronjmars/aeon/releases/tag/v0.1.0",
+    "last_scanned": "2026-07-11T04:36:33Z",
+    "novelty": "new",
+    "delta": "Prior AEON repo state tracked framework hardening, a planned transparency dashboard, DAG/security work, and partner integrations but no first stable release. v0.1 now packages live harness, discovery, observability, and proof-of-execution features; active usage, public attestation volume, security assumptions, fees, and $aeon value capture remain unmeasured.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "aeon v0.1 stable release and skill-run attestations"},
+      {"type": "open_question", "ref": "Which features are live in repo versus marketing site claims?"},
+      {"type": "open_question", "ref": "Are there real external users/agents built on AEON beyond community claims?"}
+    ]
+  },
+  {
+    "date": "2026-07-11T04:36:33Z",
+    "project": "GEOD / GEODNET",
+    "slug": "02-geod",
+    "type": "official update",
+    "importance": "low",
+    "summary": "Official GEODNET showed GEO-PULSE being tested outdoors in motion while capturing enhanced GPS positioning and earning network rewards, a field-use follow-through for the existing hardware catalyst without quantified accuracy or adoption results.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/GEODNET/status/2075736468874523046",
+    "last_scanned": "2026-07-11T04:36:33Z",
+    "novelty": "update",
+    "delta": "The dossier already tracked GEO-PULSE Gen 2 sales and a static RTK-versus-standard-GPS comparison. This adds an outdoor in-motion/reward-loop demonstration, but no route trace, measured accuracy, sales, active devices, rewards paid, or revenue/burn impact.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "GEO-PULSE hardware commercialization"},
+      {"type": "open_question", "ref": "How much revenue or burn comes from recurring enterprise services versus one-off hardware sales?"}
+    ]
+  },
+  {
+    "date": "2026-07-11T00:18:09Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Official Yanez AI / SN54 disclosed a Proof-of-Humanhood value loop in which PoH/PoU revenue is intended to be converted into SN54 alpha and tracked onchain, with 20% never sold; two clients are integrated and a permissionless incentive is due at Exploit Summit.",
+    "source": "X/Twitter official subnet account",
+    "url": "https://x.com/yanez__ai/status/2075695559097401400",
+    "last_scanned": "2026-07-11T00:18:09Z",
+    "novelty": "new",
+    "delta": "The prior OpenTensor entry established two SN54/Yanez client integrations but disclosed no revenue or alpha-token economics. Yanez now describes an explicit customer-revenue-to-SN54-alpha conversion and retained 20% component, while contracts, wallets, dashboard, client names, revenue size, and activation remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Yanez AI / SN54 Proof-of-Humanhood revenue-to-alpha loop"},
+      {"type": "catalyst", "ref": "Bittensor subnet external demand / useful AI output"},
+      {"type": "open_question", "ref": "Verify subnet quality and real external demand"}
+    ]
+  },
+  {
+    "date": "2026-07-11T00:18:09Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "verification update",
+    "importance": "medium",
+    "summary": "Maintainer-closed GitHub issues confirm fixes for three percolator-meta code watch threads: TWAP late bids (#41), principal-policy stale shares (#40), and permissionless config squatting / omitted-fee defaults (#38/#39); deployed exposure and upgrades remain unverified.",
+    "source": "GitHub issue / maintainer commit",
+    "url": "https://github.com/aeyakovenko/percolator-meta/issues/41",
+    "last_scanned": "2026-07-11T00:18:09Z",
+    "novelty": "update",
+    "delta": "The dossier previously carried issues #38-41 as unverified related-account claims. Public issues #38, #39, #40, and #41 are closed as completed with fix commits 87ea552620508ab0f766a82a70ec2e385d7fad0b, 11b9637f663935665de54b9b4f9496eb3ef576ab, and 18477456fa8dbaa957a9ab2f715c10ae9a425879 plus regression coverage; no issue establishes deployed exposure, an onchain upgrade, or exploitation.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "percolator-meta issue #41 late bids after round_end"},
+      {"type": "watch_item", "ref": "percolator-meta issue #40 principal-policy partial-withdraw share accounting"},
+      {"type": "watch_item", "ref": "percolator-meta issues #38/#39 config squatting and omitted-fee default"}
+    ]
+  },
+  {
     "date": "2026-07-10T19:51:04Z",
     "project": "GRASS",
     "slug": "08-grass",

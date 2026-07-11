@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-07-08T09:55:40Z
+last_updated: 2026-07-11T04:36:33Z
 ---
 
 # AEON Framework / aeon
@@ -58,6 +58,7 @@ last_updated: 2026-07-08T09:55:40Z
 | Information source | Context about the source |
 |---|---|
 | https://x.com/aeonframework | Official X account; primary project announcements and narrative source. |
+| https://x.com/aaronjmars | Founder/builder account tied to the official GitHub repo; primary source for framework release and attestation details. |
 | https://www.aeon.fun/ | Official website; product positioning, skills/categories, docs/source links. |
 | https://github.com/aaronjmars/aeon | Official source repo linked from website/DexScreener; MIT-licensed autonomous agent framework. |
 | https://t.me/aeon_agent | Telegram linked by DexScreener/project socials. |
@@ -68,6 +69,8 @@ last_updated: 2026-07-08T09:55:40Z
 ---
 
 ## Latest scan notes
+
+- 2026-07-11 — Official AEON announced **aeon v0.1** as its first stable release after use by 70 partners. The release adds/rolls up Claude Code, Codex, Grok and OpenCode harnesses; automatic skills and MCP discovery; opt-in Langfuse observability; skill-run attestations that can prove onchain/offchain execution; Open Knowledge Format support; and channel/codebase improvements. Founder/builder Aaron Mars separately described each skill run as producing a GitHub-signed, publicly logged proof. This is a real product/release milestone and closes part of the “live features vs roadmap” question, but adoption, proof-verification docs, public attestation volume, and any `$aeon` value capture remain unmeasured. Sources: https://x.com/aeonframework/status/2075576813850403049, https://x.com/aeonframework/status/2075576816665018716, https://x.com/aaronjmars/status/2074516793800933663, https://github.com/aaronjmars/aeon/releases/tag/v0.1.0
 
 - 2026-07-08 — Official AEON amplified Sparkleware as an ecosystem project: Sparkleware said it is live on Virtuals, tradeable on Robinhood, and positioned as a “holographic registry” for AEON skill packs with community token `0x1dAe71A215eE5C696cb644F030597AE4F32831C0`. Treat as an AEON ecosystem/distribution signal for Skill Packs rather than direct `$aeon` tokenomics; next checks are whether AEON documents Sparkleware in official docs, actual skill-pack usage, and whether any fees/revenue route to AEON. Sources: https://x.com/aeonframework/status/2074777247349645428 and https://x.com/sparklewarefun/status/2074758106644611200
 
@@ -95,6 +98,7 @@ last_updated: 2026-07-08T09:55:40Z
 
 ## Twitter/X accounts
 - https://x.com/aeonframework
+- https://x.com/aaronjmars — founder/builder account tied to the official source repo.
 
 ## KOLs
 - Needs follow-up; X search showed third-party Base/AI-agent community mentions, but keep them secondary unless they surface material project info.
@@ -123,6 +127,7 @@ last_updated: 2026-07-08T09:55:40Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| aeon v0.1 stable release and skill-run attestations | Confirmed / completed product release | Official AEON v0.1 announcement and feature thread: https://x.com/aeonframework/status/2075576813850403049 and https://x.com/aeonframework/status/2075576816665018716; founder/builder attestation explanation: https://x.com/aaronjmars/status/2074516793800933663; GitHub release: https://github.com/aaronjmars/aeon/releases/tag/v0.1.0 | Live as of 2026-07-10 | Establishes a first stable framework release with multi-harness support, skills/MCP discovery, observability, and publicly logged proof-of-execution support. | Verifiable agent runs can enable paid verified work, proof-gated onchain actions, and trust between autonomous fleets if developers actually adopt and verify the attestations. | Verify installation/reproduction from the v0.1 tag, attestation format and verifier, public proof volume, active partners/users, security assumptions, and whether usage generates fees or `$aeon` buybacks. |
 | B1 transparency filing + tokenholder protections / buybacks | Confirmed / tokenomics-governance catalyst | Official AEON post says B1 filing scored 40/40 and highlights Bedrock Foundation structure, golden share, treasury fee capture, and 50% non-trading-fee revenue buybacks: https://x.com/aeonframework/status/2069473683375005833 | Published 2026-06-23 | Improves token diligence and clarifies value accrual. | Could reduce low-cap token-risk discount if revenue becomes measurable. | Watch filing link/docs, foundation details, actual treasury inflows, buyback transactions, and ownership/contract controls. |
 | DAG executor, x402 endpoints, non-crypto login, Packs publishing, and provider/integration expansion | Confirmed / product-security catalyst | Community Call #5 covered DAG executor/security work and x402 endpoints: https://x.com/aeonframework/status/2069384845235470828; latest community-call recording added MiroShark × x402/Base App integration, BYOK/X subscription provider work, Bankr integration, Telegram upgrades, and transparency dashboard: https://x.com/aeonframework/status/2074052227799412882 | Ongoing; latest call posted 2026-07-06 | Expands agent monetization, provider options, safer execution, integrations, and consumer onboarding. | If paid x402 skills/providers and integrations become measurable, AEON can move from framework narrative to revenue platform. | Watch endpoint docs, Base App/Bankr integration evidence, dashboard metrics, paid skill/provider usage, security incidents, and Packs adoption. |
 | Robinhood MCP integration | Confirmed / integration catalyst | Official post announced Robinhood MCP support for agentic trading, research, and rebalancing: https://x.com/aeonframework/status/2066616325611405483 | Announced 2026-06-15 | Adds a recognizable financial workflow/integration for AEON agents. | Can attract users building trading/rebalancing agents and expose security/compliance constraints. | Watch live demos, user adoption, permissioning safeguards, API limits, and additional MCP integrations. |
