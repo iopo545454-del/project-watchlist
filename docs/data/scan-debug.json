@@ -1,5 +1,61 @@
 [
   {
+    "run_id": "scan-20260712T191542Z",
+    "started_at": "2026-07-12T19:15:42Z",
+    "completed_at": "2026-07-12T19:22:21Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-12T15:02:58Z",
+      "until": "2026-07-12T19:22:21Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": ["GEOD / GEODNET", "META / MetaDAO", "BANKR / BankrCoin", "AEON Framework", "GitlWab / GitLawb / Gitwab", "Kinetiq", "GRASS", "IOTA — Macrocosmos Bittensor Subnet 9", "Targon — Bittensor Subnet 4", "TAO / Bittensor", "AKT / Akash", "CHIP / USD.AI", "VVV / Venice AI", "VIRTUAL / Virtuals Protocol", "Worldcoin / WLD / World Network", "NEAR Protocol", "DRV / Derive Protocol", "OCT / Octra", "BIO / Bio Protocol", "Pluralis", "Ambient", "EIGEN / EigenCloud", "Chutes — Bittensor Subnet 64", "Lium — Bittensor Subnet 51", "Compute Horde — Bittensor Subnet 12"],
+    "logged_projects": ["BANKR / BankrCoin"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 1,
+      "material_entries": 1,
+      "unverified_items": 0,
+      "watch_items_resolved": 0,
+      "sources_added": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {"project": "Project intake", "source": "GitHub issues API", "url": "https://github.com/iopo545454-del/project-watchlist/issues", "summary": "The three open intake-form issues remain Pluralis, Ambient and EigenCloud, all already deduplicated into the index with initial reviews complete.", "decision": "no new project intake"},
+      {"project": "Direct metrics", "source": "scripts/collect_direct_metrics.py --write", "url": "docs/data/direct-metrics/latest.json", "summary": "Collector returned 24 metrics for 13 projects. Non-suppressed moves included Kinetiq TVL +1.50% to about $996.6M, Derive TVL +0.54% to about $113.4M, BIO TVL -1.81% to about $3.9M, and Chutes TVL +1.64% to about $43.1M. None crossed configured materiality rules, so generated refresh churn including suppressed POD was reverted.", "decision": "no direct-metric changelog entry"},
+      {"project": "BANKR / BankrCoin", "source": "X/Twitter official account", "url": "https://x.com/bankrbot/status/2076365990791938305", "summary": "Bankr added daily and weekly BNKR payout cadence, top-20/top-100/top-500 rank coverage, weekly leaderboard LLM credits and a separate developer credit pool to the already tracked 250M BNKR Season 2 program. Scoring is live and Bankr Club gated, but token payouts start only ‘soon’; exact weights, start date, claim mechanics, funding wallet, vesting and anti-sybil controls remain unknown.", "decision": "advanced the Reward Season 2 catalyst and added a Latest/changelog entry"},
+      {"project": "Tracked projects excluding logged project and suppressed POD", "source": "X/Twitter tracked-account batches and broad high-signal/weak-signal search", "url": "docs/data/index.json", "summary": "No additional qualifying listing, governance result, tokenomics/unlock/buyback change, funding, security incident, major release, confirmed partnership, sourced investor thesis or quantitative onchain anomaly was found in-window. Bankr token deployments, Grass community listing votes, ecosystem recaps and routine market commentary were excluded.", "decision": "no additional changelog entries or weak-signal watch items"},
+      {"project": "Outstanding dossier watch items", "source": "previous run next_checks and dossier Unverified Watch Items", "url": "projects/", "summary": "Bankr Reward Season 2 narrowed on cadence, rank coverage and LLM-credit eligibility but remains unresolved on implementation. Searches did not resolve Bankr staking/OKT/live HOODIE floors, Octra production/security, GitLawb implementation/customers, AEON attestations, GEOD adoption, Yanez implementation/provider attribution, MetaDAO deployment/backers, Grass execution, NEAR/Chutes paid usage, USD.AI deployment, Derive liquidity, Venice burn math, Kinetiq buyback or Lium post-listing economics.", "decision": "all unresolved checks explicitly carried forward below with origins"}
+    ],
+    "errors": [],
+    "next_checks": [
+      {"project": "BANKR / BankrCoin", "check": "Verify Reward Season 2 exact rank-allocation weights, payout start/cadence implementation, claim/transfer mechanics, funding wallet, vesting, anti-sybil controls and recipient retention; also verify public-skill controls/adoption, live HOODIE floors, broader execution/fees, OKT utility and canonical staking vault/docs.", "carried_from": "2026-06-21 Reward Season 2 catalyst; advanced by scan-20260711T172006Z and scan-20260712T191542Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Verify launch of the $1,000-holder proposal flow, voting eligibility/weighting, onchain vs offchain execution, treasury controls, supporter fee-share formula/contracts and first funded proposal; verify Robinhood Chain scanner repo/release and completed Mercenary jobs, customers, payments and token routing.", "carried_from": "scan-20260711T085119Z; governance advanced by scan-20260712T144557Z; unresolved scan-20260712T191542Z"},
+      {"project": "CHIP / USD.AI", "check": "Reconcile CCIR's roughly $1.325B listed facility notional with prior $817M signed-term-sheet / $205M closed-loan figures; verify drawdowns, deployment, performance/defaults, Stablewatch yield metrics, DAO Launchpad voting mechanics/1.75x points eligibility and CHIP value routing.", "carried_from": "scan-20260710T154700Z; facility coverage advanced by scan-20260712T144557Z; unresolved scan-20260712T191542Z"},
+      {"project": "OCT / Octra", "check": "Verify the promised devnet article, AppliedLang/custom-inference docs, reproducible external workloads, GPU/resource accounting, explorer activity, public node/container, fees, TAPE verifier, formal paper, challenge results and listing dependency.", "carried_from": "scan-20260709T231833Z; advanced by scan-20260711T214020Z; unresolved scan-20260712T191542Z"},
+      {"project": "AEON Framework", "check": "Reproduce v0.1; inspect attestation format/verifier and public log, partner/user activity, security assumptions, fees and aeon value capture.", "carried_from": "scan-20260711T043633Z; unresolved scan-20260712T191542Z"},
+      {"project": "GEOD / GEODNET", "check": "Seek GEO-PULSE measured accuracy/route evidence, orders, active-device counts, rewards paid, reviews and hardware contribution to revenue/burn.", "carried_from": "scan-20260711T043633Z and 2026-06-17 watch item; unresolved scan-20260712T191542Z"},
+      {"project": "TAO / Bittensor", "check": "Verify Yanez/SN54 clients, incentive, revenue-to-alpha contracts/wallets/dashboard and retained 20%; separately seek direct confirmation of which subnet Jason Calacanis uses and any actual Hermes/cost figures.", "carried_from": "scan-20260711T001809Z; expanded by scan-20260712T015809Z; unresolved scan-20260712T191542Z"},
+      {"project": "META / MetaDAO", "check": "Verify deployed percolator-meta versions/upgrades, seek evidence for the separate exploit claim, and verify Paradigm/Colosseum ownership/support terms.", "carried_from": "2026-06-14 to 2026-06-25 watch items; unresolved scan-20260712T191542Z"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 claim execution, USDC pool/claim rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.", "carried_from": "scan-20260710T195104Z; not yet due; carried by scan-20260712T191542Z"},
+      {"project": "NEAR Protocol", "check": "Verify NEAR@3.33 $70M TVL trigger/snapshot/allocation/claims and Internet Court deals, escrow transactions, paid volume, fees, disputes and revenue movement.", "carried_from": "2026-06-18 catalyst and scan-20260710T195104Z; unresolved scan-20260712T191542Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Verify Internet Court paid inference and identify the subnet/provider behind Jason Calacanis's GLM 5.2 usage from a direct source; do not carry unsupported Hermes/95% attribution as Chutes fact.", "carried_from": "scan-20260710T154700Z; narrowed by scan-20260712T061424Z; unresolved scan-20260712T191542Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify Hyperliquid DRV-USDC liquidity/contracts/access and Strategy Builder follow-through in OI, volume, fees and weekly buybacks.", "carried_from": "scan-20260710T113716Z; unresolved scan-20260712T191542Z"},
+      {"project": "VVV / Venice AI", "check": "Verify the latest burn dashboard/Base transaction and compare the burn against current emissions.", "carried_from": "scan-20260709T231833Z; unresolved scan-20260712T191542Z"},
+      {"project": "Kinetiq", "check": "Verify the claimed $320K KNTQ buyback wallet and whether purchases are revenue-funded.", "carried_from": "2026-06-29 watch item; unresolved scan-20260712T191542Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Verify Kraken SN51 liquidity/deposits/withdrawals and any post-listing buyback, burn, credit-purchase or GPU-utilization effect.", "carried_from": "scan-20260710T032255Z; unresolved scan-20260712T191542Z"}
+    ],
+    "notes": "Independent signal-tier tagger labeled the new BANKR / BankrCoin Reward Season 2 distribution entry medium: meaningful incentive-detail progress, but only 0.25% of supply / roughly $90K, with no live payout start, exact weights, claim mechanics or project-level step change."
+  },
+  {
     "run_id": "scan-20260712T144557Z",
     "started_at": "2026-07-12T14:45:57Z",
     "completed_at": "2026-07-12T15:02:58Z",
