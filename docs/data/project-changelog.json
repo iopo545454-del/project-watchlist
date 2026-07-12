@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-12T23:31:53Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "catalyst update",
+    "importance": "medium",
+    "summary": "Bankr deployed a LayerZero OFT for BNKR between Base and Robinhood Chain, seeded roughly $50K of BNKR/WETH liquidity, and published the cross-chain workflow as a reusable agent skill; a 2.79M BNKR Base send succeeded, while destination delivery remains unconfirmed.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/bankrbot/status/2076426920422674804",
+    "last_scanned": "2026-07-12T23:31:53Z",
+    "novelty": "new",
+    "delta": "Prior repo state had Robinhood trading, token launches, user-created skills, and external-token LP automation, but BNKR itself remained Base-centric. This adds a project-level LayerZero OFT, Robinhood BNKR/WETH pool and reusable Base-token expansion skill. After initial sync/simulation issues, the Base Blockscout API verifies a successful roughly 2.79M BNKR source send; destination mint/delivery, end-to-end reliability, persistent liquidity and fee routing remain unresolved.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"},
+      {"type": "open_question", "ref": "Verify successful Base↔Robinhood transfers, LayerZero configuration, pool persistence, fees, and BNKR/Bankr Club value routing"}
+    ]
+  },
+  {
     "date": "2026-07-12T19:20:23Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
