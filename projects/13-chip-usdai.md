@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-10T15:47:00Z
+last_updated: 2026-07-12T14:58:24Z
 ---
 
 # CHIP / USD.AI
@@ -14,6 +14,8 @@ last_updated: 2026-07-10T15:47:00Z
 - Builder: Permian Labs.
 
 ## Latest scan notes
+
+- 2026-07-12 — USD.AI highlighted third-party **CCIR Compute Credit Tracker** data showing roughly **$93B–$94B** of GPU-secured debt across the broader market and about **$1.325B of listed USD.AI facilities** (`as of 2026-07-04`). The USD.AI subset is facility notional, not proof that $1.325B is drawn, deployed, or performing; the dossier previously had official figures of $817M signed term sheets and $205M closed loans, so the tracker expands external facility coverage but does not replace deployment/default diligence. A USDai Foundation reply also offered up to a **1.75x Season 1 points multiplier** for registering with the Community DAO Launchpad and voting, without disclosing weighting, proposal scope, or CHIP value routing. Sources: https://x.com/USDai_Official/status/2076275413501030406 and https://x.com/USDaiFNDN/status/2076277054778282349
 
 - 2026-07-10 — USD.AI posted issuer-reported Stablewatch metrics for sUSDai: about **7.76% 30-day APY** and “closing in on **$2M/month**” in yield paid out, claiming nearly double the 30-day yield of any asset above $100M. This is useful live-yield/loan-demand context after the July 6 Texas B200 loan and July 8 AUSD borrow-market updates, but it still needs source/API verification, risk-adjusted yield checks, and CHIP value-capture linkage. Sources: https://x.com/USDai_Official/status/2075599042541748426 and https://x.com/USDai_Official/status/2075599045993574772
 
@@ -97,6 +99,7 @@ last_updated: 2026-07-10T15:47:00Z
 - CHIP tokenomics, governance rights, buybacks, emissions/unlocks.
 - Attestations, audits, risk reports, reserve reports.
 - Liquidity venues and peg stability.
+- CCIR Compute Credit Tracker / instrument ledger, surfaced by official USD.AI: third-party facility-notional cross-check; distinguish confirmed/press facilities from drawn and performing loans. Snapshot cited `as of 2026-07-04`: https://x.com/USDai_Official/status/2076275413501030406
 
 ## Docs/blogs
 - Lighthouse/YTD report hub: https://usd.ai/lighthouse — official analytics/report pointer for revenue, loan deployment, and structured-lending updates.
@@ -119,7 +122,7 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 | CHIP token live for USD.AI governance and utility | Confirmed | USD.AI announced “$CHIP Is Live” and says CHIP holders can stake to govern risk, fees, staking module, and upgrades: https://usd.ai/insights/chip-is-live | Live since 2026-04-21/22 | Turns USD.AI from a credit/stablecoin product into a governable token system. | Governance decisions can directly affect collateral quality, loan pricing, revenue routing, and protocol risk. | Watch staking participation, proposal cadence, fee routing, exchange/liquidity depth, and unlocks. |
 | USD.AI Foundation and DAO stewardship launched | Confirmed | Official post says the USD.AI Foundation launched as off-chain steward of the DAO and CHIP governs protocol parameters, curators, and ecosystem initiatives: https://usd.ai/insights/usdai-foundation-chip | Announced 2026-01-27 | Establishes governance structure and treasury/ecosystem coordination around CHIP. | Better governance can accelerate borrower onboarding and risk management; weak governance could impair credit quality. | Watch foundation disclosures, DAO votes, curator approvals, treasury use, and legal/risk updates. |
 | Lighthouse report shows scaling loan book and revenue KPIs | Confirmed / KPI catalyst | USD.AI 2026 YTD Lighthouse report cites $398M TVL, $202M deployed, $30M Q2 annualized DAO ARR, $13B borrower pipeline, $817M signed term sheets, and $205M closed loans: https://usd.ai/insights/usdai-2026-ytd-report-lighthouse | Published 2026-06-08 | Provides hard KPI basis for CHIP value capture via GPU-backed credit growth. | If ARR and deployed loans continue growing, CHIP governance over risk and fee surfaces becomes more economically important. | Watch monthly ARR, deployed loans, defaults, sUSDai yield, borrower concentration, and pipeline-to-funded conversion. |
-| Large GPU-backed financing facilities validate borrower demand | Confirmed | Sharon AI facility up to $500M, Crucible $26.8M loan secured by 576 NVIDIA B300 GPUs, NexGen Cloud $34M facility for 96 B200 servers / 768 GPUs in Sweden, and official $620k→$98M GPU-loan-growth note: https://usd.ai/insights/sharon-ai-500m-gpu-financing-usdai, https://usd.ai/insights/crucible-capital-26m-gpu-backed-loan, https://x.com/USDai_Official/status/2070219678597927125, and https://x.com/USDai_Official/status/2070477300857213131 | Sharon announced 2026-01-22; Crucible announced 2026-04-06; NexGen announced 2026-06-25; growth note 2026-06-26 | Shows USD.AI can originate institutional-scale GPU-backed credit and fund already-installed/verified GPU deployments. | Larger facilities can grow protocol revenue but increase collateral, counterparty, jurisdiction, duration, and liquidation complexity. | Watch drawdowns vs headline commitments, collateral verification, insurance, repayment performance, escrow attestations, borrower concentration, defaults/delinquencies, and live deployed-vs-idle liquidity. |
+| Large GPU-backed financing facilities validate borrower demand | Confirmed facility announcements; deployment varies by instrument | Sharon AI facility up to $500M, Crucible $26.8M loan secured by 576 NVIDIA B300 GPUs, NexGen Cloud $34M facility for 96 B200 servers / 768 GPUs in Sweden, official $620k→$98M GPU-loan-growth note, and a third-party CCIR ledger showing about $1.325B of listed USD.AI facilities `as of 2026-07-04`: https://usd.ai/insights/sharon-ai-500m-gpu-financing-usdai, https://usd.ai/insights/crucible-capital-26m-gpu-backed-loan, https://x.com/USDai_Official/status/2070219678597927125, https://x.com/USDai_Official/status/2070477300857213131, and https://x.com/USDai_Official/status/2076275413501030406 | Ongoing; CCIR snapshot as of 2026-07-04 | Shows USD.AI has accumulated institutional-scale facility coverage, but facility notional must not be treated as funded/deployed principal. | Larger facilities can grow protocol revenue if drawn and performing, but increase collateral, counterparty, jurisdiction, duration, and liquidation complexity. | Reconcile CCIR's ~$1.325B facility notional with the dossier's prior $817M signed-term-sheet / $205M closed-loan figures; verify drawdowns, collateral, insurance, repayment performance, escrow attestations, borrower concentration, defaults/delinquencies, and live deployed-vs-idle liquidity. |
 
 ## Open questions
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.
