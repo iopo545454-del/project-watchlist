@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-07-12T06:24:55Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "official update",
+    "importance": "medium",
+    "summary": "Bankr's core builder used an installable custom skill to place roughly 978.6M HOODIE into five automated single-sided Uniswap v4 tranches on Robinhood Chain, including a trailing-floor mode designed to recycle sale proceeds into buy-side liquidity below spot.",
+    "source": "X/Twitter core builder",
+    "url": "https://x.com/0xDeployer/status/2076186764109369468",
+    "last_scanned": "2026-07-12T06:24:55Z",
+    "novelty": "new",
+    "delta": "Earlier repo state captured live user-created public skills and a stock-autopilot example. This is the first observed installable Bankr skill executing a large custom LP ladder: about 978.6M HOODIE across five tranches, with roughly 2.37 WETH harvested in the follow-up, but no buy floor deployed yet and no broad adoption, Bankr fee, or BNKR/Club routing disclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Robinhood Chain execution / user-created public skills / agent dev surface"},
+      {"type": "open_question", "ref": "Verify custom-skill adoption, automated LP execution, fees, and BNKR/Bankr Club value routing"}
+    ]
+  },
+  {
     "date": "2026-07-12T02:08:10Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
