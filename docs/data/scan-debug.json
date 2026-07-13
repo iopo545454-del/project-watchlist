@@ -1,5 +1,64 @@
 [
   {
+    "run_id": "scan-20260713T034512Z",
+    "started_at": "2026-07-13T03:45:12Z",
+    "completed_at": "2026-07-13T03:55:21Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-12T23:33:45Z",
+      "until": "2026-07-13T03:55:21Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": ["GEOD / GEODNET", "META / MetaDAO", "BANKR / BankrCoin", "AEON Framework", "GitlWab / GitLawb / Gitwab", "Kinetiq", "GRASS", "IOTA — Macrocosmos Bittensor Subnet 9", "Targon — Bittensor Subnet 4", "TAO / Bittensor", "AKT / Akash", "CHIP / USD.AI", "VVV / Venice AI", "VIRTUAL / Virtuals Protocol", "Worldcoin / WLD / World Network", "NEAR Protocol", "DRV / Derive Protocol", "OCT / Octra", "BIO / Bio Protocol", "Pluralis", "Ambient", "EIGEN / EigenCloud", "Chutes — Bittensor Subnet 64", "Lium — Bittensor Subnet 51", "Compute Horde — Bittensor Subnet 12"],
+    "logged_projects": ["META / MetaDAO", "GitlWab / GitLawb / Gitwab"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 2,
+      "material_entries": 2,
+      "unverified_items": 0,
+      "watch_items_resolved": 1,
+      "sources_added": 0,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {"project": "Project intake", "source": "GitHub issues API", "url": "https://github.com/iopo545454-del/project-watchlist/issues", "summary": "The label-specific query returned no issues; the three open intake-form issues remain Pluralis, Ambient and EigenCloud, all already deduplicated into the index with initial reviews complete.", "decision": "no new project intake"},
+      {"project": "Direct metrics", "source": "scripts/collect_direct_metrics.py --write", "url": "docs/data/direct-metrics/latest.json", "summary": "Collector returned 24 metrics for 13 projects. Non-suppressed moves included Kinetiq TVL -3.02% to about $968.9M, Virtuals 30d fees -12.97% to about $127.1K, Derive 24h fees -11.44% to about $11.0K, and Chutes 7d revenue -13.14% to about $70.2K. None crossed configured materiality rules, so generated refresh churn including suppressed POD was reverted.", "decision": "no direct-metric changelog entry"},
+      {"project": "GitlWab / GitLawb / Gitwab", "source": "X/Twitter official GitLawb, founder and Bankr accounts", "url": "https://x.com/bankrbot/status/2076480415070933077", "summary": "Official accounts confirmed the existing GITLAWB token was bridged from Base to Robinhood Chain through LayerZero, posted canonical Robinhood contract 0xd1b0d44E4f6ed940fcC7A9F59Bf30Daf62cCFe3D, and disclosed $50,000 of GITLAWB/WETH liquidity. An earlier separately deployed token was explicitly disavowed. Announcement posts did not provide transaction hashes, LayerZero configuration, two-way delivery or durable pool metrics.", "decision": "added a completed market-access catalyst, dossier/Latest update and changelog entry; retain bridge, pool and value-routing verification checks"},
+      {"project": "META / MetaDAO", "source": "X/Twitter Ownership FM", "url": "https://x.com/ownershipfm/status/2076464440090718553", "summary": "Ownership FM said threatened legal action led Zinc to send outstanding revenue, so no lawsuit was filed. This resolves the immediate dispute and supports the ownership-enforcement thesis, but does not confirm standard upgrade-authority or automatic revenue-routing terms.", "decision": "updated the Zinc catalyst from unverified dispute context to confirmed dispute resolution and retained broader policy checks"},
+      {"project": "CHIP / USD.AI", "source": "X/Twitter official account", "url": "https://x.com/USDai_Official/status/2076505734368616702", "summary": "The project repeated its AI-hardware-financing thesis and sUSDAI spread explanation with a broad greater-than-$10T AI-spend framing, but supplied no new facility, drawdown, deployed-capital, yield, default, governance or CHIP-routing evidence.", "decision": "marketing/investor-thesis restatement; no changelog entry"},
+      {"project": "Chutes — Bittensor Subnet 64", "source": "X/Twitter ecosystem recap", "url": "https://x.com/0x_Kalista/status/2076486779629338868", "summary": "An in-window ecosystem recap repeated the already-recorded Parallax non-blocking recurrent-training result and 0.6% centralized-quality gap from the July 8 official announcement.", "decision": "duplicate recap; no changelog entry"},
+      {"project": "Tracked projects excluding logged projects and suppressed POD", "source": "X/Twitter tracked-account batches and broad high-signal/weak-signal search", "url": "docs/data/index.json", "summary": "No additional qualifying listing, governance result, tokenomics/unlock/buyback change, funding, security incident, major release, confirmed partnership, sourced investor thesis or quantitative onchain anomaly was found in-window. Community complaints around the unofficial GITLAWB token lacked independent evidence beyond the official warning and were not promoted into a separate watch item.", "decision": "no additional changelog entries or weak-signal watch items"},
+      {"project": "Outstanding dossier watch items", "source": "previous run next_checks and dossier Unverified Watch Items", "url": "projects/", "summary": "The MetaDAO Zinc dispute resolved and GitLawb's Robinhood effort advanced from an explorer teaser to a live token/LP expansion. Searches did not resolve Bankr bridge-health/Reward Season 2 mechanics, Octra production/security, GitLawb governance/customers, AEON attestations, GEOD adoption, Yanez/provider attribution, MetaDAO deployed-program/backer checks, Grass execution, NEAR/Chutes paid usage, USD.AI deployment, Derive liquidity, Venice burn math, Kinetiq buyback or Lium post-listing economics.", "decision": "resolved the Zinc payment dispute and explicitly carried all remaining checks forward below"}
+    ],
+    "errors": ["Web search/extraction was unavailable because the configured web backend lacks credentials; X search and the public GitHub API were available and used."],
+    "next_checks": [
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Verify canonical Base contract and GITLAWB LayerZero source/destination transactions, peer/DVN configuration, two-way transfers, Robinhood pool depth/volume persistence, LP ownership and fee/value routing; also verify proposal flow launch, voting/treasury/fee-share mechanics, scanner release and completed Mercenary customers/payments.", "carried_from": "scan-20260711T085119Z; governance advanced by scan-20260712T144557Z; Robinhood token expansion advanced by scan-20260713T034512Z"},
+      {"project": "META / MetaDAO", "check": "Verify Zinc payment/treasury evidence and final rights status; determine whether MetaDAO standardizes upgrade-authority, programmatic revenue-routing or legal-enforcement terms; separately verify deployed percolator-meta upgrades and Paradigm/Colosseum support terms.", "carried_from": "2026-06-14 to 2026-06-25 watch items; Zinc payment dispute resolved by scan-20260713T034512Z"},
+      {"project": "BANKR / BankrCoin", "check": "Verify successful BNKR Base↔Robinhood transfers in both directions, LayerZero peer/DVN configuration, canonical explorer state, pool depth/volume persistence and external-token skill installs; also verify Reward Season 2 weights/payout/claim/funding/vesting/anti-sybil rules, skill controls, HOODIE floors, fees/value routing, OKT utility and canonical staking vault/docs.", "carried_from": "2026-06-21 Reward Season 2 catalyst; advanced through scan-20260712T232657Z; unresolved scan-20260713T034512Z"},
+      {"project": "CHIP / USD.AI", "check": "Reconcile CCIR's roughly $1.325B listed facility notional with prior $817M signed-term-sheet / $205M closed-loan figures; verify drawdowns, deployment, performance/defaults, Stablewatch yield metrics, DAO Launchpad voting mechanics/1.75x points eligibility and CHIP value routing.", "carried_from": "scan-20260710T154700Z; facility coverage advanced by scan-20260712T144557Z; unresolved scan-20260713T034512Z"},
+      {"project": "OCT / Octra", "check": "Verify the promised devnet article, AppliedLang/custom-inference docs, reproducible workloads, GPU/resource accounting, explorer activity, public node/container, fees, TAPE verifier, formal paper, challenge results and listing dependency.", "carried_from": "scan-20260709T231833Z; advanced by scan-20260711T214020Z; unresolved scan-20260713T034512Z"},
+      {"project": "AEON Framework", "check": "Reproduce v0.1; inspect attestation format/verifier and public log, partner/user activity, security assumptions, fees and aeon value capture.", "carried_from": "scan-20260711T043633Z; unresolved scan-20260713T034512Z"},
+      {"project": "GEOD / GEODNET", "check": "Seek GEO-PULSE measured accuracy/route evidence, orders, active-device counts, rewards paid, reviews and hardware contribution to revenue/burn.", "carried_from": "scan-20260711T043633Z and 2026-06-17 watch item; unresolved scan-20260713T034512Z"},
+      {"project": "TAO / Bittensor", "check": "Verify Yanez/SN54 clients, incentive, revenue-to-alpha contracts/wallets/dashboard and retained 20%; separately seek direct confirmation of which subnet Jason Calacanis uses and any actual Hermes/cost figures.", "carried_from": "scan-20260711T001809Z; expanded by scan-20260712T015809Z; unresolved scan-20260713T034512Z"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 claim execution, USDC pool/claim rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.", "carried_from": "scan-20260710T195104Z; not yet due; carried by scan-20260713T034512Z"},
+      {"project": "NEAR Protocol", "check": "Verify NEAR@3.33 $70M TVL trigger/snapshot/allocation/claims and Internet Court deals, escrow transactions, paid volume, fees, disputes and revenue movement.", "carried_from": "2026-06-18 catalyst and scan-20260710T195104Z; unresolved scan-20260713T034512Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Verify Internet Court paid inference and identify the subnet/provider behind Jason Calacanis's GLM 5.2 usage from a direct source; do not carry unsupported Hermes/95% attribution as Chutes fact.", "carried_from": "scan-20260710T154700Z; narrowed by scan-20260712T061424Z; unresolved scan-20260713T034512Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify Hyperliquid DRV-USDC liquidity/contracts/access and Strategy Builder follow-through in OI, volume, fees and weekly buybacks.", "carried_from": "scan-20260710T113716Z; unresolved scan-20260713T034512Z"},
+      {"project": "VVV / Venice AI", "check": "Verify the latest burn dashboard/Base transaction and compare the burn against current emissions.", "carried_from": "scan-20260709T231833Z; unresolved scan-20260713T034512Z"},
+      {"project": "Kinetiq", "check": "Verify the claimed $320K KNTQ buyback wallet and whether purchases are revenue-funded.", "carried_from": "2026-06-29 watch item; unresolved scan-20260713T034512Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Verify Kraken SN51 liquidity/deposits/withdrawals and any post-listing buyback, burn, credit-purchase or GPU-utilization effect.", "carried_from": "scan-20260710T032255Z; unresolved scan-20260713T034512Z"}
+    ],
+    "notes": "Independent signal-tier tagging was dispatched after all scanner edits; final labels are recorded on the new changelog objects."
+  },
+  {
     "run_id": "scan-20260712T232657Z",
     "started_at": "2026-07-12T23:26:57Z",
     "completed_at": "2026-07-12T23:33:45Z",
