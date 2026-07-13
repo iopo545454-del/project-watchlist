@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-06-24T19:20:04Z
+last_updated: 2026-07-13T12:21:30Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -55,6 +55,7 @@ last_updated: 2026-06-24T19:20:04Z
 
 ## Latest scan notes
 
+- 2026-07-13 — World Chain merged an SP1 validity-proof verifier into its multi-proof system, then removed an unused Nitro aggregation-signing path that accepted arbitrary boot information without checking the underlying range proofs and could have let the enclave sign unverified state transitions. The maintainer states the unsafe path was unused by the Nitro worker; no exploit or production exposure was disclosed. This is meaningful proof-system delivery and security hardening, with deployment/audit status still to verify. Sources: https://github.com/worldcoin/world-chain/pull/842 and https://github.com/worldcoin/world-chain/pull/845
 - 2026-06-24 — Official World published a product/blog update on creating verified AI agents with AgentKit, framing World ID as infrastructure for AI agents acting on behalf of real humans. This extends the AgentKit catalyst from ticketing into general verified-agent workflows; watch real developer integrations beyond blog/demo language. Source: https://x.com/worldnetwork/status/2069822016803459395 and https://world.org/blog/product/how-to-create-verified-ai-agents-agentkit
 - 2026-06-22 — TokenomicsCOM flagged a June 24 WLD unlock of roughly 149.9M WLD / $90.7M, about 1.5% of circulating supply and ~3.0% of market cap, with community/private-investor/insider/foundation buckets. Treat as third-party unlock-calendar context until cross-checked against official Foundation/TFH disclosures or an unlock dashboard. Source: https://x.com/TokenomicsCOM/status/2069044731200385426
 - 2026-06-16 — Official X highlighted Agent Kit as humans-only ticketing infrastructure with Thirty Seconds to Mars and other partners, extending the World ID anti-bot integration story. Source: https://x.com/worldnetwork/status/2066919640589275644
@@ -65,6 +66,7 @@ last_updated: 2026-06-24T19:20:04Z
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | World Chain mainnet opened to World users | Confirmed | Official World blog said World Chain is live and that all 15M World ID holders and World App users had either migrated or were in the process of migrating to World Chain. Source: https://world.org/blog/announcements/world-chain-now-open-every-human | Live since 2024-10-17 | Launches World’s own human-prioritized L2 as the settlement layer for World App, World ID, Mini Apps, and ecosystem activity. | Creates the base for gas sponsorship, native apps, stablecoins, and verified-human distribution as onchain infrastructure rather than only an identity app. | Track World Chain transactions, active verified users, Mini App usage, bridge/stablecoin liquidity, and developer adoption. |
+| World Chain multi-proof validity verifier and Nitro hardening | Confirmed / ongoing implementation | Official GitHub merged an SP1 validity-proof verifier and removed an unused Nitro aggregation path that could sign without checking underlying range proofs: https://github.com/worldcoin/world-chain/pull/842 and https://github.com/worldcoin/world-chain/pull/845 | Merged 2026-07-13; production activation unknown | Adds another validity-proof verifier to the dispute/proof system and removes a security-sensitive dead path before broader use. | Multi-proof support can improve prover diversity/resilience, while the unsafe-path fix reduces future attack surface; the market read-through depends on audited production deployment. | Verify deployed contract/code versions, audit coverage, whether the removed path was ever callable in production, defender submission support, proof costs and live usage. |
 | New Orb and World ID 3.0 unveiled | Confirmed | Official World launch posts unveiled the next-generation Orb and World ID 3.0 with new credentials, privacy/security/scalability upgrades, and deepfake-prevention features. Sources: https://world.org/blog/announcements/world-unveils-new-orb-new-ways-to-verify-scale-network-1-billion-humans and https://world.org/blog/announcements/introducing-world-id-3-new-credentials-more-privacy-deep-fake-prevention | Announced 2024-10-17 | Upgrades the core proof-of-human hardware/protocol stack and lays out scaling toward much larger verification coverage. | Better Orb throughput and stronger credentials/privacy can reduce verification bottlenecks and expand use cases beyond crypto. | Watch Orb deployment pace, country availability, privacy/regulatory reviews, and World ID upgrade adoption. |
 | Mini Apps early scale and incubator launch | Confirmed | Official World blog said Mini Apps reached as many as 5.4M opens per day from more than 1M unique humans and announced new social/developer features plus an incubator. Source: https://world.org/blog/announcements/world-mini-apps-milestones-new-features-incubator-announced | Reported 2025-01-15 | Shows World App becoming a developer distribution surface rather than only an identity wallet. | Mini App scale gives builders a reason to integrate World ID / World Chain and can drive repeat World App usage. | Track Mini App DAU/retention, developer submissions, top apps, transaction volume, and grant/incubator outcomes. |
 | World launches in the United States | Confirmed | Official World blog announced that World launched in the USA. Source: https://world.org/blog/announcements/world-launches-in-the-usa-at-last | Announced 2025-04-30 | Expands World into the most important AI/tech consumer market and a critical regulatory jurisdiction. | US availability can accelerate partners, developers, and mainstream proof-of-humanity use cases, but also increases regulatory/privacy scrutiny. | Track US Orb locations, adoption, state-level availability, regulatory reactions, and US partner integrations. |
@@ -110,7 +112,7 @@ last_updated: 2026-06-24T19:20:04Z
 - TBD / needs follow-up.
 
 ## Open questions
-- TBD / needs follow-up.
+- Verify whether World Chain's SP1 validity verifier is deployed/active, what audits cover the multi-proof system, and whether the removed Nitro aggregation-signing path was ever callable in production; maintainers describe it as unused and disclosed no exploit.
 
 ## Watch triggers
 - TBD / needs follow-up.

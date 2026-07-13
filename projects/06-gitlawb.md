@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-13T03:45:12Z
+last_updated: 2026-07-13T17:02:04Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-07-13T03:45:12Z
 
 ## Latest scan notes
 
+- 2026-07-13 — Official GitLawb launched **Blockagent**, an AI-prompted Robinhood Chain explorer at `https://blockagent.gitlawb.com`, powered by OpenClaude/OpenGateway with Tencent Hunyuan HY3. The team explicitly says its indexer is still backfilling and some blocks are missing. This advances the prior Robinhood-first scanner teaser into a live product, but no source repository, usage, fees, customer evidence, `$GITLAWB` requirement/value route, or security model was disclosed. Sources: https://x.com/gitlawb/status/2076695242062053440 and https://x.com/gitlawb/status/2076695271669719167
 - 2026-07-13 — Official GitLawb, founder Kevin, and Bankr confirmed that the existing `$GITLAWB` token is now omnichain: it was bridged from Base to Robinhood Chain through LayerZero, with official Robinhood contract `0xd1b0d44E4f6ed940fcC7A9F59Bf30Daf62cCFe3D` and a new GITLAWB/WETH pool seeded with **$50,000**. Bankr says the same reusable skill used for BNKR executed the bridge and pool setup with zero manual transactions. This completes a real token market-access expansion and gives GitLawb's planned Robinhood-first explorer a live asset to support, but the announcement posts do not expose transaction hashes, LayerZero configuration, persistent pool depth/volume, or fee/value routing. About 90 minutes before launch, Bankr's core builder warned that a separately deployed Robinhood `$GITLAWB` was **not official**; only the later contract posted by official accounts should be treated as canonical. Sources: https://x.com/bankrbot/status/2076480415070933077, https://x.com/gitlawb/status/2076481721055531061, https://x.com/0xDeployer/status/2076486263432257635, and https://x.com/0xDeployer/status/2076457325829964190
 
 - 2026-07-12 — Founder Kevin detailed an upcoming `$GITLAWB` community-proposal system: holders with at least **$1,000 of GITLAWB** will be able to propose features, supported tokens, memes, or products; the community can vote to fund development, and supporters may earn a share of fees from successful proposals. The community page is live, but proposal submission/voting is still upcoming and the posts do not specify token weighting, onchain execution, treasury controls, fee-share math, or launch timing. Official GitLawb also teased an open-source agent-native blockchain scanner, with Robinhood Chain first; it is in development, not released. Sources: https://x.com/kevincodex/status/2076272990480986340, https://x.com/kevincodex/status/2076212086540238911, and https://x.com/gitlawb/status/2076297470456582400
@@ -116,6 +117,7 @@ last_updated: 2026-07-13T03:45:12Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Blockagent AI explorer for Robinhood Chain | Confirmed / live; index incomplete | Official GitLawb launched Blockagent and linked the product: https://x.com/gitlawb/status/2076695242062053440 and https://x.com/gitlawb/status/2076695271669719167 | Live 2026-07-13; indexer still backfilling | Turns the earlier scanner teaser into a prompt-driven explorer powered by OpenClaude/OpenGateway and Hunyuan HY3. | A useful chain-native explorer could create GitLawb/OpenGateway distribution and reinforce the Robinhood expansion; missing blocks and no disclosed economics keep it early. | Verify index completeness/accuracy, supported query/actions, source code, uptime, users/prompts, fees, customers, security model, and any GITLAWB or OpenGateway credit route. |
 | `$GITLAWB` LayerZero expansion to Robinhood Chain | Confirmed / completed launch | Official GitLawb and Bankr posted the bridged Robinhood contract and launch; Bankr's core builder disclosed $50,000 of GITLAWB/WETH pool capital: https://x.com/bankrbot/status/2076480415070933077, https://x.com/gitlawb/status/2076481721055531061 and https://x.com/0xDeployer/status/2076486263432257635 | Live as of 2026-07-13 | Gives the existing Base token a second-chain market and liquidity pool while demonstrating Bankr's reusable OFT deployment workflow. | Arbitrage and external LP participation could deepen access; the same chain can support the planned agent-first explorer, while fake-contract confusion and bridge/LP failures could damage trust. | Verify source and destination transactions, LayerZero peer/DVN configuration, two-way transfers, canonical explorer pages, pool depth/volume persistence, LP ownership, and any GitLawb/Bankr fee or token-value routing. |
 | Bot-attack mitigation / iCaptcha resilience layer | Confirmed / security-resilience incident completed | Official GitLawb said automated scripts created ~370,000 junk repositories, nodes hit storage pressure, iCaptcha was deployed across nodes, 230,000+ fake repositories were removed, and spam creation dropped to zero: https://x.com/gitlawb/status/2072133348009685018 | Live mitigation as of 2026-07-01 | Hardens the decentralized code network against low-cost repo spam while preserving human/AI-agent access. | If the claims hold, GitLawb gets a stronger anti-spam/resilience story; if not, storage abuse and credential/repo integrity remain serious risks for adoption. | Watch node-operator reports, legitimate repo recovery, storage utilization, false positives, iCaptcha bypasses, docs/postmortem details, and whether the attack affected signed commits/backups. |
 | Zero release with Fable 5 access | Tentative / founder teaser | Founder Kevin said they are preparing a Zero release alongside Fable 5 access: https://x.com/kevincodex/status/2072125600496775557 | Near-term / unknown exact date | Could add a new GitLawb/OpenClaude product surface and high-demand model access. | A credible Zero release could lift developer usage and paid credit/ad demand; a vague teaser without release notes stays low-signal. | Watch official release notes, app availability, supported model routing, costs/limits, latency, usage metrics, and whether Zero links to `$GITLAWB` or credits. |
@@ -176,6 +178,7 @@ last_updated: 2026-07-13T03:45:12Z
 | https://gitlawb.com | Official website; project positioning and app entry point |
 | https://gitlawb.com/token | Official token page to verify contract/tokenomics before recording durable token facts |
 | https://ads.gitlawb.com | Official GitLawb Ads product surface posted by the project account; monitor campaign creation, budgets, impressions/clicks/CPM, and token/credit routing |
+| https://blockagent.gitlawb.com | Official Blockagent product URL; Robinhood Chain AI explorer whose indexer was still backfilling at launch. |
 | https://t.me/gitlawbofficial | Reported official Telegram; verify from official site/X because the project has warned about fake groups |
 | https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
 | https://x.com/kevincodex/status/2065776569998787055 | Founder note on resuming open-source coding-model research/training |
@@ -198,6 +201,7 @@ last_updated: 2026-07-13T03:45:12Z
 - Are OpenClaude/Playground usage metrics public?
 - Is there a public GitHub/model repository for the planned open-source coding model?
 - How will ads, credits, voting, and any node incentives connect to token economics?
+- Does Blockagent reach complete/accurate chain indexing, measurable external usage, and any fee, credit, or `$GITLAWB` value route?
 
 ## Watch triggers
 

@@ -1,5 +1,125 @@
 [
   {
+    "date": "2026-07-13T17:02:04Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "catalyst update",
+    "summary": "MetaDAO officially opened Credible's four-day raise; source-proximate terms show a $2M-$4M target, about $2.315M soft-committed, a $9M valuation cap and disclosed allocation/vesting, but no MetaDAO fee or META value-accrual data.",
+    "source": "X/Twitter official project and ecosystem media account",
+    "url": "https://x.com/MetaDAOProject/status/2076713315028627840",
+    "last_scanned": "2026-07-13T17:02:04Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo previously tracked a July 13 start and $2.315M of pre-launch soft commitments toward a $4M max. Official MetaDAO now confirms the raise is live for four days; Ownership FM adds a $2M minimum, $9M valuation cap, roughly 44% ICO / 13% AMM / 20% team / 23% prior-investor initial allocation, and Credible CEO-reported $250K average monthly gross revenue. Final accepted capital, settlement, platform fees and META value routing remain unresolved.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Credible curated raise on MetaDAO"},
+      {"type": "open_question", "ref": "Verify final raise size, settlement, platform fees and META value accrual"}
+    ]
+  },
+  {
+    "date": "2026-07-13T17:02:04Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "GitLawb launched Blockagent, an AI-prompted Robinhood Chain explorer powered by OpenClaude/OpenGateway and Hunyuan HY3; the team warns that indexing is still backfilling and some blocks are missing.",
+    "source": "X/Twitter official project account",
+    "url": "https://x.com/gitlawb/status/2076695242062053440",
+    "last_scanned": "2026-07-13T17:02:04Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier previously tracked an in-development open-source Robinhood-first scanner. Blockagent is now live at blockagent.gitlawb.com, but no source repository, complete index, usage, fees, customers, security model or GITLAWB/OpenGateway value route was disclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Blockagent AI explorer for Robinhood Chain"},
+      {"type": "open_question", "ref": "Verify Blockagent index completeness, usage, fees, security and GITLAWB/OpenGateway economics"}
+    ]
+  },
+  {
+    "date": "2026-07-13T17:02:04Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "catalyst update",
+    "summary": "NEAR DevHub said nearcore 2.13.0 is released and Protocol v86 voting starts July 20, advancing post-quantum access keys and dynamic resharding from testnet RC status toward activation.",
+    "source": "X/Twitter official developer account",
+    "url": "https://x.com/NEARDevHub/status/2076669210043052432",
+    "last_scanned": "2026-07-13T17:02:04Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier previously tracked nearcore 2.13.0-rc.1 and Protocol Upgrade 2.13 on testnet with no dated mainnet governance step. The release is now shipped and v86 voting has a July 20 start; activation date, vote result, validator adoption, production shard splits and wallet support remain unknown.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
+      {"type": "open_question", "ref": "Verify Protocol v86 result, activation and validator/client adoption"}
+    ]
+  },
+  {
+    "date": "2026-07-13T17:02:04Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "NEAR said the first live Confidential Intents deployment is on Aurora's Swap API and launched confidential EURe on near.com for SEPA Instant deposits and private movement/swaps across 30+ chains.",
+    "source": "X/Twitter official project account",
+    "url": "https://x.com/NEARProtocol/status/2076668923584364720",
+    "last_scanned": "2026-07-13T17:02:04Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo already tracked July 7 Confidential Intents GA, agent support and EURe on near.com. This adds the first named live partner API deployment plus a dedicated confidential EURe flow; no new usage, fee, TVL, revenue or NEAR-token impact was disclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"},
+      {"type": "catalyst", "ref": "NEAR Intents as cross-chain / agent-market money rail"},
+      {"type": "metric", "ref": "Confidential Intents volume, TVL and revenue"}
+    ]
+  },
+  {
+    "date": "2026-07-13T12:21:30Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "scan",
+    "summary": "DefiLlama's 7-day Virtuals protocol-fee series fell 93.7% from $6,335 on July 6 to $402, while the 30-day series fell 36.8% to $127,116; daily values have stayed at $16-$99 since July 7.",
+    "source": "DefiLlama direct-metrics adapter",
+    "url": "https://api.llama.fi/summary/fees/virtuals-protocol?dataType=dailyFees",
+    "last_scanned": "2026-07-13T12:21:30Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Local collector history shows 7-day fees at $402 versus $6,335 on 2026-07-06 (-93.7%) and 30-day fees at $127,116 versus $201,020 (-36.8%), crossing the configured 25% materiality rule. DefiLlama defines the series as protocol revenue across legacy Base/Ethereum/Solana transfers, tax-manager outflows and 1% of agent trading volume. It is not equivalent to separately reported Robinhood creator-team taxes and does not establish VIRTUAL tokenholder value capture.",
+    "relates_to": [
+      {"type": "metric", "ref": "DefiLlama Virtuals protocol fees"},
+      {"type": "open_question", "ref": "Reconcile DefiLlama fee coverage with official/onchain protocol revenue and creator trading-tax accounting"}
+    ]
+  },
+  {
+    "date": "2026-07-13T12:21:30Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Virtuals' official showcase repo merged three external ACP workflows; Sherwood's report records two completed paid jobs with 1 USDC and 0.58 USDC budgets plus Robinhood Chain execution hashes.",
+    "source": "Official GitHub repository",
+    "url": "https://github.com/Virtual-Protocol/acp-cli-demos/pull/53",
+    "last_scanned": "2026-07-13T12:21:30Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "The repo previously tracked ACP/APP standards and broad agent-commerce integrations without public paid-job execution evidence. Official showcase PRs now add Agent Email OTP, BlueAgent and Sherwood packages; Sherwood supplies two buyer-completed jobs totaling 1.58 USDC of budgets and public execution hashes, but no aggregate job count, repeat demand, protocol fee or VIRTUAL value route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "External ACP workflows and paid-job proof"},
+      {"type": "open_question", "ref": "Verify production ACP adoption, aggregate jobs/escrow volume, protocol fees and VIRTUAL value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-13T12:21:30Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "official update",
+    "summary": "World Chain merged an SP1 validity-proof verifier and removed an unused Nitro aggregation-signing path that could have signed unverified state transitions; no exploit or production exposure was disclosed.",
+    "source": "Official GitHub repository",
+    "url": "https://github.com/worldcoin/world-chain/pull/845",
+    "last_scanned": "2026-07-13T12:21:30Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Prior repo history tracked World Chain mainnet, identity/app distribution and token supply catalysts but no multi-proof implementation milestone. PR #842 adds an SP1 validity verifier; PR #845 removes a path that accepted arbitrary boot info without checking range proofs, while stating the path was unused by the Nitro worker. Production deployment and audit coverage remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "World Chain multi-proof validity verifier and Nitro hardening"},
+      {"type": "open_question", "ref": "Verify deployed versions, audit coverage and whether the removed Nitro path was ever production-callable"}
+    ]
+  },
+  {
     "date": "2026-07-13T08:00:50Z",
     "project": "VIRTUAL / Virtuals Protocol",
     "slug": "15-virtuals",
