@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-07-14T11:18:54Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "catalyst update",
+    "summary": "MetaDAO's co-founder outlined MetaDAO 2.0 smart contracts for purpose-specific proposal thresholds, automated treasury buybacks/sellbacks around NAV, and an elected emergency-oversight committee; none of the mechanisms is live yet.",
+    "source": "X/Twitter co-founder monthly update",
+    "url": "https://x.com/metaproph3t/status/2076971700386705462",
+    "last_scanned": "2026-07-14T11:18:54Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Repo history tracked manual legal enforcement, generic stronger-control ideas and META-039, but no concrete MetaDAO-wide mechanism sketch. The founder also reported $30M treasury value secured, $31M launched-project market cap, a final $1M Laso raise and Credible becoming 10x oversubscribed; buyback x/y/z parameters, NAV oracle, committee mandate, contracts, audits and proposals remain unresolved.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "MetaDAO 2.0 purpose-specific proposals, automated NAV bands and elected oversight committee"},
+      {"type": "open_question", "ref": "Verify MetaDAO 2.0 contracts, parameters, oracle, audits, committee mandate and formal approvals"}
+    ]
+  },
+  {
+    "date": "2026-07-14T11:18:54Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "verification update",
+    "summary": "World Chain WIP-1008 moved out of draft and received its first human approval, though the reviewer questioned whether WLD-staked subblocks justify the work given today's roughly 3–4 minute unsafe-to-safe window.",
+    "source": "Official GitHub pull-request review",
+    "url": "https://github.com/worldcoin/world-chain/pull/850#pullrequestreview-4691755012",
+    "last_scanned": "2026-07-14T11:18:54Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior run logged WIP-1008 as an unreviewed open proposal. It now has one approval and ready-for-review status, but remains open/unmerged with no Foundation endorsement, stake/reward/slashing parameters, implementation, audits, governance result or activation date.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
+      {"type": "watch_item", "ref": "WIP-1008 WLD-staked validator overlay"}
+    ]
+  },
+  {
+    "date": "2026-07-14T11:18:54Z",
+    "project": "BIO / Bio Protocol",
+    "slug": "20-bio",
+    "type": "unverified watch item",
+    "summary": "Bio Protocol tied a reported ~$300M Lilly acquisition of CrossBridge Bio to early community-funded science and cited $2B+ of research IP traded plus $50M+ into science; the exit is corroborated, but grant lineage and metric methodology are not.",
+    "source": "X/Twitter official project, VitaDAO and former CEO accounts",
+    "url": "https://x.com/BioProtocol/status/2076974727604969650",
+    "last_scanned": "2026-07-14T11:18:54Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Repo history tracked OpenLabs, BioAgents, PeptAI wet-lab work and ARTAN's $1M seed but no ecosystem exit. VitaDAO and former CrossBridge CEO Michael Torres corroborate a Lilly exit around $300M; no Lilly release or consideration breakdown was found, the verifiable VitaDAO link runs through Torres's separate VitaRNA/ARTAN work, and no BIO value route or methodology supports the aggregate $2B/$50M claims.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "CrossBridge Bio / Lilly exit as community-science validation"},
+      {"type": "watch_item", "ref": "CrossBridge grant lineage, acquisition terms and ecosystem metric methodology"},
+      {"type": "thesis", "ref": "Community-funded science can produce commercial biotech outcomes"}
+    ]
+  },
+  {
+    "date": "2026-07-14T11:18:54Z",
+    "project": "BIO / Bio Protocol",
+    "slug": "20-bio",
+    "type": "initial review",
+    "summary": "Completed Bio Protocol's missing durable review with sourced Maelstrom theses, a dated Hermes take, risks, open questions, source table, CrossBridge attribution caveat and project-specific KPI/fetch methodology.",
+    "source": "Official docs/X, Maelstrom research and repository direct-metrics configuration",
+    "url": "projects/20-bio.html",
+    "last_scanned": "2026-07-14T11:18:54Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "The index marked initial_review_done=true, but the canonical dossier still contained nine TBD sections and no Direct Data/KPI Methodology. This review removes those gaps, adds two linked investor cases and defines tested DefiLlama TVL versus still-unmapped veBIO, sale, reward and value-routing KPIs.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Maelstrom DeSci/BIO investment cases and 2026-07-14 Hermes take"},
+      {"type": "metric", "ref": "BIO/veBIO locks, Ignition Sales, rewards, research milestones and protocol value routing"}
+    ]
+  },
+  {
     "date": "2026-07-14T06:32:06Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",

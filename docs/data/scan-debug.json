@@ -1,5 +1,73 @@
 [
   {
+    "run_id": "scan-20260714T111854Z",
+    "started_at": "2026-07-14T11:18:54Z",
+    "completed_at": "2026-07-14T11:41:02Z",
+    "status": "completed",
+    "scan_window": {
+      "since": "2026-07-14T07:13:54Z",
+      "until": "2026-07-14T11:41:02Z",
+      "lookback": "roughly 4h/default; cutoff from previous scan-debug completed_at"
+    },
+    "scope": {
+      "tracked_projects": 26,
+      "projects_checked_count": 25,
+      "suppressed_projects": ["POD / Dolphin POD"],
+      "intake_issues_checked": 3,
+      "direct_metrics_refreshed": true
+    },
+    "projects_checked": ["GEOD / GEODNET","META / MetaDAO","BANKR / BankrCoin","AEON Framework","GitlWab / GitLawb / Gitwab","Kinetiq","GRASS","IOTA — Macrocosmos Bittensor Subnet 9","Targon — Bittensor Subnet 4","TAO / Bittensor","AKT / Akash","CHIP / USD.AI","VVV / Venice AI","VIRTUAL / Virtuals Protocol","Worldcoin / WLD / World Network","NEAR Protocol","DRV / Derive Protocol","OCT / Octra","BIO / Bio Protocol","Pluralis","Ambient","EIGEN / EigenCloud","Chutes — Bittensor Subnet 64","Lium — Bittensor Subnet 51","Compute Horde — Bittensor Subnet 12"],
+    "logged_projects": ["META / MetaDAO","Worldcoin / WLD / World Network","BIO / Bio Protocol"],
+    "counts": {
+      "projects_checked": 25,
+      "intake_issues_checked": 3,
+      "changelog_entries_added": 4,
+      "material_entries": 3,
+      "unverified_items": 1,
+      "watch_items_resolved": 0,
+      "watch_items_updated": 1,
+      "sources_added": 2,
+      "initial_reviews_completed": 1,
+      "direct_metric_material_changes": 0
+    },
+    "decision_trail": [
+      {"project":"Project intake","source":"GitHub issues API","url":"https://github.com/iopo545454-del/project-watchlist/issues","summary":"The three open intake-form issues remain Pluralis, Ambient and EigenCloud; each is already deduplicated into the index with initial_review_done=true.","decision":"no new project intake"},
+      {"project":"Direct metrics","source":"scripts/collect_direct_metrics.py --write","url":"docs/data/direct-metrics/latest.json","summary":"Collector returned 24 metrics for 13 projects. Non-suppressed current-snapshot changes versus HEAD included Virtuals 24-hour fees -44.4% but seven-day fees only -2.7% after the previously logged collapse, BIO TVL -1.6%, Chutes TVL -3.9%, Chutes daily revenue +3.9% and Kinetiq TVL +0.35%. No new configured materiality threshold or step change was established; routine refresh churn and suppressed POD were reverted.","decision":"no new direct-metric changelog entry"},
+      {"project":"META / MetaDAO","source":"X/Twitter co-founder monthly update","url":"https://x.com/metaproph3t/status/2076971700386705462","summary":"Proph3t reported $30M treasury value secured, $31M launched-project market cap, a final $1M Laso raise and 10x Credible oversubscription, then outlined purpose-specific proposal thresholds, automated NAV-band buybacks/sellbacks and an elected emergency committee. Contracts are in development, parameters are placeholders and formal proposals are still required.","decision":"added a tentative MetaDAO 2.0 catalyst, Latest/changelog entry and implementation/governance checks"},
+      {"project":"Worldcoin / WLD / World Network","source":"Official GitHub pull-request review","url":"https://github.com/worldcoin/world-chain/pull/850#pullrequestreview-4691755012","summary":"WIP-1008 moved out of draft and received its first human approval. The reviewer generally approved but questioned the cost/benefit because the current unsafe-to-safe window is already about 3–4 minutes; the PR remains open and unmerged.","decision":"advanced the WLD-staking watch item to partially supported and retained economics, implementation, cost/benefit and activation checks"},
+      {"project":"BIO / Bio Protocol","source":"Official Bio Protocol, VitaDAO and former CrossBridge CEO X posts","url":"https://x.com/BioProtocol/status/2076974727604969650","summary":"Bio Protocol attributed a roughly $300M CrossBridge/Lilly exit to early community-funded science and reported $2B+ research IP traded plus $50M+ into science. VitaDAO and former CEO Michael Torres corroborate the exit/value, but no Lilly release or consideration terms were found; direct grant-to-CrossBridge lineage and aggregate metric methodology remain unverified.","decision":"logged a partially supported ecosystem outcome/watch item without presenting it as BIO value capture"},
+      {"project":"BIO / Bio Protocol","source":"Canonical dossier and Maelstrom thesis sources","url":"projects/20-bio.md","summary":"The index said initial_review_done=true, but the dossier still contained nine TBD sections and lacked a KPI methodology. The review now includes two linked Maelstrom cases, a dated Hermes take, risks, sources, open questions, watch triggers and tested-versus-unmapped direct-data methodology.","decision":"completed the missing durable initial review and regenerated the project page"},
+      {"project":"Official GitHub checks","source":"GitHub pull-request APIs","url":"https://github.com/akash-network/provider/pull/400","summary":"Akash provider PR #400 remains open and unmerged. World Chain WIP-1008 remains open/unmerged after one human approval; no activation or economic parameters were added.","decision":"status verified; only the WIP-1008 review progression warranted a logged update"},
+      {"project":"Excluded in-window X items","source":"X/Twitter tracked-account batches","url":"docs/data/index.json","summary":"A Virtuals core contributor's unspecified 'hot' Robinhood pipeline, one launch-UI support reply, Lium's unverified inventory marketing and routine Bankr launches lacked named counterparties, quantified adoption, new mechanics or token-economic effects. Other tracked batches produced no additional qualifying authored updates.","decision":"no additional changelog or watch items"},
+      {"project":"Outstanding dossier watch items","source":"previous run next_checks and dossier Unverified Watch Items","url":"projects/","summary":"World Chain's WIP-1008 check advanced and Bio gained a new attribution/metric-methodology check. All unresolved implementation, economics, usage, bridge, governance, security, incentive and market-quality checks are carried forward below with origins.","decision":"updated one watch item and explicitly carried unresolved checks forward"}
+    ],
+    "errors": ["Configured web search/extraction remained unavailable because the backend lacks credentials; X search, public GitHub APIs and direct source URLs supplied evidence.","A DuckDuckGo fallback returned a bot challenge, so no claim relied on that result. The CrossBridge acquisition remains ecosystem-corroborated rather than verified through an Eli Lilly release."],
+    "next_checks": [
+      {"project":"AKT / Akash","check":"Verify provider PR #400 review/merge, chain-SDK/provider releases, InfiniBand/RoCE provider capacity, first reliable paid multi-node training/HPC jobs, spend and BME burns.","carried_from":"new official GitHub evidence in recovered scan-20260713T213409Z; still open scan-20260714T111854Z"},
+      {"project":"VIRTUAL / Virtuals Protocol","check":"Reconcile DefiLlama's seven-day fee-series fall with official/onchain accounting and adapter coverage; verify creator fees, ACF raise evidence, aggregate ACP jobs, escrow volume, repeat demand, protocol fees and any VIRTUAL value route.","carried_from":"scan-20260713T080050Z through scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"Worldcoin / WLD / World Network","check":"Verify SP1 production deployment/audits and prior Nitro-path exposure; monitor WIP-1008 additional reviews/merge, cost-benefit decision, Foundation endorsement, WLD stake/reward/slashing parameters, contracts, audits, testnet, governance and activation.","carried_from":"scan-20260713T122130Z; WIP-1008 advanced to one approval scan-20260714T111854Z"},
+      {"project":"Pluralis","check":"Verify the official NeurIPS 2026 workshop page, organizers, CFP, dates and location; monitor submissions, recordings, collaborators and research/code follow-through.","carried_from":"scan-20260713T080050Z; unresolved scan-20260714T111854Z"},
+      {"project":"GitlWab / GitLawb / Gitwab","check":"Verify Blockagent index completeness, source, users, fees, customers, security and value routing; canonical contracts, LayerZero configuration/two-way transfers, Robinhood liquidity, proposals and Mercenary payments.","carried_from":"scan-20260711T085119Z through scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"META / MetaDAO","check":"Verify MetaDAO 2.0 contract repository/deployment, action-specific thresholds, NAV oracle and x/y/z bands, eligible projects, committee mandate/expiry, audits and proposals; separately verify Credible final raise, settlement, fees and META value accrual.","carried_from":"Credible live scan-20260713T170204Z; MetaDAO 2.0 added scan-20260714T111854Z"},
+      {"project":"BANKR / BankrCoin","check":"Verify successful BNKR withdrawals from the deprecated vault; Base↔Robinhood transfers, LayerZero configuration, pool persistence, external skill adoption, Reward Season 2 mechanics, HOODIE floors, fees/value routing and OKT utility.","carried_from":"staking status confirmed scan-20260714T063206Z; operations/economics unresolved scan-20260714T111854Z"},
+      {"project":"CHIP / USD.AI","check":"Verify whether duration-based sCHIP/NIM access becomes an official proposal and quantify lock lengths, weighting, eligible NIM, participation, unlocks, contracts and activation; reconcile facility notional with deployed/performing loans and defaults.","carried_from":"facility checks through scan-20260713T170204Z; duration hint recovered scan-20260713T213409Z"},
+      {"project":"OCT / Octra","check":"Verify TAPE/security and public-node releases, first-party OCT/wOCT bridge contracts/audits/test transfers, Hyperliquid prerequisites/approval, AppliedLang workloads, verifier, paper and usage/fees.","carried_from":"scan-20260709T231833Z through scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"Ambient","check":"Verify Proof-of-Logits sampling/randomness, model-fingerprint security, false-acceptance bounds, adversarial robustness, validator independence, overhead, code and audits; monitor mainnet/tokenomics and usage.","carried_from":"implementation detail recovered scan-20260713T213409Z; unresolved scan-20260714T111854Z"},
+      {"project":"AEON Framework","check":"Reproduce v0.1 and inspect attestation format/verifier, public log, partner/user activity, security, fees and aeon value capture.","carried_from":"scan-20260711T043633Z; unresolved scan-20260714T111854Z"},
+      {"project":"GEOD / GEODNET","check":"Seek GEO-PULSE measured accuracy/routes, orders, active devices, rewards, reviews and hardware contribution to revenue/burn.","carried_from":"scan-20260711T043633Z and 2026-06-17 watch item; unresolved scan-20260714T111854Z"},
+      {"project":"TAO / Bittensor","check":"Verify Yanez/SN54 clients, incentives, revenue-to-alpha contracts/wallets/dashboard and retained share; identify the Calacanis provider/subnet and actual usage/cost from a direct source.","carried_from":"scan-20260711T001809Z through scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"GRASS","check":"On/after July 22 verify Stage 2 claim execution, USDC pool/claim rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.","carried_from":"scan-20260710T195104Z; not yet due; carried scan-20260714T111854Z"},
+      {"project":"NEAR Protocol","check":"Reconcile live revenue-dashboard capture/gross/net/emissions with buyback-wallet execution and permanent token removal; verify organic Intents volume, Protocol v86, Aurora/confidential EURe usage and NEAR@3.33 trigger/claims.","carried_from":"value-capture metrics advanced scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"Chutes — Bittensor Subnet 64","check":"Verify Internet Court paid inference and directly identify the provider/subnet behind Calacanis's GLM usage; do not carry unsupported attribution as Chutes fact.","carried_from":"scan-20260710T154700Z through scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"DRV / Derive Protocol","check":"Verify Upbit/Bithumb markets, deposit networks/contracts, deposits/withdrawals, order-book depth, volume and persistence; explain the 31.13% seven-day fee decline and verify ORIA usage, Hyperliquid liquidity and buyback follow-through.","carried_from":"Korean listings added scan-20260714T063206Z; unresolved scan-20260714T111854Z"},
+      {"project":"VVV / Venice AI","check":"Verify the latest burn dashboard/Base transaction and compare burns against current emissions while preserving zero-retention-versus-E2EE distinctions.","carried_from":"scan-20260709T231833Z; unresolved scan-20260714T111854Z"},
+      {"project":"Kinetiq","check":"Verify the claimed $320K KNTQ buyback wallet and whether purchases are revenue-funded.","carried_from":"2026-06-29 watch item; unresolved scan-20260714T111854Z"},
+      {"project":"Lium — Bittensor Subnet 51","check":"Verify Kraken SN51 liquidity/deposits/withdrawals, claimed hundreds of available GPUs and B300/H200/5090 inventory, and any post-listing buyback, burn, credit-purchase or utilization effect.","carried_from":"scan-20260710T032255Z; inventory marketing checked but unverified scan-20260714T111854Z"},
+      {"project":"BIO / Bio Protocol","check":"Find the original CrossBridge-linked community grant/IP agreement, Lilly/company announcement and consideration terms; define the $2B IP-traded/$50M science-funded metrics and any BIO value route; map veBIO locks, Ignition Sales, claim values, canonical contracts and independently verified science milestones.","carried_from":"new attribution watch item and completed review scan-20260714T111854Z"}
+    ],
+    "notes": "Independent delegate_task signal-tier tagger inspected all four new changelog objects, wrote labels in place and validated JSON. Final tiers: 0 high, 3 medium (MetaDAO 2.0 proposal, World Chain WIP-1008 review progression, Bio CrossBridge/Lilly watch item) and 1 low (Bio initial-review completion)."
+  },
+  {
     "run_id": "scan-20260714T063206Z",
     "started_at": "2026-07-14T06:32:06Z",
     "completed_at": "2026-07-14T07:13:54Z",
