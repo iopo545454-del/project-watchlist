@@ -1,5 +1,246 @@
 [
   {
+    "run_id": "watchlist-scan-20260714T201651Z",
+    "started_at": "2026-07-14T20:16:51Z",
+    "completed_at": "2026-07-14T20:43:54Z",
+    "status": "success",
+    "scan_window": {
+      "from": "2026-07-14T16:11:35Z",
+      "to": "2026-07-14T20:43:54Z"
+    },
+    "scope": "Checked public project-intake issues, refreshed direct metrics, consumed the prior run's next checks, and scanned all 25 enabled tracked projects across official/team X accounts plus relevant GitHub and official-source endpoints. POD / Dolphin POD was suppressed and not scanned.",
+    "projects_checked": 25,
+    "logged_projects": [
+      "04-bankr",
+      "11-tao-bittensor",
+      "17-near",
+      "19-octra"
+    ],
+    "counts": {
+      "intake_issues_checked": 3,
+      "intake_projects_added": 0,
+      "projects_checked": 25,
+      "projects_with_logged_findings": 4,
+      "confirmed_findings": 4,
+      "unverified_findings_added": 0,
+      "no_material_change_projects": 21,
+      "direct_metric_material_changes": 0,
+      "errors": 2
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub public Issues API",
+        "url": "https://api.github.com/repos/iopo545454-del/project-watchlist/issues?state=open&per_page=50",
+        "summary": "The three matching open intake-form issues remain Pluralis, Ambient and EigenCloud.",
+        "decision": "Deduplicated against the tracked index; all three already exist with initial_review_done=true, so no intake files were changed."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 24 metrics for 13 projects. Previously logged Virtuals and Derive seven-day fee declines persisted, Kinetiq seven-day TVL was down about 10.6%, and other enabled changes remained below a new material step; POD output was suppressed.",
+        "decision": "No new configured/material step change. Generated refresh churn, including all suppressed-POD data, was restored rather than committed."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "X/Twitter core builder and dashboard screenshot",
+        "url": "https://x.com/0xDeployer/status/2077116766376087779",
+        "summary": "Bankr/Doppler Robinhood Chain snapshot showed $49.31M cumulative DEX volume, $612,920 creator fees, 11,265 launches and 1,901 launches in the prior 24 hours; creators reportedly keep 95% of a 0.7% swap fee.",
+        "decision": "Logged as scoped launchpad traction and builder-economics telemetry, not as Robinhood Chain-wide volume or BNKR value capture; public query, concentration, retention and routing remain next checks."
+      },
+      {
+        "project": "TAO / Bittensor",
+        "source": "X/Twitter official Yanez AI / SN54 account",
+        "url": "https://x.com/yanez__ai/status/2077070879985701136",
+        "summary": "Yanez said Bitsec found a 'very important vulnerability,' an unspecified release was delayed until the issue was addressed, and ongoing monitoring continues.",
+        "decision": "Logged as a high-level pre-release security-review disclosure. Did not infer production exposure or exploitation because no component, report, patch, dates, users or funds were identified."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "Official X/Twitter and blog",
+        "url": "https://x.com/NEARProtocol/status/2077109187658535049",
+        "summary": "NEAR clarified a sustained $100+ confidential balance plus one swap as the NEAR@3.33 floor and said activity above it shapes allocation.",
+        "decision": "Logged as an incentive-catalyst clarification; did not infer that the $70M TVL trigger or snapshot fired because the post omitted trigger, allocation, exclusion and claim details."
+      },
+      {
+        "project": "OCT / Octra",
+        "source": "Official X/Twitter and GitHub",
+        "url": "https://github.com/octra-labs/lite_node",
+        "summary": "Octra published inspectable lite-node mini-core code and showed local VPS execution; the README says internal use only, no release is tagged and mainnet configs remain upcoming.",
+        "decision": "Advanced the node catalyst to public pre-release code/local execution, while explicitly keeping TAPE, audit, supported release, configs, operators and production/listing readiness unresolved."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "Official GitHub PR",
+        "url": "https://github.com/worldcoin/world-chain/pull/850#discussion_r3581378621",
+        "summary": "WIP-1008 received a new reviewer clarification about access-list coordination but remains open and unmerged without WLD stake/reward/slashing parameters or activation.",
+        "decision": "No new changelog entry; carried the substantive economics, implementation and governance checks forward."
+      },
+      {
+        "project": "Excluded in-window X items",
+        "source": "X/Twitter tracked-account batches",
+        "url": "docs/data/index.json",
+        "summary": "Chutes repeated its already-logged 0.6%-of-centralized Parallax milestone and Internet Court integration; IOTA and Ambient posts restated existing theses; individual Virtuals/Bankr launches and other replies were routine core-function output or generic promotion.",
+        "decision": "No duplicate or baseline-output changelog entries."
+      },
+      {
+        "project": "Prior next checks and dossier watch items",
+        "source": "Previous scan-debug next_checks and canonical dossiers",
+        "url": "projects/",
+        "summary": "Bankr traction, Yanez security review, NEAR incentive mechanics and Octra node progress advanced. Akash paid workloads, Derive exchange operations, GitLawb indexing/MCP, USD.AI methodology, Virtuals reconciliation, World Chain governance and other unresolved checks did not receive dispositive new evidence.",
+        "decision": "Advanced four items and explicitly carried every unresolved check below with its prior origin; no check was silently dropped."
+      }
+    ],
+    "errors": [
+      "Official blog extraction through web_extract was unavailable because the web backend is not configured; direct official HTML and X source text were checked instead.",
+      "One Octra-focused X follow-up query hit temporary xAI capacity; the initial tracked-account search, official posts and public GitHub repository supplied the logged evidence."
+    ],
+    "next_checks": [
+      {"project":"BANKR / BankrCoin","check":"Obtain the public Bankr Robinhood dashboard/query; reproduce volume, fees and launches; measure concentration/retention; separate creator and Bankr fee shares; verify BNKR/Club routing, bridge/pool health, skills, rewards and deprecated-vault withdrawals.","carried_from":"launchpad telemetry advanced watchlist-scan-20260714T201651Z; bridge/reward/withdrawal checks carried from watchlist-scan-20260714T154520Z"},
+      {"project":"TAO / Bittensor","check":"Identify the Yanez vulnerability and delayed release/component; obtain severity, report, patch, retest and explicit production/client/biometric-data/fund exposure; verify SN54 clients, incentives and revenue-to-alpha execution.","carried_from":"new Bitsec disclosure watchlist-scan-20260714T201651Z; revenue/client checks carried from scan-20260714T111854Z"},
+      {"project":"NEAR Protocol","check":"Define NEAR@3.33 sustained-balance duration, allocation/exclusions, $70M snapshot trigger, conversion and claims; monitor Protocol v86, Aurora/EURe usage, x402 deliverables and revenue/buyback reconciliation.","carried_from":"incentive criteria advanced watchlist-scan-20260714T201651Z; remaining checks carried from watchlist-scan-20260714T154520Z"},
+      {"project":"OCT / Octra","check":"Verify TAPE integration, tagged/reproducible node release, license/build/container, supported devnet/mainnet configs, peer docs, audits, external operators and telemetry; then bridge/Hyperliquid prerequisites.","carried_from":"node preview advanced watchlist-scan-20260714T201651Z; bridge/TAPE checks carried from scan-20260714T111854Z"},
+      {"project":"AKT / Akash","check":"Verify a paid production multi-node RDMA/InfiniBand/RoCE workload after merged provider PR #400, including release, provider adoption, reliability, spend and BME burns.","carried_from":"watchlist-scan-20260714T154520Z; no new production evidence in watchlist-scan-20260714T201651Z"},
+      {"project":"DRV / Derive Protocol","check":"Verify Upbit/Bithumb deposit networks/contracts, deposits/withdrawals, depth and volume persistence; explain the seven-day fee decline and verify ORIA/Hyperliquid/buyback follow-through.","carried_from":"watchlist-scan-20260714T154520Z; no dispositive operations evidence in watchlist-scan-20260714T201651Z"},
+      {"project":"GitlWab / GitLawb / Gitwab","check":"Reconcile Blockagent indexed blocks versus chain head/lag label; verify MCP docs/consumers, retention, fees, security and token routing; continue bridge/contract/proposal checks.","carried_from":"watchlist-scan-20260714T154520Z; no new qualifying post in watchlist-scan-20260714T201651Z"},
+      {"project":"CHIP / USD.AI","check":"Reconcile $400M+ TVL with direct TVL/borrowed/deployed/idle categories; verify APY, NIM, loan performance and whether duration-based sCHIP/NIM access becomes an official proposal.","carried_from":"watchlist-scan-20260714T154520Z; in-window marketing added no methodology or proposal"},
+      {"project":"VIRTUAL / Virtuals Protocol","check":"Reproduce Robinhood Chain volume/launch/builder-earnings figures onchain; quantify concentration, repeat activity and protocol/VIRTUAL routing; reconcile DefiLlama fee coverage and external ACP/standard adoption.","carried_from":"watchlist-scan-20260714T154520Z; individual launch fee post was routine baseline output"},
+      {"project":"Worldcoin / WLD / World Network","check":"Verify SP1 production/audits and prior Nitro-path exposure; monitor WIP-1008 merge, cost-benefit, endorsement, WLD stake/reward/slashing parameters, implementation, audits, governance and activation.","carried_from":"scan-20260714T111854Z; one discussion clarification but no material resolution in watchlist-scan-20260714T201651Z"},
+      {"project":"META / MetaDAO","check":"Verify MetaDAO 2.0 contracts/deployments, thresholds, NAV oracle/bands, committee mandate/audits/proposals and Credible final settlement, fees and META accrual.","carried_from":"watchlist-scan-20260714T154520Z; no new implementation evidence"},
+      {"project":"BIO / Bio Protocol","check":"Find CrossBridge grant/IP lineage, Lilly/company terms and ecosystem-metric methodology; map BIO/veBIO locks, sales, rewards, contracts, milestones and value routing.","carried_from":"scan-20260714T111854Z; no new qualifying official evidence"},
+      {"project":"Ambient","check":"Verify Proof-of-Logits sampling/fingerprint security, validator independence, overhead, code/audits, usage, mainnet and tokenomics.","carried_from":"watchlist-scan-20260714T154520Z; in-window provenance post repeated existing capability framing"},
+      {"project":"Pluralis","check":"Verify the official NeurIPS 2026 workshop page/CFP and monitor research/code follow-through, contributor economics and Agora external-compute share.","carried_from":"scan-20260714T111854Z; no new qualifying authored post"},
+      {"project":"GRASS","check":"On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.","carried_from":"scan-20260714T111854Z; not yet due"},
+      {"project":"Kinetiq","check":"Verify the claimed $320K KNTQ buyback wallet/revenue funding and official Season 2 snapshot/distribution rules.","carried_from":"scan-20260714T111854Z; no new qualifying official evidence"},
+      {"project":"VVV / Venice AI","check":"Verify burn dashboard/transaction and burn-versus-emissions math; preserve zero-retention versus E2EE distinctions and monitor model-driven revenue.","carried_from":"scan-20260714T111854Z; no new burn/economic evidence"},
+      {"project":"AEON Framework","check":"Reproduce v0.1 attestations and inspect verifier/public log, external users, security, fees and aeon value capture.","carried_from":"scan-20260714T111854Z; no new qualifying official evidence"},
+      {"project":"GEOD / GEODNET","check":"Verify GEO-PULSE accuracy/adoption/revenue and assess any formal GIP-14 submission rather than treating an external proposal plus official submission-direction reply as governance adoption.","carried_from":"scan-20260714T111854Z; GIP-14 remained an external proposal in watchlist-scan-20260714T201651Z"},
+      {"project":"Chutes — Bittensor Subnet 64","check":"Verify paid Internet Court inference, Parallax larger-workload replication/customer jobs and revenue quality/margins; identify any Calacanis provider attribution directly.","carried_from":"scan-20260714T111854Z; weekly recap repeated existing milestones"},
+      {"project":"Lium — Bittensor Subnet 51","check":"Verify Kraken liquidity/deposits/withdrawals, GPU inventory/utilization and any post-listing buyback, burn, credit-purchase or utilization effect.","carried_from":"scan-20260714T111854Z; no new qualifying official evidence"}
+    ],
+    "changelog_importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 4,
+      "tiers": {"high": 0, "medium": 4, "low": 0},
+      "note": "Independent tagger labeled Bankr launchpad telemetry, Yanez/Bitsec disclosure, NEAR@3.33 clarification and Octra lite-node preview as medium/watch."
+    }
+  },
+  {
+    "run_id": "watchlist-scan-20260714T154520Z",
+    "started_at": "2026-07-14T15:45:20Z",
+    "completed_at": "2026-07-14T16:11:35Z",
+    "status": "success",
+    "scan_window": {
+      "from": "2026-07-14T11:41:02Z",
+      "to": "2026-07-14T16:11:35Z"
+    },
+    "scope": "Checked dashboard project-intake issues, refreshed direct metrics, consumed prior next checks, and scanned all 25 enabled tracked projects across official/team X accounts plus relevant GitHub, blog, exchange and data APIs. POD / Dolphin POD was suppressed and not scanned.",
+    "projects_checked": 25,
+    "logged_projects": [
+      "06-gitlawb",
+      "12-akt-akash",
+      "13-chip-usdai",
+      "15-virtuals",
+      "17-near",
+      "18-drv-derive"
+    ],
+    "counts": {
+      "intake_issues_checked": 0,
+      "intake_projects_added": 0,
+      "projects_checked": 25,
+      "projects_with_logged_findings": 6,
+      "confirmed_findings": 6,
+      "unverified_findings_added": 0,
+      "no_material_change_projects": 19,
+      "errors": 0
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub public Issues API",
+        "url": "https://api.github.com/repos/iopo545454-del/project-watchlist/issues?state=open&labels=project-intake&per_page=50",
+        "summary": "No open project-intake issue was present in the labeled or all-open issue check.",
+        "decision": "No intake action."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "GitHub",
+        "url": "https://github.com/akash-network/provider/pull/400",
+        "summary": "Provider PR #400 is merged, adding provider-side multi-node GPU and interconnect discovery/configuration surfaces.",
+        "decision": "Logged as a catalyst update; kept paid production workload readiness as the next verification rather than inferring it from merged code."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "Upbit and Bithumb public market APIs",
+        "url": "https://global-docs.upbit.com/reference/list-trading-pairs",
+        "summary": "Direct exchange checks returned all four announced DRV trading pairs: Upbit KRW/BTC/USDT and Bithumb KRW.",
+        "decision": "Advanced the listing item from announcement to live-market verification; retained deposit-network, withdrawal and liquidity-persistence checks."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "X/Twitter founder account and live Blockagent",
+        "url": "https://x.com/kevincodex/status/2077004823850090929",
+        "summary": "First Blockagent snapshot showed 215 questions, 159 conversations, 106 unique visitors and incomplete index coverage; MCP access was described as upcoming.",
+        "decision": "Logged as a catalyst/usage update. Explicitly separated current product metrics from future MCP access and flagged the chain-head/index-gap contradiction."
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "source": "Official X/Twitter and DefiLlama API",
+        "url": "https://x.com/USDai_Official/status/2077044966342512729",
+        "summary": "Official account claimed TVL above $400M and sUSDai APY above 8%; DefiLlama showed about $203.3M TVL plus $157.9M borrowed.",
+        "decision": "Logged with issuer-reported APY and unresolved TVL methodology clearly separated from the machine-readable cross-check."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "X/Twitter core accounts",
+        "url": "https://x.com/ethermage/status/2077009901038297420",
+        "summary": "Core accounts reported $77.7M Robinhood Chain agent volume, 2,103 launches and about $1.32M builder earnings in under 12 days.",
+        "decision": "Logged as issuer-reported product/usage telemetry, not protocol revenue or VIRTUAL value capture; dashboard/onchain reconciliation remains next."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "Official X/Twitter and blog",
+        "url": "https://x.com/NEARProtocol/status/2077018138986578269",
+        "summary": "NEAR Foundation joined the x402 Foundation with major cloud/payment members.",
+        "decision": "Logged as a partnership catalyst, but not treated as an implementation or token-impact event because no NEAR-specific code, spec, pilot or timeline was named."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 24 metrics across 13 projects; no new material delta was selected for this run beyond source-specific verification findings.",
+        "decision": "Restored incidental generated metric changes so the commit remains scoped to material project information."
+      },
+      {
+        "project": "Remaining enabled watchlist",
+        "source": "Official/team X account scans and configured source profiles",
+        "url": "docs/data/index.json",
+        "summary": "Nineteen additional enabled projects were checked over the scan window; surfaced posts were routine, duplicate, promotional, outside the window, or below the materiality threshold.",
+        "decision": "No dossier or changelog entry. POD / Dolphin POD was excluded by instruction."
+      }
+    ],
+    "errors": [],
+    "next_checks": [
+      "Akash: verify a paid production multi-node workload using RDMA, InfiniBand or RoCE after provider PR #400, including provider adoption and reliability.",
+      "Derive: verify DRV deposit networks/contracts and withdrawals on Upbit/Bithumb, then monitor depth and volume persistence after listing.",
+      "GitLawb: reconcile Blockagent's 1.42M indexed blocks versus 9.52M chain head and 98s-behind label; verify MCP docs, consumers, retention, fees and token routing.",
+      "USD.AI: reconcile the $400M+ TVL definition with protocol, borrowed, deployed and idle categories; independently verify sUSDai APY, NIM and loan performance.",
+      "Virtuals: reproduce Robinhood Chain volume, launch and builder-earnings figures onchain; quantify concentration, repeat activity, protocol share and any VIRTUAL route.",
+      "NEAR: identify concrete x402 Foundation specs, NEAR code/proposals, pilots, implementation dates, transactions and fee/value routing.",
+      "NEAR: monitor the Protocol v86 vote beginning 2026-07-20 and subsequent activation/validator adoption.",
+      "Carry prior unresolved checks for MetaDAO governance/NAV-band, World Chain SP1/WIP-1008, BIO CrossBridge attribution, Octra bridge/TAPE, Ambient mainnet, and Virtuals fee-series methodology into the next run."
+    ],
+    "changelog_importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 6,
+      "tiers": {"high": 1, "medium": 4, "low": 1},
+      "note": "Independent tagger labeled Derive's live Korean markets high; Virtuals, USD.AI, NEAR x402 and Akash medium; GitLawb Blockagent usage low."
+    }
+  },
+  {
     "run_id": "scan-20260714T111854Z",
     "started_at": "2026-07-14T11:18:54Z",
     "completed_at": "2026-07-14T11:41:02Z",

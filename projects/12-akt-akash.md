@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-13T21:34:09Z
+last_updated: 2026-07-14T15:45:20Z
 ---
 
 # AKT / Akash
@@ -14,7 +14,7 @@ last_updated: 2026-07-13T21:34:09Z
 
 ## Latest scan notes
 
-- 2026-07-13 — Akash provider PR #400 proposes end-to-end multi-node GPU interconnect support using RDMA/InfiniBand or RoCE. The implementation adds SDL placement signals, provider inventory/capacity accounting, one HCA allocation per GPU, cross-node anti-affinity, NCCL environment setup, and composition with the confidential-compute/TEE path. This is a large official-code step toward distributed training/HPC, but the PR remains open and no provider rollout, customer workload, utilization, spend, or AKT/BME impact is established. Source: https://github.com/akash-network/provider/pull/400
+- 2026-07-14 — Akash merged provider PR #400 into `main`, completing the provider-side path for multi-node GPU workloads over InfiniBand or RoCE. The 2,114-line feature consumes the released chain-SDK interconnect surface and covers SDL placement, inventory/capacity accounting, one HCA allocation per GPU, cross-node anti-affinity, NCCL environment setup, CRDs, and confidential-compute composition. The PR reports a successful end-to-end run on a two-node A100/InfiniBand cluster, but nested-SDL, RoCE and multi-group E2E checks remain open; no provider release/rollout, paid workload, utilization, spend, or AKT/BME impact is established. Sources: https://github.com/akash-network/provider/pull/400 and https://github.com/akash-network/provider/commit/df038c35efda57957a3c436191a972493696672d
 - 2026-07-02 — Akash official community June recap highlighted Mainnet 18 completion, Console Air launch, AkashML model additions, $5.5M+ total USD spend, and 229.4K AKT burned in June. Source: https://x.com/akashians_/status/2072752666514800797
 
 - 2026-07-01 — Founder Greg Osuri said AkashML processed 200B+ tokens this month and set a new daily ATH above 10B tokens/day. This is a meaningful usage/KPI signal for AkashML/OpenRouter inference demand, but needs API/dashboard verification and context on revenue, provider payout, and AKT/BME value capture. Sources: https://x.com/gregosuri/status/2072136586201067680 and https://x.com/gregosuri/status/2072118592930484360
@@ -101,7 +101,7 @@ last_updated: 2026-07-13T21:34:09Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| Multi-node GPU RDMA / InfiniBand / RoCE support | Tentative / watch | Official provider PR #400 implements the chain-SDK GPU-interconnect surface across SDL placement, inventory, bid/reservation, workload building, NCCL configuration and CRDs: https://github.com/akash-network/provider/pull/400 | Open as of 2026-07-13; merge/release/provider rollout unknown | Would let Akash schedule distributed GPU workloads across interconnect-capable nodes instead of remaining primarily a single-node GPU marketplace. | Production-grade multinode networking could unlock larger training/HPC customers, improve high-end GPU demand and strengthen the decentralized-cloud thesis if it converts into paid leases and BME burns. | Watch PR review/merge, chain-SDK and provider releases, InfiniBand/RoCE provider inventory, first paid multinode jobs, reliability/benchmarks, spend and AKT burned. |
+| Multi-node GPU RDMA / InfiniBand / RoCE support | Confirmed / completed in provider `main` | Provider PR #400 merged on 2026-07-14 with the chain-SDK GPU-interconnect surface across SDL placement, inventory, bid/reservation, workload building, NCCL configuration and CRDs; the PR reports a successful two-node A100/InfiniBand E2E run: https://github.com/akash-network/provider/pull/400 and https://github.com/akash-network/provider/commit/df038c35efda57957a3c436191a972493696672d | Code merged 2026-07-14; provider release and production rollout unknown | Gives Akash's provider stack the ability to schedule distributed GPU workloads across interconnect-capable nodes instead of remaining primarily a single-node GPU marketplace. | Production-grade multinode networking could unlock larger training/HPC customers, improve high-end GPU demand and strengthen the decentralized-cloud thesis if it converts into paid leases and BME burns. | Watch provider release/rollout, the unfinished nested-SDL/RoCE/multi-group E2E checks, InfiniBand/RoCE provider inventory, first paid multinode jobs, reliability/benchmarks, spend and AKT burned. |
 | AkashML token-throughput records | Confirmed / usage KPI | Founder Greg Osuri said AkashML processed 200B+ tokens this month and set a new daily ATH above 10B tokens/day: https://x.com/gregosuri/status/2072136586201067680 and https://x.com/gregosuri/status/2072118592930484360 | Live KPI as of 2026-07-01 | Signals growing inference usage on AkashML/OpenRouter-connected workloads. | Token-throughput only matters for AKT if it converts into marketplace spend, provider payouts, BME burns, and durable customers; otherwise it is a vanity usage metric. | Verify against AkashML/dashboard/API data, revenue/spend, provider payout mix, model mix, gross margin/subsidy level, and BME burn/mint impact. |
 | Burn Mint Equilibrium live on mainnet | Confirmed | Akash Q1 2026 report says BME went live Mar. 23, 2026 after Proposal 318; roadmap lists AEP-76 completed: https://akash.network/blog/akash-network-q1-2026-report/ and https://akash.network/roadmap/2026/ | Live since 2026-03-23 | Creates direct link between compute demand and AKT via burn/mint economics while preserving stable pricing UX. | If compute spend grows, AKT capture narrative improves versus USDC-only marketplace usage. | Watch compute spend, AKT burned/minted, USDC vs AKT payment mix, provider receipts, and governance parameter changes. |
 | Akash crossed $5M all-time compute spend and Q1 usage milestones | Confirmed / KPI catalyst | Akash Q1 2026 report says first 90 days crossed an all-time high of $5M in compute spend: https://akash.network/blog/akash-network-q1-2026-report/ | Q1 2026 | Provides KPI evidence that marketplace demand is growing. | Higher spend improves credibility of BME and provider incentives. | Track quarterly compute spend, active leases, GPU utilization, customer retention, and revenue concentration. |
@@ -112,7 +112,7 @@ last_updated: 2026-07-13T21:34:09Z
 ## Open questions
 - How much of gross spend maps to durable AKT value capture after proposal 329 / revenue-share changes?
 - What are current high-end GPU availability, utilization, and customer retention by provider?
-- Will provider PR #400 merge and ship, which providers expose working InfiniBand/RoCE capacity, and do paid multi-node training/HPC jobs produce measurable leases, spend and BME burns?
+- When will the merged provider PR #400 ship in a provider release, which providers expose working InfiniBand/RoCE capacity, will the remaining RoCE/multi-group E2E checks pass, and do paid multi-node training/HPC jobs produce measurable leases, spend and BME burns?
 - How much inference demand comes through AkashML/OpenRouter versus one-off deployments?
 
 ## Watch triggers

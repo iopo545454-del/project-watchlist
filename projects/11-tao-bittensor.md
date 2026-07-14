@@ -1,12 +1,14 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-11T00:18:09Z
+last_updated: 2026-07-14T20:16:51Z
 ---
 
 # TAO / Bittensor
 
 ## Latest scan notes
+
+- 2026-07-14 — Official Yanez AI / SN54 disclosed that Bitsec found a **“very important vulnerability”** in Yanez code, causing an unspecified release to be delayed until the team fixed the issue; Yanez says Bitsec now provides ongoing code monitoring. No vulnerability class, affected component, severity report, repository, patch, dates, production-exposure statement, user/fund impact, or delayed-release identifier was published. Treat this as a positive pre-release review signal and an unresolved security-disclosure check—not evidence of an exploit or proof that production was exposed. Source: https://x.com/yanez__ai/status/2077070879985701136
 
 - 2026-07-11 — Official Yanez AI / SN54 account disclosed a planned Proof of Humanhood / Proof of Uniqueness token loop: SN54 alpha is intended to become the product currency, all PoH/PoU revenue received in USD, stablecoins, or Bittensor-native assets is intended to be converted into SN54 alpha and tracked onchain, and 20% of the resulting alpha “will never be sold.” Yanez also said two clients are already integrated but awaiting app-store availability, described a second incentive for registry-user growth, and said the permissionless incentive will be announced at Exploit Summit. This materially advances the prior OpenTensor client-integration note into a subnet value-capture design, but the conversion wallet/contracts, revenue dashboard, exact treatment of the retained 20%, client names, and live revenue remain unverified. Source: https://x.com/yanez__ai/status/2075695559097401400
 
@@ -104,6 +106,7 @@ last_updated: 2026-07-11T00:18:09Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| Yanez / SN54 Bitsec pre-release security review | Confirmed high-level disclosure; technical details unavailable | Official Yanez says Bitsec found a “very important vulnerability,” the release was delayed, the issue was addressed and Bitsec now monitors the code: https://x.com/yanez__ai/status/2077070879985701136 | Found before the cited June 11 interview; fix/release dates unknown | Shows external security review changed the release process before the unspecified launch proceeded. | Catching a material bug pre-release improves process credibility; absent a report, patch and exposure statement, users cannot assess whether the affected code reached production or whether adjacent paths remain vulnerable. | Identify the delayed release/component, audit report, severity/class, repository and patch; obtain explicit production/user/fund exposure and retest/monitoring scope. |
 | Yanez AI / SN54 Proof-of-Humanhood revenue-to-alpha loop | Confirmed announcement / implementation pending | Official Yanez AI / SN54 account says SN54 alpha will become the PoH/PoU product currency, all PoH/PoU revenue in USD/stablecoins/Bittensor-native assets will become SN54 alpha and be tracked onchain, 20% will never be sold, two clients are integrated, and a permissionless incentive will be announced at Exploit Summit: https://x.com/yanez__ai/status/2075695559097401400 | Announced 2026-07-10; client apps and permissionless incentive upcoming; revenue-conversion activation date unknown | Creates an explicit external-revenue-to-subnet-alpha demand path and a retained-token component around Yanez identity-verification usage. | If real client revenue is systematically converted and partly retained, SN54 can demonstrate a closed-loop subnet economy and strengthen the broader thesis that Bittensor alpha demand can come from customers rather than emissions alone; weak/no onchain execution would reduce this to podcast tokenomics. | Verify client names/app-store releases, Exploit Summit incentive details, conversion/retention contracts and wallets, dashboard, gross revenue, buy frequency, whether “20% never sold” means burn/treasury/permanent lock, and effects on SN54 alpha liquidity/emissions. |
 | OKX spot listing / OKX AI subnet-API support | Confirmed | OpenTensor weekly ecosystem highlights said OKX AI was unveiled with Opentensor support, Bittensor subnet APIs are coming to the agent marketplace, and `$TAO` was listed; OKX also highlighted `$TAO` spot as a weekly listing: https://x.com/opentensor/status/2073771523492524281 and https://x.com/okx/status/2073293545637585379 | Listed / highlighted 2026-07-04 to 2026-07-05 | Adds a major centralized-exchange spot venue and puts Opentensor support into OKX's AI product/agent-marketplace narrative. | More market access can deepen TAO liquidity and distribution; subnet API integration could matter if OKX routes real agent traffic to Bittensor subnets. | Verify OKX market depth/volume, geographic restrictions, any deposit/trading incentives, OKX AI subnet API launch details, and whether usage flows to specific subnets. |
 | Flow-based emissions “Taoflow” active | Confirmed / docs-backed | Bittensor docs say as of November 2025 emissions moved to flow-based Taoflow, based on net TAO inflows from staking activity: https://docs.learnbittensor.org/learn/emissions | Active since November 2025 | Changes subnet capital allocation from price-based signals toward staker flow. | Can re-rank subnets and redirect TAO/alpha incentives toward projects attracting real stake demand. | Watch subnet emissions, stake inflows/outflows, alpha liquidity, and any governance changes to Taoflow. |
@@ -116,6 +119,7 @@ last_updated: 2026-07-11T00:18:09Z
 - Bittensor is not one product; it is an incentive layer for many subnet businesses.
 - TAO valuation increasingly depends on subnet quality, alpha-token dynamics, and real external demand.
 - Avoid evaluating only TAO spot price; subnet emissions, alpha performance, and validator behavior are critical.
+- Which Yanez release/component contained the Bitsec-found vulnerability, what was the severity and fix, and was any production deployment, client, biometric data or fund flow exposed?
 
 ---
 

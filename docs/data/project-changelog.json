@@ -1,5 +1,179 @@
 [
   {
+    "date": "2026-07-14T20:16:51Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "official update",
+    "summary": "Bankr's Robinhood Chain launchpad snapshot showed $49.31M cumulative DEX volume, $612,920 creator fees and 11,265 launches, including 1,901 in the prior 24 hours.",
+    "source": "X/Twitter core builder and dashboard screenshot",
+    "url": "https://x.com/0xDeployer/status/2077116766376087779",
+    "last_scanned": "2026-07-14T20:16:51Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Repo history tracked live Robinhood launch/execution mechanics but no scoped launchpad throughput. The new Bankr/Doppler snapshot adds $49,306,619 of volume, $612,920 paid to creators, 11,265 launches and 1,901 in 24 hours; creators reportedly keep 95% of the 0.7% swap fee. The public dashboard/query, concentration, retention, Bankr fee share and BNKR/Club routing remain unavailable.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Robinhood Chain launchpad traction and creator-fee loop"},
+      {"type": "metric", "ref": "Bankr Robinhood DEX volume, creator fees and launches"},
+      {"type": "open_question", "ref": "Reproduce dashboard metrics and verify concentration, retention, Bankr fees and BNKR/Club routing"}
+    ]
+  },
+  {
+    "date": "2026-07-14T20:16:51Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "verification update",
+    "summary": "Yanez AI / SN54 said Bitsec found and helped fix a 'very important vulnerability' that delayed an unspecified release; no audit, patch, severity or exposure details were published.",
+    "source": "X/Twitter official subnet account",
+    "url": "https://x.com/yanez__ai/status/2077070879985701136",
+    "last_scanned": "2026-07-14T20:16:51Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Prior repo history recorded SN54 adversarial biometric testing and two integrated clients but no external code-review outcome. The disclosure shows a release-blocking Bitsec finding was addressed before an unspecified release and monitoring continues, while the affected component, dates, technical severity, production/client/fund exposure and remediation evidence remain unknown.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Yanez / SN54 Bitsec pre-release security review"},
+      {"type": "open_question", "ref": "Identify the vulnerability, affected release/component, audit/patch and production or user exposure"}
+    ]
+  },
+  {
+    "date": "2026-07-14T20:16:51Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "catalyst update",
+    "summary": "NEAR clarified that NEAR@3.33 qualification requires a sustained $100+ confidential balance and one swap, with activity above the floor shaping allocation; snapshot and claim mechanics remain unpublished.",
+    "source": "Official X/Twitter and blog",
+    "url": "https://x.com/NEARProtocol/status/2077109187658535049",
+    "last_scanned": "2026-07-14T20:16:51Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo already tracked the $100 balance/one-swap floor, 1:1 conversion condition and $70M confidential-TVL snapshot trigger. The new reminder adds that the balance must be 'sustained' and activity above the floor shapes allocation, but gives no duration/formula, does not say the $70M trigger fired and provides no exclusions or claim timing.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"},
+      {"type": "open_question", "ref": "Define sustained balance, allocation, exclusions, snapshot trigger, conversion and claims"}
+    ]
+  },
+  {
+    "date": "2026-07-14T20:16:51Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "catalyst update",
+    "summary": "Octra published an inspectable lite-node pre-release and showed local VPS execution, but the repo remains marked internal-use-only with no tagged release or mainnet configs.",
+    "source": "Official X/Twitter and GitHub",
+    "url": "https://github.com/octra-labs/lite_node",
+    "last_scanned": "2026-07-14T20:16:51Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier previously tracked the node as an upcoming security-gated prerequisite for bridge/listing work. Public mini-core code and local execution now exist, but the README says internal use only, no release is tagged and mainnet configs, TAPE integration, audits, build docs and external operators remain absent, so this is not a production node launch.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Node release"},
+      {"type": "open_question", "ref": "Verify TAPE, supported public release, reproducible builds, configs, operators and independent review"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Virtuals core accounts reported $77.7M Robinhood Chain agent volume, 2,103 launches and about $1.32M builder earnings in under 12 days; no dashboard/onchain reconciliation was linked.",
+    "source": "X/Twitter official/core accounts",
+    "url": "https://x.com/ethermage/status/2077009901038297420",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior repo snapshot only had about $350K of creator fees. The new issuer report breaks $77.7M into $16.9M bonding-curve and $60.8M post-graduation volume and builder earnings into $894K ACF plus about $426K trading fees; VEX alone contributed $30M, and the figures remain unreconciled with DefiLlama's sharply lower protocol-fee series or any VIRTUAL value route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
+      {"type": "metric", "ref": "Robinhood Chain volume, launches and builder earnings"},
+      {"type": "open_question", "ref": "Reproduce issuer metrics onchain and separate builder earnings from protocol/VIRTUAL economics"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "verification update",
+    "summary": "USD.AI said TVL again exceeded $400M and sUSDai APY remained above 8%; DefiLlama instead showed about $203.3M TVL plus $157.9M borrowed, leaving methodology unresolved.",
+    "source": "X/Twitter official account and DefiLlama API",
+    "url": "https://x.com/USDai_Official/status/2077044966342512729",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The Lighthouse report previously cited $398M TVL and the repo tracked 7.76% 30-day APY. The new issuer claim returns above $400M and above 8%, but supplies no methodology; a same-run machine-readable cross-check totals about $361.2M only when DefiLlama's separate TVL and borrowed categories are combined, and APY remains unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Lighthouse report and current TVL/yield claims"},
+      {"type": "metric", "ref": "USDAI TVL, borrowed capital and sUSDai APY"},
+      {"type": "open_question", "ref": "Reconcile TVL methodology and verify APY, deployment, NIM and loan performance"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "catalyst update",
+    "summary": "Blockagent published its first usage/index snapshot—215 questions, 159 conversations and 106 unique visitors—while the founder said MCP access to its Robinhood Chain indexer is planned.",
+    "source": "X/Twitter founder account and live product",
+    "url": "https://x.com/kevincodex/status/2077004823850090929",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "The prior entry established Blockagent as live but disclosed no usage. The new snapshot provides early adoption counts and says MCP is forthcoming, while also showing only 1,420,740 blocks indexed versus a 9,522,512 chain head despite a '98s behind' label; fees, external consumers and GITLAWB/OpenGateway economics remain absent.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Blockagent AI explorer and planned MCP data access for Robinhood Chain"},
+      {"type": "metric", "ref": "Blockagent questions, conversations, visitors and index coverage"},
+      {"type": "open_question", "ref": "Verify index completeness, MCP access, retention, security and value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "NEAR Foundation joined the x402 Foundation alongside AWS, American Express, Mastercard, Stripe and Visa to work on open agent payments and private-inference infrastructure.",
+    "source": "Official X/Twitter and blog",
+    "url": "https://x.com/NEARProtocol/status/2077018138986578269",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Repo history tracked NEAR's own Intents/private-inference stack but no x402 Foundation participation. The announcement adds an industry-standards partnership with major payment/cloud members, yet names no NEAR-specific code, spec, pilot, deliverable, timeline, usage or token route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "NEAR Foundation participation in x402 Foundation"},
+      {"type": "open_question", "ref": "Verify x402 specs, NEAR contributions, pilots, usage, fees and value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "verification update",
+    "summary": "All four announced Upbit/Bithumb DRV markets are live; public APIs showed about ₩65.76B Upbit plus ₩3.58B Bithumb DRV/KRW 24-hour turnover at the initial check.",
+    "source": "Upbit and Bithumb public market APIs",
+    "url": "https://api.upbit.com/v1/ticker?markets=KRW-DRV,BTC-DRV,USDT-DRV",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "update",
+    "importance": "high",
+    "delta": "The prior entry confirmed scheduled Korean market access but not execution. Upbit now exposes live KRW/BTC/USDT tickers and order books and Bithumb exposes live KRW trading; initial KRW turnover was strong, while Upbit BTC/USDT quotes were thin/wide and deposit networks, withdrawals and post-listing persistence remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Upbit and Bithumb Korean spot-market listings"},
+      {"type": "open_question", "ref": "Verify exchange deposit networks/contracts, withdrawals, BTC/USDT depth and post-listing liquidity persistence"}
+    ]
+  },
+  {
+    "date": "2026-07-14T15:45:20Z",
+    "project": "AKT / Akash",
+    "slug": "12-akt-akash",
+    "type": "catalyst update",
+    "summary": "Akash merged provider PR #400, adding provider-side multi-node GPU workload support over InfiniBand or RoCE to main; production release, provider rollout and paid usage remain unverified.",
+    "source": "Official GitHub repository",
+    "url": "https://github.com/akash-network/provider/pull/400",
+    "last_scanned": "2026-07-14T15:45:20Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior entry tracked a 2,114-line open implementation. PR #400 is now merged after reporting a successful two-node A100/InfiniBand E2E run, while nested-SDL, RoCE and multi-group E2E checks remain open and no provider release, production capacity, paid workload, spend or BME effect is established.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"},
+      {"type": "open_question", "ref": "Verify provider release, production interconnect capacity, remaining E2E tests, paid multi-node jobs, spend and BME burns"}
+    ]
+  },
+  {
     "date": "2026-07-14T11:18:54Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",
