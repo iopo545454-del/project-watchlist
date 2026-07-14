@@ -1,5 +1,196 @@
 [
   {
+    "date": "2026-07-14T06:32:06Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "official update",
+    "summary": "Upbit announced DRV/KRW, DRV/BTC and DRV/USDT while Bithumb announced DRV/KRW, adding two Korean spot venues four days after Hyperliquid support.",
+    "source": "Official Upbit, Bithumb and Derive announcements",
+    "url": "https://x.com/Official_Upbit/status/2076900004313333964",
+    "last_scanned": "2026-07-14T06:32:06Z",
+    "novelty": "new",
+    "importance": "high",
+    "delta": "Repo history previously had DRV-USDC spot on Hyperliquid but no tracked Korean CEX or KRW market. Upbit scheduled three markets for 17:00 KST and Bithumb scheduled DRV/KRW for 20:00 KST; supported deposit networks, withdrawals, opening depth and sustained volume remain unverified.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Upbit and Bithumb Korean spot-market listings"},
+      {"type": "open_question","ref": "Verify market opening, deposit networks, withdrawals, order-book depth and sustained volume"}
+    ]
+  },
+  {
+    "date": "2026-07-14T06:32:06Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "Official Bankr docs confirm BNKR staking was deprecated April 8, new deposits are disabled and existing stakers should withdraw through an 18-hour cooldown and 3-day window.",
+    "source": "Official docs and X/Twitter core builder",
+    "url": "https://docs.bankr.bot/features/staking/",
+    "last_scanned": "2026-07-14T06:32:06Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier previously treated vault staking as current and left the canonical v2 contract/docs unresolved. Official docs show the product has been withdrawal-only since April 8, and the core builder reiterated that users should withdraw; live agent routing and successful withdrawals remain operational checks.",
+    "relates_to": [
+      {"type": "watch_item","ref": "Outdated BNKR staking-contract / agent-routing risk"},
+      {"type": "open_question","ref": "Verify successful withdrawal routing from the deprecated BNKR staking vault"}
+    ]
+  },
+  {
+    "date": "2026-07-14T06:32:06Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "NEAR reported 15.5% 30-day and 29.5% 7-day Intents fee capture; the live dashboard showed $23.06B all-time volume, about $2.42M gross fees and $375.7K net revenue over 30 days.",
+    "source": "Official X/Twitter thread and live revenue dashboard",
+    "url": "https://x.com/NEARProtocol/status/2076842684254167178",
+    "last_scanned": "2026-07-14T06:32:06Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Repo history already tracked $22B+ Intents volume and the three capture mechanisms, but not the 7-day/30-day acceleration or a same-run dashboard cross-check. The dashboard showed about $4.49M cumulative monthly net revenue and revenue still below emissions, so buyback-funded net deflation remains a path rather than achieved status.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Revenue dashboard, fee capture and buyback/issuance-offset path"},
+      {"type": "metric","ref": "Intents volume, gross fees, net revenue and capture rate"},
+      {"type": "open_question","ref": "Reconcile dashboard revenue/emissions with buyback execution and organic volume"}
+    ]
+  },
+  {
+    "date": "2026-07-14T06:32:06Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "official update",
+    "summary": "Bankr added charted DCA/TWAP/limit/stop fills and cross-chain swaps to the trading UI, improved Bankr-coin routes and advertises zero interface fees.",
+    "source": "X/Twitter core builder",
+    "url": "https://x.com/0xDeployer/status/2076913675315855572",
+    "last_scanned": "2026-07-14T06:32:06Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "Advanced order types and agent-side cross-chain routing were already live; the new change brings order fills and cross-chain swaps into the trading UI. No usage, routed volume, route-quality benchmark, protocol fee or BNKR value-capture data was disclosed.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"},
+      {"type": "metric","ref": "Trading UI users, routed volume, route quality and protocol fees"}
+    ]
+  },
+  {
+    "date": "2026-07-14T02:12:27Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "scan",
+    "summary": "Derive seven-day fees fell 31.13% from $137,575 to $94,746 and crossed the configured 25% materiality threshold; 30-day fees and TVL declined much less.",
+    "source": "DefiLlama direct-metrics adapter",
+    "url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+    "last_scanned": "2026-07-14T02:12:27Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Collector history shows seven-day fees at $94,746 versus $137,575 on 2026-07-06 (-31.13%), extending the prior run's below-threshold $107,533 / -21.84% reading. Thirty-day fees are $511,193 versus $543,380 (-5.92%) and TVL is $109.9M versus $115.7M (-5.08%), so the move is concentrated in the seven-day fee window; the adapter does not identify whether options volume, incentives, data coverage or market mix caused it.",
+    "relates_to": [
+      {"type": "metric","ref": "Derive seven-day protocol fees"},
+      {"type": "catalyst","ref": "Protocol-fee buyback program"},
+      {"type": "open_question","ref": "Verify organic options fees and follow-through from HYPE, Strategy Builder, Hyperliquid and ORIA"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "unverified watch item",
+    "summary": "USD.AI's co-founder says a duration element will likely reduce CHIP float for access to net interest margin; no official proposal, lock schedule, NIM allocation, contract or activation date exists yet.",
+    "source": "X/Twitter related account — USD.AI co-founder",
+    "url": "https://x.com/0xZergs/status/2076780237115838844",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The prior dossier only confirmed generic CHIP staking/governance over fees and the staking module, while repeatedly flagging explicit value routing as unresolved. This is the first tracked team statement tying a likely time-duration mechanism to NIM access and float reduction; parameters, governance approval, eligible NIM, current staked share and implementation remain unverified.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Duration-based sCHIP / NIM access"},
+      {"type": "watch_item","ref": "Co-founder hint that duration/locking may gate NIM access"},
+      {"type": "open_question","ref": "Verify lock schedule, weighting, NIM allocation, staking participation, governance and contracts"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "catalyst update",
+    "summary": "Octra will build its own wrapped-token/native bridge and still targets Hyperliquid spot, but only after essential network/security updates; an unaffiliated Nova-led community vote did not execute.",
+    "source": "X/Twitter co-founder account",
+    "url": "https://x.com/octralex/status/2076740702512267446",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo previously tracked HypEVM/stealth-bridge intent and a generic rule that listings require the node. The co-founder now identifies the prior Nova vote as unaffiliated, says Nova failed to follow through, commits Octra to a first-party wrapped-token/native bridge, and keeps Hyperliquid spot as an eventual goal gated by security/network work; contracts, audits, date and approval remain absent.",
+    "relates_to": [
+      {"type": "catalyst","ref": "HypEVM integration, first-party wrapped-token/native bridge and eventual Hyperliquid spot"},
+      {"type": "open_question","ref": "Verify TAPE/node releases, bridge contracts/audits/test transfers and Hyperliquid prerequisites"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "official update",
+    "summary": "Derive's BTC, ETH and HYPE options market data now feeds Halcyon Waters' Cayø Largo platform and ORIA intelligence engine; no attributed usage, data revenue, fees or DRV-buyback impact was disclosed.",
+    "source": "X/Twitter official project account",
+    "url": "https://x.com/DeriveXYZ/status/2076773740797686243",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "Repo history already tracked LorisTools dashboard visibility and tentative institutional/RFQ rails. This is the first tracked external intelligence-engine integration consuming Derive BTC/ETH/HYPE data, but the local direct-metrics history still shows seven-day fees at $107,533, down 21.84% from $137,575 seven days earlier and below the 25% alert threshold; no incremental ORIA-driven volume or fee effect is yet observable.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Institutional/RFQ / external options-data rails"},
+      {"type": "metric","ref": "Options volume, OI and fees attributable to external integrations"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "Ambient",
+    "slug": "22-ambient",
+    "type": "official update",
+    "summary": "Ambient says its live testnet validator re-runs one selected output position and compares the model fingerprint, proving which model executed rather than whether the answer is true.",
+    "source": "X/Twitter official technical posts",
+    "url": "https://x.com/ambient_xyz/status/2076757555573837931",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier previously recorded generic Proof-of-Logits receipts, pinned weights and low-overhead verification claims. The team now describes a concrete live-testnet check—re-derivation of one selected output position against a model fingerprint—while sampling/randomness, false-acceptance bounds, adversarial robustness, validator independence, overhead and audits remain unverified.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Proof of Logits technical validation"},
+      {"type": "open_question","ref": "Verify sampling, fingerprint security, false-acceptance bounds and validator independence"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "unverified watch item",
+    "summary": "Draft World Chain WIP-1008 proposes WLD-staked validators, protocol-guaranteed subblocks, two-thirds-stake attestations, slashing, and validator priority-fee/reward flows; it is not approved or scheduled.",
+    "source": "Official GitHub draft PR",
+    "url": "https://github.com/worldcoin/world-chain/pull/850",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier previously tracked WLD unlocks and World Chain proof-system hardening but no protocol-native WLD staking or validator revenue route. WIP-1008 would add up to 128 active validators, four-validator subblock committees, a two-thirds-stake attestation quorum and slashable faults; minimum stake, reward amounts/funding, contracts, audits, governance and activation remain TBD in an open draft.",
+    "relates_to": [
+      {"type": "catalyst","ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
+      {"type": "watch_item","ref": "Draft WIP-1008 WLD-staked validator overlay"},
+      {"type": "open_question","ref": "Verify WLD stake/reward/slashing parameters, implementation, audits and activation path"}
+    ]
+  },
+  {
+    "date": "2026-07-13T21:34:09Z",
+    "project": "AKT / Akash",
+    "slug": "12-akt-akash",
+    "type": "catalyst added",
+    "summary": "Akash provider PR #400 proposes end-to-end multi-node GPU RDMA/InfiniBand/RoCE support across placement, inventory, reservation and NCCL workload setup; the PR remains open.",
+    "source": "Official GitHub repository",
+    "url": "https://github.com/akash-network/provider/pull/400",
+    "last_scanned": "2026-07-13T21:34:09Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier already tracked single-node high-end GPU supply, Homenode and a confidential-compute roadmap but no multi-node interconnect implementation. The 2,114-line provider change adds one-HCA-per-GPU accounting, InfiniBand/RoCE placement pins, cross-node anti-affinity and NCCL setup; merge, provider capacity, paid jobs, spend and AKT/BME impact are unverified.",
+    "relates_to": [
+      {"type": "catalyst","ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"},
+      {"type": "open_question","ref": "Verify paid multi-node workloads, provider capacity, spend and BME burns"}
+    ]
+  },
+  {
     "date": "2026-07-13T17:02:04Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",

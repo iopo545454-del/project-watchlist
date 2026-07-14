@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-13T18:20:54Z",
+  "generated_at": "2026-07-14T02:12:27Z",
   "projects": {
     "01-pod": {
       "display_name": "POD / Dolphin",
@@ -333,16 +333,16 @@
       "status": "active",
       "summary": "Fees, TVL, and aggregate options volume are fetchable; OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
       "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-13T18:20:54Z",
+      "last_refreshed": "2026-07-14T02:12:27Z",
       "metrics": [
         {
           "id": "total24h",
           "group": "fees_revenue",
           "label": "24h",
-          "value": 11010,
+          "value": 11845.0,
           "unit": "usd",
-          "display": "$11.0K",
-          "change": "-11.4%",
+          "display": "$11.8K",
+          "change": "+7.6%",
           "source_id": "defillama_derive_fees",
           "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
           "source_quality": "third_party_adapter",
@@ -352,9 +352,9 @@
           "id": "total7d",
           "group": "fees_revenue",
           "label": "7d",
-          "value": 107533,
+          "value": 94746.0,
           "unit": "usd",
-          "display": "$107.5K",
+          "display": "$94.7K",
           "change": null,
           "source_id": "defillama_derive_fees",
           "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
@@ -365,9 +365,9 @@
           "id": "total30d",
           "group": "fees_revenue",
           "label": "30d",
-          "value": 509579,
+          "value": 511193.0,
           "unit": "usd",
-          "display": "$509.6K",
+          "display": "$511.2K",
           "change": null,
           "source_id": "defillama_derive_fees",
           "source_url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
@@ -378,9 +378,9 @@
           "id": "tvl_total",
           "group": "tvl_collateral",
           "label": "TVL",
-          "value": 109587513,
+          "value": 109867380.0,
           "unit": "usd",
-          "display": "$109.6M",
+          "display": "$109.9M",
           "change": null,
           "source_id": "defillama_derive_tvl",
           "source_url": "https://api.llama.fi/protocol/derive",
@@ -391,28 +391,28 @@
       "chain_breakdown": [
         {
           "chain": "Hyperliquid L1",
-          "value": 36064977,
+          "value": 36115301,
           "display": "$36.1M"
         },
         {
           "chain": "OP Mainnet",
-          "value": 21388226,
-          "display": "$21.4M"
+          "value": 21525088,
+          "display": "$21.5M"
         },
         {
           "chain": "Arbitrum",
-          "value": 20898413,
+          "value": 20901825,
           "display": "$20.9M"
         },
         {
           "chain": "Base",
-          "value": 20032689,
-          "display": "$20.0M"
+          "value": 20050253,
+          "display": "$20.1M"
         },
         {
           "chain": "Ethereum",
-          "value": 11203205,
-          "display": "$11.2M"
+          "value": 11274911,
+          "display": "$11.3M"
         }
       ],
       "open_adapter_work": [

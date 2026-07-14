@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-13T12:21:30Z
+last_updated: 2026-07-13T21:34:09Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -55,6 +55,7 @@ last_updated: 2026-07-13T12:21:30Z
 
 ## Latest scan notes
 
+- 2026-07-13 — World Chain PR #850 opened draft WIP-1008 for **Staked Subblocks and Unsafe-Head BFT**. The proposal would add a WLD-staked validator overlay that contributes protocol-guaranteed subblocks, attests the unsafe chain at a two-thirds stake quorum, slashes equivocation/censorship faults, and pays subblock priority fees plus attestation rewards. This would be World Chain's first native WLD staking/value-utility mechanism and a decentralization/security step change, but it is only a draft open PR: minimum stake, reward amounts, governance path, audits, implementation and activation are all unresolved. Source: https://github.com/worldcoin/world-chain/pull/850
 - 2026-07-13 — World Chain merged an SP1 validity-proof verifier into its multi-proof system, then removed an unused Nitro aggregation-signing path that accepted arbitrary boot information without checking the underlying range proofs and could have let the enclave sign unverified state transitions. The maintainer states the unsafe path was unused by the Nitro worker; no exploit or production exposure was disclosed. This is meaningful proof-system delivery and security hardening, with deployment/audit status still to verify. Sources: https://github.com/worldcoin/world-chain/pull/842 and https://github.com/worldcoin/world-chain/pull/845
 - 2026-06-24 — Official World published a product/blog update on creating verified AI agents with AgentKit, framing World ID as infrastructure for AI agents acting on behalf of real humans. This extends the AgentKit catalyst from ticketing into general verified-agent workflows; watch real developer integrations beyond blog/demo language. Source: https://x.com/worldnetwork/status/2069822016803459395 and https://world.org/blog/product/how-to-create-verified-ai-agents-agentkit
 - 2026-06-22 — TokenomicsCOM flagged a June 24 WLD unlock of roughly 149.9M WLD / $90.7M, about 1.5% of circulating supply and ~3.0% of market cap, with community/private-investor/insider/foundation buckets. Treat as third-party unlock-calendar context until cross-checked against official Foundation/TFH disclosures or an unlock dashboard. Source: https://x.com/TokenomicsCOM/status/2069044731200385426
@@ -65,6 +66,7 @@ last_updated: 2026-07-13T12:21:30Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| WIP-1008 WLD-staked subblocks and unsafe-head BFT | Speculative / watch | World Chain PR #850 proposes WLD-staked validators, four-validator subblock committees, two-thirds-stake BFT attestations, slashing, priority-fee and attestation rewards, and a new attested head: https://github.com/worldcoin/world-chain/pull/850 | Draft opened 2026-07-13; no approval or activation schedule | Would create protocol-native WLD staking and share block-revenue/reward flows with validators while adding accountable pre-L1-finality security and multi-party transaction inclusion. | If adopted, WLD gains productive utility and World Chain reduces single-sequencer censorship/reorg risk; validator concentration, emissions/reward funding and slashing design could also create new governance and market-structure risks. | Watch PR review/merge, Foundation/World Chain endorsement, minimum stake, active-set/reward/slashing parameters, contracts/sidecar code, audits, testnet and governance/activation plan. |
 | World Chain mainnet opened to World users | Confirmed | Official World blog said World Chain is live and that all 15M World ID holders and World App users had either migrated or were in the process of migrating to World Chain. Source: https://world.org/blog/announcements/world-chain-now-open-every-human | Live since 2024-10-17 | Launches World’s own human-prioritized L2 as the settlement layer for World App, World ID, Mini Apps, and ecosystem activity. | Creates the base for gas sponsorship, native apps, stablecoins, and verified-human distribution as onchain infrastructure rather than only an identity app. | Track World Chain transactions, active verified users, Mini App usage, bridge/stablecoin liquidity, and developer adoption. |
 | World Chain multi-proof validity verifier and Nitro hardening | Confirmed / ongoing implementation | Official GitHub merged an SP1 validity-proof verifier and removed an unused Nitro aggregation path that could sign without checking underlying range proofs: https://github.com/worldcoin/world-chain/pull/842 and https://github.com/worldcoin/world-chain/pull/845 | Merged 2026-07-13; production activation unknown | Adds another validity-proof verifier to the dispute/proof system and removes a security-sensitive dead path before broader use. | Multi-proof support can improve prover diversity/resilience, while the unsafe-path fix reduces future attack surface; the market read-through depends on audited production deployment. | Verify deployed contract/code versions, audit coverage, whether the removed path was ever callable in production, defender submission support, proof costs and live usage. |
 | New Orb and World ID 3.0 unveiled | Confirmed | Official World launch posts unveiled the next-generation Orb and World ID 3.0 with new credentials, privacy/security/scalability upgrades, and deepfake-prevention features. Sources: https://world.org/blog/announcements/world-unveils-new-orb-new-ways-to-verify-scale-network-1-billion-humans and https://world.org/blog/announcements/introducing-world-id-3-new-credentials-more-privacy-deep-fake-prevention | Announced 2024-10-17 | Upgrades the core proof-of-human hardware/protocol stack and lays out scaling toward much larger verification coverage. | Better Orb throughput and stronger credentials/privacy can reduce verification bottlenecks and expand use cases beyond crypto. | Watch Orb deployment pace, country availability, privacy/regulatory reviews, and World ID upgrade adoption. |
@@ -113,6 +115,13 @@ last_updated: 2026-07-13T12:21:30Z
 
 ## Open questions
 - Verify whether World Chain's SP1 validity verifier is deployed/active, what audits cover the multi-proof system, and whether the removed Nitro aggregation-signing path was ever callable in production; maintainers describe it as unused and disclosed no exploit.
+- Determine whether WIP-1008 receives official endorsement or merges, and verify its WLD minimum stake, validator cap/concentration, reward funding, fee routing, slashing conditions, contracts, audits, testnet and activation/governance path.
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Source type | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|---|
+| 2026-07-13 | Draft WIP-1008 may add a WLD-staked validator overlay, protocol-guaranteed subblocks, BFT attestations, slashing, and validator fee/reward flows to World Chain. | https://github.com/worldcoin/world-chain/pull/850 | Official GitHub draft PR | High | Unverified | This would be a step change in WLD utility, World Chain decentralization, censorship resistance and block-revenue distribution if adopted. | Re-check PR review/merge state, official Foundation/World Chain communications, parameter commits, implementation code, audits, testnet and governance/activation evidence. |
 
 ## Watch triggers
 - TBD / needs follow-up.
