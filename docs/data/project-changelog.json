@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-15T05:24:32Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "investor thesis added",
+    "summary": "Galaxy Research calls GPU financing the cleanest live onchain-inference use case, while stressing untested recovery, hardware depreciation and redemption-duration risk.",
+    "source": "Galaxy Research — third-party market thesis",
+    "url": "https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto",
+    "last_scanned": "2026-07-15T05:24:32Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier previously had only a founder-sourced CHIP thesis. Galaxy adds the first independent long-form underwriting case for USD.AI's composable GPU-credit loop and its failure modes, but does not resolve issuer TVL/APY, loan performance or CHIP NIM/fee routing.",
+    "relates_to": [
+      {"type": "thesis", "ref": "GPU-backed private credit as an onchain inference-capital market"},
+      {"type": "open_question", "ref": "Verify distressed recovery, duration/liquidity risk, loan performance and explicit CHIP value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-15T05:24:32Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "investor thesis added",
+    "summary": "Galaxy Research frames VVV/DIEM as the most advanced tokenized-inference ownership model, but says DIEM is mostly speculative, under 50% utilized weekly and a perpetual Venice liability.",
+    "source": "Galaxy Research — third-party market thesis",
+    "url": "https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto",
+    "last_scanned": "2026-07-15T05:24:32Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier already tracked staking, buy/burn and outside heavy-user commentary. Galaxy adds independent long-form analysis of transferable DIEM ownership plus quantified under-utilization and liability risks, with a disclosed Galaxy financial interest in DIEM/VVV.",
+    "relates_to": [
+      {"type": "thesis", "ref": "VVV capital asset and DIEM tokenized-inference ownership loop"},
+      {"type": "metric", "ref": "DIEM weekly inference utilization and VVV burn-versus-emissions"}
+    ]
+  },
+  {
+    "date": "2026-07-15T05:24:32Z",
+    "project": "Ambient",
+    "slug": "22-ambient",
+    "type": "investor thesis added",
+    "summary": "Galaxy Research says Ambient's paid-job auction can turn emissions into cheaper verified inference, but buyer demand and the token-demand loop remain unproven.",
+    "source": "Galaxy Research — third-party market thesis",
+    "url": "https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto",
+    "last_scanned": "2026-07-15T05:24:32Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier had official/founder Proof-of-Logits theses but no substantial independent investment case. Galaxy independently articulates the paid-job/emissions flywheel and its failure mode: small trust-minimized demand and no published mechanism forcing inference usage into token demand.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Paid useful-PoW jobs and low-overhead verified inference"},
+      {"type": "open_question", "ref": "Verify organic paid demand, final tokenomics and whether token demand can outrun miner sell pressure"}
+    ]
+  },
+  {
     "date": "2026-07-15T00:47:35Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",

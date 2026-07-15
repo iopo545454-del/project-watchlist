@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-15T00:47:35Z
+last_updated: 2026-07-15T05:24:32Z
 ---
 
 # VVV / Venice AI
@@ -17,6 +17,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 | Source | Who/affiliation | TLDR of the case | Relevance |
 |---|---|---|---|
+| https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Lucas Tcheyan / Galaxy Research | Galaxy frames Venice as the furthest-along attempt to make inference access ownable: VVV is the capital asset, staked VVV mints transferable DIEM compute claims, and revenue/subscriptions feed VVV buy-and-burn. It also notes DIEM is mostly speculative, less than half of available inference was used weekly, and every outstanding DIEM is a perpetual Venice liability. | Strong independent bull/bear framing for the VVV/DIEM loop; the thesis improves only if paid usage, DIEM utilization and burns outgrow emissions and the long-duration compute liability. |
 | https://x.com/AskVenice/status/1978927853149237600 | Venice official tokenomics / VVV framing | Official materials frame VVV around staking for AI capacity, emissions, and a roadmap toward buyback/burn-driven scarcity. | Core token utility and value-capture source; should be checked against current docs and onchain burn data. |
 | https://x.com/AskVenice/status/2037231269449523276 | Venice official emissions/burn update | Official account described emission cuts and burn mechanics as a path toward lower inflation and eventually net deflation if revenue/burns scale. | The most important token catalyst is whether real usage makes burns outrun emissions. |
 | https://x.com/AskVenice/status/2064158076303790131 | Venice official burn update | Official burn posts give discrete, source-proximate evidence of revenue-linked VVV repurchases/burns. | Useful measurable signal; repeat cadence and size matter more than one-off posts. |
@@ -58,6 +59,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 | https://github.com/veniceai/skills | Official/public GitHub source previously surfaced; monitor for integrations/tooling. |
 | `0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf` | Base VVV token contract; use for supply/holder/admin checks. |
 | https://x.com/AskVenice/status/2066634900652879949 | Official Kimi K2.7 Code model launch; current product/update evidence from this scan. |
+| https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Galaxy Research's 2026-07-13 independent VVV/DIEM thesis; includes tokenized-inference ownership, buy/burn, utilization, liability and disclosure context. |
 
 ## Open questions
 - What are the exact current VVV staking rules: capacity allocation, unstaking delay, quota calculation, and whether API usage can saturate capacity?
@@ -76,6 +78,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 ## Latest scan notes
 
+- 2026-07-15 — Galaxy Research framed Venice as the most advanced attempt to make inference access ownable: VVV is the capital asset, staked VVV mints transferable DIEM compute claims, and product revenue/subscriptions feed buy-and-burn. The same report supplies the key bear case: DIEM is mostly held speculatively, less than 50% of available inference was being used weekly, and every DIEM is a perpetual dollar-denominated compute liability for Venice. Galaxy also disclosed financial interests in DIEM/VVV. This is strong independent thesis context, not a new token-mechanics change or independently verified live metric. Source: https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto
 - 2026-07-14 — Official Venice shipped **Style References in Venice Studio**, letting users add reference images to steer image-prompt style, and linked the live Studio workflow plus a tutorial. This is a real consumer-product feature release, but the announcement disclosed no API support, pricing, usage, revenue, VVV staking demand or burn impact. Sources: https://x.com/AskVenice/status/2077143752288633326, https://x.com/AskVenice/status/2077143755019239927 and https://x.com/AskVenice/status/2077143757061783710
 - 2026-07-09 — Official Venice announced the latest discretionary VVV burn: about $267k of VVV at burn time, described as its largest burn yet, with a burn dashboard and Base transaction linked in follow-ups. This is the strongest VVV token-economics signal in this scan because it directly tests the revenue-linked buyback/burn path against the current 3M VVV/year emissions run-rate; next check is dashboard/tx verification and burn-vs-emissions math. Sources: https://x.com/AskVenice/status/2075312526393249846 and https://x.com/AskVenice/status/2075312829893091793
 

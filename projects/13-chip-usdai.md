@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-14T15:45:20Z
+last_updated: 2026-07-15T05:24:32Z
 ---
 
 # CHIP / USD.AI
@@ -15,6 +15,7 @@ last_updated: 2026-07-14T15:45:20Z
 
 ## Latest scan notes
 
+- 2026-07-15 — Galaxy Research published a full **Inference Capital Markets** report that calls GPU financing the cleanest live onchain-inference use case because real neocloud borrowers need capital and stablecoin depositors fund loans repaid from rental cash flow. It also gives the bear case plainly: GPU title and recovery depend on offchain CALIBER/legal/operational enforcement, a liquid sUSDai wrapper sits over roughly three-year loans and a 30-day redemption epoch, and rental-rate declines could simultaneously weaken borrower cash flow, collateral value and depositor appetite. This is high-quality independent thesis material, not verification of USD.AI's issuer-reported TVL, APY, defaults or CHIP value routing. Source: https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto
 - 2026-07-14 — Official USD.AI said **USDAI exceeded `$400M` TVL again** and sUSDai APY remained above `8%`, calling it the highest-yielding stablecoin above `$100M` TVL. The post supplied no methodology or dashboard. A same-run DefiLlama API check showed about `$203.3M` protocol TVL plus `$157.9M` in its separately labeled borrowed category (`$361.2M` combined), so the `$400M` headline uses a broader/different inclusion method that still needs reconciliation; APY was not independently verified. Sources: https://x.com/USDai_Official/status/2077044966342512729 and https://api.llama.fi/protocol/usd-ai
 - 2026-07-13 — USD.AI co-founder David / `@0xZergs` replied to criticism of low sCHIP participation by saying a **duration element will likely be introduced** with the goal of reducing liquid float for access to net interest margin. This is direct related-account evidence of a possible lock/time-weighted value-capture redesign, but it is not a proposal or confirmed parameter change: no contract, governance text, duration schedule, NIM allocation, activation date or audited current staking ratio was supplied. Source: https://x.com/0xZergs/status/2076780237115838844
 - 2026-07-12 — USD.AI highlighted third-party **CCIR Compute Credit Tracker** data showing roughly **$93B–$94B** of GPU-secured debt across the broader market and about **$1.325B of listed USD.AI facilities** (`as of 2026-07-04`). The USD.AI subset is facility notional, not proof that $1.325B is drawn, deployed, or performing; the dossier previously had official figures of $817M signed term sheets and $205M closed loans, so the tracker expands external facility coverage but does not replace deployment/default diligence. A USDai Foundation reply also offered up to a **1.75x Season 1 points multiplier** for registering with the Community DAO Launchpad and voting, without disclosing weighting, proposal scope, or CHIP value routing. Sources: https://x.com/USDai_Official/status/2076275413501030406 and https://x.com/USDaiFNDN/status/2076277054778282349
@@ -49,6 +50,7 @@ last_updated: 2026-07-14T15:45:20Z
 
 | Source | Who/affiliation | TLDR of the case | Relevance |
 |---|---|---|---|
+| https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Lucas Tcheyan / Galaxy Research | Galaxy argues GPU-backed financing is the cleanest current onchain-inference capital-market use case: stablecoin holders can fund underserved neoclouds and receive composable yield from real rental cash flow. The report also stresses untested distressed recovery, hardware depreciation, asset-liability mismatch and correlated AI-capex risk. | Strong independent underwriting frame for USD.AI's product loop, but it validates the category more than CHIP: actual token value still depends on explicit NIM/fee routing, governance and loan performance. |
 | https://x.com/0xZergs/status/2073094153139900421 | David / `@0xZergs`, USD.AI co-founder | In a broader equity-token thread, David argues that neoclouds need cash, equity, debt, and real enterprise BD rather than pretending tokens can close customer deals today; CHIP’s role is as the scarce onchain governance/value-capture resource tied to compute settlement and GPU-backed credit. | Useful founder thesis for why USD.AI/CHIP may use hybrid capital structures instead of pure token-only value accrual; track whether actual fee routing, buybacks, staking, and governance confirm the thesis. |
 
 ### Hermes take
@@ -111,6 +113,7 @@ last_updated: 2026-07-14T15:45:20Z
 
 ## Docs/blogs
 - Lighthouse/YTD report hub: https://usd.ai/lighthouse — official analytics/report pointer for revenue, loan deployment, and structured-lending updates.
+- Galaxy Research, *Inference Capital Markets* (2026-07-13): https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto — independent market thesis on USD.AI's composable GPU-credit model, CALIBER enforcement, redemption design and correlated collateral/default risks.
 
 ## Risks
 - Confirm whether “CHIP” is fully live/tradable in the user’s target venue before treating it as liquid.

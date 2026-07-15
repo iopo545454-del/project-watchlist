@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-13T21:34:09Z
+last_updated: 2026-07-15T05:24:32Z
 ---
 
 # Ambient
@@ -17,6 +17,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 ## Latest scan notes
 
+- 2026-07-15 — Galaxy Research gave Ambient its first substantial independent market thesis in the dossier: user-paid inference jobs are auctioned to miners, protocol rewards can subsidize bids, and Proof of Logits is intended to verify model execution with very low overhead. Galaxy's conclusion is also the central unresolved risk: Ambient has not published final tokenomics or shown that inference buyers must create token demand, so miner emissions may still become sell pressure unless organic paid usage and native payment demand close the loop. This is third-party analysis, not an independent audit of the claimed roughly 0.1% verification overhead. Source: https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto
 - 2026-07-13 — Official Ambient clarified that its live testnet validator proves **model execution**, not answer truth: it re-runs one selected output position and compares the resulting model fingerprint, while task quality and outcome correctness remain separate evaluation layers. This adds implementation-level context to Proof of Logits, but not independent security validation; sampling strategy, false-acceptance bounds, adversarial robustness, validator decentralization and overhead remain open. Sources: https://x.com/ambient_xyz/status/2076747190270410790 and https://x.com/ambient_xyz/status/2076757555573837931
 - 2026-07-06 — Ambient CEO/co-founder Travis Good published a long-form thesis arguing frontier AI is getting cheaper/more reproducible, closed-lab scarcity narratives are fragile, and verified inference can become a credibly neutral trust layer for open agentic AI. Official Ambient amplified it as one of the most important articles of the past year; this is strong founder-market framing for Ambient’s Proof-of-Logits thesis, not a mainnet/tokenomics update. Sources: https://x.com/i/status/2074190855590859170 and https://x.com/ambient_xyz/status/2074191141566910530
 - 2026-06-23 — Official Ambient promoted the desktop app with a planning-mode demo where the agent generates and iteratively improves a Tetris game, adding distribution/product evidence for the verified-inference desktop workflow. Source: https://x.com/ambient_xyz/status/2069419113378984222
@@ -37,6 +38,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 
 | Source | Who/affiliation | TLDR of the case | Relevance |
 |---|---|---|---|
+| https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Lucas Tcheyan / Galaxy Research | Galaxy argues Ambient's paid-job auction can direct emissions into cheaper verified inference instead of idle hashrate, while Proof of Logits samples a model fingerprint to verify execution cheaply. The report's bear case is that buyer demand for trust-minimized inference is still small and no published token design yet forces usage into token demand. | Strong independent statement of both the useful-PoW flywheel and its failure mode: organic paid jobs and token demand must eventually outrun miner emissions/sell pressure. |
 | https://x.com/ambient_xyz/status/1912524000586264704 | Official funding announcement | Ambient announced a $7.3M round led by a16z crypto CSX, Delphi Ventures, and Amber Group, with other crypto/infra investors and Solana co-founder angels cited. | Funding roster gives early credibility and puts Ambient in the crypto-AI / verified-inference market map. |
 | https://ambient.xyz/Ambient_Litepaper_V1.pdf | Official litepaper | Ambient argues zkML, optimistic verification, and TEEs are too costly/slow/trust-heavy for large-model inference; Proof of Logits is presented as a low-overhead alternative for verifying 600B+ model inference. | This is the core technical thesis to validate; if wrong, the project loses its differentiator. |
 | https://x.com/IridiumEagle/status/2014399588766253517 | Travis Good / CEO-cofounder | CEO frames Ambient as “Uber for Inference” and useful Proof-of-Work: miners do commercially valuable AI inference rather than waste hash work. | Useful founder-market framing for why a tokenized PoW network could have real demand rather than pure emissions. |
@@ -82,6 +84,7 @@ Ambient is an SVM-compatible Proof-of-Work L1 for **verified AI inference**. The
 | https://x.com/IridiumEagle/status/2014399588766253517 | CEO thesis post framing Ambient as decentralized/permissionless verified inference / “Uber for Inference.” |
 | https://x.com/IridiumEagle/status/2065922292975288754 | CEO usage/status claim about testnet tokens per day and app/OpenRouter availability; needs external verification. |
 | https://x.com/i/status/2074190855590859170 | CEO/co-founder long-form market thesis on open models, AI-capex fragility, and verified inference as a neutral trust layer; useful for tracking Ambient narrative, not a token launch source. |
+| https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Galaxy Research's 2026-07-13 independent Ambient thesis; useful-PoW auction, Proof-of-Logits economics, demand limits and unresolved token-value loop. |
 
 ## Open questions
 
