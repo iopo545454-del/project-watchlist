@@ -13,6 +13,7 @@ last_updated: 2026-07-11T04:36:33Z
 
 ## Latest scan notes
 
+- 2026-07-15 — Dedicated verification demoted the June 17 blanket partner-legitimacy allegation to stale. The source named no partner, transaction or falsifiable example and received no official reply. Counter-evidence does not validate every logo, but GEODNET's live site names established firms including Septentrio, Quectel, DroneDeploy, Propeller, Burro and Bad Elf; Septentrio independently documents its GEODNET integration; Hyfix independently described ongoing GEODNET hardware/enterprise testing; and DefiLlama's direct fees adapter exposed about `$890,203` over 30 days and `$10.25M` all-time at the check. Continue customer/revenue diligence from named sources, but do not carry the unspecific rumor as an active watch item. Sources: https://x.com/JungianInvestor/status/2067092701531852835, https://geodnet.com/, https://www.septentrio.com/en/company/news/septentrio-adds-geodnet-its-agnostic-corrections-partner-program, https://x.com/HyfixAI/status/2075726673899651308 and https://api.llama.fi/summary/fees/geodnet
 - 2026-07-11 — Official GEODNET showed GEO-PULSE being tested outdoors in motion while capturing enhanced GPS positioning and earning network rewards. This is useful source-proximate follow-through for the existing hardware-commercialization catalyst because it moves beyond a static standard-GPS comparison, but the post provides no measured accuracy, route trace, device sales, active-user count, or revenue/burn impact. Source: https://x.com/GEODNET/status/2075736468874523046
 
 - 2026-07-02 — Official GEODNET reported June 2026 burn stats: `$722,021` of GEOD burned in June and `58,383,936` GEOD burned to date; a follow-up post framed the post-halving setup as roughly `$466k/month` of revenue-funded buybacks against halved daily issuance. This is a token-economics/value-capture KPI to verify against the live burn dashboard, Dune/Blockworks analytics, revenue source, and circulating-supply methodology. Sources: https://x.com/GEODNET/status/2072713418818068898 and https://x.com/GEODNET/status/2072727296054898833
@@ -108,7 +109,7 @@ last_updated: 2026-07-11T04:36:33Z
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
-| 2026-06-17 | Third-party researcher/investor argued GEODNET has not decoupled from HNT-like DePIN weaknesses and questioned whether some listed industry partners are substantive/legitimate. | https://x.com/JungianInvestor/status/2067092701531852835 | Medium | Unverified | If partner/revenue quality is overstated, it directly weakens the physical-AI/enterprise-demand thesis and token-burn/revenue story. | Re-check official GEODNET customer/partner pages, named partner websites, revenue/burn dashboards, and any founder response before upgrading/downgrading. |
+| 2026-06-17 | Third-party researcher/investor argued GEODNET has not decoupled from HNT-like DePIN weaknesses and questioned whether some listed industry partners are substantive/legitimate. | Original claim: https://x.com/JungianInvestor/status/2067092701531852835; verification: https://geodnet.com/, https://www.septentrio.com/en/company/news/septentrio-adds-geodnet-its-agnostic-corrections-partner-program, https://x.com/HyfixAI/status/2075726673899651308 and https://api.llama.fi/summary/fees/geodnet | Medium | Stale — unspecific blanket allegation | The post supplied no partner names, transaction, screenshot or falsifiable example and received no official reply. Not every homepage logo was independently validated, but the blanket implication is not actionable: established listed firms exist, Septentrio independently confirms an integration, Hyfix independently confirms ongoing collaboration, and a direct fees adapter reports measurable RTK-access fees. | Resolved 2026-07-15 (`carried_from: 2026-06-17`): do not carry this unspecific allegation forward. Verify future customer/partner claims individually from named counterparties and continue direct revenue/burn checks. |
 
 ## Watch triggers
 - Large token burns or changes in burn/revenue cadence.
@@ -128,6 +129,8 @@ last_updated: 2026-07-11T04:36:33Z
 | https://x.com/KyleSamani | Investor/KOL signal tied to Multicoin and physical-AI thesis |
 | https://x.com/multicoincap | Investor firm context and possible official backing commentary |
 | https://geodnet.com/ | Official website |
+| https://www.septentrio.com/en/company/news/septentrio-adds-geodnet-its-agnostic-corrections-partner-program | Named partner's primary-source confirmation that Septentrio added GEODNET to its corrections partner program. |
+| https://api.llama.fi/summary/fees/geodnet | Direct third-party fee/revenue adapter; exposes current/daily history and methodology for RTK station-access fees and the reported 80% buyback/burn route. |
 | https://geodnet.com/geod | Official token page; tokenomics, burn/revenue framing, source links |
 | https://docs.geodnet.com/ | Official docs center |
 | https://console.geodnet.com/map | Network map for station/coverage monitoring |

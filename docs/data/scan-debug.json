@@ -1,5 +1,92 @@
 [
   {
+    "run_id": "verification-run-20260715T133250Z",
+    "started_at": "2026-07-15T13:32:50Z",
+    "completed_at": "2026-07-15T13:38:47Z",
+    "status": "success",
+    "scan_window": {
+      "verification_as_of": "2026-07-15T13:38:47Z",
+      "oldest_selected_origin": "2026-06-14",
+      "source_run": "watchlist-scan-20260715T052432Z"
+    },
+    "scope": "Dedicated oldest-first verification only; no broad fresh-activity scan. Built the queue from the newest scan-debug next_checks plus canonical Unverified Watch Items, skipped explicitly not-due items, and selected exactly the three oldest actionable items. Ties were broken by materiality, so the medium-credibility GEODNET item was selected ahead of the low-credibility MetaDAO exploit rumor from the same date.",
+    "projects_checked": ["03-meta", "02-geod"],
+    "logged_projects": ["03-meta", "02-geod"],
+    "selected_items": [
+      {"project":"META / MetaDAO","origin":"2026-06-14","item":"Clarify Paradigm/Colosseum backing, ownership language and active support."},
+      {"project":"META / MetaDAO","origin":"2026-06-15","item":"Close the deployment/exposure follow-up for fixed percolator-meta issues #38/#39."},
+      {"project":"GEOD / GEODNET","origin":"2026-06-17","item":"Verify the blanket claim that GEODNET's HNT-like model and industry-partner list are not substantive/legitimate."}
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 1,
+      "disproven": 0,
+      "stale": 2,
+      "dossier_rows_updated": 3,
+      "projects_updated": 2,
+      "changelog_entries_added": 1,
+      "remaining_next_checks": 29,
+      "errors": 1
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "source": "Paradigm official investment registry; Colosseum primary investor statement and official STAMP announcement",
+        "url": "https://www.paradigm.xyz/investments",
+        "summary": "Paradigm's live registry lists MetaDAO as a 2024 pre-seed/seed investment. Colosseum calls itself MetaDAO's first venture investor and one of the largest META holders; its official STAMP product gives Colosseum-financed companies a path to a MetaDAO ICO. No primary source found establishes acquisition or operating control.",
+        "decision": "confirmed — classify Paradigm as an investor and Colosseum as an investor plus active product/distribution partner; close the vague ownership/backing watch item"
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "percolator-meta GitHub issues, fix commit, README, releases/tags/deployments APIs",
+        "url": "https://github.com/aeyakovenko/percolator-meta/issues/38",
+        "summary": "Issues #38/#39 are closed and fixed by commit 87ea552620508ab0f766a82a70ec2e385d7fad0b with regression coverage. The repository exposes no release, tag, GitHub deployment or canonical program ID, and the README still calls the stack experimental and educational-use-only; no affected live deployment or exploitation evidence was found.",
+        "decision": "stale — source defects remain confirmed fixed, while the unsupported deployment/exposure follow-up is closed and must not be carried without a canonical deployment or incident record"
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "Original X claim; GEODNET site; Septentrio and Hyfix primary confirmations; DefiLlama direct fees API",
+        "url": "https://x.com/JungianInvestor/status/2067092701531852835",
+        "summary": "The post names no partner, transaction, screenshot or falsifiable example and received no official reply. GEODNET's live site names established firms; Septentrio independently confirms its corrections-program integration, Hyfix independently confirms ongoing hardware collaboration, and the direct fees adapter returned about $890,203 over 30 days and $10.25M all-time at verification. This does not validate every logo, but the blanket allegation is no longer actionable.",
+        "decision": "stale — demote the unspecific blanket allegation; future partner/customer claims must be checked individually against named counterparties and direct revenue data"
+      }
+    ],
+    "errors": [
+      "Configured web_search/web_extract remained unavailable because Firecrawl is not configured; direct official HTTP retrieval, GitHub APIs and X search supplied the primary evidence instead."
+    ],
+    "next_checks": [
+      {"project":"META / MetaDAO","check":"Resolve the vague 'first MetaDAO exploit' rumor: seek an official acknowledgement, affected program/contract, transaction, postmortem or credible researcher report; because the 2026-06-17 source supplied none, demote stale if the focused check still finds no evidence.","carried_from":"2026-06-17 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"META / MetaDAO","check":"Close the deployment/exposure follow-up for fixed percolator-meta issue #40 by locating a canonical program ID, release/deployment and upgrade transaction; otherwise demote the deployment follow-up stale without reopening the confirmed source fix.","carried_from":"2026-06-21 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"BANKR / BankrCoin","check":"Resolve the June 21 console/test-token incident: find an official postmortem, mitigation/reimbursement, concrete console controls or repeated complaints; demote stale if no actionable evidence remains.","carried_from":"2026-06-21 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"BANKR / BankrCoin","check":"Verify the deprecated BNKR vault withdrawal path under real use: current agent instructions, successful cooldown/window withdrawals, stale-address routing and any stranded-fund complaints.","carried_from":"2026-06-22 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"META / MetaDAO","check":"Close the deployment/exposure follow-up for fixed percolator-meta issue #41 by locating a canonical program ID, release/deployment, upgrade transaction and any late-bid incident; otherwise demote the deployment follow-up stale.","carried_from":"2026-06-25 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"Kinetiq","check":"Verify the disclosed KNTQ buyback wallet by reconstructing purchases, burns and sKNTQ transfers, reconcile funding to disposable revenue, verify official Season 2 rules, and monitor kHYPE TVL after recovery.","carried_from":"2026-06-29 canonical watch item; substantive direct-data check watchlist-scan-20260715T052432Z"},
+      {"project":"BANKR / BankrCoin","check":"Resolve whether OKT gained actual product utility through access gating, x402/Bankr-app payments or governance; verify official app/docs/contract behavior and mark stale/disproven if no gated product exists.","carried_from":"2026-07-04 canonical watch item; preserved by verification-run-20260715T133250Z"},
+      {"project":"CHIP / USD.AI","check":"Reconcile issuer TVL/APY and deployed-vs-idle categories; verify CALIBER title/enforcement, redemption-queue behavior, defaults/recoveries and whether duration-based sCHIP/NIM access becomes an official proposal with explicit CHIP routing.","carried_from":"Galaxy risk/thesis evidence watchlist-scan-20260715T052432Z; protocol metrics and duration proposal carried from watchlist-scan-20260715T004735Z"},
+      {"project":"VVV / Venice AI","check":"Verify current DIEM supply, weekly inference utilization and holder mix against Galaxy's snapshot; reconcile perpetual compute liabilities with VVV burns/emissions, staking/capacity terms, daily-token methodology and paid revenue.","carried_from":"Galaxy thesis watchlist-scan-20260715T052432Z; token-economic checks carried from watchlist-scan-20260715T004735Z"},
+      {"project":"Ambient","check":"Verify organic paid jobs, auction/miner economics, Proof-of-Logits sampling/fingerprint security, final tokenomics and whether inference payment demand can outrun miner emissions/sell pressure.","carried_from":"Galaxy thesis watchlist-scan-20260715T052432Z; security/mainnet checks carried from watchlist-scan-20260715T004735Z"},
+      {"project":"DRV / Derive Protocol","check":"Explain the seven-day fee rebound to $86,603 after the $70,935 trough against options OI/volume, day boundaries and adapter coverage; verify the next buyback, Upbit/Bithumb networks/withdrawals/depth and ORIA/Hyperliquid follow-through.","carried_from":"fee metric advanced watchlist-scan-20260715T004735Z; partial rebound observed watchlist-scan-20260715T052432Z"},
+      {"project":"GitlWab / GitLawb / Gitwab","check":"Verify GitLawb Ads advertiser spend, CPM/CPC, repeat campaigns, paid-versus-promotional mix and token/credit routing; reconcile Blockagent coverage and verify MCP consumers, fees and security.","carried_from":"watchlist-scan-20260715T004735Z; no dispositive new evidence watchlist-scan-20260715T052432Z"},
+      {"project":"Targon — Bittensor Subnet 4","check":"After the July 16 E081 event, identify exactly what TargonOS is and whether code/download/docs, hardware support, attestation, availability, users, fees or SN4 effects ship; continue buyback-wallet/utilization verification.","carried_from":"watchlist-scan-20260715T004735Z; event not yet due"},
+      {"project":"BANKR / BankrCoin","check":"Obtain the public Robinhood dashboard/query; reproduce volume, fees and launches; measure concentration/retention; separate creator and Bankr shares; verify BNKR/Club routing, bridge/pool health, skills and rewards.","carried_from":"watchlist-scan-20260714T201651Z through watchlist-scan-20260715T052432Z; deprecated-vault withdrawal reliability tracked separately from its 2026-06-22 origin"},
+      {"project":"TAO / Bittensor","check":"Identify the Yanez vulnerability and delayed release/component; obtain severity, report, patch, retest and explicit production/client/biometric-data/fund exposure; verify SN54 clients and revenue-to-alpha execution.","carried_from":"watchlist-scan-20260714T201651Z through watchlist-scan-20260715T052432Z"},
+      {"project":"NEAR Protocol","check":"Define NEAR@3.33 sustained-balance duration, allocation/exclusions, snapshot trigger and claims; monitor Protocol v86/mainnet activation, post-quantum support/audits, Aurora/EURe usage, x402 deliverables and revenue/buybacks.","carried_from":"watchlist-scan-20260714T201651Z through watchlist-scan-20260715T052432Z"},
+      {"project":"OCT / Octra","check":"Verify TAPE integration, tagged/reproducible node release, license/build/container, supported configs, peer docs, audits, external operators and telemetry; then bridge/Hyperliquid prerequisites.","carried_from":"watchlist-scan-20260714T201651Z through watchlist-scan-20260715T052432Z"},
+      {"project":"AKT / Akash","check":"Verify a paid production multi-node RDMA/InfiniBand/RoCE workload after merged provider PR #400, including release, provider adoption, reliability, spend and BME burns.","carried_from":"watchlist-scan-20260714T154520Z; merge unchanged watchlist-scan-20260715T052432Z"},
+      {"project":"VIRTUAL / Virtuals Protocol","check":"Reproduce Robinhood volume/launch/builder-earnings onchain; quantify concentration, repeat activity and protocol/VIRTUAL routing; reconcile DefiLlama fee coverage and external standard adoption.","carried_from":"watchlist-scan-20260714T154520Z through watchlist-scan-20260715T052432Z"},
+      {"project":"Worldcoin / WLD / World Network","check":"Verify SP1 production/audits and prior Nitro-path exposure; monitor WIP-1008 merge, cost-benefit, WLD stake/reward/slashing parameters, implementation, audits, governance and activation.","carried_from":"scan-20260714T111854Z; PR still open/unmerged watchlist-scan-20260715T052432Z"},
+      {"project":"META / MetaDAO","check":"Verify MetaDAO 2.0 contracts/deployments, thresholds, NAV oracle/bands, committee mandate/audits/proposals and Credible final settlement, fees and META accrual.","carried_from":"watchlist-scan-20260714T154520Z through watchlist-scan-20260715T052432Z"},
+      {"project":"BIO / Bio Protocol","check":"Find CrossBridge grant/IP lineage, Lilly/company terms and ecosystem-metric methodology; map BIO/veBIO locks, sales, rewards, contracts, milestones and value routing.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z"},
+      {"project":"Pluralis","check":"Verify the official NeurIPS 2026 workshop page/CFP and monitor research/code follow-through, contributor economics and Agora external-compute share.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z"},
+      {"project":"GRASS","check":"On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.","carried_from":"scan-20260714T111854Z; not yet due"},
+      {"project":"AEON Framework","check":"Reproduce v0.1 attestations and inspect verifier/public log, external users, security, fees and aeon value capture.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z"},
+      {"project":"GEOD / GEODNET","check":"Verify GEO-PULSE accuracy/adoption/revenue and assess any formal GIP-14 submission rather than event marketing or an external proposal.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z; separate 2026-06-17 blanket partner allegation resolved stale verification-run-20260715T133250Z"},
+      {"project":"Chutes — Bittensor Subnet 64","check":"Verify paid Internet Court inference, Parallax larger-workload replication/customer jobs and revenue quality/margins; identify any Calacanis provider attribution directly.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z"},
+      {"project":"Lium — Bittensor Subnet 51","check":"Verify Kraken liquidity/deposits/withdrawals, GPU inventory/utilization and any post-listing buyback, burn, credit-purchase or utilization effect.","carried_from":"scan-20260714T111854Z through watchlist-scan-20260715T052432Z"},
+      {"project":"Compute Horde — Bittensor Subnet 12","check":"Replace the closed IntoTAO source; locate a canonical SN12 dashboard/API and verify active paid jobs, current GPU inventory/utilization, revenue and validator/miner activity.","carried_from":"stale-project source/KPI check watchlist-scan-20260715T052432Z"}
+    ]
+  },
+  {
     "run_id": "watchlist-scan-20260715T052432Z",
     "started_at": "2026-07-15T05:24:32Z",
     "completed_at": "2026-07-15T05:43:25Z",
