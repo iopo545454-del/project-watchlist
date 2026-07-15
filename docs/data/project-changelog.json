@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-07-15T19:20:52Z",
+    "project": "Pluralis",
+    "slug": "21-pluralis",
+    "type": "official update",
+    "summary": "Pluralis reported a Stoa RL post-training run where 14 consumer Macs generated all rollouts and PaperSearchQA pass@1 improved from 29% to 63%.",
+    "source": "X/Twitter official technical thread",
+    "url": "https://x.com/Pluralis/status/2077419654578860539",
+    "last_scanned": "2026-07-15T19:20:52Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The repo previously tracked Agora's completed WAN pretraining run. Stoa extends the evidence into distributed agentic-RL rollouts, using DPPO to drop about 0.3% of divergent tokens and PULSE to shrink 9 GB weight transfers to 82 MB; each Mac still holds the full model, the trainer remains centralized and no contributor economics changed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stoa distributed RL post-training on consumer Macs"},
+      {"type": "open_question", "ref": "Reproduce PaperSearchQA result and inspect code, trainer dependence and contributor accounting"}
+    ]
+  },
+  {
+    "date": "2026-07-15T19:20:52Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "official update",
+    "summary": "USD.AI detailed bankruptcy-remote SPVs, 20%–30% operator equity, debt-service reserves, residual-value insurance and post-installation disbursement for GPU loans.",
+    "source": "X/Twitter official underwriting thread",
+    "url": "https://x.com/USDai_Official/status/2077467202060787915",
+    "last_scanned": "2026-07-15T19:20:52Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier already tracked broad GPU-collateral and CALIBER enforcement claims. The new issuer thread adds specific intended credit protections and cites $13B+ of reviewed deal flow across 200+ borrowers, but provides no named borrower, policy, filing, default/recovery result, realized yield or new CHIP value route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Large GPU-backed financing facilities and underwriting controls"},
+      {"type": "open_question", "ref": "Validate SPV/UCC/DACA documents, insurance, defaults, recoveries and CHIP routing"}
+    ]
+  },
+  {
+    "date": "2026-07-15T19:20:52Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "Corbits is live with NEAR AI private/verifiable inference and IronClaw agent orchestration, with tamper-evident inference, tool-call and cost logs.",
+    "source": "Official NEAR X/Twitter and NEAR AI blog",
+    "url": "https://x.com/NEARProtocol/status/2077466651763585154",
+    "last_scanned": "2026-07-15T19:20:52Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "NEAR previously reported 17 open-source NEAR AI integrations. Corbits adds a named live AI-operations deployment combining TEE attestations, IronClaw boundaries and audit logs, but no users, requests, transactions, fees or NEAR value impact were disclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "NEAR AI private inference and developer integrations"},
+      {"type": "open_question", "ref": "Measure Corbits users, inference requests, paid token usage, fees and NEAR activity"}
+    ]
+  },
+  {
+    "date": "2026-07-15T14:12:40Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "official update",
+    "summary": "Derive Weekly Buyback #75 purchased 220,123 DRV at a $0.16 average, lifting cumulative DAO buybacks to 26,334,324 DRV with the 35%-of-fees allocation unchanged.",
+    "source": "X/Twitter official account and DefiLlama direct-metrics history",
+    "url": "https://x.com/DeriveXYZ/status/2077377992385540236",
+    "last_scanned": "2026-07-15T14:12:40Z",
+    "novelty": "recurring",
+    "importance": "low",
+    "delta": "Versus #74, token count increased only 0.98% from 217,996 DRV, while implied notional rose 61.56% from about $21,800 to $35,220 because average price increased from $0.10 to $0.16. Committed direct metrics show seven-day fees at $86,603, up 22.09% from the $70,935 trough but still 37.05% below July 6; the 35% allocation did not change.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Protocol-fee buyback program"},
+      {"type": "metric", "ref": "Weekly DRV bought, implied notional, cumulative buybacks and seven-day fees"},
+      {"type": "open_question", "ref": "Map buyback transactions and reconcile weekly execution with protocol-fee windows"}
+    ]
+  },
+  {
+    "date": "2026-07-15T14:12:40Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "catalyst update",
+    "summary": "MetaDAO ecosystem coverage detailed updated ICO mechanics: fixed institutional pre-commits, public early-deposit allocation boosts and visible maximum raise caps.",
+    "source": "X/Twitter tracked ecosystem media and third-party market analysis",
+    "url": "https://x.com/ownershipfm/status/2077383982321144003",
+    "last_scanned": "2026-07-15T14:12:40Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier already tracked one Credible pre-commit amount and individual raise terms, but not the broader allocation design. The new analysis says fixed institutional targets, time-weighted public allocations and visible caps replace hidden-cap/last-minute overcommit incentives; official MetaDAO docs, contracts, weighting formulas and public-versus-institutional allocation limits remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "More ownership-coin launches on MetaDAO"},
+      {"type": "open_question", "ref": "Verify official pre-commit, early-deposit boost and visible-cap rules"}
+    ]
+  },
+  {
+    "date": "2026-07-15T14:12:40Z",
+    "project": "Compute Horde — Bittensor Subnet 12",
+    "slug": "26-compute-horde",
+    "type": "source added",
+    "summary": "The official ComputeHorde README identifies a live SN12 Grafana health monitor and current A6000 support, but still exposes no public paid-job, revenue, utilization or organic-jobs API.",
+    "source": "Official GitHub repository and live Grafana health dashboard",
+    "url": "https://github.com/backend-developers-ltd/ComputeHorde",
+    "last_scanned": "2026-07-15T14:12:40Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "The dossier previously lacked a canonical Compute Horde code/dashboard source. The official README now narrows that gap to a named network-health monitor and says A6000 is supported with A100 next; the main repo's newest returned commit is dated 2026-04-16 and no public organic-job count, revenue, inventory utilization or machine-readable demand endpoint was found.",
+    "relates_to": [
+      {"type": "open_question", "ref": "Locate public organic-jobs, inventory, utilization and revenue data beyond the canonical SN12 health monitor"},
+      {"type": "metric", "ref": "Active paid jobs, supported GPU inventory, utilization and revenue"}
+    ]
+  },
+  {
     "date": "2026-07-15T13:36:51Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",
@@ -12,8 +115,49 @@
     "novelty": "update",
     "delta": "The dossier previously repeated vague owner/backer positioning. Paradigm now has a primary portfolio classification (2024 pre-seed/seed), while Colosseum publicly identifies as MetaDAO's first venture investor/large META holder and documents an active financing-to-MetaDAO-ICO path. Separately, percolator-meta #38/#39 remain fixed with no canonical live deployment evidence.",
     "relates_to": [
-      {"type": "watch_item", "ref": "2026-06-14 Paradigm/Colosseum backing and active-support verification"},
-      {"type": "watch_item", "ref": "2026-06-15 percolator-meta issues #38/#39 deployment-exposure follow-up"}
+      {
+        "type": "watch_item",
+        "ref": "2026-06-14 Paradigm/Colosseum backing and active-support verification"
+      },
+      {
+        "type": "watch_item",
+        "ref": "2026-06-15 percolator-meta issues #38/#39 deployment-exposure follow-up"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-15T09:45:33Z",
+    "project": "Kinetiq",
+    "slug": "07-kinetiq",
+    "type": "verification update",
+    "summary": "Kinetiq's core contributor disclosed the KNTQ buyback wallet and sKNTQ destination while reporting $365K+ purchased and about $120K burned; aggregate totals remain to be independently reproduced.",
+    "source": "X/Twitter core contributor, official Kinetiq site and Hyperliquid public API",
+    "url": "https://x.com/0xOmnia/status/2072310841693655224",
+    "last_scanned": "2026-07-15T09:45:33Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The dossier previously carried only a related-account claim of $320K in buybacks with no wallet. The recovered core-contributor post supplies the buyback wallet, sKNTQ reward-drip destination and dashboard and raises issuer-reported cumulative purchases above $365K plus roughly $120K burned; the live wallet is visible through Hyperliquid's public API, but its aggregate purchase/burn history was not fully reproduced.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks"},
+      {"type": "watch_item", "ref": "KNTQ buyback-wallet activity and revenue funding"},
+      {"type": "metric", "ref": "Cumulative KNTQ purchases, burns and sKNTQ distributions"}
+    ]
+  },
+  {
+    "date": "2026-07-15T09:45:33Z",
+    "project": "Kinetiq",
+    "slug": "07-kinetiq",
+    "type": "initial review",
+    "summary": "Completed Kinetiq's missing durable review with sourced market theses, a dated Hermes take, team/investor context, risks, sources and tested-versus-partial KPI methodology.",
+    "source": "Official Kinetiq docs/X, Hyperliquid public API, DefiLlama and sourced market theses",
+    "url": "projects/07-kinetiq.html",
+    "last_scanned": "2026-07-15T09:45:33Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "The index marked initial_review_done=true, but the canonical dossier still had seven TBD sections, no investor-thesis table, no Hermes take, no source table and no Direct Data/KPI Methodology. The review closes those gaps and defines buyback, revenue, supply and Markets/Launch metrics with explicit tested_ok, partial, manual_only and blocked states.",
+    "relates_to": [
+      {"type": "thesis", "ref": "KNTQ revenue-funded buybacks and sKNTQ value accrual"},
+      {"type": "metric", "ref": "kHYPE TVL, protocol revenue, KNTQ buybacks/burns/distributions and supply"}
     ]
   },
   {

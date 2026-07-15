@@ -1,4 +1,249 @@
 [
+{
+  "run_id": "watchlist-scan-20260715T192052Z",
+  "started_at": "2026-07-15T19:20:52Z",
+  "completed_at": "2026-07-15T19:37:20Z",
+  "status": "success",
+  "scan_window": {
+    "from": "2026-07-15T05:43:25Z",
+    "to": "2026-07-15T19:37:20Z"
+  },
+  "scope": "Recovered and completed two interrupted in-repo scan batches, checked public project-intake issues, refreshed and triaged direct metrics, consumed prior next checks and dossier watch items, scanned all 25 enabled projects across tracked official/team/core X accounts plus weak-signal queries, and completed substantive stale-project work for Kinetiq and Compute Horde. POD / Dolphin POD was suppressed and not scanned, updated, summarized or logged.",
+  "projects_checked": 25,
+  "logged_projects": [
+    "03-meta",
+    "07-kinetiq",
+    "13-chip-usdai",
+    "17-near",
+    "18-drv-derive",
+    "21-pluralis",
+    "26-compute-horde"
+  ],
+  "counts": {
+    "intake_issues_checked": 3,
+    "intake_projects_added": 0,
+    "projects_checked": 25,
+    "projects_with_logged_findings": 7,
+    "confirmed_findings": 6,
+    "unverified_findings_added": 1,
+    "initial_reviews_completed": 1,
+    "no_material_change_projects": 18,
+    "stale_projects_substantively_checked": 2,
+    "direct_metric_material_changes": 0,
+    "changelog_entries_added": 8,
+    "errors": 1
+  },
+  "decision_trail": [
+    {
+      "project": "Project intake",
+      "source": "GitHub public Issues API",
+      "url": "https://api.github.com/repos/iopo545454-del/project-watchlist/issues?state=open&per_page=50",
+      "summary": "The three open intake-form issues remain Pluralis, Ambient and EigenCloud.",
+      "decision": "Deduplicated by name, slug, token address and primary X account; all already exist with initial_review_done=true, so no intake project was added."
+    },
+    {
+      "project": "Direct metrics",
+      "source": "scripts/collect_direct_metrics.py --write",
+      "url": "docs/data/direct-metrics/latest.json",
+      "summary": "Collector returned 24 metrics for 13 configured projects. No enabled project moved more than 5% versus the committed snapshot and no configured materiality threshold or new step change fired.",
+      "decision": "Restored routine generated churn, including all suppressed-POD output, rather than committing it."
+    },
+    {
+      "project": "Kinetiq",
+      "source": "Official docs/site, core-contributor X and Hyperliquid public API",
+      "url": "https://x.com/0xOmnia/status/2072310841693655224",
+      "summary": "Substantive stale-project review replaced seven TBD sections with a durable initial review and recovered the disclosed KNTQ buyback wallet, sKNTQ destination, $365K+ issuer-reported purchases and about $120K burned.",
+      "decision": "Completed the missing durable review and advanced the buyback watch item to partially supported; retained transaction-level reproduction and revenue-source reconciliation as next checks."
+    },
+    {
+      "project": "META / MetaDAO",
+      "source": "X/Twitter ecosystem media and third-party analysis",
+      "url": "https://x.com/ownershipfm/status/2077383982321144003",
+      "summary": "Tracked ecosystem coverage described fixed institutional pre-commits, public early-deposit boosts and visible maximum raise caps.",
+      "decision": "Logged as a medium-credibility partially supported watch item and catalyst context; did not present the mechanics as official until docs/contracts/formulas are found."
+    },
+    {
+      "project": "Compute Horde — Bittensor Subnet 12",
+      "source": "Official GitHub README and Grafana health monitor",
+      "url": "https://github.com/backend-developers-ltd/ComputeHorde",
+      "summary": "Substantive stale-project check found the canonical SN12 health monitor and A6000 support, but no public organic-job, revenue, utilization or inventory API; repository activity was also old.",
+      "decision": "Added canonical code/dashboard sources and narrowed the KPI gap without claiming paid demand or resetting unresolved usage questions."
+    },
+    {
+      "project": "DRV / Derive Protocol",
+      "source": "X/Twitter official account and direct-metrics history",
+      "url": "https://x.com/DeriveXYZ/status/2077377992385540236",
+      "summary": "Weekly Buyback #75 purchased 220,123 DRV at $0.16, taking cumulative DAO buybacks to 26,334,324 DRV with the 35%-of-fees allocation unchanged.",
+      "decision": "Logged the recurring execution with comparison to #74 and fee history; did not treat it as a tokenomics step change."
+    },
+    {
+      "project": "Pluralis",
+      "source": "X/Twitter official technical thread",
+      "url": "https://x.com/Pluralis/status/2077419654578860539",
+      "summary": "Stoa used 14 consumer Macs across four countries for all RL rollouts and reported PaperSearchQA pass@1 improving from 29% to 63%, with DPPO/PULSE mitigating drift and transfer size.",
+      "decision": "Added a completed technical catalyst while preserving centralized-trainer, full-model-per-Mac, code inspection, reproduction and contributor-economics limitations."
+    },
+    {
+      "project": "CHIP / USD.AI",
+      "source": "X/Twitter official underwriting thread",
+      "url": "https://x.com/USDai_Official/status/2077467202060787915",
+      "summary": "USD.AI described bankruptcy-remote SPVs, 20%-30% operator equity, debt-service reserves, residual-value insurance and post-installation disbursement after citing $13B+ reviewed deal flow across 200+ borrowers.",
+      "decision": "Added issuer-described underwriting controls, clearly separating them from verified documents, funded principal, defaults/recoveries, realized yield and CHIP routing."
+    },
+    {
+      "project": "NEAR Protocol",
+      "source": "Official NEAR X/Twitter and NEAR AI blog",
+      "url": "https://x.com/NEARProtocol/status/2077466651763585154",
+      "summary": "Corbits is live with NEAR AI private/verifiable inference and IronClaw orchestration, with tamper-evident inference, tool-call and token-cost records.",
+      "decision": "Updated the existing NEAR AI integration catalyst; retained users, requests, transactions, fees and NEAR value impact as next checks."
+    },
+    {
+      "project": "Excluded X and weak-signal items",
+      "source": "X/Twitter tracked-account and credible weak-signal searches",
+      "url": "docs/data/index.json",
+      "summary": "Ambient repeated that its Kimi K2.7 endpoint processes more tokens than Moonshot without a public number/window/dashboard; Bankr bot posts were routine transactions, token launches and skill operations; Nick Forster's tokenized-equity comments were Derive v3 positioning; other results were marketing, replies, duplicates or absent.",
+      "decision": "Kept these out of durable changelog/watch items because they were recurring, unquantified, routine core-function output or below the evidence/materiality threshold."
+    },
+    {
+      "project": "Prior next checks and dossier watch items",
+      "source": "Previous scan-debug next_checks and canonical dossiers",
+      "url": "projects/",
+      "summary": "Kinetiq wallet/source discovery, Compute Horde canonical source, Derive buyback execution, MetaDAO mechanics, USD.AI underwriting, Pluralis distributed RL and NEAR AI integration advanced. All other exchange, governance, security, usage, tokenomics, implementation and quantitative checks lacking dispositive evidence are explicitly carried below.",
+      "decision": "Advanced seven checks and carried every unresolved prior check with origin; none was silently dropped."
+    }
+  ],
+  "errors": [
+    "Configured web_search/web_extract remained unavailable because the Firecrawl backend is not configured; X search, public GitHub/API retrieval and already-linked official sources supplied the relevant evidence."
+  ],
+  "next_checks": [
+    {
+      "project": "CHIP / USD.AI",
+      "check": "Validate issuer-described SPV/UCC/DACA, lien-waiver, insurance and disbursement protections with documents/borrower examples; reconcile TVL/APY, reviewed deal flow, facility notional, funded/deployed loans, defaults/recoveries and CHIP routing; monitor duration-based sCHIP/NIM proposal.",
+      "carried_from": "underwriting structure advanced watchlist-scan-20260715T192052Z; Galaxy and protocol metric checks from watchlist-scan-20260715T052432Z"
+    },
+    {
+      "project": "VVV / Venice AI",
+      "check": "Verify current DIEM supply, weekly inference utilization and holder mix against Galaxy's snapshot; reconcile perpetual compute liabilities with VVV burns/emissions, staking/capacity terms, daily-token methodology and paid revenue.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive new evidence"
+    },
+    {
+      "project": "Ambient",
+      "check": "Verify organic paid jobs, auction/miner economics, Proof-of-Logits security and final tokenomics; obtain public numbers/window/data for the repeated claim that Ambient processes more Kimi K2.7 tokens than Moonshot.",
+      "carried_from": "watchlist-scan-20260715T052432Z; unquantified repeat observed watchlist-scan-20260715T192052Z"
+    },
+    {
+      "project": "DRV / Derive Protocol",
+      "check": "Map Buyback #75 transactions and reconcile its fee window; explain seven-day fee recovery versus the prior trough; verify next buyback, Upbit/Bithumb deposit networks/withdrawals/depth and ORIA/Hyperliquid/v3 follow-through.",
+      "carried_from": "buyback advanced watchlist-scan-20260715T192052Z; fee/exchange checks from watchlist-scan-20260715T052432Z"
+    },
+    {
+      "project": "GitlWab / GitLawb / Gitwab",
+      "check": "Verify GitLawb Ads advertiser spend, CPM/CPC, repeat campaigns, paid-versus-promotional mix and token/credit routing; reconcile Blockagent coverage and verify MCP consumers, fees and security.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive new evidence"
+    },
+    {
+      "project": "Targon — Bittensor Subnet 4",
+      "check": "After the July 16 E081 event, identify exactly what TargonOS is and whether code/download/docs, hardware support, attestation, availability, users, fees or SN4 effects ship; continue buyback-wallet/utilization verification.",
+      "carried_from": "watchlist-scan-20260715T052432Z; event not yet due"
+    },
+    {
+      "project": "BANKR / BankrCoin",
+      "check": "Obtain the public Robinhood dashboard/query; reproduce volume, fees and launches; measure concentration/retention; separate creator and Bankr shares; verify BNKR/Club routing, bridge/pool health, skills, rewards and deprecated-vault withdrawals.",
+      "carried_from": "watchlist-scan-20260714T201651Z through watchlist-scan-20260715T192052Z"
+    },
+    {
+      "project": "TAO / Bittensor",
+      "check": "Identify the Yanez vulnerability and delayed release/component; obtain severity, report, patch, retest and explicit production/client/biometric-data/fund exposure; verify SN54 clients and revenue-to-alpha execution.",
+      "carried_from": "watchlist-scan-20260714T201651Z through watchlist-scan-20260715T192052Z"
+    },
+    {
+      "project": "NEAR Protocol",
+      "check": "Measure Corbits users, verifiable inference requests, paid token usage and fees; define NEAR@3.33 mechanics; monitor Protocol v86 activation, Aurora/EURe usage, x402 deliverables and revenue/buybacks.",
+      "carried_from": "Corbits integration advanced watchlist-scan-20260715T192052Z; protocol/incentive checks from watchlist-scan-20260715T052432Z"
+    },
+    {
+      "project": "OCT / Octra",
+      "check": "Verify TAPE integration, tagged/reproducible node release, license/build/container, configs, peer docs, audits, external operators and telemetry; then bridge/Hyperliquid prerequisites.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no new release evidence"
+    },
+    {
+      "project": "AKT / Akash",
+      "check": "Verify a paid production multi-node RDMA/InfiniBand/RoCE workload after merged provider PR #400, including release, provider adoption, reliability, spend and BME burns.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no paid-workload evidence"
+    },
+    {
+      "project": "VIRTUAL / Virtuals Protocol",
+      "check": "Reproduce Robinhood volume/launch/builder earnings onchain; quantify concentration, repeat activity and protocol/VIRTUAL routing; reconcile DefiLlama fee coverage and external standard adoption.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no qualifying new evidence"
+    },
+    {
+      "project": "Worldcoin / WLD / World Network",
+      "check": "Verify SP1 production/audits and prior Nitro-path exposure; monitor WIP-1008 merge, cost-benefit, WLD stake/reward/slashing parameters, implementation, audits, governance and activation.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive update"
+    },
+    {
+      "project": "META / MetaDAO",
+      "check": "Locate official docs/contracts for institutional pre-commits, public early-deposit weighting and visible caps; verify MetaDAO 2.0 contracts, NAV oracle/bands, committee mandate, Credible settlement/fees and META accrual.",
+      "carried_from": "allocation mechanics advanced watchlist-scan-20260715T192052Z; 2.0/value-accrual checks from watchlist-scan-20260715T052432Z"
+    },
+    {
+      "project": "BIO / Bio Protocol",
+      "check": "Find CrossBridge grant/IP lineage, Lilly/company terms and ecosystem-metric methodology; map BIO/veBIO locks, sales, rewards, contracts, milestones and value routing.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence"
+    },
+    {
+      "project": "Pluralis",
+      "check": "Inspect Stoa code/blog artifacts and reproduce the 29%-to-63% PaperSearchQA result; verify centralized-trainer dependence, Mac contribution accounting, Agora external compute, contributor economics and the official NeurIPS workshop page/CFP.",
+      "carried_from": "Stoa catalyst advanced watchlist-scan-20260715T192052Z; ownership/NeurIPS checks from watchlist-scan-20260715T052432Z"
+    },
+    {
+      "project": "GRASS",
+      "check": "On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.",
+      "carried_from": "watchlist-scan-20260715T052432Z; not yet due"
+    },
+    {
+      "project": "Kinetiq",
+      "check": "Reproduce the disclosed buyback wallet's $365K+ purchase and ~$120K burn totals, distinguish purchases/transfers/burns, reconcile revenue sources and verify final Season 2 snapshot/distribution rules; monitor kHYPE TVL.",
+      "carried_from": "wallet and initial review advanced watchlist-scan-20260715T192052Z"
+    },
+    {
+      "project": "AEON Framework",
+      "check": "Reproduce v0.1 attestations and inspect verifier/public log, external users, security, fees and aeon value capture.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence"
+    },
+    {
+      "project": "GEOD / GEODNET",
+      "check": "Verify GEO-PULSE accuracy/adoption/revenue and assess any formal GIP-14 submission rather than event marketing or an external proposal.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence"
+    },
+    {
+      "project": "Chutes — Bittensor Subnet 64",
+      "check": "Verify paid Internet Court inference, Parallax larger-workload replication/customer jobs and revenue quality/margins; identify any Calacanis provider attribution directly.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence"
+    },
+    {
+      "project": "Lium — Bittensor Subnet 51",
+      "check": "Verify Kraken liquidity/deposits/withdrawals, GPU inventory/utilization and any post-listing buyback, burn, credit-purchase or utilization effect.",
+      "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence"
+    },
+    {
+      "project": "Compute Horde — Bittensor Subnet 12",
+      "check": "Use the canonical Grafana health surface and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs, current GPU inventory and validator/miner activity.",
+      "carried_from": "canonical source advanced watchlist-scan-20260715T192052Z"
+    }
+  ],
+  "changelog_importance_tagging": {
+    "method": "independent delegate_task agent",
+    "status": "completed",
+    "entries_tagged": 8,
+    "tiers": {
+      "high": 0,
+      "medium": 5,
+      "low": 3
+    },
+    "note": "Independent tagger labeled Pluralis Stoa, USD.AI underwriting controls, NEAR/Corbits, MetaDAO allocation mechanics and Kinetiq wallet verification medium/watch; Derive's routine weekly buyback, Compute Horde source discovery and Kinetiq initial-review housekeeping low/log."
+  }
+},
   {
     "run_id": "verification-run-20260715T133250Z",
     "started_at": "2026-07-15T13:32:50Z",

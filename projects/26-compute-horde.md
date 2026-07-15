@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-23T21:46:11Z
+last_updated: 2026-07-15T14:12:40Z
 ---
 
 # Compute Horde — Bittensor Subnet 12
@@ -13,6 +13,7 @@ last_updated: 2026-06-23T21:46:11Z
 - Alpha token: SN12 within Bittensor dTAO economy.
 
 ## Latest scan notes
+- 2026-07-15 — Mandatory stale-project review found the official ComputeHorde GitHub README and its named network-health surfaces: a Grafana **Subnet 12 health monitor**, Taostats and TaoMarketCap. The README says **A6000 is the currently supported hardware class** with **A100 coming next**, and describes organic jobs, collateral/slashing and facilitator routing; however, the main repo's newest commit returned by GitHub is dated 2026-04-16, the latest release is from 2025-08-13, and no public paid-job count, revenue, utilization or machine-readable organic-jobs API was exposed. This narrows the dashboard question to a canonical health surface but does not validate demand. Sources: https://github.com/backend-developers-ltd/ComputeHorde and https://grafana.bactensor.io/d/subnet/metagraph-subnet?var-subnet=12
 - 2026-06-22 — Added Compute Horde to the watchlist as the low-value/optional neo-cloud comp. Taostats snapshot put SN12 alpha market cap around `24,497 TAO` / `~$5.6M` and liquidity around `27,879 TAO` / `~$6.4M` using TAO around `$229`. Source: https://taostats.io/subnets/12
 - 2026-06-22 — Revenue remains unavailable from a clean public source. The investment bar is low because of the small subnet value: at `$5.6M`, Compute Horde would need only about `$0.56M/yr` / `$1.5k/day` to screen at 10x revenue, but current proof is weak.
 
@@ -44,6 +45,8 @@ last_updated: 2026-06-23T21:46:11Z
 
 ## Official links
 - X: https://x.com/ComputeHorde
+- Official code/README: https://github.com/backend-developers-ltd/ComputeHorde
+- Subnet 12 health monitor: https://grafana.bactensor.io/d/subnet/metagraph-subnet?var-subnet=12
 - Taostats: https://taostats.io/subnets/12
 - IntoTAO page: https://intotao.app/subnets/into-compute-horde?format=md
 
@@ -69,7 +72,7 @@ last_updated: 2026-06-23T21:46:11Z
 | SDK and subnet integration path | Confirmed / integration catalyst | Official Compute Horde post and GitHub PR: https://x.com/ComputeHorde/status/1943634415386546576 and https://github.com/deval-core/De-Val/pull/68 | Integration PRs live | Makes it easier for other Bittensor subnets to offload compute jobs to SN12. | More subnet integrations could create organic demand and reduce reliance on emissions. | Watch merged integrations, active consumers, job volume per subnet, and revenue/payment mechanics. |
 
 ## Open questions
-- Where is the current canonical Compute Horde dashboard/API?
+- The official README names a canonical Grafana health monitor; where is the public machine-readable organic-jobs, inventory, utilization and revenue API/dashboard?
 - What is active paid job volume and revenue?
 - What is current live GPU inventory and utilization?
 - Why should SN12 win versus newer inference/compute subnets?

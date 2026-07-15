@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-06-29T23:31:21Z
+last_updated: 2026-07-15T09:45:33Z
 ---
 
 # Kinetiq
@@ -40,6 +40,9 @@ last_updated: 2026-06-29T23:31:21Z
 **Data/resources to monitor**
 - Kinetiq app: staking TVL, kHYPE supply, validator allocation.
 - Hyperliquid ecosystem dashboards for HYPE staking, CoreWriter/HIP-3 activity.
+- KNTQ buyback dashboard: https://hl.eco/kinetiq
+- Core-contributor-disclosed buyback wallet: https://hypurrscan.io/address/0xaa3b7392052d62928cc87701e3ca6fb6630bb6e2#txs
+- sKNTQ reward-drip contract: https://hypurrscan.io/address/0x696238e0ca31c94e24ca4cbe7921754e172e4d0f#txs
 - Markets.xyz volume/users/fees.
 - Launch/kLaunch deployments and fee-sharing pools.
 - `$KNTQ` token pages and onchain holder/lockup data.
@@ -61,61 +64,147 @@ Target delivery channel for future alerts/recaps: `discord:1508537087992004778` 
 
 ## Latest scan notes
 
+- 2026-07-01 (recovered in the 2026-07-15 stale-project check) — Core contributor `@0xOmnia` disclosed Kinetiq's buyback wallet and sKNTQ reward-drip contract and reported just over `$365K` of cumulative KNTQ purchases plus roughly `$120K` of KNTQ burned from HyperCore trading fees. This materially advances the prior related-account `$320K` claim and makes the flow directly monitorable, but the dashboard was access-blocked during the scan and the aggregate purchase/burn totals remain issuer-reported rather than independently reproduced. Source: https://x.com/0xOmnia/status/2072310841693655224
 - 2026-06-29 — Related Markets/Kinetiq ecosystem account `@VikingoDigital_` claimed the Kinetiq buyback wallet has bought `$320K` of `$KNTQ` over two months and has been buying daily. This supports the Launch/KIP-3 buyback thesis if wallet data verifies, but it is not yet an official Kinetiq Foundation statement; next checks are buyback-wallet address, transactions, Foundation confirmation, and whether buybacks are revenue-funded versus discretionary. Source: https://x.com/VikingoDigital_/status/2071690233356198251
 - 2026-06-23 — Markets.xyz said kPoints are now visible in-app and limit orders are live, with Import Wallet and Auto-Breakeven coming soon; related Kinetiq chatter again pointed to the Sep. 29 points window, strengthening the KNTQ airdrop/market-UX watch item. Source: https://x.com/Markets_xyz/status/2069467940529877281
 - 2026-06-19 — Core contributor `@0xOmnia` showed the Markets.xyz BTC app updating around every 50ms, framed as roughly 10x faster than Hyperliquid now and potentially 100x faster if Hyperliquid slows to 5s updates; useful product/performance signal for Markets/Kinetiq infrastructure. Source: https://x.com/0xOmnia/status/2067983258487308736
 - 2026-06-17 — Core contributor `@0xOmnia` said Markets.xyz generated $3.9B volume, 9,450 traders on listings, and became the 3rd-largest DEX by listings during the USDH phase, while framing the coming USDC migration as the next growth setup. Source: https://x.com/0xOmnia/status/2067371313128178119
 - 2026-06-16 — Official X said several USDH markets were settled/delisted as the USDH-to-USDC collateral migration nears completion, with final markets due June 17 and USDC transition next week; thread warned users about phishing replies. Source: https://x.com/Kinetiq_xyz/status/2066935343253774355
 - 2026-06-15 — Team account highlighted Markets.xyz/perps subdeployer mechanics: kmHYPE and sKNTQ earn 10% of deployer revenue, used to buy HYPE/KNTQ for stakers; also noted Pendle yield on kHYPE/vkHYPE. Source: https://x.com/0xOmnia/status/2066564897454825638
-- 2026-06-14 — Related Markets.xyz growth/community account `@VikingoDigital_` posted an airdrop-farming thread saying Kinetiq Season 2 `$KNTQ` is confirmed, with final snapshot September 29 and distribution October 1, and that trading on Markets.xyz earns kPoints while also potentially positioning for Hyperliquid/trade.xyz rewards. No matching official `@Kinetiq_xyz` / `@KinetiqFND` confirmation appeared in this scan window, so keep as a related-account weak signal until verified from Kinetiq sources. Source: https://x.com/VikingoDigital_/status/2066215140152815998
+- 2026-06-14 — Related Markets.xyz growth/community account `@VikingoDigital_` posted an airdrop-farming thread saying Kinetiq Season 2 `$KNTQ` had a September 29 final snapshot and October 1 distribution. The 2026-07-15 review located the earlier official Foundation confirmation dated May 26, so the dates now live in the confirmed catalyst table; allocation, eligibility and anti-sybil mechanics remain next checks. Original lead: https://x.com/VikingoDigital_/status/2066215140152815998; official confirmation: https://x.com/KinetiqFND/status/2059275376270979523
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/ponyo_fp/status/2011315838591381668 | Ponyo / Four Pillars researcher and Hyperliquid ecosystem contributor | Kinetiq is under-owned infrastructure rather than only an LST: the team shipped Markets and Launch with little promotional extraction, while staking, exchange and launch revenue buy back KNTQ for sKNTQ holders. | Best outside market thesis found; the case rises or falls on Markets/Launch revenue becoming durable rather than one-off Hyperliquid activity. |
+| https://x.com/0xOmnia/status/2003513785139564990 | `@0xOmnia` / Kinetiq core contributor | Kinetiq's liquid staking, Markets, Launch and validator stack routes disposable income into KNTQ buybacks and sKNTQ distributions, making KNTQ the economic center of the suite. | Primary/operator thesis, not independent research; useful because it specifies the intended value-accrual mechanism and therefore what can be tested onchain. |
+| https://x.com/Maven11Capital/status/1981035200583762425 | Maven 11 / lead seed investor | Maven 11 backed Kinetiq's only disclosed funding round because it viewed the founders as unusually product-focused and aligned. | Confirms investor conviction and alignment, but does not independently underwrite valuation or revenue quality. |
+
+### Hermes take
+
+> **2026-07-15:** Kinetiq is one of the cleaner token setups on Hyperliquid because the value route is explicit: multiple revenue streams buy KNTQ and feed sKNTQ, with wallets and dashboards that can be checked. The bet is not “TVL goes up”; it is that Markets/Launch/validator income stays real enough to make recurring buybacks large versus circulating value. If that flow is reproducible, KNTQ matters. If it remains mostly issuer screenshots and subsidized HIP-3 volume, it is just an LST wrapped in a better story.
 
 ## Unverified Watch Items
 
 | Date seen | Claim | Source | Credibility | Status | Why it matters | Next check |
 |---|---|---|---|---|---|---|
-| 2026-06-29 | Related Markets/Kinetiq ecosystem account claims the Kinetiq buyback wallet has bought `$320K` of `$KNTQ` over two months and has been buying daily. | https://x.com/VikingoDigital_/status/2071690233356198251 (`related account` / wallet-data screenshot claim) | Medium | Unverified | If verified, it is direct evidence that KIP-3/Launch buybacks are active and material for KNTQ value accrual. | Verify the buyback-wallet address, transaction history, official Kinetiq/Foundation confirmation, and whether buys are revenue-funded versus discretionary. |
-| 2026-06-14 | Kinetiq Season 2 `$KNTQ` airdrop has final snapshot on 2026-09-29 and distribution on 2026-10-01; Markets.xyz trading earns kPoints tied to the airdrop. | https://x.com/VikingoDigital_/status/2066215140152815998 (`related account` / Markets.xyz growth-community account) | Medium | Unverified | If confirmed, gives a concrete token-distribution catalyst and explains why Markets.xyz activity may matter to Kinetiq flows. | Re-check `@Kinetiq_xyz`, `@KinetiqFND`, Kinetiq blog/docs/app, and Markets.xyz official posts for the same dates and rules. |
+| 2026-06-29; advanced 2026-07-15 | Related Markets/Kinetiq ecosystem account claimed the Kinetiq buyback wallet had bought `$320K` of `$KNTQ` over two months and was buying daily. | Original claim: https://x.com/VikingoDigital_/status/2071690233356198251 (`related account`). Core-contributor follow-up with wallet/contracts: https://x.com/0xOmnia/status/2072310841693655224 (`core contributor`). | High | Partially supported | Core contributor `@0xOmnia` subsequently disclosed the buyback wallet, sKNTQ destination and dashboard and reported cumulative purchases just over `$365K` plus roughly `$120K` burned, confirming an active value-accrual flow. | Reproduce purchase and burn totals from Hyperliquid/onchain history, distinguish buys from transfers/burns, and reconcile source revenue with the official 100%-of-disposable-income policy. |
 
 ## Team
-- TBD / needs follow-up.
+- `@0xOmnia` is the clearest public core-contributor/product voice and is the source for detailed Markets, Launch and KNTQ value-accrual updates.
+- The wider contributor group is partly pseudonymous; no complete official legal-entity/team roster was found in this review.
+- Kinetiq Foundation communicates token, points, funding and ecosystem matters through `@KinetiqFND`.
 
 ## Investors
-- TBD / needs follow-up.
+- Official Foundation funding thread: https://x.com/KinetiqFND/status/1981005145908392376
+- Kinetiq reported a `$1.75M` seed round led by Maven 11, with Pier Two and Chorus One as validator operators; IMC Trading, Infinite Field, Flowdesk and Susquehanna Crypto as HFT/market participants; and ecosystem angels.
+- Core contributors and investors were disclosed with a three-year schedule: one-year cliff followed by two years of monthly linear vesting. Verify unlock execution against the live supply dashboard rather than relying on the announcement alone.
 
 ## Twitter/X accounts
-- TBD / needs follow-up.
+- https://x.com/Kinetiq_xyz — official protocol/product account.
+- https://x.com/KinetiqFND — Foundation/token/points/funding account.
+- https://x.com/Markets_xyz — official related trading product.
+- https://x.com/0xOmnia — core contributor and primary product/economic voice.
+- https://x.com/VikingoDigital_ — related Markets growth/community account; useful for leads but verify claims upstream.
 
 ## KOLs
-- TBD / needs follow-up.
+- https://x.com/ponyo_fp — Four Pillars/Hyperliquid ecosystem researcher; published sourced KNTQ theses and disclosed that coverage was not paid.
+- https://x.com/Maven11Capital — lead investor; useful for funding/alignment context, not an independent KPI source.
 
 ## Official links
-- TBD / needs follow-up.
+- Website/app: https://kinetiq.xyz/
+- KNTQ dashboard: https://kinetiq.xyz/kntq
+- Documentation: https://kinetiq.xyz/docs
+- KNTQ/tokenomics docs: https://kinetiq.xyz/docs/kntq
+- Contracts and audits: https://kinetiq.xyz/docs/contracts-and-audits
 
 ## Onchain/data resources
-- TBD / needs follow-up.
+- DefiLlama kHYPE TVL API: https://api.llama.fi/protocol/kinetiq-khype
+- KNTQ buyback dashboard: https://hl.eco/kinetiq
+- Buyback wallet: https://hypurrscan.io/address/0xaa3b7392052d62928cc87701e3ca6fb6630bb6e2#txs
+- sKNTQ reward-drip contract: https://hypurrscan.io/address/0x696238e0ca31c94e24ca4cbe7921754e172e4d0f#txs
+- Hyperliquid public info API: `https://api.hyperliquid.xyz/info`; useful for balances and fills, but the current fill history did not reproduce the full issuer-reported aggregate.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- KIP-3 Launch economics: https://kinetiq.xyz/blog/kip-3-launch-live
+- KNTQ Kraken listing: https://kinetiq.xyz/blog/kntq-listed-on-kraken
+- Launch operator guide: https://kinetiq.xyz/docs/launch-deployer-and-operator-guide
+- kPoints rules/docs: https://kinetiq.xyz/docs/kpoints
 
 ## Risks
-- TBD / needs follow-up.
+- **Hyperliquid concentration:** Kinetiq depends on HYPE staking demand, HIP-3 market quality and Hyperliquid infrastructure/regulatory resilience.
+- **Revenue-quality risk:** TVL and trading volume are not the same as protocol income; rebates, incentives, oracle/liquidity costs and discretionary definitions can reduce disposable revenue.
+- **Economic-verification gap:** Wallets are disclosed, but cumulative purchase, burn and sKNTQ-distribution figures still need a reproducible accounting adapter.
+- **Smart-contract/validator risk:** LST, validator, perps and staking contracts add slashing, oracle, bridge, upgrade and contract risk despite published audits.
+- **Supply/unlock risk:** One billion max supply and multi-year contributor/investor vesting make circulating-supply and unlock monitoring essential.
 
 ## Catalysts
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks | Confirmed / revenue-token catalyst | Official Kinetiq blog says Launch is live and 100% of Kinetiq’s 10% deployer-share revenue is used for KNTQ buybacks: https://kinetiq.xyz/blog/kip-3-launch-live | Live; blog dated 2026-06-10 | Creates explicit KNTQ buyback path from HIP-3 deployer revenue. | Successful deployer markets can compound staking demand, fees, and KNTQ value accrual. | Watch HIP-3 deployments, deployer fees, buyback transactions, Launch TVL/stake, and market quality. |
+| KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks | Confirmed / revenue-token catalyst | Official Kinetiq blog says Launch is live and 100% of Kinetiq’s 10% deployer-share revenue is used for KNTQ buybacks: https://kinetiq.xyz/blog/kip-3-launch-live. Core contributor `@0xOmnia` later disclosed the buyback wallet, dashboard and sKNTQ destination while reporting `$365K+` cumulative purchases and about `$120K` burned: https://x.com/0xOmnia/status/2072310841693655224 | Live; blog dated 2026-06-10; wallet evidence reported 2026-07-01 | Creates an explicit, monitorable KNTQ buyback-and-reward path from protocol revenue. | Successful deployer markets can compound staking demand, fees, and KNTQ value accrual; direct wallet visibility makes revenue-to-token execution testable. | Reproduce purchases, transfers and burns from Hyperliquid/onchain history; reconcile revenue sources; monitor HIP-3 deployments, Launch TVL/stake and market quality. |
 | kPoints final snapshot / KNTQ distribution window | Confirmed / token-distribution catalyst | Official Kinetiq Foundation post says final kPoints snapshot is 2026-09-29 and distribution is 2026-10-01: https://x.com/KinetiqFND/status/2059275376270979523 | Snapshot 2026-09-29; distribution 2026-10-01 | Creates a dated participation/liquidity catalyst for KNTQ and Kinetiq ecosystem activity. | Can drive Markets.xyz trading, kHYPE/Pendle usage, and post-airdrop sell/lock dynamics. | Watch official rules, eligible activities, anti-sybil changes, final allocation, and post-distribution staking incentives. |
 | Markets.xyz in-app kPoints + limit orders live | Confirmed / product-UX catalyst | Official Markets post says weekly Kinetiq kPoints are visible in app, limit orders are live, and wallet import/auto-breakeven are coming soon: https://x.com/Markets_xyz/status/2069467940529877281 | Live 2026-06-23; more features “coming soon” | Improves trading UX and makes reward tracking visible. | Better UX can increase trading volume feeding Kinetiq/Markets value capture. | Watch active traders, volume, limit-order usage, wallet import launch, and kPoints-driven retention. |
 | USDH → USDC market migration / HIP-3 collateral transition | Confirmed / infrastructure transition catalyst | Official Kinetiq post says final USDH markets were settling/delisting and USDC collateral transition was next: https://x.com/Kinetiq_xyz/status/2067253563210801496 | Mid/late June 2026 transition | Cleaner USDC collateral can broaden market usability and reduce friction. | Successful migration may unlock more volume; failed migration risks user loss/outages. | Watch final market redeployments, liquidity recovery, open interest, user complaints, and fee/share changes. |
 
 ## Open questions
-- TBD / needs follow-up.
+- Can the disclosed wallets reproduce cumulative buybacks, HyperCore burns and sKNTQ distributions without issuer screenshots?
+- What are gross and disposable revenue by source after rebates, oracle/liquidity costs and treasury retention?
+- How concentrated are Markets/Launch volume and deployer revenue, and how much activity persists after points/incentives?
+- What are the current circulating, staked, burned and unlocked amounts, with the next contributor/investor unlock dates?
+- Does kHYPE maintain market share and safe validator performance through stressed withdrawals, depegs or slashing events?
 
 ## Watch triggers
-- TBD / needs follow-up.
+- Buyback or burn step changes large relative to circulating market cap, or material divergence between issuer dashboard and wallet reconstruction.
+- Final kPoints allocation/rules, 2026-09-29 snapshot and 2026-10-01 distribution execution.
+- New Markets/Launch deployments that materially change recurring deployer revenue rather than add routine markets.
+- Validator slashing, kHYPE depeg, withdrawal delays, audit findings or contract upgrades.
+- Contributor/investor unlocks, staking-ratio changes and sKNTQ APY changes driven by real revenue rather than token incentives.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| kHYPE TVL and validator allocation | Measures staking adoption and the capital base exposed to Kinetiq | DefiLlama plus official app/validator data | `tested_ok` for aggregate TVL | TVL is not revenue; validator concentration and organic net inflows still need an adapter. |
+| Gross and disposable protocol revenue by source | Determines how much Markets, Launch, KIP-2 and validator activity can actually buy back KNTQ | Official accounting/dashboard plus onchain wallets | `partial` | Official docs define percentages, but gross revenue, costs, treasury retention and source attribution are not yet reproducible. |
+| KNTQ purchases, burns and sKNTQ distributions | Direct tokenholder value-capture execution | Hyperliquid API, disclosed wallet/contracts and KNTQ dashboard | `partial` | Current public API checks confirm the wallet/balance and some historical fills but do not yet reconstruct the full reported cumulative totals. |
+| Markets/Launch volume, OI, fees and concentration | Tests whether HIP-3 revenue is durable and diversified | Hyperliquid/Markets APIs and official dashboards | `manual_only` | Separate routine launch count/volume from retained traders, fee-generating activity and Kinetiq's actual share. |
+| KNTQ circulating/staked/burned/unlocked supply | Frames buyback magnitude and future sell pressure | Official KNTQ dashboard/docs plus Hyperliquid token/contract data | `partial` | Dashboard is live, but a stable historical supply/unlock collector is not configured. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama kHYPE TVL | `https://api.llama.fi/protocol/kinetiq-khype` via `scripts/collect_direct_metrics.py` | `tested_ok` | Aggregate and chain-level kHYPE TVL history | Keep routine refreshes quiet; alert only on configured material deltas. |
+| Hyperliquid public API | `POST https://api.hyperliquid.xyz/info` with `spotClearinghouseState`, `spotMeta` and `userFillsByTime` | `partial` | Disclosed wallet balances, KNTQ market mapping and available fill history | Build pagination plus transfer/burn accounting and reconcile to dashboard totals. |
+| Official KNTQ dashboard | `https://kinetiq.xyz/kntq` | `tested_ok` for public page | Current supply, staking, buyback, burn and value-accrual presentation | Locate stable underlying JSON/API endpoints before collector integration. |
+| Community buyback dashboard | `https://hl.eco/kinetiq` | `blocked` | Advertised real-time buyback view | Access was HTTP 403 from the scanner; do not make it the sole machine source. |
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://kinetiq.xyz/ | Official app/site; staking and protocol product surface. |
+| https://kinetiq.xyz/docs | Official protocol documentation. |
+| https://kinetiq.xyz/docs/kntq | Official KNTQ supply, vesting, sKNTQ and value-accrual methodology. |
+| https://kinetiq.xyz/docs/contracts-and-audits | Official contract and audit index. |
+| https://kinetiq.xyz/blog/kip-3-launch-live | Official Launch/KIP-3 deployer-revenue and buyback announcement. |
+| https://kinetiq.xyz/kntq | Official KNTQ supply/staking/buyback/burn dashboard. |
+| https://x.com/Kinetiq_xyz | Official product/protocol X account. |
+| https://x.com/KinetiqFND | Official Foundation/token/points/funding X account. |
+| https://x.com/Markets_xyz | Official related Markets trading-product account. |
+| https://x.com/0xOmnia | Core contributor; detailed product and value-accrual posts. |
+| https://x.com/KinetiqFND/status/1981005145908392376 | Official `$1.75M` funding, investor and vesting disclosure. |
+| https://x.com/Maven11Capital/status/1981035200583762425 | Lead-investor alignment thesis. |
+| https://x.com/ponyo_fp/status/2011315838591381668 | Independent Hyperliquid ecosystem investment case. |
+| https://api.llama.fi/protocol/kinetiq-khype | Programmatic third-party kHYPE TVL history. |
+| https://hl.eco/kinetiq | Community buyback dashboard; useful lead but access-blocked in this scan. |
+| https://hypurrscan.io/address/0xaa3b7392052d62928cc87701e3ca6fb6630bb6e2#txs | Core-contributor-disclosed KNTQ buyback wallet. |
+| https://hypurrscan.io/address/0x696238e0ca31c94e24ca4cbe7921754e172e4d0f#txs | Core-contributor-disclosed sKNTQ reward-drip contract. |
 
 ---
