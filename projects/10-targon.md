@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-06-29T19:22:06Z
+last_updated: 2026-07-15T00:47:35Z
 ---
 
 # Targon — Bittensor Subnet 4
@@ -15,6 +15,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 ## Latest scan notes
 
+- 2026-07-14 — OpenTensor Foundation scheduled **Novelty Search E081 for July 16 at 21:00 UTC** with Bittensor co-founder Jacob Steeves and Manifold Labs CEO Rob Meyers, explicitly naming confidential compute, TEEs, Targon-At-Home and the **“launch of TargonOS.”** This is the first public TargonOS reference found, but the announcement does not define the artifact, release channel, availability, code, supported hardware, economics or whether “launch” means a demo versus a usable release. Source: https://x.com/opentensor/status/2077139332859904391
 - 2026-06-29 — Official Targon said MinosVM 2.0 is live on targon.com powering Minos with secure confidential compute, stronger native-agent support, and a move from manual optimization toward autonomous improvement on SN107. Source: https://x.com/TargonCompute/status/2071644073241264403
 - 2026-06-29 — Kraken’s public listings page includes Targon / SN4 on its roadmap, alongside other Bittensor subnet alpha tokens; treat as exchange-roadmap/listing catalyst pending actual trading enablement and official Targon/Kraken trading details. Source: https://www.kraken.com/listings#roadmap
 - 2026-06-22 — Added neo-cloud investment numbers: Taostats snapshot put SN4 alpha market cap around `245,062 TAO` / `~$56.2M` and liquidity around `249,735 TAO` / `~$57.3M` using TAO around `$229`; this is subnet alpha/pool context, not a normal token FDV. Source: https://taostats.io/subnets/4
@@ -91,6 +92,7 @@ last_updated: 2026-06-29T19:22:06Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| TargonOS launch at Novelty Search E081 | Confirmed event / product scope tentative | OpenTensor Foundation says its Targon session will cover confidential compute, TEEs, Targon-At-Home and the “launch of TargonOS”: https://x.com/opentensor/status/2077139332859904391 | Upcoming 2026-07-16 at 21:00 UTC | Could add an operating-system or deployment layer around Targon's confidential GPU/CPU cloud, depending on what is actually released. | A usable, documented TargonOS could lower onboarding friction for suppliers/users and deepen SN4 differentiation; an event-only demo would not change usage or economics. | Watch the live event and follow-ups for definition, code/download, license, supported hardware, attestation model, installation docs, availability, users, fees and any SN4 demand/buyback effect. |
 | Kraken listings-roadmap entry for Targon / SN4 | Confirmed / listing roadmap | Kraken listings page includes Targon and SN4 on the roadmap: https://www.kraken.com/listings#roadmap | Roadmap as of 2026-06-29; trading timing unknown | Would add centralized exchange access for SN4 alpha exposure. | Easier access could broaden Bittensor subnet-token liquidity, improve price discovery, and attract non-Bittensor-native buyers to Targon’s revenue/buyback thesis. | Watch Kraken trading-enable announcement, supported jurisdictions/pairs, deposits/withdrawals, liquidity, and whether Targon confirms details. |
 | MinosVM 2.0 live on Targon | Confirmed / product integration | Official Targon post says MinosVM 2.0 is live on targon.com and uses secure confidential compute for native-agent/genomics infrastructure: https://x.com/TargonCompute/status/2071644073241264403 | Live as of 2026-06-29 | Demonstrates customer/application usage of Targon confidential compute. | More real workloads can support SN4 buyback/revenue claims and differentiate Targon from generic GPU rental markets. | Watch Minos usage, paid workload evidence, recurring revenue, and whether similar agent/genomics deployments follow. |
 | Targon Rentals and Serverless compute products live | Confirmed | Official docs describe Rentals as persistent GPU/CPU containers with SSH and Serverless as autoscaling apps that scale from zero: https://docs.targon.com/guides/rentals and https://docs.targon.com/guides/serverless | Live | Converts SN4 from pure miner incentives into user-facing confidential GPU cloud products. | Real customer workloads can justify emissions and improve subnet quality if demand routes back to miners. | Watch utilization, paid customer announcements, uptime, pricing, and whether user demand affects miner emissions. |
@@ -102,6 +104,7 @@ last_updated: 2026-06-29T19:22:06Z
 - Can the `2,000 TAO/month` buyback proxy be fully reconstructed from wallet flows?
 - What is paid utilization by GPU class and how much is repeat customer usage?
 - Does Targon expose a public revenue, orders, or utilization API?
+- What exactly ships as TargonOS on July 16—code, downloadable image, hosted service, Targon-At-Home stack, or only an event demo—and how does it affect paid usage or SN4 economics?
 
 ## Watch triggers
 - Verified customer revenue materially increasing or declining.

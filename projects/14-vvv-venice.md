@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-09T23:18:33Z
+last_updated: 2026-07-15T00:47:35Z
 ---
 
 # VVV / Venice AI
@@ -76,6 +76,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 ## Latest scan notes
 
+- 2026-07-14 — Official Venice shipped **Style References in Venice Studio**, letting users add reference images to steer image-prompt style, and linked the live Studio workflow plus a tutorial. This is a real consumer-product feature release, but the announcement disclosed no API support, pricing, usage, revenue, VVV staking demand or burn impact. Sources: https://x.com/AskVenice/status/2077143752288633326, https://x.com/AskVenice/status/2077143755019239927 and https://x.com/AskVenice/status/2077143757061783710
 - 2026-07-09 — Official Venice announced the latest discretionary VVV burn: about $267k of VVV at burn time, described as its largest burn yet, with a burn dashboard and Base transaction linked in follow-ups. This is the strongest VVV token-economics signal in this scan because it directly tests the revenue-linked buyback/burn path against the current 3M VVV/year emissions run-rate; next check is dashboard/tx verification and burn-vs-emissions math. Sources: https://x.com/AskVenice/status/2075312526393249846 and https://x.com/AskVenice/status/2075312829893091793
 
 - 2026-07-09 — Official Venice said the full GPT-5.6 family (Sol/Luna/Terra plus Pro variants) is available on Venice with anonymous access; Erik Voorhees also reiterated Venice model privacy routing/zero-retention or partner-contract handling and E2EE-labelled model guidance. This is a major model-surface update after Grok 4.5/Seedream, but no VVV burn, emissions, staking, pricing, or usage delta was disclosed. Sources: https://x.com/AskVenice/status/2075290416547590411 and https://x.com/ErikVoorhees/status/2075293875284095058

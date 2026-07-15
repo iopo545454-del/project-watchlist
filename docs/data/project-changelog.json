@@ -1,5 +1,72 @@
 [
   {
+    "date": "2026-07-15T00:47:35Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "scan",
+    "summary": "Derive seven-day fees fell another 25.13% to $70,935, now 48.44% below July 6, while TVL rose to about $114.2M.",
+    "source": "DefiLlama API direct-metrics collector",
+    "url": "https://api.llama.fi/summary/fees/derive?dataType=dailyFees",
+    "last_scanned": "2026-07-15T00:47:35Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Seven-day fees declined from $94,746 at the prior material snapshot to $70,935 (-25.13%), tripping the configured rule again and extending the drop from $137,575 on July 6 to -48.44%. Thirty-day fees slipped only 1.55% to $503,292 while TVL rose 3.90% to $114.2M; cause and adapter coverage remain unresolved.",
+    "relates_to": [
+      {"type": "metric", "ref": "Derive seven-day fees"},
+      {"type": "catalyst", "ref": "Protocol-fee buyback program"},
+      {"type": "open_question", "ref": "Explain fee contraction and verify organic options activity, adapter coverage and buyback follow-through"}
+    ]
+  },
+  {
+    "date": "2026-07-15T00:47:35Z",
+    "project": "Targon — Bittensor Subnet 4",
+    "slug": "10-targon",
+    "type": "catalyst added",
+    "summary": "OpenTensor scheduled a July 16 Targon session explicitly featuring the launch of TargonOS; artifact, availability and economics are still undefined.",
+    "source": "X/Twitter OpenTensor Foundation",
+    "url": "https://x.com/opentensor/status/2077139332859904391",
+    "last_scanned": "2026-07-15T00:47:35Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "The repo tracked Targon's rentals, serverless, TEE/Blackwell support and MinosVM but had no TargonOS reference. This is the first public mention found and gives a dated 2026-07-16 21:00 UTC event, without code, download, docs, supported hardware, usage or SN4 value-routing details.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "TargonOS launch at Novelty Search E081"},
+      {"type": "open_question", "ref": "Define the TargonOS artifact, release status, supported hardware, usage and SN4 economic effect"}
+    ]
+  },
+  {
+    "date": "2026-07-15T00:47:35Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "GitLawb Ads reported 337K impressions, 12K clicks, $337.37 paid to viewers and nine live campaigns.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/gitlawb/status/2077165940815622455",
+    "last_scanned": "2026-07-15T00:47:35Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Impressions are roughly 3.4x the June 'approaching 100K' snapshot and the post adds first campaign-count, click and viewer-payout totals. Advertiser spend, CPM/CPC, repeat usage, paid-versus-promotional mix and GITLAWB-versus-USDC funding remain undisclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "$GITLAWB / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths"},
+      {"type": "metric", "ref": "GitLawb Ads impressions, clicks, live campaigns and viewer payouts"},
+      {"type": "open_question", "ref": "Verify advertiser spend, unit economics, retention and token/credit routing"}
+    ]
+  },
+  {
+    "date": "2026-07-15T00:47:35Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "official update",
+    "summary": "Venice Studio added live Style References for image prompts, with a tutorial and direct product link but no disclosed API or VVV-economic impact.",
+    "source": "X/Twitter official account",
+    "url": "https://x.com/AskVenice/status/2077143752288633326",
+    "last_scanned": "2026-07-15T00:47:35Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "This is a new consumer image-workflow feature beyond the repo's recent model-availability updates. The announcement gives no API support, pricing, usage, revenue, staking-capacity demand or burn effect.",
+    "relates_to": []
+  },
+  {
     "date": "2026-07-14T20:16:51Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
