@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-07-15T23:46:45Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "catalyst update",
+    "summary": "World Chain merged WIP-1008 as a documentation-only Core specification for WLD-staked subblocks, BFT attestations, slashing and validator rewards; no runtime implementation or activation shipped.",
+    "source": "Official GitHub specification repository",
+    "url": "https://github.com/worldcoin/world-chain/pull/850",
+    "last_scanned": "2026-07-15T23:46:45Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "WIP-1008 advanced from one approval/open PR to a five-commit merged specification with 271 documentation lines defining StakeManager, committees, BLS attestations, a two-thirds-stake certificate, attested RPC head and flblk v3 gossip. The PR explicitly labels the change low-risk and documentation-only, so WLD staking, contracts, rewards, slashing and activation remain unimplemented.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
+      {"type": "watch_item", "ref": "2026-07-13 WIP-1008 WLD-staked validator overlay"},
+      {"type": "open_question", "ref": "Verify WIP-1008 implementation, parameters, audits, governance and activation"}
+    ]
+  },
+  {
+    "date": "2026-07-15T23:46:45Z",
+    "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+    "slug": "09-iota-sn9",
+    "type": "catalyst update",
+    "summary": "Macrocosmos' CTO said Orion-100B reaches 65% of centralized-training speed on cheaper commodity hardware, reported equal internal convergence and teased the next model release soon.",
+    "source": "X/Twitter core contributor and official GitHub",
+    "url": "https://x.com/macrocrux/status/2077493082388324483",
+    "last_scanned": "2026-07-15T23:46:45Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The dossier already tracked Orion-100B as an announced distributed-training proof point, but not a speed ratio, equivalent-quality claim or next-release signal. The new 65% figure and convergence statement are founder-reported; no cost breakdown, checkpoint, independent reproduction or firm release date was provided, and the newest repository tag remains v4.6.1 from June 26.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Project Orion next-stage model release"},
+      {"type": "catalyst", "ref": "Orion-100B distributed pretraining proof point"},
+      {"type": "open_question", "ref": "Reproduce Orion-100B model quality, speed and total-cost claims"}
+    ]
+  },
+  {
+    "date": "2026-07-15T23:46:45Z",
+    "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+    "slug": "09-iota-sn9",
+    "type": "initial review",
+    "summary": "Completed IOTA/SN9's missing durable review with a sourced outside thesis, dated Hermes take, token/economic framing, official source map, catalysts and tested KPI methodology.",
+    "source": "Official IOTA/Macrocosmos site, docs, GitHub, arXiv and X/Twitter",
+    "url": "projects/09-iota-sn9.html",
+    "last_scanned": "2026-07-15T23:46:45Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "The index marked initial_review_done=true, but the canonical dossier still had a TBD thesis and docs section, no investor-thesis table, no Hermes take, no token/economic framing, no standard source table and no Direct Data/KPI Methodology. The review closes those gaps and adds @macrocrux plus nine official/high-signal sources to the tracked profile.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Liquid distributed training on heterogeneous commodity hardware"},
+      {"type": "metric", "ref": "Paid training demand, model quality/speed/cost, active devices, rewards and SN9 economics"}
+    ]
+  },
+  {
     "date": "2026-07-15T19:20:52Z",
     "project": "Pluralis",
     "slug": "21-pluralis",

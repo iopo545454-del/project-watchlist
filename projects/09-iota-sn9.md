@@ -1,103 +1,127 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-07-08T22:18:01Z
+last_updated: 2026-07-15T23:46:45Z
 ---
 
 # IOTA — Macrocosmos Bittensor Subnet 9
 
 ## Overview
-- Bittensor Subnet 9.
-- “IOTA” = Incentivised Orchestrated Training Architecture.
-- Focus: decentralized model training / distributed pretraining over Bittensor.
-- Built by Macrocosmos, which also operates other Bittensor subnets.
+
+- **IOTA** here means Macrocosmos' **Incentivised Orchestrated Training Architecture**, Bittensor Subnet 9—not the separate IOTA L1/network.
+- SN9 coordinates heterogeneous, permissionless machines into a data- and pipeline-parallel model-training system. An orchestrator assigns model layers, miners process activations and update weights, and validators spot-check contribution quality for proportional subnet rewards.
+- The core investment question is whether open-internet, interruptible commodity hardware can approach centralized training quality and useful speed at a meaningfully lower cost—and whether those technical gains create durable demand for SN9 alpha rather than only emissions-driven supply.
+- The primary live surfaces are the IOTA dashboard, the open-source `macrocosm-os/iota` repository, Train at Home, published technical work, and Project Orion / Orion-100B milestones.
 
 ## Latest scan notes
 
-- 2026-07-08 — Official IOTA_SN9 showcased live Train at Home runs with stable loss reduction on consumer-grade Apple hardware and cited 217 devices across 22 countries, while separately tying NVIDIA RTX Spark-style consumer AI hardware to IOTA’s heterogeneous-training thesis. This is a useful usage/technical-progress datapoint, but needs dashboard and reward/economics follow-up. Sources: https://x.com/IOTA_SN9/status/2074886501125787897 and https://x.com/IOTA_SN9/status/2074886481286697058
-
-- 2026-06-22 — Official IOTA_SN9 said AI Research Lead Dr. Alan Aboudib presented ResBM at the Pluralis Protocol Learning Workshop, framing Residual Bottleneck Models as the low-bandwidth pipeline-parallel backbone for Train at Home and Orion-100B; Macrocosmos also scheduled a Hash Rate podcast on IOTA/Orion-100B/Apex/hackathon. Sources: https://x.com/IOTA_SN9/status/2069097814873821657 and https://x.com/MacrocosmosAI/status/2069086571958067257
+- **2026-07-15 — Project Orion next-stage signal.** Macrocosmos co-founder/CTO `@macrocrux` said Orion-100B runs at **65% of centralized-training speed** on cheaper commodity hardware, said internal convergence tests reach the same quality as centralized training under distributed/interruptible/open-internet conditions, and teased the next model release “very soon.” This is useful founder-reported technical/catalyst evidence, not an independently reproduced cost/quality result or a dated release. Source: https://x.com/macrocrux/status/2077493082388324483
+- **2026-07-15 — Substantive stale-project check.** The official IOTA repository remains active and unarchived, with the newest code tag/commit at `v4.6.1` on 2026-06-26; the public site, dashboard, Train at Home docs and arXiv primer remain reachable. No newer tagged code, GitHub release, public cost breakdown, independently reproduced Orion benchmark, or stable machine-readable dashboard endpoint was found. Sources: https://github.com/macrocosm-os/iota, https://iota.macrocosmos.ai/dashboard/mainnet and https://arxiv.org/abs/2507.17766
+- **2026-07-08 — Train at Home telemetry.** Official IOTA_SN9 showed live Train at Home runs with stable loss reduction on consumer-grade Apple hardware and cited 217 devices across 22 countries. This supports the heterogeneous-compute thesis, but still needs dashboard history, reward economics, retention and independent quality checks. Sources: https://x.com/IOTA_SN9/status/2074886501125787897 and https://x.com/IOTA_SN9/status/2074886481286697058
+- **2026-06-22 — ResBM / research distribution.** Official IOTA_SN9 said AI Research Lead Dr. Alan Aboudib presented Residual Bottleneck Models at the Pluralis Protocol Learning Workshop, framing ResBM as the low-bandwidth pipeline-parallel backbone for Train at Home and Orion-100B. Sources: https://x.com/IOTA_SN9/status/2069097814873821657 and https://x.com/MacrocosmosAI/status/2069086571958067257
 
 ## Thesis
-- TBD / needs follow-up.
 
-## Team
-- Macrocosmos team — builder/operator.
-- Dr. Alan Aboudib — AI Research Lead; publicly associated with IOTA / Orion / ResBM work.
-- `@macrocrux` — Macrocosmos co-founder/CTO, visible technical voice.
-- `@mccrinbc`, `@Felix_Quinque` — publicly referenced contributors around IOTA / Train at Home.
-- Elena Nesterova — Head of Delivery.
-- Alma Schalen — Head of Product Design.
+### Investor / market theses
 
-## Investors
-- No clear traditional VC round publicly emphasized.
-- Backing primarily appears Bittensor-native: subnet emissions, validator support, ecosystem collaborations, compute/community participation.
-- Related ecosystem support/collabs have included Rayon Labs and other Bittensor participants.
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/markjeffrey/status/2063127184173392219 | Mark Jeffrey / partner at Bittensor Fund, Stillcore Capital; Hash Rate host | A live Proof of Talk demo used 5 TAO to start a distributed pretraining run within minutes, which Jeffrey framed as liquid, fault-tolerant, on-demand training and an “Airbnb for hardware” moment. | High-signal Bittensor-investor validation of the demand/supply experience, but it is one demo and does not establish cost advantage, repeat buyers, model quality or SN9 returns. |
+| https://taodaily.io/128-strangers-5-minutes-5-tao-one-model/ | Tao Daily / third-party Bittensor ecosystem coverage | The demo case is that a buyer can summon globally distributed training capacity quickly while contributors earn for otherwise idle hardware. | Useful product-distribution framing; validate every performance/economic claim with IOTA dashboard, code and buyer/reward data. |
 
-## Twitter/X accounts
-- `@IOTA_SN9`
-- `@MacrocosmosAI`
-- `@macrocrux`
-- `@taostats`
-- `@tao_market_cap`
-- `@opentensor`
-- Bittensor community accounts covering subnet metrics and dTAO rotations.
+### Hermes take
 
-## KOLs
-- `@IOTA_SN9`
-- `@MacrocosmosAI`
-- `@macrocrux`
-- `@taostats`
-- `@tao_market_cap`
-- `@opentensor`
-- Bittensor community accounts covering subnet metrics and dTAO rotations.
+> **2026-07-15 —** SN9 is one of the few decentralized-training bets with a real technical surface: open code, a live dashboard, consumer participation and a concrete 100B-scale target. The setup matters if Orion can publish reproducible quality, speed and cost results while Train at Home retains contributors without overpaying emissions. Until then, “65% of centralized speed” is a strong demo claim—not a business. Watch paid training demand and cost per useful token; those decide whether SN9 is infrastructure or an elaborate subsidy loop.
 
-## Official links
-- IOTA X: https://x.com/IOTA_SN9
-- Macrocosmos X: https://x.com/MacrocosmosAI
-- Macrocosmos Substack: https://macrocosmosai.substack.com/
-- Bittensor explorer: https://taostats.io/
-- Bittensor subnet market data: https://taomarketcap.com/
+## Team / contributors
 
-## Onchain/data resources
-- Subnet 9 emissions, alpha price, market cap, validator/miner count on Taostats/TaoMarketCap.
-- Training milestones: Orion, Orion-100B, Train at Home, ResBM/compression results.
-- GitHub/research releases and Macrocosmos Substack technical posts.
-- Miner hardware requirements and participation accessibility.
-- Validator scoring/incentive changes.
-- Any published model checkpoints, benchmark results, or reproducibility details.
+- **Macrocosmos** — builder/operator across IOTA/SN9 and other Bittensor subnets.
+- `@macrocrux` — Macrocosmos co-founder/CTO and a primary technical/roadmap voice.
+- Dr. Alan Aboudib — publicly identified AI Research Lead around IOTA, Orion and ResBM.
+- Felix Quinque, Szymon Fonau, Rodrigo Lopez Portillo Alcocer, Brian McCrindle and Steffen Cruz — named authors on the IOTA technical primer; verify current operating roles from official team material before treating all as current core contributors.
 
-## Docs/blogs
-- TBD / needs follow-up.
+## Token / contract notes
 
-## Risks
-- Not related to the separate IOTA L1 project/token.
-- “IOTA” here specifically means Macrocosmos’ Bittensor Subnet 9.
-- Traditional investor info is unclear; treat Bittensor emissions and subnet economics as the main funding signal.
-
----
+- IOTA/SN9 exposure is the **Bittensor Subnet 9 alpha asset and pool**, not the unrelated IOTA L1 token and not an ERC-20/SPL contract.
+- Track alpha price, market cap/pool depth, emissions, validator stake and miner rewards through canonical Bittensor data surfaces. Do not treat alpha pool value as equity value or normal fully diluted market cap.
+- No separate IOTA project token or contract is documented in the official IOTA repository/site reviewed here.
+- The economic gap is explicit: published training progress does not by itself prove external paid demand, reward sustainability, or value capture net of subnet emissions.
 
 ## Catalysts
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
-| Training at Home public app for IOTA compute contributors | Confirmed | Macrocosmos docs say TAH is built on IOTA and lets users contribute hardware and earn rewards; FAQ says the app is available to everyone: https://docs.macrocosmos.ai/product-and-services/tah and https://docs.macrocosmos.ai/product-and-services/tah/faqs | Live; docs updated 2026 | Expands SN9 supply from professional miners toward long-tail consumer/prosumer GPUs. | More heterogeneous supply can strengthen the liquid-training thesis if reliability and rewards hold. | Watch TAH downloads, supported OS expansion beyond macOS, reward rates, active contributors, and dashboard miner counts. |
-| IOTA dashboard + whitepaper as live training proof surface | Confirmed | Official IOTA page links the dashboard and IOTA primer/whitepaper: https://iota.macrocosmos.ai/ and https://iota.macrocosmos.ai/research/iota_primer.pdf | Live | Gives investors/miners a public way to verify distributed-training activity rather than relying only on emissions. | If dashboard metrics show sustained model progress, SN9 can be valued as training infrastructure, not just a Bittensor emissions farm. | Track dashboard active miners, layers/training progress, validator activity, model milestones, and outages. |
-| Orion-100B distributed pretraining proof point | Confirmed / team post | Macrocosmos announced Project Orion / Orion-100B as a large distributed LLM pretraining run over open internet infrastructure: https://x.com/MacrocosmosAI/status/2061493162582118695 | Announced June 2026 | Demonstrates whether IOTA can coordinate economically meaningful frontier-scale training. | Successful runs could attract compute suppliers, validators, partners, and model buyers; failed economics would weaken SN9 narrative. | Watch follow-up technical reports, model release, cost/efficiency metrics, reproducibility, and buyer/use-case announcements. |
+| Project Orion next-stage model release | Tentative / watch | Macrocosmos co-founder/CTO says the next model release is coming “very soon” after Orion-100B work: https://x.com/macrocrux/status/2077493082388324483 | No firm date; first surfaced 2026-07-15 | Could provide a new checkpoint/report for testing distributed quality, speed and cost claims. | A reproducible result could attract buyers, miners and validator capital; another issuer-only benchmark would add narrative without resolving economics. | Watch official checkpoint/report/code, architecture, evals, cost, wall-clock speed, hardware mix and third-party reproduction. |
+| Orion-100B distributed pretraining proof point | Confirmed project / ongoing technical program | Official Macrocosmos announcement and founder follow-up: https://x.com/MacrocosmosAI/status/2061493162582118695 and https://x.com/macrocrux/status/2077493082388324483 | Ongoing; next release date unknown | Tests whether SN9 can coordinate economically useful 100B-scale training over commodity hardware and the open internet. | Success could expand buyer demand and hardware supply; failure to publish cost/quality evidence would weaken the liquid-training thesis. | Reproduce the claimed 65%-of-centralized speed, equivalent convergence and “fraction of cost” with methodology and independent tests. |
+| Train at Home public contributor app | Confirmed / ongoing | Official site/docs say macOS participation is open and rewards can be paid to a wallet: https://iota.macrocosmos.ai/ and https://docs.macrocosmos.ai/product-and-services/tah/faqs | Live on macOS; Linux described as following, Windows not on roadmap | Expands compute supply to consumer/prosumer hardware and lowers contributor friction. | A large retained fleet could improve fault tolerance and cost; unreliable hardware or uneconomic rewards could increase orchestration overhead and sell pressure. | Track active/retained devices, countries, tokens processed, uptime, reward distribution, minimum payout, Linux release and reward sustainability. |
+| IOTA dashboard and open-source training stack | Confirmed / ongoing | Dashboard, repository and primer: https://iota.macrocosmos.ai/dashboard/mainnet, https://github.com/macrocosm-os/iota and https://arxiv.org/abs/2507.17766 | Live; latest code tag `v4.6.1` dated 2026-06-26 as of this review | Makes miner/validator mechanics and some training progress inspectable rather than purely promotional. | Stable machine-readable history and reproducible releases could improve underwriting; stale or opaque telemetry would increase verification risk. | Discover a stable dashboard API, archive run history, monitor tags/commits and verify model checkpoints/evals. |
+| P2P activation transfer and spot-check auditing | Confirmed / completed code release | Official GitHub release `v3.0.0`: https://github.com/macrocosm-os/iota/releases/tag/v3.0.0 | Released 2026-03-09; later tags exist | Moves intermediate activation traffic from S3 to miner-to-miner transfer with BLAKE3 integrity checks and default 1% cloud spot checks. | Lower latency/cloud cost can improve distributed-training economics, while limited sampling creates a security/false-acceptance question. | Inspect later-version behavior, adversarial tests, audit coverage, failure rates and measured cost/latency savings. |
+
+## Risks
+
+- **Issuer-reported performance:** the 65%-of-centralized-speed, equal-convergence and lower-cost claims need full methodology and independent reproduction.
+- **Orchestrator/validator concentration:** a distributed miner fleet can still depend on centralized scheduling, data, checkpoints, reward logic or validator control.
+- **Economics before demand:** subnet emissions can recruit hardware without proving external buyers or positive unit economics.
+- **Heterogeneous-network bottlenecks:** WAN latency, device churn, activation compression and stragglers can erase cheap-hardware savings at larger scales.
+- **Security and attribution:** spot checks, contribution scoring and interdependent pipeline work must resist corrupted activations, collusion, gaming and false credit.
+- **Asset confusion/liquidity:** SN9 alpha is not the IOTA L1 token; alpha pool structure and Bittensor mechanics can create material liquidity/reflexivity risk.
 
 ## Open questions
-- Not related to the separate IOTA L1 project/token.
-- “IOTA” here specifically means Macrocosmos’ Bittensor Subnet 9.
-- Traditional investor info is unclear; treat Bittensor emissions and subnet economics as the main funding signal.
 
----
+- Can Macrocosmos publish and third parties reproduce Orion-100B's claimed model quality, 65%-of-centralized speed and total cost per useful training token?
+- Who is paying for training, how many runs are externally funded, and what are repeat demand, revenue and gross margin after contributor rewards and infrastructure costs?
+- How many Train at Home devices are active and retained by cohort, what useful work do they contribute, and how concentrated are rewards?
+- How decentralized are orchestration, data hosting, validator control, checkpoint custody and upgrade authority?
+- What percentage of malicious/corrupt work can the sampling and scoring system detect, and what are measured false-acceptance/false-rejection rates?
+- How do SN9 emissions, validator stake and alpha liquidity compare with delivered training work and external revenue?
+- When will the next Orion model/checkpoint ship, and will it include code, evals, cost data and reproducible artifacts?
 
-## Watch triggers
-- Subnet 9 emissions materially rising/falling vs other Bittensor subnets.
-- Successful distributed training milestone with public benchmarks/checkpoints.
-- Major incentive-mechanism update affecting miners or validators.
-- New requirement that centralizes participation around high-end hardware.
-- Evidence of poor training quality, benchmark overclaiming, or unreproducible results.
-- Large alpha-token inflows/outflows or validator rotation.
+## Sources / Research Inputs
 
----
+| Information source | Context about the source |
+|---|---|
+| https://x.com/IOTA_SN9 | Official IOTA/SN9 account; training runs, Train at Home and research updates. |
+| https://x.com/MacrocosmosAI | Official Macrocosmos account; cross-product and Project Orion announcements. |
+| https://x.com/macrocrux | Macrocosmos co-founder/CTO; technical and roadmap claims that require later artifact verification. |
+| https://iota.macrocosmos.ai/ | Official IOTA site; Train at Home, dashboard, docs and whitepaper entry point. |
+| https://iota.macrocosmos.ai/dashboard/mainnet | Official live dashboard; miner/layer/training/validator surface, but no stable public API was confirmed in this scan. |
+| https://docs.macrocosmos.ai/product-and-services/tah | Official Train at Home product documentation. |
+| https://docs.macrocosmos.ai/product-and-services/tah/faqs | Official participation, platform, wallet, reward and payout FAQ. |
+| https://github.com/macrocosm-os/iota | Official open-source IOTA code, tags, commits, miner/validator setup and design docs. |
+| https://github.com/macrocosm-os/iota/releases/tag/v3.0.0 | Official P2P activation-transfer/integrity/spot-check release details. |
+| https://arxiv.org/abs/2507.17766 | IOTA technical primer; architecture, compression, contribution scoring and preliminary results. |
+| https://macrocosmosai.substack.com/ | Official long-form Macrocosmos research/thesis publication surface. |
+| https://taostats.io/subnets/9 | Third-party Bittensor subnet market, emissions, stake and participant data; verify methodology/API availability. |
+| https://taomarketcap.com/ | Third-party Bittensor subnet market/pool context. |
+| https://x.com/markjeffrey/status/2063127184173392219 | Bittensor Fund partner's firsthand market-thesis account of a paid on-demand training demo. |
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Externally paid training runs / revenue | Distinguishes buyer demand from emissions-funded compute supply | Official run ledger/API or auditable payment transactions | manual_only | No stable public revenue/run-payment endpoint was found; one 5-TAO demo does not establish recurring demand. |
+| Training quality, speed and total cost | Direct test of the liquid-training thesis | Published checkpoint/evals plus reproducible run logs | partial | Official code/paper and founder claims exist; Orion-100B quality/speed/cost claims are not independently reproduced. |
+| Active miners/devices, retention and hardware mix | Measures usable supply and decentralization | IOTA dashboard / Train at Home dashboard | partial | Live dashboard is public, but a stable machine-readable endpoint and historical cohort series were not confirmed. |
+| Useful tokens/work processed and run progress | Connects fleet size to delivered model-training output | IOTA dashboard and run artifacts | partial | Screen-visible telemetry is useful; archiveable API/history and metric definitions are needed. |
+| SN9 emissions, alpha market cap/liquidity and validator stake | Shows subsidy intensity, market access and security concentration | Bittensor chain/indexer; Taostats | manual_only | Public frontends exist, but no tested collector endpoint is configured in this repo. Alpha pool value is not normal FDV. |
+| Reward distribution / concentration | Tests whether contributors are fairly rewarded and whether supply is sustainable | Bittensor chain data plus official reward logic | partial | Docs describe contribution factors and payouts; wallet-level distribution and concentration are not integrated. |
+| Code/release cadence | Tracks implementation progress and whether announced work ships | GitHub API | tested_ok | Public commits/tags/releases are machine-readable; repository activity alone does not prove usage or model quality. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| GitHub repository | `https://api.github.com/repos/macrocosm-os/iota` plus `/commits`, `/tags`, `/releases` | tested_ok | Repository status, latest push, commits, tags and release notes | Add a lightweight release/commit freshness collector if this KPI is rolled into the dashboard. |
+| Official dashboard | `https://iota.macrocosmos.ai/dashboard/mainnet` | partial | Live dashboard HTML/app shell is reachable | Identify underlying API/websocket and metric definitions; test stability before collector integration. |
+| Train at Home docs | `https://docs.macrocosmos.ai/product-and-services/tah/faqs` | tested_ok | Participation/platform/reward methodology in public HTML | Use for methodology changes, not as a live KPI source. |
+| IOTA paper | `https://arxiv.org/abs/2507.17766` | tested_ok | Paper metadata and technical abstract; PDF is public | Track revisions and independent citations/replications; do not treat preliminary results as live KPIs. |
+| Taostats SN9 | `https://taostats.io/subnets/9` | manual_only | Public subnet market/validator/miner context | Find a documented public/indexer endpoint or use Bittensor RPC before integrating. |
+
+## Monitoring notes
+
+- Prioritize official IOTA/Macrocosmos X, `@macrocrux`, the IOTA repository/tags, official dashboard, Train at Home docs and model artifacts.
+- Log Orion releases, checkpoint/eval publications, incentive/scoring changes, validator/miner changes, security findings and external paid-run evidence.
+- Treat device counts, speed, quality, cost and revenue as issuer-reported until the dashboard/API or independent artifact supports them.
+- Keep SN9/IOTA nomenclature explicit to avoid confusion with the separate IOTA L1 asset.
