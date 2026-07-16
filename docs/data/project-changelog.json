@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-07-16T01:52:38Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "verification update",
+    "summary": "Focused verification shows the ‘first MetaDAO exploit’ label described the Zinc/ZKFG governance and revenue dispute—not a smart-contract compromise—and closes percolator-meta issue #40 deployment exposure as stale.",
+    "source": "Official MetaDAO/team X context, ecosystem resolution report and GitHub issue/commit APIs",
+    "url": "https://x.com/MetaDAOProject/status/2067209288792125496",
+    "last_scanned": "2026-07-16T01:52:38Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The dossier previously left a vague security-exploit allegation unresolved. The original thread resolves to the Zinc/ZKFG take-private and revenue-routing dispute, with no affected program, exploit transaction, drain, patch or security postmortem; the tracked dispute was later reported settled after outstanding revenue was sent. Separately, issue #40 is fixed with regression coverage, while percolator-meta exposes no release, tag, GitHub deployment or canonical program ID.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "2026-06-17 first MetaDAO exploit allegation"},
+      {"type": "watch_item", "ref": "2026-06-21 percolator-meta issue #40 deployment/exposure follow-up"},
+      {"type": "catalyst", "ref": "Zinc revenue-sharing dispute and proposed stronger DAO controls"}
+    ]
+  },
+  {
+    "date": "2026-07-16T01:52:38Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "The June 21 thread confirms Bankr publicly exposed a team test-token deployment and a roughly $10K user-loss complaint; the builder acknowledged it and updated internal policy.",
+    "source": "X/Twitter core-builder response and complaint thread",
+    "url": "https://x.com/0xDeployer/status/2068496200937189424",
+    "last_scanned": "2026-07-16T01:52:38Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The watch item was previously unverified. The original thread directly confirms the public test deployment, builder acknowledgement and internal-policy update, while the loss amount remains user-reported; no public postmortem, reimbursement, contract-complete reconstruction or repeated incident-specific complaint was found through verification.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "2026-06-21 Bankr console test-token incident"},
+      {"type": "catalyst", "ref": "Console redesign/test-token trust incident"}
+    ]
+  },
+  {
     "date": "2026-07-15T23:46:45Z",
     "project": "Worldcoin / WLD / World Network",
     "slug": "16-worldcoin-wld",
