@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-07-19T02:26:24Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "A real 18.48M BNKR cooldown withdrawal succeeded, but Bankr bot then deposited 50,000 BNKR into the same vault that official docs call deprecated and closed to new deposits.",
+    "source": "Official Bankr docs/X and Base onchain transactions",
+    "url": "https://base.blockscout.com/tx/0xce2c26c3dfff167be89af02d1ec3fda056b3fbd667870de6fbffd7fb1c440a01",
+    "last_scanned": "2026-07-19T02:26:24Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The oldest queue item had confirmed deprecation mechanics but no real withdrawal proof. Base logs now show 17,911.179970634999489040 sBNKR burned and 18,484,808.878281170464871296 BNKR returned from vault 0x019f...17b7 after cooldown. A July 19 bot transaction then put 50,000 BNKR back into that same vault, contradicting the docs claim that new deposits are unsupported.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-06-22 outdated BNKR staking-contract / agent-routing risk"
+      },
+      {
+        "type": "open_question",
+        "ref": "Resolve official staking deprecation versus live agent deposits into vault 0x019f...17b7"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T02:26:24Z",
+    "project": "Kinetiq",
+    "slug": "07-kinetiq",
+    "type": "verification update",
+    "summary": "Kinetiq’s complete public fill history reproduces $367,043.92 of KNTQ buybacks through the July 1 claim and $440,473.69 through July 17.",
+    "source": "Kinetiq public backend, official docs/supply endpoint and Hyperliquid API",
+    "url": "https://rpc.km.xyz/kinetiq/buyback-fills?interval=D",
+    "last_scanned": "2026-07-19T02:26:24Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The dossier previously had only partial wallet evidence and issuer-reported totals above $365K purchased / about $120K burned. The complete 4,212-fill cache aggregates to 2,107,173.17 KNTQ and $367,043.92 through the post (+0.56% versus $365K), then 2,629,990.48 KNTQ / $440,473.69 through July 17; the official supply endpoint reports 767,385.784 KNTQ burned. kHYPE TVL was $869.9M as of July 19, +1.28% from the repo’s July 18 snapshot and below materiality.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-06-29 KNTQ buyback-wallet amount/activity claim"
+      },
+      {
+        "type": "catalyst",
+        "ref": "KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks"
+      },
+      {
+        "type": "metric",
+        "ref": "Cumulative KNTQ purchases, burns and sKNTQ distributions"
+      }
+    ]
+  },
+  {
     "date": "2026-07-16T01:52:38Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",
