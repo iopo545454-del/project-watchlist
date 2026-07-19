@@ -26,6 +26,10 @@ HISTORY_DIR = OUT_DIR / "history"
 LATEST_PATH = OUT_DIR / "latest.json"
 FETCH_LOG_PATH = OUT_DIR / "fetch-log.json"
 
+# Explicit user suppression: retain the last committed dashboard snapshot but do
+# not fetch or append new history for these projects during default collection.
+SUPPRESSED_SLUGS = {"01-pod"}
+
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -58,14 +62,14 @@ def get_path(data: Any, path: str) -> Any:
             if "[" in part:
                 key, rest = part.split("[", 1)
                 if key:
-                    cur = cur[key] if isinstance(cur, dict) else None
+                    cur = cur.get(key) if isinstance(cur, dict) else None
                 idx_s, part = rest.split("]", 1)
                 idx = int(idx_s)
                 cur = cur[idx] if isinstance(cur, list) and len(cur) > idx else None
                 if part.startswith("."):
                     part = part[1:]
             else:
-                cur = cur[part] if isinstance(cur, dict) else None
+                cur = cur.get(part) if isinstance(cur, dict) else None
                 part = ""
             if cur is None:
                 return None
@@ -365,9 +369,25 @@ def main() -> int:
 
     config = load_config()
     generated_at = now_iso()
-    slugs = args.slug or list(config.get("projects", {}).keys())
+    requested_slugs = args.slug or list(config.get("projects", {}).keys())
+    slugs = [slug for slug in requested_slugs if slug not in SUPPRESSED_SLUGS]
 
-    projects: Dict[str, dict] = {}
+    # Preserve the last committed snapshot for explicitly suppressed projects
+    # without touching their source or history. This keeps the static dashboard
+    # structurally stable while honoring the no-scan/no-update instruction.
+    preserved_projects: Dict[str, dict] = {}
+    if LATEST_PATH.exists():
+        try:
+            previous_latest = json.loads(LATEST_PATH.read_text())
+            preserved_projects = {
+                slug: copy.deepcopy(payload)
+                for slug, payload in previous_latest.get("projects", {}).items()
+                if slug in SUPPRESSED_SLUGS
+            }
+        except json.JSONDecodeError:
+            preserved_projects = {}
+
+    projects: Dict[str, dict] = dict(preserved_projects)
     histories: Dict[str, dict] = {}
     run_projects: List[dict] = []
     for slug in slugs:
@@ -410,8 +430,9 @@ def main() -> int:
     else:
         print(json.dumps({"latest": latest_payload, "fetch_log": fetch_log}, indent=2)[:20000])
 
+    collected_metric_count = sum(len(projects[slug]["metrics"]) for slug in slugs)
     print(
-        f"Collected {sum(len(p['metrics']) for p in projects.values())} metrics for {len(projects)} projects; status={overall}; write={args.write}",
+        f"Collected {collected_metric_count} metrics for {len(slugs)} projects; status={overall}; write={args.write}",
         file=sys.stderr,
     )
     return 0 if overall in {"active", "partial"} else 1

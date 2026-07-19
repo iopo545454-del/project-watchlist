@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-19T13:51:22Z",
+  "updated_at": "2026-07-19T18:53:25Z",
   "projects": {
     "01-pod": {
       "display_name": "POD / Dolphin",
@@ -118,6 +118,7 @@
       "display_name": "VIRTUAL / Virtuals Protocol",
       "ticker": "VIRTUAL",
       "methodology_file": "projects/15-virtuals.md#direct-data--kpi-methodology",
+      "summary": "The corrected DefiLlama adapter captures Virtuals' 1% USDC/USDG platform fee at Base and Robinhood tax-manager wallets as protocol revenue; wallet ownership, net retention and any VIRTUAL buyback/burn/staking route remain open.",
       "sources": [
         {
           "id": "defillama_virtuals_fees",
@@ -128,6 +129,7 @@
           "cadence": "6h",
           "status": "tested_ok",
           "source_quality": "third_party_adapter",
+          "notes": "Adapter commit 3c627810 adds the 1% USDC/USDG platform fee and Robinhood tax-manager coverage. Keep protocol revenue distinct from creator earnings, ACF raises and any future VIRTUAL holder route.",
           "materiality_rules": {
             "change_7d_pct_abs": 25
           }
@@ -144,6 +146,13 @@
           "materiality_rules": {
             "tvl_change_7d_pct_abs": 25
           }
+        }
+      ],
+      "open_adapter_work": [
+        {
+          "label": "Virtuals tax-manager split and VIRTUAL value routing",
+          "status": "needs_source_mapping",
+          "notes": "Verify canonical wallet control, development/ecosystem withdrawals, retained revenue and any buyback, burn, staking or holder-distribution path before displaying tokenholder revenue."
         }
       ]
     },
@@ -172,6 +181,77 @@
       "ticker": "NEAR",
       "methodology_file": "projects/17-near.md#direct-data--kpi-methodology",
       "sources": [
+        {
+          "id": "nearstats_intents_summary",
+          "label": "NearStats NEAR Intents source-mapped summary",
+          "metric_group": "intents",
+          "source_type": "json_api",
+          "url": "https://nearstats.org/api/near/summary",
+          "cadence": "4h",
+          "status": "tested_ok",
+          "source_quality": "third_party_aggregator_with_source_map",
+          "metrics": [
+            {
+              "id": "intents_volume_all_time",
+              "label": "Intents all-time volume",
+              "path": "intents.totals.allTimeUsd",
+              "unit": "usd",
+              "display_format": "usd",
+              "interpretation": "Cumulative routed NEAR Intents volume; not protocol revenue."
+            },
+            {
+              "id": "intents_volume_24h",
+              "label": "Intents 24h volume",
+              "path": "intents.totals.volume24hUsd",
+              "unit": "usd",
+              "display_format": "usd",
+              "interpretation": "Rolling 24-hour routed volume from the source-mapped aggregate."
+            },
+            {
+              "id": "intents_volume_7d",
+              "label": "Intents 7d volume",
+              "path": "intents.totals.volume7dUsd",
+              "unit": "usd",
+              "display_format": "usd"
+            },
+            {
+              "id": "intents_volume_30d",
+              "label": "Intents 30d volume",
+              "path": "intents.totals.volume30dUsd",
+              "unit": "usd",
+              "display_format": "usd"
+            },
+            {
+              "id": "intents_generated_fees_all_time",
+              "label": "Cumulative generated fees",
+              "path": "intents.protocolMetrics.totalGeneratedFeesUsd",
+              "unit": "usd",
+              "display_format": "usd",
+              "interpretation": "Gross generated fees sourced from revenue.near.org; not net retained protocol revenue or executed buybacks."
+            },
+            {
+              "id": "confidential_tvl",
+              "label": "Confidential TVL",
+              "path": "intents.protocolMetrics.confidentialTvlUsd",
+              "unit": "usd",
+              "display_format": "usd"
+            },
+            {
+              "id": "intents_unique_users_7d",
+              "label": "Intents unique users (7d)",
+              "path": "intents.protocolMetrics.uniqueUsers7d",
+              "unit": "count",
+              "display_format": "integer",
+              "interpretation": "NearStats seven-day distinct participant estimate; may include incentivized or repeated route behavior."
+            }
+          ],
+          "materiality_rules": {
+            "intents_volume_7d_change_pct_abs": 25,
+            "generated_fees_change_pct_abs": 10,
+            "confidential_tvl_change_pct_abs": 20,
+            "unique_users_7d_change_pct_abs": 25
+          }
+        },
         {
           "id": "defillama_near_bridge_tvl",
           "label": "DefiLlama NEAR canonical bridge TVL",
@@ -263,6 +343,78 @@
           "materiality_rules": {
             "tvl_change_7d_pct_abs": 25
           }
+        }
+      ]
+    },
+    "23-eigencloud": {
+      "display_name": "EIGEN / EigenCloud",
+      "ticker": "EIGEN",
+      "methodology_file": "projects/23-eigencloud.md#direct-data--kpi-methodology",
+      "summary": "DefiLlama exposes EigenCloud/EigenLayer supplier-side fees separately from zero protocol revenue; Darkbloom paid usage, provider revenue and EIGEN fee/burn routing still need stable aggregate adapters.",
+      "sources": [
+        {
+          "id": "defillama_eigencloud_fees",
+          "label": "DefiLlama EigenCloud fees",
+          "metric_group": "fees_revenue",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "materiality_rules": {
+            "change_7d_pct_abs": 25,
+            "change_30d_pct_abs": 30
+          }
+        },
+        {
+          "id": "defillama_eigencloud_revenue",
+          "label": "DefiLlama EigenCloud protocol revenue",
+          "metric_group": "fees_revenue",
+          "source_type": "defillama_api",
+          "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyRevenue",
+          "cadence": "6h",
+          "status": "tested_ok",
+          "source_quality": "third_party_adapter",
+          "metrics": [
+            {
+              "id": "protocol_revenue_24h",
+              "label": "Protocol revenue 24h",
+              "path": "total24h",
+              "unit": "usd",
+              "display_format": "usd"
+            },
+            {
+              "id": "protocol_revenue_7d",
+              "label": "Protocol revenue 7d",
+              "path": "total7d",
+              "unit": "usd",
+              "display_format": "usd"
+            },
+            {
+              "id": "protocol_revenue_30d",
+              "label": "Protocol revenue 30d",
+              "path": "total30d",
+              "unit": "usd",
+              "display_format": "usd"
+            }
+          ],
+          "materiality_rules": {
+            "change_7d_pct_abs": 25,
+            "change_30d_pct_abs": 30
+          },
+          "notes": "Keep protocol revenue distinct from supplier rewards, Darkbloom gross inference payments and any future EIGEN buyback/burn flow."
+        }
+      ],
+      "open_adapter_work": [
+        {
+          "label": "Darkbloom paid inference and provider economics",
+          "status": "needs_source_mapping",
+          "notes": "Integrate only after a stable aggregate endpoint exposes paid tokens/requests, unique customers, provider revenue/retention and platform fees without credentials or user data."
+        },
+        {
+          "label": "ELIP-012 fee recipient, buybacks and burns",
+          "status": "needs_source_mapping",
+          "notes": "Map canonical deployed contracts and transactions before displaying fee routing or EIGEN supply-reduction metrics."
         }
       ]
     },

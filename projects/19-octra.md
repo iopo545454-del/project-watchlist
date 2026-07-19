@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-07-14T20:16:51Z
+last_updated: 2026-07-19T10:21:04Z
 ---
 
 # OCT / Octra
@@ -73,7 +73,17 @@ last_updated: 2026-07-14T20:16:51Z
 - 2026-06-14 — Co-founder `@lambda0xE` posted a mini-roadmap after the security-work pause: migration to a new TAPE verifier next week, expanded Circle/app-launchpad functionality, faster open LLM Circle/on-chain inference, Sepolia/Octra devnet private transaction example, stealth bridge update, lite node/container expected within two weeks, and a mini-paper. Source: https://x.com/lambda0xE/status/2066228923357139270
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://messari.io/report/octra-building-the-encrypted-web | Messari / AJC research | Octra's case is a programmable encrypted-compute L1 where HFHE enables private balances, DeFi, voting and AI inference without plaintext exposure or TEEs, with OCT paying for and securing compute. | Broad outside analyst thesis; technical and commercial claims still need independent proof and live adoption. |
+| https://github.com/Kubo-cmd/hfhe-v2-solver | Kubo / independent open-source cryptanalysis | Public HFHE/PVAC v2 artifacts resisted the tested statistical, algebraic, fuzzing and wrapper-leak attacks, but these are reproducible negative results—not a formal security proof. | Most useful independent technical evidence and a clear statement of what remains unproven. |
+
+### Hermes take
+
+> **2026-07-19 —** Octra is interesting because it is attempting real encrypted computation, not bolting a privacy mixer onto another chain. It is also exactly the kind of project where clever cryptography can hide fragile implementation. The only acceptable path is boring: formal paper, reproducible builds, independent audits, a supported node and real external workloads. Until then OCT is a security research bet with a token attached.
 
 ## Catalysts
 
@@ -89,34 +99,93 @@ last_updated: 2026-07-14T20:16:51Z
 | Circle app launchpad + encrypted inference | Confirmed / devnet live | Co-founder roadmap described expanded Circles and faster open-LLM/on-chain inference; the July 11 devnet update added direct GPU compute for resource-sharing Circles, `@octrascan` observed encrypted LLM chunks onchain, and the co-founder confirmed custom ML inference is available on devnet: https://x.com/lambda0xE/status/2066228923357139270, https://x.com/lambda0xE/status/2075413539712327986, https://x.com/octrascan/status/2076055197244149815, and https://x.com/lambda0xE/status/2076056399881118168 | Devnet capability live 2026-07-11; public node/production timing unknown | Moves encrypted/custom ML inference and GPU-backed Circles from roadmap language to an observable devnet capability. | Reproducible third-party workloads could turn Octra from infrastructure narrative into a usable private-compute platform; failure to ship nodes/docs would keep it a controlled demo. | Watch the promised technical article, devnet explorer activity, workload reproducibility, AppliedLang docs, GPU/resource accounting, public node/container, fees, and external developers. |
 
 ## Team
-- TBD / needs follow-up.
+- `@lambda0xE` — co-founder/core technical voice; HFHE, VM, node and encrypted-inference roadmap.
+- `@octralex` — co-founder/team account; security disclosures and product/listing dependencies.
+- `@octrabunch` — community/team context and early-validator communications.
+- `@octrascan` — ecosystem explorer/observable devnet activity.
 
 ## Investors
-- TBD / needs follow-up.
+- No strong primary-source institutional cap-table disclosure is recorded. Do not infer investment from research coverage or community amplification.
+- Messari coverage is research context, not proof of investment or endorsement.
 
 ## Twitter/X accounts
-- TBD / needs follow-up.
+- https://x.com/octra — official account.
+- https://x.com/lambda0xE and https://x.com/octralex — co-founder/core technical sources.
+- https://x.com/octrabunch and https://x.com/octrascan — community/explorer context.
 
 ## KOLs
-- TBD / needs follow-up.
+- Kubo's public solver/research notes are the highest-signal independent technical follow-up currently tracked.
+- Prefer cryptographers, auditors and reproducible GitHub artifacts over privacy-token promotion.
 
 ## Official links
-- TBD / needs follow-up.
+- Website/docs: https://octra.org/ and https://docs.octra.org/
+- GitHub: https://github.com/octra-labs
+- Lite node: https://github.com/octra-labs/lite_node
+- HFHE challenge: https://github.com/octra-labs/hfhe-challenge
+- Official X: https://x.com/octra
 
 ## Onchain/data resources
-- TBD / needs follow-up.
+- Octrascan/devnet explorer for encrypted transactions, circles and inference observations.
+- Official repos/releases for verifier, node, client and bridge artifacts.
+- Contract/explorer evidence for OCT/wOCT bridge, supply, early-validator balances and future Hyperliquid path.
+- Public HFHE challenge artifacts and independent solver repositories for cryptanalytic evidence.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- https://docs.octra.org/ — official client, encrypted-balance and bridge documentation.
+- Official X currently carries most roadmap/security disclosures; require linked GitHub/docs artifacts for durable technical claims.
+- https://messari.io/report/octra-building-the-encrypted-web — third-party research context.
 
 ## Risks
-- TBD / needs follow-up.
+- Novel HFHE/PVAC construction lacks the comfort of long-lived standardized cryptography and complete formal/public audit evidence.
+- The June encrypted-balance verifier bug shows implementation can fail even if the underlying primitive is not broken.
+- A custom TAPE verifier, node, bridge and private-compute VM create multiple security-critical surfaces and migration dependencies.
+- Internal-use previews and controlled devnet demos can overstate permissionless production readiness.
+- Proof latency, GPU/resource accounting and encrypted inference economics may prevent practical external adoption.
+- Listing/bridge pressure can encourage premature release before security gates close.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Supported node count, uptime and version mix | Tests decentralization/production readiness | Official peer/RPC/explorer data | manual_only / public endpoint pending | Internal mini-core execution is not supported mainnet operation. |
+| Encrypted transaction/circle/inference activity | Measures actual private-compute use | Octrascan + chain events | partial / manual | Need to separate team tests from external workloads. |
+| Verifier security and proof performance | Core product correctness and usability | Releases, audits, challenge repos and benchmarks | partial | Negative cryptanalysis is not formal proof; issuer benchmarks need reproduction. |
+| OCT supply, bridge liquidity and emissions | Measures market structure | Canonical contracts/explorers | partial | First-party bridge and canonical chain/address mapping remain unresolved. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| `octra-labs/lite_node` GitHub | GitHub API/releases | tested_ok | Source, commits and release/tag state | Alert on supported tagged release, reproducible build and configs. |
+| HFHE challenge/solver repos | GitHub API/manual test artifacts | tested_ok | Public challenge samples and independent cryptanalysis | Track new attacks, formal paper and independent review. |
+| Octrascan/devnet | Public explorer | manual_only | Observable devnet transactions/workloads | Locate stable API before collector integration. |
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/octra | Official product/security/roadmap account. |
+| https://x.com/lambda0xE | Co-founder/core technical source. |
+| https://x.com/octralex | Co-founder/team security and release context. |
+| https://x.com/octrabunch | Community/team and validator context. |
+| https://x.com/octrascan | Explorer/ecosystem activity. |
+| https://docs.octra.org/ | Official documentation. |
+| https://github.com/octra-labs/lite_node | Public node preview/release source. |
+| https://github.com/octra-labs/hfhe-challenge | Official cryptanalysis challenge artifacts. |
+| https://github.com/Kubo-cmd/hfhe-v2-solver | Independent reproducible HFHE research. |
+| https://messari.io/report/octra-building-the-encrypted-web | Third-party analyst thesis. |
 
 ## Open questions
 - When will the TAPE verifier and a supported public node/container ship beyond the internal-use mini-core preview, with reproducible builds, devnet/mainnet configs, operator docs and independent review?
 - What are the canonical first-party OCT/wOCT bridge contracts, audit status, test-transfer evidence and exact prerequisites for Hyperliquid spot?
 
 ## Watch triggers
-- TBD / needs follow-up.
+- TAPE verifier, formal paper, audit or supported tagged node release.
+- New cryptanalytic result, challenge claim or security disclosure.
+- First-party bridge contracts/audits and Hyperliquid/listing prerequisites.
+- Reproducible external encrypted-compute/inference workload and fees.
+- Material OCT supply, validator, bridge-liquidity or team/governance change.
 
 ---

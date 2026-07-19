@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-09T02:37:16Z
+last_updated: 2026-07-19T05:28:35Z
 ---
 
 # EIGEN / EigenCloud
@@ -15,6 +15,12 @@ EigenCloud is the EigenLayer/Eigen Labs team's attempt to extend the original re
 
 ## Latest scan notes
 
+- 2026-07-19 — Darkbloom **published signed and notarized provider v0.7.11** at `02:53 UTC`, with a `171,910,913`-byte macOS arm64 bundle, published SHA-256 digests and the merged Gemma tool-calling fix. This advances the reliability item from merged source to a verifiable release artifact. It still does **not** prove coordinator/provider canary or production rollout, post-fix error rate, exact-cache activation or MTP activation; v0.7.10 remains eligible and the release notes keep cache routing/MTP as separate later gates. Source: https://github.com/Layr-Labs/d-inference/releases/tag/v0.7.11
+- 2026-07-19 — Darkbloom core engineer Gajesh reported roughly **`3B tokens/day`** and attached dashboard screenshots showing **`40.53B` lifetime tokens, `251` online nodes (`215` hardware-attested), `8,518` Apple Silicon GPU cores and `109 TB/s` combined memory bandwidth**; an OpenRouter screenshot showed `3.17B` tokens on July 16 across two models. This is a large usage/supply advance from the June public proxy of `600M+` tokens served, but the figures remain issuer-provided and screenshot-only: the thread links the open-source repo, not a stable public aggregate dashboard/API, and it does not disclose paid share, customers, provider revenue or EIGEN routing. Source: https://x.com/gajesh/status/2078679347062562894 and https://x.com/gajesh/status/2078679589786886174
+- 2026-07-19 — The direct-metrics refresh shows DefiLlama's EigenCloud/EigenLayer **supplier-side** fee/reward series at **`$116` over 24 hours, `$4,226` over 7 days and `$664,317` over 30 days**, while protocol revenue remains **`$0`** across all three windows. Seven-day fees remain about **`51.04%`** below the `$8,632` July 16 baseline. This is not a Darkbloom revenue series and does not prove an EigenCloud product-demand collapse, but it reinforces the unresolved gap between supplier rewards, protocol retention and EIGEN value capture. Source: https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees and local history `docs/data/direct-metrics/history/23-eigencloud.json` (as of 2026-07-19).
+- 2026-07-16 — Darkbloom merged `d-inference` PR #547, a **15,507-line Gemma 4 multi-token-prediction / speculative-decoding implementation** for its production continuous-batching engine. The PR reports M5 Max throughput gains of **16.76% at batch 1** and **22.82% at batch 4**, with byte-parity validation on M4/M5 and fail-open target-only decoding. It is default-off and the PR explicitly says no assistant artifact, registry change, release or deployment shipped, so this is a code milestone rather than a live product launch. Source: https://github.com/Layr-Labs/d-inference/pull/547
+- 2026-07-16 — An open Darkbloom PR reports **23,134 Gemma tool-template 500s**, or **42.4% of Gemma tool terminal attempts** in the measured 24-hour period, with an average `1.57` dispatches, up to `17` attempts and no eventual successes for that failure class. PR #548 proposes coordinator/provider normalization, typed `422` errors and a v0.7.11 provider release. Two follow-up commits at 05:54 UTC extend the non-provider-fault exemption through route outcomes/breaker logic and reject unanswered mid-history Gemma tool calls during turn repair, but the PR remains open with no release or production rollout. This is high-credibility production-reliability evidence and a verification item, not a resolved incident. Source: https://github.com/Layr-Labs/d-inference/pull/548
+- 2026-07-16 — Canonical ELIP verification shows **ELIP-012 is merged** and establishes an Incentives Committee plus `EmissionsController` gauge-weighting under Protocol Council limits. The actual merged specification does **not** encode the official X thread's quoted `20%` subsidized-reward fee, `100%` of net EigenCloud fees, or automatic buyback/burn route; it exposes a protocol-fee recipient and lets the committee burn or reserve unallocated emissions. Treat the fee/buyback loop as official intended policy whose contracts, parameters and transactions remain unverified—not as already-live ELIP behavior. Sources: https://github.com/eigenfoundation/ELIPs/blob/main/ELIPs/ELIP-012.md and https://x.com/eigencloud/status/2016386803062997049
 - 2026-07-09 — Eigen Labs/EigenCloud announced a Berkeley/Princeton researcher partnership to launch **open science auto-research challenges on Frontier CS**, with the challenge live globally at https://openfrontiercs.com/ and an ICML-linked paper/context. This extends the recent ecdsa.fail/open-swarm positioning into a live challenge surface, but no EIGEN fee capture, burn, ELIP-12 implementation status, or usage dashboard was disclosed. Sources: https://x.com/eigenlabs/status/2075022637772964100 and https://x.com/eigencloud/status/2075025705986035863
 - 2026-07-03 — Official EigenCloud said an EigenLabs open-swarm project at ecdsa.fail beat Google Quantum AI's private ECDSA result by 47.5% and that the open swarm is still pushing. This is a high-signal research/marketing proof point for EigenCloud/EigenLabs' verifiable/open-agent-science positioning, but not yet evidence of EIGEN fee capture. Sources: https://x.com/eigencloud/status/2072953982029529504, https://x.com/eigencloud/status/2072954128314376603 and https://www.ecdsa.fail/
 - 2026-06-22 — Added neo-cloud comparison numbers: EIGEN market cap around `$200M`; DefiLlama shows EigenCloud/EigenLayer protocol revenue as `$0` but fees/rewards of about `$981` 24h, `$145k` 7d, `$756k` 30d, and `$160.7M` all-time. DefiLlama methodology says all rewards are supplier-side and protocol revenue is zero. Source: https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees
@@ -22,34 +28,64 @@ EigenCloud is the EigenLayer/Eigen Labs team's attempt to extend the original re
 - 2026-06-21 — GitHub intake issue #3 added EigenCloud / EigenLayer to the dashboard. Initial review found the current product narrative has shifted toward verifiable cloud/agent infrastructure, with recent official X emphasizing PostAGI, open agentic science, verifiable memory/identity/proofs, EigenCompute, and EIGEN value accrual via EigenCloud fees. Source: https://github.com/iopo545454-del/project-watchlist/issues/3
 
 ## Thesis
-- EigenCloud is an adjacent but different bet from Chutes/Targon/Lium/Akash: it is an agent trust / verifiable execution / DA infrastructure thesis, not a clean GPU-capacity thesis.
-- The investment case improves materially if ELIP-12 or similar mechanisms route real EigenCloud/EigenDA/EigenCompute fees to EIGEN buybacks/burns. Today, DefiLlama shows no protocol revenue, so token value capture remains the key open question.
-- If supplier fees/rewards became token-accretive, EIGEN trades around `21.8x` annualized fees/rewards (`~$200M` mcap / `~$9.2M` annualized 30d fees). If protocol revenue stays `$0`, the valuation is primarily future-tokenomics and narrative.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://members.delphidigital.io/reports/the-verifiable-cloud-how-eigencloud-is-unlocking-cryptos-app-and-ai-era/ | Delphi Digital / institutional research | EigenCloud combines EigenDA, verifiable compute and flexible stake-backed verification so apps and agents can run cloud-scale work while proving the result. The upside is owning workloads where correctness is the product rather than replacing generic AWS compute. | Strong outside framing for EigenCloud as verifiable-cloud infrastructure; the missing bridge to EIGEN is realized fee demand and enforceable value routing. |
+| https://x.com/DecipherGlobal/status/2077320749103394886 | Decipher / Seoul National University blockchain research group | Autonomous agents that move money need deterministic execution and stake-backed re-execution, making EigenCloud a potential verification layer for the agent economy. The same approach carries re-execution overhead, subjective-outcome limits and adoption friction. | Recent independent technical thesis that supports the agent-trust narrative while naming the implementation constraints. |
+| https://research.4pillars.io/en/research/eigencloud-in-search-of-what-is-truly-ones-own | Four Pillars / crypto research | Frames EigenCloud's defensibility as verifiable services and agent infrastructure rather than restaking TVL alone, and links the case to productive services, fee generation and EIGEN value accrual. | Useful market case amplified by EigenCloud itself; verify the economic loop against contracts and transactions rather than promotional diagrams. |
+
+### Hermes take
+
+> **2026-07-16 —** EigenCloud finally has a product surface worth caring about: Darkbloom is shipping real inference infrastructure and the verification stack targets a genuine agent-economy problem. But EIGEN is still priced on a bridge that has not been proven—product usage to protocol fees to buyback/burn. The merged ELIP governs emissions; it does not by itself deliver the advertised fee loop. Watch code, paid usage and burn transactions, not restaking TVL or “verifiable cloud” slogans.
 
 ## Investment numbers / neo-cloud comps
 | Metric | Current read | Source / caveat |
 |---|---:|---|
-| Token market cap | ~$200M | CoinGecko simple price API |
-| Price | ~$0.27 | CoinGecko simple price API |
-| Protocol revenue | $0 24h / 7d / 30d / all-time | DefiLlama methodology |
-| Fees/rewards | ~$981 24h; ~$145k 7d; ~$756k 30d | Supplier-side rewards, not protocol revenue |
-| Annualized fees/rewards | ~$9.2M | 30d run-rate |
-| Market cap / annualized fees | ~21.8x | Only meaningful if fees become token-accretive |
+| Token market cap | stale — manual refresh needed | Last checked around `$200M` on 2026-06-22; no stable market-data collector is configured. |
+| Price | stale — manual refresh needed | Last checked around `$0.27` on 2026-06-22; do not use for current sizing. |
+| Protocol revenue | `$0` 24h / 7d / 30d | DefiLlama as of 2026-07-19; supplier rewards remain separate. |
+| Fees/rewards | `$116` 24h; `$4,226` 7d; `$664,317` 30d | DefiLlama as of 2026-07-19; supplier-side rewards, not protocol revenue. |
+| Annualized fees/rewards | `~$7.97M` | 30d run-rate as of 2026-07-19. |
+| Market cap / annualized fees | stale — manual refresh needed | Prior ratio used stale market cap and should not be treated as current. |
 | Public GPU fleet | Not disclosed | No H100/H200/B200 inventory found |
-| Darkbloom proxy | ~250 live providers peak; 600M+ tokens served | Public X claims; distributed/idle compute not datacenter fleet |
+| Darkbloom proxy | `40.53B` lifetime tokens; `~3B/day`; `251` nodes; `8,518` Apple GPU cores | Core-engineer screenshots on 2026-07-19; issuer-provided and not backed by a linked stable aggregate API. Distributed/idle compute, not datacenter fleet. |
 
 ## Catalysts
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
 | EigenCloud / verifiable cloud rollout | Confirmed | Official site/docs/posts: https://www.eigencloud.xyz/ and https://x.com/eigencloud/status/2026360977881743846 | Live / ongoing | Moves EigenLayer from generic restaking infrastructure into developer-facing cloud for verifiable agent workloads. | Could re-rate EIGEN if it creates fee-paying usage rather than purely subsidized security demand. | Watch docs, product launches, developer cohorts, live apps, and machine-readable usage/fee metrics. |
-| EIGEN value accrual from EigenCloud fees / ELIP-12 | Confirmed proposal / needs implementation verification | Official value-accrual post: https://x.com/eigencloud/status/2016386803062997049 | Proposal/implementation status needs current verification | Ties EigenCloud fees net of costs and part of subsidized-reward fees to EIGEN buyback/burn. | Real fee capture would make EigenCloud directly relevant to token demand/supply. | Verify ELIP status, fee dashboards, burn transactions, operating-cost treatment, and whether revenue is organic. |
-| Darkbloom / distributed inference | Early / adjacent | Recent Eigen Labs/EigenCloud posts: https://x.com/eigenlabs/status/2066591846550343745 and https://x.com/eigencloud/status/2059315711139549229 | 2026 / rolling | Adds an inference-adjacent angle, but currently not a high-end GPU fleet comp. | Could matter if Darkbloom routes real paid inference volume into EigenCloud economics. | Watch provider count, paid token volume, OpenRouter usage, supported models, and fees. |
+| ELIP-012 incentive architecture and intended EIGEN fee/value route | Confirmed / ELIP merged; fee and buyback implementation unverified | Canonical merged specification: https://github.com/eigenfoundation/ELIPs/blob/main/ELIPs/ELIP-012.md. Official value-accrual positioning: https://x.com/eigencloud/status/2016386803062997049 | ELIP merged; contract activation, fee parameters and buybacks unknown | Creates an Incentives Committee and `EmissionsController` for directed EIGEN emissions; official communications separately describe subsidized-reward and net-EigenCloud fees funding buyback/burn. | A proven fee route would make EigenCloud usage directly relevant to EIGEN supply/demand; discretionary emissions without measured fees could instead preserve subsidy dependence. | Locate deployed controller/committee/fee-recipient contracts, charter and weight changes; verify the quoted 20%/100% fee parameters, operating-cost treatment, fee receipts, buyback and burn transactions. |
+| Darkbloom distributed private inference and Gemma 4 MTP | Confirmed / public alpha; signed v0.7.11 artifact published, MTP still default-off | Darkbloom repo/README, merged MTP PR and release: https://github.com/Layr-Labs/d-inference, https://github.com/Layr-Labs/d-inference/pull/547 and https://github.com/Layr-Labs/d-inference/releases/tag/v0.7.11 | Public alpha ongoing; v0.7.11 published 2026-07-19; canary/production and MTP activation unknown | Adds OpenAI/Anthropic-compatible private inference on idle Macs; MTP could improve Gemma throughput by the PR's reported 7.7%–22.8% on selected M5 batches. | Better latency/economics can attract paid workloads and providers, but issuer screenshots do not separate paid usage and the alpha still has no proven EIGEN route. | Verify v0.7.11 canary/production rollout and post-fix errors, MTP artifact/activation, paid share of `~3B` daily tokens, provider revenue/retention, platform-fee policy and EIGEN economics. |
 
 ## Token / contract notes
 - Intake provided token address `0xec53bf9167f50cdeb3ae105f56099aaab9061f83`; treat it as the watchlist contract candidate pending official/explorer verification.
 - EIGEN is the token tied to EigenLayer's programmable trust / staking / slashing layer.
 - Official EigenCloud value-accrual posts describe a buyback/burn loop using EigenCloud fees net of operating costs plus part of subsidized-reward fees, but the scan still needs current ELIP implementation status, dashboards, and burn transaction evidence.
+- ELIP-012 is merged, but the canonical specification governs emissions allocation and a protocol-fee recipient; it does not itself encode the promotional `20%` / `100%` fee percentages or an automatic buyback/burn path.
 - Avoid treating restaking TVL alone as value capture; the important watch items are fees, burns, usage, security budgets, and emission quality.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| EigenLayer/EigenCloud fees and protocol revenue | Tests whether services create economic output and whether any value is retained by the protocol | DefiLlama fees/revenue adapters plus official fee-recipient contracts | tested_ok / attribution partial | As of 2026-07-19, supplier-side fees are `$116` 24h / `$4,226` 7d / `$664,317` 30d while protocol revenue is `$0`; the seven-day series remains about `51.04%` below the July 16 baseline. Restaking rewards are not automatically EigenCloud revenue, Darkbloom revenue or EIGEN value capture. |
+| EIGEN emissions, incentive weights and fee/burn flows | Measures dilution, productive-service incentives and actual token value routing | Eigen Foundation ELIPs, deployed `EmissionsController`, fee-recipient and burn transactions | partial | ELIP-012 is machine-readable and merged; deployed addresses, current weights, quoted fee parameters and buyback/burn transactions remain unmapped. |
+| Darkbloom paid inference demand | Distinguishes real customer usage from subsidized demos and provider supply | Darkbloom public API/usage endpoints, coordinator data and onchain/Stripe settlement summaries | partial / needs stable aggregate endpoint | Core engineer reports `40.53B` lifetime and `~3B/day`, with `3.17B` OpenRouter tokens on July 16, but only screenshots are linked; paid share, customers, provider revenue and retention remain absent. |
+| Darkbloom provider quality and throughput | Tests whether idle-Mac supply is usable, private and cost-competitive | Public attestation endpoint, signed releases, benchmark reports and provider telemetry | partial | v0.7.11 is signed/notarized and includes the tool fix; canary/production rollout and post-fix error rate remain unknown. MTP/cache routing are still separate default-off gates. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama EigenLayer fees | `https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees` | tested_ok | Supplier-side daily/weekly/monthly fees and rewards | Add a stable collector only after labels are kept distinct from protocol revenue and EigenCloud product revenue. |
+| DefiLlama EigenLayer revenue | `https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyRevenue` | tested_ok | Protocol-revenue series | Reconcile any non-zero values with fee-recipient contracts and ELIP-012 implementation. |
+| Eigen Foundation ELIPs | GitHub API / `eigenfoundation/ELIPs` | tested_ok | Canonical proposal text, status and commit history | Map ELIP-012 contracts, committee charter, incentive weights and onchain activation. |
+| Darkbloom source/releases | GitHub API / `Layr-Labs/d-inference` | tested_ok | Merged/open PRs, signed releases, code and benchmark claims | Verify v0.7.11 canary/production adoption and post-fix error rate; track MTP/cache activation and stable aggregate production telemetry. |
 
 ## Sources / Research Inputs
 | Information source | Context about the source |
@@ -63,14 +99,26 @@ EigenCloud is the EigenLayer/Eigen Labs team's attempt to extend the original re
 | https://x.com/EigenLayer | EigenLayer protocol X; monitor token/protocol/governance/restaking announcements. |
 | https://x.com/eigenlabs | Eigen Labs account; team/research/product context. |
 | https://x.com/sreeramkannan | Founder account; high-signal thesis, ELIP, value accrual, and roadmap commentary. |
+| https://x.com/gajesh | Eigen Labs / Darkbloom core engineer; technical releases, provider operations and usage claims. |
+| https://x.com/darkbloomai | Official Darkbloom account; public-alpha and model/provider updates. |
+| https://github.com/Layr-Labs/d-inference | Official Darkbloom source repository; releases, provider/coordinator implementation, production-failure reports and benchmark evidence. |
+| https://github.com/eigenfoundation/ELIPs/blob/main/ELIPs/ELIP-012.md | Canonical merged ELIP-012 specification; source of truth for what the proposal actually encodes. |
+| https://members.delphidigital.io/reports/the-verifiable-cloud-how-eigencloud-is-unlocking-cryptos-app-and-ai-era/ | Delphi Digital institutional research thesis on EigenCloud as verifiable cloud infrastructure. |
+| https://x.com/DecipherGlobal/status/2077320749103394886 | Independent technical research on EigenCloud as a verification layer for autonomous agents. |
+
+## Unverified Watch Items
+
+| Date seen | Claim | Source | Source type | Credibility | Status | Why it matters | Next check |
+|---|---|---|---|---|---|---|---|
+| 2026-07-16 | Darkbloom's PR #548 reported 23,134 Gemma tool-template 500s—42.4% of Gemma tool terminal attempts in a 24-hour production window—with retries reaching 17 attempts and zero eventual successes for that class; the fix targets coordinator deployment plus provider v0.7.11. | https://github.com/Layr-Labs/d-inference/pull/548; release prep: https://github.com/Layr-Labs/d-inference/pull/552; signed release: https://github.com/Layr-Labs/d-inference/releases/tag/v0.7.11 | Official GitHub PR / production telemetry | High | Partially supported — fix merged and signed/notarized v0.7.11 published; canary/production rollout and post-fix error rate remain unverified | This is a quantified live-product reliability failure that can waste fleet capacity, break tool-using agents and unfairly penalize healthy providers. | Verify coordinator/provider canary and broad rollout, then measure post-fix error rate, failed-user impact and provider-payout effects. |
 
 ## Open questions
-- What is the live implementation status of ELIP-12 and the EigenCloud fee buyback/burn mechanism?
+- Where are the live ELIP-012 `EmissionsController`, committee, fee-recipient and distribution-weight contracts, and do the official `20%` / `100%` fee and buyback/burn claims exist in deployed logic or transactions?
 - How much of EigenCloud usage is organic and fee-paying versus subsidized/builder-demo activity?
 - Are there public dashboards for EigenCloud fees, burns, active apps, compute jobs, attestations, or developer activity?
-- Does Darkbloom ever expose paid inference volume, provider quality, model mix, and token-level economics?
+- When does signed v0.7.11 reach coordinator/provider canary and broad production, and what are the resulting error rate, paid share of the reported `~3B` daily tokens, customer concentration, provider quality/revenue, model mix and EIGEN economics? When do MTP and exact-cache routing activate separately?
 
 ## Monitoring notes
-- Prioritize `@eigencloud`, `@EigenLayer`, `@eigenlabs`, `@sreeramkannan`, docs/blog changes, ELIP/governance items, and fee/burn dashboards.
+- Prioritize `@eigencloud`, `@EigenLayer`, `@eigenlabs`, `@sreeramkannan`, `@gajesh`, `@darkbloomai`, official GitHub repos, docs/blog changes, ELIP/governance items, and fee/burn dashboards.
 - Treat agent/post-AGI thought leadership as useful narrative context, but only log durable changes when tied to product, fees, token economics, integrations, or launches.
 - Watch for credible weak signals around exchange/listing changes, restaking security incidents, AVS failures, token unlocks, fee routing, or buyback/burn proof.

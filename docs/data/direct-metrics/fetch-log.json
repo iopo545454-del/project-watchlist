@@ -1,12 +1,11 @@
 {
   "version": 1,
   "latest_run": {
-    "run_id": "direct-data-20260719T135122Z",
-    "started_at": "2026-07-19T13:51:22Z",
-    "completed_at": "2026-07-19T13:51:35Z",
+    "run_id": "direct-data-20260719T185325Z",
+    "started_at": "2026-07-19T18:53:25Z",
+    "completed_at": "2026-07-19T18:53:38Z",
     "status": "active",
     "projects_checked": [
-      "01-pod",
       "07-kinetiq",
       "08-grass",
       "12-akt-akash",
@@ -16,24 +15,16 @@
       "17-near",
       "18-drv-derive",
       "20-bio",
+      "23-eigencloud",
       "24-chutes",
       "25-lium",
       "26-compute-horde"
     ],
-    "sources_checked": 18,
-    "sources_ok": 14,
+    "sources_checked": 20,
+    "sources_ok": 16,
     "sources_failed": 0,
     "sources_skipped": 4,
     "project_results": [
-      {
-        "slug": "01-pod",
-        "status": "active",
-        "sources_checked": 1,
-        "sources_ok": 1,
-        "sources_failed": 0,
-        "sources_skipped": 0,
-        "errors": []
-      },
       {
         "slug": "07-kinetiq",
         "status": "active",
@@ -91,8 +82,8 @@
       {
         "slug": "17-near",
         "status": "active",
-        "sources_checked": 1,
-        "sources_ok": 1,
+        "sources_checked": 2,
+        "sources_ok": 2,
         "sources_failed": 0,
         "sources_skipped": 0,
         "errors": []
@@ -111,6 +102,15 @@
         "status": "active",
         "sources_checked": 1,
         "sources_ok": 1,
+        "sources_failed": 0,
+        "sources_skipped": 0,
+        "errors": []
+      },
+      {
+        "slug": "23-eigencloud",
+        "status": "active",
+        "sources_checked": 2,
+        "sources_ok": 2,
         "sources_failed": 0,
         "sources_skipped": 0,
         "errors": []

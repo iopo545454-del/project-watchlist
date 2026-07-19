@@ -1,5 +1,262 @@
 [
   {
+    "date": "2026-07-19T18:42:44Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Virtuals reported 4,500+ Robinhood Chain agent launches and Binance Wallet Meme Rush discovery for every Virtuals agent on the chain.",
+    "source": "Official X/Twitter weekly ecosystem update",
+    "url": "https://x.com/virtuals_io/status/2078812189293764849",
+    "last_scanned": "2026-07-19T18:42:44Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Issuer-reported Robinhood launches advanced at least 114% from the July 14 snapshot of 2,103 to 4,500+, while Binance Wallet added a new discovery surface. The same post repeats the already logged $150M+ volume/$2.3M+ builder context and adds no dashboard, concentration data, protocol-fee change or VIRTUAL buyback/burn/staking route; individual agent-token buybacks are not protocol value capture.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Direct Robinhood Chain agent trading on Virtuals"
+      },
+      {
+        "type": "metric",
+        "ref": "Robinhood Chain volume, launches, builder earnings and external market discovery"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce launches/flow and measure Binance Wallet conversion, concentration and VIRTUAL value routing"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T10:21:04Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Virtuals core reported $150M+ Robinhood Chain volume and $2.38M in founder/builder/creator fees, adding $50M of volume in under three days.",
+    "source": "X/Twitter core contributor and DefiLlama direct metrics",
+    "url": "https://x.com/0xTP91/status/2078771376274731057",
+    "last_scanned": "2026-07-19T10:21:04Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Issuer-reported cumulative volume advanced from $100M+ on July 16 to $150M+ on July 19, while creator-side fees advanced from the prior $1.32M builder snapshot to $2.38M. The post provides no dashboard or onchain reconciliation; the separate seven-day DefiLlama protocol-revenue series rose 9.25% from $867,466 to $947,729, below its 25% materiality rule.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Direct Robinhood Chain agent trading on Virtuals"
+      },
+      {
+        "type": "metric",
+        "ref": "Robinhood Chain volume, launches, creator fees and protocol revenue"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce volume and fee routing; measure concentration, organic repeats and VIRTUAL value capture"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T10:21:04Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "initial review",
+    "summary": "Completed Bankr's missing durable review with sourced market theses, a dated Hermes take, team/source map, risks and launchpad/token-routing KPI methodology.",
+    "source": "Official Bankr docs/X, Base onchain evidence and sourced ecosystem theses",
+    "url": "projects/04-bankr.html",
+    "last_scanned": "2026-07-19T10:21:04Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The canonical dossier still had placeholder thesis, team, investor, source, data, risk and watch-trigger sections despite initial_review_done=true. This closes those gaps while preserving the unresolved public-dashboard, protocol-split, deprecated-vault and BNKR value-routing checks.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Bankr as agent financial operating system; BNKR value capture unproven"},
+      {"type": "metric", "ref": "Launchpad volume, creator fees, protocol share and BNKR routing"},
+      {"type": "open_question", "ref": "Reproduce Robinhood launchpad activity and resolve deprecated-vault deposits"}
+    ]
+  },
+  {
+    "date": "2026-07-19T10:21:04Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "initial review",
+    "summary": "Completed Bittensor's missing durable review with sourced market theses, a dated Hermes take, team/source map, risks and subnet/emissions KPI methodology.",
+    "source": "Official OpenTensor docs/GitHub/X and sourced market research",
+    "url": "projects/11-tao-bittensor.html",
+    "last_scanned": "2026-07-19T10:21:04Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The canonical dossier still had placeholder thesis, team, investor, data, source, risk and watch-trigger sections despite initial_review_done=true. The review separates subnet output from durable external demand and keeps the unresolved Yanez/Bitsec vulnerability and SN54 economics checks explicit.",
+    "relates_to": [
+      {"type": "thesis", "ref": "TAO as market-priced decentralized intelligence allocation"},
+      {"type": "metric", "ref": "Subnet emissions, external revenue, usage and validator/miner concentration"},
+      {"type": "open_question", "ref": "Identify the Yanez/Bitsec vulnerability and verify SN54 clients/value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-19T10:21:04Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "initial review",
+    "summary": "Completed World's missing durable review with sourced market theses, a dated Hermes take, team/source map, risks and identity/chain/WLD KPI methodology.",
+    "source": "Official World docs/GitHub/X and sourced market research",
+    "url": "projects/16-worldcoin-wld.html",
+    "last_scanned": "2026-07-19T10:21:04Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The canonical dossier still had placeholder thesis, team, investor, source, data, risk and watch-trigger sections despite initial_review_done=true. The review frames verified-human distribution separately from WLD value capture and preserves WIP-1008 implementation, SP1 production and regulatory checks.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Proof-of-human distribution moat versus WLD value capture"},
+      {"type": "catalyst", "ref": "WIP-1008 WLD-staked verifier specification and implementation"},
+      {"type": "metric", "ref": "Verified humans, World Chain usage, Mini App activity and WLD staking/rewards"}
+    ]
+  },
+  {
+    "date": "2026-07-19T10:21:04Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "initial review",
+    "summary": "Completed Octra's missing durable review with sourced technical theses, a dated Hermes take, team/source map, risks and encrypted-compute KPI methodology.",
+    "source": "Official Octra docs/GitHub/X, Messari and independent cryptanalysis",
+    "url": "projects/19-octra.html",
+    "last_scanned": "2026-07-19T10:21:04Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The canonical dossier still had placeholder thesis, team, investor, source, data, risk and watch-trigger sections despite initial_review_done=true. The review distinguishes public negative cryptanalysis from a formal security proof and keeps TAPE, supported-node, bridge and external-workload gates open.",
+    "relates_to": [
+      {"type": "thesis", "ref": "Programmable encrypted-compute L1; implementation proof still required"},
+      {"type": "catalyst", "ref": "TAPE verifier and supported reproducible node release"},
+      {"type": "open_question", "ref": "Verify audits, bridge contracts and external encrypted workloads"}
+    ]
+  },
+  {
+    "date": "2026-07-19T05:28:35Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "verification update",
+    "summary": "Darkbloom published signed/notarized provider v0.7.11 with the Gemma tool-calling fix; canary, production rollout and post-fix error rate remain unverified.",
+    "source": "Official Darkbloom GitHub release",
+    "url": "https://github.com/Layr-Labs/d-inference/releases/tag/v0.7.11",
+    "last_scanned": "2026-07-19T05:58:46Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "At the 01:22 UTC scan, PR #552 had prepared v0.7.11 source but explicitly created no tag or artifact. A signed/notarized 171,910,913-byte arm64 bundle with published SHA-256 digests shipped at 02:53 UTC; operational deployment and error remediation are still not proven.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-07-16 Darkbloom Gemma tool-template failure and PR #548 remediation"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Darkbloom distributed private inference and Gemma 4 MTP"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify v0.7.11 canary/production rollout and post-fix error rate"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T05:28:35Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "official update",
+    "summary": "Darkbloom core engineering reported ~3B tokens/day, 40.53B lifetime tokens and 251 online Apple-Silicon nodes; the metrics are issuer-provided screenshots without a stable aggregate API.",
+    "source": "X/Twitter core engineer screenshots and official open-source repo",
+    "url": "https://x.com/gajesh/status/2078679347062562894",
+    "last_scanned": "2026-07-19T05:58:46Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior June proxy was ~250 peak providers and 600M+ tokens served. The new screenshots show 40.53B lifetime tokens, 2.54B in 24h, 251 online nodes, 215 hardware-attested nodes, 8,518 GPU cores and 109 TB/s memory bandwidth; paid share, customers, provider revenue and EIGEN routing remain undisclosed.",
+    "relates_to": [
+      {
+        "type": "metric",
+        "ref": "Darkbloom lifetime/daily tokens, nodes, attested nodes, GPU cores and memory bandwidth"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Darkbloom distributed private inference and Gemma 4 MTP"
+      },
+      {
+        "type": "open_question",
+        "ref": "Separate paid usage, customer concentration, provider economics and EIGEN value routing"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T05:28:35Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "Infinex Confidential launched on NEAR Confidential Intents with per-user confidential identities and private-shard routing; entry/exit visibility and permissioned operators remain trust boundaries.",
+    "source": "Official Infinex launch and NEAR X/Twitter",
+    "url": "https://x.com/infinex/status/2078348687449977312",
+    "last_scanned": "2026-07-19T05:58:46Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier already tracked Confidential Intents GA and a first Aurora API deployment. Infinex adds a named live multichain wallet/trading front end with documented deposit, hold/swap and withdrawal behavior, but no usage, TVL, fee or NEAR value-routing figures.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Confidential Intents general availability and partner deployments"
+      },
+      {
+        "type": "open_question",
+        "ref": "Measure Infinex/Aurora/EURe confidential usage, operators, trust assumptions and entry/exit leakage"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T05:28:35Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "scan",
+    "summary": "A tested source-mapped API shows $23.537B all-time NEAR Intents volume, $52.452M over 24h and $38.262M cumulative gross generated fees.",
+    "source": "NearStats API backed by NEAR Intents Explorer, DefiLlama and revenue.near.org",
+    "url": "https://nearstats.org/api/near/summary",
+    "last_scanned": "2026-07-19T05:58:46Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "All-time volume is about $477M (2.1%) above the $23.06B official-dashboard read logged July 14. This run adds a repeatable collector for volume, gross fees, confidential TVL and users; $38.262M is gross generated fees, not net retained revenue or executed buybacks.",
+    "relates_to": [
+      {
+        "type": "metric",
+        "ref": "NEAR Intents volume, generated fees, confidential TVL and users"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Revenue dashboard, fee capture and buyback/issuance-offset path"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reconcile gross generated fees, net retained revenue, buybacks and emissions"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T05:28:35Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "initial review",
+    "summary": "Completed NEAR’s durable review with sourced market theses, a dated Hermes take, team/source map, risks, catalysts and tested Intents KPI methodology.",
+    "source": "Official NEAR/Intents sources, revenue dashboard, NearStats API and sourced market theses",
+    "url": "projects/17-near.html",
+    "last_scanned": "2026-07-19T05:58:46Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The index marked initial_review_done=true, but the canonical dossier still contained TBD thesis, team, investor, source, data, docs, risk and watch-trigger sections and no Direct Data/KPI Methodology. The review closes those gaps and adds @near_intents plus a tested source-mapped collector.",
+    "relates_to": [
+      {
+        "type": "thesis",
+        "ref": "NEAR Intents revenue and confidential agent-settlement thesis"
+      },
+      {
+        "type": "metric",
+        "ref": "Intents volume, gross/net revenue, buybacks, emissions and confidential usage"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Confidential Intents partner deployment and value-capture path"
+      }
+    ]
+  },
+  {
     "date": "2026-07-19T02:26:24Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
@@ -50,6 +307,289 @@
     ]
   },
   {
+    "date": "2026-07-19T01:01:44Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "A corrected onchain adapter now captures Virtuals' live 1% USDC/USDG platform fee, showing $867,466 of seven-day protocol revenue; no direct VIRTUAL holder route is proven.",
+    "source": "DefiLlama open-source onchain adapter and API",
+    "url": "https://github.com/DefiLlama/dimension-adapters/commit/3c6278108abd9c769c7e2c41ed62330547bd337a",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "novelty": "update",
+    "delta": "The local pre-fix July 16 snapshot showed only $31 / $315 / $95,878 over 24h/7d/30d. The corrected series shows $154,750 / $867,466 / $1,459,378, primarily because the adapter added the new 1% Base/Robinhood stablecoin fee and fixed tax-manager coverage—not because organic fees jumped 2,752x in three days.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "1% stablecoin platform fee on Base and Robinhood"
+      },
+      {
+        "type": "metric",
+        "ref": "Virtuals protocol fees/revenue"
+      },
+      {
+        "type": "thesis",
+        "ref": "Protocol revenue exists; direct VIRTUAL value capture remains unproven"
+      },
+      {
+        "type": "open_question",
+        "ref": "Map tax-manager ownership, split, use of funds and any VIRTUAL buyback/burn/staking route"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T01:01:44Z",
+    "project": "Targon — Bittensor Subnet 4",
+    "slug": "10-targon",
+    "type": "catalyst update",
+    "summary": "TargonOS 0.1.0 shipped as a signed provider OS, while OpenTensor reported 16,000+ confidential workloads and Targon's Tower page opened a priced hardware waitlist.",
+    "source": "Official Targon docs/release host, product page and OpenTensor X/Twitter",
+    "url": "https://docs.targon.com/providers/miner/installing-targonos",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "novelty": "update",
+    "delta": "The prior entry only scheduled a July 16 event with no defined artifact. A 4,200,054,784-byte TargonOS 0.1.0 ISO is now public and replaces manual host-OS/TVM setup; the official Tower page lists a $57,500 8x5090 configuration but says it is KYC-tier only, while the 16,000-workload and $83-to-$5,000 ARPU figures remain issuer-reported without a dashboard.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "TargonOS signed provider operating system"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Targon Tower at-home confidential-compute supply"
+      },
+      {
+        "type": "metric",
+        "ref": "Confidential workloads, average revenue per user and Tower units/utilization"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify TargonOS adoption/audit/rollout and reproduce workload/revenue metrics"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T01:01:44Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "verification update",
+    "summary": "Darkbloom merged the Gemma tool-calling fix and prepared v0.7.11 source, but no tag, release, canary or production rollout has closed the incident.",
+    "source": "Official Darkbloom GitHub pull requests",
+    "url": "https://github.com/Layr-Labs/d-inference/pull/552",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "novelty": "update",
+    "delta": "PR #548 advanced from an open fix branch to merged code, and PR #552 synchronized provider/coordinator v0.7.11 with mixed-version and rollout checks. The release-prep PR explicitly made no tag, release, deployment or production mutation; v0.7.10 remains eligible and MTP/exact-cache routing stay off.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-07-16 Darkbloom Gemma tool-template failure and PR #548 remediation"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify signed v0.7.11 publication, canary/production rollout and post-fix error rate"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T01:01:44Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "scan",
+    "summary": "EigenCloud/EigenLayer seven-day supplier fees fell 50.93% to $4,236 while protocol revenue remained $0.",
+    "source": "DefiLlama API direct-metrics collector",
+    "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "novelty": "update",
+    "delta": "Seven-day supplier fees declined from $8,632 at the July 16 baseline to $4,236 (-50.93%), tripping the configured 25% rule. Twenty-four-hour fees fell from $3,024 to $126 (-95.83%), 30-day fees fell 13.91% to $664,327, and protocol revenue remained zero; this series is not Darkbloom product revenue.",
+    "relates_to": [
+      {
+        "type": "metric",
+        "ref": "EigenCloud/EigenLayer supplier-side fees and protocol revenue"
+      },
+      {
+        "type": "catalyst",
+        "ref": "ELIP-012 incentive architecture and intended EIGEN fee/value route"
+      },
+      {
+        "type": "open_question",
+        "ref": "Separate supplier rewards, EigenCloud product demand, protocol retention and EIGEN value capture"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-19T01:01:44Z",
+    "project": "GRASS",
+    "slug": "08-grass",
+    "type": "initial review",
+    "summary": "Completed Grass' missing durable review with Hack VC/Delphi theses, a dated Hermes take, token/value-capture framing, tested KPI methodology and an official source map.",
+    "source": "Official Grass business/docs sources, Hack VC and Delphi Digital/ Ventures",
+    "url": "projects/08-grass.html",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "novelty": "new",
+    "delta": "The index marked initial_review_done=true, but the canonical dossier was still draft with a TBD thesis/docs section, no sourced investor-thesis table, no Hermes take, no token notes, no standard source table and no Direct Data/KPI Methodology. The review closes those gaps and preserves the July 22 Stage 2 and later-summer LCR checks.",
+    "relates_to": [
+      {
+        "type": "thesis",
+        "ref": "Opt-in residential data network with Foundation-owned revenue and unresolved GRASS value routing"
+      },
+      {
+        "type": "metric",
+        "ref": "Training-data revenue, used nodes, Stage 2 USDC claims, treasury purchases and LCR usage"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Stage 2 USDC claims and Live Context Retrieval products"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T08:41:06Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "docs/blog update",
+    "summary": "AEON's 60-day changelog details Sigstore/Rekor run attestations, per-skill secrets, a headless CLI and fixes for two high-severity workflow vulnerabilities.",
+    "source": "Official X/Twitter, blog, GitHub commits and security advisories",
+    "url": "https://www.aeon.fun/blog/60-days-of-aeon",
+    "last_scanned": "2026-07-16T08:41:06Z",
+    "novelty": "update",
+    "delta": "The dossier already tracked v0.1 and generic proof-of-execution support. The new official retrospective adds the concrete Sigstore/Rekor verification path, least-privilege secretcurl boundary, in-run send/headless-CLI architecture and fixed GHSA-h9v2-7m42-33m3 plus GHSA-cqvj-gr78-24mc; it discloses no new users, fees, buybacks or $aeon value routing.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "aeon v0.1 stable release, signed runs and execution hardening"
+      },
+      {
+        "type": "open_question",
+        "ref": "Measure attested/verified runs, downstream-fork patching, active users, fees and $aeon value capture"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T04:06:48Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "unverified watch item",
+    "summary": "Darkbloom's PR #548 reported 23,134 Gemma tool-template 500s—42.4% of terminal attempts; the fix has merged and v0.7.11 source is prepared, but remediation is not deployed.",
+    "source": "Official GitHub pull request / production telemetry",
+    "url": "https://github.com/Layr-Labs/d-inference/pull/548",
+    "last_scanned": "2026-07-19T01:22:31Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The dossier previously tracked Darkbloom provider/token throughput but no quantified production reliability failure. This class retried an average 1.57 times, reached 17 attempts, penalized healthy providers and had zero eventual successes. PR #548 has since merged and PR #552 prepared v0.7.11 source, but no tag, signed release, canary, production rollout or post-fix error rate exists.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-07-16 Darkbloom Gemma tool-template failure and PR #548 remediation"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify signed v0.7.11 publication, canary/production rollout and post-fix error rate"
+      },
+      {
+        "type": "metric",
+        "ref": "Darkbloom Gemma tool terminal attempts, 500s, retry count and eventual-success rate"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T04:06:48Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "catalyst update",
+    "summary": "Darkbloom merged a default-off Gemma 4 MTP implementation reporting 16.76%–22.82% M5 throughput gains at selected batches; no artifact, release or deployment shipped.",
+    "source": "Official GitHub pull request",
+    "url": "https://github.com/Layr-Labs/d-inference/pull/547",
+    "last_scanned": "2026-07-16T04:06:48Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "Repo history framed Darkbloom as distributed private inference with provider/token claims but no tracked speculative-decoding milestone. PR #547 adds 15,507 lines, M4/M5 parity evidence and selected M5 throughput deltas of +16.76% at batch 1, +7.73% at batch 2 and +22.82% at batch 4; the PR explicitly remains default-off, unreleased and undeployed.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Darkbloom distributed private inference and Gemma 4 MTP"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify assistant artifact, tagged release, deployment, live throughput, paid usage and EIGEN economics"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T04:06:48Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "thesis update",
+    "summary": "Expanded EigenCloud's durable dossier with sourced Delphi/Decipher/Four Pillars theses, a dated Hermes take, merged ELIP-012 verification, Darkbloom KPI methodology and corrected X sources.",
+    "source": "Official Eigen Foundation/EigenCloud GitHub, blog and X/Twitter plus independent research",
+    "url": "projects/23-eigencloud.html",
+    "last_scanned": "2026-07-16T04:06:48Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The June intake review established the project page, but the canonical dossier still lacked an investor-thesis table, dated Hermes take and Direct Data/KPI Methodology. This update closes those gaps, narrows what ELIP-012 actually encodes and replaces stale @gajeshnaik with active @gajesh plus @darkbloomai.",
+    "relates_to": [
+      {
+        "type": "thesis",
+        "ref": "EigenCloud as verifiable cloud and agent-trust infrastructure"
+      },
+      {
+        "type": "catalyst",
+        "ref": "ELIP-012 incentive architecture and intended EIGEN fee/value route"
+      },
+      {
+        "type": "metric",
+        "ref": "EigenCloud fees/revenue, EIGEN emissions/burns and Darkbloom paid inference/provider quality"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T04:06:48Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Virtuals reported $100M+ cumulative Robinhood Chain volume, at least 28.7% above July 14, while DefiLlama's separate seven-day fee series fell another 29.35% to $284.",
+    "source": "X/Twitter core contributor and DefiLlama direct-metrics history",
+    "url": "https://x.com/umeirzz/status/2077601561157697936",
+    "last_scanned": "2026-07-16T04:06:48Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Issuer-reported Robinhood volume rose by at least $22.3M from $77.7M on July 14 to $100M+ on July 16, but the new post gives no exact total, launch/earnings update, dashboard or concentration data. The separately defined DefiLlama series moved from $402 to $284 over seven days (-29.35%) and $127,116 to $95,847 over 30 days (-24.60%), widening the accounting gap.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Direct Robinhood Chain agent trading on Virtuals"
+      },
+      {
+        "type": "metric",
+        "ref": "Robinhood Chain cumulative volume and DefiLlama Virtuals protocol fees"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce volume/fees onchain and separate builder earnings, protocol revenue and VIRTUAL value routing"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-16T04:06:48Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "unverified watch item",
+    "summary": "GitLawb ecosystem agent @gitlawbmerc says external strangers funded several ACP jobs in USDC; job IDs are specific, but no escrow, amount or completion evidence is linked.",
+    "source": "X/Twitter related ecosystem account",
+    "url": "https://x.com/gitlawbmerc/status/2077602867163152560",
+    "last_scanned": "2026-07-16T04:06:48Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The repo previously tracked a $12 USDC security-service offer with no completed-job evidence. The new posts name jobs 69751, 69761 and 69800 and explicitly call them non-self-funded external work, but omit buyers, amounts, ACP pages, escrow transactions, delivered code and payment release.",
+    "relates_to": [
+      {
+        "type": "watch_item",
+        "ref": "2026-07-16 GitLawb Mercenary external ACP job claims"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify ACP jobs, escrow/payment release, deliverables, repeat buyers and OpenGateway/GITLAWB involvement"
+      }
+    ]
+  },
+  {
     "date": "2026-07-16T01:52:38Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",
@@ -62,9 +602,18 @@
     "novelty": "update",
     "delta": "The dossier previously left a vague security-exploit allegation unresolved. The original thread resolves to the Zinc/ZKFG take-private and revenue-routing dispute, with no affected program, exploit transaction, drain, patch or security postmortem; the tracked dispute was later reported settled after outstanding revenue was sent. Separately, issue #40 is fixed with regression coverage, while percolator-meta exposes no release, tag, GitHub deployment or canonical program ID.",
     "relates_to": [
-      {"type": "watch_item", "ref": "2026-06-17 first MetaDAO exploit allegation"},
-      {"type": "watch_item", "ref": "2026-06-21 percolator-meta issue #40 deployment/exposure follow-up"},
-      {"type": "catalyst", "ref": "Zinc revenue-sharing dispute and proposed stronger DAO controls"}
+      {
+        "type": "watch_item",
+        "ref": "2026-06-17 first MetaDAO exploit allegation"
+      },
+      {
+        "type": "watch_item",
+        "ref": "2026-06-21 percolator-meta issue #40 deployment/exposure follow-up"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Zinc revenue-sharing dispute and proposed stronger DAO controls"
+      }
     ]
   },
   {
@@ -80,8 +629,14 @@
     "novelty": "update",
     "delta": "The watch item was previously unverified. The original thread directly confirms the public test deployment, builder acknowledgement and internal-policy update, while the loss amount remains user-reported; no public postmortem, reimbursement, contract-complete reconstruction or repeated incident-specific complaint was found through verification.",
     "relates_to": [
-      {"type": "watch_item", "ref": "2026-06-21 Bankr console test-token incident"},
-      {"type": "catalyst", "ref": "Console redesign/test-token trust incident"}
+      {
+        "type": "watch_item",
+        "ref": "2026-06-21 Bankr console test-token incident"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Console redesign/test-token trust incident"
+      }
     ]
   },
   {
@@ -97,9 +652,18 @@
     "importance": "medium",
     "delta": "WIP-1008 advanced from one approval/open PR to a five-commit merged specification with 271 documentation lines defining StakeManager, committees, BLS attestations, a two-thirds-stake certificate, attested RPC head and flblk v3 gossip. The PR explicitly labels the change low-risk and documentation-only, so WLD staking, contracts, rewards, slashing and activation remain unimplemented.",
     "relates_to": [
-      {"type": "catalyst", "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
-      {"type": "watch_item", "ref": "2026-07-13 WIP-1008 WLD-staked validator overlay"},
-      {"type": "open_question", "ref": "Verify WIP-1008 implementation, parameters, audits, governance and activation"}
+      {
+        "type": "catalyst",
+        "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"
+      },
+      {
+        "type": "watch_item",
+        "ref": "2026-07-13 WIP-1008 WLD-staked validator overlay"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify WIP-1008 implementation, parameters, audits, governance and activation"
+      }
     ]
   },
   {
@@ -115,9 +679,18 @@
     "importance": "medium",
     "delta": "The dossier already tracked Orion-100B as an announced distributed-training proof point, but not a speed ratio, equivalent-quality claim or next-release signal. The new 65% figure and convergence statement are founder-reported; no cost breakdown, checkpoint, independent reproduction or firm release date was provided, and the newest repository tag remains v4.6.1 from June 26.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Project Orion next-stage model release"},
-      {"type": "catalyst", "ref": "Orion-100B distributed pretraining proof point"},
-      {"type": "open_question", "ref": "Reproduce Orion-100B model quality, speed and total-cost claims"}
+      {
+        "type": "catalyst",
+        "ref": "Project Orion next-stage model release"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Orion-100B distributed pretraining proof point"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce Orion-100B model quality, speed and total-cost claims"
+      }
     ]
   },
   {
@@ -133,8 +706,14 @@
     "importance": "low",
     "delta": "The index marked initial_review_done=true, but the canonical dossier still had a TBD thesis and docs section, no investor-thesis table, no Hermes take, no token/economic framing, no standard source table and no Direct Data/KPI Methodology. The review closes those gaps and adds @macrocrux plus nine official/high-signal sources to the tracked profile.",
     "relates_to": [
-      {"type": "thesis", "ref": "Liquid distributed training on heterogeneous commodity hardware"},
-      {"type": "metric", "ref": "Paid training demand, model quality/speed/cost, active devices, rewards and SN9 economics"}
+      {
+        "type": "thesis",
+        "ref": "Liquid distributed training on heterogeneous commodity hardware"
+      },
+      {
+        "type": "metric",
+        "ref": "Paid training demand, model quality/speed/cost, active devices, rewards and SN9 economics"
+      }
     ]
   },
   {
@@ -150,8 +729,14 @@
     "importance": "medium",
     "delta": "The repo previously tracked Agora's completed WAN pretraining run. Stoa extends the evidence into distributed agentic-RL rollouts, using DPPO to drop about 0.3% of divergent tokens and PULSE to shrink 9 GB weight transfers to 82 MB; each Mac still holds the full model, the trainer remains centralized and no contributor economics changed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Stoa distributed RL post-training on consumer Macs"},
-      {"type": "open_question", "ref": "Reproduce PaperSearchQA result and inspect code, trainer dependence and contributor accounting"}
+      {
+        "type": "catalyst",
+        "ref": "Stoa distributed RL post-training on consumer Macs"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce PaperSearchQA result and inspect code, trainer dependence and contributor accounting"
+      }
     ]
   },
   {
@@ -167,8 +752,14 @@
     "importance": "medium",
     "delta": "The dossier already tracked broad GPU-collateral and CALIBER enforcement claims. The new issuer thread adds specific intended credit protections and cites $13B+ of reviewed deal flow across 200+ borrowers, but provides no named borrower, policy, filing, default/recovery result, realized yield or new CHIP value route.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Large GPU-backed financing facilities and underwriting controls"},
-      {"type": "open_question", "ref": "Validate SPV/UCC/DACA documents, insurance, defaults, recoveries and CHIP routing"}
+      {
+        "type": "catalyst",
+        "ref": "Large GPU-backed financing facilities and underwriting controls"
+      },
+      {
+        "type": "open_question",
+        "ref": "Validate SPV/UCC/DACA documents, insurance, defaults, recoveries and CHIP routing"
+      }
     ]
   },
   {
@@ -184,8 +775,14 @@
     "importance": "medium",
     "delta": "NEAR previously reported 17 open-source NEAR AI integrations. Corbits adds a named live AI-operations deployment combining TEE attestations, IronClaw boundaries and audit logs, but no users, requests, transactions, fees or NEAR value impact were disclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "NEAR AI private inference and developer integrations"},
-      {"type": "open_question", "ref": "Measure Corbits users, inference requests, paid token usage, fees and NEAR activity"}
+      {
+        "type": "catalyst",
+        "ref": "NEAR AI private inference and developer integrations"
+      },
+      {
+        "type": "open_question",
+        "ref": "Measure Corbits users, inference requests, paid token usage, fees and NEAR activity"
+      }
     ]
   },
   {
@@ -201,9 +798,18 @@
     "importance": "low",
     "delta": "Versus #74, token count increased only 0.98% from 217,996 DRV, while implied notional rose 61.56% from about $21,800 to $35,220 because average price increased from $0.10 to $0.16. Committed direct metrics show seven-day fees at $86,603, up 22.09% from the $70,935 trough but still 37.05% below July 6; the 35% allocation did not change.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Protocol-fee buyback program"},
-      {"type": "metric", "ref": "Weekly DRV bought, implied notional, cumulative buybacks and seven-day fees"},
-      {"type": "open_question", "ref": "Map buyback transactions and reconcile weekly execution with protocol-fee windows"}
+      {
+        "type": "catalyst",
+        "ref": "Protocol-fee buyback program"
+      },
+      {
+        "type": "metric",
+        "ref": "Weekly DRV bought, implied notional, cumulative buybacks and seven-day fees"
+      },
+      {
+        "type": "open_question",
+        "ref": "Map buyback transactions and reconcile weekly execution with protocol-fee windows"
+      }
     ]
   },
   {
@@ -219,8 +825,14 @@
     "importance": "medium",
     "delta": "The dossier already tracked one Credible pre-commit amount and individual raise terms, but not the broader allocation design. The new analysis says fixed institutional targets, time-weighted public allocations and visible caps replace hidden-cap/last-minute overcommit incentives; official MetaDAO docs, contracts, weighting formulas and public-versus-institutional allocation limits remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "More ownership-coin launches on MetaDAO"},
-      {"type": "open_question", "ref": "Verify official pre-commit, early-deposit boost and visible-cap rules"}
+      {
+        "type": "catalyst",
+        "ref": "More ownership-coin launches on MetaDAO"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify official pre-commit, early-deposit boost and visible-cap rules"
+      }
     ]
   },
   {
@@ -236,8 +848,14 @@
     "importance": "low",
     "delta": "The dossier previously lacked a canonical Compute Horde code/dashboard source. The official README now narrows that gap to a named network-health monitor and says A6000 is supported with A100 next; the main repo's newest returned commit is dated 2026-04-16 and no public organic-job count, revenue, inventory utilization or machine-readable demand endpoint was found.",
     "relates_to": [
-      {"type": "open_question", "ref": "Locate public organic-jobs, inventory, utilization and revenue data beyond the canonical SN12 health monitor"},
-      {"type": "metric", "ref": "Active paid jobs, supported GPU inventory, utilization and revenue"}
+      {
+        "type": "open_question",
+        "ref": "Locate public organic-jobs, inventory, utilization and revenue data beyond the canonical SN12 health monitor"
+      },
+      {
+        "type": "metric",
+        "ref": "Active paid jobs, supported GPU inventory, utilization and revenue"
+      }
     ]
   },
   {
@@ -276,9 +894,18 @@
     "importance": "medium",
     "delta": "The dossier previously carried only a related-account claim of $320K in buybacks with no wallet. The recovered core-contributor post supplies the buyback wallet, sKNTQ reward-drip destination and dashboard and raises issuer-reported cumulative purchases above $365K plus roughly $120K burned; the live wallet is visible through Hyperliquid's public API, but its aggregate purchase/burn history was not fully reproduced.",
     "relates_to": [
-      {"type": "catalyst", "ref": "KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks"},
-      {"type": "watch_item", "ref": "KNTQ buyback-wallet activity and revenue funding"},
-      {"type": "metric", "ref": "Cumulative KNTQ purchases, burns and sKNTQ distributions"}
+      {
+        "type": "catalyst",
+        "ref": "KIP-3 Launch live / HIP-3 exchange-as-a-service buybacks"
+      },
+      {
+        "type": "watch_item",
+        "ref": "KNTQ buyback-wallet activity and revenue funding"
+      },
+      {
+        "type": "metric",
+        "ref": "Cumulative KNTQ purchases, burns and sKNTQ distributions"
+      }
     ]
   },
   {
@@ -294,8 +921,14 @@
     "importance": "low",
     "delta": "The index marked initial_review_done=true, but the canonical dossier still had seven TBD sections, no investor-thesis table, no Hermes take, no source table and no Direct Data/KPI Methodology. The review closes those gaps and defines buyback, revenue, supply and Markets/Launch metrics with explicit tested_ok, partial, manual_only and blocked states.",
     "relates_to": [
-      {"type": "thesis", "ref": "KNTQ revenue-funded buybacks and sKNTQ value accrual"},
-      {"type": "metric", "ref": "kHYPE TVL, protocol revenue, KNTQ buybacks/burns/distributions and supply"}
+      {
+        "type": "thesis",
+        "ref": "KNTQ revenue-funded buybacks and sKNTQ value accrual"
+      },
+      {
+        "type": "metric",
+        "ref": "kHYPE TVL, protocol revenue, KNTQ buybacks/burns/distributions and supply"
+      }
     ]
   },
   {
@@ -311,8 +944,14 @@
     "importance": "medium",
     "delta": "The dossier previously had only a founder-sourced CHIP thesis. Galaxy adds the first independent long-form underwriting case for USD.AI's composable GPU-credit loop and its failure modes, but does not resolve issuer TVL/APY, loan performance or CHIP NIM/fee routing.",
     "relates_to": [
-      {"type": "thesis", "ref": "GPU-backed private credit as an onchain inference-capital market"},
-      {"type": "open_question", "ref": "Verify distressed recovery, duration/liquidity risk, loan performance and explicit CHIP value routing"}
+      {
+        "type": "thesis",
+        "ref": "GPU-backed private credit as an onchain inference-capital market"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify distressed recovery, duration/liquidity risk, loan performance and explicit CHIP value routing"
+      }
     ]
   },
   {
@@ -328,8 +967,14 @@
     "importance": "medium",
     "delta": "The dossier already tracked staking, buy/burn and outside heavy-user commentary. Galaxy adds independent long-form analysis of transferable DIEM ownership plus quantified under-utilization and liability risks, with a disclosed Galaxy financial interest in DIEM/VVV.",
     "relates_to": [
-      {"type": "thesis", "ref": "VVV capital asset and DIEM tokenized-inference ownership loop"},
-      {"type": "metric", "ref": "DIEM weekly inference utilization and VVV burn-versus-emissions"}
+      {
+        "type": "thesis",
+        "ref": "VVV capital asset and DIEM tokenized-inference ownership loop"
+      },
+      {
+        "type": "metric",
+        "ref": "DIEM weekly inference utilization and VVV burn-versus-emissions"
+      }
     ]
   },
   {
@@ -345,8 +990,14 @@
     "importance": "medium",
     "delta": "The dossier had official/founder Proof-of-Logits theses but no substantial independent investment case. Galaxy independently articulates the paid-job/emissions flywheel and its failure mode: small trust-minimized demand and no published mechanism forcing inference usage into token demand.",
     "relates_to": [
-      {"type": "thesis", "ref": "Paid useful-PoW jobs and low-overhead verified inference"},
-      {"type": "open_question", "ref": "Verify organic paid demand, final tokenomics and whether token demand can outrun miner sell pressure"}
+      {
+        "type": "thesis",
+        "ref": "Paid useful-PoW jobs and low-overhead verified inference"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify organic paid demand, final tokenomics and whether token demand can outrun miner sell pressure"
+      }
     ]
   },
   {
@@ -362,9 +1013,18 @@
     "importance": "medium",
     "delta": "Seven-day fees declined from $94,746 at the prior material snapshot to $70,935 (-25.13%), tripping the configured rule again and extending the drop from $137,575 on July 6 to -48.44%. Thirty-day fees slipped only 1.55% to $503,292 while TVL rose 3.90% to $114.2M; cause and adapter coverage remain unresolved.",
     "relates_to": [
-      {"type": "metric", "ref": "Derive seven-day fees"},
-      {"type": "catalyst", "ref": "Protocol-fee buyback program"},
-      {"type": "open_question", "ref": "Explain fee contraction and verify organic options activity, adapter coverage and buyback follow-through"}
+      {
+        "type": "metric",
+        "ref": "Derive seven-day fees"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Protocol-fee buyback program"
+      },
+      {
+        "type": "open_question",
+        "ref": "Explain fee contraction and verify organic options activity, adapter coverage and buyback follow-through"
+      }
     ]
   },
   {
@@ -380,8 +1040,14 @@
     "importance": "low",
     "delta": "The repo tracked Targon's rentals, serverless, TEE/Blackwell support and MinosVM but had no TargonOS reference. This is the first public mention found and gives a dated 2026-07-16 21:00 UTC event, without code, download, docs, supported hardware, usage or SN4 value-routing details.",
     "relates_to": [
-      {"type": "catalyst", "ref": "TargonOS launch at Novelty Search E081"},
-      {"type": "open_question", "ref": "Define the TargonOS artifact, release status, supported hardware, usage and SN4 economic effect"}
+      {
+        "type": "catalyst",
+        "ref": "TargonOS launch at Novelty Search E081"
+      },
+      {
+        "type": "open_question",
+        "ref": "Define the TargonOS artifact, release status, supported hardware, usage and SN4 economic effect"
+      }
     ]
   },
   {
@@ -397,9 +1063,18 @@
     "importance": "medium",
     "delta": "Impressions are roughly 3.4x the June 'approaching 100K' snapshot and the post adds first campaign-count, click and viewer-payout totals. Advertiser spend, CPM/CPC, repeat usage, paid-versus-promotional mix and GITLAWB-versus-USDC funding remain undisclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "$GITLAWB / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths"},
-      {"type": "metric", "ref": "GitLawb Ads impressions, clicks, live campaigns and viewer payouts"},
-      {"type": "open_question", "ref": "Verify advertiser spend, unit economics, retention and token/credit routing"}
+      {
+        "type": "catalyst",
+        "ref": "$GITLAWB / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths"
+      },
+      {
+        "type": "metric",
+        "ref": "GitLawb Ads impressions, clicks, live campaigns and viewer payouts"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify advertiser spend, unit economics, retention and token/credit routing"
+      }
     ]
   },
   {
@@ -429,9 +1104,18 @@
     "importance": "medium",
     "delta": "Repo history tracked live Robinhood launch/execution mechanics but no scoped launchpad throughput. The new Bankr/Doppler snapshot adds $49,306,619 of volume, $612,920 paid to creators, 11,265 launches and 1,901 in 24 hours; creators reportedly keep 95% of the 0.7% swap fee. The public dashboard/query, concentration, retention, Bankr fee share and BNKR/Club routing remain unavailable.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Robinhood Chain launchpad traction and creator-fee loop"},
-      {"type": "metric", "ref": "Bankr Robinhood DEX volume, creator fees and launches"},
-      {"type": "open_question", "ref": "Reproduce dashboard metrics and verify concentration, retention, Bankr fees and BNKR/Club routing"}
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain launchpad traction and creator-fee loop"
+      },
+      {
+        "type": "metric",
+        "ref": "Bankr Robinhood DEX volume, creator fees and launches"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce dashboard metrics and verify concentration, retention, Bankr fees and BNKR/Club routing"
+      }
     ]
   },
   {
@@ -447,8 +1131,14 @@
     "importance": "medium",
     "delta": "Prior repo history recorded SN54 adversarial biometric testing and two integrated clients but no external code-review outcome. The disclosure shows a release-blocking Bitsec finding was addressed before an unspecified release and monitoring continues, while the affected component, dates, technical severity, production/client/fund exposure and remediation evidence remain unknown.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Yanez / SN54 Bitsec pre-release security review"},
-      {"type": "open_question", "ref": "Identify the vulnerability, affected release/component, audit/patch and production or user exposure"}
+      {
+        "type": "catalyst",
+        "ref": "Yanez / SN54 Bitsec pre-release security review"
+      },
+      {
+        "type": "open_question",
+        "ref": "Identify the vulnerability, affected release/component, audit/patch and production or user exposure"
+      }
     ]
   },
   {
@@ -464,8 +1154,14 @@
     "importance": "medium",
     "delta": "The repo already tracked the $100 balance/one-swap floor, 1:1 conversion condition and $70M confidential-TVL snapshot trigger. The new reminder adds that the balance must be 'sustained' and activity above the floor shapes allocation, but gives no duration/formula, does not say the $70M trigger fired and provides no exclusions or claim timing.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"},
-      {"type": "open_question", "ref": "Define sustained balance, allocation, exclusions, snapshot trigger, conversion and claims"}
+      {
+        "type": "catalyst",
+        "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"
+      },
+      {
+        "type": "open_question",
+        "ref": "Define sustained balance, allocation, exclusions, snapshot trigger, conversion and claims"
+      }
     ]
   },
   {
@@ -481,8 +1177,14 @@
     "importance": "medium",
     "delta": "The dossier previously tracked the node as an upcoming security-gated prerequisite for bridge/listing work. Public mini-core code and local execution now exist, but the README says internal use only, no release is tagged and mainnet configs, TAPE integration, audits, build docs and external operators remain absent, so this is not a production node launch.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Node release"},
-      {"type": "open_question", "ref": "Verify TAPE, supported public release, reproducible builds, configs, operators and independent review"}
+      {
+        "type": "catalyst",
+        "ref": "Node release"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify TAPE, supported public release, reproducible builds, configs, operators and independent review"
+      }
     ]
   },
   {
@@ -498,9 +1200,18 @@
     "importance": "medium",
     "delta": "The prior repo snapshot only had about $350K of creator fees. The new issuer report breaks $77.7M into $16.9M bonding-curve and $60.8M post-graduation volume and builder earnings into $894K ACF plus about $426K trading fees; VEX alone contributed $30M, and the figures remain unreconciled with DefiLlama's sharply lower protocol-fee series or any VIRTUAL value route.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
-      {"type": "metric", "ref": "Robinhood Chain volume, launches and builder earnings"},
-      {"type": "open_question", "ref": "Reproduce issuer metrics onchain and separate builder earnings from protocol/VIRTUAL economics"}
+      {
+        "type": "catalyst",
+        "ref": "Direct Robinhood Chain agent trading on Virtuals"
+      },
+      {
+        "type": "metric",
+        "ref": "Robinhood Chain volume, launches and builder earnings"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reproduce issuer metrics onchain and separate builder earnings from protocol/VIRTUAL economics"
+      }
     ]
   },
   {
@@ -516,9 +1227,18 @@
     "importance": "medium",
     "delta": "The Lighthouse report previously cited $398M TVL and the repo tracked 7.76% 30-day APY. The new issuer claim returns above $400M and above 8%, but supplies no methodology; a same-run machine-readable cross-check totals about $361.2M only when DefiLlama's separate TVL and borrowed categories are combined, and APY remains unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Lighthouse report and current TVL/yield claims"},
-      {"type": "metric", "ref": "USDAI TVL, borrowed capital and sUSDai APY"},
-      {"type": "open_question", "ref": "Reconcile TVL methodology and verify APY, deployment, NIM and loan performance"}
+      {
+        "type": "catalyst",
+        "ref": "Lighthouse report and current TVL/yield claims"
+      },
+      {
+        "type": "metric",
+        "ref": "USDAI TVL, borrowed capital and sUSDai APY"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reconcile TVL methodology and verify APY, deployment, NIM and loan performance"
+      }
     ]
   },
   {
@@ -534,9 +1254,18 @@
     "importance": "low",
     "delta": "The prior entry established Blockagent as live but disclosed no usage. The new snapshot provides early adoption counts and says MCP is forthcoming, while also showing only 1,420,740 blocks indexed versus a 9,522,512 chain head despite a '98s behind' label; fees, external consumers and GITLAWB/OpenGateway economics remain absent.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Blockagent AI explorer and planned MCP data access for Robinhood Chain"},
-      {"type": "metric", "ref": "Blockagent questions, conversations, visitors and index coverage"},
-      {"type": "open_question", "ref": "Verify index completeness, MCP access, retention, security and value routing"}
+      {
+        "type": "catalyst",
+        "ref": "Blockagent AI explorer and planned MCP data access for Robinhood Chain"
+      },
+      {
+        "type": "metric",
+        "ref": "Blockagent questions, conversations, visitors and index coverage"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify index completeness, MCP access, retention, security and value routing"
+      }
     ]
   },
   {
@@ -552,8 +1281,14 @@
     "importance": "medium",
     "delta": "Repo history tracked NEAR's own Intents/private-inference stack but no x402 Foundation participation. The announcement adds an industry-standards partnership with major payment/cloud members, yet names no NEAR-specific code, spec, pilot, deliverable, timeline, usage or token route.",
     "relates_to": [
-      {"type": "catalyst", "ref": "NEAR Foundation participation in x402 Foundation"},
-      {"type": "open_question", "ref": "Verify x402 specs, NEAR contributions, pilots, usage, fees and value routing"}
+      {
+        "type": "catalyst",
+        "ref": "NEAR Foundation participation in x402 Foundation"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify x402 specs, NEAR contributions, pilots, usage, fees and value routing"
+      }
     ]
   },
   {
@@ -569,8 +1304,14 @@
     "importance": "high",
     "delta": "The prior entry confirmed scheduled Korean market access but not execution. Upbit now exposes live KRW/BTC/USDT tickers and order books and Bithumb exposes live KRW trading; initial KRW turnover was strong, while Upbit BTC/USDT quotes were thin/wide and deposit networks, withdrawals and post-listing persistence remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Upbit and Bithumb Korean spot-market listings"},
-      {"type": "open_question", "ref": "Verify exchange deposit networks/contracts, withdrawals, BTC/USDT depth and post-listing liquidity persistence"}
+      {
+        "type": "catalyst",
+        "ref": "Upbit and Bithumb Korean spot-market listings"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify exchange deposit networks/contracts, withdrawals, BTC/USDT depth and post-listing liquidity persistence"
+      }
     ]
   },
   {
@@ -586,8 +1327,14 @@
     "importance": "medium",
     "delta": "The prior entry tracked a 2,114-line open implementation. PR #400 is now merged after reporting a successful two-node A100/InfiniBand E2E run, while nested-SDL, RoCE and multi-group E2E checks remain open and no provider release, production capacity, paid workload, spend or BME effect is established.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"},
-      {"type": "open_question", "ref": "Verify provider release, production interconnect capacity, remaining E2E tests, paid multi-node jobs, spend and BME burns"}
+      {
+        "type": "catalyst",
+        "ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify provider release, production interconnect capacity, remaining E2E tests, paid multi-node jobs, spend and BME burns"
+      }
     ]
   },
   {
@@ -603,8 +1350,14 @@
     "importance": "medium",
     "delta": "Repo history tracked manual legal enforcement, generic stronger-control ideas and META-039, but no concrete MetaDAO-wide mechanism sketch. The founder also reported $30M treasury value secured, $31M launched-project market cap, a final $1M Laso raise and Credible becoming 10x oversubscribed; buyback x/y/z parameters, NAV oracle, committee mandate, contracts, audits and proposals remain unresolved.",
     "relates_to": [
-      {"type": "catalyst", "ref": "MetaDAO 2.0 purpose-specific proposals, automated NAV bands and elected oversight committee"},
-      {"type": "open_question", "ref": "Verify MetaDAO 2.0 contracts, parameters, oracle, audits, committee mandate and formal approvals"}
+      {
+        "type": "catalyst",
+        "ref": "MetaDAO 2.0 purpose-specific proposals, automated NAV bands and elected oversight committee"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify MetaDAO 2.0 contracts, parameters, oracle, audits, committee mandate and formal approvals"
+      }
     ]
   },
   {
@@ -620,8 +1373,14 @@
     "importance": "medium",
     "delta": "The prior run logged WIP-1008 as an unreviewed open proposal. It now has one approval and ready-for-review status, but remains open/unmerged with no Foundation endorsement, stake/reward/slashing parameters, implementation, audits, governance result or activation date.",
     "relates_to": [
-      {"type": "catalyst", "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
-      {"type": "watch_item", "ref": "WIP-1008 WLD-staked validator overlay"}
+      {
+        "type": "catalyst",
+        "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"
+      },
+      {
+        "type": "watch_item",
+        "ref": "WIP-1008 WLD-staked validator overlay"
+      }
     ]
   },
   {
@@ -637,9 +1396,18 @@
     "importance": "medium",
     "delta": "Repo history tracked OpenLabs, BioAgents, PeptAI wet-lab work and ARTAN's $1M seed but no ecosystem exit. VitaDAO and former CrossBridge CEO Michael Torres corroborate a Lilly exit around $300M; no Lilly release or consideration breakdown was found, the verifiable VitaDAO link runs through Torres's separate VitaRNA/ARTAN work, and no BIO value route or methodology supports the aggregate $2B/$50M claims.",
     "relates_to": [
-      {"type": "catalyst", "ref": "CrossBridge Bio / Lilly exit as community-science validation"},
-      {"type": "watch_item", "ref": "CrossBridge grant lineage, acquisition terms and ecosystem metric methodology"},
-      {"type": "thesis", "ref": "Community-funded science can produce commercial biotech outcomes"}
+      {
+        "type": "catalyst",
+        "ref": "CrossBridge Bio / Lilly exit as community-science validation"
+      },
+      {
+        "type": "watch_item",
+        "ref": "CrossBridge grant lineage, acquisition terms and ecosystem metric methodology"
+      },
+      {
+        "type": "thesis",
+        "ref": "Community-funded science can produce commercial biotech outcomes"
+      }
     ]
   },
   {
@@ -655,8 +1423,14 @@
     "importance": "low",
     "delta": "The index marked initial_review_done=true, but the canonical dossier still contained nine TBD sections and no Direct Data/KPI Methodology. This review removes those gaps, adds two linked investor cases and defines tested DefiLlama TVL versus still-unmapped veBIO, sale, reward and value-routing KPIs.",
     "relates_to": [
-      {"type": "thesis", "ref": "Maelstrom DeSci/BIO investment cases and 2026-07-14 Hermes take"},
-      {"type": "metric", "ref": "BIO/veBIO locks, Ignition Sales, rewards, research milestones and protocol value routing"}
+      {
+        "type": "thesis",
+        "ref": "Maelstrom DeSci/BIO investment cases and 2026-07-14 Hermes take"
+      },
+      {
+        "type": "metric",
+        "ref": "BIO/veBIO locks, Ignition Sales, rewards, research milestones and protocol value routing"
+      }
     ]
   },
   {
@@ -672,8 +1446,14 @@
     "importance": "high",
     "delta": "Repo history previously had DRV-USDC spot on Hyperliquid but no tracked Korean CEX or KRW market. Upbit scheduled three markets for 17:00 KST and Bithumb scheduled DRV/KRW for 20:00 KST; supported deposit networks, withdrawals, opening depth and sustained volume remain unverified.",
     "relates_to": [
-      {"type": "catalyst","ref": "Upbit and Bithumb Korean spot-market listings"},
-      {"type": "open_question","ref": "Verify market opening, deposit networks, withdrawals, order-book depth and sustained volume"}
+      {
+        "type": "catalyst",
+        "ref": "Upbit and Bithumb Korean spot-market listings"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify market opening, deposit networks, withdrawals, order-book depth and sustained volume"
+      }
     ]
   },
   {
@@ -689,8 +1469,14 @@
     "importance": "medium",
     "delta": "The dossier previously treated vault staking as current and left the canonical v2 contract/docs unresolved. Official docs show the product has been withdrawal-only since April 8, and the core builder reiterated that users should withdraw; live agent routing and successful withdrawals remain operational checks.",
     "relates_to": [
-      {"type": "watch_item","ref": "Outdated BNKR staking-contract / agent-routing risk"},
-      {"type": "open_question","ref": "Verify successful withdrawal routing from the deprecated BNKR staking vault"}
+      {
+        "type": "watch_item",
+        "ref": "Outdated BNKR staking-contract / agent-routing risk"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify successful withdrawal routing from the deprecated BNKR staking vault"
+      }
     ]
   },
   {
@@ -706,9 +1492,18 @@
     "importance": "medium",
     "delta": "Repo history already tracked $22B+ Intents volume and the three capture mechanisms, but not the 7-day/30-day acceleration or a same-run dashboard cross-check. The dashboard showed about $4.49M cumulative monthly net revenue and revenue still below emissions, so buyback-funded net deflation remains a path rather than achieved status.",
     "relates_to": [
-      {"type": "catalyst","ref": "Revenue dashboard, fee capture and buyback/issuance-offset path"},
-      {"type": "metric","ref": "Intents volume, gross fees, net revenue and capture rate"},
-      {"type": "open_question","ref": "Reconcile dashboard revenue/emissions with buyback execution and organic volume"}
+      {
+        "type": "catalyst",
+        "ref": "Revenue dashboard, fee capture and buyback/issuance-offset path"
+      },
+      {
+        "type": "metric",
+        "ref": "Intents volume, gross fees, net revenue and capture rate"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reconcile dashboard revenue/emissions with buyback execution and organic volume"
+      }
     ]
   },
   {
@@ -724,8 +1519,14 @@
     "importance": "low",
     "delta": "Advanced order types and agent-side cross-chain routing were already live; the new change brings order fills and cross-chain swaps into the trading UI. No usage, routed volume, route-quality benchmark, protocol fee or BNKR value-capture data was disclosed.",
     "relates_to": [
-      {"type": "catalyst","ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"},
-      {"type": "metric","ref": "Trading UI users, routed volume, route quality and protocol fees"}
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"
+      },
+      {
+        "type": "metric",
+        "ref": "Trading UI users, routed volume, route quality and protocol fees"
+      }
     ]
   },
   {
@@ -741,9 +1542,18 @@
     "importance": "medium",
     "delta": "Collector history shows seven-day fees at $94,746 versus $137,575 on 2026-07-06 (-31.13%), extending the prior run's below-threshold $107,533 / -21.84% reading. Thirty-day fees are $511,193 versus $543,380 (-5.92%) and TVL is $109.9M versus $115.7M (-5.08%), so the move is concentrated in the seven-day fee window; the adapter does not identify whether options volume, incentives, data coverage or market mix caused it.",
     "relates_to": [
-      {"type": "metric","ref": "Derive seven-day protocol fees"},
-      {"type": "catalyst","ref": "Protocol-fee buyback program"},
-      {"type": "open_question","ref": "Verify organic options fees and follow-through from HYPE, Strategy Builder, Hyperliquid and ORIA"}
+      {
+        "type": "metric",
+        "ref": "Derive seven-day protocol fees"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Protocol-fee buyback program"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify organic options fees and follow-through from HYPE, Strategy Builder, Hyperliquid and ORIA"
+      }
     ]
   },
   {
@@ -759,9 +1569,18 @@
     "importance": "medium",
     "delta": "The prior dossier only confirmed generic CHIP staking/governance over fees and the staking module, while repeatedly flagging explicit value routing as unresolved. This is the first tracked team statement tying a likely time-duration mechanism to NIM access and float reduction; parameters, governance approval, eligible NIM, current staked share and implementation remain unverified.",
     "relates_to": [
-      {"type": "catalyst","ref": "Duration-based sCHIP / NIM access"},
-      {"type": "watch_item","ref": "Co-founder hint that duration/locking may gate NIM access"},
-      {"type": "open_question","ref": "Verify lock schedule, weighting, NIM allocation, staking participation, governance and contracts"}
+      {
+        "type": "catalyst",
+        "ref": "Duration-based sCHIP / NIM access"
+      },
+      {
+        "type": "watch_item",
+        "ref": "Co-founder hint that duration/locking may gate NIM access"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify lock schedule, weighting, NIM allocation, staking participation, governance and contracts"
+      }
     ]
   },
   {
@@ -777,8 +1596,14 @@
     "importance": "medium",
     "delta": "The repo previously tracked HypEVM/stealth-bridge intent and a generic rule that listings require the node. The co-founder now identifies the prior Nova vote as unaffiliated, says Nova failed to follow through, commits Octra to a first-party wrapped-token/native bridge, and keeps Hyperliquid spot as an eventual goal gated by security/network work; contracts, audits, date and approval remain absent.",
     "relates_to": [
-      {"type": "catalyst","ref": "HypEVM integration, first-party wrapped-token/native bridge and eventual Hyperliquid spot"},
-      {"type": "open_question","ref": "Verify TAPE/node releases, bridge contracts/audits/test transfers and Hyperliquid prerequisites"}
+      {
+        "type": "catalyst",
+        "ref": "HypEVM integration, first-party wrapped-token/native bridge and eventual Hyperliquid spot"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify TAPE/node releases, bridge contracts/audits/test transfers and Hyperliquid prerequisites"
+      }
     ]
   },
   {
@@ -794,8 +1619,14 @@
     "importance": "medium",
     "delta": "Repo history already tracked LorisTools dashboard visibility and tentative institutional/RFQ rails. This is the first tracked external intelligence-engine integration consuming Derive BTC/ETH/HYPE data, but the local direct-metrics history still shows seven-day fees at $107,533, down 21.84% from $137,575 seven days earlier and below the 25% alert threshold; no incremental ORIA-driven volume or fee effect is yet observable.",
     "relates_to": [
-      {"type": "catalyst","ref": "Institutional/RFQ / external options-data rails"},
-      {"type": "metric","ref": "Options volume, OI and fees attributable to external integrations"}
+      {
+        "type": "catalyst",
+        "ref": "Institutional/RFQ / external options-data rails"
+      },
+      {
+        "type": "metric",
+        "ref": "Options volume, OI and fees attributable to external integrations"
+      }
     ]
   },
   {
@@ -811,8 +1642,14 @@
     "importance": "medium",
     "delta": "The dossier previously recorded generic Proof-of-Logits receipts, pinned weights and low-overhead verification claims. The team now describes a concrete live-testnet check—re-derivation of one selected output position against a model fingerprint—while sampling/randomness, false-acceptance bounds, adversarial robustness, validator independence, overhead and audits remain unverified.",
     "relates_to": [
-      {"type": "catalyst","ref": "Proof of Logits technical validation"},
-      {"type": "open_question","ref": "Verify sampling, fingerprint security, false-acceptance bounds and validator independence"}
+      {
+        "type": "catalyst",
+        "ref": "Proof of Logits technical validation"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify sampling, fingerprint security, false-acceptance bounds and validator independence"
+      }
     ]
   },
   {
@@ -828,9 +1665,18 @@
     "importance": "medium",
     "delta": "The dossier previously tracked WLD unlocks and World Chain proof-system hardening but no protocol-native WLD staking or validator revenue route. WIP-1008 would add up to 128 active validators, four-validator subblock committees, a two-thirds-stake attestation quorum and slashable faults; minimum stake, reward amounts/funding, contracts, audits, governance and activation remain TBD in an open draft.",
     "relates_to": [
-      {"type": "catalyst","ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
-      {"type": "watch_item","ref": "Draft WIP-1008 WLD-staked validator overlay"},
-      {"type": "open_question","ref": "Verify WLD stake/reward/slashing parameters, implementation, audits and activation path"}
+      {
+        "type": "catalyst",
+        "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"
+      },
+      {
+        "type": "watch_item",
+        "ref": "Draft WIP-1008 WLD-staked validator overlay"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify WLD stake/reward/slashing parameters, implementation, audits and activation path"
+      }
     ]
   },
   {
@@ -846,8 +1692,14 @@
     "importance": "medium",
     "delta": "The dossier already tracked single-node high-end GPU supply, Homenode and a confidential-compute roadmap but no multi-node interconnect implementation. The 2,114-line provider change adds one-HCA-per-GPU accounting, InfiniBand/RoCE placement pins, cross-node anti-affinity and NCCL setup; merge, provider capacity, paid jobs, spend and AKT/BME impact are unverified.",
     "relates_to": [
-      {"type": "catalyst","ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"},
-      {"type": "open_question","ref": "Verify paid multi-node workloads, provider capacity, spend and BME burns"}
+      {
+        "type": "catalyst",
+        "ref": "Multi-node GPU RDMA / InfiniBand / RoCE support"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify paid multi-node workloads, provider capacity, spend and BME burns"
+      }
     ]
   },
   {
@@ -863,8 +1715,14 @@
     "importance": "medium",
     "delta": "The repo previously tracked a July 13 start and $2.315M of pre-launch soft commitments toward a $4M max. Official MetaDAO now confirms the raise is live for four days; Ownership FM adds a $2M minimum, $9M valuation cap, roughly 44% ICO / 13% AMM / 20% team / 23% prior-investor initial allocation, and Credible CEO-reported $250K average monthly gross revenue. Final accepted capital, settlement, platform fees and META value routing remain unresolved.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Credible curated raise on MetaDAO"},
-      {"type": "open_question", "ref": "Verify final raise size, settlement, platform fees and META value accrual"}
+      {
+        "type": "catalyst",
+        "ref": "Credible curated raise on MetaDAO"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify final raise size, settlement, platform fees and META value accrual"
+      }
     ]
   },
   {
@@ -880,8 +1738,14 @@
     "importance": "medium",
     "delta": "The dossier previously tracked an in-development open-source Robinhood-first scanner. Blockagent is now live at blockagent.gitlawb.com, but no source repository, complete index, usage, fees, customers, security model or GITLAWB/OpenGateway value route was disclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Blockagent AI explorer for Robinhood Chain"},
-      {"type": "open_question", "ref": "Verify Blockagent index completeness, usage, fees, security and GITLAWB/OpenGateway economics"}
+      {
+        "type": "catalyst",
+        "ref": "Blockagent AI explorer for Robinhood Chain"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify Blockagent index completeness, usage, fees, security and GITLAWB/OpenGateway economics"
+      }
     ]
   },
   {
@@ -897,8 +1761,14 @@
     "importance": "medium",
     "delta": "The dossier previously tracked nearcore 2.13.0-rc.1 and Protocol Upgrade 2.13 on testnet with no dated mainnet governance step. The release is now shipped and v86 voting has a July 20 start; activation date, vote result, validator adoption, production shard splits and wallet support remain unknown.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
-      {"type": "open_question", "ref": "Verify Protocol v86 result, activation and validator/client adoption"}
+      {
+        "type": "catalyst",
+        "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify Protocol v86 result, activation and validator/client adoption"
+      }
     ]
   },
   {
@@ -914,9 +1784,18 @@
     "importance": "medium",
     "delta": "The repo already tracked July 7 Confidential Intents GA, agent support and EURe on near.com. This adds the first named live partner API deployment plus a dedicated confidential EURe flow; no new usage, fee, TVL, revenue or NEAR-token impact was disclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"},
-      {"type": "catalyst", "ref": "NEAR Intents as cross-chain / agent-market money rail"},
-      {"type": "metric", "ref": "Confidential Intents volume, TVL and revenue"}
+      {
+        "type": "catalyst",
+        "ref": "Confidential Intents general availability, partner deployment, TVL milestone, and NEAR@3.33 incentive"
+      },
+      {
+        "type": "catalyst",
+        "ref": "NEAR Intents as cross-chain / agent-market money rail"
+      },
+      {
+        "type": "metric",
+        "ref": "Confidential Intents volume, TVL and revenue"
+      }
     ]
   },
   {
@@ -932,8 +1811,14 @@
     "importance": "medium",
     "delta": "Local collector history shows 7-day fees at $402 versus $6,335 on 2026-07-06 (-93.7%) and 30-day fees at $127,116 versus $201,020 (-36.8%), crossing the configured 25% materiality rule. DefiLlama defines the series as protocol revenue across legacy Base/Ethereum/Solana transfers, tax-manager outflows and 1% of agent trading volume. It is not equivalent to separately reported Robinhood creator-team taxes and does not establish VIRTUAL tokenholder value capture.",
     "relates_to": [
-      {"type": "metric", "ref": "DefiLlama Virtuals protocol fees"},
-      {"type": "open_question", "ref": "Reconcile DefiLlama fee coverage with official/onchain protocol revenue and creator trading-tax accounting"}
+      {
+        "type": "metric",
+        "ref": "DefiLlama Virtuals protocol fees"
+      },
+      {
+        "type": "open_question",
+        "ref": "Reconcile DefiLlama fee coverage with official/onchain protocol revenue and creator trading-tax accounting"
+      }
     ]
   },
   {
@@ -949,8 +1834,14 @@
     "importance": "low",
     "delta": "The repo previously tracked ACP/APP standards and broad agent-commerce integrations without public paid-job execution evidence. Official showcase PRs now add Agent Email OTP, BlueAgent and Sherwood packages; Sherwood supplies two buyer-completed jobs totaling 1.58 USDC of budgets and public execution hashes, but no aggregate job count, repeat demand, protocol fee or VIRTUAL value route.",
     "relates_to": [
-      {"type": "catalyst", "ref": "External ACP workflows and paid-job proof"},
-      {"type": "open_question", "ref": "Verify production ACP adoption, aggregate jobs/escrow volume, protocol fees and VIRTUAL value routing"}
+      {
+        "type": "catalyst",
+        "ref": "External ACP workflows and paid-job proof"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify production ACP adoption, aggregate jobs/escrow volume, protocol fees and VIRTUAL value routing"
+      }
     ]
   },
   {
@@ -966,8 +1857,14 @@
     "importance": "medium",
     "delta": "Prior repo history tracked World Chain mainnet, identity/app distribution and token supply catalysts but no multi-proof implementation milestone. PR #842 adds an SP1 validity verifier; PR #845 removes a path that accepted arbitrary boot info without checking range proofs, while stating the path was unused by the Nitro worker. Production deployment and audit coverage remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "World Chain multi-proof validity verifier and Nitro hardening"},
-      {"type": "open_question", "ref": "Verify deployed versions, audit coverage and whether the removed Nitro path was ever production-callable"}
+      {
+        "type": "catalyst",
+        "ref": "World Chain multi-proof validity verifier and Nitro hardening"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify deployed versions, audit coverage and whether the removed Nitro path was ever production-callable"
+      }
     ]
   },
   {
@@ -983,9 +1880,18 @@
     "importance": "medium",
     "delta": "The dossier previously tracked direct Robinhood Chain agent buying, 50,000 agents launched, a launch-team guide, and ACF mechanics without realized dollar figures. This is the first issuer-reported creator-fee total and quantified ACF case in repo history; no dashboard, onchain proof, exact measurement window, concentration, protocol share, or VIRTUAL value routing was supplied. The direct collector separately showed roughly $127.1K of 30-day DefiLlama protocol fees at the 2026-07-13 refresh, down about 13% from the prior snapshot, but that series is not equivalent to creator-team trading-tax fees.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
-      {"type": "catalyst", "ref": "ACF funding mechanism for agent projects"},
-      {"type": "metric", "ref": "Creator-team trading-tax fees and ACF capital raised"}
+      {
+        "type": "catalyst",
+        "ref": "Direct Robinhood Chain agent trading on Virtuals"
+      },
+      {
+        "type": "catalyst",
+        "ref": "ACF funding mechanism for agent projects"
+      },
+      {
+        "type": "metric",
+        "ref": "Creator-team trading-tax fees and ACF capital raised"
+      }
     ]
   },
   {
@@ -1001,8 +1907,14 @@
     "importance": "low",
     "delta": "The repo previously tracked Pluralis's July ICML Protocol Learning workshop and ongoing research/code distribution. This adds a second top-conference workshop signal for the same research agenda; acceptance is team-reported and no official NeurIPS page, date, speaker list, or CFP URL was linked, with no product, usage, model-economics, or token-rights change.",
     "relates_to": [
-      {"type": "catalyst", "ref": "NeurIPS 2026 open/collaborative/decentralized foundation-model training workshop"},
-      {"type": "catalyst", "ref": "Protocol Learning research/code releases"}
+      {
+        "type": "catalyst",
+        "ref": "NeurIPS 2026 open/collaborative/decentralized foundation-model training workshop"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Protocol Learning research/code releases"
+      }
     ]
   },
   {
@@ -1018,8 +1930,14 @@
     "importance": "medium",
     "delta": "The repo previously carried the Zinc pivot/revenue dispute and stronger upgrade-authority/revenue-routing ideas as unverified governance-design context. Ownership FM now says the outstanding revenue was sent after threatened legal action, resolving the immediate payment issue while leaving standard program authority, automatic routing and repeatable enforcement terms unconfirmed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Zinc revenue-sharing dispute and proposed stronger DAO controls"},
-      {"type": "open_question", "ref": "Verify standard upgrade-authority, programmatic revenue-routing, and legal-enforcement terms for future MetaDAO raises"}
+      {
+        "type": "catalyst",
+        "ref": "Zinc revenue-sharing dispute and proposed stronger DAO controls"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify standard upgrade-authority, programmatic revenue-routing, and legal-enforcement terms for future MetaDAO raises"
+      }
     ]
   },
   {
@@ -1035,8 +1953,14 @@
     "importance": "medium",
     "delta": "The repo previously tracked only an in-development Robinhood-first explorer and Base-centric GITLAWB token context. Official accounts now identify Robinhood contract 0xd1b0d44E4f6ed940fcC7A9F59Bf30Daf62cCFe3D, claim a completed Base-to-Robinhood LayerZero bridge, and disclose $50,000 of GITLAWB/WETH liquidity; transaction hashes, two-way delivery, persistent pool depth, LayerZero configuration and fee/value routing remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "$GITLAWB LayerZero expansion to Robinhood Chain"},
-      {"type": "open_question", "ref": "Verify canonical Base contract, LayerZero configuration, two-way transfers, pool persistence, LP ownership, and fee/value routing"}
+      {
+        "type": "catalyst",
+        "ref": "$GITLAWB LayerZero expansion to Robinhood Chain"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify canonical Base contract, LayerZero configuration, two-way transfers, pool persistence, LP ownership, and fee/value routing"
+      }
     ]
   },
   {
@@ -1052,8 +1976,14 @@
     "novelty": "new",
     "delta": "Prior repo state had Robinhood trading, token launches, user-created skills, and external-token LP automation, but BNKR itself remained Base-centric. This adds a project-level LayerZero OFT, Robinhood BNKR/WETH pool and reusable Base-token expansion skill. After initial sync/simulation issues, the Base Blockscout API verifies a successful roughly 2.79M BNKR source send; destination mint/delivery, end-to-end reliability, persistent liquidity and fee routing remain unresolved.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"},
-      {"type": "open_question", "ref": "Verify successful Base↔Robinhood transfers, LayerZero configuration, pool persistence, fees, and BNKR/Bankr Club value routing"}
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain execution / user-created public skills / BNKR omnichain expansion"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify successful Base↔Robinhood transfers, LayerZero configuration, pool persistence, fees, and BNKR/Bankr Club value routing"
+      }
     ]
   },
   {
@@ -1069,8 +1999,14 @@
     "novelty": "update",
     "delta": "The repo already recorded the 250M BNKR pool, 11 score inputs, Base-wallet balance scoring and Bankr Club gating. The new official outline adds daily/weekly cadence, top-20/top-100/top-500 rank coverage and two recurring LLM-credit pools; exact BNKR weights, start date, claim mechanics, funding wallet, vesting and anti-sybil controls remain unknown. The pool remains 0.25% of supply and was roughly $90K at the prior Blockscout check.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Reward Season 2 — 250M BNKR pool and composite scoring"},
-      {"type": "open_question", "ref": "Verify Reward Season 2 weights, payout start, claim mechanics, funding wallet, vesting and anti-sybil rules"}
+      {
+        "type": "catalyst",
+        "ref": "Reward Season 2 — 250M BNKR pool and composite scoring"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify Reward Season 2 weights, payout start, claim mechanics, funding wallet, vesting and anti-sybil rules"
+      }
     ]
   },
   {
@@ -1086,8 +2022,14 @@
     "novelty": "update",
     "delta": "The dossier previously had only a generic voting-mechanism teaser. New founder posts add a $1,000 GITLAWB proposal threshold, community votes to fund development, and possible supporter fee share, but no live proposal flow, weighting, contracts, treasury controls, fee formula, or launch date.",
     "relates_to": [
-      {"type": "catalyst", "ref": "$GITLAWB community proposals, development funding, and proposal fee share"},
-      {"type": "open_question", "ref": "How will ads, credits, voting, and any node incentives connect to token economics?"}
+      {
+        "type": "catalyst",
+        "ref": "$GITLAWB community proposals, development funding, and proposal fee share"
+      },
+      {
+        "type": "open_question",
+        "ref": "How will ads, credits, voting, and any node incentives connect to token economics?"
+      }
     ]
   },
   {
@@ -1103,8 +2045,14 @@
     "novelty": "update",
     "delta": "This adds a third-party facility-notional cross-check beyond the dossier's prior official $817M signed-term-sheet and $205M closed-loan figures. The roughly $1.325B total is listed facility notional, not evidence that all capital is drawn, deployed, or performing; governance weighting and CHIP value routing for the 1.75x points incentive remain undisclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Large GPU-backed financing facilities validate borrower demand"},
-      {"type": "open_question", "ref": "Verify deployed-vs-idle liquidity, loan performance, and CHIP value capture"}
+      {
+        "type": "catalyst",
+        "ref": "Large GPU-backed financing facilities validate borrower demand"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify deployed-vs-idle liquidity, loan performance, and CHIP value capture"
+      }
     ]
   },
   {
@@ -1120,8 +2068,14 @@
     "novelty": "new",
     "delta": "Earlier repo state captured live user-created public skills and a stock-autopilot example. This is the first observed installable Bankr skill executing a large custom LP ladder: about 978.6M HOODIE across five tranches, with roughly 2.37 WETH harvested in the follow-up, but no buy floor deployed yet and no broad adoption, Bankr fee, or BNKR/Club routing disclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Robinhood Chain execution / user-created public skills / agent dev surface"},
-      {"type": "open_question", "ref": "Verify custom-skill adoption, automated LP execution, fees, and BNKR/Bankr Club value routing"}
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain execution / user-created public skills / agent dev surface"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify custom-skill adoption, automated LP execution, fees, and BNKR/Bankr Club value routing"
+      }
     ]
   },
   {
@@ -1137,8 +2091,14 @@
     "novelty": "update",
     "delta": "The dossier previously tracked a sandboxed skill catalogue and team-added skills. This advances the product to user-created, reviewable and publicly installable skills plus a live capital-management example; no creator/install counts, usage fees, BNKR requirement, Bankr Club routing, or autonomous-execution volume was disclosed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Robinhood Chain execution / user-created public skills / agent dev surface"},
-      {"type": "open_question", "ref": "Verify skill review/security controls, adoption, fees, execution limits, and BNKR/Bankr Club value routing"}
+      {
+        "type": "catalyst",
+        "ref": "Robinhood Chain execution / user-created public skills / agent dev surface"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify skill review/security controls, adoption, fees, execution limits, and BNKR/Bankr Club value routing"
+      }
     ]
   },
   {
@@ -1154,8 +2114,14 @@
     "novelty": "update",
     "delta": "The dossier previously tracked Circle/app-launchpad and HFHE-LLM inference as roadmap items. This adds a live devnet capability plus source-proximate explorer evidence, but no public node, production workload, usage/fee metric, TAPE verifier, formal paper, or listing followed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Circle app launchpad + encrypted inference"},
-      {"type": "open_question", "ref": "Verify public node/container, AppliedLang docs, external workloads, resource accounting, fees, and production readiness"}
+      {
+        "type": "catalyst",
+        "ref": "Circle app launchpad + encrypted inference"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify public node/container, AppliedLang docs, external workloads, resource accounting, fees, and production readiness"
+      }
     ]
   },
   {
@@ -1171,8 +2137,14 @@
     "novelty": "update",
     "delta": "Prior repo state only had a vague Season 2 teaser, live score checks and leaderboard with no pool size or full score list. The new 250M pool equals 0.25% of BNKR's 100B supply and roughly $90K at the 2026-07-11 Blockscout price check; full allocation weights, snapshot, funding wallet, claim mechanics, vesting and anti-sybil controls remain unknown.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Reward Season 2 — 250M BNKR pool and composite scoring"},
-      {"type": "open_question", "ref": "Verify Reward Season 2 weights, snapshot, claim contract, funding wallet, vesting and anti-sybil rules"}
+      {
+        "type": "catalyst",
+        "ref": "Reward Season 2 — 250M BNKR pool and composite scoring"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify Reward Season 2 weights, snapshot, claim contract, funding wallet, vesting and anti-sybil rules"
+      }
     ]
   },
   {
@@ -1188,8 +2160,14 @@
     "novelty": "update",
     "delta": "The repo already tracked the 1M OCT HFHE challenge v2 and forthcoming whitepaper. This update adds requested LPN samples and clearer rules in response to criticism, but the team says the samples model a leak that should not occur in normal operation and do not prove production security; no challenge result, paper date, TAPE verifier, node release, or listing followed.",
     "relates_to": [
-      {"type": "catalyst", "ref": "HFHE challenge v2 / formal security paper"},
-      {"type": "open_question", "ref": "Verify formal HFHE paper, reproducible security artifacts, TAPE verifier, and node release"}
+      {
+        "type": "catalyst",
+        "ref": "HFHE challenge v2 / formal security paper"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify formal HFHE paper, reproducible security artifacts, TAPE verifier, and node release"
+      }
     ]
   },
   {
@@ -1205,8 +2183,14 @@
     "novelty": "new",
     "delta": "Prior GitLawb repo state tracked OpenClaude/OpenGateway usage, ads and earned inference credits, but no paid GitLawb-agent security service. The new offer has concrete scope and a $12 USDC price, while completed jobs, customers, repeat demand, payment routing, GitLawb/OpenGateway usage, and $GITLAWB accrual remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "$GITLAWB / USDC ad spend and agent-tool funding paths"},
-      {"type": "open_question", "ref": "How will ads, credits, voting, and any node incentives connect to token economics?"}
+      {
+        "type": "catalyst",
+        "ref": "$GITLAWB / USDC ad spend and agent-tool funding paths"
+      },
+      {
+        "type": "open_question",
+        "ref": "How will ads, credits, voting, and any node incentives connect to token economics?"
+      }
     ]
   },
   {
@@ -1222,9 +2206,18 @@
     "novelty": "new",
     "delta": "Prior AEON repo state tracked framework hardening, a planned transparency dashboard, DAG/security work, and partner integrations but no first stable release. v0.1 now packages live harness, discovery, observability, and proof-of-execution features; active usage, public attestation volume, security assumptions, fees, and $aeon value capture remain unmeasured.",
     "relates_to": [
-      {"type": "catalyst", "ref": "aeon v0.1 stable release and skill-run attestations"},
-      {"type": "open_question", "ref": "Which features are live in repo versus marketing site claims?"},
-      {"type": "open_question", "ref": "Are there real external users/agents built on AEON beyond community claims?"}
+      {
+        "type": "catalyst",
+        "ref": "aeon v0.1 stable release and skill-run attestations"
+      },
+      {
+        "type": "open_question",
+        "ref": "Which features are live in repo versus marketing site claims?"
+      },
+      {
+        "type": "open_question",
+        "ref": "Are there real external users/agents built on AEON beyond community claims?"
+      }
     ]
   },
   {
@@ -1240,8 +2233,14 @@
     "novelty": "update",
     "delta": "The dossier already tracked GEO-PULSE Gen 2 sales and a static RTK-versus-standard-GPS comparison. This adds an outdoor in-motion/reward-loop demonstration, but no route trace, measured accuracy, sales, active devices, rewards paid, or revenue/burn impact.",
     "relates_to": [
-      {"type": "catalyst", "ref": "GEO-PULSE hardware commercialization"},
-      {"type": "open_question", "ref": "How much revenue or burn comes from recurring enterprise services versus one-off hardware sales?"}
+      {
+        "type": "catalyst",
+        "ref": "GEO-PULSE hardware commercialization"
+      },
+      {
+        "type": "open_question",
+        "ref": "How much revenue or burn comes from recurring enterprise services versus one-off hardware sales?"
+      }
     ]
   },
   {
@@ -1257,9 +2256,18 @@
     "novelty": "new",
     "delta": "The prior OpenTensor entry established two SN54/Yanez client integrations but disclosed no revenue or alpha-token economics. Yanez now describes an explicit customer-revenue-to-SN54-alpha conversion and retained 20% component, while contracts, wallets, dashboard, client names, revenue size, and activation remain unverified.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Yanez AI / SN54 Proof-of-Humanhood revenue-to-alpha loop"},
-      {"type": "catalyst", "ref": "Bittensor subnet external demand / useful AI output"},
-      {"type": "open_question", "ref": "Verify subnet quality and real external demand"}
+      {
+        "type": "catalyst",
+        "ref": "Yanez AI / SN54 Proof-of-Humanhood revenue-to-alpha loop"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Bittensor subnet external demand / useful AI output"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify subnet quality and real external demand"
+      }
     ]
   },
   {
@@ -1275,9 +2283,18 @@
     "novelty": "update",
     "delta": "The dossier previously carried issues #38-41 as unverified related-account claims. Public issues #38, #39, #40, and #41 are closed as completed with fix commits 87ea552620508ab0f766a82a70ec2e385d7fad0b, 11b9637f663935665de54b9b4f9496eb3ef576ab, and 18477456fa8dbaa957a9ab2f715c10ae9a425879 plus regression coverage; no issue establishes deployed exposure, an onchain upgrade, or exploitation.",
     "relates_to": [
-      {"type": "watch_item", "ref": "percolator-meta issue #41 late bids after round_end"},
-      {"type": "watch_item", "ref": "percolator-meta issue #40 principal-policy partial-withdraw share accounting"},
-      {"type": "watch_item", "ref": "percolator-meta issues #38/#39 config squatting and omitted-fee default"}
+      {
+        "type": "watch_item",
+        "ref": "percolator-meta issue #41 late bids after round_end"
+      },
+      {
+        "type": "watch_item",
+        "ref": "percolator-meta issue #40 principal-policy partial-withdraw share accounting"
+      },
+      {
+        "type": "watch_item",
+        "ref": "percolator-meta issues #38/#39 config squatting and omitted-fee default"
+      }
     ]
   },
   {
@@ -1293,10 +2310,22 @@
     "novelty": "update",
     "delta": "The repo previously knew rewards would use USDC, but mechanics and dates were unresolved; official docs now set a July 22 claim start, January 22 2027 deadline, >0 Network Points eligibility floor, $0.0049 per Network Point, device multipliers, and zero new emissions. The recap also disproves the rumored July 7 token-holder revenue-routing vote and does not substantiate the quoted $10.25M unlock.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Stage 2 USDC participant rewards from network revenue"},
-      {"type": "watch_item", "ref": "Stage 2 allocation formula / Uptime Points plus Network Points"},
-      {"type": "watch_item", "ref": "Rumored July 7 revenue-routing vote and $10.25M unlock"},
-      {"type": "catalyst", "ref": "Live Context Retrieval inference-data products"}
+      {
+        "type": "catalyst",
+        "ref": "Stage 2 USDC participant rewards from network revenue"
+      },
+      {
+        "type": "watch_item",
+        "ref": "Stage 2 allocation formula / Uptime Points plus Network Points"
+      },
+      {
+        "type": "watch_item",
+        "ref": "Rumored July 7 revenue-routing vote and $10.25M unlock"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Live Context Retrieval inference-data products"
+      }
     ]
   },
   {
@@ -1312,9 +2341,18 @@
     "novelty": "new",
     "delta": "Prior NEAR repo state tracked Confidential Intents, Agent Market, AI Cloud integrations, and near.com trading; this adds a live agent-commerce integration surface, but launch posts disclose no paid deals, fees, volume, escrow contract, or NEAR token impact.",
     "relates_to": [
-      {"type": "catalyst", "ref": "NEAR Intents as cross-chain / agent-market money rail"},
-      {"type": "catalyst", "ref": "Internet Court agent-commerce integration"},
-      {"type": "metric", "ref": "revenue.near.org routed volume and fees"}
+      {
+        "type": "catalyst",
+        "ref": "NEAR Intents as cross-chain / agent-market money rail"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Internet Court agent-commerce integration"
+      },
+      {
+        "type": "metric",
+        "ref": "revenue.near.org routed volume and fees"
+      }
     ]
   },
   {
@@ -1330,8 +2368,14 @@
     "novelty": "new",
     "delta": "Prior TAO repo state focused on dTAO/Conviction governance, emissions gating, listings, and other subnet milestones; this adds an external-client/security proof point for SN54, but no client names, paid volume, revenue, emissions change, or TAO value-capture metric.",
     "relates_to": [
-      {"type": "catalyst", "ref": "Bittensor subnet external demand / useful AI output"},
-      {"type": "open_question", "ref": "Verify subnet quality and real external demand"}
+      {
+        "type": "catalyst",
+        "ref": "Bittensor subnet external demand / useful AI output"
+      },
+      {
+        "type": "open_question",
+        "ref": "Verify subnet quality and real external demand"
+      }
     ]
   },
   {

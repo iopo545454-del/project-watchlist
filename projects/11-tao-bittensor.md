@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-07-14T20:16:51Z
+last_updated: 2026-07-19T10:21:04Z
 ---
 
 # TAO / Bittensor
@@ -30,7 +30,14 @@ last_updated: 2026-07-14T20:16:51Z
 - Major upgrade: dTAO introduced subnet alpha tokens and market-driven subnet allocation dynamics.
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+No strong sourced long-form investor thesis is recorded yet. Next searches should prioritize Bittensor-native fund memos, validator/operator economics threads and research that separates TAO, subnet alpha and actual customer revenue rather than treating all subnet emissions as demand.
+
+### Hermes take
+
+> **2026-07-19 —** Bittensor is the most interesting crypto-AI capital-allocation experiment and the easiest one to misread. TAO is not a bet on one product; it is an index on whether emissions markets can discover useful AI businesses before they become a circular subsidy casino. Ignore subnet demos and alpha charts. Track external revenue converted onchain, emission rotation, validator behavior and which subnets survive when incentives tighten.
 
 ## Team
 - Opentensor Foundation — core ecosystem/foundation entity.
@@ -93,12 +100,48 @@ last_updated: 2026-07-14T20:16:51Z
 - GitHub activity for Subtensor, SDKs, wallets, and subnet repos.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- Official protocol docs: https://docs.bittensor.com/
+- Learn Bittensor docs for emissions, crowdloans and EVM tutorials: https://docs.learnbittensor.org/
+- Core releases and source: https://github.com/opentensor/subtensor and https://github.com/opentensor
+- OpenTensor X currently functions as the primary ecosystem changelog: https://x.com/opentensor
 
 ## Risks
 - Bittensor is not one product; it is an incentive layer for many subnet businesses.
 - TAO valuation increasingly depends on subnet quality, alpha-token dynamics, and real external demand.
 - Avoid evaluating only TAO spot price; subnet emissions, alpha performance, and validator behavior are critical.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Subnet emissions and net TAO flows | Shows where protocol capital is rotating | Subtensor RPC / TaoStats | partial / credentials needed for some aggregators | Emissions are incentives, not external revenue. |
+| TAO/alpha stake, liquidity and validator weights | Measures market structure and governance power | Subtensor RPC, TaoStats, Taoflow tools | partial | Alpha prices and stake can be reflexive/manipulated in thin markets. |
+| External subnet revenue and buybacks | Tests whether products have non-emission demand | Project wallets/contracts and customer dashboards | manual_only / project-specific | Must verify each subnet separately; do not aggregate issuer claims as TAO revenue. |
+| Registration burns, deregistrations and active subnets | Tracks competition and capital cost | Subtensor events/RPC | source available / collector pending | Parameter changes can alter comparability over time. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| Subtensor RPC | Public chain RPC / SDK | partial | Blocks, stake, subnet and emissions state | Build reusable collector with explicit runtime-version handling. |
+| TaoStats | Authenticated/public dashboard surfaces | partial / env-dependent | Subnet, stake, emissions and market aggregates | Configure credentials locally; never expose them in Pages. |
+| Official docs/releases | GitHub/docs | tested_ok | Runtime releases, formulas and parameter changes | Link material code/parameter changes to metric-history breaks. |
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/opentensor | Official foundation/ecosystem announcements. |
+| https://bittensor.com/ | Official project website. |
+| https://docs.bittensor.com/ | Canonical protocol documentation. |
+| https://docs.learnbittensor.org/ | Detailed emissions, subnet, crowdloan and EVM guides. |
+| https://github.com/opentensor/subtensor | Canonical runtime/client source and releases. |
+| https://taostats.io/ | Third-party subnet/stake/emissions analytics. |
+| https://taomarketcap.com/ | Third-party subnet alpha market context. |
+| https://subnetradar.com/ | Third-party subnet/product discovery context. |
+| https://x.com/yanez__ai | Tracked SN54 product/security/revenue-to-alpha source. |
 
 ---
 

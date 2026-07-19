@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-07-15T23:46:45Z
+last_updated: 2026-07-19T10:21:04Z
 ---
 
 # Worldcoin / WLD / World Network
@@ -89,31 +89,98 @@ last_updated: 2026-07-15T23:46:45Z
 | WLD unlock rate decreases by 43% starting July 2026 | Confirmed | World Foundation official X and blog said the WLD unlock rate will decrease by 43% in July 2026; funds continue supporting operations, R&D, Orb manufacturing, and ecosystem growth. Source: https://x.com/worldcoinfnd/status/2042630606593421751 | Starts July 2026 | Directly changes token supply-pressure schedule and is material to WLD market structure. | Lower unlock rate can reduce incremental sell pressure, but market response depends on circulating supply, actual wallets, demand, and whether OTC/treasury sales continue. | Watch July unlock execution, Foundation/TFH wallet flows, unlock dashboards, OTC sales, and circulating-supply updates. |
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/Delphi_Digital/status/1952405033754239065 | Delphi Digital / Lucas research update | World can become a neutral proof-of-human and distribution layer for an AI-saturated internet; World App/Mini App usage and verification growth support the network case, while WLD emissions and Orb/regulatory constraints are the main token risks. | Best balanced outside thesis tying identity distribution to explicit supply and execution risks. |
+| https://x.com/a16zcrypto/status/2018795993001755047 | a16z crypto | AI agents make portable, privacy-preserving proof of personhood a core internet primitive; crypto can make identity user-controlled and credibly neutral rather than platform-siloed. | Strong strategic case for World ID, though not a dedicated WLD value-capture memo. |
+| https://x.com/gametheorizing/status/1685236776321830912 | Jordi Alexander / Selini Capital | Proof of personhood may be useful, but the currency/distribution design can create weak bid support, black markets and harmful incentives around biometric identity. | Important adversarial tokenomics and social-risk countercase. |
+
+### Hermes take
+
+> **2026-07-19 —** World has the best distribution in proof of personhood and the ugliest trust surface in the category. Tinder, ticketing, AgentKit and 40M World App users make the product hard to dismiss. WLD still needs a reason to be owned beyond funding the rollout. The bet works if World ID becomes neutral identity middleware and WLD supply pressure keeps falling; it fails if the Orbs, regulators and token emissions remain the story instead of repeat app usage.
 
 ## Team
-- TBD / needs follow-up.
+- Tools for Humanity — principal technology/product builder.
+- Alex Blania — co-founder/CEO, tracked at https://x.com/alexblania.
+- Sam Altman — co-founder, tracked for strategic context at https://x.com/sama.
+- World Foundation — protocol/ecosystem/token entity: https://x.com/worldcoinfnd.
 
 ## Investors
-- TBD / needs follow-up.
+- Historical publicly reported backers include a16z, Khosla Ventures, Blockchain Capital, Bain Capital Crypto and others; verify individual round/source details before cap-table use.
+- Investor support for the identity thesis does not establish current WLD holdings or token-value routing.
 
 ## Twitter/X accounts
-- TBD / needs follow-up.
+- https://x.com/worldnetwork — current primary official account.
+- https://x.com/worldcoin and https://x.com/worldcoinfnd — legacy/Foundation/token context.
+- https://x.com/world_chain_ and https://x.com/tfh_technology — chain and builder accounts.
+- https://x.com/alexblania and https://x.com/sama — co-founders.
 
 ## KOLs
-- TBD / needs follow-up.
+- Prioritize privacy/identity researchers, integration partners and regulatory sources over generic AI/biometric commentary.
+- Delphi, a16z crypto and Jordi Alexander provide useful bull/bear thesis framing with different incentives.
 
 ## Official links
-- TBD / needs follow-up.
+- Website/blog: https://world.org/ and https://world.org/blog
+- Developer docs: https://docs.world.org/
+- World Chain source: https://github.com/worldcoin/world-chain
+- Official X: https://x.com/worldnetwork
 
 ## Onchain/data resources
-- TBD / needs follow-up.
+- World Chain explorer/RPC and official World ID dashboards for chain usage, verified-human and app metrics.
+- Etherscan/explorers for canonical WLD contracts, unlock wallets and bridge routes.
+- DefiLlama for World Chain TVL/bridge context; this does not measure proof-of-human usage or WLD value capture.
+- Official Foundation unlock/supply disclosures and onchain circulating-supply reconciliation.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- https://world.org/blog — primary announcements, integration and Foundation/product context.
+- https://docs.world.org/ — World ID, MiniKit, AgentKit and developer documentation.
+- https://github.com/worldcoin/world-chain — protocol specs, releases, issues and implementation evidence.
 
 ## Risks
-- TBD / needs follow-up.
+- Biometric collection, consent, custody, deletion and jurisdictional compliance can halt distribution or damage trust.
+- Orb manufacturing/operator concentration and permissioning can undermine neutral proof-of-personhood claims.
+- WLD unlocks/emissions can overwhelm product progress; lower unlock rate is helpful but not equivalent to value capture.
+- World ID integration counts can overstate active repeat usage; track verification-to-app-retention funnels.
+- Private/unsafe-head and proof-system upgrades introduce validator, client and cryptographic implementation risk.
+- Identity markets can create coercion, resale/black-market and account-recovery harms.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Verified humans, active users and verification growth | Measures identity-network distribution | Official World dashboards/API | manual_only / stable public API needed | Registrations are not retained active users; geography/regulatory pauses matter. |
+| Mini App/World App activity | Tests distribution monetization and developer demand | Official analytics + World Chain events | partial | Separate app opens, transactions, active users and subsidized activity. |
+| WLD circulating supply/unlocks/staking | Measures market structure and dilution | Foundation disclosures + onchain contracts | partial | Reconcile published schedules with actual wallets and chain bridges. |
+| World Chain fees/TVL/transactions | Measures chain activity | RPC/explorer/DefiLlama | partial / configured TVL context | Chain TVL is not proof-of-human adoption or tokenholder revenue. |
+| World ID partner usage | Tests mainstream product-market fit | Partner disclosures + verification proofs | manual_only | Logo announcements need activation, geography and repeat-use evidence. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama World Chain/bridge adapter | Configured public API | partial | TVL/bridge context | Keep separate from identity and WLD economics. |
+| World Chain GitHub | GitHub API | tested_ok | Specs, PRs, releases and implementation state | Track WIP-1008 runtime code, audits and activation. |
+| Official user/verification dashboards | Public pages | manual_only | Issuer-reported World App and verified-human totals | Locate stable machine-readable endpoint and retention definitions. |
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/worldnetwork | Primary official product/network account. |
+| https://x.com/worldcoinfnd | Foundation, supply and token disclosures. |
+| https://x.com/world_chain_ | World Chain-specific updates. |
+| https://x.com/tfh_technology | Tools for Humanity builder context. |
+| https://world.org/ and https://world.org/blog | Official website, product and announcement sources. |
+| https://docs.world.org/ | Canonical developer/product documentation. |
+| https://github.com/worldcoin/world-chain | World Chain implementation and specifications. |
+| https://x.com/Delphi_Digital/status/1952405033754239065 | Independent market thesis/update. |
+| https://x.com/a16zcrypto/status/2018795993001755047 | Investor identity/agent thesis. |
+| https://x.com/gametheorizing/status/1685236776321830912 | Adversarial tokenomics/distribution thesis. |
 
 ## Open questions
 - Verify whether World Chain's SP1 validity verifier is deployed/active, what audits cover the multi-proof system, and whether the removed Nitro aggregation-signing path was ever callable in production; maintainers describe it as unused and disclosed no exploit.
@@ -126,6 +193,10 @@ last_updated: 2026-07-15T23:46:45Z
 | 2026-07-13; advanced 2026-07-15 | WIP-1008 may add a WLD-staked validator overlay, protocol-guaranteed subblocks, BFT attestations, slashing, and validator fee/reward flows to World Chain. | https://github.com/worldcoin/world-chain/pull/850 | Official GitHub specification PR | High | Partially supported — specification merged; implementation/activation unverified | The design is now canonical in the World Chain specification repository, a meaningful step toward WLD utility and validator economics. The merged PR is documentation-only and explicitly ships no runtime implementation. | `carried_from: scan-20260713T213409Z; advanced watchlist-scan-20260715T234645Z` — check implementation PRs, Foundation endorsement, parameters, contracts, audits, testnet, governance and activation. |
 
 ## Watch triggers
-- TBD / needs follow-up.
+- WLD unlock, emissions, staking or Foundation/TFH wallet changes.
+- New major World ID integration with activation/usage evidence.
+- Regulatory actions, Orb pauses, biometric/privacy incidents or data-policy changes.
+- World Chain/WIP-1008 implementation, audits, validator parameters and activation.
+- Material verified-human, active-user, Mini App or World Chain usage changes.
 
 ---

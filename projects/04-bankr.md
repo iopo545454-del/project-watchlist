@@ -1,7 +1,7 @@
 ---
-status: draft
+status: active
 watchlist: crypto-projects
-last_updated: 2026-07-19T02:20:22Z
+last_updated: 2026-07-19T10:21:04Z
 ---
 
 # BANKR / BankrCoin
@@ -130,7 +130,18 @@ last_updated: 2026-07-19T02:20:22Z
 - 2026-06-14 — Official `@bankrbot` announced that Bankr x402 Cloud endpoints can now accept payment in any coin, positioning arbitrary tokens as payment rails for agents. Core builder `@0xDeployer` quote-posted it as “new utility unlocked,” and DevRel/team account `@saltorious1` amplified “Put your ecosystem tokens to work.” Source: https://x.com/bankrbot/status/2066182283380589020
 
 ## Thesis
-- TBD / needs follow-up.
+
+### Investor / market theses
+
+| Source | Who/affiliation | TLDR of the case | Relevance |
+|---|---|---|---|
+| https://x.com/baseboss_/status/2058592892369907802 | Baseboss / Based Alliance ecosystem operator | Bankr can become the financial operating system for tokenized agents: wallets, launches, execution, treasury and fee-funded compute in one battle-tested Base stack. The flywheel depends on sustained launch/volume share and creator economics rather than one-off agent hype. | Useful outside ecosystem thesis; dashboard and token-routing claims still need direct reproduction. |
+| https://x.com/Ethanh141/status/2020509756113207711 | Ethan / Rubicon-affiliated investor-trader | Permissionless money rails are crypto's native contribution to autonomous agents, and Bankr packages the stack while trading fees fund inference/API costs. The case is attractive only if fee run-rates persist and value reaches BNKR. | Explicit mechanism and valuation framework with a Dune reference; historical run-rate claims need current verification. |
+| https://x.com/lesabrefomo/status/2019917202984693936 | Independent market observer | Tokenized personal/professional agents can create a reflexive launch/attention/treasury category, with Bankr as default infrastructure. | Captures the second-order network-effect case, while remaining exposed to launch churn and narrative cycles. |
+
+### Hermes take
+
+> **2026-07-19 —** Bankr is one of the few agent projects doing the unglamorous work that matters: wallets, execution, launches, fees and treasury automation. The product is real; the token bridge is not clean enough. Robinhood launch velocity and creator fees prove usage, not BNKR value capture. Show the public dashboard, protocol split and recurring BNKR routing, or this stays a good business wrapped in an optional token.
 
 ## Catalysts
 
@@ -159,28 +170,80 @@ last_updated: 2026-07-19T02:20:22Z
 | 2026-06-21 | Bankr console redesign/testing exposed a public test-token deployment that drew user-loss complaints; the core builder said it was not fee farming and that internal/team policy changes were made. | https://x.com/0xDeployer/status/2068496200937189424 | Medium | Confirmed / closed; loss amount user-reported | The thread directly confirms the public test deployment, builder acknowledgement and internal policy update; the complainant reported roughly `$10K` of real losses. No public postmortem, reimbursement, contract-complete loss reconstruction or repeated incident-specific complaints were found through 2026-07-16. | Resolved 2026-07-16 (`carried_from: 2026-06-21`): close the general incident follow-up. Reopen only for documented repeat losses, reimbursement, or a concrete public mitigation tied to the incident. |
 
 ## Team
-- TBD / needs follow-up.
+- `@0xDeployer` — core builder/operator and primary launchpad/product source.
+- `@BrenOfTheGlen` — tracked builder/team context.
+- `@saltorious1` — DevRel/team integration and skills updates.
+- `@bankrbot` — official product/bot account and live execution surface.
 
 ## Investors
-- TBD / needs follow-up.
+- Bankr Fund is an ecosystem investment vehicle announced by the team; its LienFi investment is tracked separately from Bankr's own historical cap table.
+- No strong primary-source institutional cap-table disclosure is recorded yet; verify any named investor claim before treating it as durable fact.
 
 ## Twitter/X accounts
-- TBD / needs follow-up.
+- https://x.com/bankrbot — official product account.
+- https://x.com/0xDeployer — core builder.
+- https://x.com/BrenOfTheGlen and https://x.com/saltorious1 — builder/DevRel context.
 
 ## KOLs
-- TBD / needs follow-up.
+- Prioritize Base/agent builders who link dashboards, contracts and reproducible transaction evidence.
+- `@baseboss_`, `@Ethanh141` and `@lesabrefomo` provide outside market theses; their volume/fee/valuation claims require direct checks.
 
 ## Official links
-- TBD / needs follow-up.
+- Product: https://bankr.bot/
+- Docs: https://docs.bankr.bot/
+- Official X: https://x.com/bankrbot
+- Base explorer context: https://base.blockscout.com/
 
 ## Onchain/data resources
-- TBD / needs follow-up.
+- Public Bankr/Robinhood launchpad dashboard or query remains the highest-priority missing source.
+- Base Blockscout/Etherscan for BNKR, vault, launch, reward, fee and bridge transactions.
+- Dune community dashboard referenced by outside research: https://dune.com/fairvc/bankr-launchpad; treat as third-party until reproduced.
+- LayerZero/OFT explorer and Robinhood Chain explorer for cross-chain BNKR delivery and liquidity.
 
 ## Docs/blogs
-- TBD / needs follow-up.
+- https://docs.bankr.bot/ — canonical product, skills, staking/vault and command documentation.
+- Official X dev recaps currently function as the main changelog; add a formal blog/GitHub source if published.
 
 ## Risks
-- TBD / needs follow-up.
+- Individual token launches are routine core-function output and can produce extreme churn, low-quality assets and user losses.
+- Agent execution can use stale contract/product context; the deprecated-vault deposit contradiction is a concrete operational example.
+- Creator-fee and aggregate-volume claims are screenshot/dashboard dependent until a public query and concentration analysis exist.
+- BNKR can remain economically disconnected from successful product usage if fees accrue to creators, builders or operating entities without explicit token routing.
+- Bridge/OFT configuration, fragmented liquidity, arbitrary public skills and model outages expand the attack/error surface.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Launchpad volume, launches and creator fees | Measures the core product loop | Public dashboard/query + onchain events | manual_only / source missing | Issuer screenshots show scale, but concentration, repeats and exact fee splits are not reproducible yet. |
+| Bankr protocol revenue and BNKR routing | Tests token value capture | Fee-recipient, treasury, buyback/reward contracts | partial | Separate creator share, Bankr share, Club/subscriptions, rewards, buybacks and operating spend. |
+| Active users/wallets and paid agent actions | Measures retained product use | Official API/dashboard plus onchain execution | manual_only | Bot-reported registrations can overstate active retained users. |
+| BNKR bridge/liquidity and vault state | Measures market access and operational risk | Base/Robinhood explorers, LayerZero and vault contracts | partial / tested transaction checks | Destination delivery, pool persistence and deprecated-vault behavior remain checks. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| Base Blockscout | Transaction/token API | tested_ok | Vault withdrawals/deposits, BNKR transfers and source-chain bridge sends | Map canonical contracts and automate material transfer/contract events. |
+| Robinhood launchpad dashboard | Builder screenshots / undiscovered query | blocked | Aggregate volume, fees and launches claimed by team | Obtain public URL/query and reproduce concentration/retention. |
+| Dune Bankr launchpad | `https://dune.com/fairvc/bankr-launchpad` | manual_only | Third-party launchpad activity context | Validate query definitions before collector integration. |
+
+## Sources / Research Inputs
+
+| Information source | Context about the source |
+|---|---|
+| https://x.com/bankrbot | Official product/bot account; live commands and product announcements. |
+| https://x.com/0xDeployer | Core builder; launchpad, token, bridge and policy context. |
+| https://x.com/BrenOfTheGlen | Tracked builder/team account. |
+| https://x.com/saltorious1 | DevRel/team skills and integration updates. |
+| https://bankr.bot/ | Official application/product surface. |
+| https://docs.bankr.bot/ | Canonical product and vault/staking documentation. |
+| https://base.blockscout.com/ | Base contract and transaction verification. |
+| https://dune.com/fairvc/bankr-launchpad | Third-party launchpad dashboard referenced by market research. |
+| https://x.com/baseboss_/status/2058592892369907802 | Base ecosystem market thesis. |
+| https://x.com/Ethanh141/status/2020509756113207711 | Outside agent-finance and fee-flywheel thesis. |
 
 ## Open questions
 - Can the Robinhood dashboard's `$49.31M` volume, `$612,920` creator fees and 11,265 launches be reproduced from public queries/onchain data, and how concentrated/retentive is the activity?
@@ -189,6 +252,10 @@ last_updated: 2026-07-19T02:20:22Z
 - Why do official staking docs say new deposits are unsupported while `@bankrbot` still deposits into vault `0x019f...17b7`, and will Bankr disable deposits or publish a corrected active-vault policy?
 
 ## Watch triggers
-- TBD / needs follow-up.
+- Public launchpad dashboard/query or material change to creator/protocol fee splits.
+- BNKR buyback, burn, staking, Club or treasury-routing change.
+- Bridge/OFT incident, persistent liquidity change or failed destination delivery.
+- Agent execution loss, stale-contract routing, vault failure or security postmortem.
+- Major distribution integration, reward-season rule or funding/team change.
 
 ---
