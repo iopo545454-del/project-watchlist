@@ -1,5 +1,254 @@
 [
   {
+    "run_id": "watchlist-scan-20260719T231142Z",
+    "started_at": "2026-07-19T23:11:42Z",
+    "completed_at": "2026-07-19T23:25:43Z",
+    "status": "success",
+    "scan_window": {
+      "from": "2026-07-19T19:05:40Z",
+      "to": "2026-07-19T23:25:43Z",
+      "baseline": "Prior broad scan completion; full four-hour cadence window searched."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked public intake issues, refreshed configured direct metrics while preserving the suppressed snapshot without fetching it, searched every tracked official/team/core X account plus high-signal ecosystem mentions, consumed prior next checks/watch items, checked relevant official GitHub release/commit surfaces, and performed the mandatory >7-day substantive non-X review for GEODNET.",
+    "projects_checked": [
+      "02-geod",
+      "03-meta",
+      "04-bankr",
+      "05-aeon",
+      "06-gitlawb",
+      "07-kinetiq",
+      "08-grass",
+      "09-iota-sn9",
+      "10-targon",
+      "11-tao-bittensor",
+      "12-akt-akash",
+      "13-chip-usdai",
+      "14-vvv-venice",
+      "15-virtuals",
+      "16-worldcoin-wld",
+      "17-near",
+      "18-drv-derive",
+      "19-octra",
+      "20-bio",
+      "21-pluralis",
+      "22-ambient",
+      "23-eigencloud",
+      "24-chutes",
+      "25-lium",
+      "26-compute-horde"
+    ],
+    "logged_projects": [],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 0,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_persisted": 13,
+      "direct_metrics_collected": 31,
+      "new_changelog_entries": 0,
+      "modified_changelog_entries": 6,
+      "confirmed_or_durable_findings": 0,
+      "unverified_watch_items_added_or_advanced": 0,
+      "stale_projects_substantively_checked": 1,
+      "current_window_no_material_change_projects": 25,
+      "errors": 1
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub public Issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Checked three open intake-form issues. EigenCloud, Ambient and Pluralis still deduplicate by name, primary X and token context to existing reviewed entries.",
+        "decision": "No new project or duplicate entry created."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Refreshed 13 enabled configured projects and collected 31 metrics on top of the concurrent 19:30 UTC metric snapshot while preserving, not fetching, the suppressed snapshot. Largest current-run numeric move was BIO chain TVL +2.70%; no configured materiality threshold was crossed.",
+        "decision": "Persist routine enabled-project refreshes; no metric changelog entry."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "Canonical GIP repository and DefiLlama fee API",
+        "url": "https://github.com/GEODNET/GIP",
+        "summary": "Mandatory stale-project review confirmed no GIP commit after 2026-04-15 and no release/formal GIP-14 artifact. Live fees were $33,325 over 24h, $197,842 over 7d, $896,640 over 30d and $10.373M all-time; no measured GEO-PULSE adoption or recurring-revenue evidence surfaced.",
+        "decision": "No changelog and no last_updated reset; carry GEO-PULSE adoption/revenue and formal GIP-14 checks."
+      },
+      {
+        "project": "Tracked-project X scan",
+        "source": "X/Twitter via x_search",
+        "url": "docs/data/index.json",
+        "summary": "Searched every enabled project official/team/core account plus credible ecosystem, exchange, governance, security and terminal-style mentions over the 19:05-23:19 UTC window. Results were absent, generic, promotional, replies, price/token spam or duplicates of prior evidence.",
+        "decision": "No material or credible new weak-signal entry."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "X/Twitter co-founder post",
+        "url": "https://x.com/metaproph3t/status/2078952664310993104",
+        "summary": "A co-founder asked whether MetaDAO’s raise product should be rebranded to “Align,” but supplied no decision, release, governance action, mechanics change or deployment.",
+        "decision": "Below materiality and too tentative for a durable watch item; re-check only if an official rename/product release follows."
+      },
+      {
+        "project": "Bittensor subnet Kraken claims",
+        "source": "Third-party X post cross-checked against official Kraken X/listings",
+        "url": "https://x.com/XDreadBong0x/status/2078947154685841655",
+        "summary": "A post-cutoff third-party post repeated Kraken’s July 3 subnet roadmap and already announced Chutes, Lium, Hippius and Vanta listings. Official Kraken accounts showed no new listing change after the cutoff; Targon, Score and Ridges remained roadmap-only.",
+        "decision": "Duplicate/stale context; no new listing or changelog entry."
+      },
+      {
+        "project": "Standing GitHub checks",
+        "source": "Official GitHub commit and release APIs",
+        "url": "projects/",
+        "summary": "Checked GEOD GIP, Darkbloom d-inference, World Chain, Octra lite_node, Macrocosmos IOTA, Akash provider and Compute Horde after the cutoff. No new commit or release advanced the carried governance, deployment, security, model, RDMA or usage checks.",
+        "decision": "No changelog; unresolved checks are explicitly carried below."
+      },
+      {
+        "project": "Remaining enabled projects",
+        "source": "Tracked X accounts, prior next checks, official GitHub surfaces and configured direct sources",
+        "url": "projects/",
+        "summary": "No additional official release, governance/tokenomics change, listing/liquidity step change, security incident, funding/team change, high-signal weak item or material direct-metric move was established in the scan window.",
+        "decision": "No changelog; every unresolved prior check is explicitly carried below with origin."
+      }
+    ],
+    "errors": [
+      "Configured web_search remained unavailable because Firecrawl is not configured; X search, direct HTTPS/API retrieval, public GitHub and configured project data sources supplied the evidence."
+    ],
+    "next_checks": [
+      {
+        "project": "BANKR / BankrCoin",
+        "check": "Resolve whether OKT gained actual product utility through access gating, x402/Bankr-app payments or governance; verify official app/docs/contract behavior and mark stale/disproven if no gated product exists.",
+        "carried_from": "2026-07-04 canonical watch item; preserved by verification-run-20260716T015238Z; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "check": "Obtain the next Orion model/checkpoint and reproduce the claimed 65%-of-centralized speed, equivalent convergence and lower total cost; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.",
+        "carried_from": "new stale-project and catalyst review watchlist-scan-20260715T234645Z; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "check": "After WIP-1008's documentation-only spec merge, verify implementation PRs, Foundation endorsement, WLD stake/reward/slashing parameters, contracts, audits, testnet, governance and activation; continue SP1 production/audit checks.",
+        "carried_from": "WIP-1008 advanced watchlist-scan-20260715T234645Z; SP1 checks from watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "CHIP / USD.AI",
+        "check": "Validate issuer-described SPV/UCC/DACA, lien-waiver, insurance and disbursement protections with documents/borrower examples; reconcile TVL/APY, deal flow, funded loans, defaults/recoveries and CHIP routing; monitor duration-based sCHIP/NIM proposal.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "VVV / Venice AI",
+        "check": "Verify current DIEM supply, weekly inference utilization and holder mix; reconcile compute liabilities with VVV burns/emissions, staking/capacity terms, daily-token methodology and paid revenue.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Ambient",
+        "check": "Verify organic paid jobs, auction/miner economics, Proof-of-Logits security and final tokenomics; obtain public data for the claim that Ambient processes more Kimi K2.7 tokens than Moonshot.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "check": "Map Buyback #75 transactions and fee window; explain seven-day fee recovery; verify next buyback, Korean exchange networks/withdrawals/depth and ORIA/Hyperliquid/v3 follow-through.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "check": "Verify Ads advertiser spend, CPM/CPC, repeat campaigns, paid-versus-promotional mix and token/credit routing; reconcile Blockagent coverage and verify MCP consumers, fees and security.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "check": "After the July 16 21:00 UTC E081 event, identify TargonOS artifacts, hardware support, attestation, availability, users, fees and SN4 effects; continue buyback-wallet/utilization verification.",
+        "carried_from": "watchlist-scan-20260715T052432Z; event not yet due; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "check": "Obtain the Robinhood dashboard/query; reproduce volume, fees and launches; measure concentration/retention; separate creator/Bankr shares; verify BNKR/Club routing, bridge/pool, skills and rewards.",
+        "carried_from": "watchlist-scan-20260714T201651Z through watchlist-scan-20260715T234645Z; deprecated-vault withdrawal reliability preserved separately from its 2026-06-22 origin; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "TAO / Bittensor",
+        "check": "Identify the Yanez vulnerability and delayed release/component; obtain severity, report, patch, retest and production/client/biometric-data/fund exposure; verify SN54 clients and revenue-to-alpha execution.",
+        "carried_from": "watchlist-scan-20260714T201651Z through watchlist-scan-20260715T234645Z; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Measure Corbits users, verifiable inference requests, paid token usage and fees; define NEAR@3.33; monitor Protocol v86 activation, Aurora/EURe, x402 and revenue/buybacks.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "OCT / Octra",
+        "check": "Verify TAPE, tagged/reproducible node release, license/build/container, configs, peer docs, audits, external operators and telemetry; then bridge/Hyperliquid prerequisites.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no new release evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "AKT / Akash",
+        "check": "Verify a paid production multi-node RDMA/InfiniBand/RoCE workload after merged provider PR #400, including release, provider adoption, reliability, spend and BME burns.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no paid-workload evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "check": "Reproduce the issuer-reported $150M+ Robinhood Chain volume, $2.38M founder/builder/creator fees and 4,500+ launches; measure Binance Wallet Meme Rush discovery-to-trading conversion, concentration and organic repeats; map the 1% tax-manager split/use and any VIRTUAL buyback, burn, staking or holder route.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no qualifying new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "META / MetaDAO",
+        "check": "Locate official docs/contracts for pre-commits, early-deposit weighting and visible caps; verify MetaDAO 2.0 contracts, NAV oracle/bands, committee, Credible settlement/fees and META accrual.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; issue #40 deployment follow-up resolved stale verification-run-20260716T015238Z and issue #41 preserved separately; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "check": "Find CrossBridge grant/IP lineage, Lilly/company terms and ecosystem-metric methodology; map BIO/veBIO locks, sales, rewards, contracts, milestones and value routing.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Pluralis",
+        "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and official NeurIPS workshop page/CFP.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "GRASS",
+        "check": "On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.",
+        "carried_from": "watchlist-scan-20260715T052432Z; not yet due; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "AEON Framework",
+        "check": "Reproduce v0.1 attestations and inspect verifier/public log, external users, security, fees and aeon value capture.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "check": "Verify GEO-PULSE measured accuracy, orders, active devices and recurring revenue; monitor the canonical GIP repository for a formal GIP-14 beyond deployed GIP-13 StableHex and continue direct revenue/burn checks.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "check": "Verify paid Internet Court inference, Parallax larger-workload replication/customer jobs and revenue quality/margins; identify any Calacanis provider attribution directly.",
+        "carried_from": "watchlist-scan-20260715T052432Z; efficiency-positioning post added no measurable evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "check": "Verify Kraken liquidity/deposits/withdrawals, GPU inventory/utilization and post-listing buyback, burn, credit-purchase or utilization effects.",
+        "carried_from": "watchlist-scan-20260715T052432Z; no dispositive evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "check": "Use the canonical Grafana health surface and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no dispositive new evidence; no dispositive resolution in watchlist-scan-20260719T102104Z; no dispositive resolution in watchlist-scan-20260719T184244Z; no dispositive resolution in watchlist-scan-20260719T231142Z"
+      }
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 6,
+      "tiers": {
+        "high": 1,
+        "medium": 3,
+        "low": 2
+      },
+      "note": "No current-run changelog entries were added or modified by the scanner. Independent validation found six pre-existing unlabeled objects and assigned strict signal tiers: Virtuals live 1% fee high; TargonOS, Eigen fee contraction and AEON hardening medium; Darkbloom release prep and Grass initial review low."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260719T184244Z",
     "started_at": "2026-07-19T18:42:44Z",
     "completed_at": "2026-07-19T19:07:40Z",
