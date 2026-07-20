@@ -1,7 +1,7 @@
 ---
 status: draft
 watchlist: crypto-projects
-last_updated: 2026-07-15T00:47:35Z
+last_updated: 2026-07-20T03:39:31Z
 ---
 
 # GitlWab / GitLawb / Gitwab
@@ -57,6 +57,7 @@ last_updated: 2026-07-15T00:47:35Z
 
 ## Latest scan notes
 
+- 2026-07-20 — Official GitLawb exposed a public OpenGateway usage dashboard and reported **2.6206T all-time inference tokens routed** since May 14 across **28.2M requests**, with about **427.3K requests/day**, **85.3% cache hits / 2.2T cached tokens**, and **$219.6K of compute routed at list price**. The dashboard distinguishes cumulative totals from a current roughly **54 requests/minute** rate. This materially improves prior one-off peak/leaderboard telemetry, but the figures remain issuer-controlled: the scan could not identify a machine-readable API or independently reconcile paid versus free/sponsored traffic, unique users, provider costs, retained revenue, or `$GITLAWB` value capture. Sources: https://x.com/gitlawb/status/2079017128502722711 and https://gitlawb.com/opengateway/usage/global
 - 2026-07-14 — Official GitLawb reported **337,000 ad impressions, 12,000 clicks, $337.37 paid to viewers and 9 live campaigns** for GitLawb Ads. This advances the June “approaching 100k impressions” snapshot by roughly **3.4x** and adds the first campaign-count, click and viewer-payout totals, but it still does not disclose advertiser spend, CPM/CPC, repeat advertisers, paid-versus-promotional mix, or how much `$GITLAWB` versus USDC funded the activity. Source: https://x.com/gitlawb/status/2077165940815622455
 - 2026-07-14 — Founder Kevin published the first concrete **Blockagent** usage/index snapshot and said GitLawb plans to open its Robinhood Chain indexer over MCP so external agents can consume the data. The image showed `215` questions answered (`86` that day), `159` conversations, `2.9` average onchain lookups per answer and `106` unique visitors; indexing remained incomplete at `1,420,740` blocks versus a `9,522,512` chain head, despite the UI saying only `98s` behind. MCP access is future intent, not live. Sources: https://x.com/kevincodex/status/2077004823850090929, https://x.com/kevincodex/status/2077004918746136697 and https://blockagent.gitlawb.com/
 - 2026-07-13 — Official GitLawb launched **Blockagent**, an AI-prompted Robinhood Chain explorer at `https://blockagent.gitlawb.com`, powered by OpenClaude/OpenGateway with Tencent Hunyuan HY3. The team explicitly says its indexer is still backfilling and some blocks are missing. This advances the prior Robinhood-first scanner teaser into a live product, but no source repository, usage, fees, customer evidence, `$GITLAWB` requirement/value route, or security model was disclosed. Sources: https://x.com/gitlawb/status/2076695242062053440 and https://x.com/gitlawb/status/2076695271669719167
@@ -119,6 +120,7 @@ last_updated: 2026-07-15T00:47:35Z
 
 | Catalyst | Status | Evidence / source | Timing | Direct impact | Second-order consequences | What to watch next |
 |---|---|---|---|---|---|---|
+| OpenGateway inference-routing usage and economics | Confirmed / ongoing issuer dashboard | Official usage post and dashboard: https://x.com/gitlawb/status/2079017128502722711 and https://gitlawb.com/opengateway/usage/global | Ongoing; latest snapshot 2026-07-20 | Reports `2.6206T` all-time tokens across `28.2M` requests since May 14, `85.3%` cache hits / `2.2T` cached tokens and `$219.6K` compute routed at list price, making OpenGateway usage more observable than the prior peak-rate claim. | Sustained external paid demand could validate GitLawb as an inference router and feed credits/ads; cache-heavy free or subsidized traffic with no margin/token route would make the headline mostly vanity throughput. | Identify a stable API/export; reconcile paid/free/sponsored traffic, unique users, models/providers, gross spend, cache accounting, provider cost, retained revenue and any `$GITLAWB` sink or fee route. |
 | Blockagent AI explorer and planned MCP data access for Robinhood Chain | Confirmed / live explorer; MCP upcoming; index incomplete | Official launch: https://x.com/gitlawb/status/2076695242062053440. Founder snapshot/MCP intent: https://x.com/kevincodex/status/2077004823850090929 and https://blockagent.gitlawb.com/ | Explorer live 2026-07-13; first usage snapshot 2026-07-14; MCP date unknown | Turns the scanner into a prompt-driven explorer and could expose GitLawb's indexer as a data primitive for external agents. | External MCP consumers could create distribution, but the snapshot showed only `1,420,740` indexed blocks versus a `9,522,512` chain head and no fees/token route. | Verify completeness/accuracy and the contradictory `98s behind` label, MCP endpoint/docs/auth, external consumers, source code, fees, security and any GITLAWB/OpenGateway route. |
 | `$GITLAWB` LayerZero expansion to Robinhood Chain | Confirmed / completed launch | Official GitLawb and Bankr posted the bridged Robinhood contract and launch; Bankr's core builder disclosed $50,000 of GITLAWB/WETH pool capital: https://x.com/bankrbot/status/2076480415070933077, https://x.com/gitlawb/status/2076481721055531061 and https://x.com/0xDeployer/status/2076486263432257635 | Live as of 2026-07-13 | Gives the existing Base token a second-chain market and liquidity pool while demonstrating Bankr's reusable OFT deployment workflow. | Arbitrage and external LP participation could deepen access; the same chain can support the planned agent-first explorer, while fake-contract confusion and bridge/LP failures could damage trust. | Verify source and destination transactions, LayerZero peer/DVN configuration, two-way transfers, canonical explorer pages, pool depth/volume persistence, LP ownership, and any GitLawb/Bankr fee or token-value routing. |
 | Bot-attack mitigation / iCaptcha resilience layer | Confirmed / security-resilience incident completed | Official GitLawb said automated scripts created ~370,000 junk repositories, nodes hit storage pressure, iCaptcha was deployed across nodes, 230,000+ fake repositories were removed, and spam creation dropped to zero: https://x.com/gitlawb/status/2072133348009685018 | Live mitigation as of 2026-07-01 | Hardens the decentralized code network against low-cost repo spam while preserving human/AI-agent access. | If the claims hold, GitLawb gets a stronger anti-spam/resilience story; if not, storage abuse and credential/repo integrity remain serious risks for adoption. | Watch node-operator reports, legitimate repo recovery, storage utilization, false positives, iCaptcha bypasses, docs/postmortem details, and whether the attack affected signed commits/backups. |
@@ -180,6 +182,7 @@ last_updated: 2026-07-15T00:47:35Z
 | https://gitlawb.com | Official website; project positioning and app entry point |
 | https://gitlawb.com/token | Official token page to verify contract/tokenomics before recording durable token facts |
 | https://ads.gitlawb.com | Official GitLawb Ads product surface posted by the project account; monitor campaign creation, budgets, impressions/clicks/CPM, and token/credit routing |
+| https://gitlawb.com/opengateway/usage/global | Official OpenGateway global usage dashboard; exposes cumulative routed-token/request/cache and list-price-compute figures, but no stable machine-readable API has been verified. |
 | https://blockagent.gitlawb.com | Official Blockagent product URL; Robinhood Chain AI explorer whose indexer was still backfilling at launch. |
 | https://t.me/gitlawbofficial | Reported official Telegram; verify from official site/X because the project has warned about fake groups |
 | https://x.com/gitlawb/status/2065789938889883810 | Official ad-feed / Playground UI update |
@@ -189,6 +192,24 @@ last_updated: 2026-07-15T00:47:35Z
 | https://github.com/Gitlawb/node | Official/open-source node repository referenced by GitLawb; monitor releases, commits, setup docs, and node/network migration status |
 | https://github.com/Gitlawb/memlawb | Public Memlawb repo linked by founder Kevin; monitor releases, docs, MCP examples, and whether the agent-memory tool becomes part of the GitLawb/OpenClaude stack |
 | https://x.com/gitlawb/status/2073950038729117787 | Official OpenClaude v0.22.0 release note; monitor LSP diagnostics, task reports, session grouping, reliability fixes, and usage/credit impact |
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| OpenGateway routed tokens and requests | Measures inference-router usage and retention | Official OpenGateway global usage dashboard/API | partial | Dashboard is public and updated, but no stable machine-readable endpoint was identified; distinguish cumulative totals from current run rate and cache-served tokens. |
+| Paid external traffic, provider cost and retained revenue | Determines whether headline throughput is economically useful | OpenGateway billing/export plus provider invoices or auditable payment records | needs_source_mapping | `$219.6K` is labeled compute routed at list price, not verified spend, gross revenue, net revenue or margin. |
+| Cache hit rate and uncached compute | Shows how much routing reflects model execution versus cache reuse | Official dashboard/API | partial | The 2026-07-20 issuer snapshot reports `85.3%` cache hits and `2.2T` cached tokens; methodology and double-counting controls are not documented. |
+| Credits, ads and `$GITLAWB` routing | Tests whether product usage reaches the token or treasury | Ads/OpenGateway ledger and onchain token/treasury transactions | manual_only | Keep ad impressions, credits, USDC spend and `$GITLAWB` spend separate; no burn, retained-fee or holder route is verified. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| OpenGateway global usage | `https://gitlawb.com/opengateway/usage/global` | partial | Issuer dashboard for all-time tokens, requests, cache and list-price compute; direct retrieval was blocked by the scanner's confusable-domain approval guard | Identify the underlying JSON request/API and add a collector only after schema and historical continuity are tested. |
+| Official usage post/video | `https://x.com/gitlawb/status/2079017128502722711` via `x_search` | tested_ok | Dashboard snapshot and source context | Use for discovery and snapshot context, not independent quantitative verification. |
 
 ## Risks
 
@@ -200,7 +221,7 @@ last_updated: 2026-07-15T00:47:35Z
 ## Open questions
 
 - What is the canonical Base token contract, supply, ownership/LP status, and any fee/credit sink? The official bridged Robinhood contract is `0xd1b0d44E4f6ed940fcC7A9F59Bf30Daf62cCFe3D` as of 2026-07-13; verify LayerZero configuration and two-way delivery.
-- Are OpenClaude/Playground usage metrics public?
+- Can the public OpenGateway/OpenClaude metrics be reproduced through a stable API, and what share of routed tokens/requests is paid, external, uncached and revenue-positive after provider costs?
 - Is there a public GitHub/model repository for the planned open-source coding model?
 - How will ads, credits, voting, and any node incentives connect to token economics?
 - Does Blockagent resolve the gap between `1.42M` indexed blocks and `9.52M` chain head, ship usable MCP access, retain external users, and create any fee, credit, or `$GITLAWB` value route?

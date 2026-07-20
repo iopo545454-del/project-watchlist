@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-07-20T03:39:31Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "GitLawb's public OpenGateway dashboard reports 2.6206T all-time inference tokens across 28.2M requests, 85.3% cache hits and $219.6K of compute routed at list price.",
+    "source": "Official X/Twitter and issuer-controlled usage dashboard",
+    "url": "https://x.com/gitlawb/status/2079017128502722711",
+    "last_scanned": "2026-07-20T03:39:31Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The dossier previously had a 555M-tokens/hour peak and external leaderboard snapshots but no cumulative OpenGateway total. The new dashboard adds all-time tokens, 28.2M requests, about 427.3K requests/day, 2.2T cached tokens and list-price compute; no stable API, paid/free split, unique-user count, provider cost, retained revenue or GITLAWB value route is verified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "OpenGateway inference-routing usage and economics"},
+      {"type": "metric", "ref": "OpenGateway routed tokens, requests, cache hit rate and list-price compute"},
+      {"type": "open_question", "ref": "Reproduce paid/external usage, provider costs, revenue and GITLAWB value capture"}
+    ]
+  },
+  {
+    "date": "2026-07-20T03:39:31Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "catalyst update",
+    "summary": "Credible's MetaDAO raise closed with $32,775,016 committed by 790 contributors against a previously disclosed $4M maximum accepted raise.",
+    "source": "MetaDAO-affiliated X account, official Credible X and tracked ecosystem recap",
+    "url": "https://x.com/ownershipfm/status/2078992794312417469",
+    "last_scanned": "2026-07-20T03:39:31Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo previously tracked the July 13-17 live raise, a $2M-$4M target and $2.315M of soft commitments. The final reported commitment book was 8.19x the $4M cap; accepted/settled capital, allocation concentration, platform fees and META value accrual remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Credible curated raise on MetaDAO"},
+      {"type": "metric", "ref": "Credible commitments, contributors and final accepted allocation"},
+      {"type": "open_question", "ref": "Verify accepted allocation, settlement, concentration, platform fees and META value accrual"}
+    ]
+  },
+  {
     "date": "2026-07-20T02:53:07Z",
     "project": "CHIP / USD.AI",
     "slug": "13-chip-usdai",
