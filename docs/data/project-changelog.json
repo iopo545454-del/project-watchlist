@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-07-20T02:53:07Z",
+    "project": "CHIP / USD.AI",
+    "slug": "13-chip-usdai",
+    "type": "verification update",
+    "summary": "Closed the duration-based sCHIP/NIM signal as stale: official governance docs still describe staking upgrades as exploratory and publish no proposal, lock parameters, contract upgrade or activation.",
+    "source": "USD.AI co-founder X post and official CHIP governance/tokenomics docs",
+    "url": "https://docs.usd.ai/governance/chip",
+    "last_scanned": "2026-07-20T02:53:07Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The July 13 co-founder hint did not advance into governance after seven days. Current docs define CHIP-to-sCHIP staking, governance-set cooldowns and a slashable first-loss backstop, but explicitly call upgrades non-definitive pending governance, security, legal and smart-contract review; no duration tiers, NIM-share formula, vote, deployment or audit was found.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "Duration/locking element for sCHIP NIM access"},
+      {"type": "catalyst", "ref": "Duration-based sCHIP / NIM access"},
+      {"type": "open_question", "ref": "Official duration/NIM proposal and parameters"}
+    ]
+  },
+  {
+    "date": "2026-07-20T02:53:07Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "rumor disproven",
+    "summary": "Disproved current OKT utility: Bankr's own follow-ups say the token has no documented product, gate, payment or governance rights, and current docs expose no OKT-specific configuration.",
+    "source": "Official Bankr X posts and current Bankr access/x402 docs",
+    "url": "https://x.com/bankrbot/status/2073216315289170008",
+    "last_scanned": "2026-07-20T02:53:07Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "This closes the July 4 weak signal after 16 days. The initial bot-generated terminal-access/micropayment/gating claim was contradicted hours later by the same official bot; Bankr currently gates apps through Free/Club/Max and supports generic custom-token x402 endpoints, but no named OKT app, endpoint, access rule or governance artifact exists.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "OKT terminal access, x402 payment and governance utility"},
+      {"type": "catalyst", "ref": "OK, Terminal BETA public/forkable app surface"}
+    ]
+  },
+  {
+    "date": "2026-07-20T02:53:07Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "verification update",
+    "summary": "Closed WIP-1008 as confirmed at the specification level only: the merged WIP remains Draft with TBD stake/predeploy parameters and no runtime implementation.",
+    "source": "Canonical World Chain GitHub repository and merge commit",
+    "url": "https://github.com/worldcoin/world-chain/commit/f43ad2efdb65f57b749ab0ec158a4d8fcec6f6d4",
+    "last_scanned": "2026-07-20T02:53:07Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The July 15 merge confirms the WLD-staked validator-overlay design but not token utility in production. A fresh repository check found StakeManager, subblock, certificate and slashing definitions only in the WIP/spec; no matching contracts, node/sidecar code, audit, testnet, governance activation or Foundation endorsement was found.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "WIP-1008 WLD-staked validator overlay"},
+      {"type": "catalyst", "ref": "WIP-1008 WLD-staked subblocks and unsafe-head BFT"},
+      {"type": "open_question", "ref": "WIP-1008 implementation, parameters, audit and activation"}
+    ]
+  },
+  {
     "date": "2026-07-19T18:42:44Z",
     "project": "VIRTUAL / Virtuals Protocol",
     "slug": "15-virtuals",

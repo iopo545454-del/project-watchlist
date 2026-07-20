@@ -37,6 +37,7 @@
 <p><strong>Notes/ambiguities</strong>
 - User wrote BANKR, but official token appears to be <code>$BNKR</code>; keep both spellings in search alerts.</p>
 <hr></section><section class="section-card"><h2>Latest scan notes</h2><ul>
+<li>2026-07-20 — Dedicated verification <strong>disproved the claimed current <code>$OKT</code> utility</strong>. Bankr's own follow-ups say OKT has no documented product layer, governance, revenue share, staking, discounts or access rights and describe x402/app integration as work still needed. Current Bankr docs gate apps through Free/Club/Max and expose no OKT-specific endpoint or rule. Sources: <a href="https://x.com/bankrbot/status/2073216315289170008" target="_blank" rel="noopener">official contradiction</a>, <a href="https://x.com/bankrbot/status/2073722786204520456" target="_blank" rel="noopener">remediation list</a>, and <a href="https://docs.bankr.bot/docs/agent/access" target="_blank" rel="noopener">current access docs</a>.</li>
 <li>2026-07-19 — Dedicated verification confirmed that the deprecated BNKR vault's cooldown-to-withdrawal path works under real agent use, but also exposed a live deprecation-routing contradiction. After <code>@bankrbot</code> initiated cooldown for <code>18,484,808.87 BNKR</code>, Base transaction <code>0xce2c26c3dfff167be89af02d1ec3fda056b3fbd667870de6fbffd7fb1c440a01</code> burned <code>17,911.179970634999489040 sBNKR</code> and transferred <code>18,484,808.878281170464871296 BNKR</code> from vault <code>0x019fD9ABC9CaEB476D7AFA68BB675518C6BE17b7</code> back to the user's smart wallet. That closes the old stranded-withdrawal check as confirmed. However, official docs still say the vault was deprecated April 8 and new deposits are unsupported, while the same bot deposited <code>50,000 BNKR</code> into the same vault on July 19 and minted sBNKR in transaction <code>0xf7855248fe6e6fef06c68148b90a955cb0789d5e6408734a261a7783f16ec766</code>. Withdrawal reliability is verified; the docs/tooling deprecation state is not internally consistent. Sources: <a href="https://docs.bankr.bot/features/staking/" target="_blank" rel="noopener">https://docs.bankr.bot/features/staking/</a>, <a href="https://x.com/bankrbot/status/2078211691784098201" target="_blank" rel="noopener">https://x.com/bankrbot/status/2078211691784098201</a>, <a href="https://base.blockscout.com/tx/0xce2c26c3dfff167be89af02d1ec3fda056b3fbd667870de6fbffd7fb1c440a01" target="_blank" rel="noopener">https://base.blockscout.com/tx/0xce2c26c3dfff167be89af02d1ec3fda056b3fbd667870de6fbffd7fb1c440a01</a>, <a href="https://x.com/bankrbot/status/2078634235834020249" target="_blank" rel="noopener">https://x.com/bankrbot/status/2078634235834020249</a> and <a href="https://base.blockscout.com/tx/0xf7855248fe6e6fef06c68148b90a955cb0789d5e6408734a261a7783f16ec766" target="_blank" rel="noopener">https://base.blockscout.com/tx/0xf7855248fe6e6fef06c68148b90a955cb0789d5e6408734a261a7783f16ec766</a></li>
 <li>2026-07-16 — Dedicated verification confirmed the June 21 console/test-token trust incident at the level supported by the original thread. Core builder <code>@0xDeployer</code> acknowledged that a team member publicly deployed a test coin while redesigning Bankr Console, said it should not have been deployed that way, rejected fee-farming intent, notified the all-hands group and added a rule to the internal policy document. The complainant's follow-up reported roughly <code>$10K</code> of real user losses, but no contract-complete loss reconstruction, public postmortem, reimbursement, or incident-specific public control change was found; later Console safeguards are broader product controls, not a demonstrated remedy for this event. The old watch item is closed as confirmed with losses still user-reported. Source: <a href="https://x.com/0xDeployer/status/2068496200937189424" target="_blank" rel="noopener">https://x.com/0xDeployer/status/2068496200937189424</a></li>
 <li>
@@ -263,12 +264,12 @@
 </tr>
 <tr>
 <td>OK, Terminal BETA public/forkable app surface</td>
-<td>Confirmed</td>
-<td>Official Bankr bot said the app is live, public-by-link and forkable: <a href="https://x.com/bankrbot/status/2073180919142474211" target="_blank" rel="noopener">https://x.com/bankrbot/status/2073180919142474211</a></td>
-<td>Live beta as of 2026-07-04</td>
+<td>Confirmed app; OKT utility disproven</td>
+<td>Official Bankr bot said the app is live, public-by-link and forkable: <a href="https://x.com/bankrbot/status/2073180919142474211" target="_blank" rel="noopener">app source</a>. Its own follow-ups say OKT has no documented utility and still needs x402/app integration: <a href="https://x.com/bankrbot/status/2073216315289170008" target="_blank" rel="noopener">contradiction</a> and <a href="https://x.com/bankrbot/status/2073722786204520456" target="_blank" rel="noopener">remediation</a>.</td>
+<td>Live beta as of 2026-07-04; OKT link closed 2026-07-20</td>
 <td>Adds another public app/tool surface inside Bankr, expanding the agent-console/product layer beyond token launches and one-off x402 skills.</td>
-<td>If users fork/use these apps, Bankr can become a distribution layer for agent terminals and paid app flows; token relevance depends on access gating, fees, Club utility, or BNKR-linked incentives.</td>
-<td>Watch app metadata, docs, repeat public apps, usage/fork counts if exposed, and whether OKT/BNKR/Club gate access or receive fees.</td>
+<td>The app supports Bankr distribution, but it does not establish token access, payments or governance; current access is through Bankr's documented Free/Club/Max tiers.</td>
+<td>Monitor app usage and paid Bankr flows as ordinary product KPIs. Reopen OKT only for a named app/endpoint, deployed payment configuration or governance artifact.</td>
 </tr>
 <tr>
 <td>Coinbase agent-stack interaction</td>
@@ -321,13 +322,13 @@
 </thead>
 <tbody>
 <tr>
-<td>2026-07-04</td>
+<td>2026-07-04; resolved 2026-07-20</td>
 <td>OK, Terminal / <code>$OKT</code> may function as a Bankr-deployed Base utility token for terminal access, AI/agent micro-payments, feature gating, and possible future governance.</td>
-<td><a href="https://x.com/bankrbot/status/2073186758867779991" target="_blank" rel="noopener">https://x.com/bankrbot/status/2073186758867779991</a>; verification context: <a href="https://x.com/bankrbot/status/2073216315289170008" target="_blank" rel="noopener">https://x.com/bankrbot/status/2073216315289170008</a> and <a href="https://x.com/bankrbot/status/2073722786204520456" target="_blank" rel="noopener">https://x.com/bankrbot/status/2073722786204520456</a></td>
+<td>Original: <a href="https://x.com/bankrbot/status/2073186758867779991" target="_blank" rel="noopener">utility claim</a>; <a href="https://x.com/bankrbot/status/2073216315289170008" target="_blank" rel="noopener">official contradiction</a>; <a href="https://x.com/bankrbot/status/2073722786204520456" target="_blank" rel="noopener">remediation list</a>; <a href="https://docs.bankr.bot/docs/agent/access" target="_blank" rel="noopener">current access docs</a></td>
 <td>Medium</td>
-<td>Partially supported / utility unconfirmed</td>
-<td>Bankr bot said <code>$OKT</code> had no documented utility as of July 4, then suggested x402/Bankr-app integration as a path that would make it relevant. If formalized, this would show Bankr-launched app tokens tied to access/agent-payment utility rather than pure launchpad speculation; currently it is not durable tokenomics.</td>
-<td>Re-check official OK, Terminal docs/app metadata, Bankr launch page, contract details, access-gating behavior, and team confirmation; mark stale/disproven if no actual OKT-gated product emerges.</td>
+<td>Disproven</td>
+<td>Bankr's own follow-up says OKT has no documented product layer, governance, revenue share, staking, discounts or access rights and describes x402/app integration as work still needed. Current docs expose no OKT-specific gate, endpoint or governance artifact.</td>
+<td>Resolved 2026-07-20 (<code>carried_from: 2026-07-04</code>): do not carry. Reopen only if an official named app/endpoint, deployed payment configuration, access rule or governance artifact actually uses OKT.</td>
 </tr>
 <tr>
 <td>2026-06-22</td>

@@ -39,6 +39,7 @@
 <p><strong>Notes/ambiguities</strong>
 - Brand naming can be confusing: Worldcoin, World Network, World Foundation, Tools for Humanity and World Chain are distinct but linked.
 - Always distinguish equity funding in TFH from WLD token sales/purchases.</p></section><section class="section-card"><h2>Latest scan notes</h2><ul>
+<li>2026-07-20 — Dedicated verification closed WIP-1008 as <strong>confirmed at the specification level only</strong>. The canonical merge commit adds a 268-line WIP that still says <code>status: Draft</code>, leaves minimum stake and predeploy address TBD, and has no matching runtime contract, node/sidecar implementation, audit, testnet or activation artifact. Sources: <a href="https://github.com/worldcoin/world-chain/commit/f43ad2efdb65f57b749ab0ec158a4d8fcec6f6d4" target="_blank" rel="noopener">merge commit</a> and <a href="https://github.com/worldcoin/world-chain/blob/main/wips/wip-1008.md" target="_blank" rel="noopener">canonical WIP</a>.</li>
 <li>2026-07-15 — World Chain <strong>merged WIP-1008</strong> into the specification repository after five commits, adding a documentation-only standards proposal for WLD-staked subblock committees, BLS attestations, a two-thirds-stake certificate, slashing/rewards, <code>StakeManager</code>, <code>attested</code> RPC head and <code>flblk</code> v3 gossip. This confirms the design as a merged Core standards-track spec, but the PR explicitly says it is <strong>documentation only / low risk</strong>: no runtime implementation, contract deployment, audit, governance activation, minimum stake or reward amount shipped. Source: <a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">https://github.com/worldcoin/world-chain/pull/850</a></li>
 <li>2026-07-14 — WIP-1008 is no longer a draft and received its first human approval. Reviewer Alessandro Mazza said the design generally looks good but questioned whether the implementation cost is justified because World Chain's batcher already moves blocks from unsafe to safe roughly every <strong>3–4 minutes</strong> and the work is time-sensitive. The PR remains open and unmerged, so this advances review confidence without confirming implementation, economics or activation. Source: <a href="https://github.com/worldcoin/world-chain/pull/850#pullrequestreview-4691755012" target="_blank" rel="noopener">https://github.com/worldcoin/world-chain/pull/850#pullrequestreview-4691755012</a></li>
 <li>2026-07-13 — World Chain PR #850 opened draft WIP-1008 for <strong>Staked Subblocks and Unsafe-Head BFT</strong>. The proposal would add a WLD-staked validator overlay that contributes protocol-guaranteed subblocks, attests the unsafe chain at a two-thirds stake quorum, slashes equivocation/censorship faults, and pays subblock priority fees plus attestation rewards. This would be World Chain's first native WLD staking/value-utility mechanism and a decentralization/security step change, but it is only a draft open PR: minimum stake, reward amounts, governance path, audits, implementation and activation are all unresolved. Source: <a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">https://github.com/worldcoin/world-chain/pull/850</a></li>
@@ -62,12 +63,12 @@
 <tbody>
 <tr>
 <td>WIP-1008 WLD-staked subblocks and unsafe-head BFT</td>
-<td>Confirmed merged specification / watch implementation</td>
-<td>World Chain merged the documentation-only Core standards-track proposal after review: <a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">https://github.com/worldcoin/world-chain/pull/850</a>. The spec defines WLD-staked validators, subblock committees, two-thirds-stake BFT attestations, slashing, priority-fee/attestation rewards, <code>StakeManager</code>, an <code>attested</code> RPC head and <code>flblk</code> v3 gossip; the PR explicitly says no runtime/protocol implementation shipped.</td>
-<td>Spec merged 2026-07-15; implementation, governance and activation schedule unknown</td>
-<td>Advances native WLD staking and validator fee/reward design from open proposal to canonical merged specification without activating economics.</td>
+<td>Confirmed merged Draft specification / implementation absent</td>
+<td>World Chain merged the documentation-only proposal: <a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">PR #850</a> and <a href="https://github.com/worldcoin/world-chain/commit/f43ad2efdb65f57b749ab0ec158a4d8fcec6f6d4" target="_blank" rel="noopener">merge commit</a>. The WIP still says Draft, leaves stake/address parameters TBD and has no matching runtime contract/node/sidecar implementation.</td>
+<td>Spec merged 2026-07-15; no implementation, governance or activation schedule as of 2026-07-20</td>
+<td>Confirms native WLD staking and validator economics as a real protocol design, not live token utility.</td>
 <td>If implemented, WLD gains productive utility and World Chain reduces single-sequencer censorship/reorg risk; validator concentration, reward funding and slashing design add governance and market-structure risks.</td>
-<td>Watch Foundation/World Chain endorsement, implementation PRs, minimum stake, active-set/reward/slashing parameters, contracts/sidecar code, audits, testnet, governance and activation.</td>
+<td>Monitor as an open implementation question: Foundation endorsement, Review/Final status, code/contracts, parameters, audits, testnet, governance and activation.</td>
 </tr>
 <tr>
 <td>World Chain mainnet opened to World users</td>
@@ -450,14 +451,14 @@
 </thead>
 <tbody>
 <tr>
-<td>2026-07-13; advanced 2026-07-15</td>
+<td>2026-07-13; advanced 2026-07-15; resolved 2026-07-20</td>
 <td>WIP-1008 may add a WLD-staked validator overlay, protocol-guaranteed subblocks, BFT attestations, slashing, and validator fee/reward flows to World Chain.</td>
-<td><a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">https://github.com/worldcoin/world-chain/pull/850</a></td>
+<td><a href="https://github.com/worldcoin/world-chain/pull/850" target="_blank" rel="noopener">PR #850</a>; <a href="https://github.com/worldcoin/world-chain/commit/f43ad2efdb65f57b749ab0ec158a4d8fcec6f6d4" target="_blank" rel="noopener">merge commit</a>; <a href="https://github.com/worldcoin/world-chain/blob/main/wips/wip-1008.md" target="_blank" rel="noopener">canonical WIP</a></td>
 <td>Official GitHub specification PR</td>
 <td>High</td>
-<td>Partially supported — specification merged; implementation/activation unverified</td>
-<td>The design is now canonical in the World Chain specification repository, a meaningful step toward WLD utility and validator economics. The merged PR is documentation-only and explicitly ships no runtime implementation.</td>
-<td><code>carried_from: scan-20260713T213409Z; advanced watchlist-scan-20260715T234645Z</code> — check implementation PRs, Foundation endorsement, parameters, contracts, audits, testnet, governance and activation.</td>
+<td>Confirmed / closed at specification level; not implemented</td>
+<td>The merged canonical WIP confirms the design, but remains Draft with TBD stake/predeploy parameters and exists only in spec files; no runtime contracts, node/sidecar code, audit, testnet, governance activation or Foundation endorsement was found.</td>
+<td>Resolved 2026-07-20 (<code>carried_from: scan-20260713T213409Z</code>): do not carry the design claim as unverified. Track implementation through the catalyst/open question and reopen only when code, contracts, parameters, audits, testnet or activation artifacts appear.</td>
 </tr>
 </tbody>
 </table></div></section><section class="section-card trigger-card"><h2>Watch triggers</h2><ul>
