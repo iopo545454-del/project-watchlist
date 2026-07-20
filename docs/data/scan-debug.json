@@ -1,5 +1,135 @@
 [
   {
+    "run_id": "watchlist-scan-20260720T212938Z",
+    "started_at": "2026-07-20T21:29:38Z",
+    "completed_at": "2026-07-20T21:57:31Z",
+    "status": "success",
+    "scan_window": {
+      "from": "2026-07-20T17:24:36Z",
+      "to": "2026-07-20T21:57:31Z",
+      "baseline": "Prior broad scan completion; full cadence window and the latest 18 standing checks were consumed."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, refreshed 13 configured direct-metric projects while preserving the suppressed snapshot, covered all 94 tracked official/team/core X accounts in explicit groups, ran a broad credible weak-signal query, consumed the prior next-check queue and performed the mandatory substantive non-X GEODNET review. Logged MetaDAO's Rip Cars allocation pilot, GitLawb Kiln, Venice-powered June routing and Virtuals' unilateral Robinhood infrastructure positioning.",
+    "projects_checked": [
+      "02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"
+    ],
+    "logged_projects": ["03-meta", "06-gitlawb", "14-vvv-venice", "15-virtuals"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 4,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "new_changelog_entries": 4,
+      "confirmed_or_durable_findings": 3,
+      "source_proximate_positioning_findings": 1,
+      "unverified_watch_items_added_or_advanced": 0,
+      "stale_projects_substantively_checked": 1,
+      "current_window_no_logged_change_projects": 21,
+      "errors": 5
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub public Issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Checked three open intake-form issues. EigenCloud, Ambient and Pluralis deduplicate by name, primary X and token context to existing reviewed entries.",
+        "decision": "No new project or duplicate entry created."
+      },
+      {
+        "project": "Direct metrics",
+        "source": "scripts/collect_direct_metrics.py --write",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collected 31 metrics for 13 configured projects at 2026-07-20T21:29:56Z while preserving, not fetching, suppressed POD. Kinetiq TVL fell 0.04%; NEAR seven-day Intents volume rose 8.56% while 24h volume fell 21.59% and seven-day users fell 0.79%; Derive TVL rose 0.53%; BIO TVL rose 1.23%; Chutes TVL rose 0.67%. No configured materiality rule crossed. A concurrent scheduled metrics commit had already refreshed the canonical files at 19:54:57Z.",
+        "decision": "No standalone metric changelog entry and no redundant 21:29 snapshot commit because no rule crossed; retain the concurrent canonical metrics commit."
+      },
+      {
+        "project": "GEOD / GEODNET",
+        "source": "Canonical GIP GitHub repository and DefiLlama fees API",
+        "url": "https://github.com/GEODNET/GIP",
+        "summary": "Mandatory stale-project review confirmed canonical GIP HEAD remains GIP-13 from 2026-04-15 with no formal GIP-14. Live fees were $27,704 over 24h, $202,234 over 7d, $904,359 over 30d and $10.401M all-time. The current X post repeated centimeter-accuracy use cases without new measured GEO-PULSE adoption or recurring-revenue evidence.",
+        "decision": "No changelog and no last_updated reset; carry GEO-PULSE adoption/revenue and formal GIP-14 checks."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "Official MetaDAO X, official raise page and Ownership FM",
+        "url": "https://x.com/MetaDAOProject/status/2079261156020281582",
+        "summary": "MetaDAO scheduled a $250K Rip Cars raise for July 21 at 17:00 UTC. Up to 50% of allocations use a new Ownership Score based on ownership-token dollars held per day with 1% daily point decay; the remaining allocation uses standard time weighting. The official raise page returned HTTP 429 to direct retrieval but is linked by MetaDAO.",
+        "decision": "Add an upcoming catalyst, Latest entry and changelog. Treat the raise as repeat core-function output and the allocation pilot as the new mechanism; verify settlement, concentration, fees and any META route after launch."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "Founder X and live Kiln product page",
+        "url": "https://x.com/kevincodex/status/2079319114376712657",
+        "summary": "Founder Kevin introduced Kiln as the lightweight harness powering Playground. Direct HTTPS returned the live page, but no repository, license, architecture, usage, pricing or GITLAWB economics were disclosed.",
+        "decision": "Add a low-detail live-product catalyst, Latest entry and changelog; keep code, usage, security and economics as verification gates."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "OpenSoftware launch, live June page and official Venice X",
+        "url": "https://x.com/OpenSoftwareCo/status/2079285998383444145",
+        "summary": "OpenSoftware launched automatic private model routing in the open-source June macOS app, powered by Venice. Low/Balanced/High preferences select models per request while defaulting to private/zero-retention routing; the live page returned HTTP 200. No Venice-attributed usage, revenue, VVV staking demand or burn impact was disclosed.",
+        "decision": "Add a partner-integration catalyst, Latest entry and changelog; keep quantitative token-economics follow-through open."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "Official Virtuals X",
+        "url": "https://x.com/virtuals_io/status/2079265112989536627",
+        "summary": "Virtuals called itself Robinhood Crypto's primary agent infrastructure and reused its prior launch tutorial/deep dive. No Robinhood counterpart independently confirmed primary status, the tutorial itself does not mention Robinhood, and the post adds no brokerage-MCP proof or VIRTUAL economics.",
+        "decision": "Log as source-proximate positioning with explicit unilateral-claim caveat; update the Robinhood catalyst and retain counterpart/MCP verification."
+      },
+      {
+        "project": "Below-threshold X findings",
+        "source": "X/Twitter via explicit-handle x_search",
+        "url": "docs/data/index.json",
+        "summary": "Bankr produced routine swaps, support, market analysis, leaderboard replies and one baseline token deployment; NEAR re-announced already tracked Confidential Intents GA; Derive posted ZEC market commentary; Macrocosmos discussed an SN13/Apex competition unrelated to tracked SN9; EigenCloud posted a builder-session recap; Pluralis-related accounts posted general AI/research commentary; GEODNET repeated use cases.",
+        "decision": "Exclude under duplicate, project-scope, routine-core-function and materiality rules."
+      },
+      {
+        "project": "Remaining enabled projects",
+        "source": "Tracked X accounts, prior next checks, official Git/GitHub surfaces and configured direct sources",
+        "url": "projects/",
+        "summary": "No additional official release, tokenomics/governance change, listing/liquidity step change, security incident, funding/team change, high-signal weak item or material configured metric move was established in the scan window.",
+        "decision": "No changelog; unresolved checks are explicitly carried below with origin."
+      }
+    ],
+    "errors": [
+      "Two of three delegated X-scan workers failed on model stream timeouts before returning coverage; direct explicit-handle x_search calls covered their assigned accounts before decisions.",
+      "Several no-result X searches returned degraded no-citation summaries; allowed-handle retries and direct exact-status retrieval supplied source URLs for every accepted finding, and empty degraded results were not used as evidence.",
+      "The broad weak-signal X query returned no citations and was treated as non-evidence; explicit tracked-account searches and targeted exact-post follow-ups completed the materiality review.",
+      "The official MetaDAO Rip Cars page returned HTTP 429 during direct retrieval; the official MetaDAO post linked the page and source-proximate Ownership FM supplied the raise terms.",
+      "A concurrent direct-metrics commit reached origin/main during the scan. Routine local 21:29 collector writes were discarded after confirming no materiality rule crossed; main was fast-forwarded to the canonical 19:54:57Z metrics snapshot before validation and commit."
+    ],
+    "next_checks": [
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion model/checkpoint and reproduce speed, convergence and cost claims; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.", "carried_from": "watchlist-scan-20260715T234645Z; SN13/Apex competition was unrelated to tracked SN9 in watchlist-scan-20260720T212938Z"},
+      {"project": "VVV / Venice AI", "check": "Verify June-attributed Venice requests/revenue and any staking/burn effect; verify current DIEM supply, weekly utilization and holder mix; reconcile compute liabilities with VVV burns/emissions, staking terms and paid revenue.", "carried_from": "watchlist-scan-20260715T052432Z; June integration advanced distribution but not economics in watchlist-scan-20260720T212938Z"},
+      {"project": "Ambient", "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.", "carried_from": "watchlist-scan-20260715T192052Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "DRV / Derive Protocol", "check": "Map Buyback #75 transactions and fee window; verify next buyback, Korean exchange networks/withdrawals/depth and ORIA/Hyperliquid/v3 follow-through.", "carried_from": "watchlist-scan-20260715T192052Z; ZEC market commentary added no buyback or protocol evidence in watchlist-scan-20260720T212938Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Inspect Kiln's repository/license, architecture, workflows, usage, pricing and security; identify a stable OpenGateway API/export and reconcile organic paid usage, costs, retained revenue and GITLAWB routing; verify Ads and Blockagent economics.", "carried_from": "watchlist-scan-20260715T052432Z; Kiln page advanced product surface but not implementation/economics in watchlist-scan-20260720T212938Z"},
+      {"project": "NEAR Protocol", "check": "Monitor Protocol v86 reliability, first automatic mainnet shard split and ML-DSA adoption; continue Corbits, NEAR@3.33, confidential partner and revenue/buyback checks.", "carried_from": "watchlist-scan-20260715T192052Z; Confidential Intents thread repeated already tracked GA in watchlist-scan-20260720T212938Z"},
+      {"project": "OCT / Octra", "check": "Verify TAPE, tagged/reproducible node release, license/build/container, configs, peer docs, audits, external operators and telemetry; then bridge/Hyperliquid prerequisites.", "carried_from": "watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "AKT / Akash", "check": "Verify a paid production multi-node RDMA/InfiniBand/RoCE workload after merged provider PR #400, including release, provider adoption, reliability, spend and BME burns.", "carried_from": "watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "VIRTUAL / Virtuals Protocol", "check": "Obtain Robinhood counterpart confirmation for Virtuals' primary-infrastructure claim; reproduce Robinhood Chain volume/fees/launches and map the 1% fee/VIRTUAL route; verify an actual Virtuals-built agent using Robinhood brokerage MCP.", "carried_from": "watchlist-scan-20260715T052432Z; unilateral primary-infrastructure claim advanced positioning but not counterpart/MCP proof in watchlist-scan-20260720T212938Z"},
+      {"project": "META / MetaDAO", "check": "After the July 21 Rip Cars raise, verify score-holder versus standard allocation, accepted capital, settlement, concentration, team unlocks, platform fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; Rip Cars Ownership Score pilot added an exact upcoming event in watchlist-scan-20260720T212938Z"},
+      {"project": "BIO / Bio Protocol", "check": "Find CrossBridge grant/IP lineage, Lilly/company terms and ecosystem-metric methodology; map BIO/veBIO locks, sales, rewards, contracts, milestones and value routing.", "carried_from": "watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "Pluralis", "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and official NeurIPS workshop page/CFP.", "carried_from": "watchlist-scan-20260715T192052Z; founder/investor commentary was unrelated to project artifacts in watchlist-scan-20260720T212938Z"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.", "carried_from": "watchlist-scan-20260715T052432Z; explicitly not due in watchlist-scan-20260720T212938Z"},
+      {"project": "AEON Framework", "check": "Reproduce v0.1 attestations and inspect verifier/public log, external users, security, fees and aeon value capture.", "carried_from": "watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "GEOD / GEODNET", "check": "Verify GEO-PULSE measured accuracy, orders, active devices and recurring revenue; monitor canonical GIP repository for formal GIP-14 and continue direct revenue/burn checks.", "carried_from": "watchlist-scan-20260715T052432Z; substantive GIP/fees check again found no GIP-14 or adoption/revenue evidence in watchlist-scan-20260720T212938Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Independently reproduce Parallax 20B losses, hardware/network accounting, ~6-second steps and under-$10/hour claim; obtain code/checkpoint; verify paid jobs, Internet Court usage and SN64 revenue/margins.", "carried_from": "watchlist-scan-20260715T052432Z; no new artifacts or economics in watchlist-scan-20260720T212938Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Verify Kraken liquidity/deposits/withdrawals, GPU inventory/utilization and post-listing buyback, burn, credit-purchase or utilization effects.", "carried_from": "watchlist-scan-20260715T052432Z; no dispositive resolution in watchlist-scan-20260720T212938Z"},
+      {"project": "Compute Horde — Bittensor Subnet 12", "check": "Use canonical Grafana health and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.", "carried_from": "watchlist-scan-20260715T192052Z; no dispositive resolution in watchlist-scan-20260720T212938Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 4,
+      "tiers": {"high": 0, "medium": 2, "low": 2},
+      "note": "Independent tagger labeled MetaDAO's allocation pilot and Venice/June integration medium/watch, and GitLawb Kiln plus Virtuals' unilateral Robinhood positioning low/log; labels were verified before commit."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260720T165255Z",
     "started_at": "2026-07-20T16:52:55Z",
     "completed_at": "2026-07-20T17:24:36Z",
