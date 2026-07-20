@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-20T17:10:56Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "official update",
+    "summary": "NEAR Protocol v86 is live on mainnet with FIPS-204 ML-DSA-65 signing and threshold-driven dynamic resharding; direct RPC confirms protocol 86 on nearcore 2.13.1.",
+    "source": "Official NEAR X, canonical nearcore releases/code and mainnet RPC",
+    "url": "https://x.com/NEARProtocol/status/2079189515843821764",
+    "last_scanned": "2026-07-20T17:10:56Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior dossier had nearcore 2.13 released with Protocol v86 voting/activation still pending. Mainnet RPC now returns protocol 86 and node 2.13.1; release/code sources configure ML-DSA verification plus epoch-boundary automatic splits at a 40,000,000,000 memory threshold, 10,000,000,000 minimum child size, maximum 10 shards and two-epoch spacing. No first automatic mainnet split or broad wallet adoption is yet established.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
+      {"type": "open_question", "ref": "Protocol v86 post-activation health, first automatic shard split and ML-DSA adoption"}
+    ]
+  },
+  {
+    "date": "2026-07-20T17:10:56Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "catalyst update",
+    "summary": "Chutes documented a Parallax 20B sparse-MoE training run across non-colocated L40S/RTX 6000 Ada composers and remote RTX 4090 workers.",
+    "source": "Official Chutes X and Parallax draft technical report",
+    "url": "https://x.com/chutes_ai/status/2079197210651001326",
+    "last_scanned": "2026-07-20T17:10:56Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior Parallax evidence was a recurrent-model result within 0.6% of centralized quality. The new 36-page draft reports 20B-run validation losses, while the social graphic adds eight L40S VMs across two continents, remote consumer GPUs, about 6 seconds/step and under $10/hour. The report explicitly lacks replicated equivalence tests and measured wall-clock speedups; no code/checkpoint, paid job or SN64 training-economics loop is live.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Parallax decentralized training milestones"},
+      {"type": "open_question", "ref": "Independent replication and paid Parallax training economics"}
+    ]
+  },
+  {
+    "date": "2026-07-20T17:10:56Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Robinhood opened US agentic brokerage accounts through its MCP server and Virtuals amplified the launch, but no direct Virtuals-to-brokerage integration is yet evidenced.",
+    "source": "Official Robinhood product page/X and official Virtuals X",
+    "url": "https://x.com/virtuals_io/status/2079198684764602850",
+    "last_scanned": "2026-07-20T17:10:56Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The repo already tracked Virtuals agent-token trading and $150M+ issuer-reported volume on Robinhood Chain. Robinhood now separately exposes equities/options brokerage accounts to AI agents through MCP, with crypto coming, but neither source names Virtuals rails or VIRTUAL routing. insiders.bot says one $IN agent is live on Robinhood via Virtuals; that is a baseline ecosystem instance, not proof of protocol-wide MCP adoption.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
+      {"type": "open_question", "ref": "Virtuals-built agent use of Robinhood brokerage MCP"}
+    ]
+  },
+  {
     "date": "2026-07-20T15:38:45Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
