@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-20T03:28:09Z",
+  "generated_at": "2026-07-20T04:02:18Z",
   "projects": {
     "01-pod": {
       "display_name": "POD / Dolphin",
@@ -111,7 +111,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/07-kinetiq.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -144,7 +144,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/08-grass.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -171,7 +171,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/12-akt-akash.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
@@ -186,7 +186,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/14-vvv-venice.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -213,7 +213,7 @@
       "status": "active",
       "summary": "The corrected DefiLlama adapter captures Virtuals' 1% USDC/USDG platform fee at Base and Robinhood tax-manager wallets as protocol revenue; wallet ownership, net retention and any VIRTUAL buyback/burn/staking route remain open.",
       "methodology_file": "projects/15-virtuals.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "total24h",
@@ -285,7 +285,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/16-worldcoin-wld.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -312,13 +312,13 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/17-near.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "intents_volume_all_time",
           "group": "intents",
           "label": "Intents all-time volume",
-          "value": 23443856909.94138,
+          "value": 23444566945.765102,
           "unit": "usd",
           "display": "$23.44B",
           "change": null,
@@ -396,9 +396,9 @@
           "id": "intents_unique_users_7d",
           "group": "intents",
           "label": "Intents unique users (7d)",
-          "value": 105703,
+          "value": 105625,
           "unit": "count",
-          "display": "105.7K",
+          "display": "105.6K",
           "change": null,
           "source_id": "nearstats_intents_summary",
           "source_url": "https://nearstats.org/api/near/summary",
@@ -430,7 +430,7 @@
       "status": "active",
       "summary": "Fees, TVL, and aggregate options volume are fetchable; OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
       "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "total24h",
@@ -533,7 +533,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/20-bio.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -571,7 +571,7 @@
       "status": "active",
       "summary": "DefiLlama exposes EigenCloud/EigenLayer supplier-side fees separately from zero protocol revenue; Darkbloom paid usage, provider revenue and EIGEN fee/burn routing still need stable aggregate adapters.",
       "methodology_file": "projects/23-eigencloud.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "total24h",
@@ -674,7 +674,7 @@
       "status": "active",
       "summary": "DefiLlama covers Chutes revenue and TVL; Taostats subnet metrics remain manual/keyed until a public endpoint is confirmed.",
       "methodology_file": "projects/24-chutes.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [
         {
           "id": "total24h",
@@ -748,7 +748,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/25-lium.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
@@ -763,7 +763,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/26-compute-horde.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-07-20T03:28:09Z",
+      "last_refreshed": "2026-07-20T04:02:18Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
