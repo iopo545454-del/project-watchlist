@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-07-20T15:38:45Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "Bankr's public API now exposes aggregate launch volume, deployments and labeled Bankr/creator fees, closing the missing-dashboard check while leaving chain attribution and BNKR routing open.",
+    "source": "Official Bankr public APIs and core-builder X/Twitter snapshot",
+    "url": "https://api.bankr.bot/public/dashboard",
+    "last_scanned": "2026-07-20T15:38:45Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior dossier had only a July 14 screenshot showing $49.307M Robinhood volume, $612,920 creator fees and 11,265 launches. The public endpoint now reports $4.886B all-chain lifetime volume, $1.606B Doppler volume, 1.603M deployments, $13.207M labeled Bankr fees and $19.440M creator fees; its July 8-13 Doppler series broadly corroborates the snapshot, but chain-specific history and Discover/dashboard 24h values do not reconcile cleanly.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Robinhood Chain launchpad traction and creator-fee loop"},
+      {"type": "metric", "ref": "Launchpad volume, deployments and Bankr/creator fees"},
+      {"type": "open_question", "ref": "Chain attribution, cohort retention and BNKR value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-20T15:38:45Z",
+    "project": "Targon — Bittensor Subnet 4",
+    "slug": "10-targon",
+    "type": "official update",
+    "summary": "TargonOS 0.1.0 is a live signed miner OS release with ISO/netboot artifacts, hardware validation, encrypted storage and boot-time attestation—not an event-only demo.",
+    "source": "Official Targon docs, release server and canonical GitHub repository",
+    "url": "https://docs.targon.com/providers/miner/installing-targonos",
+    "last_scanned": "2026-07-20T15:38:45Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Before the July 16 E081 event, the repo could not tell whether TargonOS was code, an image or a demo. The July 17 release directory now exposes a 3.9 GB ISO, netboot bundle, SHA-256 manifest and minisign artifacts; official docs say it replaces manual TVM provisioning and attests on every boot. Node adoption, audit/reproducibility, paid utilization and incremental SN4 economics remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "TargonOS 0.1.0 miner operating-system launch"},
+      {"type": "open_question", "ref": "TargonOS trust root, adoption, reliability and SN4 economics"}
+    ]
+  },
+  {
+    "date": "2026-07-20T15:38:45Z",
+    "project": "TAO / Bittensor",
+    "slug": "11-tao-bittensor",
+    "type": "verification update",
+    "summary": "Closed the Yanez/Bitsec technical-detail hunt as stale: no report, component, code/patch or exposure artifact surfaced, while YanezYID is now live on both app stores and named partner integrations are public.",
+    "source": "Official Yanez/Bitsec sources, Apple App Store, Google Play and Yanez publications",
+    "url": "https://x.com/yanez__ai/status/2077070879985701136",
+    "last_scanned": "2026-07-20T15:38:45Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior item left the delayed release, vulnerability class, patch, exposure and two unnamed clients unresolved. No technical disclosure exists on the checked primary surfaces, so the vulnerability hunt is no longer actionable and is not evidence of an exploit. Separately, YanezYID v1.0 launched on Apple July 15 and Google Play by July 17, and official Yanez publications name Syklo and Nexartis; paid usage and SN54 revenue-to-alpha execution remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Yanez / SN54 Bitsec pre-release security review"},
+      {"type": "catalyst", "ref": "Yanez Proof-of-Humanhood revenue-to-alpha loop"},
+      {"type": "open_question", "ref": "Paid client usage and onchain SN54 revenue conversion"}
+    ]
+  },
+  {
     "date": "2026-07-20T12:42:05Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",

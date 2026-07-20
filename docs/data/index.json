@@ -83,11 +83,11 @@
       "https://x.com/bankrbot",
       "https://x.com/saltorious1"
     ],
-    "links_count": 8,
+    "links_count": 12,
     "file": "projects/04-bankr.md",
     "github_file": "projects/04-bankr.md",
-    "last_updated": "2026-07-20T02:53:07Z",
-    "open_questions": "Reproduce Robinhood launchpad volume/creator fees and concentration/retention; verify Bankr fee share and BNKR/Club routing; check LayerZero bridge/pool, public skills and Reward Season 2; resolve why the bot still deposits into the vault official docs call deprecated.",
+    "last_updated": "2026-07-20T15:22:40Z",
+    "open_questions": "Reconcile Bankr's public dashboard and Robinhood Discover 24h figures, derive chain-specific history and cohort retention, and map labeled Bankr fees to treasury/net revenue and any BNKR/Club route; continue bridge/pool, skills, rewards and deprecated-vault checks.",
     "html_page": "projects/04-bankr.html",
     "status": "active",
     "initial_review_done": true
@@ -219,8 +219,8 @@
     "links_count": 11,
     "file": "projects/10-targon.md",
     "github_file": "projects/10-targon.md",
-    "last_updated": "2026-07-19T01:01:44Z",
-    "open_questions": "Verify TargonOS 0.1.0 signatures/audit/adoption and post-release reliability; reproduce 16,000+ workloads/ARPU, Tower reservations/delivery/utilization and the 2,000 TAO/month buyback proxy.",
+    "last_updated": "2026-07-20T15:22:40Z",
+    "open_questions": "Verify TargonOS 0.1.0 trust-root/audit/reproducibility, node adoption, updates/rollback and post-release reliability; reproduce workloads, utilization, Tower delivery and the 2,000 TAO/month buyback proxy.",
     "html_page": "projects/10-targon.html",
     "status": "active",
     "initial_review_done": true
@@ -237,11 +237,11 @@
       "https://x.com/opentensor",
       "https://x.com/yanez__ai"
     ],
-    "links_count": 8,
+    "links_count": 11,
     "file": "projects/11-tao-bittensor.md",
     "github_file": "projects/11-tao-bittensor.md",
-    "last_updated": "2026-07-19T10:21:04Z",
-    "open_questions": "Identify the Yanez/Bitsec vulnerability, affected release/component, severity, patch/audit evidence and any production, client, biometric-data or fund exposure; verify SN54 clients, incentives and revenue-to-alpha execution.",
+    "last_updated": "2026-07-20T15:22:40Z",
+    "open_questions": "Verify paid production use of the live YanezYID apps and named Syklo/Nexartis integrations, registry growth, incentive mechanics and onchain SN54 revenue-to-alpha execution; reopen the stale Bitsec detail check only for a report, patch or incident artifact.",
     "html_page": "projects/11-tao-bittensor.html",
     "status": "active",
     "initial_review_done": true
