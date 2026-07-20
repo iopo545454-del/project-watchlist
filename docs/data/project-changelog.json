@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-07-20T12:42:05Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "verification update",
+    "summary": "Official MetaDAO says Credible accepted $4M, set CRED at $0.40 / about $9.065M FDV and made CRED plus USDC refunds claimable; official sale docs now confirm allocation mechanics.",
+    "source": "Official MetaDAO X/Twitter and sale docs",
+    "url": "https://x.com/MetaDAOProject/status/2078177966073463262",
+    "last_scanned": "2026-07-20T12:42:05Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior entry established $32.775M committed by 790 contributors but left accepted capital and settlement unresolved. Official MetaDAO now identifies the accepted cap as $4M and says CRED/refunds went live at TGE; the docs confirm discretionary caps, time-weighted accumulators, a sparse-pool fill boost and guaranteed selected-investor allocations. Treasury receipts, concentration, platform fees and META value accrual remain unverified onchain.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Credible curated raise on MetaDAO"},
+      {"type": "watch_item", "ref": "Updated ICO allocation mechanics"},
+      {"type": "metric", "ref": "Credible accepted capital, settlement and allocation concentration"},
+      {"type": "open_question", "ref": "Reproduce settlement, fees and META value accrual onchain"}
+    ]
+  },
+  {
+    "date": "2026-07-20T12:42:05Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "verification update",
+    "summary": "Resolved the July 1 SrMessi account-compromise watch item as confirmed but contained after his same-day postmortem said X control was recovered and no protocol/wallet impact was reported.",
+    "source": "Related-account X/Twitter postmortem",
+    "url": "https://x.com/0xSrMessi/status/2072461061861609493",
+    "last_scanned": "2026-07-20T12:42:05Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The dossier previously left access/revocation unresolved. The postmortem confirms phishing, lingering-session Pumpfun abuse and coin promotion, but also reports recovery of X control; subsequent normal activity and no repeat incident support containment. Residual Pumpfun permission was unresolved at the time, so the item can reopen only for renewed activity or broader impact.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "SrMessi X/Pumpfun account compromise"}
+    ]
+  },
+  {
+    "date": "2026-07-20T12:21:13Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "A Virtuals core contributor said the launchpad insists on VIRTUAL-native liquidity pairs despite claiming it could earn 10x more revenue without that constraint.",
+    "source": "X/Twitter core contributor",
+    "url": "https://x.com/everythingempty/status/2079171276825096402",
+    "last_scanned": "2026-07-20T12:21:13Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier already tracked token-aligned liquidity, but not an operator statement that VIRTUAL pairing is actively required or carries a claimed 10x short-term revenue opportunity cost. The figure has no disclosed baseline and does not prove buybacks, burns or holder cash flow; it does clarify that pair demand is a deliberate strategic tradeoff rather than incidental launch mechanics.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Mandatory VIRTUAL liquidity pairing / Genesis flywheel"},
+      {"type": "thesis", "ref": "VIRTUAL as the base currency of the agent economy"},
+      {"type": "metric", "ref": "Founder conversion, launchpad revenue and VIRTUAL-paired pool depth"}
+    ]
+  },
+  {
     "date": "2026-07-20T08:10:44Z",
     "project": "GitlWab / GitLawb / Gitwab",
     "slug": "06-gitlawb",
