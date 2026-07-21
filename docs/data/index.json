@@ -259,11 +259,11 @@
       "https://x.com/gregosuri",
       "https://x.com/ovrclk_"
     ],
-    "links_count": 8,
+    "links_count": 10,
     "file": "projects/12-akt-akash.md",
     "github_file": "projects/12-akt-akash.md",
-    "last_updated": "2026-07-14T15:45:20Z",
-    "open_questions": "Verify post-proposal-329 revenue routing/value capture, sustained daily spend growth, high-end GPU utilization, OpenRouter/AkashML inference demand, and whether merged provider PR #400 ships working paid multi-node RDMA/InfiniBand/RoCE workloads.",
+    "last_updated": "2026-07-21T16:31:30Z",
+    "open_questions": "Verify post-proposal-329 revenue routing/value capture, sustained daily spend growth, high-end GPU utilization and OpenRouter/AkashML inference demand. PR #400 production rollout was closed stale on 2026-07-21; reopen only for a stable release, advertised provider capacity and a named paid multi-node workload.",
     "html_page": "projects/12-akt-akash.html",
     "status": "active",
     "initial_review_done": true
@@ -327,11 +327,11 @@
       "https://x.com/umeirzz",
       "https://x.com/virtuals_io"
     ],
-    "links_count": 14,
+    "links_count": 16,
     "file": "projects/15-virtuals.md",
     "github_file": "projects/15-virtuals.md",
-    "last_updated": "2026-07-20T21:44:00Z",
-    "open_questions": "Map Base/Robinhood tax-manager ownership, 1% fee split/use and any VIRTUAL buyback/burn/staking route; quantify mandatory VIRTUAL-pairing conversion/revenue cost and pool demand; reproduce Robinhood volume/launch/earnings; verify whether any Virtuals agent uses Robinhood's brokerage MCP; verify external ACP/ERC adoption, token contract/staking/unlocks and robotics settlement.",
+    "last_updated": "2026-07-21T16:31:30Z",
+    "open_questions": "Map Base/Robinhood tax-manager ownership, 1% fee split/use and any VIRTUAL buyback/burn/staking route; reconcile Robinhood volume/earnings beyond the now-reproduced bonding-pair/fee coverage; quantify mandatory VIRTUAL-pairing cost and pool demand. Robinhood officially lists Virtuals, but reopen primary/exclusive or brokerage-MCP claims only for explicit counterpart/implementation evidence.",
     "html_page": "projects/15-virtuals.html",
     "initial_review_done": true,
     "status": "active",
@@ -558,15 +558,15 @@
     "x_accounts": [
       "https://x.com/lium_io"
     ],
-    "links_count": 5,
-    "open_questions": "Verify external-revenue and burn proxies from official dashboards/wallets, live GPU utilization, and whether Lium adds managed inference.",
+    "links_count": 7,
+    "open_questions": "Reconcile official validator-revenue and utilization APIs to gross renter payments, provider payout, platform fee and customer concentration; map the June 2,500 TAO buyback/burn wallet and repeat cadence; monitor Kraken liquidity and whether Lium adds managed inference.",
     "status": "active",
     "initial_review_done": true,
     "slug": "25-lium",
     "file": "projects/25-lium.md",
     "github_file": "projects/25-lium.md",
     "html_page": "projects/25-lium.html",
-    "last_updated": "2026-07-19T01:01:44Z"
+    "last_updated": "2026-07-21T16:31:30Z"
   },
   {
     "project": "Compute Horde — Bittensor Subnet 12",

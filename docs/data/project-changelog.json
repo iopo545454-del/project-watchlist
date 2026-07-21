@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-07-21T16:31:30Z",
+    "project": "Lium — Bittensor Subnet 51",
+    "slug": "25-lium",
+    "type": "verification update",
+    "summary": "Official Lium APIs verify 63.01% GPU utilization and expose six-figure monthly validator-attributed values, though the revenue endpoint lacks explicit unit/schema annotation; Kraken SN51/USD is live but thin.",
+    "source": "Official Lium APIs/docs and Kraken public market/funding sources",
+    "url": "https://lium.io/api/executors/stats",
+    "last_scanned": "2026-07-21T16:31:30Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo previously relied on a third-party $530K/90d revenue proxy and had no live utilization source. Lium's API now shows 603/957 GPUs rented and monthly validator-attributed values of 367,464.20 in May, 284,191.33 in June and 384,158.28 July-to-date; rental docs make USD interpretation plausible, but the endpoint has no explicit unit/schema annotation. Kraken showed about $781 current-session notional and a 0.49% spread; no burn followed the June 22 2,500 TAO event through this check.",
+    "relates_to": [
+      {"type": "metric", "ref": "GPU utilization by class and validator-attributed rental revenue"},
+      {"type": "catalyst", "ref": "Kraken SN51 trading live"},
+      {"type": "catalyst", "ref": "SN51 revenue-funded buyback and burn of 2500 TAO"}
+    ]
+  },
+  {
+    "date": "2026-07-21T16:31:30Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "verification update",
+    "summary": "Robinhood's official Chain directory confirms Virtuals as an ecosystem participant, but not its “primary” label or a brokerage-MCP integration; onchain fee and launch coverage are reproducible.",
+    "source": "Official Robinhood Chain/MCP pages and DefiLlama onchain adapter",
+    "url": "https://robinhood.com/us/en/chain/ecosystem/",
+    "last_scanned": "2026-07-21T16:31:30Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo had called Virtuals' Robinhood positioning unilateral. Robinhood's ecosystem page actually lists and links Virtuals, while its brokerage-MCP docs name no Virtuals client or standard. DefiLlama's adapter reconstructs about 4,905 Robinhood bonding pairs and maps the 1% USDG tax manager; current fees were $129,256/24h, $968,783/7d and $1,729,822/30d, with no proven VIRTUAL buyback, burn, staking or holder route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
+      {"type": "metric", "ref": "Robinhood bonding pairs and 1% USDG tax-manager fees"},
+      {"type": "open_question", "ref": "Explicit primary/exclusive status, brokerage-MCP integration and VIRTUAL value routing"}
+    ]
+  },
+  {
     "date": "2026-07-21T15:44:17Z",
     "project": "BIO / Bio Protocol",
     "slug": "20-bio",
