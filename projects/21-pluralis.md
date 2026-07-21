@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-15T19:20:52Z
+last_updated: 2026-07-21T02:09:37Z
 ---
 
 # Pluralis
@@ -17,6 +17,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 
 ## Latest scan notes
 
+- 2026-07-21 — CoinFund investor Jake Brukhman argued that Kimi K3 is evidence algorithmic, data and post-training efficiency can offset several-fold compute disadvantages, making decentralized training more viable; the attached graphic explicitly places **Agora + Stoa** against centralized compute scale. This sharpens the Pluralis investor thesis from generic open/ownable AI toward an efficiency-and-coordination mechanism, but it is investor advocacy—not a new Pluralis benchmark, token right, customer, or revenue result. Source: https://x.com/jbrukh/status/2079375574326538344
 - 2026-07-15 — Official Pluralis published a concrete **Stoa distributed-RL post-training run**: 14 consumer Macs across four countries generated all rollouts over the public internet for an LFM2.5-8B-A1B model, while a B200 trainer used DPPO to discard roughly 0.3% of overly divergent tokens and PULSE to reduce weight transfers from 9 GB to 82 MB. On the full PaperSearchQA validation set, official results improved pass@1 from **29% to 63%**. This is a new technical proof beyond the completed Agora pretraining run, but Pluralis explicitly says each Mac still holds the whole model and the trainer remains in one cluster; independent reproduction, code/artifact inspection and contributor economics remain open. Source: https://x.com/Pluralis/status/2077419654578860539
 - 2026-07-13 — Pluralis founding/research scientists said their workshop proposal, **“Open, Collaborative, and Decentralized Training of Foundation Models,”** was accepted for NeurIPS 2026 in Sydney, building on the ICML Protocol Learning workshop. The announcement lists Pluralis and a broader academic collaborator group and says a call for papers is coming. This advances the Protocol Learning research/community catalyst, but acceptance is currently team-reported: no official NeurIPS workshop page, date, speaker list, or CFP URL was linked. Sources: https://x.com/tha_ajanthan/status/2076532843942211805 and https://x.com/hmdolatabadi/status/2076555271216984313
 
@@ -48,6 +49,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 | https://x.com/jbrukh/status/2065839328312574137 | Jake Brukhman / CoinFund | Investor-side commentary frames Pluralis and Agora as a serious decentralized AI counterweight where contributors can help create and own model value. | Useful investor narrative; treat as investor advocacy, not neutral validation. |
 | https://x.com/jbrukh/status/2067358047899427276 | Jake Brukhman / CoinFund | After a decentralized-AI-training catchup, Brukhman argued crypto capital formation can finally fund commercially viable decentralized models because high-end GPUs are no longer the key bottleneck; the constraint is enough capital coordinated toward commodity devices. | Stronger investor thesis for Pluralis/Agora-style training networks, but still investor advocacy rather than an official Pluralis milestone. |
 | https://x.com/jbrukh/status/2071277638904098983 | Jake Brukhman / CoinFund | Brukhman framed Pluralis as differentiated because decentralized-training outputs can be **ownable**, then reinforced the thread with Erfan Miahi joining and public training runs open to participants. | Adds a sharper investor-side value-capture thesis: model ownership/contributor economics can matter more than generic decentralized compute if it becomes enforceable. |
+| https://x.com/jbrukh/status/2079375574326538344 | Jake Brukhman / CoinFund | Brukhman argues Kimi K3 shows algorithmic, data and post-training efficiency can offset several-fold compute disadvantages, while blockchain coordination can close the remaining gap for decentralized training; his graphic explicitly highlights Agora + Stoa. | Sharpens the Pluralis case around efficiency plus coordination rather than matching hyperscalers GPU-for-GPU; still investor advocacy and not proof of Pluralis economics or independent benchmark parity. |
 
 ### Hermes take
 
@@ -93,6 +95,7 @@ Pluralis is a decentralized AI research lab building **Protocol Learning**: coll
 | https://x.com/ChaminHewa | Research/contributor account to monitor for papers, ecosystem events, and technical updates. |
 | https://x.com/tsnewnami_ | Engineering/research account to monitor for pipeline-parallelism and implementation notes. |
 | https://x.com/jbrukh | CoinFund investor account; useful investor-side commentary, not official team source. |
+| https://x.com/jbrukh/status/2079375574326538344 | CoinFund investor thesis tying Kimi K3-style efficiency gains to Agora + Stoa and decentralized-training viability. |
 
 ## Open questions
 

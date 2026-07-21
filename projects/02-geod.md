@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-11T04:36:33Z
+last_updated: 2026-07-21T02:09:37Z
 ---
 
 # GEOD / GEODNET
@@ -13,6 +13,7 @@ last_updated: 2026-07-11T04:36:33Z
 
 ## Latest scan notes
 
+- 2026-07-21 — Official GEODNET documented a named field deployment with Bad Elf and One People One Reef across Yap and Ulithi, Micronesia. The post says GEODNET corrections supported field and drone mapping at **sub-centimeter accuracy** without bulky local base stations, with photos showing the GNSS hardware in coastal/reef work. This is a useful customer/use-case proof point and advances partner diligence beyond a homepage logo, but it discloses no order value, recurring API revenue, exact error distribution, device count, or burn attribution. Source: https://x.com/GEODNET/status/2079340642329620701
 - 2026-07-15 — Dedicated verification demoted the June 17 blanket partner-legitimacy allegation to stale. The source named no partner, transaction or falsifiable example and received no official reply. Counter-evidence does not validate every logo, but GEODNET's live site names established firms including Septentrio, Quectel, DroneDeploy, Propeller, Burro and Bad Elf; Septentrio independently documents its GEODNET integration; Hyfix independently described ongoing GEODNET hardware/enterprise testing; and DefiLlama's direct fees adapter exposed about `$890,203` over 30 days and `$10.25M` all-time at the check. Continue customer/revenue diligence from named sources, but do not carry the unspecific rumor as an active watch item. Sources: https://x.com/JungianInvestor/status/2067092701531852835, https://geodnet.com/, https://www.septentrio.com/en/company/news/septentrio-adds-geodnet-its-agnostic-corrections-partner-program, https://x.com/HyfixAI/status/2075726673899651308 and https://api.llama.fi/summary/fees/geodnet
 - 2026-07-11 — Official GEODNET showed GEO-PULSE being tested outdoors in motion while capturing enhanced GPS positioning and earning network rewards. This is useful source-proximate follow-through for the existing hardware-commercialization catalyst because it moves beyond a static standard-GPS comparison, but the post provides no measured accuracy, route trace, device sales, active-user count, or revenue/burn impact. Source: https://x.com/GEODNET/status/2075736468874523046
 
@@ -124,6 +125,7 @@ last_updated: 2026-07-11T04:36:33Z
 | Information source | Context about the source |
 |---|---|
 | https://x.com/GEODNET | Official X account; product, network, and token updates |
+| https://x.com/GEODNET/status/2079340642329620701 | Official Bad Elf / One People One Reef field-deployment case; reports sub-centimeter field and drone-mapping accuracy in Yap and Ulithi, without commercial terms. |
 | https://x.com/mikeahorton | Founder/co-founder/CEO commentary and technical context |
 | https://x.com/mvrender | Team/co-founder/core contributor account to verify and monitor |
 | https://x.com/KyleSamani | Investor/KOL signal tied to Multicoin and physical-AI thesis |
