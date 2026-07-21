@@ -302,11 +302,11 @@
       "https://x.com/ErikVoorhees",
       "https://x.com/tryvenice"
     ],
-    "links_count": 8,
+    "links_count": 12,
     "file": "projects/14-vvv-venice.md",
     "github_file": "projects/14-vvv-venice.md",
-    "last_updated": "2026-07-20T21:44:00Z",
-    "open_questions": "Verify current VVV staking/capacity rules, emissions vs burns, buyback/burn dashboard data, 100B daily-token methodology/revenue linkage, contract admin/mint controls, and model/API revenue impact.",
+    "last_updated": "2026-07-21T03:55:09Z",
+    "open_questions": "Track public VVV/DIEM supply, staking and utilization data; reconcile API `totalSupply` to ERC-20 supply; verify cooldown/unlock constraints, emissions vs burns, paid-revenue linkage, contract controls and app-attributed usage.",
     "html_page": "projects/14-vvv-venice.html",
     "status": "active",
     "initial_review_done": true
@@ -424,11 +424,11 @@
       "https://x.com/octralex",
       "https://x.com/octrascan"
     ],
-    "links_count": 10,
+    "links_count": 14,
     "file": "projects/19-octra.md",
     "github_file": "projects/19-octra.md",
-    "last_updated": "2026-07-19T10:21:04Z",
-    "open_questions": "Verify TAPE/security and a supported node release beyond the internal-use mini-core preview, including reproducible builds/configs/operators; first-party bridge contracts/audits; Hyperliquid prerequisites; HFHE-LLM production details.",
+    "last_updated": "2026-07-21T03:55:09Z",
+    "open_questions": "June TAPE/node timing is stale; verify a versioned supported release, license/builds/configs/operators and audit. Canonical Ethereum bridge addresses are documented; audit roles/reserves/round trips and Hyperliquid prerequisites remain open.",
     "html_page": "projects/19-octra.html",
     "status": "active",
     "initial_review_done": true
@@ -446,11 +446,11 @@
       "https://x.com/BioProtocolEco",
       "https://x.com/paulkhls"
     ],
-    "links_count": 10,
+    "links_count": 14,
     "file": "projects/20-bio.md",
     "github_file": "projects/20-bio.md",
-    "last_updated": "2026-07-14T11:18:54Z",
-    "open_questions": "Verify BIO/veBIO value routing, lock/reward metrics, Ignition Sale KPIs, canonical contracts/unlocks, independently verified science milestones, and CrossBridge grant/acquisition attribution plus ecosystem metric methodology.",
+    "last_updated": "2026-07-21T03:55:09Z",
+    "open_questions": "CrossBridge's acquisition is confirmed but direct Bio/VitaDAO grant lineage is disproven. Verify BIO/veBIO value routing, lock/reward and sale KPIs, canonical contracts/unlocks, science milestones and transaction-level methodology for Bio's ecosystem counters.",
     "html_page": "projects/20-bio.html",
     "status": "active",
     "initial_review_done": true

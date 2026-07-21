@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-07-21T03:55:09Z",
+    "project": "BIO / Bio Protocol",
+    "slug": "20-bio",
+    "type": "rumor disproven",
+    "summary": "Primary records disprove Bio Protocol's direct CrossBridge grant-lineage claim: the up-to-$300M Lilly deal is real, but CrossBridge came through TMC/CPRIT/UTHealth while VitaDAO funded separate VitaRNA/Artan work.",
+    "source": "TMC, BioNTX, VitaDAO and Bio primary sources",
+    "url": "https://www.tmc.edu/press-releases/texas-medical-center-venture-fund-announces-acquisition-of-crossbridge-bio-for-300-million-by-eli-lilly/",
+    "last_scanned": "2026-07-21T03:55:09Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo previously marked the July 14 official claim partially supported. TMC now provides a different corporate origin, VitaDAO documents its $300K community raise as the same scientist's separate VitaRNA/Artan project, and Bio's current site labels its counters $50M+ treasuries, $15M+ funded research and $2B+ ecosystem trading—not $50M+ into science or $2B+ research IP traded.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "CrossBridge Bio community-grant lineage and Bio ecosystem metric labels"},
+      {"type": "catalyst", "ref": "CrossBridge Bio / Lilly exit as community-science validation"},
+      {"type": "metric", "ref": "Bio ecosystem treasuries, funded research and ecosystem trading"}
+    ]
+  },
+  {
+    "date": "2026-07-21T03:55:09Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "verification update",
+    "summary": "Official Venice APIs now expose VVV/DIEM supply, staking and daily capacity use; complete-day DIEM utilization was 43.1%–52.4%, while June-specific requests and revenue remain undisclosed.",
+    "source": "Official Venice docs and public API",
+    "url": "https://api.venice.ai/api/app/vvv/diem_staking_history?timePeriod=1W",
+    "last_scanned": "2026-07-21T03:55:09Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The prior repo state relied on issuer posts and Galaxy's under-50% utilization snapshot. The public API now reported 32.994M VVV staked, 37,093 DIEM supply, 29,222 DIEM staked and a 38,000 target; six complete days consumed 12,753–15,321 DIEM, 47.1% in aggregate. No endpoint attributes usage or revenue to the June app.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Staking for API/inference capacity"},
+      {"type": "metric", "ref": "DIEM supply, staked capacity and utilization"},
+      {"type": "open_question", "ref": "Paid revenue and app-attributed requests versus VVV burns"}
+    ]
+  },
+  {
+    "date": "2026-07-21T03:55:09Z",
+    "project": "OCT / Octra",
+    "slug": "19-octra",
+    "type": "verification update",
+    "summary": "Octra's canonical Ethereum bridge and live wOCT are verified, but the node remains an internal pre-release, the June TAPE schedule is stale and Hyperliquid spot is absent.",
+    "source": "Official Octra docs/GitHub/RPC, Ethereum Blockscout and Hyperliquid API",
+    "url": "https://docs.octra.org/oct-docs/contract-addresses",
+    "last_scanned": "2026-07-21T03:55:09Z",
+    "importance": "high",
+    "novelty": "update",
+    "delta": "The repo previously had first-party bridge deployment as an unresolved intent. Official docs now map wOCT, EthereumBridge, OctraLightClient and BridgeVault; Ethereum Blockscout showed 197,789.585123 wOCT and 3,350 holders. In contrast, lite_node still has no release/tag/license/CI/deployment and no TAPE-named public artifact, while Hyperliquid spot metadata has no OCT/wOCT token.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "First-party Ethereum bridge / wOCT and eventual Hyperliquid spot"},
+      {"type": "catalyst", "ref": "Node release"},
+      {"type": "catalyst", "ref": "TAPE verifier / CT-format migration"},
+      {"type": "metric", "ref": "wOCT supply/holders and Octra RPC network statistics"}
+    ]
+  },
+  {
     "date": "2026-07-21T02:09:37Z",
     "project": "GEOD / GEODNET",
     "slug": "02-geod",

@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-20T21:44:00Z
+last_updated: 2026-07-21T03:55:09Z
 ---
 
 # VVV / Venice AI
@@ -37,7 +37,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 | New frontier/coding model launches in Venice | Confirmed | Official X said Kimi K2.7 Code is live on Venice with 1T total parameters, 32B active, 256K context, vision/function calling/structured output/web search: https://x.com/AskVenice/status/2066634900652879949 | Live as of 2026-06-15 | Improves product utility for developers and AI-agent workflows. | Better models can increase API demand, staking-for-capacity demand, and revenue/burn capacity if usage monetizes. | Track docs/model list, API pricing, user uptake, and whether new model launches correlate with burn/revenue growth. |
 | Emissions reduction path | Confirmed / latest cut executed | Official Venice posts described reductions from prior annual emissions toward lower future emissions; on 2026-07-01 Venice said annual emissions were cut from 4M to 3M VVV: https://x.com/AskVenice/status/2037231269449523276, https://x.com/AskVenice/status/2061503966702162407, and https://x.com/AskVenice/status/2072408045007573141 | Latest cut announced 2026-07-01; ongoing scheduled path | Lowers inflation and makes burns easier to compare against issuance. | If burns exceed emissions, VVV gets a simple deflationary-capital-asset narrative. | Verify current annual emissions onchain/dashboard, staking yield changes, and whether July burns exceed the new 3M/year run-rate. |
 | Revenue-linked buyback/burn program | Confirmed | Official burn update/dashboard references: https://x.com/AskVenice/status/2064158076303790131 | Monthly / recurring if revenue continues | Directly links Venice revenue to VVV supply reduction. | Larger repeated burns can shift VVV from “AI app token” to revenue-linked asset; failed/irregular burns weaken thesis. | Track burn size, txs, revenue source, burn/emission ratio, and whether dashboard data is machine-readable. |
-| Staking for API/inference capacity | Confirmed / needs exact current terms | Official VVV landing page and Venice API docs describe token/API utility and developer usage; founder reported Venice reaching 100B daily tokens on 2026-06-25: https://venice.ai/lp/vvv, https://docs.venice.ai/, and https://x.com/ErikVoorhees/status/2070188683416715519 | Live, terms may evolve | Creates non-speculative demand from heavy users/devs/agents that need inference, with usage milestones indicating whether the product surface is actually scaling. | If AI agents require persistent private inference, capacity staking could become a real working-capital use case; if token throughput is mostly free/promotional, burn/capacity impact may lag usage. | Verify current staking rules, capacity quotas, unstaking constraints, daily-token methodology, revenue per token, and whether staked demand grows with API usage. |
+| Staking for API/inference capacity | Confirmed / public API-backed | Official docs define `1 DIEM = $1/day` of renewing compute and document DIEM minting from staked VVV: https://docs.venice.ai/overview/vvv-diem. Public APIs expose current and historical VVV/DIEM supply, staking and consumption: https://api.venice.ai/api/app/vvv/vvv_stats, https://api.venice.ai/api/app/vvv/diem_stats and https://api.venice.ai/api/app/vvv/diem_staking_history?timePeriod=1W | Live; direct-data verification 2026-07-21 | At verification, the API reported `32.994M` VVV staked, `37,093` DIEM supply, `29,222` DIEM staked and a `38,000` target. Six complete daily observations showed `12,753–15,321` DIEM consumed, or `43.1%–52.4%` of staked DIEM capacity. | Machine-readable utilization makes the perpetual compute liability measurable; roughly half-used capacity supports real demand but leaves material idle capacity, and it does not by itself disclose paid revenue or June-app attribution. | Track utilization, VVV/DIEM supply and staked share through the public API; reconcile API-credit purchases, subscriptions and June/app-specific requests with revenue-funded burns. |
 | Contract/admin/security clarity | Speculative watch item | Onchain token-admin verification source to monitor: https://basescan.org/token/0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf | Unknown | Security clarity can affect institutional comfort and holder trust. | A verified timelock/multisig/admin-control change or exploit disclosure would be material. | Check token contract, audits, official responses, and any admin-role changes. |
 
 ## Token / contract notes
@@ -61,13 +61,38 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 | `0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf` | Base VVV token contract; use for supply/holder/admin checks. |
 | https://x.com/AskVenice/status/2066634900652879949 | Official Kimi K2.7 Code model launch; current product/update evidence from this scan. |
 | https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto | Galaxy Research's 2026-07-13 independent VVV/DIEM thesis; includes tokenized-inference ownership, buy/burn, utilization, liability and disclosure context. |
+| https://docs.venice.ai/overview/vvv-diem | Official VVV/DIEM mechanics; defines `$1/day` renewing compute per DIEM and DIEM creation from staked VVV. |
+| https://api.venice.ai/api/app/vvv/vvv_stats | Official public VVV supply/staking/lock statistics endpoint. |
+| https://api.venice.ai/api/app/vvv/diem_stats | Official public DIEM target/supply/staking and mint-rate endpoint. |
+| https://api.venice.ai/api/app/vvv/diem_staking_history?timePeriod=1W | Official public daily DIEM capacity-consumption and staking history. |
 
 ## Open questions
-- What are the exact current VVV staking rules: capacity allocation, unstaking delay, quota calculation, and whether API usage can saturate capacity?
+- What are the exact current VVV/DIEM cooldown and unlock constraints, and how often does consumed DIEM capacity approach or exceed the staked allowance?
 - What is current annual emissions after the latest scheduled cut, and how does it compare with monthly burns?
-- Is the buyback/burn dashboard machine-readable or only UI/social updates?
+- Which machine-readable endpoint/transactions reconcile API-credit purchases and subscriptions to each VVV buyback/burn?
 - What admin/mint controls exist on the VVV contract, and are they timelocked/multisig/audited?
 - Which model/API launches actually drive revenue rather than engagement-only usage?
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| VVV supply, staked and locked | Measures dilution and capital committed to inference access | Official Venice API plus Base contract | tested_ok | The API's `totalSupply` field differs from the ERC-20 `totalSupply()` view, so retain field labels and reconcile treasury/staking-account treatment before using ratios as circulating-market math. |
+| DIEM supply, target and staked amount | Measures the outstanding perpetual daily-compute liability | Official Venice API and DIEM contract | tested_ok | One DIEM renews `$1/day` of compute; supply is not equivalent to current paid revenue. |
+| DIEM consumed versus staked | Measures actual use of available tokenized inference capacity | Official Venice daily staking history | tested_ok | `totalDiemConsumed` is an issuer API metric; it does not identify user/app, paid/free mix, model/provider cost or gross margin. |
+| Revenue-funded VVV burns | Tests value capture against emissions | Official burn page/transactions and Base explorer | partial | Burn posts/transactions exist, but this verification did not identify a stable endpoint that reconciles API-credit purchases/subscriptions to each buyback. |
+| Integration-attributed requests/revenue | Tests whether June and other partners add economics rather than distribution logos | Partner/Venice reporting or API-key cohort export | manual_only | No June-specific request, revenue, staking or burn attribution is public. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| VVV stats | `https://api.venice.ai/api/app/vvv/vvv_stats` | tested_ok | Official circulating, total, staked and locked fields plus market metadata | Add a collector adapter after reconciling the API `totalSupply` field to ERC-20 supply. |
+| DIEM stats | `https://api.venice.ai/api/app/vvv/diem_stats` | tested_ok | Supply target, current supply, staked/locked amount and mint rate | Collect supply and liability changes. |
+| DIEM utilization history | `https://api.venice.ai/api/app/vvv/diem_staking_history?timePeriod=1W` | tested_ok | Daily DIEM consumed and staked | Collect utilization with explicit issuer-API labeling and complete-day filtering. |
+| VVV/DIEM docs | `https://docs.venice.ai/overview/vvv-diem` | tested_ok | Current utility, credit-renewal and minting rules | Alert on mechanics changes. |
 
 ## Monitoring notes
 - High-priority recurring checks: official burn/emissions posts, model/API launches, docs/model-list changes, staking/capacity rules, contract/admin changes, and Erik Voorhees comments that clarify VVV economics.
@@ -79,6 +104,7 @@ The watchlist focus is model/API releases, staking/capacity mechanics, emissions
 
 ## Latest scan notes
 
+- 2026-07-21 — Dedicated verification found an **official machine-readable VVV/DIEM operating surface**. At 03:55 UTC, Venice's API reported `80.629M` VVV in its `totalSupply` field, `47.395M` circulating, `32.994M` staked and `8.615M` locked; DIEM showed `37,093` total, `29,222` staked and a `38,000` target. For the six complete days July 15–20, `12,753–15,321` DIEM was consumed daily, equal to **`43.1%–52.4%`** of staked DIEM capacity (`47.1%` aggregate). Official docs confirm each staked DIEM renews `$1/day` of compute and DIEM is minted from staked VVV. This confirms a live, measurable compute-liability/utilization loop; it does **not** disclose June-specific requests/revenue, and the June integration sources still provide no attributable economics. Sources: https://docs.venice.ai/overview/vvv-diem, https://api.venice.ai/api/app/vvv/vvv_stats, https://api.venice.ai/api/app/vvv/diem_stats and https://api.venice.ai/api/app/vvv/diem_staking_history?timePeriod=1W
 - 2026-07-20 — OpenSoftware launched **automatic private model routing in June**, its open-source macOS AI app, powered by Venice. Users select Low, Balanced or High preferences and June chooses a model per request while defaulting to private/zero-data-retention routes; the app is live and MIT-licensed. Venice amplified it as “Built in Venice.” This is a real external product integration, but neither source disclosed Venice-attributed requests, paid volume, API revenue, VVV staking demand or burn impact. Sources: https://x.com/OpenSoftwareCo/status/2079285998383444145, https://x.com/AskVenice/status/2079305139156865155 and https://www.opensoftware.co/june
 - 2026-07-15 — Galaxy Research framed Venice as the most advanced attempt to make inference access ownable: VVV is the capital asset, staked VVV mints transferable DIEM compute claims, and product revenue/subscriptions feed buy-and-burn. The same report supplies the key bear case: DIEM is mostly held speculatively, less than 50% of available inference was being used weekly, and every DIEM is a perpetual dollar-denominated compute liability for Venice. Galaxy also disclosed financial interests in DIEM/VVV. This is strong independent thesis context, not a new token-mechanics change or independently verified live metric. Source: https://www.galaxy.com/insights/research/inference-capital-markets-ai-compute-gpu-futures-onchain-crypto
 - 2026-07-14 — Official Venice shipped **Style References in Venice Studio**, letting users add reference images to steer image-prompt style, and linked the live Studio workflow plus a tutorial. This is a real consumer-product feature release, but the announcement disclosed no API support, pricing, usage, revenue, VVV staking demand or burn impact. Sources: https://x.com/AskVenice/status/2077143752288633326, https://x.com/AskVenice/status/2077143755019239927 and https://x.com/AskVenice/status/2077143757061783710
