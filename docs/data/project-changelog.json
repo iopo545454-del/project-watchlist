@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-21T11:06:07Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "catalyst added",
+    "summary": "Grayscale filed an S-1 for a WLD-holding Worldcoin ETF seeking Nasdaq listing as GWLD; the filing is not yet effective or approved.",
+    "source": "Primary SEC Form S-1",
+    "url": "https://www.sec.gov/Archives/edgar/data/2145351/000119312526308957/ck0002145351-20260720.htm",
+    "last_scanned": "2026-07-21T11:06:07Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier had no US regulated WLD-product catalyst. The July 20 filing names Grayscale Investments Sponsors as sponsor and BitGo Bank & Trust as custodian and permits 10,000-share in-kind WLD or cash baskets, but GWLD cannot trade until Nasdaq confirms Rule 5711(d)(iv) eligibility/listing; sponsor-fee and seed terms remain blank and no launch date exists.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Grayscale Worldcoin ETF / proposed Nasdaq GWLD"},
+      {"type": "metric", "ref": "GWLD effectiveness, launch, AUM, flows and WLD creation/redemption activity"}
+    ]
+  },
+  {
+    "date": "2026-07-21T11:06:07Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "docs/blog update",
+    "summary": "AEON documented reproducible Sigstore/Rekor attestations for immutable skill-run outputs and manifests, clarifying that signatures prove provenance rather than correctness.",
+    "source": "Official AEON X, blog and canonical GitHub docs",
+    "url": "https://www.aeon.fun/blog/signed-by-the-agent",
+    "last_scanned": "2026-07-21T11:06:07Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The repo already tracked v0.1's high-level signed/public-log claim. Official implementation detail now specifies GitHub Actions OIDC, actions/attest-build-provenance@v4, Rekor, immutable output snapshots plus manifests, opt-in policy and gh attestation verify; public proof volume, downstream verifier use, paid demand and $aeon routing remain absent.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "aeon v0.1 stable release and skill-run attestations"},
+      {"type": "open_question", "ref": "Attested-run volume, downstream verifier use, security and $aeon value capture"}
+    ]
+  },
+  {
+    "date": "2026-07-21T11:06:07Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "official update",
+    "summary": "AEON surfaced the GitHub-backed Developer Kit for embedding user-owned agents into products, with revocable app access, skill control and product skill packs.",
+    "source": "Official AEON X and canonical GitHub ADK reference",
+    "url": "https://github.com/aeonfun/aeon/blob/main/docs/ADK.md",
+    "last_scanned": "2026-07-21T11:06:07Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The repo did not track ADK. AEON first introduced it July 17 and posted an integration walkthrough July 21; canonical docs define GitHub-App authorization, per-repo installation tokens, skill discovery/dispatch/scheduling, sealed Actions secrets and product-linked packs, but disclose no external deployment, user, fee or token-value data.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "DAG executor, x402 endpoints, ADK, Packs and provider/integration expansion"},
+      {"type": "open_question", "ref": "External ADK deployments, tenant isolation, usage, fees and $aeon routing"}
+    ]
+  },
+  {
     "date": "2026-07-21T03:55:09Z",
     "project": "BIO / Bio Protocol",
     "slug": "20-bio",
