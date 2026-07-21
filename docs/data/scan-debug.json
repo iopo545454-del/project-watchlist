@@ -1,5 +1,120 @@
 [
   {
+    "run_id": "watchlist-scan-20260721T195244Z",
+    "started_at": "2026-07-21T19:52:44Z",
+    "completed_at": "2026-07-21T20:17:58Z",
+    "status": "success",
+    "scan_window": {
+      "from": "2026-07-21T16:31:30Z",
+      "to": "2026-07-21T20:17:58Z",
+      "basis": "Prior broad/verification changelog timestamp; explicit tracked-account searches covered the interval and exact candidate posts were re-queried before decisions."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, ran the 13-project direct-metrics collector and reconciled its non-material writes with the concurrent canonical metrics commit, covered all 94 tracked official/team/core X accounts in explicit groups, searched credible weak signals, consumed all prior next checks and followed live DefiLlama adapters where X posts contained quantitative claims. Logged AEON's newly queryable fee/revenue surfaces, MetaDAO's live Rip Cars raise, Chutes' revenue-quality/TEE recap and Venice's Seed Audio release.",
+    "projects_checked": ["02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"],
+    "logged_projects": ["03-meta", "05-aeon", "14-vvv-venice", "24-chutes"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 4,
+      "tracked_x_accounts_checked": 94,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "material_metric_rules_crossed": 0,
+      "new_changelog_entries": 4,
+      "confirmed_or_durable_findings": 4,
+      "unverified_watch_items_added_or_advanced": 0,
+      "stale_projects_over_7_days": 0,
+      "errors": 2
+    },
+    "decision_trail": [
+      {
+        "project": "Watchlist intake",
+        "source": "GitHub public issues API",
+        "url": "https://api.github.com/repos/iopo545454-del/project-watchlist/issues?state=open&per_page=50",
+        "summary": "The three open intake issues remain Pluralis, Ambient and EigenCloud; each deduplicates by project name, primary X and token context to a tracked project with initial_review_done=true.",
+        "decision": "No new intake and no duplicate project created."
+      },
+      {
+        "project": "All configured direct-data projects",
+        "source": "Local direct-metrics collector and configured public APIs",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "The collector returned 31 metrics for 13 projects. Largest current differences were Kinetiq TVL -3.67%, Chutes TVL -1.19%, Derive TVL -0.72%, NEAR Intents 7d users -0.38% and Bio TVL -0.16%; no configured materiality rule crossed. A concurrent metrics job had already pushed the canonical 19:49 UTC snapshot.",
+        "decision": "No standalone metric finding from threshold rules. Discarded the redundant local collector writes, fast-forwarded the concurrent canonical metrics commit and used its Chutes history for finding context."
+      },
+      {
+        "project": "AEON Framework",
+        "source": "Builder X and live DefiLlama adapters",
+        "url": "https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue",
+        "summary": "AEON, MiroShark token and MiroShark x402 pages are live. AEON showed $261/24h, $2,613/7d, $12,479/30d and $244,372 all-time treasury-attributed protocol revenue; methodology assigns 57% to treasury and 43% to launch-platform beneficiaries. MiroShark x402 showed $219 all-time at $1 per paid run, separate from token fees.",
+        "decision": "Add a direct-data methodology, primary adapters and Latest/changelog entry. Treat as revenue transparency, not direct holder revenue or verified buyback execution."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "Official MetaDAO X and Pine Analytics",
+        "url": "https://x.com/MetaDAOProject/status/2079612515278008441",
+        "summary": "The four-day Rip Cars raise opened on schedule with up to 50% allocated through Ownership Score. Pine Analytics reported $9.2M committed from 227 deposits after 40 minutes, a $499,727 largest deposit and 72% concentration in the top 34 deposits.",
+        "decision": "Advance the existing scheduled catalyst to ongoing and log strong demand/concentration context; explicitly distinguish commitments from accepted capital, settlement, platform fees and META value capture."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "Official Chutes X and DefiLlama history",
+        "url": "https://x.com/chutes_ai/status/2079637219049189642",
+        "summary": "Chutes reported $340K revenue per trillion LLM tokens versus a $282K 90-day average and described dstack TEE routing plus ChronoSeek private-subnet use. Direct metrics were $15,708/24h, $92,347/7d and $345,627/30d revenue with $42.08M TVL.",
+        "decision": "Log a meaningful operating/integration update, refresh dated dossier KPIs and add explicit KPI methodology; do not infer margin, organic demand, partner volume or tokenomics."
+      },
+      {
+        "project": "VVV / Venice AI",
+        "source": "Official Venice X thread",
+        "url": "https://x.com/AskVenice/status/2079627130556551470",
+        "summary": "Seed Audio 1.0 is live in Venice Studio with 20+ languages, timestamped prompting and prompts up to 3,000 characters, with an in-product demonstration and SFX/music positioning.",
+        "decision": "Log as a product-surface update and expand the model catalyst; keep model-attributed usage, revenue, DIEM utilization, VVV staking and burn effects open."
+      },
+      {
+        "project": "Below-threshold candidates",
+        "source": "X/Twitter tracked-account and weak-signal searches",
+        "url": "https://x.com/",
+        "summary": "GEODNET teased Dakotafest without an announcement; USD.AI amplified Fluid's rebrand after an already tracked $100M facility; Yanez repeated enterprise-sales positioning without clients/revenue; Ambient published serving-layer thesis commentary; Bankr warned on a queried unverified Base token without a Bankr incident. Remaining activity was routine replies, reposts, product instances or marketing.",
+        "decision": "No additional changelog or watch item under duplicate, routine-core-function, no-new-evidence and materiality rules."
+      },
+      {
+        "project": "Staleness floor",
+        "source": "docs/data/index.json",
+        "url": "docs/data/index.json",
+        "summary": "No enabled project had last_updated older than seven days at run start; suppressed POD was excluded without inspection.",
+        "decision": "No mandatory stale-project substantive check was due."
+      }
+    ],
+    "errors": [
+      "All three delegated X-research workers timed out before returning summaries, but their live transcripts preserved explicit-handle searches; exact candidate and follow-up x_search calls were independently run before decisions.",
+      "One consecutive Chutes thread status could not be retrieved because X returned incomplete conversation metadata; no accepted claim depended on that inaccessible status."
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 4,
+      "tiers": {"high": 0, "medium": 3, "low": 1},
+      "note": "Independent tagger labeled AEON, MetaDAO and Chutes medium/watch and Venice Seed Audio low/log. It explicitly treated the raise, revenue record/integrations and model launch as routine core-function output without a token/liquidity/value-capture step change."
+    },
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify beta/live access, users, pricing/subscription revenue, encryption/key architecture and audit, VITA discount/staking contracts, research-funding flow and any BIO/veBIO linkage.", "carried_from": "new VitaApp finding in watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260721T195244Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness and Nasdaq Rule 5711(d)(iv) eligibility/listing; verify sponsor fee, seed terms, authorized participants, launch, AUM/flows, custody and actual WLD creations/redemptions.", "carried_from": "watchlist-scan-20260721T104640Z; no amendment, effectiveness or listing update in watchlist-scan-20260721T195244Z"},
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion model/checkpoint and reproduce speed, convergence and cost claims; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.", "carried_from": "watchlist-scan-20260715T234645Z; no new artifact, dashboard or economics evidence in watchlist-scan-20260721T195244Z"},
+      {"project": "Ambient", "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.", "carried_from": "watchlist-scan-20260715T192052Z; the July 21 serving-layer essay repeated self-reported positioning without production proof or independent economics in watchlist-scan-20260721T195244Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify v3 launch date, release notes, contracts, vault/risk mechanics and fee/buyback effects; map Buyback #75 transactions and fee window; verify Korean exchange networks/withdrawals/depth and ORIA/Hyperliquid follow-through.", "carried_from": "watchlist-scan-20260715T192052Z; no v3 deployment, buyback mapping or market-access follow-through in watchlist-scan-20260721T195244Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Inspect Kiln implementation; identify a stable OpenGateway export and reconcile organic paid usage, costs, retained revenue and GITLAWB routing; verify Ads and Blockagent economics; independently verify GitLawb Mercenary jobs only if aggregate usage or protocol routing appears.", "carried_from": "watchlist-scan-20260715T052432Z; no implementation or protocol-economics evidence in watchlist-scan-20260721T195244Z"},
+      {"project": "NEAR Protocol", "check": "Monitor Protocol v86 reliability, first automatic mainnet shard split and ML-DSA adoption; continue Corbits, NEAR@3.33, confidential partner and revenue/buyback checks.", "carried_from": "watchlist-scan-20260715T192052Z; direct metrics remained below configured rules and no operational follow-up surfaced in watchlist-scan-20260721T195244Z"},
+      {"project": "META / MetaDAO", "check": "After the four-day Rip Cars raise, verify final commitments and accepted capital, Ownership Score versus standard allocation, concentration, settlement, team unlocks, platform fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; raise opened and early demand/concentration advanced the item in watchlist-scan-20260721T195244Z, but final settlement/economics are not due"},
+      {"project": "Pluralis", "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and official NeurIPS workshop page/CFP.", "carried_from": "watchlist-scan-20260715T192052Z; no artifact, benchmark or economics evidence in watchlist-scan-20260721T195244Z"},
+      {"project": "GRASS", "check": "On/after July 22 verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.", "carried_from": "watchlist-scan-20260715T052432Z; explicitly not due in watchlist-scan-20260721T195244Z"},
+      {"project": "AEON Framework", "check": "Map DefiLlama's 57% treasury and 43% beneficiary contracts/owners, add stable collector coverage, verify MiroShark unique/repeat paid users and reconcile non-trading revenue to promised buybacks; continue attestation and ADK adoption/security checks.", "carried_from": "watchlist-scan-20260715T052432Z; live DefiLlama adapters materially advanced revenue transparency in watchlist-scan-20260721T195244Z but value routing, cohorts and buyback execution remain unresolved"},
+      {"project": "GEOD / GEODNET", "check": "Verify Bad Elf/One People One Reef commercial terms, accuracy methodology, device/usage counts and revenue attribution; verify GEO-PULSE orders/active devices; monitor GIP repository for GIP-14 and continue revenue/burn checks.", "carried_from": "watchlist-scan-20260715T052432Z; Dakotafest teaser added no announcement, adoption, GIP or revenue evidence in watchlist-scan-20260721T195244Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Reconcile the $340K-per-trillion record with token throughput, organic/sponsored mix, provider payouts and gross margin; verify dstack/ChronoSeek partner volume and reproducible TEE measurements; independently reproduce Parallax and track paid training jobs.", "carried_from": "watchlist-scan-20260715T052432Z; revenue and TEE/private-subnet context advanced in watchlist-scan-20260721T195244Z, but quality, margin, partner attribution and training economics remain unresolved"},
+      {"project": "Compute Horde — Bittensor Subnet 12", "check": "Use canonical Grafana health and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.", "carried_from": "watchlist-scan-20260715T192052Z; no new API, paid-job or activity evidence in watchlist-scan-20260721T195244Z"},
+      {"project": "EIGEN / EigenCloud", "check": "Verify coordinator/provider canary and broad rollout of d-inference v0.7.11, then measure post-fix Gemma tool-template error rate, failed-user impact and provider-payout effects.", "carried_from": "dossier watch item date_seen 2026-07-16; no rollout or post-fix telemetry evidence in watchlist-scan-20260721T195244Z"}
+    ]
+  },
+  {
     "run_id": "verification-run-20260721T161459Z",
     "started_at": "2026-07-21T16:14:59Z",
     "completed_at": "2026-07-21T16:31:30Z",

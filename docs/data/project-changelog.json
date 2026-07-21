@@ -1,5 +1,75 @@
 [
   {
+    "date": "2026-07-21T20:08:18Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "verification update",
+    "summary": "Live DefiLlama adapters now separate AEON treasury-attributed token fees from MiroShark token fees and paid x402 simulation revenue.",
+    "source": "Builder X/Twitter and DefiLlama onchain adapters",
+    "url": "https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue",
+    "last_scanned": "2026-07-21T20:08:18Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier previously had issuer-reported economics, including 174 MiroShark paid runs / $174. The adapters now expose $261/24h, $2,613/7d, $12,479/30d and $244,372 all-time AEON treasury-attributed revenue plus $219 all-time MiroShark x402 revenue, up $45 / 25.86% from that prior run count; the 57%/43% fee split is documented, but beneficiary ownership and buyback execution remain unverified.",
+    "relates_to": [
+      {"type": "metric", "ref": "AEON token-pool treasury revenue and MiroShark x402 paid runs"},
+      {"type": "catalyst", "ref": "B1 transparency filing + tokenholder protections / buybacks"},
+      {"type": "open_question", "ref": "Treasury beneficiaries, organic-repeat usage and non-trading-revenue buyback execution"}
+    ]
+  },
+  {
+    "date": "2026-07-21T20:08:18Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "catalyst update",
+    "summary": "Rip Cars' four-day $250K raise opened on schedule with the Ownership Score pilot; a third-party snapshot reported $9.2M committed from 227 deposits after 40 minutes.",
+    "source": "Official MetaDAO X and third-party Pine Analytics snapshot",
+    "url": "https://x.com/MetaDAOProject/status/2079612515278008441",
+    "last_scanned": "2026-07-21T20:08:18Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior entry only scheduled the July 21 raise and allocation pilot. The sale is now live; Pine Analytics reported 36.8x target commitments after 40 minutes, a $499,727 largest deposit and 72% of commitments in the top 34 deposits. This is committed—not accepted or settled—capital and still has no disclosed MetaDAO fee or META value route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Rip Cars $250K raise and Ownership Score allocation pilot"},
+      {"type": "metric", "ref": "Final commitments, accepted capital, allocation concentration and settlement"}
+    ]
+  },
+  {
+    "date": "2026-07-21T20:08:18Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "official update",
+    "summary": "Chutes reported record $340K revenue per trillion LLM tokens and new TEE/private-subnet integrations; live 24h revenue was $15.7K.",
+    "source": "Official Chutes X and DefiLlama direct metrics",
+    "url": "https://x.com/chutes_ai/status/2079637219049189642",
+    "last_scanned": "2026-07-21T20:08:18Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The $340K revenue-per-trillion figure is 20.57% above Chutes' stated $282K 90-day average. Versus the prior distinct direct-metrics snapshot, revenue rose 13.36% to $15,708/24h, 6.12% to $92,347/7d and 1.35% to $345,627/30d; TVL fell 1.19% to $42.08M. Organic mix, gross margin and partner-attributed volume remain undisclosed.",
+    "relates_to": [
+      {"type": "metric", "ref": "Revenue per trillion tokens, DefiLlama revenue and TVL"},
+      {"type": "catalyst", "ref": "TEE plus GraVal GPU verification and confidential API positioning"},
+      {"type": "open_question", "ref": "Organic versus sponsored revenue, gross margin and integration-attributed volume"}
+    ]
+  },
+  {
+    "date": "2026-07-21T20:08:18Z",
+    "project": "VVV / Venice AI",
+    "slug": "14-vvv-venice",
+    "type": "official update",
+    "summary": "Venice made BytePlus Seed Audio 1.0 live in Studio with 20+ languages, timestamped prompting and prompts up to 3,000 characters.",
+    "source": "Official Venice X/Twitter thread",
+    "url": "https://x.com/AskVenice/status/2079627130556551470",
+    "last_scanned": "2026-07-21T20:08:18Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The dossier tracked coding, image and video model launches but not this controllable multilingual audio surface. The release adds a demonstrated Studio workflow and SFX/music capability, but no model-attributed requests, API pricing/revenue, DIEM use, VVV staking demand or burn effect.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "New frontier/coding/audio model launches in Venice"},
+      {"type": "open_question", "ref": "Which model launches drive paid usage, DIEM utilization and VVV burns"}
+    ]
+  },
+  {
     "date": "2026-07-21T16:31:30Z",
     "project": "Lium — Bittensor Subnet 51",
     "slug": "25-lium",

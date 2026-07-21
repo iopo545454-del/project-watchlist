@@ -3,7 +3,7 @@ status: reviewed
 watchlist: crypto-projects
 token_address: 0xBf8E8f0e8866a7052F948C16508644347c57aba3
 chain: Base
-last_updated: 2026-07-21T11:06:07Z
+last_updated: 2026-07-21T20:08:18Z
 ---
 
 # AEON Framework / aeon
@@ -63,6 +63,8 @@ last_updated: 2026-07-21T11:06:07Z
 | https://github.com/aaronjmars/aeon | Official source repo linked from website/DexScreener; MIT-licensed autonomous agent framework. |
 | https://www.aeon.fun/blog/signed-by-the-agent | Official implementation article for GitHub OIDC + Sigstore/Rekor skill-output attestations and their trust boundary. |
 | https://github.com/aeonfun/aeon/blob/main/docs/ADK.md | Canonical Aeon Developer Kit reference for GitHub-App authorization, skill control and product-linked skill packs. |
+| https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue | DefiLlama onchain adapter for AEON token-pool fees and the 57% treasury share; explicitly separates treasury revenue from launch-platform beneficiaries and direct holder revenue. |
+| https://api.llama.fi/summary/fees/miroshark-x402-api?dataType=dailyRevenue | DefiLlama onchain adapter for `$1` USDC MiroShark x402 simulation runs; separate from token-trading fees. |
 | https://t.me/aeon_agent | Telegram linked by DexScreener/project socials. |
 | `0xBf8E8f0e8866a7052F948C16508644347c57aba3` | Official `$aeon` token contract on Base to track. |
 | https://dexscreener.com/base/0xBf8E8f0e8866a7052F948C16508644347c57aba3 | Token/pair/liquidity/market-data view. |
@@ -72,6 +74,7 @@ last_updated: 2026-07-21T11:06:07Z
 
 ## Latest scan notes
 
+- 2026-07-21 — Builder Aaron Mars surfaced **live DefiLlama adapters for AEON token fees, MiroShark token fees and MiroShark x402 API revenue**, turning previously issuer-reported economics into queryable onchain series. At the 20:08 UTC check, AEON's adapter showed **`$261` 24h / `$2,613` 7d / `$12,479` 30d / `$244,372` all-time protocol revenue**; its methodology says 57% of the 1.2% steady-state WETH/AEON pool fee reaches the AEON treasury, 43% reaches launch-platform beneficiaries and none is distributed directly to holders. MiroShark x402 showed **`$13` over 7d, `$92` over 30d and `$219` all-time** at `$1` per run, while token-swap revenue is tracked separately. This materially improves revenue transparency, but beneficiary ownership, treasury transactions, organic-repeat usage and the promised 50% non-trading-revenue buybacks still need verification. Sources: https://x.com/aaronjmars/status/2079630251324297357, https://x.com/aaronjmars/status/2079630362003538090, https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue and https://api.llama.fi/summary/fees/miroshark-x402-api?dataType=dailyRevenue
 - 2026-07-21 — AEON's official **Signed by the Agent** article and canonical docs make the v0.1 attestation claim reproducible: eligible runs sign an immutable output snapshot plus a manifest with skill/model/mode/trigger/commit/run ID/SHA-256 via GitHub Actions OIDC and `actions/attest-build-provenance@v4`, publish to Sigstore/Rekor, and can be checked with `gh attestation verify`. Attestation is off by default, can be enabled globally/per skill, and proves provenance/integrity—not correctness. This materially advances the existing v0.1 catalyst from a high-level signed-log claim to a documented trust boundary, but public attested-run volume, verifier adoption, downstream use and `$aeon` economics remain unmeasured. Sources: https://x.com/aeonframework/status/2079485814958948757, https://www.aeon.fun/blog/signed-by-the-agent and https://github.com/aeonfun/aeon/blob/main/docs/attestation.md
 - 2026-07-21 — Official AEON published an ADK integration walkthrough after introducing the **Aeon Developer Kit** on July 17. Canonical `docs/ADK.md` defines a real GitHub-App pattern for revocable per-repository access, skill discovery/dispatch/scheduling, sealed Actions secrets and product-specific skill packs; the July 21 video is education/demo follow-through rather than a second launch. This expands the framework from fork-and-run software into an integration surface, but no external ADK deployment, users, fees or `$aeon` route are disclosed. Sources: https://x.com/aeonframework/status/2078150767836381517, https://github.com/aeonfun/aeon/blob/main/docs/ADK.md and https://x.com/aeonframework/status/2079521415791812821
 - 2026-07-11 — Official AEON announced **aeon v0.1** as its first stable release after use by 70 partners. The release adds/rolls up Claude Code, Codex, Grok and OpenCode harnesses; automatic skills and MCP discovery; opt-in Langfuse observability; skill-run attestations that can prove onchain/offchain execution; Open Knowledge Format support; and channel/codebase improvements. Founder/builder Aaron Mars separately described each skill run as producing a GitHub-signed, publicly logged proof. This is a real product/release milestone and closes part of the “live features vs roadmap” question, but adoption, proof-verification docs, public attestation volume, and any `$aeon` value capture remain unmeasured. Sources: https://x.com/aeonframework/status/2075576813850403049, https://x.com/aeonframework/status/2075576816665018716, https://x.com/aaronjmars/status/2074516793800933663, https://github.com/aaronjmars/aeon/releases/tag/v0.1.0
@@ -117,10 +120,29 @@ last_updated: 2026-07-21T11:06:07Z
 - Base token contract: `0xBf8E8f0e8866a7052F948C16508644347c57aba3`
 - DexScreener: https://dexscreener.com/base/0xBf8E8f0e8866a7052F948C16508644347c57aba3
 - BaseScan: https://basescan.org/token/0xBf8E8f0e8866a7052F948C16508644347c57aba3
+- DefiLlama AEON fee/revenue adapter: https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue
+- DefiLlama MiroShark x402 adapter: https://api.llama.fi/summary/fees/miroshark-x402-api?dataType=dailyRevenue
 
 ## Docs/blogs
 - https://www.aeon.fun/
 - https://github.com/aaronjmars/aeon
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| AEON token-pool fees and treasury revenue | Tests the disclosed native trading-fee capture | DefiLlama AEON fees adapter plus Base transactions | tested_ok | Adapter methodology assigns 57% of pool fees to treasury and 43% to launch-platform beneficiaries; verify beneficiary contracts and treasury ownership independently. |
+| MiroShark x402 paid runs/revenue | Measures external paid agent usage rather than token turnover | DefiLlama MiroShark x402 adapter | tested_ok | `$1` USDC per run makes revenue approximately equal to completed paid runs, but does not disclose unique buyers, repeat cohorts, refunds or compute margin. |
+| Non-trading-revenue buybacks | Tests the B1 promise that 50% of non-trading revenue buys AEON | Treasury/buyback transactions and official filing | manual_only | DefiLlama says swap fees are not directly holder revenue; no stable buyback transaction adapter is configured. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| AEON fees | `https://api.llama.fi/summary/fees/aeon?dataType=dailyRevenue` | tested_ok | Daily/weekly/monthly/all-time treasury-attributed protocol revenue plus explicit fee split | Add to the collector after independently mapping treasury/beneficiary contracts. |
+| MiroShark x402 | `https://api.llama.fi/summary/fees/miroshark-x402-api?dataType=dailyRevenue` | tested_ok | Onchain USDC API fees at `$1` per simulation | Track buyers/repeat usage and reconcile to the product dashboard. |
 
 ## Risks
 - Name collision: AEON Framework / `$aeon` is separate from AEON.XYZ and legacy AeonCoin.

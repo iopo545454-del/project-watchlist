@@ -1,7 +1,7 @@
 ---
 status: active
 watchlist: crypto-projects
-last_updated: 2026-07-20T17:10:56Z
+last_updated: 2026-07-21T20:08:18Z
 ---
 
 # Chutes — Bittensor Subnet 64
@@ -14,6 +14,7 @@ last_updated: 2026-07-20T17:10:56Z
 
 ## Latest scan notes
 
+- 2026-07-21 — Chutes' week-ten recap reported a record **`$340K` revenue per trillion LLM tokens** on July 20 versus a **`$282K` 90-day average** (about 20.6% higher), while the live DefiLlama adapter showed **`$15.7K` 24h / `$92.3K` 7d / `$345.6K` 30d revenue** and `$42.1M` TVL at the 19:49 UTC snapshot. The same recap says dstack's private-ai-gateway now routes to Chutes after GPU TEE attestation and that ChronoSeek uses new private-subnet support; reproducible confidential-VM measurements and registry access remain next-release roadmap items. This is a useful revenue-quality/integration signal, not a tokenomics step change: organic-versus-sponsored mix, gross margin, partner-attributed volume and SN64 routing remain undisclosed. Sources: https://x.com/chutes_ai/status/2079637219049189642 and https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue
 - 2026-07-20 — Chutes published concrete Parallax pre-training details for a **20B sparse MoE** run on fragmented hardware: eight single-L40S VMs across two continents plus remote RTX 4090 workers, with the social post also citing a 5090, roughly **6 seconds/step** and **under `$10/hour`**. The linked 36-page draft report is more useful—and more cautious—than the graphic: it reports an eight-composer L40S/RTX 6000 Ada run with remote RTX 4090 workers reaching validation loss `3.2521` at `50k` baseline-equivalent steps and best exported median `3.2104`; its abstract explicitly says the point estimates are not replicated equivalence tests and it does **not** report measured wall-clock speedups. The report provides no public code/checkpoint, and the `<$10/hour` / 5090 / two-continent details are social-graphic claims rather than tables in the draft. This advances Parallax from a small recurrent-model milestone to a documented larger MoE workload, but paid customer jobs, reproducibility, training-market rollout and SN64 economics remain open. Sources: https://x.com/chutes_ai/status/2079197210651001326, https://x.com/chutes_ai/status/2079222447644225689 and https://storage.googleapis.com/chutes-random/parallax-draft-tech-report.pdf
 
 - 2026-07-10 — Official Chutes said it is part of **Internet Court**, an open skill for agent-to-agent contracts, negotiation, payments, escrow, and dispute resolution, with Chutes providing decentralized inference for the agentic workflow. This is a live integration/product-surface signal for SN64 inference demand, but not yet a revenue/liquidity event until usage, paid volume, and fee attribution show up in Chutes/DefiLlama/Taostats data. Source: https://x.com/chutes_ai/status/2075581795232321649
@@ -37,15 +38,15 @@ last_updated: 2026-07-20T17:10:56Z
 | Metric | Current read | Source / caveat |
 |---|---:|---|
 | Subnet | SN64 | Bittensor dTAO alpha |
-| Alpha market cap / subnet value | ~$77.8M | Taostats, converted from TAO |
-| Liquidity / pool value | ~$85.8M | Taostats, converted from TAO |
-| Revenue 24h | `$10.7K` | DefiLlama Chutes revenue, as of 2026-07-05 |
-| Revenue 7d | `$69.3K` | DefiLlama Chutes revenue, as of 2026-07-05 |
-| Revenue 30d | `$359.8K` | DefiLlama Chutes revenue, as of 2026-07-05 |
-| Annualized 30d revenue | `$4.38M` | 30d run-rate, as of 2026-07-05 |
-| Current value / revenue | ~15.7x | Cleanest current comp in basket |
-| Revenue needed at 10x | ~$7.8M/yr, ~$21.3k/day | Implied hurdle |
-| Revenue needed at 20x | ~$3.9M/yr, ~$10.7k/day | Already near/above this on 30d run-rate |
+| Alpha market cap / subnet value | ~$77.8M | Stale — manual refresh needed; Taostats conversion snapshot from 2026-06-22 |
+| Liquidity / pool value | ~$85.8M | Stale — manual refresh needed; Taostats conversion snapshot from 2026-06-22 |
+| Revenue 24h | `$15.7K` | DefiLlama Chutes revenue, as of 2026-07-21 |
+| Revenue 7d | `$92.3K` | DefiLlama Chutes revenue, as of 2026-07-21 |
+| Revenue 30d | `$345.6K` | DefiLlama Chutes revenue, as of 2026-07-21 |
+| Annualized 30d revenue | `$4.15M` | 30d run-rate, as of 2026-07-21 |
+| Current value / revenue | stale — manual refresh needed | Subnet-value snapshot is too old for current multiple math |
+| Revenue needed at 10x | stale — manual refresh needed | Depends on the 2026-06-22 subnet-value snapshot |
+| Revenue needed at 20x | stale — manual refresh needed | Depends on the 2026-06-22 subnet-value snapshot |
 
 ## Team
 - Chutes / `@chutes_ai` official team account; verify founder/core contributors from official docs and team posts.
@@ -79,6 +80,25 @@ last_updated: 2026-07-20T17:10:56Z
 - Revenue quality and margin need monitoring; revenue can be boosted by sponsored inference or incentives.
 - Managed inference is highly competitive with centralized providers and routers.
 - Subnet alpha market cap is pool/alpha context, not normal equity-style valuation.
+
+## Direct Data / KPI Methodology
+
+### KPI questions
+
+| KPI | Why it matters | Best source | Programmatic status | Notes / limitations |
+|---|---|---|---|---|
+| Revenue and revenue per trillion tokens | Tests paid inference demand and unit economics | DefiLlama revenue adapter plus official throughput disclosure | partial | Revenue is programmatic; token throughput and organic/sponsored split are issuer-reported and not continuously exposed. |
+| TVL / supplier capital | Measures capital committed to SN64 | DefiLlama protocol adapter | tested_ok | TVL is not GPU utilization or gross margin. |
+| Gross margin and provider payouts | Distinguishes valuable demand from subsidized throughput | Official payout/expense data or onchain provider flows | manual_only | No stable public adapter separates provider costs, subsidies and retained revenue. |
+| SN64 alpha value, liquidity and emissions | Connects usage to token market structure | Taostats/API or chain data | partial | Public page is useful but current machine-readable collector access remains unresolved. |
+
+### Fetch tests
+
+| Source | Endpoint / method | Status | What it returns | Next step |
+|---|---|---|---|---|
+| DefiLlama revenue | `https://api.llama.fi/summary/fees/chutes?dataType=dailyRevenue` | tested_ok | 24h/7d/30d/all-time revenue series | Compare revenue-per-token claims with independently collected throughput. |
+| DefiLlama TVL | `https://api.llama.fi/protocol/chutes` | tested_ok | Current TVL and chain history | Treat as supplier-capital context, not utilization. |
+| Taostats SN64 | `https://taostats.io/subnets/64` | partial | Alpha/liquidity/emission dashboard | Identify a stable public endpoint before automating market-structure history. |
 
 ## Catalysts
 
