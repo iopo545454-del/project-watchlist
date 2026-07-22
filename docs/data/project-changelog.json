@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-07-22T00:38:50Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "official update",
+    "summary": "Derive Weekly Buyback #76 purchased 131,584 DRV at a $0.13 average, lifting cumulative DAO buybacks to 26,465,908 DRV with the 35%-of-fees allocation unchanged.",
+    "source": "X/Twitter official account and DefiLlama direct-metrics comparison",
+    "url": "https://x.com/DeriveXYZ/status/2079699855577153942",
+    "last_scanned": "2026-07-22T00:38:50Z",
+    "importance": "low",
+    "novelty": "recurring",
+    "delta": "Versus #75, token count fell 40.22% from 220,123 DRV and implied notional fell 51.43% from about $35,220 to $17,106 as average price declined from $0.16 to $0.13. Live seven-day fees were $87,255, down 15.22% from the prior distinct $102,923 snapshot and below the configured 25% rule; the allocation remained 35%.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Protocol-fee buyback program"},
+      {"type": "metric", "ref": "Weekly DRV bought, implied notional, cumulative buybacks and seven-day fees"},
+      {"type": "open_question", "ref": "Map buyback transactions and reconcile weekly execution with protocol-fee windows"}
+    ]
+  },
+  {
+    "date": "2026-07-22T00:38:50Z",
+    "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+    "slug": "09-iota-sn9",
+    "type": "official update",
+    "summary": "IOTA tagged v4.7.0 with Bittensor 10 wallet/API compatibility changes; the update is maintenance rather than the teased Orion model artifact.",
+    "source": "Official GitHub repository",
+    "url": "https://github.com/macrocosm-os/iota/tree/v4.7.0",
+    "last_scanned": "2026-07-22T00:38:50Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The last substantive check found v4.6.1 as the newest tag. The v4.6.1...v4.7.0 comparison has four commits across 14 files, chiefly migrating to bittensor-wallet and Bittensor 10.3.2; it adds no checkpoint, benchmark, paid-run evidence, dashboard API, reward change or SN9 value-capture result.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "IOTA dashboard and open-source training stack"},
+      {"type": "open_question", "ref": "Next Orion checkpoint, reproducible benchmark and paid training economics"}
+    ]
+  },
+  {
     "date": "2026-07-21T20:08:18Z",
     "project": "AEON Framework",
     "slug": "05-aeon",
