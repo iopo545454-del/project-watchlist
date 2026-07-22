@@ -1,5 +1,57 @@
 [
   {
+    "date": "2026-07-22T23:38:43Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "catalyst added",
+    "summary": "Bankr made stock-paired launches live on Robinhood Chain, letting new-token pools quote against 90+ tokenized stocks/ETFs and accrue creator fees in the stock asset.",
+    "source": "Official Bankr X, docs and public Discover API",
+    "url": "https://x.com/bankrbot/status/2080033546425749697",
+    "last_scanned": "2026-07-22T23:38:43Z",
+    "importance": "high",
+    "novelty": "new",
+    "delta": "The dossier already tracked Robinhood stock trading and ordinary Doppler launches, but not a launch primitive that replaces the native-crypto quote leg with Robinhood-issued equity tokens. Current X/docs/API evidence does not expose exact stock-paired fee splits, treasury balances or a BNKR/Club route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stock-paired token launches on Robinhood Chain"},
+      {"type": "metric", "ref": "Stock-paired launches, volume, creator-stock treasury balances and fee splits"},
+      {"type": "open_question", "ref": "Stock-paired quote contracts, economics and BNKR routing"}
+    ]
+  },
+  {
+    "date": "2026-07-22T23:38:43Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "catalyst update",
+    "summary": "NEAR completed its first automatic mainnet shard split; archival RPC maps the 9-to-10-shard transition at block 207,849,134.",
+    "source": "Official NEAR X and archival/current mainnet RPC",
+    "url": "https://x.com/NEARProtocol/status/2080018646630355150",
+    "last_scanned": "2026-07-22T23:38:43Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo had already verified Protocol v86 activation but explicitly lacked production evidence of an automatic split. RPC history now shows shard 5 replaced by children 12 and 13 at 2026-07-21T01:15:14Z, increasing mainnet from 9 to 10 shards while protocol version remained 86; the finalized layout was still 10 shards at scan time.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
+      {"type": "open_question", "ref": "Protocol v86 health, later splits and ML-DSA adoption"}
+    ]
+  },
+  {
+    "date": "2026-07-22T23:38:43Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "official update",
+    "summary": "Chutes will remove its Harvard research opt-in endpoint July 24, ending its 25% inference discount and prompt/response recording.",
+    "source": "Official Chutes X and live endpoints",
+    "url": "https://x.com/chutes_ai/status/2080012673689801098",
+    "last_scanned": "2026-07-22T23:38:43Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The repo tracked public revenue mix and hidden-incentive risk but not the March Harvard opt-in program. Its known 25% pricing concession and request/response collection now have a hard July 24 end date; Chutes discloses no endpoint-attributed traffic or revenue, and same-window direct metrics stayed below configured materiality rules.",
+    "relates_to": [
+      {"type": "metric", "ref": "Post-closure traffic, revenue per token and revenue mix"},
+      {"type": "open_question", "ref": "Off-ledger discounts, incentives and gross margin"}
+    ]
+  },
+  {
     "date": "2026-07-22T19:04:05Z",
     "project": "Worldcoin / WLD / World Network",
     "slug": "16-worldcoin-wld",

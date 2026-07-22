@@ -1,5 +1,128 @@
 [
   {
+    "run_id": "watchlist-scan-20260722T231058Z",
+    "started_at": "2026-07-22T23:10:58Z",
+    "completed_at": "2026-07-22T23:44:38Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "from": "2026-07-22T19:04:05Z",
+      "to": "2026-07-22T23:44:38Z",
+      "basis": "Prior completed broad-scan timestamp; explicit tracked-account X searches covered all enabled projects, followed by evidence-bearing weak-signal search, direct metrics, prior next-check review and a substantive stale-project Git check."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, refreshed 31 direct metrics across 13 configured projects, covered all 94 tracked official/team/core X accounts, searched credible weak signals, consumed the previous run's 12 next checks and repeated a substantive official Git check for stale Compute Horde.",
+    "projects_checked": ["02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"],
+    "logged_projects": ["04-bankr", "17-near", "24-chutes"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 3,
+      "tracked_x_accounts_checked": 94,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "material_metric_rules_crossed": 0,
+      "new_changelog_entries": 3,
+      "confirmed_or_durable_findings": 3,
+      "unverified_watch_items_added_or_advanced": 0,
+      "stale_projects_over_7_days_at_start": 1,
+      "errors": 3
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub Issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Three open intake-form issues remain for Pluralis, Ambient and EigenCloud.",
+        "decision": "No new intake: all three deduplicate by project name, primary X and token state/address to reviewed index rows; no submitted field required a merge."
+      },
+      {
+        "project": "All configured direct-data projects",
+        "source": "Configured public APIs",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 31 metrics across 13 projects. Kinetiq TVL rose 1.46%; Virtuals seven-day fees rose 1.94%; Derive seven-day fees rose 1.87% and TVL 0.67%; Bio TVL rose 1.15%; Chutes seven-day revenue rose 4.15% and TVL 0.84%. Eigen supplier rewards retained the already-logged same-day whipsaw; no new configured rule crossed.",
+        "decision": "No material metric rule crossed. Routine generated writes were reverted after review; no metric-only changelog entry was added."
+      },
+      {
+        "project": "All enabled projects",
+        "source": "X/Twitter",
+        "url": "https://x.com/",
+        "summary": "Explicit searches covered all 94 tracked official, founder, team and core-contributor accounts after the cutoff, plus evidence-bearing weak-signal searches across every project.",
+        "decision": "Full tracked-account and weak-signal coverage completed. Two scam-style GRASS/VIRTUAL posts were rejected; no credible new unverified item qualified."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "Official Bankr X, docs and public API",
+        "url": "https://x.com/bankrbot/status/2080033546425749697",
+        "summary": "Bankr's stock-paired launch primitive lets new Robinhood Chain pools quote against 90+ tokenized stocks/ETFs and lets creator fees accrue in the stock asset. Docs and a live Stocks-filter API support the surface, but exact quote assets, fee splits, treasury balances and BNKR routing are not exposed.",
+        "decision": "Logged as a new platform mechanic and catalyst; this changes launch market structure rather than recording another routine token launch."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "Official NEAR X and archival/current mainnet RPC",
+        "url": "https://x.com/NEARProtocol/status/2080018646630355150",
+        "summary": "NEAR's first automatic split is independently reproducible between blocks 207,849,133 and 207,849,134 at 2026-07-21T01:15:14Z: shard 5 became shards 12/13, mainnet moved 9→10 shards and protocol version remained 86. The finalized layout still had 10 shards at the scan.",
+        "decision": "Logged as completion of the existing first-split production-proof check; catalyst, KPI methodology, open question, indexes and generated page were updated."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "Official Chutes X and live endpoints",
+        "url": "https://x.com/chutes_ai/status/2080012673689801098",
+        "summary": "The Harvard opt-in research endpoint, its 25% inference discount and request/response recording end July 24; the endpoint was still deployed at scan time and users must return to the primary API. No endpoint-attributed traffic or revenue is public.",
+        "decision": "Logged as a dated operating/pricing/privacy update and added a post-closure KPI check; no separate metric alert because same-window movement remained below rules."
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "source": "Canonical Git repository",
+        "url": "https://github.com/backend-developers-ltd/ComputeHorde",
+        "summary": "The mandatory >7-day stale check confirmed canonical HEAD and latest tags still stop at commit 86ebc5b from April 16, 2026; no new public organic-job, inventory, utilization or revenue API artifact appeared.",
+        "decision": "Substantive official-source check completed with no durable state change. Do not reset last_updated; carry the demand/API question forward."
+      },
+      {
+        "project": "Below-threshold official candidates",
+        "source": "Tracked-account X/Twitter",
+        "url": "https://x.com/",
+        "summary": "GEODNET posted routine drone/RTK positioning education; Virtuals posted a vague reply; no other post-cutoff tracked-account item added material project information.",
+        "decision": "No changelog entries for promotional education, vague replies or absence of new evidence."
+      },
+      {
+        "project": "Standing verification checks",
+        "source": "Tracked X, official APIs/repos and prior next checks",
+        "url": "projects/",
+        "summary": "VitaApp access/economics, GWLD filing advancement, the July 24 WLD unlock transition, Orion artifacts, Ambient paid production, Rip Cars settlement, Pluralis artifacts, Eigen PR #561 rollout, Targon Tower fulfillment and Virtuals campaign attribution did not advance in this window. NEAR's first split advanced and was resolved at event level.",
+        "decision": "No silent drops: unresolved checks are carried forward below with origins; NEAR now shifts from first-split occurrence to 10-shard health/later-split monitoring."
+      }
+    ],
+    "errors": [
+      "Two delegated deep-research workers timed out after preserving substantial Bankr and NEAR evidence in live transcripts; the parent independently reproduced accepted claims with X search, official APIs and archival/current RPC.",
+      "The configured general web-search/extraction backend was unavailable inside delegated work; direct official HTTPS, X search, GitHub and project APIs supplied accepted evidence.",
+      "An initial NEAR RPC parsing command failed on a string timestamp; a corrected command reproduced both boundary blocks and current shard layout."
+    ],
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.", "carried_from": "watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260722T231058Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, seed/AP terms, launch, AUM/flows, custody and WLD creations/redemptions.", "carried_from": "watchlist-scan-20260721T104640Z; no filing or listing advancement in watchlist-scan-20260722T231058Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "On July 24 verify the scheduled unlock-rate transition onchain: aggregate 5.1M→2.9M WLD/day, Community 3.2M→1.6M and TFH investor/team 1.9M→1.3M; reconcile unlocked, circulating and wallet flows.", "carried_from": "watchlist-scan-20260722T184459Z; event was not yet due in watchlist-scan-20260722T231058Z"},
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.", "carried_from": "watchlist-scan-20260715T234645Z; no model, dashboard or economics advancement in watchlist-scan-20260722T231058Z"},
+      {"project": "Ambient", "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.", "carried_from": "watchlist-scan-20260715T192052Z; no production/economic artifact in watchlist-scan-20260722T231058Z"},
+      {"project": "NEAR Protocol", "check": "Monitor 10-shard Protocol v86 reliability, validator/client incidents and later automatic splits; measure ML-DSA adoption and continue Corbits, NEAR@3.33, confidential-partner and revenue/buyback checks.", "carried_from": "watchlist-scan-20260715T192052Z; first split resolved in watchlist-scan-20260722T231058Z and follow-up narrowed to operational durability"},
+      {"project": "META / MetaDAO", "check": "After the Rip Cars raise, verify final commitments/accepted capital, Ownership Score allocation, concentration, settlement, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; raise remained open with no settlement evidence in watchlist-scan-20260722T231058Z"},
+      {"project": "Pluralis", "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and the official NeurIPS workshop page/CFP.", "carried_from": "watchlist-scan-20260715T192052Z; no artifact, benchmark or economics evidence in watchlist-scan-20260722T231058Z"},
+      {"project": "Compute Horde — Bittensor Subnet 12", "check": "Use canonical Grafana and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.", "carried_from": "watchlist-scan-20260715T192052Z; substantive Git check still found no post-April release, API or demand evidence in watchlist-scan-20260722T231058Z"},
+      {"project": "EIGEN / EigenCloud", "check": "Track PR #561 merge/release and protocol-v1 provider adoption; verify v0.7.11 canary/broad rollout and measure post-fix error rate, failed-user impact and provider-payout effects.", "carried_from": "dossier watch item date_seen 2026-07-16; no merge, rollout or production telemetry in watchlist-scan-20260722T231058Z"},
+      {"project": "Targon — Bittensor Subnet 4", "check": "Verify Tower reservation opening, payment/refund/warranty terms, ship dates and delivered units; measure realized utilization, rates/opex, 5090 KYC-only constraints and incremental SN4 economics.", "carried_from": "watchlist-scan-20260722T044753Z; no Tower fulfillment advancement in watchlist-scan-20260722T231058Z"},
+      {"project": "VIRTUAL / Virtuals Protocol", "check": "Measure Binance Wallet campaign-attributed eligible-token volume, unique/repeat traders, protocol fees and post-August-5 retention; continue tax-manager and VIRTUAL value-route checks.", "carried_from": "watchlist-scan-20260722T092655Z; no campaign attribution in watchlist-scan-20260722T231058Z"},
+      {"project": "BANKR / BankrCoin", "check": "Map stock-paired pool/factory contracts and quote assets; quantify launches, volume, creator-stock treasury balances and exact fee splits; verify any Bankr-fee, Club or BNKR route.", "carried_from": "watchlist-scan-20260722T231058Z; new mechanism has no transparent economics"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "After July 24 compare complete pre/post Harvard-endpoint windows for requests, tokens, revenue, revenue per token and mix; determine whether any undisclosed discount/incentive remains.", "carried_from": "watchlist-scan-20260722T231058Z; closure announced before post-event data exists"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 3,
+      "tiers": {"high": 1, "medium": 1, "low": 1},
+      "labels": {"04-bankr": "high", "17-near": "medium", "24-chutes": "low"},
+      "rationale": "Bankr is a live platform-level market-structure step change, adding stock-quoted launch pools and stock-denominated creator fees; NEAR is meaningful production proof of already-live dynamic resharding, without direct token or market impact; Chutes closes a narrow discounted research endpoint with no disclosed traffic, revenue magnitude or material metric move."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260722T184459Z",
     "started_at": "2026-07-22T18:44:59Z",
     "completed_at": "2026-07-22T19:06:22Z",
