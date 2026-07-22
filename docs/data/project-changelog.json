@@ -1,5 +1,91 @@
 [
   {
+    "date": "2026-07-22T05:08:37Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "verification update",
+    "summary": "DRV's Korean listings remain live, but Upbit/Bithumb KRW turnover fell 98.35%/94.47% from listing-day snapshots and Upbit BTC/USDT turnover was zero.",
+    "source": "Upbit and Bithumb public market APIs",
+    "url": "https://api.upbit.com/v1/ticker?markets=KRW-DRV,BTC-DRV,USDT-DRV",
+    "last_scanned": "2026-07-22T05:08:37Z",
+    "importance": "high",
+    "novelty": "update",
+    "delta": "Upbit DRV/KRW 24-hour turnover was about ₩1.085B versus ₩65.76B on July 14 (-98.35%); Bithumb was about ₩197.8M versus ₩3.58B (-94.47%). BTC-DRV and USDT-DRV still resolved but reported zero 24-hour turnover, narrowing the live market-access catalyst to overwhelmingly KRW-based activity.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Upbit and Bithumb Korean spot-market listings"},
+      {"type": "metric", "ref": "DRV Korean exchange turnover and pair activity"},
+      {"type": "open_question", "ref": "Deposit networks, withdrawals and post-listing liquidity persistence"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:08:37Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "GitLawb shipped Zero v0.5.0 and Node v0.6.0 with agent-tooling, sandbox, authorization and private-metadata hardening.",
+    "source": "Official X/Twitter and canonical GitHub releases",
+    "url": "https://x.com/gitlawb/status/2079748230771048796",
+    "last_scanned": "2026-07-22T05:08:37Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier only had a vague July 1 Zero teaser and node v0.3.9 as the last network release. Versioned Zero v0.5.0 and Node v0.6.0 are now live; neither reports active users, node adoption, paid usage, OpenGateway routing or GITLAWB value capture.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Zero agentic-coding release"},
+      {"type": "open_question", "ref": "Zero/node adoption and routing into OpenGateway, credits, ads or GITLAWB"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:08:37Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "verification update",
+    "summary": "Open Darkbloom PR #561 adds inference-time Gemma tool constraints and fail-closed capability routing, but is not merged or deployed.",
+    "source": "Official GitHub pull request",
+    "url": "https://github.com/Layr-Labs/d-inference/pull/561",
+    "last_scanned": "2026-07-22T05:08:37Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Signed v0.7.11 previously supplied the first fix for the 42.4% Gemma tool-template failure item. PR #561 now adds bounded inference-time grammar enforcement and reports 907 engine plus 1,670 provider tests, but remains unmerged with mixed-version rollout limits and no post-fix production telemetry.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "Darkbloom Gemma tool-template failures and v0.7.11 rollout"},
+      {"type": "open_question", "ref": "PR #561 merge/release, canary rollout and post-fix error rate"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:08:37Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "scan",
+    "summary": "EigenLayer/EigenCloud seven-day supplier rewards whipsawed from $3,888 to $1,098 and then $1,765, ending 54.60% below the pre-window level as the configured rule tripped.",
+    "source": "DefiLlama direct-metrics collector",
+    "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees",
+    "last_scanned": "2026-07-22T05:08:37Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The latest $1,765 reading recovered 60.75% from the concurrently committed 03:43 UTC low of $1,098 but remained 54.60% below the pre-window $3,888 snapshot. Twenty-four-hour rewards were $674, 30-day rewards were $629,785 and protocol revenue remained $0; this is not Darkbloom paid revenue or EIGEN value capture.",
+    "relates_to": [
+      {"type": "metric", "ref": "EigenLayer/EigenCloud supplier rewards and protocol revenue"},
+      {"type": "open_question", "ref": "Separate EigenLayer supplier rewards from Darkbloom demand and EIGEN value capture"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:08:37Z",
+    "project": "Targon — Bittensor Subnet 4",
+    "slug": "10-targon",
+    "type": "catalyst added",
+    "summary": "Targon Tower Pro pricing now spans $57,500-$305,900; reservations remain unopened and the entry 5090 build cannot earn on the permissionless subnet market.",
+    "source": "Official Targon product page and TAO Protocol review",
+    "url": "https://targon.com/tower",
+    "last_scanned": "2026-07-22T05:08:37Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The dossier previously knew Tower was waitlist-only but lacked hardware economics. Targon now publishes four eight-GPU configurations, hourly-rate/opex estimates, full-payment-before-delivery terms and a KYC-only monetization constraint for the $57,500 5090 build; it still gives no reservation date, ship date, delivered-unit count or realized owner earnings.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Tower Pro at-home confidential-compute hardware"},
+      {"type": "open_question", "ref": "Tower reservations, delivery and realized earning-mode ROI"}
+    ]
+  },
+  {
     "date": "2026-07-22T00:38:50Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",

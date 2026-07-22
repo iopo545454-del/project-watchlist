@@ -1,5 +1,77 @@
 [
   {
+    "run_id": "watchlist-scan-20260722T044753Z",
+    "started_at": "2026-07-22T04:47:53Z",
+    "completed_at": "2026-07-22T05:24:11Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "from": "2026-07-22T00:38:50Z",
+      "to": "2026-07-22T05:24:11Z",
+      "basis": "Prior broad-scan changelog timestamp; explicit tracked-handle X searches covered all enabled project accounts, with direct GitHub/product/exchange/API checks for versioned releases, quantitative claims and standing verification items."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, refreshed 31 direct metrics across 13 configured projects, covered all 94 tracked official/team/core X accounts plus credible weak signals, consumed prior next checks and dossier watch items, and verified GitLawb releases, Targon Tower terms, Derive exchange liquidity and EigenCloud GitHub/direct-metric changes through primary sources.",
+    "projects_checked": ["02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"],
+    "logged_projects": ["06-gitlawb", "10-targon", "18-drv-derive", "23-eigencloud"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 4,
+      "tracked_x_accounts_checked": 94,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "material_metric_rules_crossed": 1,
+      "new_changelog_entries": 5,
+      "confirmed_or_durable_findings": 4,
+      "unverified_watch_items_added_or_advanced": 1,
+      "stale_projects_over_7_days": 0,
+      "errors": 3
+    },
+    "decision_trail": [
+      {"project": "Project intake", "source": "GitHub Issues API", "url": "https://github.com/iopo545454-del/project-watchlist/issues", "summary": "Three open intake-form issues remain for Pluralis, Ambient and EigenCloud.", "decision": "No new intake: all three deduplicate by name, primary X and token state/address to reviewed index rows; no missing submitted field required a merge."},
+      {"project": "All enabled projects", "source": "X/Twitter", "url": "https://x.com/", "summary": "Explicit project/handle searches covered all 94 tracked official, founder, team and core-contributor accounts after the prior cutoff, followed by a broad evidence-bearing weak-signal search.", "decision": "Full X coverage completed. Price chatter, generic replies, reposts, routine launch instances and unsupported claims were rejected; GitLawb's release and the Targon Tower analysis were the only accepted in-window X-led findings."},
+      {"project": "GitlWab / GitLawb / Gitwab", "source": "Official X and canonical GitHub releases", "url": "https://github.com/Gitlawb/zero/releases/tag/v0.5.0", "summary": "Zero v0.5.0 and Node v0.6.0 shipped with terminal-agent, sandbox, iCaptcha, authorization, private-metadata and sanitization changes.", "decision": "Logged one combined versioned product/network update, completed the prior Zero release catalyst and added canonical release sources; usage and token routing remain open."},
+      {"project": "Targon — Bittensor Subnet 4", "source": "Official Tower page and TAO Protocol", "url": "https://targon.com/tower", "summary": "Tower configurations cost $57,500-$305,900; reservations are not open, full payment is due before delivery and the 5090 build cannot monetize through the permissionless subnet market.", "decision": "Added a hardware catalyst and ROI/delivery check. Terms are official, but payoff curves remain projections without ship dates, delivered units or realized earnings."},
+      {"project": "DRV / Derive Protocol", "source": "Upbit and Bithumb public APIs", "url": "https://api.upbit.com/v1/ticker?markets=KRW-DRV,BTC-DRV,USDT-DRV", "summary": "Upbit/Bithumb DRV/KRW 24-hour turnover fell 98.35%/94.47% from listing-day snapshots; Upbit BTC-DRV and USDT-DRV reported zero 24-hour turnover.", "decision": "Logged as quantitative post-listing liquidity follow-through and updated the completed listing catalyst; market access persists, but activity is overwhelmingly KRW-based and network/withdrawal/depth checks remain open."},
+      {"project": "EIGEN / EigenCloud", "source": "Official GitHub pull request", "url": "https://github.com/Layr-Labs/d-inference/pull/561", "summary": "Open PR #561 adds bounded inference-time Gemma tool constraints, capability-gated routing and fail-closed behavior with extensive test claims.", "decision": "Advanced the existing Gemma reliability watch item as partially supported; do not treat the unmerged PR as production rollout or proof of a lower error rate."},
+      {"project": "EIGEN / EigenCloud", "source": "DefiLlama direct metrics", "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees", "summary": "Seven-day supplier rewards moved from a pre-window $3,888 to $1,098 at 03:43 UTC, then recovered 60.75% to $1,765 while remaining 54.60% below the pre-window level; 30-day rewards were nearly flat and protocol revenue stayed zero.", "decision": "Logged and retained the collector refresh. Explicitly bounded attribution: this is not Darkbloom paid revenue, EigenCloud retained revenue or EIGEN value capture."},
+      {"project": "Below-threshold candidates", "source": "Tracked X and official sources", "url": "https://x.com/", "summary": "Bankr built a custom multi-chain scanner on request; Derive posted a $27.4M options trade; an Octra ecosystem developer teased PEGASA; EigenCloud PR #562 added owner-only LM Studio routing; GEOD and Venice posts were exploratory or routine.", "decision": "No additional changelog entries: these were routine core-function output, unmerged low-impact product work, one-off trade flow, weak ecosystem context or lacked project/token economics."},
+      {"project": "All configured direct-data projects", "source": "Configured public APIs", "url": "docs/data/direct-metrics/latest.json", "summary": "Collector returned 31 metrics across 13 projects. Only EigenCloud/EigenLayer seven-day supplier rewards crossed a configured rule; other changes were routine.", "decision": "Committed the generated refresh because a configured materiality rule crossed and used repository history for the EigenCloud delta."},
+      {"project": "Staleness floor", "source": "docs/data/index.json", "url": "docs/data/index.json", "summary": "No enabled project had last_updated older than seven days at run start; suppressed POD was excluded without inspection.", "decision": "No mandatory stale-project substantive check was due."},
+      {"project": "Remaining enabled projects", "source": "Tracked X accounts, official sources and prior next checks", "url": "projects/", "summary": "No additional official release, governance/tokenomics change, listing, security incident, funding/team change, evidence-bearing weak signal or material configured metric move was established.", "decision": "No dossier/changelog change; unresolved checks are explicitly carried forward below."}
+    ],
+    "errors": [
+      "Two of three delegated research workers timed out after completing their assigned explicit-handle X searches; their live transcripts preserved coverage, and direct parent x_search calls plus primary APIs recovered candidate verification.",
+      "The configured web_search/web_extract backend was unavailable inside delegated research; direct official-site HTTPS, GitHub APIs, exchange APIs and X search supplied every accepted finding.",
+      "Some broad X-search results over-included old or generic ecosystem material; exact-cutoff/allowed-handle follow-ups and primary-source checks were used before acceptance."
+    ],
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.", "carried_from": "watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260722T044753Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, seed/AP terms, launch, AUM/flows, custody and WLD creations/redemptions.", "carried_from": "watchlist-scan-20260721T104640Z; no filing or listing advancement in watchlist-scan-20260722T044753Z"},
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.", "carried_from": "watchlist-scan-20260715T234645Z; no model, dashboard or economics advancement in watchlist-scan-20260722T044753Z"},
+      {"project": "Ambient", "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.", "carried_from": "watchlist-scan-20260715T192052Z; no production or economic artifact in watchlist-scan-20260722T044753Z"},
+      {"project": "DRV / Derive Protocol", "check": "Verify deposit networks/withdrawals and whether reduced KRW turnover stabilizes or BTC/USDT trading resumes; verify v3 artifacts, Buyback #76 transactions and ORIA/Hyperliquid follow-through.", "carried_from": "watchlist-scan-20260715T192052Z; exchange-liquidity follow-through advanced in watchlist-scan-20260722T044753Z, while network/withdrawal/depth and product checks remain open"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Measure Zero v0.5.0 and Node v0.6.0 adoption/routing; inspect Kiln; reconcile OpenGateway paid usage, costs and retained revenue; verify Ads/Blockagent economics and aggregate repeat Mercenary jobs.", "carried_from": "watchlist-scan-20260715T052432Z; versioned releases advanced product status in watchlist-scan-20260722T044753Z but adoption/economics remain unresolved"},
+      {"project": "NEAR Protocol", "check": "Monitor Protocol v86 reliability, first automatic mainnet shard split and ML-DSA adoption; continue Corbits, NEAR@3.33, confidential-partner and revenue/buyback checks.", "carried_from": "watchlist-scan-20260715T192052Z; no operational follow-up or material metric rule in watchlist-scan-20260722T044753Z"},
+      {"project": "META / MetaDAO", "check": "After the Rip Cars raise, verify final commitments/accepted capital, Ownership Score allocation, concentration, settlement, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; the four-day sale remained in progress with no settlement evidence in watchlist-scan-20260722T044753Z"},
+      {"project": "Pluralis", "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and the official NeurIPS workshop page/CFP.", "carried_from": "watchlist-scan-20260715T192052Z; no artifact, benchmark or economics evidence in watchlist-scan-20260722T044753Z"},
+      {"project": "GRASS", "check": "After July 22 17:00 UTC verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.", "carried_from": "watchlist-scan-20260715T052432Z; claim opening remained not yet due in watchlist-scan-20260722T044753Z"},
+      {"project": "AEON Framework", "check": "Map DefiLlama treasury/beneficiary contracts and owners, add stable collector coverage, verify MiroShark repeat users and reconcile non-trading revenue to buyback execution; continue attestation and ADK checks.", "carried_from": "watchlist-scan-20260715T052432Z; no ownership, cohort or buyback evidence in watchlist-scan-20260722T044753Z"},
+      {"project": "GEOD / GEODNET", "check": "Verify Bad Elf/One People One Reef commercial terms and accuracy methodology; verify GEO-PULSE orders/active devices; monitor GIP-14 and continue revenue/burn checks.", "carried_from": "watchlist-scan-20260715T052432Z; founder exploratory replies added no commercial or economic evidence in watchlist-scan-20260722T044753Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "Reconcile revenue per trillion with throughput, organic/sponsored mix, provider payouts and margin; verify partner-attributed TEE volume and reproduce Parallax/training economics.", "carried_from": "watchlist-scan-20260715T052432Z; metrics remained below configured rules and no new disclosure appeared in watchlist-scan-20260722T044753Z"},
+      {"project": "Compute Horde — Bittensor Subnet 12", "check": "Use canonical Grafana and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.", "carried_from": "watchlist-scan-20260715T192052Z; no new repository release, API or demand evidence in watchlist-scan-20260722T044753Z"},
+      {"project": "EIGEN / EigenCloud", "check": "Track PR #561 merge/release and protocol-v1 provider adoption; verify v0.7.11 canary/broad rollout and measure post-fix error rate, failed-user impact and provider-payout effects.", "carried_from": "dossier watch item date_seen 2026-07-16; PR #561 materially advanced code-level enforcement in watchlist-scan-20260722T044753Z but remains unmerged/unreleased"},
+      {"project": "Targon — Bittensor Subnet 4", "check": "Verify Tower reservation opening, payment/refund/warranty terms, ship dates and delivered units; measure realized utilization, rates/opex, 5090 KYC-only constraints and incremental SN4 economics.", "carried_from": "new Tower pricing/economics finding in watchlist-scan-20260722T044753Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 5,
+      "tiers": {"high": 1, "medium": 3, "low": 1},
+      "note": "The independent tagger labeled DRV's 94.47%-98.35% Korean turnover decay high/actionable because it is a quantified market-liquidity magnitude event; GitLawb releases, Darkbloom PR #561 and Targon Tower terms medium/watch; and the attribution-limited Eigen supplier-reward whipsaw low/log. A final post-rebase tagger pass re-read all five entries and confirmed the tiers unchanged."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260722T002400Z",
     "started_at": "2026-07-22T00:24:00Z",
     "completed_at": "2026-07-22T00:42:51Z",
