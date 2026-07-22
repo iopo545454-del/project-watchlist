@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-07-22T09:47:15Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "catalyst update",
+    "summary": "GitLawb Ads reached about 548K impressions and 11 live campaigns, but rounded clicks stayed at 12K as implied CTR fell.",
+    "source": "Founder X/Twitter and live GitLawb Ads dashboard",
+    "url": "https://x.com/kevincodex/status/2079857761769439669",
+    "last_scanned": "2026-07-22T09:47:15Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "Versus the July 14 snapshot, impressions rose 62.6% from 337K to about 548K, viewer payouts rose 40.8% from $337.37 to $474.93 and campaigns rose from 9 to 11; rounded clicks remained 12K, taking implied CTR from about 3.56% to 2.19%. Advertiser spend, revenue, repeat budgets and GITLAWB/USDC routing remain undisclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "$GITLAWB / USDC ad spend across OpenClaude, Playground, Codex, and agent-tool funding paths"},
+      {"type": "metric", "ref": "GitLawb Ads impressions, clicks, viewer payouts, campaigns and implied CTR"},
+      {"type": "open_question", "ref": "Advertiser spend, repeat campaigns, revenue quality and GITLAWB/USDC routing"}
+    ]
+  },
+  {
+    "date": "2026-07-22T09:47:15Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "official update",
+    "summary": "Binance Wallet launched a 60,000 USDG PnL campaign for eligible Virtuals-launched Robinhood Chain agent tokens through August 5.",
+    "source": "Official Binance Wallet and Virtuals X/Twitter",
+    "url": "https://x.com/BinanceWallet/status/2079846554710737333",
+    "last_scanned": "2026-07-22T09:47:15Z",
+    "importance": "low",
+    "novelty": "new",
+    "delta": "The repo already tracked Binance Wallet Meme Rush discoverability for all Virtuals agents on Robinhood Chain. The new dated campaign adds a 60,000 USDG trading incentive and PnL leaderboard, but execution occurs through Binance Wallet and neither party disclosed fee attribution or a new VIRTUAL value route.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
+      {"type": "metric", "ref": "Campaign-attributed volume, traders, protocol fees and post-August-5 retention"},
+      {"type": "open_question", "ref": "Binance Wallet campaign retention and VIRTUAL value routing"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:51:11Z",
+    "project": "AEON Framework",
+    "slug": "05-aeon",
+    "type": "verification update",
+    "summary": "AEON's 57% project-fee route and MiroShark repeat paid cohorts are now mapped; the separate promised AEON buyback remains unexecuted.",
+    "source": "DefiLlama adapter source, Base settlements and builder shiplogs",
+    "url": "https://github.com/DefiLlama/dimension-adapters/blob/master/fees/aeon.ts",
+    "last_scanned": "2026-07-22T05:51:11Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior run only had aggregate treasury-attributed fees and 219 x402 runs. Adapter code now maps the 57% project share across historical/current beneficiary wallets, and shiplogs confirm multiple paid cohorts; no named transaction verifies the separate 50% AEON non-trading-revenue buyback policy.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "B1 transparency filing + tokenholder protections / buybacks"},
+      {"type": "metric", "ref": "AEON token-pool project revenue and MiroShark x402 paid runs"},
+      {"type": "open_question", "ref": "AEON buyback execution and external paid-agent adoption"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:51:11Z",
+    "project": "GEOD / GEODNET",
+    "slug": "02-geod",
+    "type": "verification update",
+    "summary": "Bad Elf commercial plans and GEO-PULSE availability are verified; no unit count or GIP-14 artifact exists, while station-access fees remain measurable.",
+    "source": "Bad Elf and GEODNET storefronts, canonical GIP repo and DefiLlama fee API",
+    "url": "https://bad-elf.com/products/geodnet-rtk-subscriptions",
+    "last_scanned": "2026-07-22T05:51:11Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Bad Elf exposes GEODNET plans from $39.99/month and GEO-PULSE is in stock at $149, but neither party exposes order or active-device counts. The canonical governance repo still stops at GIP-13; DefiLlama read $924,597 over 30 days and $10.456M all-time without transaction-level 80% repurchase/burn mapping.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "GEO-PULSE hardware commercialization"},
+      {"type": "metric", "ref": "GEODNET station-access fees and transaction-level burns"},
+      {"type": "open_question", "ref": "GEO-PULSE adoption and service-versus-hardware revenue attribution"}
+    ]
+  },
+  {
+    "date": "2026-07-22T05:51:11Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "verification update",
+    "summary": "Chutes APIs reproduce a $290.6K-per-trillion seven-day ratio and expose revenue mix; provider margin, integration attribution and paid Parallax economics remain unsupported.",
+    "source": "Chutes revenue/throughput APIs, integration repositories and Parallax report",
+    "url": "https://api.chutes.ai/daily_revenue_summary",
+    "last_scanned": "2026-07-22T05:51:11Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Seven complete days produced $96,179.17 from 331.007B tokens (79.85% paygo, 17.58% subscriptions, 2.58% private instances and 0% explicit sponsored), or $290.6K/T; the 30-day ratio was $275.8K/T. This supports the 90-day order of magnitude but not the published $340K point, and no public provider-expense ledger or paid Parallax job exists.",
+    "relates_to": [
+      {"type": "metric", "ref": "Chutes revenue per trillion tokens and revenue mix"},
+      {"type": "catalyst", "ref": "Parallax distributed training using fragmented gaming/datacenter GPUs"},
+      {"type": "open_question", "ref": "Provider gross margin and integration-attributed recurring volume"}
+    ]
+  },
+  {
     "date": "2026-07-22T05:08:37Z",
     "project": "DRV / Derive Protocol",
     "slug": "18-drv-derive",
