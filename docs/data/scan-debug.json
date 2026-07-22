@@ -1,5 +1,180 @@
 [
   {
+    "run_id": "verification-run-20260722T180905Z",
+    "started_at": "2026-07-22T18:09:05Z",
+    "completed_at": "2026-07-22T18:40:17Z",
+    "status": "completed_with_recovered_errors",
+    "scan_window": {
+      "mode": "oldest-first verification queue",
+      "queue_source_run": "watchlist-scan-20260722T135958Z",
+      "oldest_selected_origin": "watchlist-scan-20260715T052432Z",
+      "verification_as_of": "2026-07-22T18:40:17Z"
+    },
+    "scope": "Dedicated verification worker only; no broad activity scan. Built the queue from the newest scan-debug next_checks and canonical dossier watch items. Selected exactly the two oldest July 15 05:24 items (GitLawb and the now-due Grass claim) plus Derive from the July 15 19:20 tie by token/market materiality. Resolved all three and removed them from carry-forward; the four-day MetaDAO settlement check remains explicitly not due.",
+    "projects_checked": ["06-gitlawb", "08-grass", "18-drv-derive"],
+    "logged_projects": ["06-gitlawb", "08-grass", "18-drv-derive"],
+    "selected_items": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "check": "Measure Zero v0.5.0 and Node v0.6.0 adoption/routing; inspect Kiln; reconcile OpenGateway paid usage, costs and retained revenue; verify GitLawb Ads advertiser spend, exact clicks/CTR, repeat campaigns, revenue and GITLAWB/USDC routing.",
+        "origin": "watchlist-scan-20260715T052432Z",
+        "outcome": "confirmed",
+        "resolution": "A verified Base vault proves 90.144M GITLAWB burned across 26 flushes and npm/release APIs bound early Zero/Node adoption. The chain does not attribute upstream USDC to Ads/OpenGateway/x402 or prove retained margin; Kiln and exact advertiser cohorts remain opaque. The broad check is closed and reopens only for a stable source ledger."
+      },
+      {
+        "project": "GRASS",
+        "check": "After July 22 17:00 UTC verify Stage 2 USDC claim execution, pool/rate, wallet reliability, distribution accounting, operator retention and GRASS value routing.",
+        "origin": "watchlist-scan-20260715T052432Z",
+        "outcome": "confirmed",
+        "resolution": "Official claim and wallet surfaces launched on schedule with published conversion rates, fee/security mechanics and a January 22, 2027 deadline. No aggregate pool, claim count, transaction map or retention series is public; the payout creates no GRASS emissions and is contributor compensation rather than holder revenue."
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "check": "Verify deposit networks/withdrawals and whether reduced KRW turnover stabilizes or BTC/USDT trading resumes; verify v3 artifacts, Buyback #76 transactions and ORIA/Hyperliquid follow-through; reproduce RFQ trade frequency from a stable ledger.",
+        "origin": "watchlist-scan-20260715T192052Z",
+        "outcome": "confirmed",
+        "resolution": "Ethereum exchange access, Bithumb wallet status, thin BTC activity, live Hyperliquid flow and RFQ frequency are now machine-reproducible. The ledger did not reproduce $10M+ RFQs almost daily; v3, ORIA production attribution and Buyback #76 transaction mapping had no primary artifact and are closed until one appears."
+      }
+    ],
+    "counts": {
+      "queue_items_selected": 3,
+      "confirmed": 3,
+      "disproven": 0,
+      "stale": 0,
+      "material_changelog_entries": 3,
+      "remaining_next_checks": 11,
+      "errors": 4
+    },
+    "decision_trail": [
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "Canonical GitLawb contract source and verified Base contract",
+        "url": "https://base.blockscout.com/address/0xA05174583791bA7fecb37278A4d5c97C1E24Fc5f",
+        "summary": "The owner-controlled vault is set to 10,000 burn bps and read 90,144,399.820766 GITLAWB processed/burned over 26 flushes, zero forwarded and zero pending. Source comments say an offchain bot buys with protocol-revenue USDC, with x402 OpenGateway top-ups first.",
+        "decision": "confirmed — token removal is reproducible; product-level USDC source, gross revenue, provider costs and margin are not proven by the output vault"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "GitHub releases and npm download API",
+        "url": "https://api.npmjs.org/downloads/point/2026-07-15:2026-07-22/@gitlawb%2Fzero",
+        "summary": "Zero had 972 npm package downloads from July 15-22 and 26 release-binary downloads at verification; Node's @gitlawb/gl package had 22 downloads and five release-binary downloads. Kiln has no public implementation and Ads still exposes rounded clicks rather than itemized budgets/cohorts.",
+        "decision": "confirmed — early adoption bounded; close the broad adoption/economics check and reopen only for stable product/user/revenue ledgers"
+      },
+      {
+        "project": "GRASS",
+        "source": "Official Stage 2 allocation article and dashboard",
+        "url": "https://www.grass.io/learn/how-your-stage-2-rewards-allocation-works",
+        "summary": "Claims became available at 13:00 ET on July 22 through the official dashboard with $0.0049 per Network Point, $0.00000007 per Uptime Point, device multipliers and a January 22, 2027 deadline. The article says unclaimed rewards are retained by Grass and discloses no aggregate pool or transaction map.",
+        "decision": "confirmed — scheduled distribution launched; aggregate claim KPIs move to ordinary monitoring rather than queue carry-forward"
+      },
+      {
+        "project": "GRASS",
+        "source": "Official Grass wallet launch and operating guide",
+        "url": "https://www.grass.io/learn/how-the-grass-wallet-works",
+        "summary": "The in-app Solana wallet launched with passkey/OTP controls, exportable keys, Turnkey infrastructure, Jupiter swaps, MoonPay on/off-ramping and a documented $0.15 wallet fee plus network cost. Grass states it does not earn the wallet/third-party fees.",
+        "decision": "confirmed — wallet is live; USDC rewards create no GRASS emissions and do not establish holder revenue sharing"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "Upbit machine notice, Bithumb asset-status API and exchange tickers",
+        "url": "https://api-manager.upbit.com/api/v1/announcements/1824506959",
+        "summary": "Upbit specifies Ethereum-only DRV deposits/withdrawals; Bithumb returned both directions enabled. KRW turnover persisted near ₩1.058B/₩165.4M, BTC resumed only 0.00128466 BTC over 24 hours and USDT remained zero.",
+        "decision": "confirmed — exchange access works; non-KRW liquidity remains economically negligible"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "Official Derive public trade-history API",
+        "url": "https://docs.derive.xyz/reference/post_public-get-trade-history.md",
+        "summary": "Deduplicated settled maker/taker rows produced 1,420 RFQ executions from July 15-22. Approximate $10M+ structures appeared only on July 20, 21 and 22; none appeared July 15-19.",
+        "decision": "confirmed — RFQ activity is reproducible, but the project's above-$10M-almost-daily claim was not reproduced in this eight-day window"
+      },
+      {
+        "project": "DRV / Derive Protocol",
+        "source": "Hyperliquid public API, official docs/GitHub and Cayø Largo",
+        "url": "https://cayolargo.fi/",
+        "summary": "Hyperliquid @700 produced about $56,966 notional across 2,654 trades in the first 19 UTC hours with a roughly 0.13% spread. Official Derive sources had no v3 release artifact, Cayø Largo still called Derive/Thalex next sources, and no Buyback #76 wallet/transaction was named.",
+        "decision": "confirmed — Hyperliquid follow-through is live; v3, ORIA production attribution and buyback mapping are closed until primary artifacts appear"
+      }
+    ],
+    "errors": [
+      "All three delegated deep-research workers timed out after substantial primary-source progress; their live transcripts preserved evidence and every accepted quantitative observation was independently re-run by the parent.",
+      "The configured web_search/web_extract backend was unavailable; direct official HTTPS, GitHub, npm, RPC, explorer, exchange and project APIs supplied the evidence.",
+      "Upbit's machine-notice endpoint rate-limited one repeated request after an earlier successful retrieval; the successful response and public notice supplied the Ethereum-network detail.",
+      "The default Base RPC rate-limited one selector batch; a public Base RPC and Blockscout independently reproduced the verified contract state and transfers."
+    ],
+    "queue_state": {
+      "remaining_count": 11,
+      "oldest_origin": "watchlist-scan-20260715T192052Z",
+      "oldest_age_days": 6.96,
+      "note": "All three selected items were resolved and removed. Untouched items preserve original carried_from strings. MetaDAO's post-sale settlement check remains not due until the four-day raise ends."
+    },
+    "next_checks": [
+      {
+        "project": "BIO / Bio Protocol",
+        "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.",
+        "carried_from": "watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, seed/AP terms, launch, AUM/flows, custody and WLD creations/redemptions.",
+        "carried_from": "watchlist-scan-20260721T104640Z; no filing or listing advancement in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.",
+        "carried_from": "watchlist-scan-20260715T234645Z; no model, dashboard or economics advancement in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "Ambient",
+        "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.",
+        "carried_from": "watchlist-scan-20260715T192052Z; compliance/verification positioning added no production or economic artifact in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Monitor Protocol v86 reliability, first automatic mainnet shard split and ML-DSA adoption; continue Corbits, NEAR@3.33, confidential-partner and revenue/buyback checks.",
+        "carried_from": "watchlist-scan-20260715T192052Z; architectural recap and sub-threshold metrics added no operational follow-up in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "META / MetaDAO",
+        "check": "After the Rip Cars raise, verify final commitments/accepted capital, Ownership Score allocation, concentration, settlement, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no settlement evidence in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "Pluralis",
+        "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and the official NeurIPS workshop page/CFP.",
+        "carried_from": "watchlist-scan-20260715T192052Z; no artifact, benchmark or economics evidence in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "check": "Use canonical Grafana and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.",
+        "carried_from": "watchlist-scan-20260715T192052Z; substantive GitHub/Grafana check found no new release, API or demand evidence in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "check": "Track PR #561 merge/release and protocol-v1 provider adoption; verify v0.7.11 canary/broad rollout and measure post-fix error rate, failed-user impact and provider-payout effects.",
+        "carried_from": "dossier watch item date_seen 2026-07-16; PR remained open/unmerged with no production telemetry in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "check": "Verify Tower reservation opening, payment/refund/warranty terms, ship dates and delivered units; measure realized utilization, rates/opex, 5090 KYC-only constraints and incremental SN4 economics.",
+        "carried_from": "watchlist-scan-20260722T044753Z; no fulfillment advancement in watchlist-scan-20260722T135958Z"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "check": "Measure Binance Wallet campaign-attributed eligible-token volume, unique/repeat traders, protocol fees and post-August-5 retention; continue tax-manager and VIRTUAL value-route checks.",
+        "carried_from": "watchlist-scan-20260722T092655Z; no campaign-attributed measurement in watchlist-scan-20260722T135958Z"
+      }
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 3,
+      "counts": {"high": 0, "medium": 2, "low": 1},
+      "labels": {"06-gitlawb": "medium", "08-grass": "medium", "18-drv-derive": "low"},
+      "rationale": "GitLawb is the first verified token-value route but lacks project-size and upstream revenue context; Grass is a meaningful scheduled product/distribution launch without direct token accrual; Derive mainly confirms limited access/activity and non-reproduction of stronger claims."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260722T135958Z",
     "started_at": "2026-07-22T13:59:58Z",
     "completed_at": "2026-07-22T14:21:22Z",

@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-07-22T18:26:52Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "verification update",
+    "summary": "GitLawb's verified Base vault has processed and burned 90.144M GITLAWB across 26 flushes; product-level USDC revenue attribution remains unproven.",
+    "source": "Canonical contract source, Base contract state/transfers and npm/GitHub adoption APIs",
+    "url": "https://base.blockscout.com/address/0xA05174583791bA7fecb37278A4d5c97C1E24Fc5f",
+    "last_scanned": "2026-07-22T18:26:52Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The repo previously had Ads/OpenGateway usage claims but no verified token-value route. The vault is set to 100% burn and reads 90,144,399.820766 GITLAWB processed/burned, 26 flushes, zero forwarded and zero pending. Zero recorded 972 npm downloads and Node 22 from July 15-22; onchain output still cannot identify originating Ads/OpenGateway/x402 USDC or net margin.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Protocol-revenue GITLAWB buyback-and-burn vault"},
+      {"type": "metric", "ref": "GITLAWB bought and burned"},
+      {"type": "open_question", "ref": "Product-level USDC revenue and buyback attribution"}
+    ]
+  },
+  {
+    "date": "2026-07-22T18:26:52Z",
+    "project": "GRASS",
+    "slug": "08-grass",
+    "type": "verification update",
+    "summary": "Grass opened Stage 2 USDC claims and launched its in-app Solana wallet on schedule; aggregate claim and retention data are not public.",
+    "source": "Official Grass allocation article, wallet guides and launch post",
+    "url": "https://www.grass.io/learn/how-your-stage-2-rewards-allocation-works",
+    "last_scanned": "2026-07-22T18:26:52Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior catalyst was upcoming for July 22 at 13:00 ET. It is now live through January 22, 2027 with published $0.0049/Network Point and $0.00000007/Uptime Point rates, a Turnkey-backed wallet and $0.15 wallet fee. The payout is USDC contributor compensation with zero GRASS emissions, not a GRASS-holder revenue route; total pool, claimants, claimed amount and failures remain undisclosed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stage 2 USDC participant rewards from network revenue"},
+      {"type": "catalyst", "ref": "In-app non-custodial Grass wallet"},
+      {"type": "metric", "ref": "Stage 2 claimed USDC, claimants, failures and participant retention"}
+    ]
+  },
+  {
+    "date": "2026-07-22T18:26:52Z",
+    "project": "DRV / Derive Protocol",
+    "slug": "18-drv-derive",
+    "type": "verification update",
+    "summary": "DRV exchange access and RFQ activity are reproducible, but $10M+ RFQs appeared on only 3 of 8 days and v3/ORIA/buyback artifacts remain absent.",
+    "source": "Upbit/Bithumb, Hyperliquid, Derive trade-history API and Cayø Largo",
+    "url": "https://docs.derive.xyz/reference/post_public-get-trade-history.md",
+    "last_scanned": "2026-07-22T18:26:52Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "Upbit now verifies Ethereum deposits/withdrawals and Bithumb reports both wallet directions enabled; BTC-DRV resumed only 0.00128466 BTC over 24 hours while USDT remained zero. The official ledger returned 1,420 settled RFQ executions from July 15-22, but approximate $10M+ structures appeared only July 20-22, not almost daily. No v3 release, live ORIA-attributed surface or Buyback #76 transaction mapping was found.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Upbit and Bithumb Korean spot-market listings"},
+      {"type": "catalyst", "ref": "Institutional/RFQ / external options-data rails"},
+      {"type": "catalyst", "ref": "Derive v3 / infinite payoff factory rollout"},
+      {"type": "open_question", "ref": "Buyback #76 execution mapping"}
+    ]
+  },
+  {
     "date": "2026-07-22T09:47:15Z",
     "project": "GitlWab / GitLawb / Gitwab",
     "slug": "06-gitlawb",
