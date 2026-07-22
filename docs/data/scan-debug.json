@@ -1,5 +1,112 @@
 [
   {
+    "run_id": "watchlist-scan-20260722T184459Z",
+    "started_at": "2026-07-22T18:44:59Z",
+    "completed_at": "2026-07-22T19:06:22Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "from": "2026-07-22T14:21:22Z",
+      "to": "2026-07-22T19:06:22Z",
+      "basis": "Prior completed broad-scan timestamp; explicit tracked-account X searches covered all enabled projects, followed by evidence-bearing weak-signal search, direct metrics and standing-check review."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, refreshed 31 direct metrics across 13 configured projects, covered all 94 tracked official/team/core X accounts, searched credible weak signals, consumed the prior run's 11 next checks and performed a substantive official Git check for stale Compute Horde.",
+    "projects_checked": ["02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"],
+    "logged_projects": ["16-worldcoin-wld"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 1,
+      "tracked_x_accounts_checked": 94,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "material_metric_rules_crossed": 0,
+      "new_changelog_entries": 1,
+      "confirmed_or_durable_findings": 1,
+      "unverified_watch_items_added_or_advanced": 0,
+      "stale_projects_over_7_days_at_start": 1,
+      "errors": 3
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub Issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Three open intake-form issues remain for Pluralis, Ambient and EigenCloud.",
+        "decision": "No new intake: all three deduplicate by project name, primary X and token state/address to reviewed index rows; no submitted field required a merge."
+      },
+      {
+        "project": "All configured direct-data projects",
+        "source": "Configured public APIs",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Collector returned 31 metrics across 13 projects. Kinetiq TVL fell 1.18%; NEAR seven-day Intents users fell 0.25%; Derive TVL rose 0.54%; Bio TVL rose 1.92%; Eigen supplier rewards' 24-hour field rose 5.27%; and Chutes TVL rose 1.64%.",
+        "decision": "No configured materiality rule crossed. Routine generated writes were reverted after review; no metric-only changelog entry was added."
+      },
+      {
+        "project": "All enabled projects",
+        "source": "X/Twitter",
+        "url": "https://x.com/",
+        "summary": "Explicit searches covered all 94 tracked official, founder, team and core-contributor accounts after the cutoff, plus an evidence-bearing weak-signal search across all projects.",
+        "decision": "Full tracked-account and weak-signal coverage completed. No credible new unverified item surfaced; the World Foundation's dated unlock reminder cleared the catalyst threshold."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "Official World Foundation X and tokenomics blog",
+        "url": "https://x.com/worldcoinfnd/status/2079972684260147258",
+        "summary": "The scheduled July unlock-rate reduction is now pinned to July 24: aggregate daily unlocks fall 43% from about 5.1M to 2.9M WLD, with Community at 3.2M→1.6M and TFH investor/team at 1.9M→1.3M. Unlocks remain linear with no cliff.",
+        "decision": "Logged as a catalyst update because the repo previously had month-level timing only; updated the dossier row, calendar data, generated page and indexes."
+      },
+      {
+        "project": "Below-threshold official candidates",
+        "source": "Tracked-account X/Twitter",
+        "url": "https://x.com/",
+        "summary": "Targon restated the already-verified TargonOS launch; Akash simplified Console onboarding; Virtuals published a launch guide for existing mechanics; NEAR recapped v86/dynamic resharding; Grass restated the wallet already logged by the verification run; Derive announced a Chance intent-check integration; Ambient restated testnet verification positioning; Chutes posted a Parallax trailer; and Rip Cars remained in its already-recorded raise window.",
+        "decision": "No additional changelog entries: duplicates, documentation/UX follow-through, routine integrations, positioning and trailers did not change token economics, market access, security or a standing catalyst enough to clear the materiality bar."
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "source": "Canonical Git repository and health-monitor references",
+        "url": "https://github.com/backend-developers-ltd/ComputeHorde",
+        "summary": "The mandatory >7-day stale check cloned the canonical repository and verified HEAD remains commit 86ebc5b from April 16, 2026. Current tags also stop in April; repository artifacts document organic-job flows but expose no new public machine-readable paid-job, inventory, utilization or revenue series.",
+        "decision": "Substantive official-source check completed with no durable project-state change. Do not reset last_updated; carry the organic-demand/API question forward."
+      },
+      {
+        "project": "Standing verification checks",
+        "source": "Tracked X, official-source checks and prior next checks",
+        "url": "projects/",
+        "summary": "VitaApp access/economics, GWLD filing advancement, Orion artifacts, Ambient paid production, NEAR v86 operations, Rip Cars settlement, Pluralis artifacts, Eigen PR #561 rollout, Targon Tower fulfillment and Virtuals campaign attribution did not advance in this window.",
+        "decision": "No silent drops: all unresolved checks remain explicitly carried forward below; the World unlock transition is added as a dated next check."
+      }
+    ],
+    "errors": [
+      "All three delegated research workers timed out after substantial explicit-handle X coverage; their live transcripts preserved coverage and direct parent x_search calls completed all 94 handles plus weak-signal review.",
+      "The configured web_search/web_extract backend was unavailable; direct official HTTPS successfully retrieved and parsed the World tokenomics post.",
+      "Unauthenticated GitHub API calls were rate-limited during the Compute Horde stale check; git ls-remote and a fresh shallow clone recovered canonical commit/tag evidence."
+    ],
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.", "carried_from": "watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260722T184459Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, seed/AP terms, launch, AUM/flows, custody and WLD creations/redemptions.", "carried_from": "watchlist-scan-20260721T104640Z; no filing or listing advancement in watchlist-scan-20260722T184459Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "On July 24 verify the scheduled unlock-rate transition onchain: aggregate 5.1M→2.9M WLD/day, Community 3.2M→1.6M and TFH investor/team 1.9M→1.3M; reconcile unlocked, circulating and wallet flows.", "carried_from": "watchlist-scan-20260722T184459Z; official dated catalyst added before execution"},
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; discover a stable dashboard API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.", "carried_from": "watchlist-scan-20260715T234645Z; no model, dashboard or economics advancement in watchlist-scan-20260722T184459Z"},
+      {"project": "Ambient", "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim.", "carried_from": "watchlist-scan-20260715T192052Z; testnet/consensus positioning added no production or economic artifact in watchlist-scan-20260722T184459Z"},
+      {"project": "NEAR Protocol", "check": "Monitor Protocol v86 reliability, first automatic mainnet shard split and ML-DSA adoption; continue Corbits, NEAR@3.33, confidential-partner and revenue/buyback checks.", "carried_from": "watchlist-scan-20260715T192052Z; official recap added no operational follow-up in watchlist-scan-20260722T184459Z"},
+      {"project": "META / MetaDAO", "check": "After the Rip Cars raise, verify final commitments/accepted capital, Ownership Score allocation, concentration, settlement, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; raise remained open with no settlement evidence in watchlist-scan-20260722T184459Z"},
+      {"project": "Pluralis", "check": "Inspect Stoa artifacts and reproduce PaperSearchQA; verify trainer dependence, contributor accounting/economics, Agora external compute and the official NeurIPS workshop page/CFP.", "carried_from": "watchlist-scan-20260715T192052Z; no artifact, benchmark or economics evidence in watchlist-scan-20260722T184459Z"},
+      {"project": "Compute Horde — Bittensor Subnet 12", "check": "Use canonical Grafana and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity.", "carried_from": "watchlist-scan-20260715T192052Z; substantive fresh clone found no post-April release, API or demand evidence in watchlist-scan-20260722T184459Z"},
+      {"project": "EIGEN / EigenCloud", "check": "Track PR #561 merge/release and protocol-v1 provider adoption; verify v0.7.11 canary/broad rollout and measure post-fix error rate, failed-user impact and provider-payout effects.", "carried_from": "dossier watch item date_seen 2026-07-16; no merge, rollout or production telemetry in watchlist-scan-20260722T184459Z"},
+      {"project": "Targon — Bittensor Subnet 4", "check": "Verify Tower reservation opening, payment/refund/warranty terms, ship dates and delivered units; measure realized utilization, rates/opex, 5090 KYC-only constraints and incremental SN4 economics.", "carried_from": "watchlist-scan-20260722T044753Z; TargonOS launch recap did not advance Tower fulfillment in watchlist-scan-20260722T184459Z"},
+      {"project": "VIRTUAL / Virtuals Protocol", "check": "Measure Binance Wallet campaign-attributed eligible-token volume, unique/repeat traders, protocol fees and post-August-5 retention; continue tax-manager and VIRTUAL value-route checks.", "carried_from": "watchlist-scan-20260722T092655Z; launch-guide documentation added no campaign attribution in watchlist-scan-20260722T184459Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 1,
+      "tiers": {"high": 1, "medium": 0, "low": 0},
+      "selected_label": "high",
+      "rationale": "Confirmed July 24 market-structure event cuts daily WLD unlock flow 43% from about 5.1M to 2.9M two days after the scan; the official date makes this directly actionable despite being a precision update to an existing schedule."
+    }
+  },
+  {
     "run_id": "verification-run-20260722T180905Z",
     "started_at": "2026-07-22T18:09:05Z",
     "completed_at": "2026-07-22T18:40:17Z",
