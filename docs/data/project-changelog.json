@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "verification update",
+    "summary": "Darkbloom merged PR #561 and shipped signed provider v0.7.12 with inference-time Gemma tool constraints and hybrid-cache fixes; broad rollout and post-fix error rates remain unverified.",
+    "source": "Official Darkbloom GitHub pull request and release",
+    "url": "https://github.com/Layr-Labs/d-inference/releases/tag/v0.7.12",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior repo entry recorded PR #561 as open and undeployed. It actually merged at 2026-07-22T19:37:48Z and entered a signed/notarized 172,672,015-byte v0.7.12 bundle published at 22:58:30Z, advancing the 42.4% Gemma tool-failure item to a versioned provider artifact without proving coordinator/broad-provider adoption or lower production error rates.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "Darkbloom Gemma tool-template failures and v0.7.12 rollout"},
+      {"type": "catalyst", "ref": "Darkbloom distributed private inference and Gemma 4 MTP"},
+      {"type": "open_question", "ref": "v0.7.12 coordinator/provider adoption and post-fix error rate"}
+    ]
+  },
+  {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "scan",
+    "summary": "EigenLayer/EigenCloud seven-day supplier rewards jumped to $58,578 as a roughly $57,188 day entered the window; protocol revenue remained zero.",
+    "source": "DefiLlama direct-metrics collector",
+    "url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "Seven-day supplier rewards rose 3,218.87% from the prior committed $1,765 snapshot to $58,578, tripping the configured 25% rule. The 24-hour reading was $57,188, 30-day rewards fell 3.56% to $607,375 and protocol revenue remained $0; this is not Darkbloom paid revenue or EIGEN value capture.",
+    "relates_to": [
+      {"type": "metric", "ref": "EigenLayer/EigenCloud supplier rewards and protocol revenue"},
+      {"type": "open_question", "ref": "Separate supplier rewards from Darkbloom demand and EIGEN value capture"}
+    ]
+  },
+  {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "official update",
+    "summary": "GitLawb shipped Node/CLI v0.7.0 with trusted-issuer certificate verification, Windows support, agent-first onboarding and provenance-backed releases.",
+    "source": "Official GitLawb X, GitHub release and live agent guide",
+    "url": "https://github.com/Gitlawb/node/releases/tag/v0.7.0",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The dossier's newest node artifact was v0.6.0 with iCaptcha and authorization hardening. v0.7.0 adds real signature plus trusted-node verification through gl cert show --verify, Windows onboarding and an automated npm/Homebrew/Docker release path; the issuer's four-minute blind-agent test has no external adoption or GITLAWB value data.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Agent-native decentralized Git / Node v0.7.0"},
+      {"type": "metric", "ref": "Unique agents/repos, verified certificates, active nodes and repeat pushes"}
+    ]
+  },
+  {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "catalyst added",
+    "summary": "A live OutLayer mainnet example gives NEAR contracts an onchain Intents interface: yield to attested offchain matching and resume with swapped assets in the same transaction.",
+    "source": "NEAR co-founder X, mainnet transaction, OutLayer attestation and docs",
+    "url": "https://x.com/ilblackdragon/status/2080126073220846005",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "new",
+    "delta": "The repo already tracked user/front-end and partner API distribution for NEAR Intents, but not a contract-native one-transaction path. The linked USDC-to-wNEAR mainnet transaction, TEE attestation and source/docs prove the interface exists; unique contracts, volume, failures, fees and incremental buyback impact remain unknown.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Contract-native NEAR Intents via yield/resume + OutLayer"},
+      {"type": "metric", "ref": "Contract-native Intents swaps, volume, failures, fees and net revenue"}
+    ]
+  },
+  {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "Pluralis",
+    "slug": "21-pluralis",
+    "type": "verification update",
+    "summary": "Pluralis published Stoa source, a full PaperSearchQA reproduction guide and technical blog for its reported 29%-to-63% pass@1 run.",
+    "source": "Official Pluralis GitHub and technical blog",
+    "url": "https://github.com/PluralisResearch/stoa",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The July 15 entry relied on an official X thread and explicitly left code/artifact inspection open. The public repository now fixes the Apple-Silicon rollout/CUDA-trainer implementation and ships end-to-end commands/configs, but no independent rerun, decentralized trainer, external-compute proof or contributor economics exists.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stoa distributed RL post-training on consumer Macs"},
+      {"type": "open_question", "ref": "Independent PaperSearchQA reproduction, cost/throughput and contributor accounting"}
+    ]
+  },
+  {
+    "date": "2026-07-23T04:18:01Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "catalyst update",
+    "summary": "Bankr said stock-paired launches generated nearly $11M of DEX volume over 48 hours; the public API confirms live pools but not that aggregate.",
+    "source": "Official Bankr X and public Discover API",
+    "url": "https://x.com/bankrbot/status/2080088797031923738",
+    "last_scanned": "2026-07-23T04:18:01Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The prior scan established the stock-paired launch mechanic but had no throughput figure. Bankr now claims nearly $11M over 48 hours against a quoted $17.5M-plus Robinhood Chain stock-token DEX day; live Discover rows and pool IDs confirm production use, while the aggregate, fee splits, creator-stock balances and BNKR/Club route remain unreproduced.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stock-paired token launches on Robinhood Chain"},
+      {"type": "metric", "ref": "Stock-paired launches, DEX volume and creator-stock balances"},
+      {"type": "open_question", "ref": "Reproduce stock-paired aggregate and map fee/BNKR routing"}
+    ]
+  },
+  {
     "date": "2026-07-22T23:38:43Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
