@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-07-23T08:59:01Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "official update",
+    "summary": "Darkbloom merged exact-cache eligibility and lifecycle telemetry, exposing bounded provider readiness, exclusion reasons and donation outcomes without provider or request identities.",
+    "source": "Official Darkbloom GitHub",
+    "url": "https://github.com/Layr-Labs/d-inference/commit/88e55fa838174611f154883c5ad6dae3a65ca888",
+    "last_scanned": "2026-07-23T08:59:01Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "v0.7.12 already shipped hybrid-cache fixes, but operations still lacked structured exact-cache eligibility and lifecycle observability. Main now adds readiness/exclusion gauges and bounded donation outcomes; no tagged release, deployment, public values or EIGEN route is shown.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Darkbloom distributed private inference and Gemma 4 MTP"
+      },
+      {
+        "type": "metric",
+        "ref": "Exact-cache eligibility, lifecycle and donation-outcome telemetry"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-23T08:59:01Z",
+    "project": "Chutes — Bittensor Subnet 64",
+    "slug": "24-chutes",
+    "type": "verification update",
+    "summary": "dstack's Chutes-capable private AI gateway now publishes the measured app-Compose preimage and verifies it against the RTMR3-bound Compose hash.",
+    "source": "Official dstack GitHub",
+    "url": "https://github.com/Dstack-TEE/private-ai-gateway/commit/adfda25f436f9b0172b68e69b62069eef8617b83",
+    "last_scanned": "2026-07-23T08:59:01Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo had already verified Chutes routing and TEE checks. Merged PR #101 now makes the exact measured Compose independently hash-checkable, but source/image acceptance remains a verifier-policy TODO and no Chutes deployment, adoption or attributed volume is proven.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "TEE plus GraVal GPU verification and confidential API positioning"
+      },
+      {
+        "type": "open_question",
+        "ref": "Confidential-inference attestation, adoption and attributed volume"
+      }
+    ]
+  },
+  {
     "date": "2026-07-23T07:05:58Z",
     "project": "Ambient",
     "slug": "22-ambient",
