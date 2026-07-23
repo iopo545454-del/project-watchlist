@@ -86,8 +86,8 @@
     "links_count": 12,
     "file": "projects/04-bankr.md",
     "github_file": "projects/04-bankr.md",
-    "last_updated": "2026-07-23T04:18:01Z",
-    "open_questions": "Reproduce Bankr's nearly $11M/48h stock-paired-volume claim from stable API/onchain history; map pool quote tokens/contracts, exact creator/treasury fee splits and stock balances, and map labeled Bankr fees to net revenue plus any BNKR/Club route; continue bridge/pool, rewards and deprecated-vault checks.",
+    "last_updated": "2026-07-23T13:35:31Z",
+    "open_questions": "Explain the 6.47x Discover row-sum versus aggregate-dashboard volume mismatch and rebuild stable Robinhood history; map pool quote tokens/contracts, creator/treasury fee splits, stock balances and any BNKR/Club route; continue bridge/pool, rewards and deprecated-vault checks.",
     "html_page": "projects/04-bankr.html",
     "status": "active",
     "initial_review_done": true
@@ -262,8 +262,8 @@
     "links_count": 10,
     "file": "projects/12-akt-akash.md",
     "github_file": "projects/12-akt-akash.md",
-    "last_updated": "2026-07-21T16:31:30Z",
-    "open_questions": "Verify post-proposal-329 revenue routing/value capture, sustained daily spend growth, high-end GPU utilization and OpenRouter/AkashML inference demand. PR #400 production rollout was closed stale on 2026-07-21; reopen only for a stable release, advertised provider capacity and a named paid multi-node workload.",
+    "last_updated": "2026-07-23T13:35:31Z",
+    "open_questions": "Verify whether TEE support advances from one audited release-candidate provider to a stable release, multiple providers, attestation review and named paid deployments; separately reopen PR #400 multi-node rollout only for stable release, advertised capacity and paid workloads; monitor value capture and spend.",
     "html_page": "projects/12-akt-akash.html",
     "status": "active",
     "initial_review_done": true
@@ -357,8 +357,8 @@
     "links_count": 14,
     "file": "projects/16-worldcoin-wld.md",
     "github_file": "projects/16-worldcoin-wld.md",
-    "last_updated": "2026-07-22T19:04:05Z",
-    "open_questions": "Track the Grayscale Worldcoin ETF S-1 through effectiveness, Nasdaq eligibility/listing, fees, launch and WLD flows; verify World Chain SP1 deployment/audits and prior Nitro-path exposure; after WIP-1008's documentation-only spec merge, monitor implementation, WLD stake/reward/slashing parameters, contracts, audits, governance and activation.",
+    "last_updated": "2026-07-23T13:35:31Z",
+    "open_questions": "Track the Grayscale Worldcoin ETF S-1; verify World Chain SP1 deployment/audits, prior Nitro-path exposure and whether open PR #909 plus proposer bindings merge and deploy; monitor WIP-1008 implementation and WLD stake/reward/slashing parameters.",
     "html_page": "projects/16-worldcoin-wld.html",
     "status": "active",
     "initial_review_done": true
@@ -382,8 +382,8 @@
     "links_count": 16,
     "file": "projects/17-near.md",
     "github_file": "projects/17-near.md",
-    "last_updated": "2026-07-23T04:18:01Z",
-    "open_questions": "Monitor 10-shard Protocol v86 health, later splits and ML-DSA adoption; measure OutLayer contract-native Intents swaps/volume/failures/fees plus Infinex/Aurora/EURe usage; define NEAR@3.33 claims; reconcile gross fees, net revenue, buybacks and emissions; measure Corbits/x402 delivery.",
+    "last_updated": "2026-07-23T13:35:31Z",
+    "open_questions": "Verify PR #16100 reaches a tagged/deployed client and historical queries remain reliable across later shard splits; monitor 10-shard health and ML-DSA adoption; measure OutLayer/Intents usage, define NEAR@3.33 claims and reconcile revenue, buybacks and emissions.",
     "html_page": "projects/17-near.html",
     "initial_review_done": true,
     "status": "active"
@@ -559,14 +559,14 @@
       "https://x.com/lium_io"
     ],
     "links_count": 7,
-    "open_questions": "Reconcile official validator-revenue and utilization APIs to gross renter payments, provider payout, platform fee and customer concentration; map the June 2,500 TAO buyback/burn wallet and repeat cadence; monitor Kraken liquidity and whether Lium adds managed inference.",
+    "open_questions": "Quantify production executors and incremental rentals unblocked by PR #1159; reconcile official revenue/utilization APIs to renter payments, provider payout, platform fee and customer concentration; map the June 2,500 TAO buyback/burn wallet and repeat cadence.",
     "status": "active",
     "initial_review_done": true,
     "slug": "25-lium",
     "file": "projects/25-lium.md",
     "github_file": "projects/25-lium.md",
     "html_page": "projects/25-lium.html",
-    "last_updated": "2026-07-21T16:31:30Z"
+    "last_updated": "2026-07-23T13:35:31Z"
   },
   {
     "project": "Compute Horde — Bittensor Subnet 12",

@@ -1,5 +1,225 @@
 [
   {
+    "run_id": "watchlist-scan-20260723T131204Z",
+    "started_at": "2026-07-23T13:12:04Z",
+    "completed_at": "2026-07-23T13:56:41Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "from": "2026-07-23T09:05:33Z",
+      "to": "2026-07-23T13:56:41Z",
+      "basis": "Prior completed broad-scan timestamp; explicit tracked-account X searches plus official repositories, docs and project APIs covered the four-hour window."
+    },
+    "scope": "Broad scan of all 25 enabled projects, excluding user-suppressed POD. Checked three public intake issues, ran the 31-metric collector across 13 configured projects, searched all tracked official/team X accounts plus concrete weak signals, consumed every prior next check and inspected canonical GitHub/docs/API evidence.",
+    "projects_checked": [
+      "02-geod", "03-meta", "04-bankr", "05-aeon", "06-gitlawb", "07-kinetiq", "08-grass", "09-iota-sn9", "10-targon", "11-tao-bittensor", "12-akt-akash", "13-chip-usdai", "14-vvv-venice", "15-virtuals", "16-worldcoin-wld", "17-near", "18-drv-derive", "19-octra", "20-bio", "21-pluralis", "22-ambient", "23-eigencloud", "24-chutes", "25-lium", "26-compute-horde"
+    ],
+    "logged_projects": ["04-bankr", "12-akt-akash", "16-worldcoin-wld", "17-near", "25-lium"],
+    "counts": {
+      "projects_checked": 25,
+      "projects_logged": 5,
+      "tracked_x_accounts_checked": 94,
+      "intake_issues_checked": 3,
+      "new_intakes": 0,
+      "direct_metrics_projects_refreshed": 13,
+      "direct_metrics_collected": 31,
+      "material_metric_rules_crossed": 0,
+      "new_changelog_entries": 6,
+      "confirmed_or_durable_findings": 5,
+      "unverified_watch_items_added_or_advanced": 1,
+      "stale_projects_over_7_days_at_start": 1,
+      "errors": 2
+    },
+    "decision_trail": [
+      {
+        "project": "Project intake",
+        "source": "GitHub Issues API",
+        "url": "https://github.com/iopo545454-del/project-watchlist/issues",
+        "summary": "Three open intake-form issues remain for Pluralis, Ambient and EigenCloud.",
+        "decision": "No new intake: each deduplicates to an existing reviewed project and submitted fields did not require a merge."
+      },
+      {
+        "project": "All configured direct-data projects",
+        "source": "Configured public APIs",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "The collector returned 31 metrics across 13 projects and no configured materiality rule crossed; the write produced routine snapshot churn only.",
+        "decision": "No metric-only changelog entry. Routine collector file churn was reverted, while source-specific Bankr and Lium observations were independently evaluated against dossier history."
+      },
+      {
+        "project": "All enabled projects",
+        "source": "X/Twitter",
+        "url": "https://x.com/",
+        "summary": "Explicit from-handle searches covered all tracked official, founder, team and core accounts after 09:05 UTC, followed by broader evidence-bearing weak-signal searches.",
+        "decision": "No fresh official X post passed the threshold. Routine promotions, repeated product claims, launchpad instances and generic chatter were rejected; canonical sources supplied the accepted findings."
+      },
+      {
+        "project": "Official GitHub/source sweep",
+        "source": "Canonical repositories, docs and project APIs",
+        "url": "https://github.com/",
+        "summary": "Fresh canonical checks surfaced Akash TEE docs/provider inventory, World ID Sandbox docs, World Chain proof-system PR #909, nearcore resharding regression fix #16100 and Lium UFW placement fix #1159.",
+        "decision": "Logged source-proximate advances with deployment/adoption caveats; rejected routine maintenance and main-branch code without project-level consequence."
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "source": "Official Bankr Discover and aggregate APIs",
+        "url": "https://api.bankr.bot/discover?chain=robinhood&limit=100",
+        "summary": "The first 10,000 unique Discover rows contained 1,498 stock-paired pools and summed to $19.57M rolling-24h volume, including 434 post-cutoff rows with $4.41M, while the aggregate dashboard showed $3.02M total volume.",
+        "decision": "Logged a verification update but did not validate the nearly $11M/48h issuer claim: the 6.47x row/aggregate mismatch requires documented scope/window semantics or event-level reconstruction."
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "Official Akash GitHub, docs and provider API",
+        "url": "https://github.com/akash-network/website/pull/1285",
+        "summary": "Merged docs now expose cpu/cpu-gpu TEE requests and the provider API showed one online audited 0.16.0-rc1 provider advertising CPU-GPU SEV-SNP with 24 available RTX PRO 6000 GPUs and two leases.",
+        "decision": "Advanced the July 31 catalyst from roadmap-only to early provider/API surface; no stable release, named paid TEE deployment, attestation audit or AKT/BME effect is proven."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "Official World developer docs and GitHub",
+        "url": "https://docs.world.org/world-id/sandbox/what-is-sandbox",
+        "summary": "Merged Sandbox and Selfie Check docs provide isolated, resettable production-like developer testing and public iOS access.",
+        "decision": "Logged as a developer-product/docs advance only; the docs exclude security certification, load testing and production sign-off and add no WLD value route."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "Official World Chain GitHub",
+        "url": "https://github.com/worldcoin/world-chain/pull/909",
+        "summary": "Open high-risk PR #909 would require explicit L1-origin metadata and a valid proof when creating proof games, reverting malformed/empty creation atomically.",
+        "decision": "Added an unverified watch item because the PR is open, unmerged and needs proposer-binding changes; it is not a disclosed exploit or deployed protection."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "Official nearcore GitHub, investigation and mainnet RPC",
+        "url": "https://github.com/near/nearcore/pull/16100",
+        "summary": "The first 10-shard split caused bounded MissingTrieValue failures for earliest_available state queries after parent-shard cleanup; final-state queries and block production continued, and a fix merged.",
+        "decision": "Corrected the prior clean-split framing. Live RPC remained healthy on 2.13.1/Protocol 86, but no tagged/deployed build yet proves the fix."
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "source": "Official Lium GitHub and utilization API",
+        "url": "https://github.com/Datura-ai/lium-io/pull/1159",
+        "summary": "PR #1159 fixed a UFW path that could cap placement at 10 fallback-verified ports; staging reached 50 ports and cut validation time from 55.2s to 24.4s. Live utilization was 659/974 (67.66%).",
+        "decision": "Logged the production-capacity fix; the +1.34 percentage-point utilization move versus 638/962 is below materiality and no affected-node or incremental-revenue count is known."
+      },
+      {
+        "project": "Kinetiq",
+        "source": "Primary/non-X KPI source",
+        "url": "docs/data/direct-metrics/latest.json",
+        "summary": "Kinetiq was the only enabled dossier older than seven days at run start; its configured TVL and direct-metrics history were substantively refreshed and compared.",
+        "decision": "No material change: configured TVL movement remained below rule threshold. The dossier last_updated was not reset for a no-change KPI check."
+      },
+      {
+        "project": "BIO / Bio Protocol",
+        "source": "Official app/docs/repository sweep",
+        "url": "projects/20-bio.md",
+        "summary": "The prior VitaApp access, subscription, encryption/audit, VITA discount and BIO/veBIO route check was re-run.",
+        "decision": "No new canonical access/economics/security artifact; carried forward with origin."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "SEC/official World sources",
+        "url": "projects/16-worldcoin-wld.md",
+        "summary": "The prior GWLD filing and July 24 unlock-transition checks were consumed alongside fresh World GitHub/docs work.",
+        "decision": "No S-1/listing advancement; the unlock transition was not yet due. Both checks are carried."
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "source": "Official repositories/dashboard sources",
+        "url": "projects/09-iota-sn9.md",
+        "summary": "The prior Orion checkpoint, dashboard API, paid-run and Train at Home economics check was re-run.",
+        "decision": "No post-v4.7.0 model or paid-economics artifact; carried forward."
+      },
+      {
+        "project": "NEAR Protocol",
+        "source": "Official nearcore and RPC",
+        "url": "projects/17-near.md",
+        "summary": "The prior 10-shard reliability check advanced through the newly diagnosed RPC regression and merged fix; ML-DSA and OutLayer/Corbits/economics checks remain unresolved.",
+        "decision": "Updated the catalyst/open question and carried only the tagged-deployment, later-split and adoption/economics checks."
+      },
+      {
+        "project": "META / MetaDAO",
+        "source": "Official MetaDAO/project sources",
+        "url": "projects/03-meta.md",
+        "summary": "The prior Rip Cars close/settlement, Credible onchain and MetaDAO 2.0/NAV-band check was re-run.",
+        "decision": "No final settlement or MetaDAO 2.0 artifact surfaced; carried forward."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "Official Darkbloom GitHub",
+        "url": "projects/23-eigencloud.md",
+        "summary": "The prior PR #568 tagged/deployed telemetry, v0.7.12 rollout/error and supplier-reward attribution check was re-run.",
+        "decision": "No tagged deployment, public values or economic attribution; carried forward."
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "source": "Official Targon/Manifold sources",
+        "url": "projects/10-targon.md",
+        "summary": "The prior Tower reservations, terms, delivery and realized-economics check was re-run; a third-party confidential-compute post was reviewed against existing TargonOS coverage.",
+        "decision": "No new reservation/delivery evidence and no novel official mainnet event beyond existing dossier context; carried forward."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "Official campaign and protocol sources",
+        "url": "projects/15-virtuals.md",
+        "summary": "The prior Binance Wallet campaign-attribution, tax-manager and VIRTUAL value-route check was re-run.",
+        "decision": "No eligible-volume attribution or token-value route surfaced; carried forward."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "Official Chutes/dstack sources",
+        "url": "projects/24-chutes.md",
+        "summary": "The prior post-July-24 Harvard endpoint comparison and live dstack-routed report check was consumed.",
+        "decision": "Event window was not yet due and no live attributed deployment/traffic was proven; carried forward."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "Official GitLawb GitHub and product sources",
+        "url": "projects/06-gitlawb.md",
+        "summary": "The prior Node/CLI v0.7.0 adoption, certificate, active-node and fee-route check was re-run; a fresh node PR was routine infrastructure work.",
+        "decision": "No adoption/economics measurement; carried forward."
+      }
+    ],
+    "errors": [
+      "One delegated canonical-source worker timed out after preserving partial evidence; the parent independently verified accepted findings through official GitHub/docs/APIs.",
+      "The configured general web-search backend was unavailable; direct official HTTPS, X search, GitHub and project APIs supplied accepted evidence."
+    ],
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.", "carried_from": "watchlist-scan-20260721T151949Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, launch, flows, custody and WLD creations/redemptions.", "carried_from": "watchlist-scan-20260721T104640Z; no filing advancement in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "On July 24 verify the scheduled 5.1M to 2.9M WLD/day unlock-rate transition and reconcile Community/TFH wallet flows.", "carried_from": "watchlist-scan-20260722T184459Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Check PR #909 review/merge, required proposer bindings, audits/tests and deployed contract/code version.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "IOTA — Macrocosmos Bittensor Subnet 9", "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; map dashboard API and paid-run/Train at Home economics.", "carried_from": "watchlist-scan-20260715T234645Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "NEAR Protocol", "check": "Verify PR #16100 reaches a tagged/deployed client, historical queries remain reliable across later split/GC boundaries, and measure ML-DSA, OutLayer, Corbits and Intents economics adoption.", "carried_from": "watchlist-scan-20260722T231058Z; reliability item advanced but deployment/adoption remain unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "META / MetaDAO", "check": "Verify final Rip Cars commitments/settlement, allocation, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "EIGEN / EigenCloud", "check": "Verify a tagged/deployed PR #568 telemetry build and public values; verify v0.7.12 rollout/error outcomes and supplier-reward attribution.", "carried_from": "dossier watch item date_seen 2026-07-16; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "Targon — Bittensor Subnet 4", "check": "Verify Tower reservations, terms, ship dates/delivery, realized utilization/economics and 5090 KYC constraints.", "carried_from": "watchlist-scan-20260722T044753Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "VIRTUAL / Virtuals Protocol", "check": "Measure Binance Wallet campaign-attributed volume, unique/repeat traders, protocol fees and retention; continue tax-manager and VIRTUAL route checks.", "carried_from": "watchlist-scan-20260722T092655Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "BANKR / BankrCoin", "check": "Explain the 6.47x Discover row-sum versus dashboard mismatch or reconstruct stock-paired volume from events; map quote assets, creator-stock balances, fee splits and any BNKR route.", "carried_from": "watchlist-scan-20260722T231058Z; API check narrowed but did not resolve methodology in watchlist-scan-20260723T131204Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "After July 24 compare complete pre/post Harvard-endpoint windows and verify a live Chutes-routed dstack report with attributed traffic.", "carried_from": "watchlist-scan-20260722T231058Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Measure Node/CLI v0.7.0 installs, agents/repos, certificates, active nodes, repeat pushes, external evaluations and any fee/GITLAWB route.", "carried_from": "watchlist-scan-20260723T034901Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "AKT / Akash", "check": "Verify stable TEE provider release, multi-provider capacity, named paid deployments, attestation review, failures, spend and BME impact.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Quantify production executors and incremental placements/rentals/revenue affected by PR #1159; continue utilization, concentration, failure and paid-hours history.", "carried_from": "watchlist-scan-20260723T131204Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 6,
+      "tiers": {
+        "high": 0,
+        "medium": 5,
+        "low": 1
+      },
+      "labels": {
+        "04-bankr:stock-paired-api-reconciliation": "medium",
+        "12-akt-akash:tee-console-provider-surface": "medium",
+        "16-worldcoin-wld:world-id-sandbox": "low",
+        "16-worldcoin-wld:proof-game-pr-909": "medium",
+        "17-near:resharding-rpc-regression": "medium",
+        "25-lium:ufw-placement-fix": "medium"
+      },
+      "rationale": "The independent tagger found five meaningful watch-tier product, verification or operational signals without direct near-term token/liquidity/revenue actionability; the Sandbox docs were log-tier. No entry met the strict high/actionable step-change or magnitude bar."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260723T083406Z",
     "started_at": "2026-07-23T08:34:06Z",
     "completed_at": "2026-07-23T09:05:33Z",

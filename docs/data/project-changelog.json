@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "Bankr's first 10,000 Robinhood Discover rows summed to $19.57M stock-paired rolling-24h volume, but the aggregate dashboard showed only $3.02M, leaving the issuer's nearly $11M/48h claim unreconciled.",
+    "source": "Official Bankr APIs",
+    "url": "https://api.bankr.bot/discover?chain=robinhood&limit=100",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The $19.57M row sum is 6.47x the simultaneous $3.02M aggregate dashboard and cannot be treated as a coherent verification of the prior nearly $11M/48h issuer claim.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stock-paired token launches on Robinhood Chain"},
+      {"type": "open_question", "ref": "Robinhood Discover versus aggregate-dashboard volume reconciliation"}
+    ]
+  },
+  {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "AKT / Akash",
+    "slug": "12-akt-akash",
+    "type": "catalyst update",
+    "summary": "Akash merged Console API TEE examples and one audited release-candidate provider now advertises CPU-GPU SEV-SNP capacity; stable rollout and paid adoption remain unproven.",
+    "source": "Official Akash GitHub, docs and provider API",
+    "url": "https://github.com/akash-network/website/pull/1285",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The July 31 confidential-compute catalyst advanced from roadmap-only to live docs plus one audited 0.16.0-rc1 provider with 24 available RTX PRO 6000 GPUs and two leases; there is still no stable release or named paid TEE workload.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Confidential computing and TEE rollout"},
+      {"type": "open_question", "ref": "Stable multi-provider TEE rollout and attestation verification"}
+    ]
+  },
+  {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "docs/blog update",
+    "summary": "World published a production-like World ID Sandbox and end-to-end Selfie Check test guide for resettable, isolated developer testing.",
+    "source": "Official World developer docs and GitHub",
+    "url": "https://docs.world.org/world-id/sandbox/what-is-sandbox",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "new",
+    "importance": "low",
+    "delta": "New merged docs expose production-like integration testing, but explicitly exclude load testing, security certification and production sign-off; no usage or WLD value route was added.",
+    "relates_to": []
+  },
+  {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "unverified watch item",
+    "summary": "Open World Chain PR #909 would make proof-game creation fail closed by requiring explicit L1-origin metadata and a valid initial proof; it is unmerged and incomplete.",
+    "source": "Official World Chain GitHub",
+    "url": "https://github.com/worldcoin/world-chain/pull/909",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "This is a new high-risk follow-up to the previously tracked SP1/Nitro hardening work; proposer bindings still need adjustment and there is no deployed fix or disclosed exploit.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "World Chain multi-proof validity verifier and proof-system hardening"},
+      {"type": "watch_item", "ref": "World Chain fail-closed proof-game creation PR #909"}
+    ]
+  },
+  {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "verification update",
+    "summary": "NEAR's first 10-shard split exposed a bounded historical-RPC MissingTrieValue regression; a nearcore fix merged, but no tagged/deployed client contains it yet and mainnet remained live.",
+    "source": "Official nearcore GitHub, mainnet investigation and RPC",
+    "url": "https://github.com/near/nearcore/pull/16100",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Corrects the prior clean-split framing: earliest_available state queries failed for roughly one epoch after parent-shard cleanup, while final-state queries and block production continued; live RPC still reported 2.13.1.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
+      {"type": "open_question", "ref": "PR #16100 tagged deployment and later split reliability"}
+    ]
+  },
+  {
+    "date": "2026-07-23T13:35:31Z",
+    "project": "Lium — Bittensor Subnet 51",
+    "slug": "25-lium",
+    "type": "catalyst update",
+    "summary": "Lium merged a production UFW verifier fix that raised staging verified capacity from 10 to 50 ports and cut validation time from 55.2s to 24.4s.",
+    "source": "Official Lium GitHub and utilization API",
+    "url": "https://github.com/Datura-ai/lium-io/pull/1159",
+    "last_scanned": "2026-07-23T13:35:31Z",
+    "novelty": "new",
+    "importance": "medium",
+    "delta": "The fix removes an under-placement bottleneck on affected executors; point-in-time utilization was 659/974 (67.66%) versus 638/962 (66.32%) at the prior scan, a +1.34 percentage-point move that is not itself a step change.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "High-end GPU inventory and Blackwell availability"},
+      {"type": "metric", "ref": "GPU utilization"}
+    ]
+  },
+  {
     "date": "2026-07-23T08:59:01Z",
     "project": "EIGEN / EigenCloud",
     "slug": "23-eigencloud",
