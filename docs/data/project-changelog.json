@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-07-23T07:05:58Z",
+    "project": "Ambient",
+    "slug": "22-ambient",
+    "type": "verification update",
+    "summary": "OpenRouter now independently verifies Ambient-scale inference volume, while public auction code and AMB miner wording remain short of live settlement, final tokenomics or Proof-of-Logits validation.",
+    "source": "OpenRouter provider history, official Ambient API/mining page and GitHub",
+    "url": "https://openrouter.ai/provider/ambient",
+    "last_scanned": "2026-07-23T07:05:58Z",
+    "importance": "medium",
+    "novelty": "update",
+    "delta": "The repo previously treated the 13.2B-token day as issuer-only. OpenRouter now shows 13.111B Ambient-routed tokens on June 14 and a 24.148B July 3 peak; public repositories add reverse-auction/escrow/verifier structures, but no canonical deployment, organic-revenue split, final tokenomics or PoL benchmark exists.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Enterprise/agent API adoption"
+      },
+      {
+        "type": "catalyst",
+        "ref": "Proof of Logits technical validation"
+      },
+      {
+        "type": "open_question",
+        "ref": "Organic paid usage, AMB settlement and canonical auction deployment"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-23T07:05:58Z",
+    "project": "Compute Horde — Bittensor Subnet 12",
+    "slug": "26-compute-horde",
+    "type": "verification update",
+    "summary": "SN12’s machine-readable Organic Jobs dashboard logged 2,214 seven-day jobs, but 87.22% were health probes and no direct paid-revenue or GPU-utilization ledger exists.",
+    "source": "Canonical Compute Horde Grafana, metagraph dashboard and official economics post",
+    "url": "https://grafana.bittensor.church/d/cell4lui0osu8f/organic-jobs",
+    "last_scanned": "2026-07-23T07:05:58Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The prior dossier could not find the organic-jobs API. The public Grafana now reproduces 2,214 jobs, 2,055 successes, 158 failures and 211,940 booked seconds for July 16–23; 1,931 were health probes, while GS supplied the remaining 283 and only 124 succeeded. Sixteen emission-bearing neurons split evenly between miners and validators.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Organic Jobs dashboard"
+      },
+      {
+        "type": "metric",
+        "ref": "Organic jobs, outcomes, booked seconds and submitter mix"
+      },
+      {
+        "type": "open_question",
+        "ref": "Paid demand, revenue, GPU inventory and utilization"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-23T07:05:58Z",
+    "project": "Pluralis",
+    "slug": "21-pluralis",
+    "type": "verification update",
+    "summary": "Stoa’s published curve and recipe are inspectable, but the independent full PaperSearchQA rerun is closed stale as an unbounded H100/B200-plus-Mac task with a private checkpoint.",
+    "source": "Official Pluralis Stoa repository, reproduction guide and curve CSV",
+    "url": "https://github.com/PluralisResearch/stoa/blob/main/runs/psqa-decoupled/REPRODUCE.md",
+    "last_scanned": "2026-07-23T07:05:58Z",
+    "importance": "low",
+    "novelty": "update",
+    "delta": "The source ships one commit and an 11-checkpoint CSV rising from 0.2852 to 0.6308 cover pass@1, but GitHub showed zero forks/issues and no exact third-party reproduction. A true rerun needs trainer and eval CUDA GPUs, Apple-silicon workers, R2 and a ~25 GB index; the trained checkpoint is private.",
+    "relates_to": [
+      {
+        "type": "catalyst",
+        "ref": "Stoa distributed RL post-training on consumer Macs"
+      },
+      {
+        "type": "open_question",
+        "ref": "Independent PaperSearchQA reproduction, cost/throughput and contributor accounting"
+      }
+    ]
+  },
+  {
     "date": "2026-07-23T04:18:01Z",
     "project": "EIGEN / EigenCloud",
     "slug": "23-eigencloud",

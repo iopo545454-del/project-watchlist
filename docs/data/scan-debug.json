@@ -1,5 +1,171 @@
 [
   {
+    "run_id": "verification-run-20260723T064354Z",
+    "started_at": "2026-07-23T06:43:54Z",
+    "completed_at": "2026-07-23T07:16:26Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "from": "2026-07-15T19:20:52Z",
+      "to": "2026-07-23T07:16:26Z",
+      "basis": "Oldest-first queue age; META was explicitly not yet due and did not displace the three oldest actionable items."
+    },
+    "scope": "Dedicated verification only for the three oldest actionable queue items: Ambient paid-job/auction/tokenomics/Proof-of-Logits usage, Compute Horde Organic Jobs/revenue/inventory activity, and Pluralis Stoa independent PaperSearchQA reproduction. No broad fresh-activity sweep.",
+    "projects_checked": [
+      "22-ambient",
+      "26-compute-horde",
+      "21-pluralis"
+    ],
+    "logged_projects": [
+      "22-ambient",
+      "26-compute-horde",
+      "21-pluralis"
+    ],
+    "selected_items": [
+      {
+        "project": "Ambient",
+        "origin": "watchlist-scan-20260715T192052Z",
+        "check": "Verify organic paid jobs, auction/miner economics and final tokenomics; obtain Proof-of-Logits code/security benchmarks and reproduce the Kimi usage claim."
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "origin": "watchlist-scan-20260715T192052Z",
+        "check": "Use canonical Grafana and official repos to locate machine-readable organic-job, inventory, utilization and revenue data; verify active paid jobs and validator/miner activity."
+      },
+      {
+        "project": "Pluralis",
+        "origin": "watchlist-scan-20260715T192052Z",
+        "check": "Independently run Stoa's PaperSearchQA guide and measure cost/throughput, trainer dependence, external compute and contributor accounting/economics."
+      }
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 2,
+      "disproven": 0,
+      "stale": 1,
+      "changelog_entries": 3,
+      "remaining_next_checks": 12,
+      "errors": 3
+    },
+    "decision_trail": [
+      {
+        "project": "Ambient",
+        "source": "OpenRouter, official Ambient API/mining page and GitHub",
+        "url": "https://openrouter.ai/provider/ambient",
+        "summary": "OpenRouter independently exposes 90 daily provider rows, including 13.111B tokens on June 14 and a 24.148B July 3 peak. Official code defines auctions/escrow/verifier payouts and the mining page names AMB payouts, but no live canonical program, organic-revenue split, final tokenomics or PoL benchmark/audit exists.",
+        "decision": "confirmed — provider-scale usage and inspectable auction plumbing are real; the omnibus queue item is closed and individual gaps reopen only on concrete primary artifacts."
+      },
+      {
+        "project": "Compute Horde — Bittensor Subnet 12",
+        "source": "Canonical Grafana, metagraph and official economics post",
+        "url": "https://grafana.bittensor.church/d/cell4lui0osu8f/organic-jobs",
+        "summary": "The public dashboard/API returned 2,214 seven-day jobs, 2,055 successes, 158 failures and 211,940 booked seconds. Health probes were 87.22%; GS was the only other active label. The metagraph showed eight miners and eight validators, while no billing/revenue/inventory/utilization ledger exists.",
+        "decision": "confirmed — machine-readable activity and active validator/miner state are verified; paid-revenue interpretation is rejected and the broad check is closed."
+      },
+      {
+        "project": "Pluralis",
+        "source": "Official Stoa repo, reproduction guide and curve CSV",
+        "url": "https://github.com/PluralisResearch/stoa/blob/main/runs/psqa-decoupled/REPRODUCE.md",
+        "summary": "The repo compiles and its 11-row CSV records 0.2852→0.6308 cover pass@1, but the checkpoint is private and a full rerun requires H100/B200 and eval GPUs, Macs, R2 and a 25 GB index. GitHub had one commit, zero forks/issues and no exact third-party reproduction.",
+        "decision": "stale — source artifacts remain confirmed, but the unbounded independent full-run task is removed from the autonomous queue; reopen only for third-party proof, a public checkpoint or funded bounded replication."
+      }
+    ],
+    "errors": [
+      {
+        "stage": "delegated research",
+        "project": "Ambient",
+        "error": "Research subagent timed out after collecting primary evidence; recovered with direct OpenRouter/API/GitHub checks."
+      },
+      {
+        "stage": "delegated research",
+        "project": "Compute Horde",
+        "error": "Research subagent timed out after collecting Grafana evidence; recovered from saved machine-readable artifacts plus direct repository/metagraph checks."
+      },
+      {
+        "stage": "delegated research",
+        "project": "Pluralis",
+        "error": "No delegated result was available for the replacement third item after META was found not due; completed directly from the official repository, guide, CSV, GitHub API and X search."
+      }
+    ],
+    "next_checks": [
+      {
+        "project": "BIO / Bio Protocol",
+        "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.",
+        "carried_from": "watchlist-scan-20260721T151949Z; no access/economics/security artifact in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, seed/AP terms, launch, AUM/flows, custody and WLD creations/redemptions.",
+        "carried_from": "watchlist-scan-20260721T104640Z; SEC submissions still showed only the July 20 S-1 in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "check": "On July 24 verify the scheduled unlock-rate transition onchain: aggregate 5.1M→2.9M WLD/day, Community 3.2M→1.6M and TFH investor/team 1.9M→1.3M; reconcile unlocked, circulating and wallet flows.",
+        "carried_from": "watchlist-scan-20260722T184459Z; event was not yet due in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; map the live dashboard's stable API; verify paid runs, Train at Home retention/rewards and SN9 emissions/value capture.",
+        "carried_from": "watchlist-scan-20260715T234645Z; no model, dashboard-economics or paid-run advancement in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "NEAR Protocol",
+        "check": "Monitor 10-shard Protocol v86 reliability, validator/client incidents and later automatic splits; measure ML-DSA adoption, OutLayer contract-native Intents usage/failures/fees and continue Corbits, NEAR@3.33, confidential-partner and revenue/buyback checks.",
+        "carried_from": "watchlist-scan-20260722T231058Z; OutLayer mainnet proof added in watchlist-scan-20260723T034901Z but operating/adoption metrics remain absent"
+      },
+      {
+        "project": "META / MetaDAO",
+        "check": "After the four-day Rip Cars raise ends, verify final commitments/accepted capital, Ownership Score allocation, concentration, settlement, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.",
+        "carried_from": "watchlist-scan-20260715T192052Z; sale had not reached its scheduled close in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "check": "Verify v0.7.12 coordinator adoption and protocol-v1 provider share, broad rollout and post-fix Gemma tool error rate, failed-user impact and provider-payout effects; explain the supplier-reward surge separately from Darkbloom demand.",
+        "carried_from": "dossier watch item date_seen 2026-07-16; PR #561 merge and v0.7.12 release confirmed in watchlist-scan-20260723T034901Z, production outcome unresolved"
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "check": "Verify Tower reservation opening, payment/refund/warranty terms, ship dates and delivered units; measure realized utilization, rates/opex, 5090 KYC-only constraints and incremental SN4 economics.",
+        "carried_from": "watchlist-scan-20260722T044753Z; reservations still said opening soon in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "check": "Measure Binance Wallet campaign-attributed eligible-token volume, unique/repeat traders, protocol fees and post-August-5 retention; continue tax-manager and VIRTUAL value-route checks.",
+        "carried_from": "watchlist-scan-20260722T092655Z; no campaign attribution or token-value route in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "BANKR / BankrCoin",
+        "check": "Reproduce the nearly $11M/48h stock-paired-volume claim from stable API/onchain history; map pool/factory contracts and quote assets, launches, creator-stock treasury balances, exact fee splits and any Bankr-fee, Club or BNKR route.",
+        "carried_from": "watchlist-scan-20260722T231058Z; quantified issuer claim surfaced in watchlist-scan-20260723T034901Z but aggregate/economics remain opaque"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "check": "After July 24 compare complete pre/post Harvard-endpoint windows for requests, tokens, revenue, revenue per token and mix; determine whether any undisclosed discount/incentive remains.",
+        "carried_from": "watchlist-scan-20260722T231058Z; closure and post-event data were not yet due in watchlist-scan-20260723T034901Z"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "check": "Measure Node/CLI v0.7.0 installs, unique agents/repos, verified certificates, active nodes, repeat pushes and external blind-agent evaluations; verify any fee, credit or GITLAWB route.",
+        "carried_from": "watchlist-scan-20260723T034901Z; versioned release is live but adoption/economics are unmeasured"
+      }
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 3,
+      "tiers": {
+        "high": 0,
+        "medium": 1,
+        "low": 2
+      },
+      "labels": {
+        "22-ambient:provider-usage-auction-code": "medium",
+        "26-compute-horde:organic-jobs-composition": "low",
+        "21-pluralis:stoa-independent-rerun-stale": "low"
+      },
+      "rationale": "Ambient is a concrete usage signal without actionable economics; Compute Horde is mostly health-probe traffic without economic proof; Pluralis is a validation-gap log rather than a reproduced benchmark."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260723T034901Z",
     "started_at": "2026-07-23T03:49:01Z",
     "completed_at": "2026-07-23T04:24:36Z",
