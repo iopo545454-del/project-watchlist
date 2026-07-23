@@ -1,5 +1,128 @@
 [
   {
+    "run_id": "verification-run-20260723T191940Z",
+    "started_at": "2026-07-23T19:19:40Z",
+    "completed_at": "2026-07-23T19:41:43Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "mode": "oldest-first verification queue",
+      "queue_source_run": "watchlist-scan-20260723T131204Z",
+      "oldest_selected_origin": "watchlist-scan-20260715T234645Z",
+      "verification_as_of": "2026-07-23T19:41:43Z",
+      "basis": "MetaDAO's older Rip Cars settlement check is explicitly not due until the four-day sale closes on 2026-07-25 at about 17:00 UTC, so it did not displace the three oldest actionable items."
+    },
+    "scope": "Dedicated verification only for the three oldest actionable items: IOTA Orion/dashboard/economics artifacts, EigenCloud Darkbloom telemetry/Gemma rollout outcomes, and Grayscale Worldcoin ETF filing advancement. No broad fresh-activity sweep.",
+    "projects_checked": ["09-iota-sn9", "23-eigencloud", "16-worldcoin-wld"],
+    "logged_projects": ["09-iota-sn9", "23-eigencloud", "16-worldcoin-wld"],
+    "selected_items": [
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "origin": "watchlist-scan-20260715T234645Z",
+        "check": "Obtain the next Orion checkpoint/model and reproduce speed, convergence and cost; map the dashboard API and paid-run/Train at Home economics.",
+        "outcome": "stale",
+        "resolution": "Tag v4.8.0 changes only the miner packaging spec. No official checkpoint, post-v3.0.0 release, benchmark, documented dashboard endpoint, primary payment ledger or Macrocosmos Orion/IOTA Hugging Face artifact exists. The unbounded omnibus check is closed until a bounded primary artifact appears."
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "origin": "dossier watch item date_seen 2026-07-16",
+        "check": "Verify deployed Darkbloom telemetry, v0.7.12 rollout/error outcomes, failed-user impact and supplier-reward attribution.",
+        "outcome": "confirmed",
+        "resolution": "PR #569 and annotated tag v0.7.13 identify the telemetry rollout, and live official stats/cache APIs expose usage, provider and cache-routing values. The original Gemma error class, provider software-version share, failed users and payout effects are not public, so those gaps reopen only on a specific outcome artifact."
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "origin": "watchlist-scan-20260721T104640Z",
+        "check": "Track the Grayscale Worldcoin ETF S-1 through amendments/effectiveness, Nasdaq eligibility/listing, fees, launch, flows, custody and WLD creations/redemptions.",
+        "outcome": "stale",
+        "resolution": "SEC CIK 0002145351 still contains only the July 20 initial S-1. The delaying amendment remains operative, fee/seed/AP terms are incomplete and Nasdaq eligibility/listing is unconfirmed. Remove the recurring check and reopen event-driven on a new SEC, Nasdaq or Grayscale artifact."
+      }
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 1,
+      "disproven": 0,
+      "stale": 2,
+      "material_changelog_entries": 1,
+      "remaining_next_checks": 12,
+      "errors": 3
+    },
+    "decision_trail": [
+      {
+        "project": "IOTA — Macrocosmos Bittensor Subnet 9",
+        "source": "Official Macrocosmos GitHub, dashboard, Train at Home docs and Hugging Face APIs",
+        "url": "https://github.com/macrocosm-os/iota/compare/v4.7.0...v4.8.0",
+        "summary": "The new v4.8.0 tag changes only nine lines in src/miner/main_pool.spec. GitHub releases still stop at v3.0.0, official organization and Hugging Face searches found no Orion/IOTA checkpoint, and the dashboard/FAQ expose no documented run, retention, payout or revenue ledger.",
+        "decision": "stale — close the unbounded omnibus task and reopen only for a checkpoint/report, documented API, payment ledger or independent reproduction"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "Official Darkbloom GitHub and live stats/cache APIs",
+        "url": "https://api.darkbloom.dev/v1/cache/status",
+        "summary": "PR #569 merged and tag v0.7.13 identifies the telemetry rollout. Live APIs returned 55.008B lifetime tokens, 3.089B 24h tokens, 783,328 24h requests, 285 active providers, 259 code-attested providers and protocol mix 5 v0 / 238 v1 / 42 v2; cache routing was on with 72,308 evaluations, 6,901 admissions, 2,433 plans and one plan failure.",
+        "decision": "confirmed — deployment/public values are verified; exact post-fix Gemma error, failed-user, provider-version and payout outcomes remain unavailable and are no longer carried without a concrete artifact"
+      },
+      {
+        "project": "EIGEN / EigenCloud",
+        "source": "Darkbloom README and DefiLlama methodology",
+        "url": "https://github.com/Layr-Labs/d-inference",
+        "summary": "Darkbloom public alpha states providers keep 100% of revenue at a 0% platform fee. DefiLlama separately labels EigenLayer/EigenCloud fees as supplier rewards and protocol revenue as zero.",
+        "decision": "confirmed attribution boundary — Darkbloom usage and EigenLayer supplier rewards are not retained EigenCloud revenue or EIGEN value capture"
+      },
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "SEC EDGAR submissions and primary Form S-1",
+        "url": "https://data.sec.gov/submissions/CIK0002145351.json",
+        "summary": "The registrant feed contains one filing only: the 2026-07-20 S-1 accession 0001193125-26-308957. Its delaying amendment remains operative; sponsor fee, seed/AP terms, effectiveness and Nasdaq Rule 5711(d)(iv) eligibility/listing confirmation remain absent.",
+        "decision": "stale — no filing advancement; close repetitive autonomous carry-forward and reopen on a new primary accession, effectiveness or listing artifact"
+      }
+    ],
+    "errors": [
+      {
+        "stage": "delegated research",
+        "error": "All three delegated workers timed out after preserving substantial primary-source evidence; selected-item observations were independently reproduced with official GitHub, APIs, docs and SEC EDGAR."
+      },
+      {
+        "stage": "web research",
+        "error": "The configured general web-search/extraction backend was unavailable; direct official HTTPS, GitHub, Hugging Face, SEC and X search supplied the evidence."
+      },
+      {
+        "stage": "queue construction",
+        "error": "A preliminary MetaDAO research branch was discarded after confirming its four-day Rip Cars settlement item is not due until 2026-07-25; no MetaDAO files or queue state were changed."
+      }
+    ],
+    "queue_state": {
+      "remaining_count": 12,
+      "oldest_origin": "watchlist-scan-20260715T192052Z",
+      "oldest_age_days": 8.01,
+      "oldest_item_status": "MetaDAO settlement is explicitly not due until the Rip Cars sale closes around 2026-07-25T17:00:00Z.",
+      "oldest_actionable_origin": "watchlist-scan-20260721T151949Z",
+      "oldest_actionable_age_days": 2.18,
+      "note": "All three selected actionable items were resolved and removed. Untouched queue items preserve their original carried_from/origin strings."
+    },
+    "next_checks": [
+      {"project": "BIO / Bio Protocol", "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.", "carried_from": "watchlist-scan-20260721T151949Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "On July 24 verify the scheduled 5.1M to 2.9M WLD/day unlock-rate transition and reconcile Community/TFH wallet flows.", "carried_from": "watchlist-scan-20260722T184459Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Check PR #909 review/merge, required proposer bindings, audits/tests and deployed contract/code version.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "NEAR Protocol", "check": "Verify PR #16100 reaches a tagged/deployed client, historical queries remain reliable across later split/GC boundaries, and measure ML-DSA, OutLayer, Corbits and Intents economics adoption.", "carried_from": "watchlist-scan-20260722T231058Z; reliability item advanced but deployment/adoption remain unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "META / MetaDAO", "check": "Verify final Rip Cars commitments/settlement, allocation, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "Targon — Bittensor Subnet 4", "check": "Verify Tower reservations, terms, ship dates/delivery, realized utilization/economics and 5090 KYC constraints.", "carried_from": "watchlist-scan-20260722T044753Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "VIRTUAL / Virtuals Protocol", "check": "Measure Binance Wallet campaign-attributed volume, unique/repeat traders, protocol fees and retention; continue tax-manager and VIRTUAL route checks.", "carried_from": "watchlist-scan-20260722T092655Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "BANKR / BankrCoin", "check": "Explain the 6.47x Discover row-sum versus dashboard mismatch or reconstruct stock-paired volume from events; map quote assets, creator-stock balances, fee splits and any BNKR route.", "carried_from": "watchlist-scan-20260722T231058Z; API check narrowed but did not resolve methodology in watchlist-scan-20260723T131204Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "After July 24 compare complete pre/post Harvard-endpoint windows and verify a live Chutes-routed dstack report with attributed traffic.", "carried_from": "watchlist-scan-20260722T231058Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Measure Node/CLI v0.7.0 installs, agents/repos, certificates, active nodes, repeat pushes, external evaluations and any fee/GITLAWB route.", "carried_from": "watchlist-scan-20260723T034901Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "AKT / Akash", "check": "Verify stable TEE provider release, multi-provider capacity, named paid deployments, attestation review, failures, spend and BME impact.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Quantify production executors and incremental placements/rentals/revenue affected by PR #1159; continue utilization, concentration, failure and paid-hours history.", "carried_from": "watchlist-scan-20260723T131204Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 1,
+      "tiers": {"high": 0, "medium": 1, "low": 0},
+      "labels": {"23-eigencloud:darkbloom-v0.7.13-live-telemetry": "medium"},
+      "rationale": "Meaningful live product/observability progress with concrete usage and provider metrics, but no operating-model step change, EIGEN value-capture route, actionable market impact or quantified post-fix Gemma outcome."
+    }
+  },
+  {
     "run_id": "watchlist-scan-20260723T131204Z",
     "started_at": "2026-07-23T13:12:04Z",
     "completed_at": "2026-07-23T13:56:41Z",

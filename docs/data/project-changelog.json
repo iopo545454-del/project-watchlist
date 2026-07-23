@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-07-23T19:32:53Z",
+    "project": "EIGEN / EigenCloud",
+    "slug": "23-eigencloud",
+    "type": "verification update",
+    "summary": "Darkbloom's v0.7.13 cache telemetry is live: public APIs now expose 55.008B lifetime tokens, 3.089B 24h tokens, 285 active providers and cache-routing aggregates.",
+    "source": "Official Darkbloom GitHub and live APIs",
+    "url": "https://api.darkbloom.dev/v1/cache/status",
+    "last_scanned": "2026-07-23T19:32:53Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior repo state had merged telemetry code but no tagged/deployed coordinator or public values. PR #569 and tag v0.7.13 now identify the rollout, while the live cache/status and stats endpoints expose 285 providers (5 v0 / 238 v1 / 42 v2), 42 v2-ready models, 72,308 evaluated requests, 6,901 admissions, 2,433 planned paths and one plan failure. The original Gemma error class, failed users, provider software-version share and payout effects remain unavailable.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "Darkbloom Gemma tool-template failures and telemetry rollout"},
+      {"type": "catalyst", "ref": "Darkbloom distributed private inference and Gemma 4 MTP"},
+      {"type": "metric", "ref": "Darkbloom public usage and cache telemetry"}
+    ]
+  },
+  {
     "date": "2026-07-23T13:35:31Z",
     "project": "BANKR / BankrCoin",
     "slug": "04-bankr",
