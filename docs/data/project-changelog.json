@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-07-24T08:03:20Z",
+    "project": "BIO / Bio Protocol",
+    "slug": "20-bio",
+    "type": "verification update",
+    "summary": "VitaApp is a live private-beta web app with published Free/Plus/Pro pricing, VITA staking discounts and inspectable confidential-compute plumbing.",
+    "source": "Official VitaDAO app, terms/privacy, GitHub manifests and Ethereum contract",
+    "url": "https://app.vitadao.com/",
+    "last_scanned": "2026-07-24T08:03:20Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior repo state had only a demo thread with no canonical app, prices, contract or security artifact. Public signup/private-beta access now exposes Free, Plus at EUR 29/month or EUR 299/year, Pro at EUR 79/month or EUR 799/year, 10%–50% discounts above 5,000 VITA staked, verified staking proxy 0x3350…2588 and public Tinfoil/Sigstore manifests. Paid users, revenue, independent audit and any BIO/veBIO route remain unverified.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "VitaApp private longevity co-pilot and VITA subscription loop"},
+      {"type": "open_question", "ref": "VitaApp paid users, revenue, independent audit and BIO/veBIO linkage"}
+    ]
+  },
+  {
+    "date": "2026-07-24T08:03:20Z",
+    "project": "VIRTUAL / Virtuals Protocol",
+    "slug": "15-virtuals",
+    "type": "verification update",
+    "summary": "Binance Wallet's Virtuals campaign is live, but its early leaderboard exposes only eight positive-PnL rows and no campaign volume or retention cohort.",
+    "source": "Official Binance Wallet campaign page and DefiLlama onchain adapters",
+    "url": "https://web3.binance.com/en/pnl-tc/szn4",
+    "last_scanned": "2026-07-24T08:03:20Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "At the 2026-07-24 01:29 UTC snapshot the top displayed realized PnL was only $81.19. Protocol-wide 24h bonding volume was $1.619M and fees $56,648, with fees down 48.08% day over day; neither series is campaign-attributed, and unique/repeat traders, retention and a VIRTUAL holder route remain unavailable.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Direct Robinhood Chain agent trading on Virtuals"},
+      {"type": "open_question", "ref": "Binance Wallet campaign volume, cohorts and post-August-5 retention"},
+      {"type": "metric", "ref": "Virtuals bonding-curve volume and protocol fees"}
+    ]
+  },
+  {
     "date": "2026-07-23T19:32:53Z",
     "project": "EIGEN / EigenCloud",
     "slug": "23-eigencloud",

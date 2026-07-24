@@ -1,5 +1,114 @@
 [
   {
+    "run_id": "verification-run-20260724T074654Z",
+    "started_at": "2026-07-24T07:46:54Z",
+    "completed_at": "2026-07-24T08:11:12Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "mode": "oldest-first verification queue",
+      "queue_source_run": "verification-run-20260723T191940Z",
+      "oldest_selected_origin": "watchlist-scan-20260721T151949Z",
+      "verification_as_of": "2026-07-24T08:11:12Z",
+      "basis": "MetaDAO's older Rip Cars settlement item remains explicitly not due until its four-day sale closes on 2026-07-25 around 17:00 UTC. BIO, Targon and Virtuals were therefore the three oldest actionable items; the live Virtuals campaign had measurable current surfaces even though post-close retention is not yet due."
+    },
+    "scope": "Dedicated verification only for the three oldest actionable items: VitaApp access/economics/security, Targon Tower fulfillment/economics, and the Binance Wallet/Virtuals campaign. No broad fresh-activity sweep.",
+    "projects_checked": ["20-bio", "10-targon", "15-virtuals"],
+    "logged_projects": ["20-bio", "10-targon", "15-virtuals"],
+    "selected_items": [
+      {
+        "project": "BIO / Bio Protocol",
+        "origin": "watchlist-scan-20260721T151949Z",
+        "check": "Find the canonical VitaApp app/download and terms; verify access, users, subscriptions, encryption/audit, VITA discount contracts and any BIO/veBIO route.",
+        "outcome": "confirmed",
+        "resolution": "Official public signup/private-beta access, Free/Plus/Pro prices, 5,000-VITA-minimum discounts, a verified staking proxy and public confidential-compute manifests are now verified. Paid users, revenue, independent audit and BIO/veBIO routing remain bounded open questions rather than a recurring omnibus check."
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "origin": "watchlist-scan-20260722T044753Z",
+        "check": "Verify Tower reservations, terms, ship dates/delivery, realized utilization/economics and 5090 KYC constraints.",
+        "outcome": "stale",
+        "resolution": "The official surface still offers only a free waitlist with reservations opening soon; no order, refund/warranty, shipping, delivery or owner-earnings artifact exists. The 5090 KYC-only constraint is confirmed. Reopen event-driven on an order/terms/shipping artifact or verifiable owner record."
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "origin": "watchlist-scan-20260722T092655Z",
+        "check": "Measure Binance Wallet campaign-attributed volume, unique/repeat traders, protocol fees and retention; continue tax-manager and VIRTUAL route checks.",
+        "outcome": "confirmed",
+        "resolution": "The campaign is live with eight displayed positive-PnL wallets at the captured leaderboard timestamp. Protocol-wide bonding volume and fees are measurable but not campaign-attributed; cohorts, retention and a VIRTUAL holder route are absent. Close the early omnibus check and reopen after August 5 only for final results or a public cohort dataset."
+      }
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 2,
+      "disproven": 0,
+      "stale": 1,
+      "material_changelog_entries": 2,
+      "remaining_next_checks": 9,
+      "errors": 2
+    },
+    "decision_trail": [
+      {
+        "project": "BIO / Bio Protocol",
+        "source": "Official VitaDAO app, rendered terms/privacy, public Tinfoil manifests and Ethereum explorer",
+        "url": "https://app.vitadao.com/",
+        "summary": "The live app exposes public signup/private-beta access and terms with Free, Plus at EUR 29/month or EUR 299/year, Pro at EUR 79/month or EUR 799/year and 10%–50% discounts above 5,000 VITA staked. Its bundle references verified staking proxy 0x3350…2588; official manifests describe XChaCha20-Poly1305 rows, HPKE-sealed key transport and AMD SEV-SNP inference.",
+        "decision": "confirmed — app access, pricing, staking plumbing and inspectable security architecture are verified; paid users/revenue, independent audit and BIO/veBIO linkage remain unproven"
+      },
+      {
+        "project": "Targon — Bittensor Subnet 4",
+        "source": "Official Tower product page, legal routes and live rental inventory API",
+        "url": "https://targon.com/tower",
+        "summary": "The page still says the waitlist is free and reservations are opening soon, with total price due before delivery. It publishes no purchasable reservation, deposit/refund/warranty terms, ship date, deliveries or owner earnings. The RTX 5090 build remains non-monetizable permissionlessly and KYC-tier-only; aggregate rental inventory cannot identify Tower ROI.",
+        "decision": "stale — close the pre-sale fulfillment check and reopen only on order/terms/shipping or verifiable owner delivery/earnings evidence"
+      },
+      {
+        "project": "VIRTUAL / Virtuals Protocol",
+        "source": "Official Binance Wallet campaign page and DefiLlama onchain volume/fee adapters",
+        "url": "https://web3.binance.com/en/pnl-tc/szn4",
+        "summary": "At the campaign page's 2026-07-24 01:29:20 update, eight displayed wallets had positive realized PnL, led by $81.19. Protocol-wide 24h bonding volume was $1.619M and fees $56,648; fees fell 48.08% day over day. Neither series is campaign-attributed, and no unique/repeat cohort, retention metric or VIRTUAL holder route is exposed.",
+        "decision": "confirmed — live campaign and early participation are verified; close the early omnibus task and reopen post-August-5 only for final results or public cohort data"
+      }
+    ],
+    "errors": [
+      {
+        "stage": "delegated research",
+        "error": "All three deep-research delegates timed out after preserving substantial primary evidence; official app bundles, GitHub manifests, product pages, APIs, campaign data and explorer records were independently reproduced in the parent run."
+      },
+      {
+        "stage": "web research",
+        "error": "The configured general web-search/extraction backend was unavailable; direct official HTTPS, X search, GitHub, Blockscout, DefiLlama and project APIs supplied the evidence."
+      }
+    ],
+    "queue_state": {
+      "remaining_count": 9,
+      "oldest_origin": "watchlist-scan-20260715T192052Z",
+      "oldest_age_days": 8.53,
+      "oldest_item_status": "MetaDAO settlement remains explicitly not due until the Rip Cars sale closes around 2026-07-25T17:00:00Z.",
+      "oldest_actionable_origin": "watchlist-scan-20260722T184459Z",
+      "oldest_actionable_age_days": 1.56,
+      "note": "All three selected items were resolved and removed. Untouched checks preserve their original carried_from/origin strings; Virtuals may reopen after August 5 only on a final-results or public cohort artifact."
+    },
+    "next_checks": [
+      {"project": "Worldcoin / WLD / World Network", "check": "On July 24 verify the scheduled 5.1M to 2.9M WLD/day unlock-rate transition and reconcile Community/TFH wallet flows.", "carried_from": "watchlist-scan-20260722T184459Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "Worldcoin / WLD / World Network", "check": "Check PR #909 review/merge, required proposer bindings, audits/tests and deployed contract/code version.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "NEAR Protocol", "check": "Verify PR #16100 reaches a tagged/deployed client, historical queries remain reliable across later split/GC boundaries, and measure ML-DSA, OutLayer, Corbits and Intents economics adoption.", "carried_from": "watchlist-scan-20260722T231058Z; reliability item advanced but deployment/adoption remain unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "META / MetaDAO", "check": "Verify final Rip Cars commitments/settlement, allocation, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.", "carried_from": "watchlist-scan-20260715T192052Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "BANKR / BankrCoin", "check": "Explain the 6.47x Discover row-sum versus dashboard mismatch or reconstruct stock-paired volume from events; map quote assets, creator-stock balances, fee splits and any BNKR route.", "carried_from": "watchlist-scan-20260722T231058Z; API check narrowed but did not resolve methodology in watchlist-scan-20260723T131204Z"},
+      {"project": "Chutes — Bittensor Subnet 64", "check": "After July 24 compare complete pre/post Harvard-endpoint windows and verify a live Chutes-routed dstack report with attributed traffic.", "carried_from": "watchlist-scan-20260722T231058Z; event not yet due in watchlist-scan-20260723T131204Z"},
+      {"project": "GitlWab / GitLawb / Gitwab", "check": "Measure Node/CLI v0.7.0 installs, agents/repos, certificates, active nodes, repeat pushes, external evaluations and any fee/GITLAWB route.", "carried_from": "watchlist-scan-20260723T034901Z; still unresolved in watchlist-scan-20260723T131204Z"},
+      {"project": "AKT / Akash", "check": "Verify stable TEE provider release, multi-provider capacity, named paid deployments, attestation review, failures, spend and BME impact.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Quantify production executors and incremental placements/rentals/revenue affected by PR #1159; continue utilization, concentration, failure and paid-hours history.", "carried_from": "watchlist-scan-20260723T131204Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 2,
+      "tiers": {"high": 0, "medium": 1, "low": 1},
+      "labels": {"20-bio:vitaapp-live-verification": "medium", "15-virtuals:binance-campaign-early-verification": "low"},
+      "rationale": "BIO meaningfully advances a product catalyst with live access, pricing and token-use plumbing but no users, revenue, independent audit or BIO capture. Virtuals is only an early campaign log with tiny displayed PnL, no campaign attribution, cohort/retention evidence or token-value route."
+    }
+  },
+  {
     "run_id": "verification-run-20260723T191940Z",
     "started_at": "2026-07-23T19:19:40Z",
     "completed_at": "2026-07-23T19:41:43Z",
