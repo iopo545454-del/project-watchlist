@@ -86,8 +86,8 @@
     "links_count": 12,
     "file": "projects/04-bankr.md",
     "github_file": "projects/04-bankr.md",
-    "last_updated": "2026-07-23T13:35:31Z",
-    "open_questions": "Explain the 6.47x Discover row-sum versus aggregate-dashboard volume mismatch and rebuild stable Robinhood history; map pool quote tokens/contracts, creator/treasury fee splits, stock balances and any BNKR/Club route; continue bridge/pool, rewards and deprecated-vault checks.",
+    "last_updated": "2026-07-24T20:30:39Z",
+    "open_questions": "Use stock-paired volume only with chain-scoped event definitions; monitor the confirmed 95% creator / 5% Doppler split, creator stock balances/claims, Doppler settlement and any Bankr/BNKR route; continue bridge/pool, rewards and deprecated-vault checks.",
     "html_page": "projects/04-bankr.html",
     "status": "active",
     "initial_review_done": true
@@ -357,8 +357,8 @@
     "links_count": 14,
     "file": "projects/16-worldcoin-wld.md",
     "github_file": "projects/16-worldcoin-wld.md",
-    "last_updated": "2026-07-23T19:32:53Z",
-    "open_questions": "Reopen the Grayscale Worldcoin ETF only on a new SEC/Nasdaq/Grayscale artifact; verify World Chain SP1 deployment/audits, prior Nitro-path exposure and whether PR #909 plus proposer bindings merge and deploy; monitor WIP-1008 implementation and WLD stake/reward/slashing parameters.",
+    "last_updated": "2026-07-24T20:30:39Z",
+    "open_questions": "Reconcile the reduced unlock entitlement with actual Community/TFH releases, circulating supply and exchange/bridge flows; reopen the Grayscale ETF only on a new primary artifact; verify World Chain SP1/PR #909 deployment and WIP-1008 implementation/parameters.",
     "html_page": "projects/16-worldcoin-wld.html",
     "status": "active",
     "initial_review_done": true
@@ -382,8 +382,8 @@
     "links_count": 16,
     "file": "projects/17-near.md",
     "github_file": "projects/17-near.md",
-    "last_updated": "2026-07-23T13:35:31Z",
-    "open_questions": "Verify PR #16100 reaches a tagged/deployed client and historical queries remain reliable across later shard splits; monitor 10-shard health and ML-DSA adoption; measure OutLayer/Intents usage, define NEAR@3.33 claims and reconcile revenue, buybacks and emissions.",
+    "last_updated": "2026-07-24T20:30:39Z",
+    "open_questions": "Reopen PR #16100 only on a tagged/deployed build, later split or recurrence; locate an ML-DSA adoption index, Intents-attributed OutLayer cohort and Corbits request/payment ledger; continue NEAR@3.33, revenue, buyback and emissions reconciliation.",
     "html_page": "projects/17-near.html",
     "initial_review_done": true,
     "status": "active"

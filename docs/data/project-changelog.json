@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-07-24T20:30:39Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "verification update",
+    "summary": "WLD's scheduled unlock-rate reduction completed: aggregate entitlement fell from about 5.1M to 2.9M WLD/day, with the Community leg reproduced directly from Ethereum vesting contracts.",
+    "source": "Official World tokenomics schedule and Ethereum vesting contracts",
+    "url": "https://world.org/blog/foundational-topics/tokenomics-milestone-wld-unlock-rate-to-decrease-by-43-in-july",
+    "last_scanned": "2026-07-24T20:30:39Z",
+    "novelty": "update",
+    "importance": "high",
+    "delta": "The previously upcoming July 24 catalyst is now completed. Community vested entitlement was 3,193,430.66 WLD in the preceding 24 hours; the new tranche contract projects 1,596,715.33 WLD over the next 24 hours after 0x1770…C296 ended and 0xaEE0…0e57 started. Official schedules put the full allocation change at about 5.1M→2.9M WLD/day. This is unlocked entitlement, not proof of selling or circulation.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "WLD unlock rate decreases by 43%"},
+      {"type": "metric", "ref": "WLD unlocked, released and circulating supply"}
+    ]
+  },
+  {
+    "date": "2026-07-24T20:30:39Z",
+    "project": "BANKR / BankrCoin",
+    "slug": "04-bankr",
+    "type": "verification update",
+    "summary": "Bankr's stock-paired fee plumbing is now reproducible: a 0.7% swap fee sends 95% to the beneficiary and 5% to Doppler, with creator stock-token claims visible through the public API.",
+    "source": "Official Bankr docs and public fee/Discover APIs",
+    "url": "https://docs.bankr.bot/docs/token-launching/fee-splitting.md",
+    "last_scanned": "2026-07-24T20:30:39Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The repo previously lacked exact stock-paired quote/fee fields and creator balances. The GME sample now exposes the stock numeraire, 95% beneficiary share and four realized claims, but docs state only a 5% Doppler protocol share and no Bankr/BNKR route. The former 6.47x Discover/dashboard ratio proved unstable and is retired as a cross-endpoint KPI.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Stock-paired token launches on Robinhood Chain"},
+      {"type": "open_question", "ref": "Doppler settlement and Bankr/BNKR value routing"},
+      {"type": "metric", "ref": "Creator stock-token balances and claims"}
+    ]
+  },
+  {
+    "date": "2026-07-24T20:30:39Z",
+    "project": "NEAR Protocol",
+    "slug": "17-near",
+    "type": "verification update",
+    "summary": "NEAR's post-split omnibus check is closed: PR #16100 remains untagged/undeployed and current archival queries are healthy, while OutLayer exposes platform-wide usage but no Intents-attributed cohort.",
+    "source": "Official nearcore Git refs, archival mainnet RPC and OutLayer public API",
+    "url": "https://api.outlayer.fastnear.com/public/stats",
+    "last_scanned": "2026-07-24T20:30:39Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "No release tag or 2.13-release branch contains PR #16100; archival RPC still reports 2.13.1/Protocol 86 and earliest_available queries currently succeed. OutLayer reports 192,052 executions, 452 unique users and 90.6870625 NEAR paid platform-wide, but those totals cannot be attributed to contract-native Intents, ML-DSA adoption or Corbits.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Post-quantum signing, dynamic resharding, and SPICE upgrades"},
+      {"type": "catalyst", "ref": "Contract-native NEAR Intents via yield/resume + OutLayer"},
+      {"type": "metric", "ref": "OutLayer platform executions and NEAR paid"}
+    ]
+  },
+  {
     "date": "2026-07-24T08:03:20Z",
     "project": "BIO / Bio Protocol",
     "slug": "20-bio",
