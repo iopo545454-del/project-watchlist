@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-07-25T21:17:21Z",
+    "project": "META / MetaDAO",
+    "slug": "03-meta",
+    "type": "verification update",
+    "summary": "Rip Cars' raise settled onchain: 723 records committed $31.969M, exactly $250K was accepted, and every CARS claim plus required USDC refund completed.",
+    "source": "Official MetaDAO X, canonical launchpad source and Solana launch/funding accounts",
+    "url": "https://x.com/MetaDAOProject/status/2081062259451973697",
+    "last_scanned": "2026-07-25T21:17:21Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior state had only an open sale and $9.2M early snapshot. The completed launch PDA now reproduces $31,968,872 committed, $250,000 approved, 723/723 token claims and refunds for all 714 records owed excess USDC. A 12.9M-CARS performance package has an 18-month minimum unlock delay; no platform-fee or META-accrual route was found.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Rip Cars $250K raise and Ownership Score allocation pilot"},
+      {"type": "open_question", "ref": "Rip Cars allocation, settlement, unlocks, fees and META accrual"},
+      {"type": "metric", "ref": "MetaDAO raise commitments, approved capital and contributor settlement"}
+    ]
+  },
+  {
+    "date": "2026-07-25T21:17:21Z",
+    "project": "GitlWab / GitLawb / Gitwab",
+    "slug": "06-gitlawb",
+    "type": "verification update",
+    "summary": "Node/CLI v0.7.0 passed an independent register→repo→two-push→signed-certificate test; the buyback vault also advanced to 49 flushes and 180.964M GITLAWB burned.",
+    "source": "Official GitLawb node/explorer APIs, GitHub/npm and Base buyback contract",
+    "url": "https://node.gitlawb.com/api/v1/repos/z6MkrW9fxasezg8vinBVDABsvqxhNEMHxvp9kAf6u86RRJng/external-v070-verification-20260725",
+    "last_scanned": "2026-07-25T21:17:21Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The prior release was only issuer-tested and the vault stood at 26 flushes / 90.144M burned. A fresh external workflow now verifies certificate issuance, while 4 agents and 8 repos appeared after release (one of each created by this test). The vault added 23 flushes and 90.820M burned tokens, but upstream USDC/product attribution remains unavailable.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Agent-native decentralized Git / Node v0.7.0"},
+      {"type": "catalyst", "ref": "Protocol-revenue GITLAWB buyback-and-burn vault"},
+      {"type": "metric", "ref": "GITLAWB bought and burned"}
+    ]
+  },
+  {
     "date": "2026-07-24T20:30:39Z",
     "project": "Worldcoin / WLD / World Network",
     "slug": "16-worldcoin-wld",

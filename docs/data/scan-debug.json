@@ -1,5 +1,112 @@
 [
   {
+    "run_id": "verification-run-20260725T205807Z",
+    "started_at": "2026-07-25T20:58:07Z",
+    "completed_at": "2026-07-25T21:28:24Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "mode": "oldest-first verification queue",
+      "queue_source_run": "verification-run-20260724T201547Z",
+      "oldest_selected_origin": "watchlist-scan-20260715T192052Z",
+      "verification_as_of": "2026-07-25T21:28:24Z",
+      "basis": "The Rip Cars sale had passed its 2026-07-25 17:00 UTC close and became the oldest actionable item. Chutes then had post-July-24 evidence available, followed by GitLawb as the next-oldest actionable origin."
+    },
+    "scope": "Dedicated verification only for the three oldest actionable items: MetaDAO Rip Cars settlement/economics, Chutes post-Harvard/dstack attribution and GitLawb Node/CLI v0.7.0 adoption/value routing. No broad fresh-activity sweep.",
+    "projects_checked": ["03-meta", "24-chutes", "06-gitlawb"],
+    "logged_projects": ["03-meta", "24-chutes", "06-gitlawb"],
+    "selected_items": [
+      {
+        "project": "META / MetaDAO",
+        "origin": "watchlist-scan-20260715T192052Z",
+        "check": "Verify final Rip Cars commitments/settlement, allocation, unlocks, fees and META accrual; continue Credible onchain and MetaDAO 2.0/NAV-band checks.",
+        "outcome": "confirmed",
+        "resolution": "Rip Cars' launch and 723 funding records reproduce $31.969M committed, $250K approved and complete token/refund settlement. The 12.9M-CARS performance package has an 18-month minimum delay; no launch fee or META route is exposed. Credible attribution and MetaDAO 2.0 remain event-driven dossier questions, not queue carry-forwards."
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "origin": "watchlist-scan-20260722T231058Z",
+        "check": "After July 24 compare complete pre/post Harvard-endpoint windows and verify a live Chutes-routed dstack report with attributed traffic.",
+        "outcome": "stale",
+        "resolution": "Public Chutes APIs aggregate all routes, no complete attributed post-close window exists and the old hostname remains auth-gated. dstack is a developer preview with in-memory receipts, no public transparency log and no official public gateway deployment. Reopen only on route-attributed history or a public report/receipt plus traffic."
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "origin": "watchlist-scan-20260723T034901Z",
+        "check": "Measure Node/CLI v0.7.0 installs, agents/repos, certificates, active nodes, repeat pushes, external evaluations and any fee/GITLAWB route.",
+        "outcome": "confirmed",
+        "resolution": "A fresh external v0.7.0 workflow registered a DID, created a repo, accepted two pushes and verified a signed certificate. Registries show bounded post-release adoption, while the buyback vault reached 49 flushes / 180.964M burned; unique installs, retention and upstream revenue attribution remain unavailable."
+      }
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 2,
+      "disproven": 0,
+      "stale": 1,
+      "material_changelog_entries": 2,
+      "remaining_next_checks": 3,
+      "errors": 3
+    },
+    "decision_trail": [
+      {
+        "project": "META / MetaDAO",
+        "source": "Official MetaDAO close posts, canonical v0.7 launchpad source and direct Solana launch/funding accounts",
+        "url": "https://solscan.io/account/8uMemVUT1ToSuda2jBVhcaPmJWq5C3bKe7DhrM5wkqZP",
+        "summary": "The launch closed at 17:00:01 UTC and completed at 18:00:01. Its 723 funding records total $31,968,872 committed and $250,000 approved; all 723 claimed CARS and all 714 records owed excess USDC were refunded. Config fixes 12.9M performance tokens, an 18-month minimum unlock and a $40K monthly spending limit.",
+        "decision": "confirmed — complete the catalyst and close the omnibus queue item; no platform fee or META route is proven"
+      },
+      {
+        "project": "Chutes — Bittensor Subnet 64",
+        "source": "Official Chutes revenue/throughput/evidence APIs and dstack private-ai-gateway source",
+        "url": "https://api.chutes.ai/daily_revenue_summary",
+        "summary": "July 21–23 totaled $45,629.24 revenue, 21,998,468 requests and 150.919B tokens. July 24 revenue and tokens were 7.64% and 7.93% below the pre-window daily average while revenue/T was flat, but the APIs expose no endpoint dimension. No official public dstack gateway, durable receipt or attributed traffic ledger exists.",
+        "decision": "stale — retire the unmeasurable recurring comparison and reopen only on route-attributed history or a public gateway report/receipt"
+      },
+      {
+        "project": "GitlWab / GitLawb / Gitwab",
+        "source": "Official GitLawb node/explorer APIs, GitHub/npm and Base buyback contract",
+        "url": "https://node.gitlawb.com/api/v1/repos/z6MkrW9fxasezg8vinBVDABsvqxhNEMHxvp9kAf6u86RRJng/external-v070-verification-20260725",
+        "summary": "The independent artifact proves registration, repository creation, two pushes and a node-signed certificate. Four normalized registries expose 3,973 agents / 12,087 repos but only four agents and eight repos appeared after release, including the verifier. The burn vault advanced from 26/90.144M to 49/180.964M GITLAWB.",
+        "decision": "confirmed — close broad v0.7.0 adoption verification; retain only bounded cohort and upstream-revenue questions"
+      }
+    ],
+    "errors": [
+      {
+        "stage": "delegated research",
+        "error": "The MetaDAO and GitLawb delegates timed out after preserving substantial primary evidence; their X, Solana, node/explorer, npm/GitHub and contract observations were independently reproduced in the parent run."
+      },
+      {
+        "stage": "web research",
+        "error": "The configured general web-search/extraction backend was unavailable; X search and direct official HTTPS, GitHub, RPC, API and explorer methods supplied the evidence."
+      },
+      {
+        "stage": "local evidence tooling",
+        "error": "The system Python lacked the optional solders package for the first launch-PDA decode; the canonical PDA was recovered from the preserved isolated verification environment and independently decoded with direct RPC plus the canonical account layout."
+      }
+    ],
+    "queue_state": {
+      "remaining_count": 3,
+      "oldest_origin": "watchlist-scan-20260723T131204Z",
+      "oldest_age_days": 2.34,
+      "oldest_item_status": "World Chain PR #909, Akash TEE rollout and Lium PR #1159 production impact share the oldest remaining origin; all remain actionable.",
+      "oldest_actionable_origin": "watchlist-scan-20260723T131204Z",
+      "oldest_actionable_age_days": 2.34,
+      "note": "All three selected items were resolved and removed. Untouched checks preserve their original carried_from strings."
+    },
+    "next_checks": [
+      {"project": "Worldcoin / WLD / World Network", "check": "Check PR #909 review/merge, required proposer bindings, audits/tests and deployed contract/code version.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "AKT / Akash", "check": "Verify stable TEE provider release, multi-provider capacity, named paid deployments, attestation review, failures, spend and BME impact.", "carried_from": "watchlist-scan-20260723T131204Z"},
+      {"project": "Lium — Bittensor Subnet 51", "check": "Quantify production executors and incremental placements/rentals/revenue affected by PR #1159; continue utilization, concentration, failure and paid-hours history.", "carried_from": "watchlist-scan-20260723T131204Z"}
+    ],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 2,
+      "tiers": {"high": 0, "medium": 2, "low": 0},
+      "labels": {"03-meta:rip-cars-settlement": "medium", "06-gitlawb:v0.7.0-and-burn-verification": "medium"},
+      "rationale": "MetaDAO is a completed instance of the core raise loop without a META fee route. GitLawb has independently verified product use and more burns, but adoption is small and no dollar notional or upstream revenue attribution supports high/actionable."
+    }
+  },
+  {
     "run_id": "verification-run-20260724T201547Z",
     "started_at": "2026-07-24T20:15:47Z",
     "completed_at": "2026-07-24T20:34:58Z",

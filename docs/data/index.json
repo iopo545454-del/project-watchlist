@@ -62,8 +62,8 @@
     "links_count": 20,
     "file": "projects/03-meta.md",
     "github_file": "projects/03-meta.md",
-    "last_updated": "2026-07-21T20:08:18Z",
-    "open_questions": "Verify MetaDAO 2.0 contracts/NAV bands; reproduce documented sale mechanics and Credible $4M settlement onchain, including allocation concentration, platform fees and META value accrual; verify canonical token source and aggregate launch metrics.",
+    "last_updated": "2026-07-25T21:17:21Z",
+    "open_questions": "Rip Cars settlement is onchain-reproduced; reopen only for its Ownership Score allocation export, unlocks or fee/META route. Event-driven checks remain for MetaDAO 2.0/NAV bands, Credible launch-PDA/treasury mapping and fee/META accrual, the canonical META token source and aggregate launch metrics.",
     "html_page": "projects/03-meta.html",
     "token_address": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
     "status": "active",
@@ -131,8 +131,8 @@
     "links_count": 22,
     "file": "projects/06-gitlawb.md",
     "github_file": "projects/06-gitlawb.md",
-    "last_updated": "2026-07-23T04:18:01Z",
-    "open_questions": "Measure Node/CLI v0.7.0 agents, repos, verified certificates, active nodes and repeat pushes; map each buyback-vault flush to upstream USDC and Ads/OpenGateway/x402 net revenue; monitor supply/LP/LayerZero controls, Zero adoption, Blockagent MCP economics, Ads cohorts, model checkpoints and voting economics.",
+    "last_updated": "2026-07-25T21:17:21Z",
+    "open_questions": "Node/CLI v0.7.0's end-to-end workflow is independently verified; reopen adoption only for stable active/retained-user or version-share evidence. Continue buyback USDC/product attribution, supply/LP/LayerZero controls, OpenGateway economics, Blockagent MCP, Ads cohorts, model checkpoints and voting economics.",
     "html_page": "projects/06-gitlawb.html",
     "initial_review_done": true
   },
@@ -540,14 +540,14 @@
       "https://x.com/chutes_ai"
     ],
     "links_count": 8,
-    "open_questions": "Measure post-July-24 traffic/revenue-per-token after the Harvard 25% research discount and recording endpoint close; reconcile remaining hidden incentives, provider expenses/gross margin and integration-attributed volume. Reopen Parallax only for artifacts, replication or paid revenue.",
+    "open_questions": "The Harvard endpoint and public dstack deployment checks are closed stale because public data lacks route attribution and durable public receipts. Reopen only on endpoint-attributed history or a public gateway report/receipt; continue hidden-incentive, provider-expense/gross-margin and integration-volume checks.",
     "status": "active",
     "initial_review_done": true,
     "slug": "24-chutes",
     "file": "projects/24-chutes.md",
     "github_file": "projects/24-chutes.md",
     "html_page": "projects/24-chutes.html",
-    "last_updated": "2026-07-23T08:59:01Z"
+    "last_updated": "2026-07-25T21:17:21Z"
   },
   {
     "project": "Lium — Bittensor Subnet 51",
