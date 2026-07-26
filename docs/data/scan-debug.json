@@ -1,5 +1,104 @@
 [
   {
+    "run_id": "verification-run-20260726T092900Z",
+    "started_at": "2026-07-26T09:29:00Z",
+    "completed_at": "2026-07-26T09:52:26Z",
+    "status": "success_with_recovered_errors",
+    "scan_window": {
+      "mode": "oldest-first verification queue",
+      "queue_source_run": "verification-run-20260725T205807Z",
+      "oldest_selected_origin": "watchlist-scan-20260723T131204Z",
+      "verification_as_of": "2026-07-26T09:52:26Z",
+      "basis": "World Chain PR #909, Akash TEE rollout and Lium PR #1159 production impact were the only three remaining queue items and shared the oldest actionable origin."
+    },
+    "scope": "Dedicated verification only for the three remaining queue items: World Chain PR #909 integration/deployment, Akash TEE production adoption/economics and Lium PR #1159 production impact. No broad fresh-activity sweep.",
+    "projects_checked": ["16-worldcoin-wld", "12-akt-akash", "25-lium"],
+    "logged_projects": ["16-worldcoin-wld", "12-akt-akash", "25-lium"],
+    "selected_items": [
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "origin": "watchlist-scan-20260723T131204Z",
+        "check": "Check PR #909 review/merge, required proposer bindings, audits/tests and deployed contract/code version.",
+        "outcome": "stale",
+        "resolution": "PR #909 has one approval and passing branch checks but remains unmerged, unaudited and undeployed; proposer bindings are unresolved and draft #916 may supersede its fail-closed initial-proof semantics. Reopen only on a merged, audited and versioned successor."
+      },
+      {
+        "project": "AKT / Akash",
+        "origin": "watchlist-scan-20260723T131204Z",
+        "check": "Verify stable TEE provider release, multi-provider capacity, named paid deployments, attestation review, failures, spend and BME impact.",
+        "outcome": "confirmed",
+        "resolution": "Experimental TEE plumbing is live on one audited release-candidate provider and one funded CPU-TEE request exists, but it has zero bids/leases. No stable multi-provider release, named paid workload, public outcome series or TEE-attributed spend/BME exists."
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "origin": "watchlist-scan-20260723T131204Z",
+        "check": "Quantify production executors and incremental placements/rentals/revenue affected by PR #1159; continue utilization, concentration, failure and paid-hours history.",
+        "outcome": "stale",
+        "resolution": "Merged fix 7d083ad is absent from prod_validator, which remains at February commit eabd545, so production effects cannot be attributed. Utilization fell 8.45pp as supply outgrew rentals; July revenue rose, but neither series is release-attributed."
+      }
+    ],
+    "counts": {
+      "items_selected": 3,
+      "confirmed": 1,
+      "disproven": 0,
+      "stale": 2,
+      "material_changelog_entries": 3,
+      "remaining_next_checks": 0,
+      "errors": 2
+    },
+    "decision_trail": [
+      {
+        "project": "Worldcoin / WLD / World Network",
+        "source": "Official World Chain GitHub PRs, bindings, CI and deployment records",
+        "url": "https://github.com/worldcoin/world-chain/pull/909",
+        "summary": "PR #909 remains open at 806c2dd with one approval and passing branch tests. Canonical proposer bindings still use the old propose call, prerequisite #913 is open, draft #916 preserves optimistic no-initial-proof creation, the contracts are labeled unaudited and no branch-SHA deployment exists.",
+        "decision": "stale — remove the recurring queue item and reopen only on a merged successor with settled semantics, proposer integration, audit/CI and a versioned deployment"
+      },
+      {
+        "project": "AKT / Akash",
+        "source": "Official Akash releases, docs and provider/deployment/dashboard/BME APIs",
+        "url": "https://console-api.akash.network/v1/providers",
+        "summary": "v0.14.2 remains latest stable. One online audited 0.16.0-rc1 provider exposes 24 available TEE GPUs. Across 12,018 active deployment records, one funded CPU-TEE request exists but has zero bids and leases; roughly $7,485.85 daily network spend and 3,770.747449 AKT current-day net burn are not TEE-attributed.",
+        "decision": "confirmed — experimental single-provider/request plumbing is real; close the omnibus check and reopen only on bounded stable-release, paid-workload, attestation/outcome or attributed-economic evidence"
+      },
+      {
+        "project": "Lium — Bittensor Subnet 51",
+        "source": "Official Lium GitHub branches/actions and utilization/revenue APIs",
+        "url": "https://github.com/Datura-ai/lium-io/pull/1159",
+        "summary": "Fix 7d083ad is in main but not prod_validator; the public production workflow last ran April 12. GPU state moved 659/974 to 675/1,140 rented (-8.45pp utilization), and July validator-attributed revenue rose 23.57% to 474,711.54, but no release/placement attribution exists.",
+        "decision": "stale — close PR #1159 production-impact attribution and reopen only after a production deployment SHA plus before/after affected-executor, placement/failure and paid-hours evidence"
+      }
+    ],
+    "errors": [
+      {
+        "stage": "delegated research",
+        "error": "The Akash and Lium delegates timed out after preserving substantial official API/GitHub evidence; all accepted observations were reproduced directly in the parent run."
+      },
+      {
+        "stage": "web research",
+        "error": "The configured general web extraction/search backend was unavailable; authenticated GitHub, direct Git, official APIs, RPC-style chain endpoints and project documentation supplied the evidence."
+      }
+    ],
+    "queue_state": {
+      "remaining_count": 0,
+      "oldest_origin": null,
+      "oldest_age_days": null,
+      "oldest_item_status": "Queue cleared: all three remaining origin-20260723 items were resolved and removed.",
+      "oldest_actionable_origin": null,
+      "oldest_actionable_age_days": null,
+      "note": "The three selected items were resolved without resetting any origin. Future event-driven reopen criteria remain in the dossiers but are not carry-forwards."
+    },
+    "next_checks": [],
+    "importance_tagging": {
+      "method": "independent delegate_task agent",
+      "status": "completed",
+      "entries_tagged": 3,
+      "tiers": {"high": 0, "medium": 2, "low": 1},
+      "labels": {"16-worldcoin-wld:pr-909-stale": "low", "12-akt-akash:tee-experimental-verification": "medium", "25-lium:pr-1159-production-attribution": "medium"},
+      "rationale": "Worldcoin is a stale development-status log. Akash materially narrows experimental TEE adoption, and Lium corrects deployment attribution alongside sizeable API movement, but neither is an actionable operating-model step change."
+    }
+  },
+  {
     "run_id": "verification-run-20260725T205807Z",
     "started_at": "2026-07-25T20:58:07Z",
     "completed_at": "2026-07-25T21:28:24Z",

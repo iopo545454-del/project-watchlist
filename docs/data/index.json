@@ -262,8 +262,8 @@
     "links_count": 10,
     "file": "projects/12-akt-akash.md",
     "github_file": "projects/12-akt-akash.md",
-    "last_updated": "2026-07-23T13:35:31Z",
-    "open_questions": "Verify whether TEE support advances from one audited release-candidate provider to a stable release, multiple providers, attestation review and named paid deployments; separately reopen PR #400 multi-node rollout only for stable release, advertised capacity and paid workloads; monitor value capture and spend.",
+    "last_updated": "2026-07-26T09:44:52Z",
+    "open_questions": "TEE is verified as experimental single-provider plumbing with one funded but unleased request; reopen only for a stable release, multiple providers, a leased named workload, public attestation/failure data or feature-attributed spend/BME. Separately reopen PR #400 only for stable multi-node rollout.",
     "html_page": "projects/12-akt-akash.html",
     "status": "active",
     "initial_review_done": true
@@ -357,8 +357,8 @@
     "links_count": 14,
     "file": "projects/16-worldcoin-wld.md",
     "github_file": "projects/16-worldcoin-wld.md",
-    "last_updated": "2026-07-24T20:30:39Z",
-    "open_questions": "Reconcile the reduced unlock entitlement with actual Community/TFH releases, circulating supply and exchange/bridge flows; reopen the Grayscale ETF only on a new primary artifact; verify World Chain SP1/PR #909 deployment and WIP-1008 implementation/parameters.",
+    "last_updated": "2026-07-26T09:44:52Z",
+    "open_questions": "Reconcile reduced unlock entitlement with actual releases/circulation/flows; reopen the Grayscale ETF only on a new primary artifact. PR #909 is stale/unshipped amid an OP-native design pivot; reopen only on a merged audited deployed successor. Continue SP1 and WIP-1008 implementation checks.",
     "html_page": "projects/16-worldcoin-wld.html",
     "status": "active",
     "initial_review_done": true
@@ -559,14 +559,14 @@
       "https://x.com/lium_io"
     ],
     "links_count": 7,
-    "open_questions": "Quantify production executors and incremental rentals unblocked by PR #1159; reconcile official revenue/utilization APIs to renter payments, provider payout, platform fee and customer concentration; map the June 2,500 TAO buyback/burn wallet and repeat cadence.",
+    "open_questions": "PR #1159 is absent from the production validator branch; reopen impact attribution only after a production deployment SHA and before/after executor/placement/failure/paid-hours evidence. Continue revenue/utilization reconciliation, customer concentration and June 2,500 TAO burn-wallet mapping.",
     "status": "active",
     "initial_review_done": true,
     "slug": "25-lium",
     "file": "projects/25-lium.md",
     "github_file": "projects/25-lium.md",
     "html_page": "projects/25-lium.html",
-    "last_updated": "2026-07-23T13:35:31Z"
+    "last_updated": "2026-07-26T09:44:52Z"
   },
   {
     "project": "Compute Horde — Bittensor Subnet 12",

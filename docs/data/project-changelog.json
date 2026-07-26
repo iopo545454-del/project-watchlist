@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-07-26T09:44:52Z",
+    "project": "Worldcoin / WLD / World Network",
+    "slug": "16-worldcoin-wld",
+    "type": "verification update",
+    "summary": "World Chain PR #909 remains unmerged, unaudited and undeployed; an OP-native draft may supersede its fail-closed initial-proof design, so the recurring check is closed stale.",
+    "source": "Official World Chain GitHub PRs, bindings, checks and deployment records",
+    "url": "https://github.com/worldcoin/world-chain/pull/909",
+    "last_scanned": "2026-07-26T09:44:52Z",
+    "novelty": "update",
+    "importance": "low",
+    "delta": "Since the July 23 open-PR snapshot, #909 gained one approval and passing branch checks but no merge, proposer-binding integration, external audit or deployment. Draft #916 now proposes stock OP contracts while explicitly retaining optimistic creation without an initial proof.",
+    "relates_to": [
+      {"type": "watch_item", "ref": "World Chain fail-closed proof-game creation / PR #909"},
+      {"type": "catalyst", "ref": "World Chain multi-proof validity verifier and proof-system hardening"},
+      {"type": "open_question", "ref": "SP1, proof-game and multi-proof audit/deployment status"}
+    ]
+  },
+  {
+    "date": "2026-07-26T09:44:52Z",
+    "project": "AKT / Akash",
+    "slug": "12-akt-akash",
+    "type": "verification update",
+    "summary": "Akash TEE reached one funded CPU-TEE request, but it had zero bids and leases; capacity remains one audited release-candidate provider and the feature is explicitly experimental.",
+    "source": "Official Akash provider/deployment/BME APIs, GitHub releases and docs",
+    "url": "https://console-api.akash.network/v1/providers",
+    "last_scanned": "2026-07-26T09:44:52Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "The July 23 baseline had docs and one audited 0.16.0-rc1 provider. The complete 12,018-record active-deployment set now contains one funded CPU-TEE request, but it has no bid or lease; v0.14.2 remains latest stable, and neither roughly $7,485.85 network daily spend nor 3,770.747449 AKT current-day net burn is TEE-attributed.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "Confidential computing and TEE rollout"},
+      {"type": "open_question", "ref": "Stable multi-provider TEE adoption, attestations and paid workloads"},
+      {"type": "metric", "ref": "TEE providers, requests, bids, leases and attributed spend"}
+    ]
+  },
+  {
+    "date": "2026-07-26T09:44:52Z",
+    "project": "Lium — Bittensor Subnet 51",
+    "slug": "25-lium",
+    "type": "verification update",
+    "summary": "Lium PR #1159 is merged to main but absent from the production validator branch, so current utilization and revenue changes cannot be credited to the placement fix.",
+    "source": "Official Lium GitHub branches/actions and utilization/revenue APIs",
+    "url": "https://github.com/Datura-ai/lium-io/pull/1159",
+    "last_scanned": "2026-07-26T09:44:52Z",
+    "novelty": "update",
+    "importance": "medium",
+    "delta": "Versus July 23, rented GPUs rose only 16 while total supply rose 166, moving utilization from 659/974 (67.66%) to 675/1,140 (59.21%, -8.45pp). July validator-attributed revenue rose 23.57% to 474,711.54, but prod_validator remains at eabd545 and does not contain merged fix 7d083ad.",
+    "relates_to": [
+      {"type": "catalyst", "ref": "High-end GPU inventory and Blackwell availability"},
+      {"type": "open_question", "ref": "PR #1159 production impact and affected executors"},
+      {"type": "metric", "ref": "GPU utilization and validator-attributed rental revenue"}
+    ]
+  },
+  {
     "date": "2026-07-25T21:17:21Z",
     "project": "META / MetaDAO",
     "slug": "03-meta",
