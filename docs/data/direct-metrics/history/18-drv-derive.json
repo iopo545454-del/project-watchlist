@@ -516,6 +516,11 @@
         "t": "2026-07-27T15:11:17Z",
         "v": 6186.0,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-07-27T19:53:29Z",
+        "v": 6186.0,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "total30d": [
@@ -1031,6 +1036,11 @@
       },
       {
         "t": "2026-07-27T15:11:17Z",
+        "v": 488576.0,
+        "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-07-27T19:53:29Z",
         "v": 488576.0,
         "source_id": "defillama_derive_fees"
       }
@@ -1550,6 +1560,11 @@
         "t": "2026-07-27T15:11:17Z",
         "v": 100933.0,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-07-27T19:53:29Z",
+        "v": 100933.0,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "tvl_total": [
@@ -2067,12 +2082,17 @@
         "t": "2026-07-27T15:11:17Z",
         "v": 114721055.0,
         "source_id": "defillama_derive_tvl"
+      },
+      {
+        "t": "2026-07-27T19:53:29Z",
+        "v": 113134643.0,
+        "source_id": "defillama_derive_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "DRV / Derive Protocol",
-  "generated_at": "2026-07-27T15:11:17Z",
+  "generated_at": "2026-07-27T19:53:29Z",
   "chain_breakdown": [
     {
       "t": "2026-07-05T00:22:15Z",
@@ -5161,6 +5181,36 @@
           "chain": "Ethereum",
           "value": 12492655,
           "display": "$12.5M"
+        }
+      ]
+    },
+    {
+      "t": "2026-07-27T19:53:29Z",
+      "values": [
+        {
+          "chain": "Hyperliquid L1",
+          "value": 31490315,
+          "display": "$31.5M"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 23964963,
+          "display": "$24.0M"
+        },
+        {
+          "chain": "OP Mainnet",
+          "value": 23154706,
+          "display": "$23.2M"
+        },
+        {
+          "chain": "Base",
+          "value": 21635875,
+          "display": "$21.6M"
+        },
+        {
+          "chain": "Ethereum",
+          "value": 12888782,
+          "display": "$12.9M"
         }
       ]
     }
