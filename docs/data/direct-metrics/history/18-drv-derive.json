@@ -916,6 +916,11 @@
         "t": "2026-08-16T12:58:54Z",
         "v": 10117.0,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-08-16T18:45:00Z",
+        "v": 10117.0,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "total30d": [
@@ -1831,6 +1836,11 @@
       },
       {
         "t": "2026-08-16T12:58:54Z",
+        "v": 371897.0,
+        "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-08-16T18:45:00Z",
         "v": 371897.0,
         "source_id": "defillama_derive_fees"
       }
@@ -2750,6 +2760,11 @@
         "t": "2026-08-16T12:58:54Z",
         "v": 72966.0,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-08-16T18:45:00Z",
+        "v": 72966.0,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "tvl_total": [
@@ -3667,12 +3682,17 @@
         "t": "2026-08-16T12:58:54Z",
         "v": 119298516.0,
         "source_id": "defillama_derive_tvl"
+      },
+      {
+        "t": "2026-08-16T18:45:00Z",
+        "v": 119731632.0,
+        "source_id": "defillama_derive_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "DRV / Derive Protocol",
-  "generated_at": "2026-08-16T12:58:54Z",
+  "generated_at": "2026-08-16T18:45:00Z",
   "chain_breakdown": [
     {
       "t": "2026-07-05T00:22:15Z",
@@ -9161,6 +9181,36 @@
           "chain": "Arbitrum",
           "value": 16336757,
           "display": "$16.3M"
+        }
+      ]
+    },
+    {
+      "t": "2026-08-16T18:45:00Z",
+      "values": [
+        {
+          "chain": "Hyperliquid L1",
+          "value": 35678591,
+          "display": "$35.7M"
+        },
+        {
+          "chain": "Base",
+          "value": 26572046,
+          "display": "$26.6M"
+        },
+        {
+          "chain": "OP Mainnet",
+          "value": 22836800,
+          "display": "$22.8M"
+        },
+        {
+          "chain": "Ethereum",
+          "value": 18256552,
+          "display": "$18.3M"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 16387639,
+          "display": "$16.4M"
         }
       ]
     }
