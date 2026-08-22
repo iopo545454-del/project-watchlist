@@ -1021,12 +1021,17 @@
         "t": "2026-08-22T06:57:25Z",
         "v": 4179204.0,
         "source_id": "defillama_bio_tvl"
+      },
+      {
+        "t": "2026-08-22T12:58:32Z",
+        "v": 4249773.0,
+        "source_id": "defillama_bio_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "BIO / Bio Protocol",
-  "generated_at": "2026-08-22T06:57:25Z",
+  "generated_at": "2026-08-22T12:58:32Z",
   "chain_breakdown": [
     {
       "t": "2026-07-05T00:22:15Z",
@@ -4084,6 +4089,21 @@
         {
           "chain": "Base",
           "value": 1908538.18478,
+          "display": "$1.9M"
+        }
+      ]
+    },
+    {
+      "t": "2026-08-22T12:58:32Z",
+      "values": [
+        {
+          "chain": "Ethereum",
+          "value": 2313525.86459,
+          "display": "$2.3M"
+        },
+        {
+          "chain": "Base",
+          "value": 1936247.3603,
           "display": "$1.9M"
         }
       ]
