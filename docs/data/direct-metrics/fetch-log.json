@@ -1,10 +1,10 @@
 {
   "version": 1,
   "latest_run": {
-    "run_id": "direct-data-20260828T221638Z",
-    "started_at": "2026-08-28T22:16:38Z",
-    "completed_at": "2026-08-28T22:16:43Z",
-    "status": "active",
+    "run_id": "direct-data-20260829T070133Z",
+    "started_at": "2026-08-29T07:01:33Z",
+    "completed_at": "2026-08-29T07:02:05Z",
+    "status": "partial",
     "projects_checked": [
       "07-kinetiq",
       "08-grass",
@@ -21,8 +21,8 @@
       "26-compute-horde"
     ],
     "sources_checked": 20,
-    "sources_ok": 16,
-    "sources_failed": 0,
+    "sources_ok": 15,
+    "sources_failed": 1,
     "sources_skipped": 4,
     "project_results": [
       {
@@ -81,12 +81,18 @@
       },
       {
         "slug": "17-near",
-        "status": "active",
+        "status": "partial",
         "sources_checked": 2,
-        "sources_ok": 2,
-        "sources_failed": 0,
+        "sources_ok": 1,
+        "sources_failed": 1,
         "sources_skipped": 0,
-        "errors": []
+        "errors": [
+          {
+            "source_id": "nearstats_intents_summary",
+            "status": "failed",
+            "error": "TimeoutError('The read operation timed out')"
+          }
+        ]
       },
       {
         "slug": "18-drv-derive",

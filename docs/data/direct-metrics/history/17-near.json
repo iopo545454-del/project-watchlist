@@ -5885,12 +5885,17 @@
         "t": "2026-08-28T22:16:38Z",
         "v": 55383648.0,
         "source_id": "defillama_near_bridge_tvl"
+      },
+      {
+        "t": "2026-08-29T07:01:33Z",
+        "v": 55140566.0,
+        "source_id": "defillama_near_bridge_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "NEAR Protocol",
-  "generated_at": "2026-08-28T22:16:38Z",
+  "generated_at": "2026-08-29T07:01:33Z",
   "chain_breakdown": [
     {
       "t": "2026-08-26T20:00:57Z",
@@ -6088,6 +6093,46 @@
         {
           "chain": "Base",
           "value": 17.95641,
+          "display": "$18"
+        }
+      ]
+    },
+    {
+      "t": "2026-08-29T07:01:33Z",
+      "values": [
+        {
+          "chain": "Ethereum",
+          "value": 40391714.56652,
+          "display": "$40.4M"
+        },
+        {
+          "chain": "Near",
+          "value": 8833569.20274,
+          "display": "$8.8M"
+        },
+        {
+          "chain": "Solana",
+          "value": 5780193.01042,
+          "display": "$5.8M"
+        },
+        {
+          "chain": "Polygon",
+          "value": 133602.19279,
+          "display": "$133.6K"
+        },
+        {
+          "chain": "Binance",
+          "value": 1369.12593,
+          "display": "$1.4K"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 100.89556,
+          "display": "$101"
+        },
+        {
+          "chain": "Base",
+          "value": 18.00532,
           "display": "$18"
         }
       ]
