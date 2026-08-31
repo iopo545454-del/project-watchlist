@@ -1166,6 +1166,11 @@
         "t": "2026-08-30T21:02:25Z",
         "v": 12514.0,
         "source_id": "defillama_chutes_revenue"
+      },
+      {
+        "t": "2026-08-31T05:29:48Z",
+        "v": 10806.0,
+        "source_id": "defillama_chutes_revenue"
       }
     ],
     "total30d": [
@@ -2332,6 +2337,11 @@
       {
         "t": "2026-08-30T21:02:25Z",
         "v": 377064.0,
+        "source_id": "defillama_chutes_revenue"
+      },
+      {
+        "t": "2026-08-31T05:29:48Z",
+        "v": 375774.0,
         "source_id": "defillama_chutes_revenue"
       }
     ],
@@ -3500,6 +3510,11 @@
         "t": "2026-08-30T21:02:25Z",
         "v": 92497.0,
         "source_id": "defillama_chutes_revenue"
+      },
+      {
+        "t": "2026-08-31T05:29:48Z",
+        "v": 92742.0,
+        "source_id": "defillama_chutes_revenue"
       }
     ],
     "tvl_total": [
@@ -4667,12 +4682,17 @@
         "t": "2026-08-30T21:02:25Z",
         "v": 50259359.0,
         "source_id": "defillama_chutes_tvl"
+      },
+      {
+        "t": "2026-08-31T05:29:48Z",
+        "v": 47175530.0,
+        "source_id": "defillama_chutes_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "Chutes \u2014 Bittensor Subnet 64",
-  "generated_at": "2026-08-30T21:02:25Z",
+  "generated_at": "2026-08-31T05:29:48Z",
   "chain_breakdown": [
     {
       "t": "2026-07-05T00:22:15Z",
@@ -7001,6 +7021,16 @@
           "chain": "Bittensor",
           "value": 50259359.50278,
           "display": "$50.3M"
+        }
+      ]
+    },
+    {
+      "t": "2026-08-31T05:29:48Z",
+      "values": [
+        {
+          "chain": "Bittensor",
+          "value": 47175530.26922,
+          "display": "$47.2M"
         }
       ]
     }
