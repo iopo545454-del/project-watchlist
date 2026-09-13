@@ -1,10 +1,10 @@
 {
   "version": 1,
   "latest_run": {
-    "run_id": "direct-data-20260913T044322Z",
-    "started_at": "2026-09-13T04:43:22Z",
-    "completed_at": "2026-09-13T04:43:32Z",
-    "status": "partial",
+    "run_id": "direct-data-20260913T114746Z",
+    "started_at": "2026-09-13T11:47:46Z",
+    "completed_at": "2026-09-13T11:48:03Z",
+    "status": "active",
     "projects_checked": [
       "07-kinetiq",
       "08-grass",
@@ -21,8 +21,8 @@
       "26-compute-horde"
     ],
     "sources_checked": 20,
-    "sources_ok": 15,
-    "sources_failed": 1,
+    "sources_ok": 16,
+    "sources_failed": 0,
     "sources_skipped": 4,
     "project_results": [
       {
@@ -81,18 +81,12 @@
       },
       {
         "slug": "17-near",
-        "status": "partial",
+        "status": "active",
         "sources_checked": 2,
-        "sources_ok": 1,
-        "sources_failed": 1,
+        "sources_ok": 2,
+        "sources_failed": 0,
         "sources_skipped": 0,
-        "errors": [
-          {
-            "source_id": "nearstats_intents_summary",
-            "status": "failed",
-            "error": "<HTTPError 502: 'Bad Gateway'>"
-          }
-        ]
+        "errors": []
       },
       {
         "slug": "18-drv-derive",
