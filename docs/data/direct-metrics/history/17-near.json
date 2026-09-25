@@ -1256,6 +1256,11 @@
         "t": "2026-09-25T11:47:18Z",
         "v": 29904539963.0,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
+        "v": 29904539963.0,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "intents_volume_24h": [
@@ -2511,6 +2516,11 @@
       },
       {
         "t": "2026-09-25T11:47:18Z",
+        "v": 119882861.0,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
         "v": 119882861.0,
         "source_id": "nearstats_intents_summary"
       }
@@ -3770,6 +3780,11 @@
         "t": "2026-09-25T11:47:18Z",
         "v": 893726723.0,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
+        "v": 893726723.0,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "intents_volume_30d": [
@@ -5025,6 +5040,11 @@
       },
       {
         "t": "2026-09-25T11:47:18Z",
+        "v": 3391372549.0,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
         "v": 3391372549.0,
         "source_id": "nearstats_intents_summary"
       }
@@ -6284,6 +6304,11 @@
         "t": "2026-09-25T11:47:18Z",
         "v": 50274315.20233544,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
+        "v": 50274315.20233544,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "confidential_tvl": [
@@ -7539,6 +7564,11 @@
       },
       {
         "t": "2026-09-25T11:47:18Z",
+        "v": 135376614.76700413,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
         "v": 135376614.76700413,
         "source_id": "nearstats_intents_summary"
       }
@@ -8798,6 +8828,11 @@
         "t": "2026-09-25T11:47:18Z",
         "v": 122005.0,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
+        "v": 121578.0,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "tvl_total": [
@@ -9350,12 +9385,17 @@
         "t": "2026-09-25T11:47:18Z",
         "v": 135529041.0,
         "source_id": "defillama_near_bridge_tvl"
+      },
+      {
+        "t": "2026-09-25T17:07:53Z",
+        "v": 137354877.0,
+        "source_id": "defillama_near_bridge_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "NEAR Protocol",
-  "generated_at": "2026-09-25T11:47:18Z",
+  "generated_at": "2026-09-25T17:07:53Z",
   "chain_breakdown": [
     {
       "t": "2026-08-26T20:00:57Z",
@@ -13753,6 +13793,46 @@
         {
           "chain": "Base",
           "value": 22.17578,
+          "display": "$22"
+        }
+      ]
+    },
+    {
+      "t": "2026-09-25T17:07:53Z",
+      "values": [
+        {
+          "chain": "Ethereum",
+          "value": 96484887.42205,
+          "display": "$96.5M"
+        },
+        {
+          "chain": "Near",
+          "value": 35575128.56934,
+          "display": "$35.6M"
+        },
+        {
+          "chain": "Solana",
+          "value": 5143394.40832,
+          "display": "$5.1M"
+        },
+        {
+          "chain": "Polygon",
+          "value": 120548.40469,
+          "display": "$120.5K"
+        },
+        {
+          "chain": "Binance",
+          "value": 30795.19372,
+          "display": "$30.8K"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 100.98049,
+          "display": "$101"
+        },
+        {
+          "chain": "Base",
+          "value": 22.06327,
           "display": "$22"
         }
       ]
