@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-13T14:06:59Z",
+  "generated_at": "2026-10-13T22:41:44Z",
   "projects": {
     "01-pod": {
       "display_name": "POD / Dolphin",
@@ -111,15 +111,15 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/07-kinetiq.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "tvl_total",
           "group": "tvl",
           "label": "TVL",
-          "value": 888634945,
+          "value": 877786370,
           "unit": "usd",
-          "display": "$888.6M",
+          "display": "$877.8M",
           "change": null,
           "source_id": "defillama_kinetiq_khype_tvl",
           "source_url": "https://api.llama.fi/protocol/kinetiq-khype",
@@ -130,8 +130,8 @@
       "chain_breakdown": [
         {
           "chain": "Hyperliquid L1",
-          "value": 888634945.26331,
-          "display": "$888.6M"
+          "value": 877786370.04541,
+          "display": "$877.8M"
         }
       ],
       "open_adapter_work": [],
@@ -144,7 +144,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/08-grass.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -171,7 +171,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/12-akt-akash.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
@@ -186,7 +186,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/14-vvv-venice.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -213,16 +213,16 @@
       "status": "active",
       "summary": "The corrected DefiLlama adapter captures Virtuals' 1% USDC/USDG platform fee at Base and Robinhood tax-manager wallets as protocol revenue; wallet ownership, net retention and any VIRTUAL buyback/burn/staking route remain open.",
       "methodology_file": "projects/15-virtuals.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "total24h",
           "group": "fees_revenue",
           "label": "24h",
-          "value": 5762,
+          "value": 5765,
           "unit": "usd",
           "display": "$5.8K",
-          "change": "+231.0%",
+          "change": "+231.1%",
           "source_id": "defillama_virtuals_fees",
           "source_url": "https://api.llama.fi/summary/fees/virtuals-protocol?dataType=dailyFees",
           "source_quality": "third_party_adapter",
@@ -285,7 +285,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/16-worldcoin-wld.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "tvl_total",
@@ -312,7 +312,7 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/17-near.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "intents_volume_all_time",
@@ -396,9 +396,9 @@
           "id": "intents_unique_users_7d",
           "group": "intents",
           "label": "Intents unique users (7d)",
-          "value": 109617,
+          "value": 109680,
           "unit": "count",
-          "display": "109.6K",
+          "display": "109.7K",
           "change": null,
           "source_id": "nearstats_intents_summary",
           "source_url": "https://nearstats.org/api/near/summary",
@@ -409,9 +409,9 @@
           "id": "tvl_total",
           "group": "tvl",
           "label": "TVL",
-          "value": 138327903,
+          "value": 138967049,
           "unit": "usd",
-          "display": "$138.3M",
+          "display": "$139.0M",
           "change": null,
           "source_id": "defillama_near_bridge_tvl",
           "source_url": "https://api.llama.fi/protocol/near",
@@ -422,38 +422,38 @@
       "chain_breakdown": [
         {
           "chain": "Ethereum",
-          "value": 73399175.79815,
-          "display": "$73.4M"
+          "value": 72428859.32893,
+          "display": "$72.4M"
         },
         {
           "chain": "Near",
-          "value": 59760606.15846,
-          "display": "$59.8M"
+          "value": 60923501.41011,
+          "display": "$60.9M"
         },
         {
           "chain": "Solana",
-          "value": 5015411.01917,
-          "display": "$5.0M"
-        },
-        {
-          "chain": "Polygon",
-          "value": 77401.50388,
-          "display": "$77.4K"
+          "value": 5514760.01376,
+          "display": "$5.5M"
         },
         {
           "chain": "Binance",
-          "value": 75185.21045,
-          "display": "$75.2K"
+          "value": 70038.75746,
+          "display": "$70.0K"
+        },
+        {
+          "chain": "Polygon",
+          "value": 29766.87673,
+          "display": "$29.8K"
         },
         {
           "chain": "Arbitrum",
-          "value": 100.89901,
+          "value": 100.90568,
           "display": "$101"
         },
         {
           "chain": "Base",
-          "value": 22.4979,
-          "display": "$22"
+          "value": 22.6029,
+          "display": "$23"
         }
       ],
       "open_adapter_work": [],
@@ -466,7 +466,7 @@
       "status": "active",
       "summary": "Fees, TVL, and aggregate options volume are fetchable; OI by underlying, buyback wallet mapping, collateral composition, and market-quality adapters remain open.",
       "methodology_file": "projects/18-drv-derive.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "total24h",
@@ -511,9 +511,9 @@
           "id": "tvl_total",
           "group": "tvl_collateral",
           "label": "TVL",
-          "value": 119483046,
+          "value": 119766696,
           "unit": "usd",
-          "display": "$119.5M",
+          "display": "$119.8M",
           "change": null,
           "source_id": "defillama_derive_tvl",
           "source_url": "https://api.llama.fi/protocol/derive",
@@ -524,17 +524,17 @@
       "chain_breakdown": [
         {
           "chain": "Ethereum",
-          "value": 119009987,
-          "display": "$119.0M"
+          "value": 119273860,
+          "display": "$119.3M"
         },
         {
           "chain": "OP Mainnet",
-          "value": 431213,
-          "display": "$431.2K"
+          "value": 450991,
+          "display": "$451.0K"
         },
         {
           "chain": "Arbitrum",
-          "value": 26427,
+          "value": 26425,
           "display": "$26.4K"
         },
         {
@@ -564,13 +564,13 @@
       "status": "active",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/20-bio.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "tvl_total",
           "group": "tvl",
           "label": "TVL",
-          "value": 3558953,
+          "value": 3624592,
           "unit": "usd",
           "display": "$3.6M",
           "change": null,
@@ -583,12 +583,12 @@
       "chain_breakdown": [
         {
           "chain": "Ethereum",
-          "value": 1945983.55017,
-          "display": "$1.9M"
+          "value": 1981048.27171,
+          "display": "$2.0M"
         },
         {
           "chain": "Base",
-          "value": 1612969.47474,
+          "value": 1643544.59962,
           "display": "$1.6M"
         }
       ],
@@ -602,16 +602,16 @@
       "status": "active",
       "summary": "DefiLlama exposes EigenCloud/EigenLayer supplier-side fees separately from zero protocol revenue; Darkbloom paid usage, provider revenue and EIGEN fee/burn routing still need stable aggregate adapters.",
       "methodology_file": "projects/23-eigencloud.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "total24h",
           "group": "fees_revenue",
           "label": "24h",
-          "value": 1699,
+          "value": 7073,
           "unit": "usd",
-          "display": "$1.7K",
-          "change": "+179.4%",
+          "display": "$7.1K",
+          "change": "+1063.3%",
           "source_id": "defillama_eigencloud_fees",
           "source_url": "https://api.llama.fi/summary/fees/eigenlayer?dataType=dailyFees",
           "source_quality": "third_party_adapter",
@@ -705,7 +705,7 @@
       "status": "active",
       "summary": "DefiLlama covers Chutes revenue and TVL; Taostats subnet metrics remain manual/keyed until a public endpoint is confirmed.",
       "methodology_file": "projects/24-chutes.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [
         {
           "id": "total24h",
@@ -750,9 +750,9 @@
           "id": "tvl_total",
           "group": "tvl",
           "label": "TVL",
-          "value": 55268826,
+          "value": 56136697,
           "unit": "usd",
-          "display": "$55.3M",
+          "display": "$56.1M",
           "change": null,
           "source_id": "defillama_chutes_tvl",
           "source_url": "https://api.llama.fi/protocol/chutes",
@@ -763,8 +763,8 @@
       "chain_breakdown": [
         {
           "chain": "Bittensor",
-          "value": 55268826.5336,
-          "display": "$55.3M"
+          "value": 56136697.90443,
+          "display": "$56.1M"
         }
       ],
       "open_adapter_work": [],
@@ -779,7 +779,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/25-lium.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
@@ -794,7 +794,7 @@
       "status": "skipped",
       "summary": "Direct metrics collected from configured public sources.",
       "methodology_file": "projects/26-compute-horde.md#direct-data--kpi-methodology",
-      "last_refreshed": "2026-10-13T14:06:59Z",
+      "last_refreshed": "2026-10-13T22:41:44Z",
       "metrics": [],
       "chain_breakdown": [],
       "open_adapter_work": [],
