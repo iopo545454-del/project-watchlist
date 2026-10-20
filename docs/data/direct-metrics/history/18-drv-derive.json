@@ -2076,6 +2076,11 @@
         "t": "2026-10-20T11:31:12Z",
         "v": 11916.37,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-10-20T16:59:29Z",
+        "v": 11916.37,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "total30d": [
@@ -4156,6 +4161,11 @@
       },
       {
         "t": "2026-10-20T11:31:12Z",
+        "v": 614213.6199999999,
+        "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-10-20T16:59:29Z",
         "v": 614213.6199999999,
         "source_id": "defillama_derive_fees"
       }
@@ -6240,6 +6250,11 @@
         "t": "2026-10-20T11:31:12Z",
         "v": 116225.74,
         "source_id": "defillama_derive_fees"
+      },
+      {
+        "t": "2026-10-20T16:59:29Z",
+        "v": 116225.74,
+        "source_id": "defillama_derive_fees"
       }
     ],
     "tvl_total": [
@@ -8322,43 +8337,18 @@
         "t": "2026-10-20T11:31:12Z",
         "v": 184457371.0,
         "source_id": "defillama_derive_tvl"
+      },
+      {
+        "t": "2026-10-20T16:59:29Z",
+        "v": 183212941.0,
+        "source_id": "defillama_derive_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "DRV / Derive Protocol",
-  "generated_at": "2026-10-20T11:31:12Z",
+  "generated_at": "2026-10-20T16:59:29Z",
   "chain_breakdown": [
-    {
-      "t": "2026-08-15T01:47:52Z",
-      "values": [
-        {
-          "chain": "Hyperliquid L1",
-          "value": 34952002,
-          "display": "$35.0M"
-        },
-        {
-          "chain": "Base",
-          "value": 26100832,
-          "display": "$26.1M"
-        },
-        {
-          "chain": "OP Mainnet",
-          "value": 22765247,
-          "display": "$22.8M"
-        },
-        {
-          "chain": "Ethereum",
-          "value": 18397784,
-          "display": "$18.4M"
-        },
-        {
-          "chain": "Arbitrum",
-          "value": 16442879,
-          "display": "$16.4M"
-        }
-      ]
-    },
     {
       "t": "2026-08-15T06:55:52Z",
       "values": [
@@ -15325,6 +15315,26 @@
         {
           "chain": "Arbitrum",
           "value": 26416,
+          "display": "$26.4K"
+        }
+      ]
+    },
+    {
+      "t": "2026-10-20T16:59:29Z",
+      "values": [
+        {
+          "chain": "Ethereum",
+          "value": 182872451,
+          "display": "$182.9M"
+        },
+        {
+          "chain": "OP Mainnet",
+          "value": 314076,
+          "display": "$314.1K"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 26412,
           "display": "$26.4K"
         }
       ]
