@@ -1906,6 +1906,11 @@
         "t": "2026-11-03T14:06:34Z",
         "v": 37186797115.86747,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
+        "v": 37186797115.86747,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "intents_volume_24h": [
@@ -3811,6 +3816,11 @@
       },
       {
         "t": "2026-11-03T14:06:34Z",
+        "v": 155286804.1487092,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
         "v": 155286804.1487092,
         "source_id": "nearstats_intents_summary"
       }
@@ -5720,6 +5730,11 @@
         "t": "2026-11-03T14:06:34Z",
         "v": 897927143.3586459,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
+        "v": 897927143.3586459,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "intents_volume_30d": [
@@ -7625,6 +7640,11 @@
       },
       {
         "t": "2026-11-03T14:06:34Z",
+        "v": 3897049478.6171436,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
         "v": 3897049478.6171436,
         "source_id": "nearstats_intents_summary"
       }
@@ -9534,6 +9554,11 @@
         "t": "2026-11-03T14:06:34Z",
         "v": 58958886.976364575,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
+        "v": 58958886.976364575,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "confidential_tvl": [
@@ -11439,6 +11464,11 @@
       },
       {
         "t": "2026-11-03T14:06:34Z",
+        "v": 140010000.0,
+        "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
         "v": 140010000.0,
         "source_id": "nearstats_intents_summary"
       }
@@ -13348,6 +13378,11 @@
         "t": "2026-11-03T14:06:34Z",
         "v": 102819.0,
         "source_id": "nearstats_intents_summary"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
+        "v": 103398.0,
+        "source_id": "nearstats_intents_summary"
       }
     ],
     "tvl_total": [
@@ -14555,53 +14590,18 @@
         "t": "2026-11-03T14:06:34Z",
         "v": 113315345.0,
         "source_id": "defillama_near_bridge_tvl"
+      },
+      {
+        "t": "2026-11-03T23:17:31Z",
+        "v": 113274652.0,
+        "source_id": "defillama_near_bridge_tvl"
       }
     ]
   },
   "events": [],
   "display_name": "NEAR Protocol",
-  "generated_at": "2026-11-03T14:06:34Z",
+  "generated_at": "2026-11-03T23:17:31Z",
   "chain_breakdown": [
-    {
-      "t": "2026-08-27T09:43:39Z",
-      "values": [
-        {
-          "chain": "Ethereum",
-          "value": 41824897.69859,
-          "display": "$41.8M"
-        },
-        {
-          "chain": "Near",
-          "value": 9300791.18157,
-          "display": "$9.3M"
-        },
-        {
-          "chain": "Solana",
-          "value": 6179009.73015,
-          "display": "$6.2M"
-        },
-        {
-          "chain": "Polygon",
-          "value": 127185.60013,
-          "display": "$127.2K"
-        },
-        {
-          "chain": "Binance",
-          "value": 1351.62783,
-          "display": "$1.4K"
-        },
-        {
-          "chain": "Arbitrum",
-          "value": 100.92771,
-          "display": "$101"
-        },
-        {
-          "chain": "Base",
-          "value": 18.50596,
-          "display": "$19"
-        }
-      ]
-    },
     {
       "t": "2026-08-27T22:14:10Z",
       "values": [
@@ -24158,6 +24158,46 @@
         {
           "chain": "Base",
           "value": 22.02794,
+          "display": "$22"
+        }
+      ]
+    },
+    {
+      "t": "2026-11-03T23:17:31Z",
+      "values": [
+        {
+          "chain": "Ethereum",
+          "value": 60869822.04941,
+          "display": "$60.9M"
+        },
+        {
+          "chain": "Near",
+          "value": 45939236.25173,
+          "display": "$45.9M"
+        },
+        {
+          "chain": "Solana",
+          "value": 6244145.26876,
+          "display": "$6.2M"
+        },
+        {
+          "chain": "Binance",
+          "value": 158605.57782,
+          "display": "$158.6K"
+        },
+        {
+          "chain": "Polygon",
+          "value": 62719.97167,
+          "display": "$62.7K"
+        },
+        {
+          "chain": "Arbitrum",
+          "value": 100.82922,
+          "display": "$101"
+        },
+        {
+          "chain": "Base",
+          "value": 22.13758,
           "display": "$22"
         }
       ]
